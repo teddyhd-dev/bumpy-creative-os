@@ -1,0 +1,48 @@
+# Decisions log
+
+One entry per decision: date, decision, who decided, evidence, how we'll know it worked.
+Log every measurement change (MMP, SDK, attribution setting, conversion mapping, tracking link) here the week it happens.
+
+## Made
+
+### 2026-10-23 · The March 2026 ROAS break was the move to Singular (MMP)
+- **Decided by:** creative lead (confirmed the Singular switch); dates found in the data.
+- **What it means:** Meta's numbers are on a new ruler from the week of 23 Feb (iOS) and 9 Mar (Android). For the same App Store money, Meta ROAS reads 0.67× (iOS) and 0.71× (Android) of before. Absolute Meta ROAS, purchases, installs, IPM and click → install are not compared across the switch (spec §3.3).
+- **Engine:** switch dates in `engine/settings.py`; each week judged on its own ruler; relative = same OS, same week.
+
+### 2026-10-27 · Singular-era bar: acceptable from 0.40, refresh under 0.40
+- **Decided by:** creative lead. "Below 0.4 is already a warning to refresh; 0.4–0.5 or above is acceptable", for adsets and creatives.
+- **Engine:** `BARS["singular"]` = green 0.40, amber (critical below) 0.32, deep red 0.28; the last two keep the old proportions (0.8×, 0.7× of green). Replaces the proposed 0.35 / 0.28.
+- **Note:** 0.40 on Singular ≈ 0.57 on Meta's old reporting. 56% of Singular-era spend clears it (79% cleared 0.50 before the switch).
+
+### 2026-10-27 · Refresh = one concept with 3+ variants per adset
+- **Decided by:** creative lead (one concept per refresh; every concept ships 2–3+ variants, re-cuts and re-sequences).
+- **Evidence:** a new concept with 3+ spending variants in the adset became its #1 40% of the time vs 15% with 1–2. Add a proven J1 concept when the queue has one (no production).
+- Replaces the proposed "2+ distinct concepts". Due tickets open at reign week 2 (1 week to make, 1 to read).
+
+### 2026-10-27 · Board, scorecards, roster
+- Board = shared Claude page (team gets access). Scorecards visible to everyone. Yuli Nur Hakim = KIM, Hanna Dolhikh = HAN; Deyan Haider and Hussein Saleh Cabrera have left.
+
+## Proposed, waiting for the creative lead
+
+### ~~2026-10-23 · Singular-era bar: green ≥ 0.35, critical < 0.28~~ (superseded 27 Oct by 0.40)
+- **Why:** old bar 0.50 / 0.40 × 0.70 (measured ruler change). Keeps the same real-money standard: 79% of spend was green on the old bar before the switch; 74% is green on 0.35 since.
+- **Applied provisionally** in the engine and dashboard so statuses mean something again. To change it, edit `BARS` in `engine/settings.py` and note it here.
+- **Note:** "under 0.39 is critical" on Singular numbers equals 0.57 in pre-switch units, above the old green bar.
+
+### 2026-10-27 · At-bats, verdicts and three strikes (spec §6, §15)
+- **At-bat** = new concepts entering an adset in one week, adset 3+ weeks old (the variants rule above replaced the 2-concept proposal).
+- **Verdicts:** week-1 read is provisional (20%+ of adset spend = provisional hit); week 4 is final (new #1 within 4 weeks = hit; home run if the adset's relative ROAS rose at weeks 3–4); #1 in weeks 5–12 = late hit. Ads under 20% in week 1 stay on: a third of refresh winners started under 5%.
+- **Strikes** only in a turnaround (adset under green the week before); misses into healthy adsets are fouls. **3 turnaround strikes in a row → Review.** Replaces "Strike 3 = 2 failed at-bats or 7 days" and the D3 verdict.
+- **Engine:** `ATBAT` in `engine/settings.py`, applied provisionally in `engine/tickets.py`.
+
+### 2026-10-27 · Ticket priority weights (spec §15, §20.1)
+- Priority = weight × last week's spend: review 1.0 · critical 1.0 · amber and falling 0.8 · leading signal 0.6 · due 0.5 (+0.1 if falling) · amber 0.4 · critical under the alert floor 0.3; × 0.5 with a challenger in test or 🧱. `TICKET_WEIGHTS` in `engine/settings.py`.
+
+## Open
+- TikTok: hold at today's budget and run a geo test (pause TikTok iOS 4 weeks in 3–4 countries where it's a big share; compare App Store proceeds with similar countries). Spec §19 Q13. TikTok's own ROAS can't decide this: half its Android value sits on ad groups that weren't spending.
+- Profit bar: what a subscriber is worth after the first weeks (spec §19 Q1, Q6). Needs Singular D30 revenue or finance cohorts.
+- US-only iOS test: budget, dates, success measure (spec §19 Q7).
+- The 8 adsets switched off since the switch while at or above their OS average, and the dark personas: relaunch or obituary (Diagnosis §3).
+- The May – June 2026 spend pullback: record whether it was a reaction to the ROAS reading (spec §19 Q12).
+- Board home, scorecard visibility, roster codes, exports landing in Drive, watch-time columns, persona-card mapping (spec §19 Q17–Q22).

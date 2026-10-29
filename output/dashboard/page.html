@@ -1,0 +1,1512 @@
+<style>
+.bx{font-family:var(--font-anthropic-sans);color:var(--color-fg);
+  --z-green:color-mix(in srgb,var(--color-ok) 30%,var(--color-bg));
+  --z-amber:color-mix(in srgb,var(--color-warn) 34%,var(--color-bg));
+  --z-crit:color-mix(in srgb,var(--color-bad) 26%,var(--color-bg));
+  --z-crit2:color-mix(in srgb,var(--color-bad) 52%,var(--color-bg));
+  --z-other:color-mix(in srgb,var(--color-fg-muted) 14%,var(--color-bg));
+  --f-green:color-mix(in srgb,var(--color-ok) 75%,var(--color-bg));
+  --f-amber:color-mix(in srgb,var(--color-warn) 80%,var(--color-bg));
+  --f-crit:color-mix(in srgb,var(--color-bad) 75%,var(--color-bg));}
+.bx *{box-sizing:border-box}
+.bx-title{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0 0 var(--cds-gap-xs)}
+.bx-take{margin:0 0 var(--cds-gap-md);color:var(--color-fg-muted);font-size:var(--cds-font-size-body);max-width:72ch}
+.bx-take b,.bx b{font-weight:600;color:var(--color-fg)}
+.bx-tabs{display:flex;gap:var(--cds-gap-xs);flex-wrap:wrap;border-bottom:1px solid var(--color-border-line);margin-bottom:var(--cds-gap-md)}
+.bx-tab{font:inherit;font-size:var(--cds-font-size-body);background:none;border:0;border-bottom:2px solid transparent;padding:var(--cds-pad-sm) var(--cds-pad-md);color:var(--color-fg-muted);cursor:pointer}
+.bx-tab[aria-selected="true"]{color:var(--color-fg);border-bottom-color:var(--color-fg)}
+.bx-page[hidden]{display:none}
+.bx-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md);margin-bottom:var(--cds-gap-md)}
+.bx-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0}
+.bx-kpi .lbl{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-kpi .val{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;margin:var(--cds-gap-xs) 0}
+.bx-kpi .chg{font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums;color:var(--color-fg-muted)}
+.bx-kpi .chg-v.good{color:var(--color-ok)} .bx-kpi .chg-v.bad{color:var(--color-bad)}
+.bx-h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0 0 var(--cds-gap-xs)}
+.bx-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:0 0 var(--cds-gap-sm)}
+.bx-stack{display:grid;gap:var(--cds-gap-md)}
+.bx-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:var(--cds-gap-md)}
+.bx-chart{position:relative;min-height:300px}
+.bx-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums;z-index:20;display:none;white-space:nowrap}
+.bx-tip .d{color:var(--cds-text-secondary);margin-bottom:2px}
+.bx-tbl{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.bx-tbl th{text-align:left;font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.bx-tbl td{padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.bx-tbl td.n,.bx-tbl th.n{text-align:right;white-space:nowrap}
+.bx-tbl tbody tr{cursor:pointer}
+.bx-tbl tbody tr:hover td{background:color-mix(in srgb,var(--color-fg) 5%,transparent)}
+.bx-scroll{max-height:28rem;overflow:auto}
+.bx-scroll th{position:sticky;top:0;background:var(--color-panel);z-index:1}
+.bx-ctrl{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm);align-items:center;margin-bottom:var(--cds-gap-sm)}
+.bx-seg{display:inline-flex;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);overflow:hidden}
+.bx-seg button{font:inherit;font-size:var(--cds-font-size-caption);background:none;border:0;padding:var(--cds-pad-xs) var(--cds-pad-sm);color:var(--color-fg-muted);cursor:pointer}
+.bx-seg button[aria-pressed="true"]{background:var(--color-fg);color:var(--color-bg)}
+.bx-ctrl select,.bx-ctrl input{font:inherit;font-size:var(--cds-font-size-caption);background:var(--color-bg);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-xs) var(--cds-pad-sm)}
+.bx-ctrl input{min-width:12rem}
+.bx-legend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm) var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-bottom:var(--cds-gap-sm)}
+.bx-legend i{display:inline-block;width:.9rem;height:.9rem;border-radius:3px;vertical-align:-2px;margin-right:4px;border:1px solid var(--color-border-line)}
+.bx-gwrap{position:relative;overflow:auto;max-height:78vh;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);container-type:inline-size;background:var(--color-bg)}
+.bx-grid{border-collapse:separate;border-spacing:0;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.bx-grid th,.bx-grid td{padding:3px 6px;border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.bx-grid thead th{position:sticky;top:0;z-index:3;background:var(--color-panel);font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);text-align:right}
+.bx-grid thead th.l{text-align:left}
+.bx-grid .c1{position:sticky;left:0;z-index:2;background:var(--color-bg);min-width:8.5rem;max-width:8.5rem;overflow:hidden;text-overflow:ellipsis}
+.bx-grid .c2{position:sticky;left:8.5rem;z-index:2;background:var(--color-bg);min-width:17rem;max-width:17rem;overflow:hidden;text-overflow:ellipsis;border-right:1px solid var(--color-border-line)}
+.bx-grid thead .c1,.bx-grid thead .c2{z-index:4;background:var(--color-panel)}
+@container (max-width:44rem){.bx-grid .c2{position:static;min-width:12rem;max-width:12rem}.bx-grid .c1{position:static}}
+.bx-grid td.n{text-align:right}
+.bx-grid td.w{text-align:right;min-width:3.1rem;border-left:1px solid var(--color-bg)}
+.bx-grid td.w.z-green{background:var(--z-green)} .bx-grid td.w.z-amber{background:var(--z-amber)}
+.bx-grid td.w.z-crit{background:var(--z-crit)} .bx-grid td.w.z-crit2{background:var(--z-crit2)}
+.bx-grid td.w.z-other{background:var(--z-other)}
+.bx-grid td.w.up::after{content:"↑";font-size:.7em;margin-left:1px;color:var(--color-fg-muted)}
+.bx-grid td.w.down::after{content:"↓";font-size:.7em;margin-left:1px;color:var(--color-fg-muted)}
+.bx-grid th.md::after{content:" 🌧"}
+.bx-grid th.mon{border-left:1px solid var(--color-fg-muted)}
+.bx-legend[hidden]{display:none}
+.bx-grid th.sw{box-shadow:inset -2px 0 0 var(--cds-chart-reference)}
+.bx-grid th.tr{font-style:italic}
+.bx-ruler{display:inline-block;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);border:1px dashed var(--color-border-line);border-radius:6px;padding:2px 8px;margin:0 0 var(--cds-gap-sm)}
+.bx-verdict-ok{color:var(--color-ok)} .bx-verdict-warn{color:var(--color-warn)} .bx-verdict-bad{color:var(--color-bad)}
+.bx-grid tbody tr{cursor:pointer}
+.bx-grid tr.grp td{font-weight:600;background:var(--color-panel)}
+.bx-grid tr.grp td.c1,.bx-grid tr.grp td.c2{background:var(--color-panel)}
+.bx-grid tr.grp td.w.z-green{background:var(--z-green)} .bx-grid tr.grp td.w.z-amber{background:var(--z-amber)}
+.bx-grid tr.grp td.w.z-crit{background:var(--z-crit)} .bx-grid tr.grp td.w.z-crit2{background:var(--z-crit2)}
+.bx-grid tr.child td.c2{padding-left:1.1rem}
+.bx-grid tr.off td{color:var(--color-fg-muted)}
+.bx-grid tr.sel td.c1,.bx-grid tr.sel td.c2{box-shadow:inset 3px 0 0 var(--color-fg)}
+.bx-grid tbody tr:hover td.c2{text-decoration:underline}
+.bx-dos{margin-bottom:var(--cds-gap-md)}
+.bx-dos[hidden]{display:none}
+.bx-dos-head{display:flex;justify-content:space-between;gap:var(--cds-gap-sm);align-items:flex-start}
+.bx-dos-head h3{margin:0;font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);word-break:break-word}
+.bx-x{font:inherit;background:none;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);color:var(--color-fg-muted);cursor:pointer;padding:0 var(--cds-pad-sm)}
+.bx-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,8.5rem),1fr));gap:var(--cds-gap-sm);margin:var(--cds-gap-sm) 0}
+.bx-facts div{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-facts span{display:block;font-size:var(--cds-font-size-body);color:var(--color-fg);font-variant-numeric:tabular-nums}
+.bx-sm{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr));gap:var(--cds-gap-sm)}
+.bx-sm .m{position:relative;min-height:120px}
+.bx-sm .m .t{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.bx-bar{display:inline-block;height:.6rem;border-radius:3px;vertical-align:middle}
+.bx svg text{fill:var(--color-fg-muted);font-size:var(--cds-font-size-caption);font-family:var(--font-anthropic-sans)}
+[data-dash-source-state=empty]{color:transparent}
+[data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+.bx-fail{display:flex;align-items:center;justify-content:center;gap:6px;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);min-height:inherit}
+.bx-fail::before{content:"";width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad)}
+</style>
+
+<div class="bx">
+  <h1 class="bx-title" id="top">Bumpy ads command grid</h1>
+  <p class="bx-take" style="margin-top:-2px">This page explains <b>why</b> the account moves: money, markets, channels, measurement and creative patterns. The team's work (tickets, briefs, results, persona files and the Tuesday report) lives on the <a href="https://claude.ai/artifact/MFtoxXwScrbATaY5jNhv2U" target="_blank" rel="noopener noreferrer">Creative Board</a>.</p>
+  <p class="bx-take" id="takeaway">Last 10 weeks: <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=spend_wk_now">—</b> a week into Meta purchase adsets, and <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=store_wk_now">—</b> a week of App Store proceeds coming back (was <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=store_wk_pre">—</b>). Meta credits ROAS <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=meta_roas_now">—</b> through Singular (<b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=meta_roas_pre">—</b> on Meta's own attribution before March, a different ruler), and the US now gets <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_share_now">—</b> of spend (was <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_share_pre">—</b>).</p>
+
+  <nav class="bx-tabs" role="tablist">
+    <button class="bx-tab" role="tab" data-tab="overview" id="tab-overview">Overview</button>
+    <button class="bx-tab" role="tab" data-tab="markets" id="tab-markets">Markets</button>
+    <button class="bx-tab" role="tab" data-tab="channels" id="tab-channels">Channels</button>
+    <button class="bx-tab" role="tab" data-tab="grid" id="tab-grid">Adsets &amp; personas</button>
+    <button class="bx-tab" role="tab" data-tab="creatives" id="tab-creatives">Creatives</button>
+    <button class="bx-tab" role="tab" data-tab="why" id="tab-why">Diagnosis</button>
+    <button class="bx-tab" role="tab" data-tab="checks" id="tab-checks">Data checks</button>
+  </nav>
+
+  <!-- ===================== OVERVIEW ===================== -->
+  <section class="bx-page" id="overview">
+    <h2 class="bx-h2" id="ov-money-h">Money out, money in</h2>
+    <div class="bx-cards">
+      <div class="bx-card bx-kpi"><div class="lbl">Spend per week, before → last 10 weeks</div><div class="val"><b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=spend_wk_pre">—</b> → <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=spend_wk_now">—</b></div><div class="chg">Meta purchase adsets, all OS (TikTok separate)</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">App Store proceeds per week</div><div class="val"><b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=store_wk_pre">—</b> → <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=store_wk_now">—</b></div><div class="chg">All App Store money after Apple's cut</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">App Store proceeds per iOS ad dollar</div><div class="val"><b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=k_fe">—</b></div><div class="chg">Store money that follows each $1 of iOS spend, country by country</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">Meta ROAS (7-day click)</div><div class="val"><b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=meta_roas_pre">—</b> → <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=meta_roas_now">—</b></div><div class="chg">Two rulers: Meta's own attribution → Singular (×<b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=ruler_ratio">—</b>). Not comparable</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">TikTok spend per week</div><div class="val"><b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=tt_spend_wk_pre">—</b> → <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=tt_spend_wk_now">—</b></div><div class="chg">Reports a high ROAS; App Store money barely moves with it (Channels)</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">US share of spend</div><div class="val"><b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_share_pre">—</b> → <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_share_now">—</b></div><div class="chg">Our highest-value market</div></div>
+    </div>
+    <div class="bx-stack">
+      <div class="bx-card">
+        <h3 class="bx-h2">Spend vs App Store proceeds vs what each channel credits, per week</h3>
+        <p class="bx-note">Bars: paid spend, Meta and TikTok. Lines: App Store proceeds (iOS only, all sources) and the revenue each channel credits itself (TikTok: live ad groups only). Android money is not included because Google Play data is not connected yet.</p>
+        <div class="bx-chart" id="ov-money" data-source="ov_weekly"></div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2" id="ov-actions-h">This week's actions, biggest first</h3>
+        <p class="bx-note">Each row says which lever, who owns it and where the evidence is. Click a row to open that page.</p>
+        <table class="bx-tbl" id="ov-actions" data-source="ov_actions" data-row-key="rank">
+          <thead><tr><th data-field="rank" class="n">#</th><th data-field="lever">Lever</th><th data-field="action">Action</th><th data-field="evidence">Evidence</th><th class="n" data-field="at_stake">At stake / week</th><th data-field="owner">Owner</th><th data-field="where">Page</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <h2 class="bx-h2" style="margin-top:var(--cds-gap-lg)" id="ov-lastweek-h">Last week, adset by adset</h2>
+    <div class="bx-ruler">Bar on Singular: green from <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=bar_green_singular">—</b>, critical under <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=bar_amber_singular">—</b> (was <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=bar_green_meta">—</b> / <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=bar_amber_meta">—</b> on Meta's own attribution) · set by the creative lead, 27 Oct</div>
+    <div class="bx-cards" id="kpis">
+      <div class="bx-card bx-kpi"><div class="lbl">Spend · last week</div>
+        <div class="val dash-skeleton" data-source="account" data-field="spend" data-where="is_latest=True">—</div>
+        <div class="chg"><span class="chg-v" data-source="account" data-field="spend_change" data-where="is_latest=True" data-good="none">—</span> vs prior week</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">ROAS (7-day click) · last week</div>
+        <div class="val dash-skeleton" data-source="account" data-field="roas" data-where="is_latest=True">—</div>
+        <div class="chg"><span class="chg-v" data-source="account" data-field="roas_delta" data-where="is_latest=True" data-good="up">—</span> vs prior week</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">Green spend share (at or above the bar)</div>
+        <div class="val dash-skeleton" data-source="account" data-field="green_share" data-where="is_latest=True">—</div>
+        <div class="chg"><span class="chg-v" data-source="account" data-field="green_share_delta" data-where="is_latest=True" data-good="up">—</span> vs prior week</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">Critical adsets (under the critical line, above alert floor) · target 0</div>
+        <div class="val dash-skeleton" data-source="account" data-field="critical_adsets" data-where="is_latest=True">—</div>
+        <div class="chg"><span class="chg-v" data-source="account" data-field="critical_delta" data-where="is_latest=True" data-good="down">—</span> vs prior week</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">Leaking: spend × gap to the green bar</div>
+        <div class="val dash-skeleton" data-source="account" data-field="leaking" data-where="is_latest=True">—</div>
+        <div class="chg"><span class="chg-v" data-source="account" data-field="leaking_change" data-where="is_latest=True" data-good="down">—</span> vs prior week</div></div>
+    </div>
+
+    <div class="bx-stack">
+      <div class="bx-card" id="trend-card">
+        <h2 class="bx-h2">Weekly spend by ROAS zone</h2>
+        <p class="bx-note">Bars: spend in adsets that were green, amber or critical that week, each week judged on its own ruler (0.50 / 0.40 before the Singular switch, 0.40 / 0.32 after). Line: account Meta ROAS; it steps down at the switch because the ruler changed, not the business. 🌧 marks a market day: more than half of meaningful spend fell 15% or more at once.</p>
+        <div class="bx-chart" id="trend" data-source="account"></div>
+      </div>
+
+      <div class="bx-card" id="act-card">
+        <h2 class="bx-h2">Act on this</h2>
+        <p class="bx-note">Adsets above the alert floor (1% of account spend) that are critical or due a refresh, worst first. Click one to open its history in the grid.</p>
+        <div class="bx-scroll">
+          <table class="bx-tbl" id="act" data-source="grid" data-row-key="key">
+            <thead><tr>
+              <th data-field="status">Status</th><th data-field="short">Adset</th><th data-field="why">Why</th>
+              <th class="n" data-field="spend_last">Spend LW</th><th class="n" data-field="roas_last">ROAS LW</th>
+              <th class="n" data-field="leaking">Leaking</th><th class="n" data-field="scale_lost">Below peak</th><th data-field="flags">Flags</th>
+            </tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="bx-card" id="dark-card">
+        <h2 class="bx-h2">Gone dark</h2>
+        <p class="bx-note">Personas with no spend last week, biggest past peak first. Nothing leaves this list without a written decision.</p>
+        <div class="bx-scroll">
+          <table class="bx-tbl" id="dark" data-source="grid" data-row-key="key">
+            <thead><tr>
+              <th data-field="short">Persona</th><th class="n" data-field="peak_all">Peak $/week</th>
+              <th class="n" data-field="peak_all_week">Peak week</th><th class="n" data-field="last_week">Last spend</th>
+            </tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== MARKETS ===================== -->
+  <section class="bx-page" id="markets" hidden>
+    <p class="bx-take" style="font-size:var(--cds-font-size-heading);color:var(--color-fg);max-width:80ch">Store money follows iOS spend country by country: across countries, each extra $1 a week of iOS spend came with <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=dose_slope">—</b> more App Store proceeds a week. Moving to worldwide language adsets took the US from <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_en_ios_pre">—</b> to <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_en_ios_now">—</b> of English iOS spend, and US proceeds fell with it.</p>
+    <div class="bx-stack">
+      <div class="bx-card">
+        <h3 class="bx-h2" id="mk-share-h">Where the spend lands: share by country, per week</h3>
+        <p class="bx-note">Purchase adsets, all OS. The 8 biggest countries now; everything else is grey.</p>
+        <div class="bx-chart" id="mk-share" data-source="mk_share"></div>
+      </div>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2" id="mk-us-h">The US: spend, Meta credit and store money</h3>
+          <p class="bx-note">US iOS spend went from <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_ios_spend_pre">—</b> to <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_ios_spend_now">—</b> a week; US App Store proceeds from <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_proceeds_pre">—</b> to <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=us_proceeds_now">—</b>.</p>
+          <div class="bx-chart" id="mk-us" data-source="mk_us"></div>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2" id="mk-dose-h">Dose and response, country by country</h3>
+          <p class="bx-note">Each dot is a country: change in weekly iOS spend (across) vs change in weekly App Store proceeds (up), 1 Dec – 22 Feb vs the last 10 weeks. Line: the fit, <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=dose_slope">—</b> per $1 plus <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=dose_baseline">—</b> a week of growth per country with no change in spend. Without the US the slope is <b class="dash-skeleton" data-source="ov_facts" data-field="value" data-where="fact=dose_slope_ex_us">—</b>.</p>
+          <div class="bx-chart" id="mk-dose" data-source="mk_dose"></div>
+        </div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2" id="mk-table-h">Countries: before vs last 10 weeks</h3>
+        <p class="bx-note">Per week. Meta ROAS before and now come from different rulers (Meta's own attribution, then Singular), so countries are shown against their own OS average in the same window (1.00 = average), which is comparable. App Store proceeds are the whole storefront (renewals and organic included). Top 30 countries by spend now.</p>
+        <div class="bx-scroll" style="max-height:34rem">
+          <table class="bx-tbl" id="mk-table" data-source="mk_country" data-row-key="country">
+            <thead><tr><th data-field="country">Country</th><th class="n" data-field="spend_pre">Spend before</th><th class="n" data-field="spend_now">Spend now</th><th class="n" data-field="share_now">Share now</th>
+            <th class="n" data-field="idx_ios_pre">iOS vs iOS avg, before</th><th class="n" data-field="idx_ios_now">iOS vs iOS avg, now</th><th class="n" data-field="idx_and_now">Android vs Android avg, now</th><th class="n" data-field="roas_ios_now">iOS ROAS now</th>
+            <th class="n" data-field="proceeds_pre">Store before</th><th class="n" data-field="proceeds_now">Store now</th><th class="n" data-field="d_ios_spend">Δ iOS spend</th><th class="n" data-field="d_proceeds">Δ store</th><th data-field="top_personas">Personas spending there</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHANNELS ===================== -->
+  <section class="bx-page" id="channels" hidden>
+    <p class="bx-take" style="font-size:var(--cds-font-size-heading);color:var(--color-fg);max-width:80ch" id="ch-take">TikTok is <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_share_now">—</b> of paid spend (<b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_spend_wk_now">—</b> a week). It reports a better ROAS than Meta, but on its own ruler: <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_ghost_share_and">—</b> of its Android value and <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_ghost_share_ios">—</b> of its iOS value is credited to ad groups that weren't spending. App Store money follows Meta iOS spend (<b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_meta_ios">—</b> per $) and barely moves with TikTok's (<b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_tt_ios">—</b> per $). Test TikTok before scaling it.</p>
+    <div class="bx-cards">
+      <div class="bx-card bx-kpi"><div class="lbl">TikTok spend per week</div><div class="val"><b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_spend_wk_pre">—</b> → <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_spend_wk_now">—</b></div><div class="chg">Dec – mid Feb → last 10 weeks · <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_general_share">—</b> in broad General ad groups</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">TikTok ROAS on Singular, iOS · Android</div><div class="val"><b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_ios_roas_sing">—</b> · <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_and_roas_sing">—</b></div><div class="chg">Live ad groups only. As TikTok reports it: <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_ios_roas_sing_reported">—</b> · <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_and_roas_sing_reported">—</b></div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">Meta ROAS on Singular, iOS · Android</div><div class="val"><b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=meta_ios_roas_sing">—</b> · <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=meta_and_roas_sing">—</b></div><div class="chg">Each network credits itself: not comparable with TikTok's</div></div>
+      <div class="bx-card bx-kpi"><div class="lbl">App Store money per iOS $: Meta · TikTok</div><div class="val"><b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_meta_ios">—</b> · <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_tt_ios">—</b></div><div class="chg">Same model, country by week. TikTok ± <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_tt_ios_se">—</b>; range across models <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_tt_ios_lo">—</b> to <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=store_per_tt_ios_hi">—</b></div></div>
+    </div>
+    <div class="bx-stack">
+      <div class="bx-card">
+        <h3 class="bx-h2" id="ch-spend-h">Spend by channel vs App Store money, per week</h3>
+        <p class="bx-note">Bars: purchase spend by channel and OS. Line: App Store proceeds (iOS money only; Google Play isn't connected yet). Dotted: TikTok's move to MMP campaigns and Meta's Singular switch.</p>
+        <div class="bx-chart" id="ch-spend" data-source="ch_weekly"></div>
+      </div>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2" id="ch-roas-h">What each channel credits itself (ROAS), per week</h3>
+          <p class="bx-note">Each line is measured on a different ruler: compare a line with itself, never one channel's level with the other's. TikTok lines use live ad groups only. TikTok Android purchases went missing for <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_android_gap_weeks">—</b> weeks right after its MMP move.</p>
+          <div class="bx-chart" id="ch-roas" data-source="ch_weekly"></div>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2" id="ch-ghost-h">TikTok value: ad groups spending vs not spending</h3>
+          <p class="bx-note">Since the MMP move, TikTok gets purchase value on ad groups that didn't spend that week: <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_ghost_never_spent">—</b> of them haven't spent at all since December and still got <b class="dash-skeleton" data-source="ch_facts" data-field="value" data-where="fact=tt_ghost_never_value">—</b> since March. Most likely renewals of users acquired earlier: real money, but not bought by this week's spend.</p>
+          <div class="bx-chart" id="ch-ghost" data-source="ch_weekly"></div>
+        </div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2" id="ch-store-h">App Store money per iOS $, by channel</h3>
+        <p class="bx-note">Weekly App Store proceeds by storefront against Meta and TikTok iOS spend in that country, with country and week effects removed. TikTok's spend moves less from week to week than Meta's, so its estimate is less precise; a geo test settles it. Correlation, not proof.</p>
+        <table class="bx-tbl" id="ch-store" data-source="ch_store" data-row-key="key">
+          <thead><tr><th data-field="spec">Model</th><th class="n" data-field="meta">Meta iOS $</th><th class="n" data-field="tiktok">TikTok iOS $</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2" id="ch-country-h">Countries: Meta and TikTok, before vs last 10 weeks</h3>
+        <p class="bx-note">Per week. "vs avg" = the channel's ROAS in that country against the same channel and OS overall (1.00 = average), so it compares within a channel only. Where TikTok was cut, App Store money mostly held.</p>
+        <div class="bx-scroll" style="max-height:34rem">
+          <table class="bx-tbl" id="ch-country" data-source="ch_country" data-row-key="country">
+            <thead><tr><th data-field="country">Country</th><th class="n" data-field="paid_now">Paid now</th><th class="n" data-field="tt_share_pre">TikTok share before</th><th class="n" data-field="tt_share_now">TikTok share now</th>
+            <th class="n" data-field="meta_ios_idx_now">Meta iOS vs avg</th><th class="n" data-field="tt_ios_idx_now">TikTok iOS vs avg</th><th class="n" data-field="d_meta_ios">Δ Meta iOS</th><th class="n" data-field="d_tt_ios">Δ TikTok iOS</th><th class="n" data-field="d_proceeds">Δ App Store</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="bx-card" style="position:relative">
+        <h3 class="bx-h2" id="ch-ag-h">TikTok ad groups</h3>
+        <p class="bx-note">Ad groups with $500+ spend. Status and colours compare each ad group with TikTok's own OS average in the same week (live value only), because TikTok has no bar of its own yet. Cells: spend that week.</p>
+        <div class="bx-legend"><span><i style="background:var(--z-green)"></i>at or above TikTok's OS average</span><span><i style="background:var(--z-amber)"></i>85–100%</span><span><i style="background:var(--z-crit)"></i>75–85%</span><span><i style="background:var(--z-crit2)"></i>under 75%</span></div>
+        <div class="bx-gwrap">
+          <table class="bx-grid" id="ch-ag" data-source="ch_adgroups" data-row-key="key"><thead><tr id="ch-ag-head"></tr></thead><tbody id="ch-ag-body"></tbody></table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GRID ===================== -->
+  <section class="bx-page" id="grid" hidden>
+    <div class="bx-card bx-dos" id="dossier" hidden>
+      <div class="bx-dos-head">
+        <div>
+          <h3 id="dos-title" data-gfield="short">—</h3>
+          <div class="bx-note" style="margin:2px 0 0"><span id="dos-status" data-gfield="status">—</span> · <span id="dos-why" data-gfield="why">—</span></div>
+          <div class="bx-note" style="margin:2px 0 0;word-break:break-all" id="dos-name" data-gfield="label">—</div>
+        </div>
+        <button class="bx-x" id="dos-close" aria-label="Close">×</button>
+      </div>
+      <div class="bx-facts">
+        <div>Spend last week<span id="f-spend" data-gfield="spend_last">—</span></div>
+        <div>ROAS last week<span id="f-roas" data-gfield="roas_last">—</span></div>
+        <div>Peak $/week<span id="f-peak" data-gfield="peak_all">—</span></div>
+        <div>Peak week<span id="f-peakw" data-gfield="peak_all_week">—</span></div>
+        <div>Below 6-month peak<span id="f-lost" data-gfield="scale_lost">—</span></div>
+        <div>Best 4 weeks (6 mo): vs bar · vs its OS<span id="f-best4" data-gfield="best4_vs_bar">—</span></div>
+      </div>
+      <div class="bx-sm" id="dos-charts" data-source="weekly"></div>
+      <h4 class="bx-h2" style="margin:var(--cds-gap-md) 0 var(--cds-gap-xs)">Concept relay: share of spend by creative concept, per week</h4>
+      <p class="bx-note">Top 5 concept codes for this row; the rest are grey. Hover a bar for spend and ROAS. Purchase adsets only.</p>
+      <div class="bx-chart" id="dos-relay" data-source="cr_relay" style="min-height:220px"></div>
+      <h4 class="bx-h2" style="margin:var(--cds-gap-md) 0 var(--cds-gap-xs)">Country mix: share of spend by country, per week</h4>
+      <p class="bx-note">Top 5 countries for this row; the rest are grey. Hover for spend and Meta ROAS in that country.</p>
+      <div class="bx-chart" id="dos-country" data-source="ct_relay" style="min-height:220px"></div>
+    </div>
+
+    <div class="bx-card" id="grid-card" style="position:relative">
+      <div class="bx-ctrl">
+        <div class="bx-seg" id="c-view" role="group" aria-label="View">
+          <button data-v="adset" aria-pressed="true">By adset</button><button data-v="perslang" aria-pressed="false">By persona × language</button>
+        </div>
+        <label class="bx-note" style="margin:0">Sort <select id="c-sort">
+          <option value="severity">Status, worst first</option><option value="leaking">Leaking $</option>
+          <option value="scale_lost">Below peak $</option><option value="spend_last">Spend last week</option><option value="roas_last">ROAS last week, lowest first</option>
+        </select></label>
+        <div class="bx-seg" id="c-show" role="group" aria-label="Show">
+          <button data-v="live" aria-pressed="true">Live</button><button data-v="all" aria-pressed="false">Everything, incl. off</button>
+        </div>
+        <div class="bx-seg" id="c-colour" role="group" aria-label="Colour cells by">
+          <button data-v="abs" aria-pressed="true">Colour: the bar of each week's ruler</button><button data-v="rel" aria-pressed="false">Colour: vs same OS that week</button>
+        </div>
+        <input id="c-q" type="search" placeholder="Search persona, OS, language…" aria-label="Search">
+      </div>
+      <div class="bx-legend" id="leg-rel" hidden>
+        <span><i style="background:var(--z-green)"></i>at or above its OS's ROAS that week</span><span><i style="background:var(--z-amber)"></i>85–100% of it</span>
+        <span><i style="background:var(--z-crit)"></i>75–85%</span><span><i style="background:var(--z-crit2)"></i>under 75%</span><span>↑ ↓ spend ±20% vs prior week</span>
+      </div>
+      <div class="bx-legend" id="leg-abs">
+        <span><i style="background:var(--z-green)"></i>at or above the bar</span><span><i style="background:var(--z-amber)"></i>amber</span>
+        <span><i style="background:var(--z-crit)"></i>critical</span><span><i style="background:var(--z-crit2)"></i>deep red</span>
+        <span><i style="background:var(--z-other)"></i>not judged on ROAS</span><span>↑ ↓ spend ±20% vs prior week</span>
+        <span>📉 shrinking · 🧱 never reached the bar or its OS average</span>
+        <span>Bar: <b>0.50 / 0.40</b> on Meta's own attribution (to 22 Feb iOS, 8 Mar Android) · <b>0.40 / 0.32</b> on Singular (set 27 Oct) · <em>italic</em> weeks = switching</span>
+      </div>
+      <p class="bx-note" style="margin:0 0 var(--cds-gap-sm)">#1 creative, reign week, US share and top country are for the week of <span id="mix-week">—</span> (last full week of ad and country data). ⏳ = the #1 is in week 3+ of its reign, when ROAS usually starts to slide.</p>
+      <div class="bx-gwrap" id="gwrap">
+        <table class="bx-grid" id="gtable" data-source="grid" data-row-key="key">
+          <thead><tr id="ghead"></tr></thead><tbody id="gbody"></tbody>
+        </table>
+      </div>
+      <div class="bx-tip" id="gtip"></div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ===================== WHY ROAS FELL ===================== -->
+  <section class="bx-page" id="why" hidden>
+    <p class="bx-take" style="font-size:var(--cds-font-size-heading);color:var(--color-fg);max-width:80ch" id="why-take">Meta's numbers have come through Singular, our MMP, since <b class="dash-skeleton" data-source="era_facts" data-field="label" data-where="fact=switch_ios">—</b> on iOS and <b class="dash-skeleton" data-source="era_facts" data-field="label" data-where="fact=switch_android">—</b> on Android. For the same App Store money, Singular credits Meta <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=ruler_ratio_iOS">—</b> (iOS) and <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=ruler_ratio_Android">—</b> (Android) of what Meta's own attribution did. That is the whole "March break": a smaller ruler, not a weaker business. Every relative finding holds on the new ruler, so the bar moves with it, and absolute Meta ROAS is never compared across the switch.</p>
+
+    <div class="bx-stack">
+      <h2 class="bx-h2" id="why-1" style="margin-top:var(--cds-gap-sm)">1 · What the switch moved, and what it didn't</h2>
+      <div class="bx-card">
+        <h3 class="bx-h2">Each metric against its own Dec – mid-Feb average (1.00), by OS</h3>
+        <p class="bx-note">Dotted lines: the switch week of each OS. Numbers credited through the MMP (ROAS, purchases, installs, click → install) stepped down in the switch week. CPM didn't. iOS click-through also jumped in the switch week while click → install halved: the iOS click path changed with the switch (link, landing page or how clicks are counted), so iOS CTR and click → install are not comparable across it either. Hook rate also fell, starting the week before the switch; Meta counts it itself, so that is the creative mix, not the ruler.</p>
+        <div class="bx-sm" id="era-sm" data-source="era_weekly"></div>
+      </div>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2">Before vs the Singular era</h3>
+          <p class="bx-note">Weeks to <b class="dash-skeleton" data-source="era_facts" data-field="label" data-where="fact=pre_end">—</b> vs weeks from <b class="dash-skeleton" data-source="era_facts" data-field="label" data-where="fact=singular_start">—</b>. "Step" compares the 4 weeks before and after each OS's switch week, so slow trends don't count.</p>
+          <div class="bx-scroll" style="max-height:30rem">
+            <table class="bx-tbl" id="era-os" data-source="era_os" data-row-key="key">
+              <thead><tr><th data-field="metric">Metric</th><th data-field="os">OS</th><th class="n" data-field="pre">Before</th><th class="n" data-field="singular">Singular era</th><th class="n" data-field="ratio">Ratio</th><th class="n" data-field="step">Step at switch</th><th data-field="kind">Counted by</th></tr></thead><tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2">ROAS by when the creative was launched</h3>
+          <p class="bx-note">Creatives already running before December fell from <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=cohort_old_feb">—</b> in February to <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=cohort_old_mar">—</b> in March, the same drop as brand-new ones. A creative problem would hit new creatives, not old winners. Dashed: the bar of each month's ruler.</p>
+          <div class="bx-chart" id="why-cohort" data-source="rc_cohort"></div>
+        </div>
+      </div>
+
+      <h2 class="bx-h2" id="why-2" style="margin-top:var(--cds-gap-md)">2 · The App Store money didn't break</h2>
+      <div class="bx-cards">
+        <div class="bx-card bx-kpi"><div class="lbl">Meta iOS ROAS, before → after</div><div class="val"><b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=meta_ios_roas_pre">—</b> → <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=meta_ios_roas_post">—</b></div><div class="chg">Weeks of 1 Dec – 16 Feb vs from 2 Mar</div></div>
+        <div class="bx-card bx-kpi"><div class="lbl">App Store proceeds per iOS ad dollar</div><div class="val"><b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=proceeds_per_dollar_pre">—</b> → <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=proceeds_per_dollar_post">—</b></div><div class="chg">Ratio after/before across 8 model variants: <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=proceeds_ratio_min">—</b> to <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=proceeds_ratio_max">—</b></div></div>
+        <div class="bx-card bx-kpi"><div class="lbl">App Store proceeds per day</div><div class="val"><b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=apple_day_pre">—</b> → <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=apple_day_now">—</b></div><div class="chg">1 Dec – 22 Feb vs 1 Aug – 18 Oct</div></div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2">App Store proceeds vs revenue Meta credits to iOS ads, per week</h3>
+        <p class="bx-note">Proceeds are all App Store money after Apple's cut, including renewals and organic. Meta's credited revenue dropped at the Singular switch (shaded); proceeds barely moved. As a sanity check, Android ad spend shows no link to App Store proceeds (<b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=android_placebo">—</b> per dollar), as it shouldn't.</p>
+        <div class="bx-chart" id="why-proceeds" data-source="rc_weekly"></div>
+      </div>
+
+      <h2 class="bx-h2" id="why-3" style="margin-top:var(--cds-gap-md)">3 · Decisions made on the new ruler</h2>
+      <p class="bx-take" style="max-width:80ch">Adset by adset, budget moves kept following relative results (<b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=moves_right_pre">—</b> before, <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=moves_right_singular">—</b> on Singular): the buyer's read of which adsets beat their OS survived the switch. The damage was at account level. Spend fell to about $120k a week in May and June while account Meta ROAS read 0.37–0.40 (red on the old bar, green on the new one), and App Store proceeds fell with it. <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=cuts_strong">—</b> adsets were switched off while at or above their OS average.</p>
+      <div class="bx-cards">
+        <div class="bx-card bx-kpi"><div class="lbl">Spend per week</div><div class="val"><b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=spend_wk_pre">—</b> → <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=spend_wk_singular_early">—</b> → <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=spend_wk_singular_late">—</b></div><div class="chg">Dec – mid Feb · mid Mar – Jun · Jul – now</div></div>
+        <div class="bx-card bx-kpi"><div class="lbl">App Store proceeds per week</div><div class="val"><b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=store_wk_pre">—</b> → <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=store_wk_singular_early">—</b> → <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=store_wk_singular_late">—</b></div><div class="chg">Same windows; renewals and organic included</div></div>
+        <div class="bx-card bx-kpi"><div class="lbl">Green spend share, before vs Singular</div><div class="val"><b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=green_old_bar_pre">—</b> → <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=green_old_bar_singular">—</b></div><div class="chg">On the old 0.50 bar. On 0.40: <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=green_new_bar_singular">—</b></div></div>
+        <div class="bx-card bx-kpi"><div class="lbl">"Under 0.39 is critical" in old units</div><div class="val"><b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=old_units_of_039">—</b></div><div class="chg">Above the old green bar of 0.50</div></div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2">Spend and App Store money through the switch</h3>
+        <p class="bx-note">Bars: Meta purchase-adset spend. Line: App Store proceeds. Whether the May – June pullback was a good trade depends on what a subscriber is worth after the first weeks: the profit bar decision.</p>
+        <div class="bx-chart" id="era-path" data-source="ov_weekly"></div>
+      </div>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2">Budget moves of ±20% or more, per era</h3>
+          <p class="bx-note">"Followed the result": raised an adset that beat its OS average by 5%+ over the two weeks before, or cut one 5%+ below it. Judged on the relative result, which the switch doesn't distort.</p>
+          <table class="bx-tbl" id="era-moves" data-source="era_moves" data-row-key="era">
+            <thead><tr><th data-field="era">Era</th><th class="n" data-field="moves_per_week">Moves / week</th><th class="n" data-field="right_share">Followed the result</th><th class="n" data-field="strong_cut">Strong adsets cut / week</th><th class="n" data-field="weak_raised">Weak adsets raised / week</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2">Concepts launched per month</h3>
+          <p class="bx-note">Concepts new to the account (lifetime spend $200+), their first 8 weeks against their OS account (1.00 = average, comparable across the switch). Below 1.00: that month's launches earned less than the rest of their OS while they were new.</p>
+          <table class="bx-tbl" id="era-launch" data-source="era_launch" data-row-key="month">
+            <thead><tr><th data-field="month">Month</th><th class="n" data-field="concepts">Concepts</th><th class="n" data-field="spend_first_8w">Spend, first 8 weeks</th><th class="n" data-field="became_top">Became an adset's #1</th><th class="n" data-field="rel_index">vs OS account</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2">Adsets switched off since the switch while at or near their OS average</h3>
+        <p class="bx-note">Peak $1.5k+ a week, judged on their last 4 spending weeks. "Old bar" is how the team read them in March – April; "new bar" is the same ROAS on the Singular bar. Many went in the late-March move to v8 names; check each one was replaced, not lost.</p>
+        <div class="bx-scroll" style="max-height:30rem">
+          <table class="bx-tbl" id="era-cuts" data-source="era_cuts" data-row-key="adset_id">
+            <thead><tr><th data-field="name">Adset</th><th data-field="os">OS</th><th class="n" data-field="last_week">Last spend</th><th class="n" data-field="peak_wk">Peak $/wk</th><th class="n" data-field="roas_last4">ROAS, last 4 wks</th><th class="n" data-field="rel_last4">vs its OS</th><th data-field="old_bar">Old bar</th><th data-field="new_bar">New bar</th><th data-field="persona_fate">Persona on that OS now</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <h2 class="bx-h2" id="why-4" style="margin-top:var(--cds-gap-md)">4 · Do the findings hold in the Singular era alone?</h2>
+      <div class="bx-card">
+        <p class="bx-note">Each finding computed twice with the same method: on every week since December, and only on weeks from <b class="dash-skeleton" data-source="era_facts" data-field="label" data-where="fact=singular_start">—</b> (one ruler). Relative findings compare an adset with its own OS in the same week, so the ruler cancels out. Absolute Meta ROAS levels are left out on purpose: they can't be compared across the switch.</p>
+        <table class="bx-tbl" id="era-compare" data-source="era_compare" data-row-key="finding">
+          <thead><tr><th data-field="area">Area</th><th data-field="label">Finding</th><th class="n" data-field="full">All weeks</th><th class="n" data-field="singular">Singular era only</th><th data-field="verdict">Verdict</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+
+      <h2 class="bx-h2" id="why-5" style="margin-top:var(--cds-gap-md)">5 · What it cost: the US</h2>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2">US App Store proceeds and US-only adset spend, per week</h3>
+          <p class="bx-note">The US-only iOS adset ran at ROAS <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=us_adset_roas_decjan">—</b> in Dec – Jan with <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=us_adset_rpp">—</b> per purchase. It fell to <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=us_adset_roas_marapr">—</b> with everything else in March, read as red on the old bar (green on the new one), and was cut to zero by mid-May. Inside the same worldwide adsets, Singular credits US traffic <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=us_vs_rest_ww_singular">—</b> the rest of the world (was <b class="dash-skeleton" data-source="era_facts" data-field="value" data-where="fact=us_vs_rest_ww_pre">—</b>), so the new ruler may under-read the US more than other markets. US proceeds went from <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=us_week_pre">—</b> a week to <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=us_week_low">—</b>.</p>
+          <div class="bx-chart" id="why-us" data-source="rc_weekly"></div>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2">App Store proceeds per day, by country</h3>
+          <p class="bx-note">1 Dec – 22 Feb vs 1 Aug – 18 Oct. Nearly every market grew; the US and India, the two that lost their country-only adsets, are the exceptions.</p>
+          <div class="bx-scroll" style="max-height:26rem">
+            <table class="bx-tbl" id="why-country" data-source="rc_country" data-row-key="country">
+              <thead><tr><th data-field="country">Country</th><th class="n" data-field="before">Before</th><th class="n" data-field="now">Now</th><th class="n" data-field="change">Change</th></tr></thead><tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="bx-h2" id="why-6" style="margin-top:var(--cds-gap-md)">6 · What we tested and ruled out</h2>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2">Spend level: not what moves ROAS</h3>
+          <p class="bx-note">Adset ROAS vs its OS account, week after a budget change. Raw, big raises look costly; most of that is luck wearing off. A week above average loses <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=mean_reversion">—</b> of its edge the next week regardless, and buyers raise budgets <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=buyer_raise_after_good_week">—</b> after a strong week.</p>
+          <table class="bx-tbl" id="why-spend" data-source="rc_spend" data-row-key="change">
+            <thead><tr><th data-field="change">Budget move</th><th class="n" data-field="adset_weeks">Adset-weeks</th><th class="n" data-field="raw">ROAS change, raw</th><th class="n" data-field="adjusted">After removing luck</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2">Refreshes: they work only when they win spend</h3>
+          <p class="bx-note">Adset ROAS vs its OS account, 2 weeks before vs 2 weeks after. Proven concepts won 20%+ of an adset's spend <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=delivered_share_proven">—</b> of the time on arrival; brand-new ones <b class="dash-skeleton " data-source="rc_facts" data-field="value" data-where="fact=delivered_share_new">—</b>.</p>
+          <table class="bx-tbl" id="why-refresh" data-source="rc_refresh" data-row-key="type">
+            <thead><tr><th data-field="type">What arrived</th><th class="n" data-field="events">Cases</th><th class="n" data-field="rel_roas_change">ROAS change</th><th class="n" data-field="share_improved">Improved</th><th class="n" data-field="spend_change">Spend change</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2">Creative families against their own adsets</h3>
+        <p class="bx-note">Index 1.00 = the adset's average ROAS in the same week. Meta keeps every creative close to its adset's ROAS, so creative mostly decides how much spend an adset can take, not its ROAS. Families with $30k+ spend.</p>
+        <div class="bx-scroll" style="max-height:30rem">
+          <table class="bx-tbl" id="why-creative" data-source="rc_creative" data-row-key="cname">
+            <thead><tr><th data-field="cname">Concept family</th><th class="n" data-field="spend">Spend</th><th class="n" data-field="roas">ROAS</th><th data-field="index">Index vs adset</th><th class="n" data-field="gap">Revenue vs adset avg</th><th class="n" data-field="delivered">Won spend on arrival</th><th class="n" data-field="arrivals">Arrivals</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <h2 class="bx-h2" id="why-7" style="margin-top:var(--cds-gap-md)">7 · The funnel steps, Singular era only</h2>
+
+      <div class="bx-card" id="drivers-card">
+        <h2 class="bx-h2">Where the ROAS went</h2>
+        <p class="bx-note">ROAS = installs per 1,000 impressions (IPM) × install → purchase × revenue per purchase ÷ CPM. Base: <span data-source="drivers" data-field="base_period" data-where="driver=roas">—</span>. Now: <span data-source="drivers" data-field="current_period" data-where="driver=roas">—</span>.</p>
+        <p class="bx-take" id="drv-take" style="margin-bottom:var(--cds-gap-sm)">ROAS moved from <b data-source="drivers" data-field="base" data-where="driver=roas">—</b> to <b data-source="drivers" data-field="current" data-where="driver=roas">—</b>. IPM, the install-rate signal you use for demand, changed <b data-source="drivers" data-field="change" data-where="driver=ipm">—</b>; CPM changed <b data-source="drivers" data-field="change" data-where="driver=cpm">—</b>, revenue per purchase <b data-source="drivers" data-field="change" data-where="driver=rpp">—</b> and install → purchase <b data-source="drivers" data-field="change" data-where="driver=i2p">—</b>.</p>
+        <table class="bx-tbl" id="drv" data-source="drivers" data-row-key="driver">
+          <thead><tr><th data-field="label">Step</th><th class="n" data-field="base">Base</th><th class="n" data-field="current">Now</th><th class="n" data-field="change">Change</th><th data-field="roas_points">ROAS points it explains</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <p class="bx-note" style="margin-top:var(--cds-gap-sm)">Both windows are on Singular, so the steps compare like with like. "Points it explains" splits the ROAS change across the four steps (log shares); CTR and click → install are the two parts of IPM.</p>
+      </div>
+      <div class="bx-card" id="drivers-trend-card">
+        <h2 class="bx-h2">The steps, week by week</h2>
+        <p class="bx-note">Account totals. Dashed line: the base-period value.</p>
+        <div class="bx-sm" id="drv-sm" data-source="account drivers"></div>
+      </div>
+    
+    </div>
+  </section>
+
+
+  <!-- ===================== CREATIVES ===================== -->
+  <section class="bx-page" id="creatives" hidden>
+    <p class="bx-take" style="font-size:var(--cds-font-size-heading);color:var(--color-fg);max-width:80ch" id="cr-take">Each adset's #1 concept takes <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=top_share_median">—</b> of its spend in a typical week and stays on top for a median of <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=reign_median">—</b> weeks. The adset's ROAS holds for two weeks of a reign, then slides. Whether a new concept will take over is decided in its first week, by the spend Meta gives it, not by hook rate or CTR.</p>
+    <div class="bx-stack">
+      <div class="bx-card">
+        <h3 class="bx-h2" id="cr-relay-h">Who carries the account: share of all spend by concept, per week</h3>
+        <p class="bx-note">Top 8 concept codes by total spend; everything else is grey. Weeks are Mon–Sun, spread evenly from the monthly ad exports, so week edges are approximate.</p>
+        <div class="bx-chart" id="cr-acct" data-source="cr_acct_relay"></div>
+      </div>
+      <div class="bx-card">
+        <h3 class="bx-h2">Codes that became #1</h3>
+        <p class="bx-note">ROAS while #1, against the account in the same weeks and against the rest of the same adset. Above 1.00 = better.</p>
+        <div class="bx-scroll" style="max-height:26rem">
+          <table class="bx-tbl" id="cr-leaders" data-source="cr_leaders" data-row-key="code">
+            <thead><tr><th data-field="code">Code</th><th data-field="cname">Concept</th><th data-field="top_hook">Biggest hook</th><th class="n" data-field="adsets_led">Adsets led</th><th class="n" data-field="weeks_as_1">Adset-weeks as #1</th><th class="n" data-field="spend_as_1">Spend as #1</th><th class="n" data-field="roas_vs_acct">vs account</th><th class="n" data-field="vs_rest">vs rest of adset</th><th class="n" data-field="first_as_1">First #1</th><th class="n" data-field="last_as_1">Last #1</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2">What happens during a reign</h3>
+          <p class="bx-note">Reigns of 4+ weeks, each line relative to the week the #1 took over (1.00). <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=reign_6plus">—</b> of reigns last 6+ weeks. ROAS starts sliding in week 3 while spend keeps rising.</p>
+          <div class="bx-chart" id="cr-reign" data-source="cr_reign"></div>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2">A clear winner helps</h3>
+          <p class="bx-note">Adset ROAS against its OS account, by how much of the adset's spend its #1 takes. Across all weeks the #1 runs at <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=top_vs_rest">—</b> the ROAS of the rest of its adset.</p>
+          <table class="bx-tbl" id="cr-conc" data-source="cr_concentration" data-row-key="band">
+            <thead><tr><th data-field="band">#1's share of adset spend</th><th class="n" data-field="adset_weeks">Adset-weeks</th><th class="n" data-field="adset_roas_vs_acct">Adset ROAS vs account</th><th class="n" data-field="top_vs_rest">#1 vs rest</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="bx-two">
+        <div class="bx-card">
+          <h3 class="bx-h2">Spotting the next #1 in week one</h3>
+          <p class="bx-note"><b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=arrivals">—</b> new concepts entered an adset; <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=became_top">—</b> became its #1 within 4 weeks. First-week numbers are relative to the adset that week. Predictive power: 0.50 = coin flip, 1.00 = perfect.</p>
+          <table class="bx-tbl" id="cr-signals" data-source="cr_signals" data-row-key="signal">
+            <thead><tr><th data-field="signal">Week-1 signal</th><th class="n" data-field="winners">Became #1</th><th class="n" data-field="others">Didn't</th><th data-field="power">Predictive power</th></tr></thead><tbody></tbody>
+          </table>
+          <table class="bx-tbl" id="cr-week1" data-source="cr_week1" data-row-key="week1_share" style="margin-top:var(--cds-gap-md)">
+            <thead><tr><th data-field="week1_share">Share of adset spend in week 1</th><th class="n" data-field="arrivals">New concepts</th><th class="n" data-field="became_top">Became #1</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+        <div class="bx-card">
+          <h3 class="bx-h2">When the #1 changes</h3>
+          <p class="bx-note">Adset ROAS vs its OS account, 2 weeks before vs 2 weeks after. A fresh concept taking over holds ROAS and spend; an older one moving up usually means the adset is shrinking.</p>
+          <table class="bx-tbl" id="cr-takeover" data-source="cr_takeover" data-row-key="kind">
+            <thead><tr><th data-field="kind">This week</th><th class="n" data-field="cases">Cases</th><th class="n" data-field="roas_change">ROAS change</th><th class="n" data-field="improved">Improved</th><th class="n" data-field="spend_change">Spend change</th></tr></thead><tbody></tbody>
+          </table>
+          <h3 class="bx-h2" style="margin-top:var(--cds-gap-lg)">The Singular switch, by top creative</h3>
+          <p class="bx-note">Adsets live in both 2–15 Feb and 16–29 Mar. Where the same creative stayed #1, its Meta ROAS still went from <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=same_top_before">—</b> to <b class="dash-skeleton" data-source="cr_facts" data-field="value" data-where="fact=same_top_after">—</b> in the same adsets: the ruler changed, not the creative.</p>
+          <table class="bx-tbl" id="cr-break" data-source="cr_break" data-row-key="group">
+            <thead><tr><th data-field="group">Adsets where</th><th class="n" data-field="adsets">Adsets</th><th class="n" data-field="roas_before">ROAS before</th><th class="n" data-field="roas_after">ROAS after</th><th class="n" data-field="change">Change</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DATA CHECKS ===================== -->
+  <section class="bx-page" id="checks" hidden>
+    <div class="bx-card">
+      <h2 class="bx-h2">What the upload check found</h2>
+      <p class="bx-note">Run on every upload before any number is used.</p>
+      <table class="bx-tbl" id="chk" data-source="checks" data-row-key="id">
+        <thead><tr><th data-field="check">Check</th><th data-field="finding">Finding</th><th class="n" data-field="count">Count</th><th class="n" data-field="spend">Spend involved</th><th data-field="detail">Detail</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const num = (v) => (v === '' || v == null || v === 'nan' || v === 'NaN') ? NaN : Number(v);
+  const tf = (v) => v === true || v === 'True' || v === 'true';
+  const money = (v) => !isFinite(v) ? '—' : (Math.abs(v) >= 10000
+    ? '$' + new Intl.NumberFormat('en', {notation: 'compact', maximumFractionDigits: 1}).format(v)
+    : d3.format('$,.0f')(v));
+  const kfmt = (v) => !isFinite(v) || v <= 0 ? '' : (v >= 9950 ? Math.round(v / 1000) + 'k' : v >= 1000 ? (v / 1000).toFixed(1) + 'k' : String(Math.round(v)));
+  const r2 = (v) => isFinite(v) ? v.toFixed(2) : '—';
+  const pct = (v) => isFinite(v) ? d3.format('.1%')(v) : '—';
+  const spct = (v) => isFinite(v) ? d3.format('+.1%')(v) : '—';
+  const dshort = (s) => s ? d3.utcFormat('%-d %b')(new Date(s)) : '—';
+  /* ---------- measurement eras (engine/settings.py → era_facts) ----------
+     Meta's numbers come through Singular from the switch week of each OS. Each week is judged on
+     the bar of its own ruler; absolute Meta ROAS is never compared across the switch. */
+  const ERA = {sw: {iOS: '2026-02-23', Android: '2026-03-09'}, singStart: '2026-03-16', preEnd: '2026-02-16', status: '',
+    bars: {meta: {green: 0.5, amber: 0.4, deep: 0.35}, singular: {green: 0.40, amber: 0.32, deep: 0.28}}, loaded: false};
+  const loadEra = () => {
+    if (ERA.loaded || dash.data('era_facts').status !== 'ok') return;
+    const F = new Map(dash.data('era_facts').data.map(r => [r.fact, r]));
+    const lab = k => (F.get(k) || {}).label, val = k => num((F.get(k) || {}).value);
+    if (lab('switch_ios')) ERA.sw.iOS = lab('switch_ios');
+    if (lab('switch_android')) ERA.sw.Android = lab('switch_android');
+    if (lab('singular_start')) ERA.singStart = lab('singular_start');
+    if (lab('pre_end')) ERA.preEnd = lab('pre_end');
+    ERA.status = lab('bar_status') || '';
+    ['meta', 'singular'].forEach(k => ['green', 'amber', 'deep'].forEach(z => { const x = val(`bar_${z}_${k}`); if (isFinite(x)) ERA.bars[k][z] = x; }));
+    ERA.loaded = true;
+  };
+  const swOf = (os) => ERA.sw[os] || ERA.sw.iOS;
+  const rulerOf = (w, os) => (w >= swOf(os) ? 'singular' : 'meta');
+  const barOf = (w, os) => ERA.bars[w ? rulerOf(w, os) : 'singular'];
+  const rulerName = (w, os) => rulerOf(w, os) === 'singular' ? 'Singular' : "Meta's own attribution";
+  const zoneOf = (r, judged = true, w = null, os = null) => {
+    if (!judged) return 'z-other'; if (!isFinite(r)) return '';
+    const b = barOf(w, os); return r >= b.green ? 'z-green' : r >= b.amber ? 'z-amber' : r >= b.deep ? 'z-crit' : 'z-crit2';
+  };
+  // stepped bar lines (green + amber) across a date range, for any chart with a y scale
+  const drawBarSteps = (svg, x, y, d0, d1, os, labels = false) => {
+    const sw = new Date(swOf(os));
+    ['green', 'amber'].forEach(k => {
+      const segs = [];
+      if (d0 < sw) segs.push([d0, d1 < sw ? d1 : sw, ERA.bars.meta[k]]);
+      if (d1 >= sw) segs.push([d0 > sw ? d0 : sw, d1, ERA.bars.singular[k]]);
+      segs.forEach(([a, b, v], i) => {
+        svg.append('line').attr('x1', x(a)).attr('x2', x(b)).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+        if (labels && i === segs.length - 1) svg.append('text').attr('x', x(b) + 4).attr('y', y(v) + 4).text(v.toFixed(2));
+      });
+    });
+  };
+  const drawSwitch = (svg, x, y0, y1, os, label) => {
+    const d = new Date(swOf(os)); const xx = x(d); if (!isFinite(xx)) return;
+    svg.append('line').attr('x1', xx).attr('x2', xx).attr('y1', y0).attr('y2', y1).attr('stroke', 'var(--cds-chart-axis)').attr('stroke-dasharray', '2 3');
+    if (label) svg.append('text').attr('x', xx + 4).attr('y', y0 + 10).text(label);
+  };
+  const zoneRel = (x, judged = true) => !judged ? 'z-other' : !isFinite(x) ? '' : x >= 1 ? 'z-green' : x >= 0.85 ? 'z-amber' : x >= 0.75 ? 'z-crit' : 'z-crit2';
+  let regionNames = null; try { regionNames = new Intl.DisplayNames(['en'], {type: 'region'}); } catch (e) { regionNames = null; }
+  const regionName = (c) => { if (!c || c === 'Other') return c || ''; try { return regionNames ? regionNames.of(c) : c; } catch (e) { return c; } };
+  const ok = (id) => dash.data(id).status === 'ok';
+  const fail = (el, id) => { const s = dash.data(id).status; if (s === 'error') { el.innerHTML = ''; const d = document.createElement('div'); d.className = 'bx-fail'; d.textContent = 'Failed to load'; el.appendChild(d); } };
+
+  /* ---------- tabs ---------- */
+  let tab = 'overview';
+  const show = (t, push = true) => {
+    tab = t;
+    $$('.bx-tab').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
+    $$('.bx-page').forEach(p => p.hidden = p.id !== t);
+    if (push) dash.setLink(t);
+    draw();
+  };
+  $$('.bx-tab').forEach(b => b.addEventListener('click', () => show(b.dataset.tab)));
+
+  /* ---------- state ---------- */
+  const st = {view: 'adset', sort: 'severity', show: 'live', q: '', sel: null, colour: 'abs'};
+  const seg = (id, key) => $(id).addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    st[key] = b.dataset.v;
+    $$('button', $(id)).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    drawGrid();
+  });
+  seg('#c-view', 'view'); seg('#c-show', 'show'); seg('#c-colour', 'colour');
+  $('#c-sort').addEventListener('change', e => { st.sort = e.target.value; drawGrid(); });
+  $('#c-q').addEventListener('input', e => { st.q = e.target.value.trim().toLowerCase(); drawGrid(); });
+  $('#dos-close').addEventListener('click', () => { st.sel = null; $('#dossier').hidden = true; markSel(); });
+
+  /* ---------- shared data ---------- */
+  let G = null, W = null, weeks = [], byKey = new Map(), wk = new Map(), acc = [], mdWeeks = new Set(), accR = new Map(), accOS = new Map();
+  // "the account" for a row = its own OS in the same week (falls back to all OS for mixed rows)
+  const accFor = (w, os) => { const a = accOS.get(w); if (!a) return NaN; return (os === 'iOS' || os === 'Android') && isFinite(a[os]) ? a[os] : a.all; };
+  const osLabel = (os) => (os === 'iOS' || os === 'Android') ? os : 'the account';
+  const prep = () => {
+    if (ok('grid') && !G) {
+      const d = dash.data('grid');
+      G = d.data;
+      weeks = (d.columns || Object.keys(G[0])).filter(c => c.startsWith('s_')).map(c => c.slice(2)).sort().reverse();
+      G.forEach(r => byKey.set(r.key, r));
+    }
+    if (ok('weekly') && !W) {
+      W = dash.data('weekly').data;
+      W.forEach(r => { if (!wk.has(r.ekey)) wk.set(r.ekey, []); wk.get(r.ekey).push(r); });
+      wk.forEach(a => a.sort((x, y) => x.week < y.week ? -1 : 1));
+    }
+    if (ok('account')) {
+      acc = dash.data('account').data;
+      mdWeeks = new Set(acc.filter(r => tf(r.market_day)).map(r => r.week));
+      accR = new Map(acc.map(r => [r.week, num(r.roas)]));
+      accOS = new Map(acc.map(r => [r.week, {all: num(r.roas), iOS: num(r.roas_ios), Android: num(r.roas_android)}]));
+    }
+    loadEra();
+  };
+
+  /* ---------- headline + KPIs ---------- */
+  const fmtField = {spend: money, roas: r2, green_share: pct, critical_adsets: v => isFinite(v) ? String(v) : '—', leaking: money, week_label: v => v};
+  const drawHead = () => {
+    const a = dash.data('account');
+    $$('[data-source="account"][data-field]').forEach(el => {
+      if (a.status !== 'ok') { if (a.status === 'error') el.textContent = '—'; return; }
+      el.classList.remove('dash-skeleton');
+      const row = a.data.find(r => tf(r.is_latest)); if (!row) return;
+      const f = el.dataset.field, raw = row[f];
+      if (el.classList.contains('chg-v')) {
+        const v = num(raw); let txt;
+        if (f === 'roas_delta') txt = (v >= 0 ? '+' : '') + r2(v);
+        else if (f === 'green_share_delta') txt = (v >= 0 ? '+' : '') + d3.format('.1f')(v * 100) + ' pts';
+        else if (f === 'critical_delta') txt = (v >= 0 ? '+' : '') + d3.format('d')(v);
+        else txt = spct(v);
+        el.textContent = txt;
+        const good = el.dataset.good;
+        el.classList.toggle('good', (good === 'up' && v > 0) || (good === 'down' && v < 0));
+        el.classList.toggle('bad', (good === 'up' && v < 0) || (good === 'down' && v > 0));
+        return;
+      }
+      const fn = fmtField[f] || (v => v);
+      el.textContent = f === 'week_label' ? raw : fn(num(raw));
+    });
+  };
+
+  /* ---------- trend chart ---------- */
+  const drawTrend = () => {
+    const el = $('#trend'); if (!ok('account')) { fail(el, 'account'); return; }
+    el.innerHTML = '';
+    const W0 = el.clientWidth; if (!W0) return;
+    const rows = acc.map(r => ({w: r.week, d: new Date(r.week), g: num(r.spend_green), a: num(r.spend_amber), c: num(r.spend_critical), o: num(r.spend_other), roas: num(r.roas), md: tf(r.market_day), t: num(r.spend)}));
+    const H1 = 190, H2 = 110, gap = 18, H = H1 + gap + H2 + 22;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W0} ${H}`);
+    const yS = d3.scaleLinear([0, d3.max(rows, r => r.t) * 1.08], [H1, 6]).nice();
+    const tmp = svg.append('text').text(money(yS.domain()[1])); const ml = Math.ceil(tmp.node().getComputedTextLength()) + 10; tmp.remove();
+    const mr = 34;
+    const x = d3.scaleBand(rows.map(r => r.w), [ml, W0 - mr]).padding(0.18);
+    const g1 = svg.append('g');
+    g1.append('g').selectAll('line').data(yS.ticks(4)).join('line').attr('x1', ml).attr('x2', W0 - mr).attr('y1', d => yS(d)).attr('y2', d => yS(d)).attr('stroke', 'var(--cds-chart-grid)');
+    g1.append('g').selectAll('text').data(yS.ticks(4)).join('text').attr('x', ml - 6).attr('y', d => yS(d) + 4).attr('text-anchor', 'end').text(d => money(d));
+    const keys = [['g', 'var(--f-green)'], ['a', 'var(--f-amber)'], ['c', 'var(--f-crit)'], ['o', 'var(--cds-chart-muted)']];
+    rows.forEach(r => { let y0 = 0; keys.forEach(([k, col]) => { const v = r[k] || 0; if (v > 0) { g1.append('rect').attr('x', x(r.w)).attr('width', x.bandwidth()).attr('y', yS(y0 + v)).attr('height', Math.max(0, yS(y0) - yS(y0 + v))).attr('fill', col); } y0 += v; }); });
+    g1.selectAll('.md').data(rows.filter(r => r.md)).join('text').attr('x', r => x(r.w) + x.bandwidth() / 2).attr('y', r => yS(r.t) - 4).attr('text-anchor', 'middle').text('🌧');
+    const top2 = H1 + gap;
+    const yR = d3.scaleLinear([Math.min(0.25, d3.min(rows, r => r.roas)), Math.max(0.75, d3.max(rows, r => r.roas))], [top2 + H2, top2 + 4]);
+    const g2 = svg.append('g');
+    // the bar of each week's ruler: 0.50 / 0.40 before the switch, the Singular bar after
+    const xm = (d) => { const k = d3.utcFormat('%Y-%m-%d')(d); const i = rows.findIndex(r => r.w >= k); return i < 0 ? W0 - mr : x(rows[i].w); };
+    ['green', 'amber'].forEach(k => {
+      const swx = xm(new Date(ERA.sw.iOS));
+      [[ml, swx, ERA.bars.meta[k]], [swx, W0 - mr, ERA.bars.singular[k]]].forEach(([a, b, v], i) => { if (b - a < 2) return;
+        g2.append('line').attr('x1', a).attr('x2', b).attr('y1', yR(v)).attr('y2', yR(v)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+        if (i === 1) g2.append('text').attr('x', W0 - mr + 4).attr('y', yR(v) + 4).text(v.toFixed(2)); });
+    });
+    { const swx = xm(new Date(ERA.sw.iOS)) - x.step() * x.paddingInner() / 2;
+      svg.append('line').attr('x1', swx).attr('x2', swx).attr('y1', 0).attr('y2', top2 + H2).attr('stroke', 'var(--cds-chart-axis)').attr('stroke-dasharray', '2 3');
+      svg.append('text').attr('x', swx + 4).attr('y', 12).text('Singular →'); }
+    g2.append('text').attr('x', ml - 6).attr('y', top2 + 10).attr('text-anchor', 'end').text('ROAS');
+    g2.append('path').datum(rows).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round')
+      .attr('d', d3.line().x(r => x(r.w) + x.bandwidth() / 2).y(r => yR(r.roas)));
+    const months = rows.filter((r, i) => i === 0 || r.d.getUTCMonth() !== rows[i - 1].d.getUTCMonth());
+    const lastLbl = {x: -1e9};
+    svg.append('g').selectAll('text').data(months).join('text').attr('y', H - 4).attr('text-anchor', 'start').each(function (r) {
+      const xx = x(r.w); if (xx - lastLbl.x < 40) { d3.select(this).remove(); return; } lastLbl.x = xx;
+      d3.select(this).attr('x', xx).text(d3.utcFormat('%b %y')(r.d));
+    });
+    // tooltip
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip');
+    const hov = svg.append('rect').attr('x', ml).attr('y', 0).attr('width', Math.max(0, W0 - ml - mr)).attr('height', H - 20).attr('fill', 'transparent');
+    const mark = svg.append('rect').attr('fill', 'none').attr('stroke', 'var(--color-fg)').attr('stroke-width', 1).attr('visibility', 'hidden');
+    hov.on('mousemove', ev => {
+      const [mx] = d3.pointer(ev); const i = Math.max(0, Math.min(rows.length - 1, Math.floor((mx - ml) / x.step()))); const r = rows[i];
+      mark.attr('visibility', 'visible').attr('x', x(r.w) - 1).attr('width', x.bandwidth() + 2).attr('y', yS(r.t) - 1).attr('height', H1 - yS(r.t) + 1);
+      tip.style('display', 'block').html('');
+      tip.append('div').attr('class', 'd').text('Week of ' + d3.utcFormat('%-d %b %Y')(r.d) + (r.md ? ' · 🌧 market day' : ''));
+      const b = barOf(r.w, 'iOS');
+      [['Spend', money(r.t)], ['Green', money(r.g)], ['Amber', money(r.a)], ['Critical', money(r.c)], ['ROAS', r2(r.roas)], ['Bar', r2(b.green) + ' / ' + r2(b.amber) + ' · ' + rulerName(r.w, 'iOS')]].forEach(([k, v]) => tip.append('div').text(k + ': ' + v));
+      const tw = tip.node().offsetWidth; let left = x(r.w) + x.bandwidth() + 8; if (left + tw > W0) left = x(r.w) - tw - 8;
+      tip.style('left', Math.max(0, left) + 'px').style('top', '8px');
+    }).on('mouseleave', () => { tip.style('display', 'none'); mark.attr('visibility', 'hidden'); });
+  };
+
+  /* ---------- small tables ---------- */
+  const cellsFor = {
+    status: r => r.status, short: r => r.short, why: r => r.why, flags: r => r.flags || '',
+    spend_last: r => money(num(r.spend_last)), roas_last: r => r2(num(r.roas_last)), leaking: r => money(num(r.leaking)),
+    scale_lost: r => money(num(r.scale_lost)), peak_all: r => money(num(r.peak_all)), peak_all_week: r => dshort(r.peak_all_week), last_week: r => dshort(r.last_week),
+  };
+  const fillTable = (tbl, rows, onClick) => {
+    const fields = $$('thead th', tbl).map(th => [th.dataset.field, th.classList.contains('n')]);
+    const tb = $('tbody', tbl); tb.replaceChildren();
+    rows.forEach(r => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.key;
+      fields.forEach(([f, n]) => { const td = document.createElement('td'); if (n) td.className = 'n'; td.textContent = (cellsFor[f] || (x => x[f]))(r); tr.appendChild(td); });
+      if (onClick) tr.addEventListener('click', () => onClick(r));
+      tb.appendChild(tr);
+    });
+  };
+  const drawWeekTables = () => {
+    if (!ok('grid')) { fail($('#act').parentElement, 'grid'); return; }
+    const act = G.filter(r => r.level === 'adset' && tf(r.alert)).sort((a, b) => num(a.severity) - num(b.severity) || num(b.leaking) - num(a.leaking));
+    fillTable($('#act'), act, r => { st.sel = r.key; st.show = 'all'; $$('#c-show button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.v === 'all'))); show('grid'); setTimeout(() => { const tr = $(`#gbody tr[data-key="${CSS.escape(r.key)}"]`); if (tr) tr.scrollIntoView({block: 'center'}); $('#dossier').scrollIntoView({block: 'start'}); }, 30); });
+    const dark = G.filter(r => r.level === 'persona' && !tf(r.active) && tf(r.judged) && num(r.peak_all) > 0).sort((a, b) => num(b.peak_all) - num(a.peak_all));
+    fillTable($('#dark'), dark, r => { st.sel = r.key; st.show = 'all'; $$('#c-show button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.v === 'all'))); show('grid'); setTimeout(() => $('#dossier').scrollIntoView({block: 'start'}), 30); });
+  };
+
+  /* ---------- the grid ---------- */
+  const sortVal = (r) => {
+    const k = st.sort, v = num(r[k]);
+    if (k === 'severity') return [num(r.severity), -num(r.leaking || 0)];
+    if (k === 'roas_last') return [isFinite(v) ? v : 9];
+    return [isFinite(v) ? -v : 0];
+  };
+  const cmp = (a, b) => { const x = sortVal(a), y = sortVal(b); for (let i = 0; i < x.length; i++) { const d = (x[i] || 0) - (y[i] || 0); if (d) return d; } return 0; };
+  const matches = (r) => !st.q || [r.short, r.label, r.persona, r.os, r.lang, r.status].join(' ').toLowerCase().includes(st.q);
+
+  const drawGrid = () => {
+    const wrap = $('#gwrap');
+    if (!ok('grid')) { fail(wrap, 'grid'); return; }
+    if (tab !== 'grid') return;
+    $('#leg-rel').hidden = st.colour !== 'rel'; $('#leg-abs').hidden = st.colour === 'rel';
+    const mw = G.find(r => r.mix_week && r.mix_week !== 'nan'); $('#mix-week').textContent = mw ? d3.utcFormat('%-d %b')(new Date(mw.mix_week)) : '—';
+    // header
+    const head = $('#ghead');
+    head.replaceChildren();
+    {
+      const mk = (txt, field, cls) => { const th = document.createElement('th'); th.textContent = txt; th.dataset.field = field; if (cls) th.className = cls; head.appendChild(th); return th; };
+      mk('Status', 'status', 'l c1'); mk('Adset', 'short', 'l c2'); mk('Spend LW', 'spend_last'); mk('ROAS LW', 'roas_last');
+      mk('Leaking', 'leaking'); mk('Below peak', 'scale_lost'); mk('Flags', 'flags', 'l');
+      mk('#1 creative', 'top_creative', 'l'); mk('Reign wk', 'reign_week'); mk('US share', 'us_share'); mk('Top country', 'top_country', 'l');
+      weeks.forEach((w, i) => { const d = new Date(w); const th = mk(d3.utcFormat('%-d %b')(d), 's_' + w); const nx = weeks[i + 1]; if (nx && new Date(nx).getUTCMonth() !== d.getUTCMonth()) th.classList.add('mon'); if (mdWeeks.has(w)) th.classList.add('md');
+        if (w >= ERA.sw.iOS && w < ERA.singStart) { th.classList.add('tr'); th.title = 'Switching to Singular: iOS from ' + dshort(ERA.sw.iOS) + ', Android from ' + dshort(ERA.sw.Android); }
+        if (w === ERA.sw.iOS) th.classList.add('sw'); });
+    }
+    const childLevel = st.view;
+    const kids = G.filter(r => r.level === childLevel && (st.show === 'all' || tf(r.active)));
+    const personas = G.filter(r => r.level === 'persona');
+    const groups = new Map(); kids.forEach(r => { if (!groups.has(r.persona)) groups.set(r.persona, []); groups.get(r.persona).push(r); });
+    let plist = personas.filter(p => groups.has(p.persona) || (!tf(p.active) && tf(p.judged)));
+    if (st.q) plist = plist.filter(p => matches(p) || (groups.get(p.persona) || []).some(matches));
+    plist.sort((a, b) => (tf(a.active) === tf(b.active) ? cmp(a, b) : tf(a.active) ? -1 : 1));
+    const tb = $('#gbody'); tb.replaceChildren();
+    const frag = document.createDocumentFragment();
+    const addRow = (r, cls) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.key; tr.className = cls + (tf(r.active) ? '' : ' off') + (st.sel === r.key ? ' sel' : '');
+      const td = (txt, c) => { const e = document.createElement('td'); e.textContent = txt; if (c) e.className = c; tr.appendChild(e); return e; };
+      td(r.status, 'c1'); td(r.short, 'c2').title = r.label;
+      td(money(num(r.spend_last)), 'n'); td(r2(num(r.roas_last)), 'n'); td(money(num(r.leaking)), 'n'); td(money(num(r.scale_lost)), 'n'); td(r.flags || '');
+      const tc = r.top_creative && r.top_creative !== 'nan' ? r.top_creative + (r.top_creative_name && r.top_creative_name !== 'nan' ? ' · ' + r.top_creative_name : '') : '';
+      td(tc).title = tc; const rw = num(r.reign_week); td(isFinite(rw) ? (rw >= 3 ? '⏳ ' : '') + d3.format('d')(rw) : '', 'n');
+      td(isFinite(num(r.us_share)) ? d3.format('.0%')(num(r.us_share)) : '', 'n');
+      td(r.top_country && r.top_country !== 'nan' ? regionName(r.top_country) + ' ' + d3.format('.0%')(num(r.top_country_share)) : '');
+      const judged = tf(r.judged);
+      weeks.forEach((w, i) => {
+        const s = num(r['s_' + w]), ro = num(r['r_' + w]);
+        const zc = st.colour === 'rel' ? zoneRel(ro / accFor(w, r.os), judged) : zoneOf(ro, judged, w, r.os);
+        const e = td(kfmt(s), 'w ' + (s > 0 ? zc : ''));
+        const p = num(r['s_' + weeks[i + 1]]);
+        if (s > 0 && p > 0) { if (s >= p * 1.2) e.classList.add('up'); else if (s <= p * 0.8) e.classList.add('down'); }
+        e.dataset.w = w;
+      });
+      frag.appendChild(tr);
+    };
+    plist.forEach(p => {
+      addRow(p, 'grp');
+      (groups.get(p.persona) || []).filter(r => !st.q || matches(r) || matches(p)).sort(cmp).forEach(r => addRow(r, 'child'));
+    });
+    tb.appendChild(frag);
+    drawDossier();
+  };
+  const markSel = () => $$('#gbody tr').forEach(tr => tr.classList.toggle('sel', tr.dataset.key === st.sel));
+  $('#gbody').addEventListener('click', e => {
+    const tr = e.target.closest('tr[data-key]'); if (!tr) return;
+    st.sel = st.sel === tr.dataset.key ? null : tr.dataset.key; markSel(); drawDossier();
+    if (st.sel) $('#dossier').scrollIntoView({block: 'nearest'});
+  });
+  // grid tooltip
+  const gtip = $('#gtip');
+  $('#gbody').addEventListener('mouseover', e => {
+    const td = e.target.closest('td.w'); if (!td || !td.dataset.w) { gtip.style.display = 'none'; return; }
+    const key = td.parentElement.dataset.key, w = td.dataset.w, r = byKey.get(key);
+    const wr = (wk.get(key) || []).find(x => x.week === w);
+    gtip.replaceChildren();
+    const line = (t, c) => { const d = document.createElement('div'); d.textContent = t; if (c) d.className = c; gtip.appendChild(d); };
+    line((r ? r.short : '') , 'd'); line('Week of ' + d3.utcFormat('%-d %b %Y')(new Date(w)) + (mdWeeks.has(w) ? ' · 🌧 market day' : ''), 'd');
+    const s = num(r && r['s_' + w]);
+    if (!(s > 0)) line('No spend');
+    else {
+      const ro = num(r['r_' + w]), ac = accFor(w, r.os), b = barOf(w, r.os);
+      line('Spend ' + money(s) + ' · ROAS ' + r2(ro) + (isFinite(ac) ? ' (' + d3.format('.0%')(ro / ac) + ' of ' + osLabel(r.os) + ' that week)' : ''));
+      line('Bar ' + r2(b.green) + ' / ' + r2(b.amber) + ' · measured by ' + rulerName(w, r.os), 'd');
+      if (wr) { line('IPM ' + d3.format('.2f')(num(wr.ipm)) + ' · CPM ' + d3.format('$.2f')(num(wr.cpm))); line('Click → install ' + pct(num(wr.c2i)) + ' · Install → purchase ' + pct(num(wr.i2p))); if (isFinite(num(wr.hook_rate))) line('Hook rate ' + pct(num(wr.hook_rate))); }
+    }
+    const card = $('#grid-card').getBoundingClientRect(), b = td.getBoundingClientRect();
+    gtip.style.display = 'block';
+    let left = b.right - card.left + 6; if (left + gtip.offsetWidth > card.width) left = b.left - card.left - gtip.offsetWidth - 6;
+    gtip.style.left = Math.max(0, left) + 'px'; gtip.style.top = (b.bottom - card.top + 4) + 'px';
+  });
+  $('#gbody').addEventListener('mouseleave', () => gtip.style.display = 'none');
+
+  /* ---------- dossier ---------- */
+  const SM = [
+    ['spend', 'Spend per week', money, 'bar'], ['roas', 'ROAS', r2, 'roas'], ['ipm', 'Installs per 1,000 impressions', d3.format('.2f')],
+    ['c2i', 'Click → install', pct], ['i2p', 'Install → purchase', pct], ['cpm', 'CPM', d3.format('$.2f')],
+    ['hook_rate', 'Hook rate', pct], ['frequency', 'Frequency', d3.format('.2f')]];
+  const slots = (host, n) => Array.from({length: n}, () => { const b = document.createElement('div'); b.className = 'm'; host.appendChild(b); return b; });
+  const small = (host, rows, [f, title, fmt, kind], refs, opts = {}) => {
+    const box = opts.box || (() => { const b = document.createElement('div'); b.className = 'm'; host.appendChild(b); return b; })();
+    const vals = rows.map(r => ({d: new Date(r.week), w: r.week, v: num(r[f]), z: opts.zone ? zoneOf(num(r.roas), opts.judged, r.week, opts.os) : ''})).filter(p => isFinite(p.v));
+    const t = document.createElement('div'); t.className = 't'; box.appendChild(t);
+    if (!vals.length) { box.remove(); return; }
+    const last = vals[vals.length - 1];
+    t.textContent = title + ' · latest ' + fmt(last.v);
+    const Wd = box.clientWidth || 220, Hh = 92, m = {l: 4, r: 4, t: 6, b: 16};
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${Wd} ${Hh}`);
+    const x = d3.scaleUtc(d3.extent(allWeeksD), [m.l, Wd - m.r]);
+    const barVals = opts.bar ? [ERA.bars.meta.green, ERA.bars.singular.amber] : [];
+    const lo = kind === 'bar' ? 0 : d3.min([...vals.map(p => p.v), ...(refs || []), ...barVals]), hi = d3.max([...vals.map(p => p.v), ...(refs || []), ...barVals]);
+    const y = d3.scaleLinear([kind === 'bar' ? 0 : lo - (hi - lo) * 0.08, hi + (hi - lo) * 0.08 || 1], [Hh - m.b, m.t]);
+    (refs || []).forEach(v => svg.append('line').attr('x1', m.l).attr('x2', Wd - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3'));
+    { const ex = d3.extent(allWeeksD); if (opts.bar) drawBarSteps(svg, x, y, ex[0], ex[1], opts.os);
+      if (opts.sw !== false && ex[0] < new Date(swOf(opts.os)) && ex[1] >= new Date(swOf(opts.os))) drawSwitch(svg, x, m.t, Hh - m.b, opts.os); }
+    if (kind === 'bar') {
+      const bw = Math.max(1, (Wd - m.l - m.r) / allWeeksD.length - 1);
+      svg.selectAll('rect').data(vals).join('rect').attr('x', p => x(p.d) - bw / 2).attr('width', bw).attr('y', p => y(p.v)).attr('height', p => y(0) - y(p.v)).attr('rx', 1)
+        .attr('fill', p => p.z === 'z-green' ? 'var(--f-green)' : p.z === 'z-amber' ? 'var(--f-amber)' : (p.z === 'z-crit' || p.z === 'z-crit2') ? 'var(--f-crit)' : 'var(--cds-chart-muted)');
+    } else {
+      svg.append('path').datum(vals).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().defined(p => isFinite(p.v)).x(p => x(p.d)).y(p => y(p.v)));
+    }
+    const ext = d3.extent(allWeeksD);
+    svg.append('text').attr('x', m.l).attr('y', Hh - 3).text(d3.utcFormat('%b %y')(ext[0]));
+    svg.append('text').attr('x', Wd - m.r).attr('y', Hh - 3).attr('text-anchor', 'end').text(d3.utcFormat('%b %y')(ext[1]));
+    // hover
+    const tip = d3.select(box).append('div').attr('class', 'bx-tip');
+    const dot = svg.append('circle').attr('r', 3).attr('fill', dash.colors[0]).attr('visibility', 'hidden');
+    svg.append('rect').attr('x', m.l).attr('y', 0).attr('width', Math.max(0, Wd - m.l - m.r)).attr('height', Hh).attr('fill', 'transparent')
+      .on('mousemove', ev => {
+        const [mx] = d3.pointer(ev); const dt = x.invert(mx); const p = vals.reduce((a, b) => Math.abs(b.d - dt) < Math.abs(a.d - dt) ? b : a);
+        dot.attr('visibility', 'visible').attr('cx', x(p.d)).attr('cy', y(p.v));
+        tip.style('display', 'block').html(''); tip.append('div').attr('class', 'd').text(d3.utcFormat('%-d %b %Y')(p.d)); tip.append('div').text(fmt(p.v));
+        const tw = tip.node().offsetWidth; let left = x(p.d) + 8; if (left + tw > Wd) left = x(p.d) - tw - 8; tip.style('left', Math.max(0, left) + 'px').style('top', '18px');
+      }).on('mouseleave', () => { tip.style('display', 'none'); dot.attr('visibility', 'hidden'); });
+  };
+  let allWeeksD = [];
+  const drawDossier = () => {
+    const box = $('#dossier');
+    if (!st.sel || !byKey.has(st.sel)) { box.hidden = true; return; }
+    const r = byKey.get(st.sel); box.hidden = false;
+    const where = 'key=' + encodeURIComponent(r.key).replace(/%3A/g, ':').replace(/%7C/g, '|');
+    $$('[data-gfield]', box).forEach(el => { el.setAttribute('data-source', 'grid'); el.setAttribute('data-field', el.dataset.gfield); el.setAttribute('data-where', where); });
+    $('#dos-title').textContent = r.short; $('#dos-status').textContent = r.status; $('#dos-why').textContent = r.why;
+    $('#dos-name').textContent = r.label;
+    $('#f-spend').textContent = money(num(r.spend_last)); $('#f-roas').textContent = r2(num(r.roas_last));
+    $('#f-peak').textContent = money(num(r.peak_all)); $('#f-peakw').textContent = dshort(r.peak_all_week);
+    $('#f-lost').textContent = money(num(r.scale_lost)); $('#f-best4').textContent = isFinite(num(r.best4_vs_bar)) ? d3.format('.0%')(num(r.best4_vs_bar)) + ' · ' + d3.format('.0%')(num(r.best4_vs_account)) : '—';
+    const host = $('#dos-charts'); host.replaceChildren();
+    if (!ok('weekly')) { fail(host, 'weekly'); return; }
+    allWeeksD = weeks.map(w => new Date(w)).sort((a, b) => a - b);
+    const rows = wk.get(r.key) || [];
+    const judged = tf(r.judged);
+    const sl = slots(host, SM.length);
+    SM.forEach((spec, i) => small(host, rows, spec, null, {zone: spec[3] === 'bar', bar: spec[3] === 'roas' && judged, judged, os: r.os, box: sl[i]}));
+    drawRelay(r.key);
+    drawCountryRelay(r.key);
+  };
+
+  /* ---------- what moved ROAS ---------- */
+  const drawMoved = () => {
+    if (tab !== 'why') return;
+    const dd = dash.data('drivers');
+    const tbl = $('#drv');
+    if (dd.status !== 'ok') { fail(tbl.parentElement, 'drivers'); return; }
+    const D = dd.data, byD = new Map(D.map(r => [r.driver, r]));
+    const fmtD = {ipm: d3.format('.2f'), i2p: pct, rpp: d3.format('$.2f'), cpm: d3.format('$.2f'), ctr: d3.format('.2%'), c2i: pct, roas: r2};
+    $$('#drv-take [data-field]').forEach(el => { const r = byD.get(new URLSearchParams(el.dataset.where).get('driver')); if (!r) return; const f = el.dataset.field; el.textContent = f === 'change' ? spct(num(r.change)) : fmtD[r.driver](num(r[f])); });
+    $$('#drivers-card .bx-note [data-field]').forEach(el => { const r = byD.get('roas'); if (r) el.textContent = r[el.dataset.field].replace(/(\d{4}-\d{2}-\d{2})/g, s => d3.utcFormat('%-d %b %Y')(new Date(s))).replace(' to ', ' – '); });
+    const order = ['ipm', 'ctr', 'c2i', 'i2p', 'rpp', 'cpm', 'roas'];
+    const rows = order.map(k => byD.get(k)).filter(Boolean);
+    const maxPts = d3.max(rows, r => Math.abs(num(r.roas_points)) || 0) || 1;
+    const tb = $('tbody', tbl); tb.replaceChildren();
+    rows.forEach(r => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.driver; tr.style.cursor = 'default';
+      const td = (t, c) => { const e = document.createElement('td'); if (c) e.className = c; if (t != null) e.textContent = t; tr.appendChild(e); return e; };
+      td(r.label); td(fmtD[r.driver](num(r.base)), 'n'); td(fmtD[r.driver](num(r.current)), 'n'); td(spct(num(r.change)), 'n');
+      const p = num(r.roas_points); const c = td(null);
+      if (isFinite(p)) { const b = document.createElement('span'); b.className = 'bx-bar'; b.style.width = (Math.abs(p) / maxPts * 7) + 'rem'; b.style.background = p < 0 ? 'var(--f-crit)' : 'var(--f-green)'; c.appendChild(b); const s = document.createElement('span'); s.textContent = ' ' + (p >= 0 ? '+' : '') + p.toFixed(3); c.appendChild(s); }
+      else c.textContent = r.kind === 'part of IPM' ? 'part of IPM' : '';
+      if (r.driver === 'roas') tr.style.fontWeight = '600';
+      tb.appendChild(tr);
+    });
+    const host = $('#drv-sm'); host.replaceChildren();
+    if (!ok('account')) { fail(host, 'account'); return; }
+    allWeeksD = acc.map(r => new Date(r.week));
+    [['roas', 'ROAS', r2], ['ipm', 'IPM (installs per 1,000 impressions)', d3.format('.2f')], ['cpm', 'CPM', d3.format('$.2f')], ['i2p', 'Install → purchase', pct], ['rpp', 'Revenue per purchase', d3.format('$.2f')], ['ctr', 'Click-through rate', d3.format('.2%')], ['c2i', 'Click → install', pct]]
+      .forEach(([f, t, fmt], i, arr) => { const sl = i === 0 ? (host._sl = slots(host, arr.length)) : host._sl; const b = byD.get(f); small(host, acc, [f, t, fmt], b ? [num(b.base)] : null, {box: sl[i]}); });
+  };
+
+  /* ---------- checks ---------- */
+  const drawChecks = () => {
+    const c = dash.data('checks'); const tbl = $('#chk');
+    if (c.status !== 'ok') { fail(tbl.parentElement, 'checks'); return; }
+    const tb = $('tbody', tbl); tb.replaceChildren();
+    c.data.forEach(r => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id; tr.style.cursor = 'default';
+      [[r.check], [r.finding], [d3.format(',')(num(r.count)), 'n'], [num(r.spend) > 0 ? money(num(r.spend)) : '', 'n'], [r.detail || '']].forEach(([t, cl]) => { const td = document.createElement('td'); td.textContent = t; if (cl) td.className = cl; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  };
+
+
+  /* ---------- why ROAS fell ---------- */
+  const factFmt = {
+    meta_ios_roas_pre: r2, meta_ios_roas_post: r2, meta_and_roas_pre: r2, meta_and_roas_post: r2,
+    proceeds_per_dollar_pre: v => d3.format('$.2f')(v), proceeds_per_dollar_post: v => d3.format('$.2f')(v),
+    proceeds_ratio_min: v => d3.format('.2f')(v) + '×', proceeds_ratio_max: v => d3.format('.2f')(v) + '×',
+    meta_ratio: v => d3.format('.2f')(v) + '×', android_placebo: v => d3.format('$.2f')(v),
+    apple_day_pre: money, apple_day_now: money, ios_ppm_pre: d3.format(',.0f'), ios_ppm_post: d3.format(',.0f'),
+    and_ppm_pre: d3.format(',.0f'), and_ppm_post: d3.format(',.0f'), cohort_old_feb: r2, cohort_old_mar: r2,
+    us_week_pre: money, us_week_low: money, us_week_now: money, us_spend_pre: money, us_spend_now: money,
+    spend_elasticity: d3.format('.3f'), mean_reversion: d3.format('.0%'), buyer_raise_after_good_week: d3.format('+.0%'),
+    arrivals: d3.format(','), delivered_share_proven: d3.format('.0%'), delivered_share_new: d3.format('.0%'),
+    us_adset_roas_decjan: r2, us_adset_roas_marapr: r2, us_adset_rpp: v => d3.format('$.2f')(v),
+    ios_rpp_pre: v => d3.format('$.2f')(v), ios_rpp_now: v => d3.format('$.2f')(v),
+  };
+  const fillFacts = () => {
+    const f = dash.data('rc_facts');
+    $$('[data-source="rc_facts"]').forEach(el => {
+      if (f.status !== 'ok') return;
+      el.classList.remove('dash-skeleton');
+      const id = new URLSearchParams(el.dataset.where).get('fact');
+      const row = f.data.find(r => r.fact === id); if (!row) return;
+      const v = num(row.value); el.textContent = (factFmt[id] || r2)(v);
+    });
+  };
+  // generic weekly/monthly line chart with optional bars and shaded window
+  const lineChart = (el, {dates, series, bars, stack, yFmt, refs = [], shade, yMin, H = 260, barSteps = false, switches = [], marks = []}) => {
+    el.innerHTML = '';
+    const W0 = el.clientWidth; if (!W0 || !dates.length) return;
+    const mt = 10, mb = 24;
+    const stackTot = stack ? dates.map((d, i) => d3.sum(stack, s => (s.values[i] > 0 ? s.values[i] : 0))) : [];
+    if (stack) { const lg = document.createElement('div'); lg.className = 'bx-legend';
+      stack.forEach(s => { const sp = document.createElement('span'); const i = document.createElement('i'); i.style.background = s.color; i.style.border = 'none'; sp.appendChild(i); sp.appendChild(document.createTextNode(s.name)); lg.appendChild(sp); });
+      el.appendChild(lg); }
+    const all = series.flatMap(s => s.values).concat(bars ? bars.values : []).concat(stackTot).filter(isFinite).concat(refs).concat(barSteps ? [ERA.bars.meta.green, ERA.bars.singular.amber] : []);
+    const y = d3.scaleLinear([yMin != null ? yMin : 0, d3.max(all) * 1.08], [H - mb, mt]).nice();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W0} ${H}`);
+    const probe = svg.append('text'); let ml = 0; y.ticks(4).forEach(t => { probe.text(yFmt(t)); ml = Math.max(ml, probe.node().getComputedTextLength()); }); probe.remove(); ml += 10;
+    let mr = 0; const probe2 = svg.append('text'); series.forEach(s => { probe2.text(s.name); mr = Math.max(mr, probe2.node().getComputedTextLength()); }); probe2.remove(); mr = Math.min(mr + 12, W0 * 0.35);
+    if (W0 - ml - mr < 80) mr = Math.max(0, W0 - ml - 80);
+    if (W0 - ml - mr < 40) return;
+    const x = d3.scaleUtc(d3.extent(dates), [ml, W0 - mr]);
+    if (shade) svg.append('rect').attr('x', x(shade[0])).attr('width', Math.max(2, x(shade[1]) - x(shade[0]))).attr('y', mt).attr('height', H - mb - mt).attr('fill', 'var(--z-crit)').attr('opacity', .6);
+    svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', ml).attr('x2', W0 - mr).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', ml - 6).attr('y', d => y(d) + 4).attr('text-anchor', 'end').text(yFmt);
+    refs.forEach(v => svg.append('line').attr('x1', ml).attr('x2', W0 - mr).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3'));
+    if (barSteps) { const ex = d3.extent(dates); drawBarSteps(svg, x, y, ex[0], ex[1], 'iOS'); }
+    switches.forEach(([os, label]) => { const ex = d3.extent(dates); const d = new Date(swOf(os)); if (d > ex[0] && d <= ex[1]) drawSwitch(svg, x, mt, H - mb, os, label); });
+    marks.forEach(([ds, label]) => { const ex = d3.extent(dates); const d = new Date(ds); if (d > ex[0] && d <= ex[1]) { const xx = x(d);
+      svg.append('line').attr('x1', xx).attr('x2', xx).attr('y1', mt).attr('y2', H - mb).attr('stroke', 'var(--cds-chart-axis)').attr('stroke-dasharray', '2 3');
+      if (label) svg.append('text').attr('x', xx + 4).attr('y', mt + 22).text(label); } });
+    if (stack) {
+      const bw = Math.max(1, (W0 - ml - mr) / dates.length - 2);
+      dates.forEach((d, i) => { let y0 = 0; stack.forEach(s => { const v = s.values[i]; if (!(v > 0)) return;
+        svg.append('rect').attr('x', x(d) - bw / 2).attr('width', bw).attr('y', y(y0 + v)).attr('height', Math.max(0, y(y0) - y(y0 + v))).attr('fill', s.color); y0 += v; }); });
+    }
+    if (bars) {
+      const bw = Math.max(1, (W0 - ml - mr) / dates.length - 2);
+      svg.append('g').selectAll('rect').data(dates.map((d, i) => [d, bars.values[i]]).filter(p => p[1] > 0)).join('rect')
+        .attr('x', p => x(p[0]) - bw / 2).attr('width', bw).attr('y', p => y(p[1])).attr('height', p => y(0) - y(p[1])).attr('rx', 2).attr('fill', bars.color);
+    }
+    const ends = [];
+    series.forEach(s => {
+      const pts = dates.map((d, i) => [d, s.values[i]]).filter(p => isFinite(p[1]));
+      svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x(p => x(p[0])).y(p => y(p[1])));
+      if (pts.length) ends.push({name: s.name, y: y(pts[pts.length - 1][1]), color: s.color});
+    });
+    ends.sort((a, b) => a.y - b.y); for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 13) ends[i].y = ends[i - 1].y + 13;
+    ends.forEach(e => svg.append('text').attr('x', W0 - mr + 6).attr('y', e.y + 4).style('fill', e.color).text(e.name));
+    const ext = d3.extent(dates); let lastTx = -1e9;
+    const ticks = x.ticks(Math.max(2, Math.floor((W0 - ml - mr) / 70))).filter(t => { const xx = x(t); if (xx - lastTx < 58) return false; lastTx = xx; return true; });
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('x', d => x(d)).attr('y', H - 6).attr('text-anchor', 'middle').text(d3.utcFormat('%b %y'));
+    // tooltip
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip');
+    const rule = svg.append('line').attr('y1', mt).attr('y2', H - mb).attr('stroke', 'var(--cds-chart-axis)').attr('visibility', 'hidden');
+    svg.append('rect').attr('x', ml).attr('y', 0).attr('width', Math.max(0, W0 - ml - mr)).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', ev => {
+        const [mx] = d3.pointer(ev); const t = x.invert(mx); const i = d3.leastIndex(dates, d => Math.abs(d - t));
+        rule.attr('visibility', 'visible').attr('x1', x(dates[i])).attr('x2', x(dates[i]));
+        tip.style('display', 'block').html(''); tip.append('div').attr('class', 'd').text(d3.utcFormat('%-d %b %Y')(dates[i]));
+        if (bars && bars.values[i] > 0) tip.append('div').text(bars.name + ': ' + yFmt(bars.values[i]));
+        if (stack) stack.forEach(s => { if (s.values[i] > 0) tip.append('div').text(s.name + ': ' + yFmt(s.values[i])); });
+        series.forEach(s => { if (isFinite(s.values[i])) tip.append('div').style('color', s.color).text(s.name + ': ' + yFmt(s.values[i])); });
+        const tw = tip.node().offsetWidth; let left = x(dates[i]) + 10; if (left + tw > W0) left = x(dates[i]) - tw - 10;
+        tip.style('left', Math.max(0, left) + 'px').style('top', '8px');
+      }).on('mouseleave', () => { tip.style('display', 'none'); rule.attr('visibility', 'hidden'); });
+  };
+  const fillRows = (tbl, rows, cells) => {
+    const tb = $('tbody', tbl); tb.replaceChildren();
+    rows.forEach(r => {
+      const tr = document.createElement('tr'); tr.style.cursor = 'default'; tr.dataset.key = r[tbl.dataset.rowKey];
+      cells.forEach(([fn, cls]) => { const td = document.createElement('td'); if (cls) td.className = cls; const v = fn(r); if (v instanceof Node) td.appendChild(v); else td.textContent = v; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  };
+  const drawWhy = () => {
+    fillFacts();
+    const w = dash.data('rc_weekly');
+    ['#why-proceeds', '#why-us'].forEach(id => { if (w.status !== 'ok') fail($(id), 'rc_weekly'); });
+    if (w.status === 'ok') {
+      const R = w.data.slice().sort((a, b) => a.week < b.week ? -1 : 1);
+      const dates = R.map(r => new Date(r.week));
+      const brk = R.filter(r => tf(r.in_break)).map(r => new Date(r.week));
+      const shade = brk.length ? [brk[0], d3.utcDay.offset(brk[brk.length - 1], 7)] : null;
+      lineChart($('#why-proceeds'), {dates, shade, yFmt: money, series: [
+        {name: 'App Store proceeds', values: R.map(r => num(r.apple_proceeds)), color: dash.colors[0]},
+        {name: 'Meta-credited iOS revenue', values: R.map(r => num(r.ios_rev)), color: dash.colors[2]}],
+        bars: {name: 'iOS ad spend', values: R.map(r => num(r.ios_spend)), color: 'var(--cds-chart-muted)'}});
+      lineChart($('#why-us'), {dates, shade, yFmt: money, series: [
+        {name: 'US proceeds', values: R.map(r => num(r.us_proceeds)), color: dash.colors[0]}],
+        bars: {name: 'US-only adset spend', values: R.map(r => num(r.us_targeted_spend)), color: 'var(--cds-chart-muted)'}});
+    }
+    const c = dash.data('rc_cohort');
+    if (c.status !== 'ok') fail($('#why-cohort'), 'rc_cohort');
+    else {
+      const months = [...new Set(c.data.map(r => r.month))].sort();
+      const dates = months.map(m => new Date(m + '-01'));
+      const order = ['Running before Dec', 'Launched Jan–Feb', 'Launched Mar–May', 'Launched Jun–Oct'];
+      lineChart($('#why-cohort'), {dates, yFmt: r2, barSteps: true, yMin: 0.2, series: order.map((k, i) => ({name: k, color: dash.colors[i],
+        values: months.map(m => { const r = c.data.find(x => x.cohort === k && x.month === m); return r ? num(r.roas) : NaN; })}))});
+    }
+    const ct = dash.data('rc_country');
+    if (ct.status === 'ok') fillRows($('#why-country'), ct.data, [[r => r.country], [r => money(num(r.before)), 'n'], [r => money(num(r.now)), 'n'],
+      [r => { const v = num(r.change); const s = document.createElement('span'); s.textContent = spct(v); s.style.color = v < 0 ? 'var(--color-bad)' : 'var(--color-ok)'; return s; }, 'n']]);
+    else fail($('#why-country').parentElement, 'rc_country');
+    const sp = dash.data('rc_spend');
+    if (sp.status === 'ok') fillRows($('#why-spend'), sp.data, [[r => r.change], [r => d3.format(',')(num(r.adset_weeks)), 'n'], [r => spct(num(r.raw)), 'n'], [r => spct(num(r.adjusted)), 'n']]);
+    else fail($('#why-spend').parentElement, 'rc_spend');
+    const rf = dash.data('rc_refresh');
+    if (rf.status === 'ok') fillRows($('#why-refresh'), rf.data, [[r => r.type], [r => d3.format(',')(num(r.events)), 'n'], [r => spct(num(r.rel_roas_change)), 'n'], [r => d3.format('.0%')(num(r.share_improved)), 'n'], [r => spct(num(r.spend_change)), 'n']]);
+    else fail($('#why-refresh').parentElement, 'rc_refresh');
+    const cr = dash.data('rc_creative');
+    if (cr.status === 'ok') {
+      const mx = d3.max(cr.data, r => Math.abs(num(r.index) - 1)) || 0.1;
+      fillRows($('#why-creative'), cr.data, [[r => r.cname], [r => money(num(r.spend)), 'n'], [r => r2(num(r.roas)), 'n'],
+        [r => { const v = num(r.index); const wrap = document.createElement('span'); const b = document.createElement('span'); b.className = 'bx-bar';
+          b.style.width = (Math.abs(v - 1) / mx * 5) + 'rem'; b.style.background = v < 1 ? 'var(--f-crit)' : 'var(--f-green)'; b.style.marginRight = '6px';
+          const t = document.createElement('span'); t.textContent = d3.format('.2f')(v); wrap.appendChild(b); wrap.appendChild(t); return wrap; }],
+        [r => (num(r.gap) >= 0 ? '+' : '−') + money(Math.abs(num(r.gap))), 'n'],
+        [r => isFinite(num(r.delivered)) ? d3.format('.0%')(num(r.delivered)) : '—', 'n'], [r => isFinite(num(r.arrivals)) ? d3.format(',')(num(r.arrivals)) : '—', 'n']]);
+    } else fail($('#why-creative').parentElement, 'rc_creative');
+  };
+
+
+  /* ---------- creatives ---------- */
+  const crFmt = {top_share_median: d3.format('.0%'), reign_median: v => d3.format('.0f')(v), reign_mean: d3.format('.1f'), reign_6plus: d3.format('.0%'),
+    reigns: d3.format(','), top_vs_rest: v => d3.format('.2f')(v) + '×', arrivals: d3.format(','), became_top: d3.format('.0%'), same_top_before: r2, same_top_after: r2};
+  const fillCrFacts = () => {
+    const f = dash.data('cr_facts');
+    $$('[data-source="cr_facts"]').forEach(el => {
+      if (f.status !== 'ok') return; el.classList.remove('dash-skeleton');
+      const id = new URLSearchParams(el.dataset.where).get('fact'); const row = f.data.find(r => r.fact === id); if (!row) return;
+      el.textContent = (crFmt[id] || r2)(num(row.value));
+    });
+  };
+  const PALETTE = () => [...dash.colors, 'var(--cds-chart-muted)'];
+  // 100% stacked weekly bars: rows {week, code, share, spend, roas?}
+  const stackShare = (el, rows, order, labels) => {
+    el.innerHTML = '';
+    const W0 = el.clientWidth; if (!W0 || !rows.length) return;
+    const weeks = [...new Set(rows.map(r => r.week))].sort();
+    const H = 230, mt = 6, mb = 22, ml = 36;
+    const col = new Map(order.map((k, i) => [k, k === 'Other' ? 'var(--cds-chart-muted)' : dash.colors[i % dash.colors.length]]));
+    const legend = document.createElement('div'); legend.className = 'bx-legend';
+    order.forEach(k => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = col.get(k); i.style.border = 'none'; s.appendChild(i); s.appendChild(document.createTextNode(labels(k))); legend.appendChild(s); });
+    el.appendChild(legend);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W0} ${H}`);
+    const x = d3.scaleBand(weeks, [ml, W0 - 4]).padding(0.12);
+    const y = d3.scaleLinear([0, 1], [H - mb, mt]);
+    [0, 0.5, 1].forEach(v => { svg.append('line').attr('x1', ml).attr('x2', W0 - 4).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', 'var(--cds-chart-grid)'); svg.append('text').attr('x', ml - 6).attr('y', y(v) + 4).attr('text-anchor', 'end').text(d3.format('.0%')(v)); });
+    const byW = d3.group(rows, r => r.week);
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip');
+    weeks.forEach(w => {
+      let y0 = 0; const rs = byW.get(w) || [];
+      order.forEach(k => {
+        const r = rs.find(z => z.code === k); if (!r) return; const v = num(r.share); if (!(v > 0)) return;
+        svg.append('rect').attr('x', x(w)).attr('width', x.bandwidth()).attr('y', y(y0 + v)).attr('height', Math.max(0, y(y0) - y(y0 + v))).attr('fill', col.get(k))
+          .on('mousemove', (ev) => {
+            tip.style('display', 'block').html(''); tip.append('div').attr('class', 'd').text('Week of ' + d3.utcFormat('%-d %b %Y')(new Date(w)));
+            tip.append('div').text(labels(k)); tip.append('div').text(d3.format('.0%')(v) + ' of spend · ' + money(num(r.spend)) + (isFinite(num(r.roas)) ? ' · ROAS ' + r2(num(r.roas)) : ''));
+            const [mx] = d3.pointer(ev, el); const tw = tip.node().offsetWidth; let left = mx + 12; if (left + tw > W0) left = mx - tw - 12;
+            tip.style('left', Math.max(0, left) + 'px').style('top', (legend.offsetHeight + 8) + 'px');
+          }).on('mouseleave', () => tip.style('display', 'none'));
+        y0 += v;
+      });
+    });
+    const months = weeks.filter((w, i) => i === 0 || w.slice(0, 7) !== weeks[i - 1].slice(0, 7)); let lastX = -1e9;
+    months.forEach(w => { const xx = x(w); if (xx - lastX < 42) return; lastX = xx; svg.append('text').attr('x', xx).attr('y', H - 6).text(d3.utcFormat('%b %y')(new Date(w))); });
+  };
+  const drawCreatives = () => {
+    fillCrFacts();
+    const a = dash.data('cr_acct_relay');
+    if (a.status !== 'ok') fail($('#cr-acct'), 'cr_acct_relay');
+    else {
+      const tot = d3.rollup(a.data, v => d3.sum(v, r => num(r.spend)), r => r.code);
+      const order = [...tot.keys()].filter(k => k !== 'Other').sort((p, q) => tot.get(q) - tot.get(p)).concat(['Other']);
+      const lab = new Map(a.data.map(r => [r.code, r.label]));
+      stackShare($('#cr-acct'), a.data, order, k => lab.get(k) || k);
+    }
+    const l = dash.data('cr_leaders');
+    if (l.status === 'ok') fillRows($('#cr-leaders'), l.data, [[r => r.code], [r => r.cname || ''], [r => r.top_hook || ''], [r => d3.format(',')(num(r.adsets_led)), 'n'], [r => d3.format(',')(num(r.weeks_as_1)), 'n'], [r => money(num(r.spend_as_1)), 'n'],
+      [r => { const v = num(r.roas_vs_acct); const s = document.createElement('span'); s.textContent = d3.format('.2f')(v) + '×'; s.style.color = v < 0.97 ? 'var(--color-bad)' : v > 1.03 ? 'var(--color-ok)' : ''; return s; }, 'n'],
+      [r => { const v = num(r.vs_rest); const s = document.createElement('span'); s.textContent = d3.format('.2f')(v) + '×'; s.style.color = v < 0.97 ? 'var(--color-bad)' : v > 1.03 ? 'var(--color-ok)' : ''; return s; }, 'n'],
+      [r => dshort(r.first_as_1), 'n'], [r => dshort(r.last_as_1), 'n']]);
+    else fail($('#cr-leaders').parentElement, 'cr_leaders');
+    const rg = dash.data('cr_reign');
+    if (rg.status !== 'ok') fail($('#cr-reign'), 'cr_reign');
+    else {
+      const R = rg.data.slice().sort((p, q) => num(p.tenure) - num(q.tenure));
+      const el = $('#cr-reign'); el.innerHTML = ''; const W0 = el.clientWidth;
+      if (W0) {
+        const H = 240, mt = 10, mb = 26, ml = 40;
+        const S = [['Adset ROAS vs account', 'adset_roas', dash.colors[0]], ['#1 concept ROAS', 'top_roas', dash.colors[1]], ['Adset spend', 'adset_spend', dash.colors[2]], ['#1 share of spend', 'top_share', dash.colors[3]]];
+        const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W0} ${H}`);
+        const probe = svg.append('text'); let mr = 0; S.forEach(s => { probe.text(s[0]); mr = Math.max(mr, probe.node().getComputedTextLength()); }); probe.remove(); mr = Math.min(mr + 12, W0 * 0.4);
+        const x = d3.scaleLinear(d3.extent(R, r => num(r.tenure)), [ml, W0 - mr]);
+        const vals = R.flatMap(r => S.map(s => num(r[s[1]])));
+        const y = d3.scaleLinear([Math.min(0.75, d3.min(vals)), Math.max(1.4, d3.max(vals))], [H - mb, mt]);
+        y.ticks(4).forEach(t => { svg.append('line').attr('x1', ml).attr('x2', W0 - mr).attr('y1', y(t)).attr('y2', y(t)).attr('stroke', t === 1 ? 'var(--cds-chart-reference)' : 'var(--cds-chart-grid)'); svg.append('text').attr('x', ml - 6).attr('y', y(t) + 4).attr('text-anchor', 'end').text(d3.format('.2f')(t)); });
+        R.forEach(r => svg.append('text').attr('x', x(num(r.tenure))).attr('y', H - 8).attr('text-anchor', 'middle').text('wk ' + r.tenure));
+        const ends = [];
+        S.forEach(([name, f, color]) => { const pts = R.map(r => [num(r.tenure), num(r[f])]);
+          svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x(p => x(p[0])).y(p => y(p[1])));
+          ends.push({name, y: y(pts[pts.length - 1][1]), color}); });
+        ends.sort((p, q) => p.y - q.y); for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 13) ends[i].y = ends[i - 1].y + 13;
+        ends.forEach(e => svg.append('text').attr('x', W0 - mr + 6).attr('y', e.y + 4).style('fill', e.color).text(e.name));
+        const tip = d3.select(el).append('div').attr('class', 'bx-tip');
+        svg.append('rect').attr('x', ml).attr('y', 0).attr('width', Math.max(0, W0 - ml - mr)).attr('height', H).attr('fill', 'transparent').on('mousemove', ev => {
+          const [mx] = d3.pointer(ev); const t = Math.round(x.invert(mx)); const r = R.find(z => num(z.tenure) === t); if (!r) return;
+          tip.style('display', 'block').html(''); tip.append('div').attr('class', 'd').text('Week ' + t + ' of the reign · ' + r.runs + ' reigns');
+          S.forEach(([name, f, color]) => tip.append('div').style('color', color).text(name + ': ' + d3.format('.2f')(num(r[f]))));
+          const tw = tip.node().offsetWidth; let left = x(t) + 10; if (left + tw > W0) left = x(t) - tw - 10; tip.style('left', Math.max(0, left) + 'px').style('top', '8px');
+        }).on('mouseleave', () => tip.style('display', 'none'));
+      }
+    }
+    const pctCell = (v, good) => { const s = document.createElement('span'); s.textContent = spct(v); s.style.color = (good ? v > 0 : v < 0) ? 'var(--color-ok)' : 'var(--color-bad)'; return s; };
+    const cn = dash.data('cr_concentration');
+    if (cn.status === 'ok') fillRows($('#cr-conc'), cn.data, [[r => r.band], [r => d3.format(',')(num(r.adset_weeks)), 'n'], [r => d3.format('.2f')(num(r.adset_roas_vs_acct)), 'n'], [r => d3.format('.2f')(num(r.top_vs_rest)), 'n']]);
+    else fail($('#cr-conc').parentElement, 'cr_concentration');
+    const sg = dash.data('cr_signals');
+    if (sg.status === 'ok') fillRows($('#cr-signals'), sg.data, [[r => r.signal], [r => r.signal.startsWith('Share') ? d3.format('.0%')(num(r.winners)) : d3.format('.2f')(num(r.winners)), 'n'], [r => r.signal.startsWith('Share') ? d3.format('.0%')(num(r.others)) : d3.format('.2f')(num(r.others)), 'n'],
+      [r => { const v = num(r.power); const w = document.createElement('span'); const b = document.createElement('span'); b.className = 'bx-bar'; b.style.width = Math.max(0, (v - 0.5) / 0.5 * 6) + 'rem'; b.style.background = v >= 0.6 ? 'var(--f-green)' : 'var(--cds-chart-muted)'; b.style.marginRight = '6px'; const t = document.createElement('span'); t.textContent = d3.format('.2f')(v); w.appendChild(b); w.appendChild(t); return w; }]]);
+    else fail($('#cr-signals').parentElement, 'cr_signals');
+    const w1 = dash.data('cr_week1');
+    if (w1.status === 'ok') fillRows($('#cr-week1'), w1.data, [[r => r.week1_share], [r => d3.format(',')(num(r.arrivals)), 'n'], [r => d3.format('.0%')(num(r.became_top)), 'n']]);
+    const tk = dash.data('cr_takeover');
+    if (tk.status === 'ok') fillRows($('#cr-takeover'), tk.data, [[r => r.kind], [r => d3.format(',')(num(r.cases)), 'n'], [r => pctCell(num(r.roas_change), true), 'n'], [r => d3.format('.0%')(num(r.improved)), 'n'], [r => pctCell(num(r.spend_change), true), 'n']]);
+    else fail($('#cr-takeover').parentElement, 'cr_takeover');
+    const bk = dash.data('cr_break');
+    if (bk.status === 'ok') fillRows($('#cr-break'), bk.data, [[r => r.group], [r => d3.format(',')(num(r.adsets)), 'n'], [r => r2(num(r.roas_before)), 'n'], [r => r2(num(r.roas_after)), 'n'], [r => pctCell(num(r.change), true), 'n']]);
+    else fail($('#cr-break').parentElement, 'cr_break');
+  };
+  let relayIdx = null;
+  const drawRelay = (key) => {
+    const el = $('#dos-relay'); if (!el) return;
+    const d = dash.data('cr_relay');
+    if (d.status !== 'ok') { el.innerHTML = ''; fail(el, 'cr_relay'); return; }
+    if (!relayIdx) { relayIdx = d3.group(d.data, r => r.ekey); }
+    const rows = relayIdx.get(key) || [];
+    if (!rows.length) { el.innerHTML = ''; const n = document.createElement('p'); n.className = 'bx-note'; n.textContent = 'No ad-level spend for this row in the monthly ad exports.'; el.appendChild(n); return; }
+    const tot = d3.rollup(rows, v => d3.sum(v, r => num(r.spend)), r => r.code);
+    const order = [...tot.keys()].filter(k => k !== 'Other').sort((p, q) => tot.get(q) - tot.get(p)).concat(tot.has('Other') ? ['Other'] : []);
+    const lab = new Map(rows.map(r => [r.code, r.code === 'Other' ? 'Other' : (r.code + (r.cname ? ' · ' + r.cname : ''))]));
+    stackShare(el, rows, order, k => lab.get(k) || k);
+  };
+
+
+  /* ---------- overview & markets ---------- */
+  const ovFmt = {dose_slope: v => d3.format('$.2f')(v), dose_slope_ex_us: v => d3.format('$.2f')(v), dose_baseline: money, k_fe: v => d3.format('$.2f')(v),
+    us_share_pre: d3.format('.0%'), us_share_now: d3.format('.0%'), us_en_ios_pre: d3.format('.0%'), us_en_ios_now: d3.format('.0%'),
+    us_ios_spend_pre: money, us_ios_spend_now: money, us_proceeds_pre: money, us_proceeds_now: money, spend_wk_pre: money, spend_wk_now: money,
+    store_wk_pre: money, store_wk_now: money, meta_roas_pre: r2, meta_roas_now: r2, countries_spent: d3.format(','), tt_spend_wk_pre: money, tt_spend_wk_now: money,
+    break_cells: d3.format(','), break_cells_fell: d3.format('.0%'), break_median: d3.format('+.0%')};
+  const fillFactsFrom = (id, fmts) => {
+    const f = dash.data(id);
+    $$(`[data-source="${id}"][data-field="value"], [data-source="${id}"][data-field="label"]`).forEach(el => {
+      if (f.status !== 'ok') return; el.classList.remove('dash-skeleton');
+      const k = new URLSearchParams(el.dataset.where).get('fact'); const row = f.data.find(r => r.fact === k); if (!row) return;
+      if (el.dataset.field === 'label') { const v = row.label || ''; el.textContent = /^\d{4}-\d{2}-\d{2}$/.test(v) ? d3.utcFormat('%-d %b')(new Date(v)) : v; return; }
+      el.textContent = (fmts[k] || r2)(num(row.value));
+    });
+  };
+  const xf = (v) => isFinite(v) ? d3.format('.2f')(v) + '×' : '—';
+  const eraFmt = {ruler_ratio: d3.format('.2f'), ruler_ratio_iOS: xf, ruler_ratio_Android: xf, moves_right_pre: d3.format('.0%'), moves_right_singular: d3.format('.0%'),
+    cuts_strong: d3.format('d'), cuts_total: d3.format('d'), cuts_strong_peak: money, old_units_of_039: r2,
+    spend_wk_pre: money, spend_wk_transition: money, spend_wk_singular_early: money, spend_wk_singular_late: money,
+    store_wk_pre: money, store_wk_transition: money, store_wk_singular_early: money, store_wk_singular_late: money,
+    green_old_bar_pre: d3.format('.0%'), green_old_bar_singular: d3.format('.0%'), green_new_bar_pre: d3.format('.0%'), green_new_bar_singular: d3.format('.0%'),
+    us_vs_rest_ww_pre: xf, us_vs_rest_ww_singular: xf};
+
+  /* ---------- measurement eras (Diagnosis §1, §3, §4) ---------- */
+  const metFmt = {'Meta ROAS': r2, 'Purchases per 1M impressions': d3.format(',.0f'), 'Installs per 1k impressions': d3.format('.2f'),
+    'Click → install': pct, 'CPM': d3.format('$.2f'), 'Click-through rate': d3.format('.2%'), 'Hook rate': pct};
+  const ERA_NAME = {pre: "Before: Meta's own attribution", transition: 'Switching weeks', singular: 'Singular'};
+  const colored = (txt, cls) => { const s = document.createElement('span'); s.textContent = txt; if (cls) s.className = cls; return s; };
+  const BAR_CLS = {green: 'bx-verdict-ok', amber: 'bx-verdict-warn', red: 'bx-verdict-bad'};
+  const drawEra = () => {
+    const ew = dash.data('era_weekly'), host = $('#era-sm');
+    if (ew.status !== 'ok') fail(host, 'era_weekly');
+    else {
+      host.replaceChildren();
+      const weeksE = [...new Set(ew.data.map(r => r.week))].sort(), dates = weeksE.map(w => new Date(w));
+      const by = d3.group(ew.data, r => r.metric, r => r.os);
+      const boxes = [...by.keys()].map(mname => { const b = document.createElement('div'); b.className = 'm'; host.appendChild(b); return [mname, b]; });
+      boxes.forEach(([mname, box]) => {
+        const t = document.createElement('div'); t.className = 't'; t.textContent = mname; box.appendChild(t);
+        const c = document.createElement('div'); box.appendChild(c);
+        const ser = ['iOS', 'Android'].map((o, i) => { const m = new Map(((by.get(mname) || new Map()).get(o) || []).map(r => [r.week, num(r.index)])); return {name: o, color: dash.colors[i], values: weeksE.map(w => m.has(w) ? m.get(w) : NaN)}; });
+        const lo = d3.min(ser.flatMap(x => x.values).filter(isFinite));
+        lineChart(c, {dates, series: ser, yFmt: d3.format('.2f'), refs: [1], H: 160, yMin: Math.max(0, Math.floor(Math.min(lo, 1) * 10) / 10 - 0.1), switches: [['iOS', ''], ['Android', '']]});
+      });
+    }
+    const eo = dash.data('era_os');
+    if (eo.status === 'ok') fillRows($('#era-os'), eo.data, [[r => r.metric], [r => r.os], [r => (metFmt[r.metric] || r2)(num(r.pre)), 'n'], [r => (metFmt[r.metric] || r2)(num(r.singular)), 'n'],
+      [r => xf(num(r.ratio)), 'n'], [r => { const v = num(r.step); return colored(spct(v), v <= -0.15 ? 'bx-verdict-bad' : v >= 0.15 ? 'bx-verdict-warn' : ''); }, 'n'], [r => r.kind]]);
+    else fail($('#era-os').parentElement, 'era_os');
+    const ov = dash.data('ov_weekly');
+    if (ov.status === 'ok') { const R = ov.data.slice().sort((a, b) => a.week < b.week ? -1 : 1);
+      lineChart($('#era-path'), {dates: R.map(r => new Date(r.week)), yFmt: money, switches: [['iOS', 'iOS on Singular'], ['Android', 'Android']],
+        series: [{name: 'App Store proceeds', values: R.map(r => num(r.store_proceeds)), color: dash.colors[0]}],
+        bars: {name: 'Meta spend', values: R.map(r => num(r.spend)), color: 'var(--cds-chart-muted)'}}); }
+    else fail($('#era-path'), 'ov_weekly');
+    const em = dash.data('era_moves');
+    if (em.status === 'ok') fillRows($('#era-moves'), em.data, [[r => ERA_NAME[r.era] || r.era], [r => d3.format('.1f')(num(r.moves_per_week)), 'n'], [r => d3.format('.0%')(num(r.right_share)), 'n'],
+      [r => d3.format('.1f')(num(r.strong_cut) / num(r.weeks)), 'n'], [r => d3.format('.1f')(num(r.weak_raised) / num(r.weeks)), 'n']]);
+    else fail($('#era-moves').parentElement, 'era_moves');
+    const el = dash.data('era_launch');
+    if (el.status === 'ok') fillRows($('#era-launch'), el.data, [[r => d3.utcFormat('%b %Y')(new Date(r.month + '-01')) + (tf(r.complete) ? '' : ' (still running)')], [r => d3.format('d')(num(r.concepts)), 'n'],
+      [r => money(num(r.spend_first_8w)), 'n'], [r => d3.format('.0%')(num(r.became_top)), 'n'], [r => { const v = num(r.rel_index); return colored(d3.format('.2f')(v), v < 0.95 ? 'bx-verdict-bad' : v >= 1.05 ? 'bx-verdict-ok' : ''); }, 'n']]);
+    else fail($('#era-launch').parentElement, 'era_launch');
+    const ec = dash.data('era_cuts');
+    if (ec.status === 'ok') {
+      const rows = ec.data.filter(r => num(r.rel_last4) >= 0.95).sort((a, b) => num(b.peak_wk) - num(a.peak_wk));
+      fillRows($('#era-cuts'), rows, [[r => r.name], [r => r.os], [r => dshort(r.last_week), 'n'], [r => money(num(r.peak_wk)), 'n'], [r => r2(num(r.roas_last4)), 'n'],
+        [r => colored(xf(num(r.rel_last4)), num(r.rel_last4) >= 1 ? 'bx-verdict-ok' : ''), 'n'], [r => colored(r.old_bar, BAR_CLS[r.old_bar])], [r => colored(r.new_bar, BAR_CLS[r.new_bar])],
+        [r => r.persona_fate + ' (' + money(num(r.persona_now)) + '/wk)']]);
+    } else fail($('#era-cuts').parentElement, 'era_cuts');
+    const cp = dash.data('era_compare');
+    const share = new Set(['wk1_hi_top', 'wk1_lo_top', 'new_delivered', 'proven_delivered', 'mean_reversion']);
+    const ff = (r, v) => !isFinite(v) ? '—' : r.fmt === 'n1' ? d3.format('.0f')(v) : r.fmt === 'x' ? xf(v) : r.fmt === 'usd' ? d3.format('$.2f')(v)
+      : r.fmt === 'n2' ? d3.format(r.finding === 'elasticity' ? '.3f' : '.2f')(v) : share.has(r.finding) ? d3.format('.0%')(v) : spct(v);
+    if (cp.status === 'ok') fillRows($('#era-compare'), cp.data, [[r => r.area], [r => r.label], [r => ff(r, num(r.full)), 'n'], [r => ff(r, num(r.singular)), 'n'],
+      [r => colored(r.verdict, r.verdict.startsWith('Holds') ? 'bx-verdict-ok' : r.verdict.startsWith('Same') ? 'bx-verdict-warn' : 'bx-verdict-bad')]]);
+    else fail($('#era-compare').parentElement, 'era_compare');
+  };
+  const TAB_OF = {Markets: 'markets', Channels: 'channels', Diagnosis: 'why', Grid: 'grid', Overview: 'overview', Creatives: 'creatives', 'Data checks': 'checks'};
+  $('#ov-actions').addEventListener('click', e => { const tr = e.target.closest('tr[data-key]'); if (!tr) return; const r = (dash.data('ov_actions').data || []).find(x => String(x.rank) === tr.dataset.key); if (r && TAB_OF[r.where]) show(TAB_OF[r.where]); });
+  const drawOverview = () => {
+    const w = dash.data('ov_weekly');
+    if (w.status !== 'ok') fail($('#ov-money'), 'ov_weekly');
+    else {
+      const R = w.data.slice().sort((a, b) => a.week < b.week ? -1 : 1); const dates = R.map(r => new Date(r.week));
+      lineChart($('#ov-money'), {dates, yFmt: money, switches: [['iOS', 'Singular →']], series: [
+        {name: 'App Store proceeds', values: R.map(r => num(r.store_proceeds)), color: dash.colors[0]},
+        {name: 'Meta-credited', values: R.map(r => num(r.meta_rev)), color: dash.colors[2]},
+        {name: 'TikTok-credited', values: R.map(r => num(r.tt_rev)), color: dash.colors[3]}],
+        stack: [{name: 'Meta spend', values: R.map(r => num(r.spend)), color: 'var(--cds-chart-muted)'},
+                {name: 'TikTok spend', values: R.map(r => num(r.tt_spend)), color: 'color-mix(in srgb, var(--cds-chart-4) 45%, var(--color-bg))'}]});
+    }
+    const a = dash.data('ov_actions');
+    if (a.status === 'ok') { fillRows($('#ov-actions'), a.data, [[r => String(r.rank), 'n'], [r => r.lever], [r => r.action], [r => r.evidence], [r => isFinite(num(r.at_stake)) ? money(num(r.at_stake)) : '—', 'n'], [r => r.owner], [r => r.where]]); $$('#ov-actions tbody tr').forEach(tr => tr.style.cursor = 'pointer'); }
+    else fail($('#ov-actions').parentElement, 'ov_actions');
+  };
+  const scatterDose = (el, rows, slope, base) => {
+    el.innerHTML = ''; const W0 = el.clientWidth; if (!W0 || !rows.length) return;
+    const H = 300, m = {l: 58, r: 12, t: 10, b: 34};
+    const xs = rows.map(r => num(r.d_ios_spend)), ys = rows.map(r => num(r.d_proceeds));
+    const x = d3.scaleLinear(d3.extent(xs.concat([0])), [m.l, W0 - m.r]).nice(); const y = d3.scaleLinear(d3.extent(ys.concat([0])), [H - m.b, m.t]).nice();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W0} ${H}`);
+    const xt = x.ticks(Math.max(3, Math.floor(W0 / 110))), yt = y.ticks(5);
+    yt.forEach(t => { svg.append('line').attr('x1', m.l).attr('x2', W0 - m.r).attr('y1', y(t)).attr('y2', y(t)).attr('stroke', t === 0 ? 'var(--cds-chart-axis)' : 'var(--cds-chart-grid)'); svg.append('text').attr('x', m.l - 6).attr('y', y(t) + 4).attr('text-anchor', 'end').text(d3.format('+$,.0s')(t).replace('+$0', '$0')); });
+    xt.forEach(t => { svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', t === 0 ? 'var(--cds-chart-axis)' : 'var(--cds-chart-grid)'); svg.append('text').attr('x', x(t)).attr('y', H - m.b + 14).attr('text-anchor', 'middle').text(d3.format('+$,.0s')(t).replace('+$0', '$0')); });
+    svg.append('text').attr('x', W0 - m.r).attr('y', H - 4).attr('text-anchor', 'end').text('Δ iOS spend / week →');
+    svg.append('text').attr('x', m.l + 4).attr('y', m.t + 10).text('↑ Δ App Store proceeds / week');
+    if (isFinite(slope)) { const [x0, x1] = x.domain(); svg.append('line').attr('x1', x(x0)).attr('x2', x(x1)).attr('y1', y(base + slope * x0)).attr('y2', y(base + slope * x1)).attr('stroke', dash.colors[1]).attr('stroke-width', 2).attr('stroke-dasharray', '6 4'); }
+    const rr = d3.scaleSqrt([0, d3.max(rows, r => num(r.ios_pre) + num(r.ios_now))], [2, 16]);
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip');
+    svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', r => x(num(r.d_ios_spend))).attr('cy', r => y(num(r.d_proceeds))).attr('r', r => rr(num(r.ios_pre) + num(r.ios_now)))
+      .attr('fill', dash.colors[0]).attr('fill-opacity', .35).attr('stroke', dash.colors[0])
+      .on('mousemove', (ev, r) => { tip.style('display', 'block').html(''); tip.append('div').attr('class', 'd').text(r.country);
+        tip.append('div').text('iOS spend/week: ' + money(num(r.ios_pre)) + ' → ' + money(num(r.ios_now))); tip.append('div').text('App Store proceeds/week: ' + money(num(r.proceeds_pre)) + ' → ' + money(num(r.proceeds_now)));
+        const [mx, my] = d3.pointer(ev, el); const tw = tip.node().offsetWidth; let left = mx + 12; if (left + tw > W0) left = mx - tw - 12; tip.style('left', Math.max(0, left) + 'px').style('top', Math.max(0, my - 30) + 'px'); })
+      .on('mouseleave', () => tip.style('display', 'none'));
+    const lab = rows.slice().sort((a, b) => (num(b.ios_pre) + num(b.ios_now)) - (num(a.ios_pre) + num(a.ios_now))).slice(0, 10);
+    const placed = [];
+    lab.forEach(r => { const px = x(num(r.d_ios_spend)) + rr(num(r.ios_pre) + num(r.ios_now)) + 3, py = y(num(r.d_proceeds)) + 4;
+      if (placed.some(p => Math.abs(p[0] - px) < 60 && Math.abs(p[1] - py) < 12)) return; placed.push([px, py]);
+      const t = svg.append('text').attr('x', px).attr('y', py).text(r.country); const w = t.node().getComputedTextLength(); if (px + w > W0) t.attr('x', px - w - 2 * rr(num(r.ios_pre) + num(r.ios_now)) - 6); });
+  };
+  const drawMarkets = () => {
+    const sh = dash.data('mk_share');
+    if (sh.status !== 'ok') fail($('#mk-share'), 'mk_share');
+    else { const tot = d3.rollup(sh.data, v => d3.sum(v, r => num(r.spend)), r => r.country);
+      const order = [...tot.keys()].filter(k => k !== 'Other').sort((p, q) => tot.get(q) - tot.get(p)).concat(['Other']);
+      stackShare($('#mk-share'), sh.data.map(r => ({week: r.week, code: r.country, share: r.share, spend: r.spend})), order, k => regionName(k)); }
+    const us = dash.data('mk_us');
+    if (us.status !== 'ok') fail($('#mk-us'), 'mk_us');
+    else { const R = us.data.slice().sort((a, b) => a.week < b.week ? -1 : 1); const dates = R.map(r => new Date(r.week));
+      lineChart($('#mk-us'), {dates, yFmt: money, switches: [['iOS', 'Singular →']], series: [
+        {name: 'US App Store proceeds', values: R.map(r => num(r.us_proceeds)), color: dash.colors[0]},
+        {name: 'Meta-credited US iOS revenue', values: R.map(r => num(r.us_meta_ios_rev)), color: dash.colors[2]}],
+        bars: {name: 'US iOS spend', values: R.map(r => num(r.us_ios_spend)), color: 'var(--cds-chart-muted)'}}); }
+    const ds = dash.data('mk_dose'), f = dash.data('ov_facts');
+    if (ds.status !== 'ok') fail($('#mk-dose'), 'mk_dose');
+    else { const get = k => f.status === 'ok' ? num((f.data.find(r => r.fact === k) || {}).value) : NaN;
+      scatterDose($('#mk-dose'), ds.data, get('dose_slope'), get('dose_baseline')); }
+    const c = dash.data('mk_country');
+    if (c.status === 'ok') {
+      const dcell = (v) => { const s = document.createElement('span'); s.textContent = (v >= 0 ? '+' : '−') + money(Math.abs(v)); s.style.color = v < 0 ? 'var(--color-bad)' : 'var(--color-ok)'; return s; };
+      fillRows($('#mk-table'), c.data, [[r => r.country], [r => money(num(r.spend_pre)), 'n'], [r => money(num(r.spend_now)), 'n'], [r => d3.format('.1%')(num(r.share_now)), 'n'],
+        [r => isFinite(num(r.idx_ios_pre)) ? d3.format('.2f')(num(r.idx_ios_pre)) + '×' : '—', 'n'], [r => isFinite(num(r.idx_ios_now)) ? d3.format('.2f')(num(r.idx_ios_now)) + '×' : '—', 'n'],
+        [r => isFinite(num(r.idx_and_now)) ? d3.format('.2f')(num(r.idx_and_now)) + '×' : '—', 'n'], [r => r2(num(r.roas_ios_now)), 'n'],
+        [r => isFinite(num(r.proceeds_pre)) ? money(num(r.proceeds_pre)) : '—', 'n'], [r => isFinite(num(r.proceeds_now)) ? money(num(r.proceeds_now)) : '—', 'n'],
+        [r => dcell(num(r.d_ios_spend)), 'n'], [r => isFinite(num(r.d_proceeds)) ? dcell(num(r.d_proceeds)) : '—', 'n'], [r => r.top_personas || '']]);
+      $$('#mk-table tbody tr').forEach(tr => { const td = tr.firstChild; td.title = regionName(tr.dataset.key); });
+    } else fail($('#mk-table').parentElement, 'mk_country');
+  };
+  /* ---------- channels ---------- */
+  const chFmt = {tt_spend_wk_pre: money, tt_spend_wk_now: money, tt_spend_wk_low: money, tt_share_pre: d3.format('.0%'), tt_share_now: d3.format('.0%'),
+    tt_general_share: d3.format('.0%'), tt_ios_share_of_tt: d3.format('.0%'), tt_ghost_share_ios: d3.format('.0%'), tt_ghost_share_and: d3.format('.0%'), tt_ghost_share_pre: d3.format('.0%'),
+    tt_ghost_wk_now: money, tt_ghost_adgroups: d3.format('d'), tt_ghost_never_spent: d3.format('d'), tt_ghost_never_value: money, tt_android_gap_weeks: d3.format('d'),
+    store_per_meta_ios: v => d3.format('$.2f')(v), store_per_tt_ios: v => d3.format('$.2f')(v), store_per_meta_ios_se: v => d3.format('$.2f')(v), store_per_tt_ios_se: v => d3.format('$.2f')(v),
+    store_per_tt_ios_hi: v => d3.format('$.2f')(v), store_per_tt_ios_lo: v => d3.format('$.2f')(v), us_store_jun: money, us_store_sep: money, us_meta_ios_jun: money, us_meta_ios_sep: money,
+    us_tt_ios_jun: money, us_tt_ios_sep: money, tt_adgroups_live: d3.format('d'), credit_ratio_tt_high: xf, credit_ratio_tt_low: xf};
+  const agLabel = (name) => { const p = (name || '').split('/').map(x => x.trim()); if (p[0] === 'AS' && p.length >= 12) { const [, , , , os, geo, lang, , , bid, mod, launch] = p;
+      return [geo, lang, os, bid, mod !== 'Normal' ? mod : '', launch ? dshort(launch.slice(0, 4) + '-' + launch.slice(4, 6) + '-' + launch.slice(6, 8)) : ''].filter(Boolean).join(' · '); } return name; };
+  const drawChannels = () => {
+    const w = dash.data('ch_weekly');
+    ['#ch-spend', '#ch-roas', '#ch-ghost'].forEach(id => { if (w.status !== 'ok') fail($(id), 'ch_weekly'); });
+    if (w.status === 'ok') {
+      const R = w.data.slice().sort((a, b) => a.week < b.week ? -1 : 1), dates = R.map(r => new Date(r.week)), F = dash.data('ch_facts');
+      const ttStart = F.status === 'ok' ? ((F.data.find(r => r.fact === 'tt_mmp_start') || {}).label || '') : '';
+      const mk = ttStart ? [[ttStart, 'TikTok MMP']] : [];
+      const tint = (i) => `color-mix(in srgb, ${dash.colors[i]} 55%, var(--color-bg))`;
+      lineChart($('#ch-spend'), {dates, yFmt: money, marks: mk, switches: [['iOS', 'Meta on Singular']],
+        stack: [{name: 'Meta iOS', values: R.map(r => num(r.meta_ios_spend)), color: tint(0)}, {name: 'Meta Android', values: R.map(r => num(r.meta_and_spend)), color: tint(1)},
+                {name: 'TikTok iOS', values: R.map(r => num(r.tt_ios_spend)), color: tint(2)}, {name: 'TikTok Android', values: R.map(r => num(r.tt_and_spend)), color: tint(3)}],
+        series: [{name: 'App Store proceeds', values: R.map(r => num(r.store_proceeds)), color: 'var(--color-fg)'}]});
+      lineChart($('#ch-roas'), {dates, yFmt: r2, marks: mk, switches: [['iOS', ''], ['Android', '']], series: [
+        {name: 'Meta iOS', values: R.map(r => num(r.meta_ios_roas)), color: dash.colors[0]}, {name: 'Meta Android', values: R.map(r => num(r.meta_and_roas)), color: dash.colors[1]},
+        {name: 'TikTok iOS', values: R.map(r => num(r.tt_ios_roas)), color: dash.colors[2]}, {name: 'TikTok Android', values: R.map(r => num(r.tt_and_roas)), color: dash.colors[3]}]});
+      lineChart($('#ch-ghost'), {dates, yFmt: money, marks: mk,
+        stack: [{name: 'Value on live ad groups', values: R.map(r => num(r.tt_ios_rev) + num(r.tt_and_rev)), color: tint(2)},
+                {name: 'Value on ad groups not spending', values: R.map(r => num(r.tt_ios_ghost) + num(r.tt_and_ghost)), color: 'color-mix(in srgb, var(--color-bad) 45%, var(--color-bg))'}],
+        series: [{name: 'TikTok spend', values: R.map(r => num(r.tt_ios_spend) + num(r.tt_and_spend)), color: 'var(--color-fg)'}]});
+    }
+    const st = dash.data('ch_store');
+    const dol = v => isFinite(v) ? d3.format('$.2f')(v) : '—';
+    if (st.status === 'ok') fillRows($('#ch-store'), st.data, [[r => r.spec], [r => dol(num(r.meta)) + (isFinite(num(r.meta_se)) ? ' ± ' + d3.format('.2f')(num(r.meta_se)) : ''), 'n'],
+      [r => dol(num(r.tiktok)) + (isFinite(num(r.tiktok_se)) ? ' ± ' + d3.format('.2f')(num(r.tiktok_se)) : ''), 'n']]);
+    else fail($('#ch-store').parentElement, 'ch_store');
+    const cc = dash.data('ch_country');
+    if (cc.status === 'ok') {
+      const dcell = (v) => colored((v >= 0 ? '+' : '−') + money(Math.abs(v)), v < 0 ? 'bx-verdict-bad' : 'bx-verdict-ok');
+      const ix = v => isFinite(v) ? d3.format('.2f')(v) : '—';
+      fillRows($('#ch-country'), cc.data, [[r => r.country], [r => money(num(r.paid_now)), 'n'], [r => isFinite(num(r.tt_share_pre)) ? d3.format('.0%')(num(r.tt_share_pre)) : '—', 'n'],
+        [r => isFinite(num(r.tt_share_now)) ? d3.format('.0%')(num(r.tt_share_now)) : '—', 'n'], [r => ix(num(r.meta_ios_idx_now)), 'n'], [r => ix(num(r.tt_ios_idx_now)), 'n'],
+        [r => dcell(num(r.d_meta_ios)), 'n'], [r => dcell(num(r.d_tt_ios)), 'n'], [r => isFinite(num(r.d_proceeds)) ? dcell(num(r.d_proceeds)) : '—', 'n']]);
+      $$('#ch-country tbody tr').forEach(tr => { tr.firstChild.title = regionName(tr.dataset.key); });
+    } else fail($('#ch-country').parentElement, 'ch_country');
+    const ag = dash.data('ch_adgroups');
+    if (ag.status !== 'ok') { fail($('#ch-ag').parentElement, 'ch_adgroups'); return; }
+    const cols = (ag.columns || Object.keys(ag.data[0] || {})).filter(c => c.startsWith('s_')).map(c => c.slice(2)).sort().reverse();
+    const head = $('#ch-ag-head'); head.replaceChildren();
+    const th = (t, f, c) => { const e = document.createElement('th'); e.textContent = t; e.dataset.field = f; if (c) e.className = c; head.appendChild(e); };
+    th('Status', 'status', 'l c1'); th('Ad group', 'name', 'l c2'); th('Top country', 'top_country', 'l'); th('Spend LW', 'spend_last'); th('ROAS LW', 'roas_last'); th('vs TikTok OS, 4 wks', 'rel_4w'); th('Peak $/wk', 'peak');
+    cols.forEach(w => th(d3.utcFormat('%-d %b')(new Date(w)), 's_' + w));
+    const tb = $('#ch-ag-body'); tb.replaceChildren();
+    ag.data.forEach(r => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.key; tr.className = 'child' + (tf(r.active) ? '' : ' off'); tr.style.cursor = 'default';
+      const td = (t, c) => { const e = document.createElement('td'); e.textContent = t; if (c) e.className = c; tr.appendChild(e); return e; };
+      td(r.status, 'c1'); td(agLabel(r.name), 'c2').title = r.name; td(r.top_country && r.top_country !== 'nan' ? regionName(r.top_country) : '');
+      td(money(num(r.spend_last)), 'n'); td(r2(num(r.roas_last)), 'n'); td(isFinite(num(r.rel_4w)) ? xf(num(r.rel_4w)) : '—', 'n'); td(money(num(r.peak)), 'n');
+      cols.forEach(w => { const sp = num(r['s_' + w]), x = num(r['x_' + w]); const e = td(kfmt(sp), 'w ' + (sp > 0 ? zoneRel(x) : '')); e.title = sp > 0 ? money(sp) + (isFinite(x) ? ' · ' + d3.format('.0%')(x) + ' of TikTok ' + r.os + ' that week' : '') : 'No spend'; });
+      tb.appendChild(tr);
+    });
+  };
+  let ctIdx = null;
+  const drawCountryRelay = (key) => {
+    const el = $('#dos-country'); if (!el) return;
+    const d = dash.data('ct_relay');
+    if (d.status !== 'ok') { el.innerHTML = ''; fail(el, 'ct_relay'); return; }
+    if (!ctIdx) ctIdx = d3.group(d.data, r => r.ekey);
+    const rows = ctIdx.get(key) || [];
+    if (!rows.length) { el.innerHTML = ''; const n = document.createElement('p'); n.className = 'bx-note'; n.textContent = 'No country data for this row.'; el.appendChild(n); return; }
+    const tot = d3.rollup(rows, v => d3.sum(v, r => num(r.spend)), r => r.code);
+    const order = [...tot.keys()].filter(k => k !== 'Other').sort((p, q) => tot.get(q) - tot.get(p)).concat(tot.has('Other') ? ['Other'] : []);
+    stackShare(el, rows, order, k => regionName(k));
+  };
+
+  /* ---------- draw ---------- */
+  function draw() {
+    prep();
+    drawHead();
+    fillFactsFrom('ov_facts', ovFmt);
+    fillFactsFrom('era_facts', eraFmt);
+    fillFactsFrom('ch_facts', chFmt);
+    if (tab === 'overview') { drawTrend(); drawWeekTables(); drawOverview(); }
+    if (tab === 'markets') drawMarkets();
+    if (tab === 'channels') drawChannels();
+    if (tab === 'grid') drawGrid();
+    if (tab === 'checks') drawChecks();
+    if (tab === 'why') { drawWhy(); drawEra(); drawMoved(); }
+    if (tab === 'creatives') drawCreatives();
+  }
+  dash.onData(draw);
+  const named = location.hash.slice(1);
+  if (['overview', 'markets', 'channels', 'grid', 'creatives', 'why', 'checks'].includes(named)) show(named, false); else show('overview', false);
+})();
+</script>

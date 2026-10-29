@@ -1,0 +1,278 @@
+{
+  "baseline": {
+    "became1": 0.488,
+    "concepts": 84,
+    "hit_rate": 0.3128,
+    "hit_rate_12var": 0.267,
+    "hit_rate_3var": 0.4706,
+    "won20": 0.381
+  },
+  "generated": "2026-10-27",
+  "history": {
+    "DEY": {
+      "became1": 0.769,
+      "briefs": 20,
+      "cycle_days": null,
+      "finished": 20,
+      "first": "",
+      "last": "",
+      "last8": 0,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "with_results": 13,
+      "won20": 0.692
+    },
+    "HAN": {
+      "became1": 0.536,
+      "briefs": 89,
+      "cycle_days": 3,
+      "finished": 88,
+      "first": "2025-10-14",
+      "last": "2026-10-05",
+      "last8": 7,
+      "weekly": [
+        4,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "with_results": 28,
+      "won20": 0.5
+    },
+    "HUS": {
+      "became1": 0.5,
+      "briefs": 15,
+      "cycle_days": null,
+      "finished": 15,
+      "first": "",
+      "last": "",
+      "last8": 0,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "with_results": 6,
+      "won20": 0.5
+    },
+    "KIM": {
+      "became1": 0.778,
+      "briefs": 39,
+      "cycle_days": null,
+      "finished": 38,
+      "first": "",
+      "last": "",
+      "last8": 0,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "with_results": 9,
+      "won20": 0.778
+    },
+    "MAR": {
+      "became1": 0,
+      "briefs": 2,
+      "cycle_days": null,
+      "finished": 2,
+      "first": "",
+      "last": "",
+      "last8": 0,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "with_results": 1,
+      "won20": 1
+    },
+    "OST": {
+      "became1": 0.567,
+      "briefs": 106,
+      "cycle_days": 3,
+      "finished": 101,
+      "first": "2025-02-03",
+      "last": "2026-10-23",
+      "last8": 11,
+      "weekly": [
+        1,
+        1,
+        0,
+        0,
+        3,
+        0,
+        1,
+        2,
+        0,
+        2,
+        3,
+        0
+      ],
+      "with_results": 30,
+      "won20": 0.5
+    },
+    "USM": {
+      "became1": 0.591,
+      "briefs": 86,
+      "cycle_days": 6,
+      "finished": 84,
+      "first": "2025-11-13",
+      "last": "2026-10-23",
+      "last8": 14,
+      "weekly": [
+        3,
+        1,
+        1,
+        0,
+        2,
+        3,
+        2,
+        0,
+        2,
+        3,
+        2,
+        0
+      ],
+      "with_results": 22,
+      "won20": 0.455
+    }
+  },
+  "metric": "Won 20%+ of an adset's spend in its first week there (adsets spending $1k+ that week); became an adset's #1 within 4 weeks",
+  "roster": [
+    {
+      "active": true,
+      "code": "TED",
+      "name": "Teddy",
+      "role": "strategist"
+    },
+    {
+      "active": true,
+      "code": "JAC",
+      "name": "Jacqueline",
+      "role": "strategist"
+    },
+    {
+      "active": true,
+      "code": "CAM",
+      "name": "Camile",
+      "role": "strategist"
+    },
+    {
+      "active": true,
+      "code": "OST",
+      "name": "Ostap",
+      "role": "designer"
+    },
+    {
+      "active": true,
+      "code": "HAN",
+      "name": "Hanna",
+      "role": "designer"
+    },
+    {
+      "active": true,
+      "code": "USM",
+      "name": "Usman",
+      "role": "designer"
+    },
+    {
+      "active": true,
+      "code": "KIM",
+      "name": "Yuli Nur Hakim",
+      "role": "designer"
+    },
+    {
+      "active": true,
+      "code": "MAR",
+      "name": "Marvon",
+      "role": "designer"
+    },
+    {
+      "active": false,
+      "code": "DEY",
+      "name": "Deyan Haider",
+      "role": "designer"
+    },
+    {
+      "active": false,
+      "code": "HUS",
+      "name": "Hussein Saleh Cabrera",
+      "role": "designer"
+    }
+  ],
+  "source": "Notion Ad Creative Tracker (export 27 Oct 2026) joined to Meta ad data by concept code + batch",
+  "tasks": [
+    "Image Generation / Creation",
+    "Image to Video / Video Generation",
+    "Voice Generation / Sourcing",
+    "Lipsync (Image+Voice to Video) Generation",
+    "Simple Video Generation Non-AI",
+    "Non-AI Video Generation",
+    "Core Output Edit",
+    "Complex Core Output Edit",
+    "Replication/Variation",
+    "Complex Replication/Variation"
+  ],
+  "weeks": [
+    "2026-08-10",
+    "2026-08-17",
+    "2026-08-24",
+    "2026-08-31",
+    "2026-09-07",
+    "2026-09-14",
+    "2026-09-21",
+    "2026-09-28",
+    "2026-10-05",
+    "2026-10-12",
+    "2026-10-19",
+    "2026-10-26"
+  ]
+}

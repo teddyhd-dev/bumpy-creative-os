@@ -1,0 +1,49 @@
+/* Local stand-in for the tokens the claude.ai dashboard provides. Light + dark. */
+:root {
+  --color-fg: #1f1e1c;
+  --color-fg-muted: #6b6862;
+  --color-bg: #fbfaf8;
+  --color-panel: #ffffff;
+  --color-border-line: #e4e1db;
+  --color-ok: #2f7d4f;
+  --color-warn: #b7791f;
+  --color-bad: #c0392b;
+  --font-anthropic-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-anthropic-serif: ui-serif, Georgia, "Times New Roman", serif;
+  --cds-font-size-caption: 12px;
+  --cds-font-size-body: 14px;
+  --cds-font-size-heading: 16px;
+  --cds-font-size-title: 26px;
+  --cds-font-weight-medium: 600;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 16px; --cds-gap-lg: 24px; --cds-gap-xl: 32px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px;
+  --cds-radius: 8px;
+  --cds-chart-grid: #ece9e3;
+  --cds-chart-axis: #b8b3aa;
+  --cds-chart-reference: #8f8a82;
+  --cds-chart-muted: #c9c4bb;
+  --cds-chart-1: #2f6fb0; --cds-chart-2: #d0753a; --cds-chart-3: #3f9a6e; --cds-chart-4: #8a5cc2;
+  --cds-chart-5: #c2457a; --cds-chart-6: #2a9bb3; --cds-chart-7: #a48a1c; --cds-chart-8: #6b7a8f;
+  --cds-surface-popover: #ffffff;
+  --cds-border: #dcd8d0;
+  --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, .12);
+  --cds-text-secondary: #6b6862;
+  --cds-dur-slow: 300ms;
+  --dash-gutter: clamp(16px, 4vw, 40px);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: #ece9e3; --color-fg-muted: #a5a097; --color-bg: #1b1a18; --color-panel: #24231f;
+    --color-border-line: #3a3833; --color-ok: #6cc28f; --color-warn: #e0a84a; --color-bad: #ef7a6b;
+    --cds-chart-grid: #302e2a; --cds-chart-axis: #5d5a53; --cds-chart-reference: #8a857c; --cds-chart-muted: #55524b;
+    --cds-chart-1: #6aa6e0; --cds-chart-2: #ec9a62; --cds-chart-3: #6cc69a; --cds-chart-4: #b392e6;
+    --cds-chart-5: #e77aa6; --cds-chart-6: #5cc2d6; --cds-chart-7: #d1b84d; --cds-chart-8: #98a6ba;
+    --cds-surface-popover: #2b2a26; --cds-border: #45423c; --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, .5);
+    --cds-text-secondary: #a5a097;
+  }
+}
+html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); }
+#dash-root { padding: var(--cds-gap-lg) var(--dash-gutter); max-width: 1600px; margin: 0 auto; }
+.dash-skeleton { color: transparent !important; background: var(--cds-chart-grid); border-radius: 4px; }
+.local-bar { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); padding: var(--cds-pad-sm) var(--dash-gutter); border-bottom: 1px solid var(--color-border-line); }

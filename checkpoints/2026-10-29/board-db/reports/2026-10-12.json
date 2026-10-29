@@ -1,0 +1,1425 @@
+{
+  "ad_week": "2026-10-05",
+  "data_note": "Adsets to the week of 2026-10-12; ads (creatives) to the week of 2026-10-05; TikTok to 2026-10-05; App Store to 2026-10-05. Every insight and action is a draft from the numbers, for the presenter to edit.",
+  "generated": "2026-10-27",
+  "launches": [
+    {
+      "action": "Keep it; brief a local-language variant set next.",
+      "adset": "SoutheastAsianFemaleLover · iOS · EN",
+      "adset_id": "120251435094910469",
+      "flags": [],
+      "insight": "4 weeks live, $5.9k spent, ROAS 0.51 since launch, 0.53 last week (above the bar).",
+      "kind": "Expansion",
+      "launched": "2026-09-21",
+      "now": {
+        "c2i": 0.238,
+        "ctr": 0.0098,
+        "ipm": 2.32,
+        "label": "SoutheastAsianFemaleLover · iOS · EN",
+        "os": "iOS",
+        "roas": 0.532,
+        "spend": 1793,
+        "vs": {
+          "c2i": 1.45,
+          "ctr": 1,
+          "ipm": 1.45,
+          "roas": 1.19
+        }
+      },
+      "persona": "SoutheastAsianFemaleLover",
+      "roas_total": 0.507,
+      "siblings": [
+        {
+          "c2i": 0.422,
+          "ctr": 0.0075,
+          "ipm": 3.18,
+          "label": "SoutheastAsianFemaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.419,
+          "spend": 1857,
+          "vs": {
+            "c2i": 1.16,
+            "ctr": 0.71,
+            "ipm": 0.84,
+            "roas": 1.16
+          }
+        }
+      ],
+      "spend_total": 5851,
+      "top": [
+        {
+          "code": "w1Tr7K",
+          "ctr": 0.0074,
+          "ipm": 2.18,
+          "name": "carousel",
+          "roas": 0.441,
+          "share": 0.778
+        },
+        {
+          "code": "h7km3n",
+          "ctr": 0.0144,
+          "ipm": 2.12,
+          "name": "wanted",
+          "roas": 0.515,
+          "share": 0.133
+        },
+        {
+          "code": "X4nR8W",
+          "ctr": 0.0147,
+          "ipm": 2.44,
+          "name": "talkinghead",
+          "roas": 0.305,
+          "share": 0.048
+        }
+      ],
+      "weeks": 4
+    },
+    {
+      "action": "Decide this week: one more swing with a different concept, or pause and write it up.",
+      "adset": "AsianMaleLover · Android · EN",
+      "adset_id": "120251554237420469",
+      "flags": [],
+      "insight": "4 weeks live, $5.5k spent, ROAS 0.41 since launch, 0.34 last week (under the bar).",
+      "kind": "New persona",
+      "launched": "2026-09-21",
+      "now": {
+        "c2i": 0.39,
+        "ctr": 0.0088,
+        "ipm": 3.42,
+        "label": "AsianMaleLover · Android · EN",
+        "os": "Android",
+        "roas": 0.339,
+        "spend": 2249,
+        "vs": {
+          "c2i": 1.07,
+          "ctr": 0.84,
+          "ipm": 0.9,
+          "roas": 0.94
+        }
+      },
+      "persona": "AsianMaleLover",
+      "roas_total": 0.415,
+      "siblings": [
+        {
+          "c2i": 0.1,
+          "ctr": 0.021,
+          "ipm": 2.09,
+          "label": "AsianMaleLover · iOS · EN",
+          "os": "iOS",
+          "roas": 0.408,
+          "spend": 1064,
+          "vs": {
+            "c2i": 0.61,
+            "ctr": 2.14,
+            "ipm": 1.31,
+            "roas": 0.91
+          }
+        }
+      ],
+      "spend_total": 5487,
+      "top": [
+        {
+          "code": "dR1elf",
+          "ctr": 0.0088,
+          "ipm": 3.36,
+          "name": "dreamlife",
+          "roas": 0.496,
+          "share": 0.876
+        },
+        {
+          "code": "B9dF4J",
+          "ctr": 0.0081,
+          "ipm": 4.63,
+          "name": "slider",
+          "roas": 0.458,
+          "share": 0.123
+        },
+        {
+          "code": "e34spy",
+          "ctr": 0.0029,
+          "ipm": 0,
+          "name": "familyphoto",
+          "roas": 0,
+          "share": 0
+        }
+      ],
+      "weeks": 4
+    },
+    {
+      "action": "Too early to kill: give it one more refresh with the persona's proven message.",
+      "adset": "SlavicFemaleLover · Android · EN",
+      "adset_id": "120251892950130469",
+      "flags": [],
+      "insight": "1 week live, $2.0k spent, ROAS 0.33 since launch, 0.33 last week (under the bar).",
+      "kind": "Expansion",
+      "launched": "2026-10-12",
+      "now": {
+        "c2i": 0.384,
+        "ctr": 0.0096,
+        "ipm": 3.7,
+        "label": "SlavicFemaleLover · Android · EN",
+        "os": "Android",
+        "roas": 0.333,
+        "spend": 2040,
+        "vs": {
+          "c2i": 1.06,
+          "ctr": 0.91,
+          "ipm": 0.98,
+          "roas": 0.92
+        }
+      },
+      "persona": "SlavicFemaleLover",
+      "roas_total": 0.333,
+      "siblings": [
+        {
+          "c2i": 0.191,
+          "ctr": 0.011,
+          "ipm": 2.1,
+          "label": "SlavicFemaleLover · iOS · EN",
+          "os": "iOS",
+          "roas": 0.469,
+          "spend": 8545,
+          "vs": {
+            "c2i": 1.16,
+            "ctr": 1.12,
+            "ipm": 1.31,
+            "roas": 1.05
+          }
+        },
+        {
+          "c2i": 0.328,
+          "ctr": 0.0119,
+          "ipm": 3.91,
+          "label": "SlavicFemaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.476,
+          "spend": 7863,
+          "vs": {
+            "c2i": 0.9,
+            "ctr": 1.13,
+            "ipm": 1.03,
+            "roas": 1.32
+          }
+        }
+      ],
+      "spend_total": 2040,
+      "top": [],
+      "weeks": 1
+    },
+    {
+      "action": "Scale carefully and line up the next concept before week 3; offer the winner to other languages.",
+      "adset": "AsianMaleLover · iOS · EN",
+      "adset_id": "120251738029660469",
+      "flags": [],
+      "insight": "2 weeks live, $1.9k spent, ROAS 0.43 since launch, 0.41 last week (above the bar).",
+      "kind": "New persona",
+      "launched": "2026-10-05",
+      "now": {
+        "c2i": 0.1,
+        "ctr": 0.021,
+        "ipm": 2.09,
+        "label": "AsianMaleLover · iOS · EN",
+        "os": "iOS",
+        "roas": 0.408,
+        "spend": 1064,
+        "vs": {
+          "c2i": 0.61,
+          "ctr": 2.14,
+          "ipm": 1.31,
+          "roas": 0.91
+        }
+      },
+      "persona": "AsianMaleLover",
+      "roas_total": 0.428,
+      "siblings": [
+        {
+          "c2i": 0.39,
+          "ctr": 0.0088,
+          "ipm": 3.42,
+          "label": "AsianMaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.339,
+          "spend": 2249,
+          "vs": {
+            "c2i": 1.07,
+            "ctr": 0.84,
+            "ipm": 0.9,
+            "roas": 0.94
+          }
+        }
+      ],
+      "spend_total": 1914,
+      "top": [
+        {
+          "code": "dR1elf",
+          "ctr": 0.0213,
+          "ipm": 1.98,
+          "name": "dreamlife",
+          "roas": 0.471,
+          "share": 0.921
+        },
+        {
+          "code": "B9dF4J",
+          "ctr": 0.0199,
+          "ipm": 1.61,
+          "name": "slider",
+          "roas": 0.519,
+          "share": 0.072
+        },
+        {
+          "code": "e34spy",
+          "ctr": 0.0427,
+          "ipm": 0.79,
+          "name": "familyphoto",
+          "roas": 0.467,
+          "share": 0.008
+        }
+      ],
+      "weeks": 2
+    }
+  ],
+  "money": {
+    "bar": 0.4,
+    "insight": "Meta spent $168.5k in the week of 2026-10-12 (-6% vs its 4-week average). Meta ROAS 0.45 on iOS and 0.36 on Android against the 0.40 bar; 52% of Meta spend sits in adsets under the bar. App Store proceeds $232.6k (week of 2026-10-05).",
+    "meta_spend": 168472,
+    "meta_vs_4w": -0.063,
+    "roas_and": 0.361,
+    "roas_ios": 0.447,
+    "store": 232576,
+    "store_week": "2026-10-05",
+    "tt_spend": 31138,
+    "under_share": 0.521,
+    "week": "2026-10-12"
+  },
+  "output": {
+    "note": "From the next Monday on, this section counts the handoffs on the board: videos, images, task counts and adsets covered.",
+    "notion": [
+      {
+        "campaign": "Gringo Lover US",
+        "designer": "Usman Ishtiaq",
+        "finished": "2026-10-23",
+        "title": "Batch2026Week39-X4nR8W-HorizontalTalkingHead usman"
+      },
+      {
+        "campaign": "Swedia, Ukraine, Vietnam, Finlandia, Hungary, Denm",
+        "designer": "Ostap Kukurudza",
+        "finished": "2026-10-23",
+        "title": "Batch2026Week39 ONBOARDING VIDS ostap"
+      },
+      {
+        "campaign": "Interracial Dating US",
+        "designer": "Ostap Kukurudza",
+        "finished": "2026-10-23",
+        "title": "Batch2026Week39-u7Wf91-wakeup new variation ostap"
+      }
+    ],
+    "window": "2026-10-20 to 2026-10-27"
+  },
+  "results": {
+    "cards": [
+      {
+        "action": "Keep it running; brief the next form of this message (J2) and offer it to sibling adsets (J1).",
+        "adset": "PassportBro · iOS · EN",
+        "adset_id": "120240273793060469",
+        "before": {
+          "c2i": 0.039,
+          "ctr": 0.0267,
+          "ipm": 1.04,
+          "label": "PassportBro · iOS · EN",
+          "os": "iOS",
+          "roas": 0.287,
+          "spend": 7007,
+          "vs": {
+            "c2i": 0.34,
+            "ctr": 2.15,
+            "ipm": 0.74,
+            "roas": 0.76
+          }
+        },
+        "concepts": "k4Rm9p datingcontest",
+        "context": "turnaround",
+        "flags": [],
+        "insight": "Became the adset's #1 in week 2 (it took 11% of spend in week 1).",
+        "kind": "Week-1 read",
+        "lift": null,
+        "now": {
+          "c2i": 0.168,
+          "ctr": 0.0123,
+          "ipm": 2.07,
+          "label": "PassportBro · iOS · EN",
+          "os": "iOS",
+          "roas": 0.626,
+          "spend": 4854,
+          "vs": {
+            "c2i": 1.02,
+            "ctr": 1.26,
+            "ipm": 1.29,
+            "roas": 1.4
+          }
+        },
+        "persona": "PassportBro",
+        "s1": 0.106,
+        "siblings": [
+          {
+            "c2i": 0.383,
+            "ctr": 0.0096,
+            "ipm": 3.69,
+            "label": "PassportBro · Android · EN",
+            "os": "Android",
+            "roas": 0.388,
+            "spend": 5392,
+            "vs": {
+              "c2i": 1.06,
+              "ctr": 0.91,
+              "ipm": 0.97,
+              "roas": 1.07
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "k4Rm9p",
+            "ctr": 0.0139,
+            "ipm": 2.58,
+            "name": "datingcontest",
+            "roas": 0.559,
+            "share": 0.558
+          },
+          {
+            "code": "a2Ef3y",
+            "ctr": 0.0118,
+            "ipm": 1.23,
+            "name": "wanted",
+            "roas": 0.484,
+            "share": 0.325
+          },
+          {
+            "code": "Q7mZ2x",
+            "ctr": 0.0038,
+            "ipm": 1.39,
+            "name": "povbait",
+            "roas": 0.329,
+            "share": 0.092
+          }
+        ],
+        "variants": 5,
+        "verdict": "Hit (provisional)",
+        "week_in": "2026-09-28"
+      },
+      {
+        "action": "Next swing with a different concept, e.g. q4Xr9m tweetoverlay, b8H3s1 fidgeting (winning nearby, never run here). Keep this one on: about 1 in 8 quiet starters still become #1.",
+        "adset": "AsianFemaleLover · iOS · EN",
+        "adset_id": "120241620149370469",
+        "before": {
+          "c2i": 0.154,
+          "ctr": 0.0102,
+          "ipm": 1.57,
+          "label": "AsianFemaleLover · iOS · EN",
+          "os": "iOS",
+          "roas": 0.39,
+          "spend": 7669,
+          "vs": {
+            "c2i": 1.35,
+            "ctr": 0.82,
+            "ipm": 1.11,
+            "roas": 1.03
+          }
+        },
+        "concepts": "b7Kq4n boysvmen",
+        "context": "turnaround",
+        "flags": [],
+        "insight": "Only 4% of the adset's spend in week 1 while the adset is under the bar.",
+        "kind": "Week-1 read",
+        "lift": null,
+        "now": {
+          "c2i": 0.142,
+          "ctr": 0.0103,
+          "ipm": 1.47,
+          "label": "AsianFemaleLover · iOS · EN",
+          "os": "iOS",
+          "roas": 0.456,
+          "spend": 4976,
+          "vs": {
+            "c2i": 0.87,
+            "ctr": 1.05,
+            "ipm": 0.92,
+            "roas": 1.02
+          }
+        },
+        "persona": "AsianFemaleLover",
+        "s1": 0.042,
+        "siblings": [
+          {
+            "c2i": 0.392,
+            "ctr": 0.0057,
+            "ipm": 2.24,
+            "label": "AsianFemaleLover · Android · EN",
+            "os": "Android",
+            "roas": 0.342,
+            "spend": 2628,
+            "vs": {
+              "c2i": 1.08,
+              "ctr": 0.54,
+              "ipm": 0.59,
+              "roas": 0.95
+            }
+          },
+          {
+            "c2i": 0.415,
+            "ctr": 0.0229,
+            "ipm": 9.48,
+            "label": "AsianFemaleLover · Android · EN",
+            "os": "Android",
+            "roas": 0.009,
+            "spend": 300,
+            "vs": {
+              "c2i": 1.14,
+              "ctr": 2.18,
+              "ipm": 2.5,
+              "roas": 0.02
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "Q7mZ2x",
+            "ctr": 0.0055,
+            "ipm": 1.34,
+            "name": "povbait",
+            "roas": 0.464,
+            "share": 0.547
+          },
+          {
+            "code": "b7Kq4n",
+            "ctr": 0.0193,
+            "ipm": 1.38,
+            "name": "boysvmen",
+            "roas": 0.496,
+            "share": 0.259
+          },
+          {
+            "code": "a2Ef3y",
+            "ctr": 0.0138,
+            "ipm": 1.57,
+            "name": "wanted",
+            "roas": 0.42,
+            "share": 0.19
+          }
+        ],
+        "variants": 8,
+        "verdict": "Strike (provisional)",
+        "week_in": "2026-09-28"
+      },
+      {
+        "action": "Keep it running; brief the next form of this message (J2) and offer it to sibling adsets (J1).",
+        "adset": "PassportBro · Android · EN",
+        "adset_id": "120244138017090469",
+        "before": {
+          "c2i": 0.398,
+          "ctr": 0.0076,
+          "ipm": 3.04,
+          "label": "PassportBro · Android · EN",
+          "os": "Android",
+          "roas": 0.353,
+          "spend": 5474,
+          "vs": {
+            "c2i": 1.06,
+            "ctr": 0.78,
+            "ipm": 0.84,
+            "roas": 0.86
+          }
+        },
+        "concepts": "b7Kq4n boysvmen, k4Rm9p datingcontest",
+        "context": "turnaround",
+        "flags": [],
+        "insight": "Became the adset's #1 in week 2 (it took 10% of spend in week 1).",
+        "kind": "Week-1 read",
+        "lift": null,
+        "now": {
+          "c2i": 0.383,
+          "ctr": 0.0096,
+          "ipm": 3.69,
+          "label": "PassportBro · Android · EN",
+          "os": "Android",
+          "roas": 0.388,
+          "spend": 5392,
+          "vs": {
+            "c2i": 1.06,
+            "ctr": 0.91,
+            "ipm": 0.97,
+            "roas": 1.07
+          }
+        },
+        "persona": "PassportBro",
+        "s1": 0.096,
+        "siblings": [
+          {
+            "c2i": 0.168,
+            "ctr": 0.0123,
+            "ipm": 2.07,
+            "label": "PassportBro · iOS · EN",
+            "os": "iOS",
+            "roas": 0.626,
+            "spend": 4854,
+            "vs": {
+              "c2i": 1.02,
+              "ctr": 1.26,
+              "ipm": 1.29,
+              "roas": 1.4
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "k4Rm9p",
+            "ctr": 0.011,
+            "ipm": 4.11,
+            "name": "datingcontest",
+            "roas": 0.319,
+            "share": 0.359
+          },
+          {
+            "code": "a2Ef3y",
+            "ctr": 0.0071,
+            "ipm": 2.57,
+            "name": "wanted",
+            "roas": 0.41,
+            "share": 0.227
+          },
+          {
+            "code": "b7Kq4n",
+            "ctr": 0.0093,
+            "ipm": 2.83,
+            "name": "boysvmen",
+            "roas": 0.442,
+            "share": 0.166
+          }
+        ],
+        "variants": 8,
+        "verdict": "Hit (provisional)",
+        "week_in": "2026-09-28"
+      },
+      {
+        "action": "No action. Leave it on in case it blooms late.",
+        "adset": "AsianFemaleLover · Android · EN",
+        "adset_id": "120247322960050469",
+        "before": {
+          "c2i": 0.453,
+          "ctr": 0.0056,
+          "ipm": 2.55,
+          "label": "AsianFemaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.441,
+          "spend": 2780,
+          "vs": {
+            "c2i": 1.2,
+            "ctr": 0.58,
+            "ipm": 0.7,
+            "roas": 1.08
+          }
+        },
+        "concepts": "b7Kq4n boysvmen",
+        "context": "challenger",
+        "flags": [
+          "Few installs per impression: the creative isn't converting attention into installs"
+        ],
+        "insight": "1% of spend in week 1: it didn't unseat a healthy #1 (a foul, no strike). Few installs per impression: the creative isn't converting attention into installs.",
+        "kind": "Week-1 read",
+        "lift": null,
+        "now": {
+          "c2i": 0.392,
+          "ctr": 0.0057,
+          "ipm": 2.24,
+          "label": "AsianFemaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.342,
+          "spend": 2628,
+          "vs": {
+            "c2i": 1.08,
+            "ctr": 0.54,
+            "ipm": 0.59,
+            "roas": 0.95
+          }
+        },
+        "persona": "AsianFemaleLover",
+        "s1": 0.011,
+        "siblings": [
+          {
+            "c2i": 0.142,
+            "ctr": 0.0103,
+            "ipm": 1.47,
+            "label": "AsianFemaleLover · iOS · EN",
+            "os": "iOS",
+            "roas": 0.456,
+            "spend": 4976,
+            "vs": {
+              "c2i": 0.87,
+              "ctr": 1.05,
+              "ipm": 0.92,
+              "roas": 1.02
+            }
+          },
+          {
+            "c2i": 0.415,
+            "ctr": 0.0229,
+            "ipm": 9.48,
+            "label": "AsianFemaleLover · Android · EN",
+            "os": "Android",
+            "roas": 0.009,
+            "spend": 300,
+            "vs": {
+              "c2i": 1.14,
+              "ctr": 2.18,
+              "ipm": 2.5,
+              "roas": 0.02
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "Q7mZ2x",
+            "ctr": 0.0053,
+            "ipm": 2.39,
+            "name": "povbait",
+            "roas": 0.406,
+            "share": 0.853
+          },
+          {
+            "code": "b7Kq4n",
+            "ctr": 0.0099,
+            "ipm": 2.51,
+            "name": "boysvmen",
+            "roas": 0.329,
+            "share": 0.062
+          },
+          {
+            "code": "H7kM3N",
+            "ctr": 0.0155,
+            "ipm": 3.7,
+            "name": "airport",
+            "roas": 0.295,
+            "share": 0.062
+          }
+        ],
+        "variants": 8,
+        "verdict": "Foul (provisional)",
+        "week_in": "2026-09-28"
+      },
+      {
+        "action": "Next swing with a different concept, e.g. w1Tr7K carousel, Q3fN8Z airportfirst (winning nearby, never run here). Keep this one on: about 1 in 8 quiet starters still become #1.",
+        "adset": "LatinaFemaleLover · iOS · PT",
+        "adset_id": "120250103215000469",
+        "before": {
+          "c2i": 0.084,
+          "ctr": 0.0213,
+          "ipm": 1.79,
+          "label": "LatinaFemaleLover · iOS · PT",
+          "os": "iOS",
+          "roas": 0.189,
+          "spend": 1780,
+          "vs": {
+            "c2i": 0.74,
+            "ctr": 1.72,
+            "ipm": 1.27,
+            "roas": 0.5
+          }
+        },
+        "concepts": "n6f2Wt banner",
+        "context": "turnaround",
+        "flags": [
+          "Installs arrive but don't buy: audience or offer, not the hook"
+        ],
+        "insight": "Only 2% of the adset's spend in week 1 while the adset is under the bar: strike 2 of 3. Installs arrive but don't buy: audience or offer, not the hook.",
+        "kind": "Week-1 read",
+        "lift": null,
+        "now": {
+          "c2i": 0.2,
+          "ctr": 0.0101,
+          "ipm": 2.02,
+          "label": "LatinaFemaleLover · iOS · PT",
+          "os": "iOS",
+          "roas": 0.339,
+          "spend": 1059,
+          "vs": {
+            "c2i": 1.22,
+            "ctr": 1.03,
+            "ipm": 1.26,
+            "roas": 0.76
+          }
+        },
+        "persona": "LatinaFemaleLover",
+        "s1": 0.018,
+        "siblings": [],
+        "top": [
+          {
+            "code": "n62Wt",
+            "ctr": 0.0101,
+            "ipm": 2.14,
+            "name": "banner",
+            "roas": 0.305,
+            "share": 0.763
+          },
+          {
+            "code": "d5ns2k",
+            "ctr": 0.0059,
+            "ipm": 1.56,
+            "name": "dancing",
+            "roas": 0.354,
+            "share": 0.105
+          },
+          {
+            "code": "a2Ef3y",
+            "ctr": 0.0369,
+            "ipm": 1.08,
+            "name": "wanted",
+            "roas": 0.433,
+            "share": 0.043
+          }
+        ],
+        "variants": 4,
+        "verdict": "Strike (provisional)",
+        "week_in": "2026-09-28"
+      },
+      {
+        "action": "No action. Leave it on in case it blooms late.",
+        "adset": "SlavicFemaleLover · iOS · PT",
+        "adset_id": "120250884035920469",
+        "before": {
+          "c2i": 0.193,
+          "ctr": 0.0095,
+          "ipm": 1.84,
+          "label": "SlavicFemaleLover · iOS · PT",
+          "os": "iOS",
+          "roas": 0.445,
+          "spend": 1111,
+          "vs": {
+            "c2i": 1.69,
+            "ctr": 0.77,
+            "ipm": 1.3,
+            "roas": 1.17
+          }
+        },
+        "concepts": "X4nR8W talkinghead, n6f2Wt banner",
+        "context": "challenger",
+        "flags": [],
+        "insight": "4% of spend in week 1: it didn't unseat a healthy #1 (a foul, no strike).",
+        "kind": "Week-1 read",
+        "lift": null,
+        "now": {
+          "c2i": 0.206,
+          "ctr": 0.0116,
+          "ipm": 2.39,
+          "label": "SlavicFemaleLover · iOS · PT",
+          "os": "iOS",
+          "roas": 0.789,
+          "spend": 793,
+          "vs": {
+            "c2i": 1.26,
+            "ctr": 1.18,
+            "ipm": 1.49,
+            "roas": 1.77
+          }
+        },
+        "persona": "SlavicFemaleLover",
+        "s1": 0.04,
+        "siblings": [
+          {
+            "c2i": 0.427,
+            "ctr": 0.017,
+            "ipm": 7.24,
+            "label": "SlavicFemaleLover · Android · PT",
+            "os": "Android",
+            "roas": 0.416,
+            "spend": 1216,
+            "vs": {
+              "c2i": 1.18,
+              "ctr": 1.62,
+              "ipm": 1.91,
+              "roas": 1.15
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "h7km3n",
+            "ctr": 0.0127,
+            "ipm": 1.43,
+            "name": "wanted",
+            "roas": 0.33,
+            "share": 0.371
+          },
+          {
+            "code": "X4nR8W",
+            "ctr": 0.01,
+            "ipm": 2.56,
+            "name": "talkinghead",
+            "roas": 0.633,
+            "share": 0.338
+          },
+          {
+            "code": "w1Tr7K",
+            "ctr": 0.0079,
+            "ipm": 1.87,
+            "name": "carousel",
+            "roas": 0.219,
+            "share": 0.179
+          }
+        ],
+        "variants": 4,
+        "verdict": "Foul (provisional)",
+        "week_in": "2026-09-28"
+      },
+      {
+        "action": "No action. Leave it on in case it blooms late.",
+        "adset": "LatinaFemaleLover · iOS · EN",
+        "adset_id": "120245363099160469",
+        "before": {
+          "c2i": 0.205,
+          "ctr": 0.0084,
+          "ipm": 1.72,
+          "label": "LatinaFemaleLover · iOS · EN",
+          "os": "iOS",
+          "roas": 0.488,
+          "spend": 2801,
+          "vs": {
+            "c2i": 1.16,
+            "ctr": 0.93,
+            "ipm": 1.09,
+            "roas": 1.06
+          }
+        },
+        "concepts": "m4pw0r maptapedonwall",
+        "context": "challenger",
+        "flags": [
+          "Click → install is low against its OS: the store page or the promise in the ad may not match"
+        ],
+        "insight": "1% of spend in week 1: it didn't unseat a healthy #1 (a foul, no strike). Click → install is low against its OS: the store page or the promise in the ad may not match.",
+        "kind": "Final verdict",
+        "lift": null,
+        "now": {
+          "c2i": 0.078,
+          "ctr": 0.0132,
+          "ipm": 1.03,
+          "label": "LatinaFemaleLover · iOS · EN",
+          "os": "iOS",
+          "roas": 0.596,
+          "spend": 1710,
+          "vs": {
+            "c2i": 0.48,
+            "ctr": 1.35,
+            "ipm": 0.64,
+            "roas": 1.33
+          }
+        },
+        "persona": "LatinaFemaleLover",
+        "s1": 0.006,
+        "siblings": [
+          {
+            "c2i": 0.126,
+            "ctr": 0.0155,
+            "ipm": 1.95,
+            "label": "LatinaFemaleLover · Android · EN",
+            "os": "Android",
+            "roas": 0.314,
+            "spend": 1447,
+            "vs": {
+              "c2i": 0.35,
+              "ctr": 1.48,
+              "ipm": 0.51,
+              "roas": 0.87
+            }
+          },
+          {
+            "c2i": 0.158,
+            "ctr": 0.0105,
+            "ipm": 1.66,
+            "label": "LatinaFemaleLover · iOS · EN",
+            "os": "iOS",
+            "roas": 0.338,
+            "spend": 1630,
+            "vs": {
+              "c2i": 0.96,
+              "ctr": 1.07,
+              "ipm": 1.04,
+              "roas": 0.76
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "C0kM3N",
+            "ctr": 0.0056,
+            "ipm": 0.94,
+            "name": "combo",
+            "roas": 0.541,
+            "share": 0.623
+          },
+          {
+            "code": "a2Ef3y",
+            "ctr": 0.0087,
+            "ipm": 1.18,
+            "name": "wanted",
+            "roas": 0.26,
+            "share": 0.288
+          },
+          {
+            "code": "gr3xKsh",
+            "ctr": 0.0564,
+            "ipm": 0.46,
+            "name": "grasslay",
+            "roas": 0.453,
+            "share": 0.018
+          }
+        ],
+        "variants": 2,
+        "verdict": "Foul",
+        "week_in": "2026-09-07"
+      },
+      {
+        "action": "Next swing with a different concept, e.g. Q7mZ2x povbait, q4Xr9m tweetoverlay (winning nearby, never run here). Keep this one on: about 1 in 8 quiet starters still become #1.",
+        "adset": "InterracialDatingSeekers · Android · EN",
+        "adset_id": "120246686288900469",
+        "before": {
+          "c2i": 0.354,
+          "ctr": 0.0082,
+          "ipm": 2.91,
+          "label": "InterracialDatingSeekers · Android · EN",
+          "os": "Android",
+          "roas": 0.321,
+          "spend": 5115,
+          "vs": {
+            "c2i": 0.98,
+            "ctr": 0.94,
+            "ipm": 0.93,
+            "roas": 0.83
+          }
+        },
+        "concepts": "m4pw0r maptapedonwall",
+        "context": "turnaround",
+        "flags": [],
+        "insight": "Only 1% of the adset's spend in week 1 while the adset is under the bar: strike 2 of 3.",
+        "kind": "Final verdict",
+        "lift": null,
+        "now": {
+          "c2i": 0.409,
+          "ctr": 0.01,
+          "ipm": 4.11,
+          "label": "InterracialDatingSeekers · Android · EN",
+          "os": "Android",
+          "roas": 0.317,
+          "spend": 4222,
+          "vs": {
+            "c2i": 1.13,
+            "ctr": 0.95,
+            "ipm": 1.08,
+            "roas": 0.88
+          }
+        },
+        "persona": "InterracialDatingSeekers",
+        "s1": 0.011,
+        "siblings": [
+          {
+            "c2i": 0.208,
+            "ctr": 0.0104,
+            "ipm": 2.17,
+            "label": "InterracialDatingSeekers · iOS · EN",
+            "os": "iOS",
+            "roas": 0.47,
+            "spend": 5305,
+            "vs": {
+              "c2i": 1.27,
+              "ctr": 1.06,
+              "ipm": 1.36,
+              "roas": 1.05
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "w5K8bX",
+            "ctr": 0.0093,
+            "ipm": 4.13,
+            "name": "talkingtoforeigner",
+            "roas": 0.335,
+            "share": 0.467
+          },
+          {
+            "code": "m4pw0r",
+            "ctr": 0.0145,
+            "ipm": 6.13,
+            "name": "maptapedonwall",
+            "roas": 0.272,
+            "share": 0.136
+          },
+          {
+            "code": "v07e5T",
+            "ctr": 0.0115,
+            "ipm": 5.39,
+            "name": "lovestory",
+            "roas": 0.359,
+            "share": 0.129
+          }
+        ],
+        "variants": 2,
+        "verdict": "Strike",
+        "week_in": "2026-09-07"
+      },
+      {
+        "action": "Next swing with a different concept, e.g. q4Xr9m tweetoverlay, b8H3s1 fidgeting (winning nearby, never run here). Keep this one on: about 1 in 8 quiet starters still become #1.",
+        "adset": "LatinaFemaleLover · Android · EN",
+        "adset_id": "120247251403220469",
+        "before": {
+          "c2i": 0.491,
+          "ctr": 0.0058,
+          "ipm": 2.83,
+          "label": "LatinaFemaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.355,
+          "spend": 1438,
+          "vs": {
+            "c2i": 1.36,
+            "ctr": 0.67,
+            "ipm": 0.9,
+            "roas": 0.92
+          }
+        },
+        "concepts": "m4pw0r maptapedonwall",
+        "context": "turnaround",
+        "flags": [
+          "Click → install is low against its OS: the store page or the promise in the ad may not match"
+        ],
+        "insight": "Only 2% of the adset's spend in week 1 while the adset is under the bar: strike 1 of 3. Click → install is low against its OS: the store page or the promise in the ad may not match.",
+        "kind": "Final verdict",
+        "lift": null,
+        "now": {
+          "c2i": 0.126,
+          "ctr": 0.0155,
+          "ipm": 1.95,
+          "label": "LatinaFemaleLover · Android · EN",
+          "os": "Android",
+          "roas": 0.314,
+          "spend": 1447,
+          "vs": {
+            "c2i": 0.35,
+            "ctr": 1.48,
+            "ipm": 0.51,
+            "roas": 0.87
+          }
+        },
+        "persona": "LatinaFemaleLover",
+        "s1": 0.018,
+        "siblings": [
+          {
+            "c2i": 0.078,
+            "ctr": 0.0132,
+            "ipm": 1.03,
+            "label": "LatinaFemaleLover · iOS · EN",
+            "os": "iOS",
+            "roas": 0.596,
+            "spend": 1710,
+            "vs": {
+              "c2i": 0.48,
+              "ctr": 1.35,
+              "ipm": 0.64,
+              "roas": 1.33
+            }
+          },
+          {
+            "c2i": 0.158,
+            "ctr": 0.0105,
+            "ipm": 1.66,
+            "label": "LatinaFemaleLover · iOS · EN",
+            "os": "iOS",
+            "roas": 0.338,
+            "spend": 1630,
+            "vs": {
+              "c2i": 0.96,
+              "ctr": 1.07,
+              "ipm": 1.04,
+              "roas": 0.76
+            }
+          }
+        ],
+        "top": [
+          {
+            "code": "n6f2Wt",
+            "ctr": 0.009,
+            "ipm": 3.1,
+            "name": "banner",
+            "roas": 0.284,
+            "share": 0.76
+          },
+          {
+            "code": "h7km3n",
+            "ctr": 0.0221,
+            "ipm": 2.96,
+            "name": "wanted",
+            "roas": 0.334,
+            "share": 0.175
+          },
+          {
+            "code": "gr3xKsh",
+            "ctr": 0.0246,
+            "ipm": 1.91,
+            "name": "grasslay",
+            "roas": 0.026,
+            "share": 0.028
+          }
+        ],
+        "variants": 2,
+        "verdict": "Strike",
+        "week_in": "2026-09-07"
+      }
+    ],
+    "summary": "6 refreshes got their week-1 read (landed 2026-09-28 – 2026-10-05): 2 early hits. 3 reached their week-4 verdict (landed 2026-09-07): 0 home runs, 0 hits, 2 strikes, 1 foul."
+  },
+  "tiktok": {
+    "action": "Run the geo test (pause TikTok iOS in 3–4 countries for 4 weeks). Send the TikTok ad-level export with v5 names so its creatives get verdicts too.",
+    "adgroups": [
+      {
+        "name": "AS / TikTok / General / General / iOS / EU / All / BothGender / Purcha",
+        "os": "iOS",
+        "roas": 0.541,
+        "spend": 5458,
+        "vs_avg": 0.99
+      },
+      {
+        "name": "AS / TikTok / General / General / iOS / ROW / All / BothGender / Purch",
+        "os": "iOS",
+        "roas": 0.735,
+        "spend": 4900,
+        "vs_avg": 1.11
+      },
+      {
+        "name": "AS / TikTok / General / General / Android / ROW / All / BothGender / P",
+        "os": "Android",
+        "roas": 0.584,
+        "spend": 4865,
+        "vs_avg": 1.14
+      },
+      {
+        "name": "AS / TikTok / General / General / iOS / ROW / All / BothGender / Purch",
+        "os": "iOS",
+        "roas": 0.687,
+        "spend": 2100,
+        "vs_avg": 1.02
+      },
+      {
+        "name": "AS / TikTok / General / General / iOS / EU / All / BothGender / Purcha",
+        "os": "iOS",
+        "roas": 0.417,
+        "spend": 1991,
+        "vs_avg": 0.91
+      },
+      {
+        "name": "AS / TikTok / General / General / Android / T2 / EN / BothGender / Pur",
+        "os": "Android",
+        "roas": 0.664,
+        "spend": 1820,
+        "vs_avg": 1.07
+      }
+    ],
+    "insight": "TikTok spent $31.1k in the week of 2026-10-05 (15% of paid spend). On ad groups that were spending, it credits itself ROAS 0.60 on iOS and 0.56 on Android; TikTok's own number, not comparable with Meta's. App Store money follows Meta iOS spend, barely TikTok's: hold the budget until the geo test.",
+    "roas_and": 0.559,
+    "roas_ios": 0.604,
+    "share": 0.152,
+    "spend_and": 12120,
+    "spend_ios": 19018,
+    "trend": [
+      {
+        "share": 0.15,
+        "spend": 32627,
+        "week": "2026-09-14"
+      },
+      {
+        "share": 0.151,
+        "spend": 31418,
+        "week": "2026-09-21"
+      },
+      {
+        "share": 0.159,
+        "spend": 32935,
+        "week": "2026-09-28"
+      },
+      {
+        "share": 0.152,
+        "spend": 31138,
+        "week": "2026-10-05"
+      }
+    ],
+    "week": "2026-10-05"
+  },
+  "week": "2026-10-12",
+  "week_ahead": {
+    "capacity": 8.4,
+    "decisions": [
+      {
+        "action": "Keep rebuilding the US and make it a clean test: a US-only iOS adset at about the old budget for 3–4 weeks, then compare US App Store proceeds with today's baseline",
+        "owner": "Media buyer"
+      },
+      {
+        "action": "Hold TikTok at today's budget and run a geo test before scaling it: pause TikTok iOS in 3–4 countries where it is a big share (e.g. Philippines, Indonesia) for 4 weeks and compare App Store proceeds with similar countries",
+        "owner": "Media buyer + management"
+      },
+      {
+        "action": "Bar set by the creative lead (27 Oct): acceptable from 0.40, refresh warning under 0.40, critical under 0.32. Never compare Meta ROAS across March: 0.40 today equals 0.58 on Meta's old reporting",
+        "owner": "Creative lead + management"
+      },
+      {
+        "action": "Refresh the 22 flagged adsets (critical or amber and falling on the 0.40 / 0.32 bar), biggest leak first",
+        "owner": "Strategists + designers"
+      },
+      {
+        "action": "Confirm the ticket ranking weights and the at-bat rules (week-1 read, week-4 verdict, 3 strikes)",
+        "owner": "Creative lead"
+      },
+      {
+        "action": "Give the raw exports a permanent folder so history can always be rebuilt",
+        "owner": "Creative lead"
+      }
+    ],
+    "fading": 17,
+    "groups": [
+      {
+        "decaying": 5,
+        "n": 7,
+        "persona": "SlavicFemaleLover",
+        "spend": 25469
+      },
+      {
+        "decaying": 5,
+        "n": 6,
+        "persona": "LatinaFemaleLover",
+        "spend": 13962
+      },
+      {
+        "decaying": 3,
+        "n": 5,
+        "persona": "IntlFriendFinder",
+        "spend": 13782
+      },
+      {
+        "decaying": 8,
+        "n": 9,
+        "persona": "GringoMaleLover",
+        "spend": 15096
+      }
+    ],
+    "insight": "70 open tickets, 66 without a brief, against about 8 refreshes a week: group them. Biggest groups: SlavicFemaleLover (7 adsets, $25.5k/wk), LatinaFemaleLover (6 adsets, $14.0k/wk), IntlFriendFinder (5 adsets, $13.8k/wk). 17 adsets are fading with no new concept since they went under the bar, led by GringoMaleLover · iOS · EN ($4.2k/wk).",
+    "need_brief": 66,
+    "open": 70,
+    "strikes3": 0,
+    "top": [
+      {
+        "adset": "SlavicFemaleLover · iOS · EN",
+        "fading": false,
+        "id": "T-691223",
+        "reign": 22,
+        "roas": 0.469,
+        "spend": 8545,
+        "strikes": 0,
+        "type": "Due",
+        "why": "ROAS 0.47"
+      },
+      {
+        "adset": "InterracialDatingSeekers · Android · EN",
+        "fading": false,
+        "id": "T-628890",
+        "reign": 4,
+        "roas": 0.317,
+        "spend": 4222,
+        "strikes": 2,
+        "type": "Decaying",
+        "why": "ROAS 0.317 (prev 0.31), under 0.32"
+      },
+      {
+        "adset": "SlavicFemaleLover · Android · EN",
+        "fading": false,
+        "id": "T-903549",
+        "reign": 18,
+        "roas": 0.476,
+        "spend": 7863,
+        "strikes": 0,
+        "type": "Due",
+        "why": "ROAS 0.48"
+      },
+      {
+        "adset": "LatinaFemaleLover · Android · ES · Casual",
+        "fading": true,
+        "id": "T-324425",
+        "reign": 13,
+        "roas": 0.259,
+        "spend": 3497,
+        "strikes": 2,
+        "type": "Decaying",
+        "why": "ROAS 0.26 (prev 0.24), under 0.32"
+      },
+      {
+        "adset": "IntlFriendFinder · Android · EN · Friend",
+        "fading": false,
+        "id": "T-910899",
+        "reign": 8,
+        "roas": 0.368,
+        "spend": 4268,
+        "strikes": 0,
+        "type": "Decaying",
+        "why": "Under 0.40 and falling: ROAS 0.37 from 0.40"
+      },
+      {
+        "adset": "LocalDatingFatigue · Android · EN",
+        "fading": false,
+        "id": "T-329059",
+        "reign": 3,
+        "roas": 0.384,
+        "spend": 4011,
+        "strikes": 0,
+        "type": "Decaying",
+        "why": "Under 0.40 and falling: ROAS 0.38 from 0.57"
+      },
+      {
+        "adset": "General · iOS · TR",
+        "fading": false,
+        "id": "T-359282",
+        "reign": 3,
+        "roas": 0.315,
+        "spend": 2959,
+        "strikes": 1,
+        "type": "Decaying",
+        "why": "ROAS 0.31 (prev 0.34), under 0.32"
+      },
+      {
+        "adset": "LatinaFemaleLover · iOS · ES",
+        "fading": false,
+        "id": "T-319999",
+        "reign": 13,
+        "roas": 0.444,
+        "spend": 4618,
+        "strikes": 0,
+        "type": "Due",
+        "why": "ROAS 0.44, spend +110% vs 2 weeks ago"
+      },
+      {
+        "adset": "ChatOnly · Android · EN · Talk",
+        "fading": false,
+        "id": "T-557432",
+        "reign": 4,
+        "roas": 0.395,
+        "spend": 3399,
+        "strikes": 0,
+        "type": "Decaying",
+        "why": "Under 0.40 and falling: ROAS 0.40 from 0.42"
+      },
+      {
+        "adset": "InterracialDatingSeekers · iOS · EN",
+        "fading": false,
+        "id": "T-602912",
+        "reign": 4,
+        "roas": 0.47,
+        "spend": 5305,
+        "strikes": 0,
+        "type": "Due",
+        "why": "ROAS 0.47"
+      }
+    ]
+  }
+}

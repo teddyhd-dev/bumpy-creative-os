@@ -1,0 +1,1137 @@
+<title>Bumpy Creative Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a working board. Sticky header with the week's numbers, four views, a ticket panel that slides in from the right. */
+:root{
+  --bg:#F2F5F9; --surface:#FFFFFF; --sunk:#E9EEF4; --ink:#231A44; --muted:#5B6479; --faint:#8A93A6; --line:#D9E1EB;
+  --sky:#2F97CF; --sky-soft:#DDEFFA; --orange:#E8622F; --orange-soft:#FDE6DC; --pink:#D7355F; --pink-soft:#FADDE5;
+  --violet:#6E54E8; --violet-soft:#E8E3FD; --slate:#56627A; --slate-soft:#E4E8EF;
+  --good:#16895A; --good-soft:#D9F2E6; --warn:#B9740A; --warn-soft:#FBEBCD; --bad:#C8303F; --bad-soft:#F9DCDF;
+  --display:"Quicksand","Nunito Sans",ui-rounded,system-ui,sans-serif;
+  --body:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:10px; --shadow:0 1px 2px rgba(35,26,68,.06),0 4px 16px rgba(35,26,68,.06);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#110F1E; --surface:#1A1730; --sunk:#141226; --ink:#ECE9F8; --muted:#A49FBC; --faint:#7C779A; --line:#2D2948;
+  --sky:#5DB9E8; --sky-soft:#17344A; --orange:#FF8656; --orange-soft:#45261C; --pink:#F2668B; --pink-soft:#46202D;
+  --violet:#9C88FF; --violet-soft:#2C2457; --slate:#A6AFC4; --slate-soft:#2A2B40;
+  --good:#45C58E; --good-soft:#163829; --warn:#E8A93B; --warn-soft:#3E2E12; --bad:#FF6B78; --bad-soft:#44191F;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#110F1E; --surface:#1A1730; --sunk:#141226; --ink:#ECE9F8; --muted:#A49FBC; --faint:#7C779A; --line:#2D2948;
+  --sky:#5DB9E8; --sky-soft:#17344A; --orange:#FF8656; --orange-soft:#45261C; --pink:#F2668B; --pink-soft:#46202D;
+  --violet:#9C88FF; --violet-soft:#2C2457; --slate:#A6AFC4; --slate-soft:#2A2B40;
+  --good:#45C58E; --good-soft:#163829; --warn:#E8A93B; --warn-soft:#3E2E12; --bad:#FF6B78; --bad-soft:#44191F;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25); color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--body);font-size:14px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--sky)}
+:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.mono{font-family:var(--mono);font-size:12px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-block:12px 10px}
+.brand{display:flex;align-items:baseline;gap:8px;min-width:0}
+.brand h1{font-family:var(--display);font-weight:700;font-size:20px;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.brand .sub{color:var(--muted);font-size:12px}
+.stats{display:flex;flex-wrap:wrap;gap:6px 16px;margin-left:auto;align-items:center}
+.stat{display:flex;flex-direction:column;line-height:1.15}
+.stat b{font-family:var(--display);font-size:17px;font-weight:700}
+.stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.me{display:flex;align-items:center;gap:8px;padding:4px 6px 4px 4px;border:1px solid var(--line);border-radius:999px;background:var(--sunk)}
+.me img{width:24px;height:24px;border-radius:50%}
+.me select{border:0;background:transparent;font-size:13px;font-weight:600;max-width:150px}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;padding-bottom:0}
+nav.tabs a{display:inline-flex;align-items:center;gap:6px;padding:9px 12px 10px;color:var(--muted);text-decoration:none;font-weight:700;font-family:var(--display);border-bottom:3px solid transparent;white-space:nowrap}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--sky)}
+nav.tabs .count{font-family:var(--body);font-size:11px;background:var(--sunk);color:var(--muted);border-radius:999px;padding:1px 7px}
+
+main{padding-block:18px 60px}
+@media (max-width:640px){header.top{position:static}.stat:nth-child(3),.stat:nth-child(4){display:none}.brand h1{font-size:18px}}
+.view[hidden]{display:none}
+.notice{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:22px;color:var(--muted);text-align:left;max-width:640px}
+.notice h2{font-family:var(--display);color:var(--ink);margin:0 0 6px;font-size:18px}
+
+/* chips & pills */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.t-Decaying{background:var(--orange-soft);color:var(--orange)}
+.t-Due{background:var(--sky-soft);color:var(--sky)}
+.t-Strikes{background:var(--pink-soft);color:var(--pink)}
+.t-Resurrection{background:var(--violet-soft);color:var(--violet)}
+.t-Manual{background:var(--slate-soft);color:var(--slate)}
+.st{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;white-space:nowrap}
+.st::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.st-bad{color:var(--bad)} .st-warn{color:var(--warn)} .st-good{color:var(--good)} .st-muted{color:var(--faint)}
+.pill{display:inline-flex;align-items:center;font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;background:var(--sunk);color:var(--muted);white-space:nowrap;letter-spacing:.02em}
+.p-BRIEF{background:var(--sky-soft);color:var(--sky)} .p-PROD{background:var(--warn-soft);color:var(--warn)} .p-READY{background:var(--violet-soft);color:var(--violet)}
+.p-TEST{background:var(--orange-soft);color:var(--orange)} .p-RESULT{background:var(--pink-soft);color:var(--pink)} .p-RETIRED{background:var(--slate-soft);color:var(--slate)}
+.v-hit{background:var(--good-soft);color:var(--good)} .v-strike{background:var(--bad-soft);color:var(--bad)} .v-foul{background:var(--slate-soft);color:var(--slate)} .v-prov{outline:1px dashed currentColor;outline-offset:-1px}
+.strikes{display:inline-flex;gap:3px;vertical-align:middle}
+.strikes i{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--line);display:inline-block}
+.strikes i.on{background:var(--bad);border-color:var(--bad)}
+
+/* legend, groups, guide, signals */
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted);margin:-2px 0 12px}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.gcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px}
+.gcard header{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.gcard header h3{font-family:var(--display);font-size:16px;margin:0}
+.gcard header .meta{color:var(--muted);font-size:12px}
+.gcard header .spacer{flex:1}
+.gmember{display:grid;grid-template-columns:22px minmax(0,1.6fr) 86px 90px minmax(0,1.3fr) minmax(0,1fr);gap:10px;align-items:center;padding:6px 4px;border-top:1px solid var(--line);font-size:13px}
+.gmember label{display:flex;align-items:center}
+.gmember .ad{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;color:var(--ink);background:none;border:0;padding:0;text-align:left;font-weight:700}
+.gmember .ad:hover{color:var(--sky)}
+.gmember small{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+@media (max-width:760px){.gmember{grid-template-columns:22px 1fr auto}.gmember .hide-s{display:none}}
+.glist{display:flex;flex-direction:column;gap:10px}
+.guide{max-width:880px;display:flex;flex-direction:column;gap:14px}
+.guide .box p,.guide .box li{max-width:72ch}
+.guide .box ul,.guide .box ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:5px}
+.guide h2{font-family:var(--display);font-size:20px;margin:6px 0 0}
+.types3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.types3 .box{gap:6px}
+.steps{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px}
+.steps span{background:var(--sunk);padding:4px 8px;border-radius:6px;font-weight:700}
+.steps i{color:var(--faint);font-style:normal}
+.pchips{display:flex;flex-wrap:wrap;gap:5px}
+.pchip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 9px;font-size:12px;cursor:pointer;color:var(--muted)}
+.pchip[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.metrics{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--muted)}
+.metrics b{color:var(--ink);font-variant-numeric:tabular-nums}
+.numform{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+
+/* strikes sequence, log, personas */
+.seq{display:inline-flex;gap:2px;margin-left:6px;vertical-align:middle}
+.seq b{font-family:var(--mono);font-size:10px;width:15px;height:15px;border-radius:4px;display:inline-grid;place-items:center;font-weight:600}
+.seq .H{background:var(--good-soft);color:var(--good)} .seq .S{background:var(--bad-soft);color:var(--bad)} .seq .F{background:var(--slate-soft);color:var(--slate)} .seq .P{outline:1px dashed var(--faint);color:var(--faint)}
+.stk small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.fade{display:inline-flex;font-size:11px;font-weight:700;color:var(--bad);background:var(--bad-soft);border-radius:5px;padding:1px 6px;margin-left:6px;white-space:nowrap}
+table.ltable{border-collapse:collapse;width:100%;min-width:900px;font-size:12.5px}
+table.ltable th,table.ltable td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.ltable th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);position:sticky;top:0;background:var(--surface)}
+table.ltable td.r,table.ltable th.r{text-align:right}
+table.ltable tr.click{cursor:pointer} table.ltable tr.click:hover td{background:var(--sunk)}
+table.ltable .clip{max-width:320px;white-space:normal;color:var(--muted)}
+.scroll{max-height:70vh;overflow:auto}
+.ptwo{display:grid;grid-template-columns:240px minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:760px){.ptwo{grid-template-columns:1fr}}
+.plist{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:6px;max-height:75vh;overflow:auto}
+.plist button{border:0;background:transparent;text-align:left;padding:7px 8px;border-radius:7px;cursor:pointer;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:13px;color:var(--ink)}
+.plist button small{color:var(--muted);font-weight:400}
+.plist button[aria-current="true"]{background:var(--sunk)}
+.pdetail{display:flex;flex-direction:column;gap:12px;min-width:0}
+.prewrap{white-space:pre-line}
+.output{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+
+/* clocks */
+.clk{display:block;color:var(--muted);font-size:11.5px;margin-top:2px;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.clk.stale{color:var(--warn);font-weight:600}
+
+/* report */
+.rhead{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:12px}
+.rhead h2{font-family:var(--display);font-size:22px;margin:0}
+.rsec{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
+.rsec>h3{font-family:var(--display);font-size:19px;margin:0;display:flex;align-items:baseline;gap:10px}
+.rsec>h3 .n{font-family:var(--mono);font-size:13px;color:var(--sky);font-weight:600}
+.rcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px,1fr));gap:10px}
+@media (max-width:520px){.rcards{grid-template-columns:1fr}}
+.rcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.rcard h4{margin:0;font-family:var(--display);font-size:15px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.amt{overflow-x:auto}
+.amt table{border-collapse:collapse;width:100%;font-size:12px;min-width:380px}
+.amt th,.amt td{padding:5px 7px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.amt th:first-child,.amt td:first-child{text-align:left}
+.amt th{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint)}
+.amt td.lo{color:var(--bad);font-weight:700} .amt td.hi{color:var(--good);font-weight:700}
+.note-b{background:var(--sunk);border-radius:8px;padding:8px 10px;font-size:13px;display:flex;flex-direction:column;gap:4px}
+.note-b .lbl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);display:flex;gap:8px;align-items:center}
+.note-b .lbl em{font-style:normal;color:var(--warn)} .note-b .lbl .ed{color:var(--good)}
+.note-b button{border:0;background:none;color:var(--sky);font-weight:700;font-size:11px;cursor:pointer;padding:0;margin-left:auto}
+.flag{font-size:12px;color:var(--bad)}
+.present{position:fixed;inset:0;z-index:55;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.present .pbar{display:flex;align-items:center;gap:10px;padding:10px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);background:var(--surface)}
+.present .pbody{flex:1;overflow:auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 40px}
+.present .pbody .rsec>h3{font-size:30px}
+.map{display:grid;grid-template-columns:1fr 40px 1.1fr 40px 1.3fr;gap:8px;align-items:stretch}
+.map .col2{display:flex;flex-direction:column;gap:8px}
+.map .node{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:12.5px}
+.map .node b{display:block;font-family:var(--display);font-size:14px;margin-bottom:2px}
+.map .node.key{border-color:var(--sky);box-shadow:0 0 0 2px var(--sky-soft)}
+.map .arrow{display:flex;align-items:center;justify-content:center;color:var(--sky);font-size:22px;font-weight:700}
+.map .loop{grid-column:1/-1;text-align:center;font-size:12px;color:var(--muted);border-top:2px dashed var(--sky);padding-top:6px}
+@media (max-width:760px){.map{grid-template-columns:1fr}.map .arrow{transform:rotate(90deg);height:24px}}
+
+/* toolbar */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:6px;font-weight:700;font-size:12px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.toolbar input[type=search]{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 10px;min-width:0;width:200px;max-width:100%}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;font-weight:700;cursor:pointer;font-size:13px}
+.btn:hover{border-color:var(--sky)}
+.btn.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.btn.primary:hover{opacity:.9}
+.btn.small{padding:4px 9px;font-size:12px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.spacer{flex:1}
+
+/* queue */
+.qhead,.qrow{display:grid;grid-template-columns:34px minmax(220px,2.2fr) 96px minmax(120px,1fr) minmax(150px,1.3fr) 64px minmax(150px,1.3fr);gap:12px;align-items:center}
+.qhead{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);padding:0 12px 6px;font-weight:700}
+.qlist{display:flex;flex-direction:column;gap:6px}
+.qrow{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;cursor:pointer;text-align:left;width:100%}
+.qrow:hover{border-color:var(--sky)}
+.qrow .rank{font-family:var(--display);font-weight:700;font-size:16px;color:var(--faint)}
+.qrow .ad{min-width:0}
+.qrow .ad b{display:block;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.qrow .ad small{color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.qrow .money{display:flex;align-items:center;gap:8px}
+.qrow .money .vals{line-height:1.2}
+.qrow .money .vals b{font-size:13px}
+.qrow .money .vals small{display:block;color:var(--muted);font-size:12px}
+.qrow .cell{min-width:0}
+.qrow .cell small{display:block;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.qrow .cell .mono{white-space:nowrap}
+.cutline{display:flex;align-items:center;gap:10px;color:var(--sky);font-weight:700;font-size:12px;margin:6px 0;text-transform:uppercase;letter-spacing:.06em}
+.cutline::before,.cutline::after{content:"";flex:1;border-top:2px dashed var(--sky);opacity:.55}
+.group-title{font-family:var(--display);font-weight:700;font-size:15px;margin:22px 0 8px;display:flex;align-items:center;gap:8px}
+.group-title small{font-family:var(--body);font-weight:400;color:var(--muted);font-size:12px}
+.spark{display:block}
+.empty{color:var(--muted);padding:14px;border:1px dashed var(--line);border-radius:var(--r);background:var(--surface)}
+@media (max-width:860px){
+  .qhead{display:none}
+  .qrow{grid-template-columns:28px 1fr auto;grid-template-areas:"r a t" "r m m" "r c c" "r w w";row-gap:6px}
+  .qrow .rank{grid-area:r;align-self:start}
+  .qrow .ad{grid-area:a} .qrow .typ{grid-area:t}
+  .qrow .money{grid-area:m} .qrow .no1{grid-area:c} .qrow .stk{display:none} .qrow .work{grid-area:w}
+}
+
+/* board */
+.kanban{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);gap:10px;overflow-x:auto;padding-bottom:10px}
+.col{background:var(--sunk);border-radius:var(--r);padding:8px;min-height:120px;display:flex;flex-direction:column;gap:8px}
+.col h3{font-family:var(--display);font-size:13px;margin:2px 4px 2px;display:flex;justify-content:space-between;align-items:center;letter-spacing:.02em}
+.col h3 span{font-family:var(--body);color:var(--muted);font-weight:600}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 10px;cursor:pointer;text-align:left;width:100%;display:flex;flex-direction:column;gap:4px}
+.card:hover{border-color:var(--sky)}
+.card b{font-size:13px}
+.card small{color:var(--muted);font-size:12px}
+.card .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.who{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--muted)}
+.who b{font-weight:600;background:var(--sunk);padding:1px 5px;border-radius:4px;color:var(--ink)}
+.more{font-size:12px;color:var(--muted);padding:2px 4px}
+
+/* people */
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.person{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px}
+.person header{display:flex;align-items:center;gap:10px}
+.person header .code{font-family:var(--mono);font-weight:600;background:var(--ink);color:var(--surface);border-radius:6px;padding:3px 6px;font-size:12px}
+.person header h3{margin:0;font-family:var(--display);font-size:15px}
+.person header small{color:var(--muted)}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.kv div{background:var(--sunk);border-radius:8px;padding:6px 8px}
+.kv b{display:block;font-family:var(--display);font-size:16px}
+.kv span{font-size:11px;color:var(--muted)}
+.person ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.person li{display:flex;gap:6px;align-items:center;font-size:12px;min-width:0}
+.person li span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+table.score{border-collapse:collapse;width:100%;min-width:720px;font-size:13px}
+table.score th,table.score td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+table.score th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+table.score td.r,table.score th.r{text-align:right}
+table.score tr:last-child td{border-bottom:0}
+.note{color:var(--muted);font-size:12px;max-width:72ch}
+h2.sec{font-family:var(--display);font-size:17px;margin:26px 0 10px}
+h2.sec:first-child{margin-top:0}
+
+/* signals */
+.sigform{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:14px}
+.sigform textarea{grid-column:1/-1}
+.sigform .actions{grid-column:1/-1;display:flex;justify-content:flex-end;gap:8px}
+@media (max-width:640px){.sigform{grid-template-columns:1fr}}
+.sig{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.sig a{word-break:break-all}
+.sig .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:12px}
+
+/* forms */
+label.f{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:700;color:var(--muted);min-width:0}
+input.in,select.in,textarea.in{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 9px;font-weight:400;color:var(--ink);width:100%;min-width:0}
+textarea.in{min-height:72px;resize:vertical}
+.frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(17,15,30,.35);z-index:40}
+aside.drawer{position:fixed;top:0;right:0;bottom:0;width:min(640px,100%);background:var(--bg);z-index:41;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+.dhead{background:var(--surface);border-bottom:1px solid var(--line);padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.dhead h2{font-family:var(--display);font-size:18px;margin:0 0 4px;text-wrap:balance}
+.dhead .full{font-family:var(--mono);font-size:11px;color:var(--faint);word-break:break-all}
+.dbody{overflow-y:auto;padding:14px 16px 40px;display:flex;flex-direction:column;gap:12px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.box h3{font-family:var(--display);font-size:14px;margin:0;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.box h3 small{font-family:var(--body);font-weight:400;color:var(--muted);font-size:12px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px}
+.facts div{background:var(--sunk);border-radius:8px;padding:7px 9px}
+.facts b{display:block;font-family:var(--display);font-size:16px}
+.facts span{font-size:11px;color:var(--muted)}
+.list{display:flex;flex-direction:column;gap:6px}
+.li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;min-width:0}
+.li .grow{flex:1;min-width:0}
+.li small{color:var(--muted)}
+.x{border:0;background:var(--sunk);width:32px;height:32px;border-radius:8px;font-size:18px;cursor:pointer;margin-left:auto;flex:none}
+.names{background:var(--sunk);border-radius:8px;padding:8px;font-family:var(--mono);font-size:11px;max-height:220px;overflow:auto;white-space:pre;line-height:1.6}
+.vartable{display:flex;flex-direction:column;gap:6px}
+.vrow{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:6px;padding:6px;background:var(--sunk);border-radius:8px}
+.vrow>[data-k="hook"],.vrow>[data-k="headline"]{grid-column:span 6}
+.vrow>[data-k="angle"],.vrow>[data-k="modifier"]{grid-column:span 4}
+.vrow>[data-k="fmt"]{grid-column:span 3}
+.vrow>.del{grid-column:span 1;width:100%!important}
+@media (max-width:480px){.vrow>[data-k="hook"],.vrow>[data-k="headline"]{grid-column:span 12}.vrow>[data-k="angle"],.vrow>[data-k="modifier"]{grid-column:span 6}.vrow>[data-k="fmt"]{grid-column:span 10}.vrow>.del{grid-column:span 2}}
+.ok{color:var(--good);font-weight:700} .warnc{color:var(--warn);font-weight:700}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--surface);padding:9px 14px;border-radius:8px;z-index:60;font-weight:700;font-size:13px}
+.log{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:2px}
+.flow{display:flex;gap:4px;flex-wrap:wrap}
+.flow span{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 6px;border-radius:5px;background:var(--sunk);color:var(--faint)}
+.flow span.on{background:var(--ink);color:var(--surface)}
+.flow span.done{color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){aside.drawer{animation:slide .18s ease-out}@keyframes slide{from{transform:translateX(24px);opacity:.6}to{transform:none;opacity:1}}}
+</style>
+
+<header class="top wrap">
+  <div class="top-row">
+    <div class="brand"><h1>Creative Board</h1><span class="sub" id="asof">Bumpy · loading the week…</span> <a class="sub" href="https://claude.ai/artifact/QJnA8xeAWjv2D8NVozMp8X" target="_blank" rel="noopener noreferrer">Account dashboard ↗</a></div>
+    <div class="stats" id="stats"></div>
+    <div class="me" id="mebox" hidden><img id="meimg" alt=""><select id="meselect" aria-label="Which team member are you?"></select></div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <a href="#queue" data-tab="queue">Queue <span class="count" id="c-queue">–</span></a>
+    <a href="#board" data-tab="board">Board <span class="count" id="c-board">–</span></a>
+    <a href="#report" data-tab="report">Report</a>
+    <a href="#people" data-tab="people">People</a>
+    <a href="#signals" data-tab="signals">Signals <span class="count" id="c-signals">–</span></a>
+    <a href="#personas" data-tab="personas">Personas</a>
+    <a href="#log" data-tab="log">Log</a>
+    <a href="#guide" data-tab="guide">Guide</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="view" id="v-queue">
+    <div class="toolbar">
+      <div class="seg" id="f-view" role="group" aria-label="View">
+        <button aria-pressed="true" data-v="tickets">Tickets</button><button aria-pressed="false" data-v="persona">By persona</button>
+      </div>
+      <div class="seg" id="f-type" role="group" aria-label="Ticket type">
+        <button aria-pressed="true" data-v="">All</button><button aria-pressed="false" data-v="Decaying">Decaying</button><button aria-pressed="false" data-v="Due">Due</button><button aria-pressed="false" data-v="3 strikes">3 strikes</button>
+      </div>
+      <div class="seg" id="f-os" role="group" aria-label="OS">
+        <button aria-pressed="true" data-v="">Both OS</button><button aria-pressed="false" data-v="iOS">iOS</button><button aria-pressed="false" data-v="Android">Android</button>
+      </div>
+      <div class="seg" id="f-open" role="group" aria-label="Work">
+        <button aria-pressed="true" data-v="">Everything</button><button aria-pressed="false" data-v="free">No brief yet</button>
+      </div>
+      <input type="search" id="f-q" placeholder="Persona, language, concept…" aria-label="Search tickets">
+      <span class="spacer"></span>
+      <button class="btn" id="open-manual">Open a ticket</button>
+    </div>
+    <div class="legend" id="legend"><span><span class="chip t-Decaying">Decaying</span> hurting now: under the bar, falling, or hook rate down 20%+</span><span><span class="chip t-Due">Due</span> healthy, but its #1 has led 2+ weeks: brief the successor now</span><span><span class="chip t-Strikes">3 strikes</span> three misses in a row while under the bar</span></div>
+    <div id="manual-box"></div>
+    <div id="queue-out"><div class="notice"><h2>Loading the queue</h2>The ranked tickets appear here once the board's data loads.</div></div>
+  </section>
+
+  <section class="view" id="v-board" hidden>
+    <p class="note" style="margin-top:0">Each card is one refresh: a concept going into one adset (or several, when they share a brief). Click a card to move it on.</p>
+    <div class="kanban" id="kanban"></div>
+  </section>
+
+  <section class="view" id="v-people" hidden><div id="people-out"></div></section>
+
+  <section class="view" id="v-signals" hidden>
+    <form class="sigform" id="sigform">
+      <input class="in" id="sig-url" type="url" placeholder="Paste a link: TikTok, Instagram, ad library, YouTube…" aria-label="Link" required>
+      <textarea class="in" id="sig-note" placeholder="Optional: how could we use it? The hook, the format, the line that stopped you." aria-label="How it could be useful"></textarea>
+      <div><small style="color:var(--muted);font-weight:700">PERSONAS (optional, pick any)</small><div class="pchips" id="sig-personas" style="margin-top:5px"></div></div>
+      <div class="actions"><small style="color:var(--muted);margin-right:auto;align-self:center">Views, likes, shares and comments are filled in by Claude on the weekly run, where the site shows them.</small><button class="btn primary" type="submit" id="sig-save">Add to the bank</button></div>
+    </form>
+    <div class="toolbar">
+      <label class="f" style="flex-direction:row;align-items:center;gap:6px">Sort<select class="in" id="sig-sort" style="width:auto"><option value="new">Newest</option><option value="views">Most views</option><option value="likes">Most likes</option><option value="shares">Most shares</option><option value="comments">Most comments</option><option value="eng">Best engagement</option><option value="running">Longest running (ads)</option></select></label>
+      <select class="in" id="sig-fpersona" style="width:auto" aria-label="Persona"><option value="">All personas</option></select>
+      <div class="seg" id="sig-filter" role="group" aria-label="Filter signals"><button aria-pressed="true" data-v="">All</button><button aria-pressed="false" data-v="new">Not used yet</button></div>
+    </div>
+    <div class="grid2" id="sig-out"></div>
+  </section>
+
+  <section class="view" id="v-report" hidden><div id="report-out"></div></section>
+  <section class="view" id="v-personas" hidden><div id="personas-out"></div></section>
+  <section class="view" id="v-log" hidden>
+    <div class="toolbar">
+      <div class="seg" id="log-view" role="group" aria-label="Log view"><button aria-pressed="true" data-v="briefs">Briefs and experiments</button><button aria-pressed="false" data-v="atbats">Refreshes since Dec</button><button aria-pressed="false" data-v="weeks">Week by week</button></div>
+      <select class="in" id="log-persona" style="width:auto" aria-label="Persona"><option value="">All personas</option></select>
+      <select class="in" id="log-person" style="width:auto" aria-label="Person"><option value="">Everyone</option></select>
+      <input type="search" id="log-q" placeholder="Concept, code, hypothesis, learning…" aria-label="Search the log">
+      <label class="li" style="font-size:13px;gap:5px"><input type="checkbox" id="log-notion" checked> Include Notion history</label>
+    </div>
+    <div id="log-out"></div>
+  </section>
+  <section class="view" id="v-guide" hidden><div class="guide" id="guide-out"></div></section>
+</main>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="d-title"></aside>
+<div class="present" id="present" hidden role="dialog" aria-label="Present the report"></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(() => {
+"use strict";
+const STATUSES = ["BRIEF CREATED","IN PRODUCTION","READY TO UPLOAD","TESTING","RESULT READY","RETIRED"];
+const PCLASS = {"BRIEF CREATED":"p-BRIEF","IN PRODUCTION":"p-PROD","READY TO UPLOAD":"p-READY","TESTING":"p-TEST","RESULT READY":"p-RESULT","RETIRED":"p-RETIRED"};
+const ACTIVE = new Set(STATUSES.slice(0,5));
+const MODIFIERS = ["Unaware","ProblemAware","SolutionAware","ProductAware","MostAware"];
+const ANGLES = ["recommendation","someonewantsyou","seriousintentonly","seriousdating","casual","choices","startfresh","datemoveabroad","talk","personalrecommendation","bestdecisionclaim","churn"];
+const MANUAL_TYPES = ["New persona","Expansion (language or market)","New format or channel","Urgent fix","Resurrection","ASO set","Onboarding videos"];
+const TYPE_CLASS = {"Decaying":"t-Decaying","Due":"t-Due","3 strikes":"t-Strikes","Resurrection":"t-Resurrection"};
+const typeClass = t => TYPE_CLASS[t] || "t-Manual";
+const TYPE_HELP = {"Decaying":"Hurting now: ROAS under the bar, falling, or its hook rate dropped 20%+. Needs new creative this week.",
+  "Due":"Healthy today, but its #1 has led for 2+ weeks. Winners fade from week 3 and a refresh takes about 2 weeks, so brief the successor now.",
+  "3 strikes":"Three refreshes in a row didn't produce a new #1 while the adset was under the bar. Find what's broken before refreshing again."};
+const TAGS = [["style","Content style",["UGC selfie","AI cinematic","Meme","Slideshow","Text overlay on b-roll","Screen recording","Podcast / interview","Skit","Street interview","App UI"]],
+  ["theme","Message theme",["Dating abroad is easier","Serious intent","Status doesn't matter","Cultural curiosity","Loneliness","Second chance","Relocation","Friendship","Social proof"]],
+  ["hook","Hook type",["POV","Question","Bold claim","Shock visual","Text bait","Before / after","Testimonial","Reaction","Trend sound"]],
+  ["format","Format",["9:16 video ≤15 s","9:16 video 15–30 s","30–60 s long form","Static image","Carousel","Slider"]],
+  ["voice","Spokesperson",["Woman","Man","Couple","Voiceover only","No person","Creator / influencer style"]]];
+const FLAGS = [["too_ai","Too AI-looking"],["off_brief","Off-brief"],["quality","Quality issue"],["no_insight","Not based on the insight"],["skipped","People skipped it (low CTR / hold)"]];
+
+const S = { reports:{}, repNotes:{}, repWeek:"", presentIdx:-1, editNote:null, log:null, archive:null, personaDoc:null, history:[], logf:{view:"briefs",persona:"",person:"",q:"",notion:true}, personaSel:"", gsel:{}, queue:null, people:null, codes:null, work:[], signals:[], manual:[], team:{}, me:{id:null,name:"",avatar:""}, myCode:"",
+  db:null, user:null, sample:null, canWrite:null, profiles:{}, tab:"queue", f:{view:"tickets",type:"",os:"",open:"",q:""}, sigf:{used:"",persona:"",sort:"new"}, sigPersonas:[], editNums:null, drawer:null, readOnly:false };
+
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = v => v == null ? "–" : "$" + (Math.abs(v) >= 1000 ? (v/1000).toFixed(1) + "k" : Math.round(v));
+const pct = v => v == null ? "–" : Math.round(v*100) + "%";
+const r2 = v => v == null ? "–" : Number(v).toFixed(2);
+const today = () => new Date().toISOString().slice(0,10);
+const fmtDate = d => { if (!d) return ""; const x = new Date(d.length === 10 ? d + "T00:00:00" : d); return x.toLocaleDateString(undefined,{day:"numeric",month:"short"}); };
+const daysSince = d => d ? Math.max(0, Math.round((Date.now() - new Date(d).getTime())/864e5)) : null;
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.hidden=false; clearTimeout(toast._t); toast._t=setTimeout(()=>t.hidden=true,2600); }
+
+/* ---------- naming (v5) ---------- */
+const pascal = s => String(s||"").replace(/[^A-Za-z0-9 ]+/g," ").split(/\s+/).filter(Boolean).map(w => w[0].toUpperCase()+w.slice(1)).join("");
+const lowerslug = s => String(s||"").toLowerCase().replace(/[^a-z0-9]+/g,"");
+const aud = lang => (lang === "EN" ? "US" : String(lang||"").toUpperCase());
+function isoWeek(d=new Date()){ const t=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())); const day=t.getUTCDay()||7; t.setUTCDate(t.getUTCDate()+4-day); const y=t.getUTCFullYear(); const w=Math.ceil(((t-Date.UTC(y,0,1))/864e5+1)/7); return `Batch${y}Week${String(w).padStart(2,"0")}`; }
+function usedCodes(){ const set = new Set((S.codes?.codes)||[]); S.work.forEach(w => w.concept_code && set.add(String(w.concept_code).toLowerCase())); return set; }
+function newCode(){ const A="ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789"; const used=usedCodes();
+  for(let i=0;i<200;i++){ const buf=new Uint32Array(6); crypto.getRandomValues(buf); let c=""; buf.forEach(n=>c+=A[n%A.length]);
+    if(/[A-Z]/.test(c)&&/[a-z]/.test(c)&&/[0-9]/.test(c)&&!used.has(c.toLowerCase())) return c; } return "x"+Date.now().toString(36).slice(-5); }
+function targetsOf(w){ if(Array.isArray(w.targets) && w.targets.length) return w.targets; return (w.langs||[]).map(l=>({persona:w.persona, lang:l})); }
+function adNames(w){ const out=[]; const T=targetsOf(w); (w.variants||[]).forEach(v => { const fmts = v.fmt === "VID+IMG" ? ["VID","IMG"] : [v.fmt||"VID"];
+  T.forEach(tg => fmts.forEach(f => out.push([tg.persona, aud(tg.lang), w.concept_code, pascal(w.concept_name), pascal(v.hook), lowerslug(v.headline), lowerslug(v.angle), v.modifier, f, w.strategist, w.designer, w.batch].join("-")))); }); return out; }
+const folderName = w => `${w.batch}-${w.concept_code}-${pascal(w.concept_name)}`;
+
+/* ---------- derived ---------- */
+const ticketById = id => (S.queue?.tickets||[]).find(t => t.id === id) || S.manual.find(m => m.id === id);
+const workFor = tid => S.work.filter(w => (w.tickets||[w.ticket]).includes(tid));
+const activeWorkFor = tid => workFor(tid).filter(w => ACTIVE.has(w.status));
+function statusClass(t){ const s=t.status||""; if(s.includes("Critical")) return "st-bad"; if(s.includes("Refresh")||s.includes("Falling")||s.includes("Amber")) return "st-warn"; if(s.includes("Healthy")||s.includes("Scaling")) return "st-good"; return "st-muted"; }
+const statusWord = t => String(t.status||"").replace(/^[^A-Za-z]+/,"");
+function verdictClass(v){ v=v||""; const p = v.includes("provisional") ? " v-prov" : ""; if(/Hit|Home run/.test(v)) return "v-hit"+p; if(/Strike/.test(v)) return "v-strike"+p; return "v-foul"+p; }
+function seqHTML(t){ const ab=(t.atbats||[]).slice(-5); if(!ab.length) return "";
+  return `<span class="seq" title="Last ${ab.length} refreshes here, oldest first: H hit, S strike, F foul (didn't unseat a healthy #1); dashed = provisional">${ab.map(a=>{ const v=a.verdict||""; const c=/Hit|Home run/.test(v)?"H":/Strike/.test(v)?"S":"F"; return `<b class="${c}${/provisional/.test(v)?" P":""}">${c}</b>`; }).join("")}</span>`; }
+function fadeHTML(t){ return t.fading ? `<span class="fade" title="Under the bar ${t.weeks_under} weeks in a row and no new concept since">Fading ${t.weeks_under} wks</span>` : ""; }
+function strikesHTML(n){ let h='<span class="strikes" aria-label="'+n+' strikes in a row">'; for(let i=0;i<3;i++) h+='<i class="'+(i<n?"on":"")+'"></i>'; return h+'</span>'; }
+function roster(role){ return (S.people?.roster||[]).filter(p => (!role || p.role===role) && p.active); }
+function nameOf(uid){ const p = S.profiles[uid]; return (p && p.name) || (Object.entries(S.team).find(([c,v]) => v.uid===uid)?.[0]) || "Someone"; }
+async function resolveProfiles(ids){ if(!S.user) return; ids=[...new Set(ids.filter(Boolean))]; if(!ids.length) return; try{ const ps = await S.user.profiles(ids); Object.assign(S.profiles, ps); }catch(e){} }
+
+/* ---------- sparkline ---------- */
+function spark(hist, bar, w=120, h=34, big=false){
+  if(!hist || !hist.s) return "";
+  const n=hist.s.length, sp=hist.s.map(v=>v||0), rs=hist.r; const smax=Math.max(1,...sp); const rmax=Math.max(0.8,...rs.filter(v=>v!=null));
+  const padB = big?16:2, padT=big?6:2, padL=big?28:1, padR=big?4:1; const iw=w-padL-padR, ih=h-padT-padB; const bw=iw/n;
+  const y = v => padT + ih - (v/rmax)*ih;
+  let g=`<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Spend and ROAS, last ${n} weeks">`;
+  sp.forEach((v,i)=>{ const bh=(v/smax)*ih*0.9; g+=`<rect x="${(padL+i*bw+1).toFixed(1)}" y="${(padT+ih-bh).toFixed(1)}" width="${Math.max(1,bw-2).toFixed(1)}" height="${bh.toFixed(1)}" fill="var(--sky-soft)"/>`; });
+  g+=`<line x1="${padL}" x2="${w-padR}" y1="${y(bar).toFixed(1)}" y2="${y(bar).toFixed(1)}" stroke="var(--warn)" stroke-dasharray="3 3" stroke-width="1"/>`;
+  let d=""; rs.forEach((v,i)=>{ if(v==null) return; const x=padL+i*bw+bw/2; d+=(d?"L":"M")+x.toFixed(1)+" "+y(v).toFixed(1); });
+  if(d) g+=`<path d="${d}" fill="none" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>`;
+  const li=rs.map((v,i)=>v==null?-1:i).filter(i=>i>=0).pop(); if(li!=null&&li>=0){ g+=`<circle cx="${(padL+li*bw+bw/2).toFixed(1)}" cy="${y(rs[li]).toFixed(1)}" r="${big?3.5:2.5}" fill="${rs[li]>=bar?"var(--good)":"var(--bad)"}"/>`; }
+  if(big){ g+=`<text x="${padL-4}" y="${(y(bar)+3).toFixed(1)}" text-anchor="end" font-size="9" fill="var(--warn)">${bar.toFixed(2)}</text>`;
+    hist.w.forEach((wk,i)=>{ if(i%2===n%2) return; g+=`<text x="${(padL+i*bw+bw/2).toFixed(1)}" y="${h-3}" text-anchor="middle" font-size="9" fill="var(--faint)">${esc(fmtDate(wk))}</text>`; }); }
+  return g+"</svg>";
+}
+
+/* ---------- header ---------- */
+function renderHeader(){
+  const q=S.queue; if(!q) return;
+  $("#asof").textContent = `Bumpy · adsets to ${fmtDate(q.adset_week)}, ads to ${fmtDate(q.ad_week)} · updated ${fmtDate(q.generated)}`;
+  const free = q.tickets.filter(t => !activeWorkFor(t.id).length).length;
+  const inflight = S.work.filter(w => ACTIVE.has(w.status)).length;
+  $("#stats").innerHTML = `
+    <div class="stat"><b class="num">${q.tickets.length}</b><span>Open tickets</span></div>
+    <div class="stat"><b class="num">${free}</b><span>No brief yet</span></div>
+    <div class="stat"><b class="num">${inflight}</b><span>In flight</span></div>
+    <div class="stat" title="Under the bar 2+ weeks in a row with no new concept since"><b class="num" style="color:var(--bad)">${q.tickets.filter(t=>t.fading && !activeWorkFor(t.id).length).length}</b><span>Fading, no brief</span></div>
+    <div class="stat"><b class="num">≈${Math.round(q.capacity||0)}</b><span>Refreshes / week</span></div>
+    <div class="stat"><b class="num">${r2(q.bar.green)}</b><span>ROAS bar</span></div>`;
+  $("#c-queue").textContent = q.tickets.length + S.manual.filter(m=>!m.closed).length;
+  $("#c-board").textContent = inflight;
+}
+
+/* ---------- queue ---------- */
+function rowWork(t){
+  const ws = activeWorkFor(t.id);
+  if(!ws.length) return `<span class="cell work"><span class="pill">No brief yet</span>${t.in_test?`<small>In test: <span class="mono">${esc(t.in_test)}</span></small>`:""}</span>`;
+  const w=ws[0]; return `<span class="cell work"><span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span><small><span class="mono">${esc(w.concept_code||"")}</span> ${esc(w.concept_name||"")} · ${esc(w.strategist||"")}/${esc(w.designer||"")}${ws.length>1?` · +${ws.length-1}`:""}</small></span>`;
+}
+function renderQueue(){
+  const q=S.queue, out=$("#queue-out"); if(!q){ return; }
+  if(S.f.view==="persona") return renderGroups();
+  const f=S.f, needle=f.q.trim().toLowerCase();
+  let ts = q.tickets.filter(t => (!f.type||t.type===f.type) && (!f.os||t.os===f.os) && (!f.open || !activeWorkFor(t.id).length)
+    && (!needle || [t.adset,t.persona,t.lang,t.top_code,t.top_name,t.id].join(" ").toLowerCase().includes(needle)));
+  const cap = Math.round(q.capacity||8); let freeSeen=0, cutDone=false;
+  let h = `<div class="qhead"><span>#</span><span>Adset</span><span>Ticket</span><span>Spend · ROAS (8 wks)</span><span>Current #1</span><span title="Turnaround strikes: refreshes in a row that produced no new #1 while the adset was under the bar">Strikes (of 3)</span><span>Work</span></div><div class="qlist">`;
+  if(!ts.length) h += `<div class="empty">No ticket matches these filters.</div>`;
+  ts.forEach(t => {
+    const isFree = !activeWorkFor(t.id).length; if(isFree) freeSeen++;
+    h += `<button class="qrow" data-ticket="${esc(t.id)}">
+      <span class="rank num">${t.rank}</span>
+      <span class="ad"><b>${esc(t.adset)}${fadeHTML(t)}</b><small><span class="st ${statusClass(t)}">${esc(statusWord(t))}</span> · ${esc(t.why)}</small></span>
+      <span class="typ"><span class="chip ${typeClass(t.type)}" title="${esc(TYPE_HELP[t.type]||"")}">${esc(t.type)}</span></span>
+      <span class="money">${spark(t.hist,q.bar.green)}<span class="vals num"><b>${money(t.spend)}</b><small>${r2(t.roas)}</small></span></span>
+      <span class="cell no1"><span class="mono">${esc(t.top_code||"–")}</span> ${esc(t.top_name||"")}<small>${t.reign?`${pct(t.top_share)} of spend`:"no clear #1"}</small>${clockHTML(t)}</span>
+      <span class="stk">${strikesHTML(t.strikes)}<small>${t.strikes}/3 ${seqHTML(t)}</small></span>
+      ${rowWork(t)}
+    </button>`;
+    if(!cutDone && !f.open && !f.type && !f.os && !needle && isFree && freeSeen===cap){ h += `<div class="cutline">About ${cap} refreshes land a week · tickets below wait</div>`; cutDone=true; }
+  });
+  h += `</div>`;
+  const rz = q.resurrect||[];
+  if(rz.length){ h += `<div class="group-title">Resurrection candidates <small>switched off while beating their OS average</small></div><div class="qlist">`;
+    rz.forEach(z => { h += `<div class="qrow" style="cursor:default"><span class="rank">·</span><span class="ad"><b>${esc(z.adset)}</b><small>Off since ${esc(fmtDate(z.last_week))} · peak ${money(z.peak)}/wk · ${esc(z.fate)}</small></span><span class="typ"><span class="chip t-Resurrection">Dark</span></span><span class="cell"><small>Last 4 weeks vs OS</small><b class="num">${r2(z.rel)}×</b></span><span class="cell"></span><span class="stk"></span><span class="cell work"><button class="btn small" data-resurrect="${esc(z.adset_id)}">Open a resurrection ticket</button></span></div>`; });
+    h += `</div>`; }
+  out.innerHTML = h;
+}
+function renderManual(){
+  const box=$("#manual-box"); const ms=S.manual.filter(m=>!m.closed);
+  if(!ms.length){ box.innerHTML=""; return; }
+  let h=`<div class="group-title" style="margin-top:0">Opened by the team <small>new personas, expansions, formats, fixes, non-ad work</small></div><div class="qlist" style="margin-bottom:18px">`;
+  ms.forEach(m => { const w=activeWorkFor(m.id)[0];
+    h+=`<button class="qrow" data-ticket="${esc(m.id)}"><span class="rank">·</span><span class="ad"><b>${esc(m.title)}</b><small>${esc([m.persona,m.os,m.lang].filter(Boolean).join(" · "))}${m.note?" · "+esc(m.note):""}</small></span><span class="typ"><span class="chip ${m.type==="Resurrection"?"t-Resurrection":"t-Manual"}">${esc((m.type||"").split(" ")[0])}</span></span><span class="cell"><small>Opened ${esc(fmtDate(m.at))} by ${esc(nameOf(m.by))}</small></span><span class="cell"></span><span class="stk"></span>${w?`<span class="cell work"><span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span></span>`:`<span class="cell work"><span class="pill">No brief yet</span></span>`}</button>`; });
+  box.innerHTML = h+"</div>";
+}
+
+function groupsOf(ts){ const m=new Map(); ts.forEach(t=>{ const k=t.persona||"Other"; if(!m.has(k)) m.set(k,[]); m.get(k).push(t); });
+  return [...m.entries()].map(([persona,list])=>({persona, list:list.sort((a,b)=>a.rank-b.rank), score:list.reduce((a,t)=>a+(t.score||0),0), spend:list.reduce((a,t)=>a+(t.spend||0),0)})).sort((a,b)=>b.score-a.score); }
+function renderGroups(){
+  const q=S.queue, out=$("#queue-out"), f=S.f, needle=f.q.trim().toLowerCase();
+  const ts = q.tickets.filter(t => (!f.type||t.type===f.type) && (!f.os||t.os===f.os) && (!f.open || !activeWorkFor(t.id).length) && (!needle || [t.adset,t.persona,t.lang,t.top_code,t.top_name].join(" ").toLowerCase().includes(needle)));
+  const gs = groupsOf(ts);
+  let h=`<p class="note" style="margin-top:0">One brief can cover a persona's adsets across languages and both OS. Each adset still gets its own result: a concept spread over 5+ adsets became #1 somewhere ${pct(q.facts?.won_anywhere_5plus)} of the time, vs ${pct(q.facts?.won_anywhere_1)} in one adset, and each adset kept the usual ${pct(q.facts?.landing_win_rate)} chance. Results often differ by language, rarely by OS.</p><div class="glist">`;
+  if(!gs.length) h+=`<div class="empty">No ticket matches these filters.</div>`;
+  gs.forEach(g => { const sel = S.gsel[g.persona] || (S.gsel[g.persona] = new Set(g.list.filter(t=>!activeWorkFor(t.id).length && t.type!=="Due").map(t=>t.id)));
+    const counts = ["3 strikes","Decaying","Due"].map(k=>[k,g.list.filter(t=>t.type===k).length]).filter(x=>x[1]);
+    const langs=[...new Set(g.list.map(t=>t.lang))].join(", "), oss=[...new Set(g.list.map(t=>t.os))].join(" + ");
+    h+=`<div class="gcard"><header><h3>${esc(g.persona)}</h3>${counts.map(([k,n])=>`<span class="chip ${typeClass(k)}">${n} ${esc(k)}</span>`).join("")}<span class="meta num">${money(g.spend)}/week · ${esc(langs)} · ${esc(oss)}</span><span class="spacer"></span>${!S.readOnly?`<button class="btn small primary" data-gbrief="${esc(g.persona)}" ${sel.size?"":"disabled"}>Brief the ${sel.size} selected</button>`:""}</header>`;
+    g.list.forEach(t => { const w=activeWorkFor(t.id)[0];
+      h+=`<div class="gmember"><label><input type="checkbox" data-gsel="${esc(g.persona)}" value="${esc(t.id)}" ${sel.has(t.id)?"checked":""} aria-label="Include ${esc(t.adset)}"></label><button class="ad" data-ticket="${esc(t.id)}">${esc(t.adset.split(" · ").slice(1).join(" · ")||t.adset)}<small>#${t.rank} · ${esc(t.why)}</small></button><span><span class="chip ${typeClass(t.type)}">${esc(t.type)}</span><small style="margin-top:3px">${strikesHTML(t.strikes)} ${t.strikes}/3${fadeHTML(t)}</small></span><span class="num">${money(t.spend)} · ${r2(t.roas)}</span><span class="hide-s"><span class="mono">${esc(t.top_code||"–")}</span> ${esc(t.top_name||"")}${clockHTML(t)}</span><span class="hide-s">${w?`<span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span>`:`<span class="pill">No brief yet</span>`}</span></div>`; });
+    h+=`</div>`; });
+  out.innerHTML = h+`</div>`;
+}
+
+/* ---------- board ---------- */
+function renderBoard(){
+  const k=$("#kanban"); if(!S.queue){ k.innerHTML=""; return; }
+  const cols = [["NEED REFRESH",[]], ...STATUSES.map(s=>[s,[]])];
+  const freeT = S.queue.tickets.filter(t=>!activeWorkFor(t.id).length);
+  const show = Math.max(8, Math.round(S.queue.capacity||8));
+  const recentRetired = S.work.filter(w=>w.status==="RETIRED" && daysSince(w.dates?.retired)!=null && daysSince(w.dates.retired)<=21);
+  let h="";
+  cols.forEach(([name]) => {
+    let items="";
+    if(name==="NEED REFRESH"){
+      freeT.slice(0,show).forEach(t => items+=`<button class="card" data-ticket="${esc(t.id)}"><div class="row"><span class="chip ${typeClass(t.type)}">${esc(t.type)}</span><small class="num">#${t.rank} · ${money(t.spend)} · ${r2(t.roas)}</small></div><b>${esc(t.adset)}${fadeHTML(t)}</b><small>${esc(t.why)}</small><div class="row">${strikesHTML(t.strikes)}<small>${t.strikes}/3 strikes</small>${seqHTML(t)}</div>${clockHTML(t)}</button>`);
+      if(freeT.length>show) items+=`<div class="more">+ ${freeT.length-show} more in the queue</div>`;
+    } else {
+      const ws = (name==="RETIRED"?recentRetired:S.work.filter(w=>w.status===name)).sort((a,b)=>(b.updated_at||"").localeCompare(a.updated_at||""));
+      ws.forEach(w => { const since = w.status_at ? daysSince(w.status_at) : null; const res=w.result||{};
+        items+=`<button class="card" data-work="${esc(w._id)}"><div class="row"><span class="mono">${esc(w.concept_code||"")}</span><b>${esc(w.concept_name||"Untitled concept")}</b></div><small>${esc(w.adset||"")}${(w.tickets||[]).length>1?` + ${(w.tickets.length-1)} more adset${w.tickets.length>2?"s":""}`:""}</small><div class="row"><span class="who"><b>${esc(w.strategist||"–")}</b><b>${esc(w.designer||"–")}</b></span>${since!=null?`<small>${since}d here</small>`:""}${res.verdict?`<span class="pill ${verdictClass(res.verdict)}">${esc(res.verdict)}</span>`:""}${w.retro?.answered?`<small>Hypothesis: ${esc(w.retro.answered)}</small>`:""}</div>${(()=>{const t=S.queue.tickets.find(x=>x.id===(w.tickets||[w.ticket])[0]); return t?clockHTML(t):"";})()}</button>`; });
+      if(!ws.length) items = `<div class="more">${name==="RETIRED"?"Nothing closed in the last 3 weeks":"Empty"}</div>`;
+    }
+    const n = name==="NEED REFRESH"?freeT.length:(name==="RETIRED"?recentRetired.length:S.work.filter(w=>w.status===name).length);
+    h+=`<div class="col"><h3>${esc(name)} <span class="num">${n}</span></h3>${items}</div>`;
+  });
+  k.innerHTML=h;
+}
+
+/* ---------- people ---------- */
+function renderPeople(){
+  const out=$("#people-out"); const P=S.people; if(!P){ out.innerHTML=`<div class="notice"><h2>Loading people</h2>Roster and history load with the board.</div>`; return; }
+  const active = S.work.filter(w=>ACTIVE.has(w.status));
+  const since28 = Date.now()-28*864e5;
+  const per = code => ({ strat: S.work.filter(w=>w.strategist===code), des: S.work.filter(w=>w.designer===code) });
+  const outFor = days => { const since=Date.now()-days*864e5; const hs=S.work.filter(w=>w.handoff?.at && new Date(w.handoff.at).getTime()>=since);
+    return {hs, briefs:hs.length, vids:hs.reduce((a,w)=>a+(+w.handoff.videos||0),0), imgs:hs.reduce((a,w)=>a+(+w.handoff.images||0),0), adsets:hs.reduce((a,w)=>a+(w.tickets||[w.ticket]).length,0),
+      tasks:hs.reduce((a,w)=>{ Object.entries(w.handoff.tasks||{}).forEach(([k,v])=>a[k]=(a[k]||0)+(+v||0)); return a; },{})}; };
+  const o7=outFor(7), o28=outFor(28);
+  let h=`<h2 class="sec">Team output</h2><div class="box"><div class="output"><div class="facts" style="grid-column:1/-1"><div><b class="num">${o7.vids}</b><span>Videos, last 7 days</span></div><div><b class="num">${o7.imgs}</b><span>Images, last 7 days</span></div><div><b class="num">${o7.briefs}</b><span>Briefs handed off</span></div><div><b class="num">${o7.adsets}</b><span>Adsets they cover</span></div><div><b class="num">${o28.vids} · ${o28.imgs}</b><span>Videos · images, 28 days</span></div></div></div>
+    ${o7.hs.length?`<div class="list">${o7.hs.map(w=>`<div class="li"><span class="chip ${typeClass(w.ticket_type)}">${esc(w.ticket_type||"")}</span><b>${esc(w.concept_name)}</b><span class="who"><b>${esc(w.designer)}</b></span><small>${+w.handoff.videos||0} videos · ${+w.handoff.images||0} images · ${(w.tickets||[]).length} adsets${Object.entries(w.handoff.tasks||{}).filter(([k,v])=>+v>0).map(([k,v])=>` · ${esc(k)} ${+v}`).join("")}</small></div>`).join("")}</div>`:`<small style="color:var(--muted)">No handoffs in the last 7 days yet. Each handoff adds its videos, images and task counts here, the same breakdown as the Team Output slide.</small>`}</div>
+  <h2 class="sec">This week: who's on what</h2><div class="grid2">`;
+  roster().forEach(p => { const mine = active.filter(w=>w.strategist===p.code||w.designer===p.code);
+    const claimed = S.team[p.code]?.uid; const img = claimed && S.profiles[claimed]?.avatarUrl;
+    h+=`<div class="person"><header><span class="code">${esc(p.code)}</span><div><h3>${esc(p.name)}</h3><small>${esc(p.role)}${claimed?` · ${esc(nameOf(claimed))}`:""}</small></div>${img?`<img src="${esc(img)}" alt="" width="26" height="26" style="border-radius:50%;margin-left:auto">`:""}</header>`;
+    h+= mine.length ? `<ul>${mine.map(w=>`<li><span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span><span class="t"><span class="mono">${esc(w.concept_code||"")}</span> ${esc(w.concept_name||"")} · ${(w.tickets||[w.ticket]).length} adset${(w.tickets||[]).length>1?"s":""}${stallHTML(w)}</span></li>`).join("")}</ul><small style="color:var(--muted)">${(()=>{const n=mine.reduce((a,w)=>a+(w.tickets||[w.ticket]).length,0); return `${mine.length} brief${mine.length>1?"s":""} covering ${n} adset${n===1?"":"s"}`;})()}</small>` : `<small style="color:var(--muted)">Nothing in flight.</small>`;
+    h+=scoreStrip(p, P);
+    h+=`</div>`; });
+  h+=`</div><p class="note">Waiting = days in the current status past its usual time (brief 3 days to start, production 7 to hand off, upload 3 to go live). Score = the person's record so far; full tables below.</p>`;
+  // designers
+  const base=P.baseline||{};
+  h+=`<h2 class="sec">Designers</h2><div class="tablewrap"><table class="score"><thead><tr><th>Designer</th><th class="r">In flight</th><th class="r">Briefs handed off (4 wks)</th><th class="r">Adsets covered</th><th class="r">Videos · images (4 wks)</th><th class="r">Days brief → handoff</th><th class="r">Retro flags</th><th>Finished per week (Notion, 12 wks)</th><th class="r">Adsets won on the board</th><th class="r">Concepts with results (Notion)</th><th class="r">Won 20%+ wk 1</th><th class="r">Became #1</th></tr></thead><tbody>`;
+  (P.roster||[]).filter(p=>p.role==="designer").forEach(p => { const H=P.history?.[p.code]||{}; const d=per(p.code).des;
+    const hand = d.filter(w=>w.handoff?.at && new Date(w.handoff.at).getTime()>=since28);
+    const vids = hand.reduce((a,w)=>a+(+w.handoff.videos||0),0), imgs=hand.reduce((a,w)=>a+(+w.handoff.images||0),0);
+    const cyc = d.filter(w=>w.dates?.brief&&w.dates?.ready).map(w=>(new Date(w.dates.ready)-new Date(w.dates.brief))/864e5); const cm = cyc.length? (cyc.sort((a,b)=>a-b)[Math.floor(cyc.length/2)]).toFixed(1) : (H.cycle_days!=null? H.cycle_days+" (Notion)":"–");
+    const flags = d.reduce((a,w)=>a+((w.retro?.flags||[]).length),0);
+    const wk = H.weekly||[]; const mx=Math.max(1,...wk);
+    const bars = wk.length? `<svg width="96" height="22" viewBox="0 0 96 22" role="img" aria-label="Briefs finished per week">${wk.map((v,i)=>`<rect x="${i*8}" y="${22-(v/mx)*20}" width="6" height="${(v/mx)*20||1}" fill="${v?"var(--sky)":"var(--line)"}"/>`).join("")}</svg>`:"";
+    h+=`<tr style="${p.active?"":"opacity:.55"}"><td><span class="mono">${esc(p.code)}</span> ${esc(p.name)}${p.active?"":" (left)"}</td><td class="r num">${active.filter(w=>w.designer===p.code).length}</td><td class="r num">${hand.length}</td><td class="r num">${hand.reduce((a,w)=>a+(w.tickets||[w.ticket]).length,0)}</td><td class="r num">${vids} · ${imgs}</td><td class="r num">${esc(cm)}</td><td class="r num">${flags}</td><td>${bars} <small class="num" style="color:var(--muted)">${H.last8??0} in 8 wks</small></td><td class="r num">${(()=>{const L=landingStats(d); return L.final?`${L.won} of ${L.final}`:"–";})()}</td><td class="r num">${H.with_results??0}</td><td class="r num">${H.with_results>=10?pct(H.won20):`<span style="color:var(--faint)">${pct(H.won20)}</span>`}</td><td class="r num">${H.with_results>=10?pct(H.became1):`<span style="color:var(--faint)">${pct(H.became1)}</span>`}</td></tr>`; });
+  h+=`</tbody></table></div><p class="note">History from the Notion tracker, joined to Meta ad data by concept code + batch. Team baseline: ${pct(base.won20)} of ${base.concepts||0} coded concepts won 20%+ of an adset in week 1; ${pct(base.became1)} became an adset's #1. Rates are greyed under 10 concepts; nobody is ranked on fewer than 10. From now on, handoffs and retros on this board fill the left columns.</p>`;
+  // strategists
+  h+=`<h2 class="sec">Strategists</h2><div class="tablewrap"><table class="score"><thead><tr><th>Strategist</th><th class="r">In flight</th><th class="r">Briefs (4 wks)</th><th class="r">With a source signal</th><th class="r">Adset results in</th><th class="r">Adsets won</th><th class="r">Hypothesis answered</th></tr></thead><tbody>`;
+  roster("strategist").forEach(p => { const d=per(p.code).strat; const b4=d.filter(w=>w.dates?.brief && new Date(w.dates.brief).getTime()>=since28);
+    const src=d.filter(w=>w.source_code||w.signal_id||w.jurus==="J1"||w.jurus==="J2").length; const LS=landingStats(d); const res={length:LS.final}; const hits={length:LS.won};
+    const ans=d.filter(w=>w.retro?.answered); const yes=ans.filter(w=>w.retro.answered==="Yes");
+    h+=`<tr><td><span class="mono">${esc(p.code)}</span> ${esc(p.name)}</td><td class="r num">${active.filter(w=>w.strategist===p.code).length}</td><td class="r num">${b4.length}</td><td class="r num">${d.length?pct(src/d.length):"–"}</td><td class="r num">${res.length}</td><td class="r num">${hits.length}</td><td class="r num">${ans.length?`${yes.length} of ${ans.length}`:"–"}</td></tr>`; });
+  h+=`</tbody></table></div><p class="note">No strategist history before v5 names. Every brief made here is credited from day one.</p>`;
+  // claude
+  const ai=S.work.filter(w=>w.ai); const scored=ai.filter(w=>w.result?.verdict && !/provisional/.test(w.result.verdict));
+  const avgp = ai.length? ai.reduce((a,w)=>a+(+w.ai.p_hit||0),0)/ai.length : null; const hitr = scored.length? scored.filter(w=>/Hit|Home run/.test(w.result.verdict)).length/scored.length : null;
+  const brier = scored.length? scored.reduce((a,w)=>{const y=/Hit|Home run/.test(w.result.verdict)?1:0; return a+Math.pow((+w.ai.p_hit||0)-y,2);},0)/scored.length : null;
+  h+=`<h2 class="sec">Claude</h2><div class="grid2"><div class="person"><header><span class="code">AI</span><div><h3>Claude</h3><small>assistant strategist · ticket calls, drafts, odds</small></div></header><div class="kv"><div><b class="num">${ai.length}</b><span>Briefs drafted</span></div><div><b class="num">${avgp!=null?pct(avgp):"–"}</b><span>Average odds given</span></div><div><b class="num">${hitr!=null?pct(hitr):"–"}</b><span>Actual hit rate</span></div></div><small style="color:var(--muted)">${scored.length?`Calibration error ${brier.toFixed(2)} on ${scored.length} results (0 is perfect, 0.25 is a coin flip).`:"Scored once drafted briefs reach a week-4 verdict. Ticket calls are scored too: did flagged adsets slide when nothing new won?"}</small></div></div>`;
+  out.innerHTML=h;
+}
+
+function wksAgo(d){ const ref=S.queue?.ad_week; if(!d||!ref) return null; return Math.round((new Date(ref)-new Date(d))/(7*864e5)); }
+function clocks(t){ const r=wksAgo(t.last_refresh), atStart = t.last_refresh && t.last_refresh===t.data_start;
+  const refresh = !t.last_refresh ? "no refresh on record" : atStart ? `no new concept since ${fmtDate(t.data_start)}` : r===0 ? `refreshed this week (${fmtDate(t.last_refresh)})` : `refreshed ${r} wk ago (${fmtDate(t.last_refresh)})`;
+  const no1 = !t.reign_since ? "no clear #1" : `#1 since ${fmtDate(t.reign_since)}${t.reign_since===t.data_start?" (launch)":""} · ${t.reign} wk`;
+  return {refresh, no1, r, stale: r!=null && r>=4}; }
+function clockHTML(t){ const c=clocks(t); return `<small class="clk">👑 ${esc(c.no1)}</small><small class="clk${c.stale?" stale":""}">↻ ${esc(c.refresh)}</small>`; }
+const STALL = {"BRIEF CREATED":3, "IN PRODUCTION":7, "READY TO UPLOAD":3};
+function stallHTML(w){ const lim=STALL[w.status]; const at=w.status_at||w.updated_at; if(!lim||!at) return ""; const d=Math.floor((Date.now()-new Date(at).getTime())/864e5); return d>lim?` <span class="fade" title="In this status for ${d} days">waiting ${d} d</span>`:""; }
+function scoreStrip(p, P){
+  if(p.role==="designer"){ const H=P.history?.[p.code]||{}; const base=P.baseline||{}; const d=S.work.filter(w=>w.designer===p.code); const LS=landingStats(d);
+    const cyc=d.filter(w=>w.dates?.brief&&w.dates?.ready).map(w=>(new Date(w.dates.ready)-new Date(w.dates.brief))/864e5).sort((a,b)=>a-b);
+    const days = cyc.length? cyc[Math.floor(cyc.length/2)].toFixed(1) : (H.cycle_days!=null? String(H.cycle_days) : "–");
+    const thin = (H.with_results||0)<10;
+    return `<div class="kv"><div><b class="num" style="${thin?"color:var(--faint)":""}">${H.won20!=null?pct(H.won20):"–"}</b><span>won 20%+ in wk 1, ${H.with_results||0} concepts · team ${pct(base.won20)}</span></div><div><b class="num">${LS.final?`${LS.won} of ${LS.final}`:(H.became1!=null?pct(H.became1):"–")}</b><span>${LS.final?"adsets won on this board":"became an adset's #1 (Notion)"}</span></div><div><b class="num">${esc(days)}</b><span>days brief → handoff · ${H.last8||0} done in 8 wks</span></div></div>`; }
+  const d=S.work.filter(w=>w.strategist===p.code); const LS=landingStats(d); const ans=d.filter(w=>w.retro?.answered), yes=ans.filter(w=>w.retro.answered==="Yes");
+  const strikes=d.reduce((a,w)=>a+Object.values(w.results||{}).filter(r=>/^Strike$/.test(r?.verdict||"")).length,0);
+  return `<div class="kv"><div><b class="num">${LS.final?`${LS.won} of ${LS.final}`:"–"}</b><span>adsets won (final verdicts)</span></div><div><b class="num">${ans.length?`${yes.length} of ${ans.length}`:"–"}</b><span>hypotheses answered yes</span></div><div><b class="num">${strikes}</b><span>strikes on their briefs</span></div></div>`;
+}
+function landingStats(ws){ let landings=0, final=0, won=0; ws.forEach(w=>{ const R=w.results||{}; landings+=(w.tickets||[w.ticket]).length;
+  Object.values(R).forEach(r=>{ const v=r?.verdict||""; if(v && !/provisional/.test(v)){ final++; if(/Hit|Home run/.test(v)) won++; } }); }); return {landings, final, won}; }
+
+/* ---------- signals ---------- */
+const personasOf = s => Array.isArray(s.personas) ? s.personas : (s.persona ? [s.persona] : []);
+function platformOf(url){ let h=""; try{ h=new URL(url).hostname.replace(/^www\./,""); }catch(e){ return "Link"; }
+  if(/tiktok/.test(h)) return "TikTok"; if(/instagram/.test(h)) return "Instagram"; if(/facebook\.com$/.test(h) && /ads\/library/.test(url)) return "Meta Ad Library"; if(/facebook|fb\.watch/.test(h)) return "Facebook";
+  if(/youtu/.test(h)) return "YouTube"; if(/reddit/.test(h)) return "Reddit"; if(/apps\.apple/.test(h)) return "App Store"; if(/play\.google/.test(h)) return "Google Play"; if(/^(x|twitter)\.com$/.test(h)) return "X"; return h; }
+function parseNum(v){ v=String(v||"").trim().toLowerCase().replace(/,/g,""); if(!v) return null; const m=v.match(/^([0-9]*\.?[0-9]+)\s*([kmb])?$/); if(!m) return null; return Math.round(parseFloat(m[1])*({k:1e3,m:1e6,b:1e9}[m[2]]||1)); }
+const short = n => n==null ? "–" : n>=1e6 ? (n/1e6).toFixed(n>=1e7?0:1)+"M" : n>=1e3 ? (n/1e3).toFixed(n>=1e4?0:1)+"k" : String(n);
+function engagement(m){ if(!m||!m.views) return null; return ((m.likes||0)+(m.comments||0)+(m.shares||0)+(m.saves||0))/m.views; }
+function runningDays(m){ if(!m||!m.running_since) return null; const d=new Date(m.running_since); return isNaN(d)?null:Math.max(0,Math.round((Date.now()-d)/864e5)); }
+function renderSignals(){
+  if(S.editNums && document.activeElement && document.activeElement.closest && document.activeElement.closest(".numform")) return;
+  const out=$("#sig-out"); const f=S.sigf;
+  const key={views:s=>s.metrics?.views, likes:s=>s.metrics?.likes, shares:s=>s.metrics?.shares, comments:s=>s.metrics?.comments, eng:s=>engagement(s.metrics), running:s=>runningDays(s.metrics)}[f.sort];
+  const xs = S.signals.filter(s => (!f.used || !s.used) && (!f.persona || personasOf(s).includes(f.persona)))
+    .sort((a,b)=> key ? ((key(b)??-1)-(key(a)??-1)) || (b.at||"").localeCompare(a.at||"") : (b.at||"").localeCompare(a.at||""));
+  $("#c-signals").textContent = S.signals.filter(s=>!s.used).length;
+  if(!xs.length){ out.innerHTML = `<div class="empty">No signals yet. Paste a TikTok, Instagram or ad-library link above with a line on why it caught your eye. Signals tagged with a persona show up inside that persona's tickets when someone writes a brief.</div>`; return; }
+  out.innerHTML = xs.map(s => { const m=s.metrics||{}; const e=engagement(m), rd=runningDays(m); const has = Object.keys(m).length>0;
+    const nums = has ? `<div class="metrics">${m.views!=null?`<span><b>${short(m.views)}</b> views</span>`:""}${m.likes!=null?`<span><b>${short(m.likes)}</b> likes</span>`:""}${m.shares!=null?`<span><b>${short(m.shares)}</b> shares</span>`:""}${m.comments!=null?`<span><b>${short(m.comments)}</b> comments</span>`:""}${m.saves!=null?`<span><b>${short(m.saves)}</b> saves</span>`:""}${e!=null?`<span><b>${(e*100).toFixed(1)}%</b> engagement</span>`:""}${rd!=null?`<span>running <b>${rd}</b> days</span>`:""}</div>` : `<div class="metrics"><span>Numbers pending: filled on the weekly run, or add them</span></div>`;
+    const edit = S.editNums===s._id ? `<div class="numform">${["views","likes","comments","shares","saves"].map(k=>`<label class="f">${k}<input class="in num" data-num="${k}" value="${m[k]!=null?m[k]:""}" placeholder="e.g. 12.3k"></label>`).join("")}<label class="f">running since<input class="in" type="date" data-num="running_since" value="${esc(m.running_since||"")}"></label></div><div><button class="btn small primary" data-savenums="${esc(s._id)}">Save numbers</button></div>` : "";
+    return `<div class="sig"><div class="meta"><span class="chip t-Manual">${esc(s.platform||platformOf(s.url))}</span>${personasOf(s).map(p=>`<b>${esc(p)}</b>`).join(" ")}<span>${esc(fmtDate(s.at))} · ${s.source==="notion"?`from the Notion card “${esc(s.card||"")}”`:esc(nameOf(s.by))}</span>${s.used?`<span class="pill v-hit">Used</span>`:""}</div><a href="${esc(/^https?:\/\//.test(s.url)?s.url:"#")}" target="_blank" rel="noopener noreferrer">${esc(s.url)}</a>${s.note?`<div>${esc(s.note)}</div>`:""}${nums}${edit}${!S.readOnly?`<div class="li"><button class="btn small" data-editnums="${esc(s._id)}">${S.editNums===s._id?"Close":has?"Edit numbers":"Add numbers"}</button>${!s.used?`<button class="btn small" data-sigused="${esc(s._id)}">Mark used</button>`:""}</div>`:""}</div>`; }).join("");
+}
+
+/* ---------- drawer ---------- */
+function openDrawer(kind,id){ S.drawer={kind,id,mode:null,dirty:false}; renderDrawer(); $("#drawer").hidden=false; $("#scrim").hidden=false; document.body.style.overflow="hidden"; }
+function closeDrawer(){ S.drawer=null; $("#drawer").hidden=true; $("#scrim").hidden=true; document.body.style.overflow=""; }
+function flowHTML(st){ const i=STATUSES.indexOf(st); return `<div class="flow">${STATUSES.map((s,j)=>`<span class="${j===i?"on":j<i?"done":""}">${esc(s)}</span>`).join("")}</div>`; }
+
+function ticketPanel(t){
+  const q=S.queue, bar=q?.bar?.green||0.4; const isManual = String(t.id).startsWith("M-");
+  let h=`<div class="dhead"><div style="min-width:0"><div class="li" style="margin-bottom:6px"><span class="chip ${isManual?(t.type==="Resurrection"?"t-Resurrection":"t-Manual"):typeClass(t.type)}" title="${esc(TYPE_HELP[t.type]||"")}">${esc(t.type)}</span>${!isManual?`<span class="st ${statusClass(t)}">${esc(statusWord(t))}</span><small class="mono">${esc(t.id)} · rank ${t.rank}</small>`:`<small class="mono">${esc(t.id)}</small>`}</div><h2 id="d-title">${esc(isManual?t.title:t.adset)}</h2>${!isManual?`<div class="full">${esc(t.name)}</div>`:""}</div><button class="x" data-close aria-label="Close">×</button></div><div class="dbody">`;
+  if(!isManual){
+    h+=`<div class="box"><h3>Why it's here <small>${esc(t.why)}</small></h3><div class="facts"><div><b class="num">${money(t.spend)}</b><span>Spend last week</span></div><div><b class="num">${r2(t.roas)}</b><span>ROAS (bar ${r2(bar)})</span></div><div><b class="num">${t.reign||"–"} wk</b><span>#1 since ${esc(fmtDate(t.reign_since)||"–")}${t.reign_since&&t.reign_since===t.data_start?" (launch)":""}</span></div><div><b class="num">${(()=>{const c=clocks(t); return c.r==null?"–":c.r===0?"this wk":c.r+" wk ago";})()}</b><span>Last refresh${t.last_refresh?`: ${esc(fmtDate(t.last_refresh))}`:""}${t.last_refresh&&t.last_refresh===t.data_start?" (launch)":""}</span></div><div><b>${strikesHTML(t.strikes)} <small class="num" style="font-size:12px">${t.strikes}/3</small></b><span>Turnaround strikes ${seqHTML(t)}</span></div><div><b class="num">${t.weeks_under||0}</b><span>Weeks under the bar${t.fading?" · no new concept since":""}</span></div></div>${spark(t.hist,bar,560,120,true).replace('class="spark"','class="spark" style="width:100%;height:auto"')}<small style="color:var(--muted)">Bars: weekly spend. Line: ROAS; dashed line: the ${r2(bar)} bar.${t.low_ceiling?" 🧱 This adset never reached the bar at scale: check audience and settings before more creative.":""}${t.notes?" "+esc(t.notes)+".":""}</small></div>`;
+    h+=`<div class="box"><h3>Current #1</h3><div class="li"><span class="mono">${esc(t.top_code||"–")}</span><b>${esc(t.top_name||"")}</b><small>${t.reign?`leading for ${t.reign} week${t.reign>1?"s":""}, ${pct(t.top_share)} of spend`:""}</small></div><small style="color:var(--muted)">${t.tried8} challenger${t.tried8===1?"":"s"} entered in the last 8 weeks${t.last_hit?`; last new #1 arrived ${esc(fmtDate(t.last_hit))}`:""}.${t.in_test?` In test now: <span class="mono">${esc(t.in_test)}</span> (${esc(t.test_verdict)}, ${pct(t.test_s1)} of spend in week 1).`:""}</small></div>`;
+    h+=`<div class="box"><h3>Using what <small>winning nearby, never run here</small></h3><div class="list">${(t.j1||[]).map((c,i)=>`<div class="li"><span class="mono">${esc(c.code)}</span><span class="grow"><b>${esc(c.name)}</b> <small>${esc(c.fit)} · #1 in ${esc(c.won_in)} · ${money(c.spend_as_1)} as #1, last ${esc(fmtDate(c.last_as_1))}</small></span>${!S.readOnly?`<button class="btn small" data-brief-j1="${i}">Brief this</button>`:""}</div>`).join("")||`<small style="color:var(--muted)">No proven concept from this persona or language that hasn't run here.</small>`}</div>`;
+    if((t.past||[]).length) h+=`<div class="li" style="margin-top:4px"><small>Past #1s here (new form of a proven message):</small>${t.past.map(p=>`<span class="pill"><span class="mono">${esc(p.code)}</span>&nbsp;${esc(p.name)} · ${p.weeks} wk</span>`).join("")}</div>`;
+    const sigs=S.signals.filter(s=>personasOf(s).includes(t.persona) && !s.used).sort((a,b)=>((b.metrics?.views||0)-(a.metrics?.views||0))).slice(0,4);
+    if(sigs.length) h+=`<div class="li" style="margin-top:4px"><small>Signals for ${esc(t.persona)}:</small></div>${sigs.map(s=>`<div class="li"><span class="chip t-Manual">${esc(s.platform)}</span><a class="grow" style="word-break:break-all" href="${esc(/^https?:\/\//.test(s.url)?s.url:"#")}" target="_blank" rel="noopener noreferrer">${esc(s.note||s.url)}</a></div>`).join("")}`;
+    h+=`</div>`;
+    if((t.atbats||[]).length) h+=`<div class="box"><h3>Recent refreshes here <small>week-1 read, final at week 4</small></h3><div class="list">${t.atbats.slice().reverse().map(a=>`<div class="li"><small class="num" style="width:54px">${esc(fmtDate(a.w0))}</small><span class="grow mono" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(a.codes)}</span><small>${a.variants} var · ${pct(a.s1)} wk 1</small><span class="pill ${verdictClass(a.verdict)}">${esc(a.verdict)}</span></div>`).join("")}</div><small style="color:var(--muted)">Strike = no new #1 while the adset was under the bar. Foul = didn't unseat a healthy #1 (no strike).</small></div>`;
+    if((t.brief_with||[]).length) h+=`<div class="box"><h3>Brief together with <small>same persona and language</small></h3><div class="li">${t.brief_with.map(id=>{const o=ticketById(id); return `<button class="btn small" data-goto="${esc(id)}">${esc(o?o.adset:id)}</button>`;}).join("")}</div></div>`;
+  } else {
+    h+=`<div class="box"><h3>Ticket</h3><div>${esc(t.note||"")}</div><small style="color:var(--muted)">${esc([t.persona,t.os,t.lang].filter(Boolean).join(" · "))} · opened ${esc(fmtDate(t.at))} by ${esc(nameOf(t.by))}</small>${!S.readOnly?`<div><button class="btn small" data-close-manual="${esc(t.id)}">Close ticket</button></div>`:""}</div>`;
+  }
+  const ws = workFor(t.id).sort((a,b)=>(b.created_at||"").localeCompare(a.created_at||""));
+  h+=`<div class="box"><h3>Refreshes for this ticket ${!S.readOnly?`<button class="btn small primary" data-newbrief>Start a brief</button>`:""}</h3>${ws.length?`<div class="list">${ws.map(w=>`<button class="card" data-work="${esc(w._id)}"><div class="row"><span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span><span class="mono">${esc(w.concept_code||"")}</span><b>${esc(w.concept_name||"")}</b>${w.result?.verdict?`<span class="pill ${verdictClass(w.result.verdict)}">${esc(w.result.verdict)}</span>`:""}</div><small>${esc(w.strategist||"–")} / ${esc(w.designer||"–")} · ${esc(w.batch||"")}</small></button>`).join("")}</div>`:`<small style="color:var(--muted)">No brief yet. One concept is enough: land it in each adset with 3+ variants, and add a proven concept from the list above when there is one.</small>`}</div>`;
+  if(S.drawer?.mode==="brief") h+=briefForm(t);
+  return h+`</div>`;
+}
+
+function briefForm(t){
+  const d=S.drawer.form; const strat=roster("strategist"), des=roster("designer");
+  const opt=(arr,v)=>arr.map(p=>`<option value="${esc(p.code)}" ${p.code===v?"selected":""}>${esc(p.code)} · ${esc(p.name)}</option>`).join("");
+  const covT = d.covers.map(ticketById).filter(Boolean); const tg = targetsFromForm(t);
+  const sameP = (S.queue?.tickets||[]).filter(x=>x.persona===t.persona); const extraCov = covT.filter(x=>x.persona!==t.persona);
+  const others = (S.queue?.tickets||[]).filter(x=>x.persona!==t.persona && !d.covers.includes(x.id));
+  const covLangs=[...new Set(covT.map(x=>x.lang))]; const covOS=[...new Set(covT.map(x=>x.os))];
+  const perAdset = d.variants.length; const okVar = perAdset>=3;
+  let h=`<div class="box" id="briefbox"><h3>New brief <small>names follow ad naming v5</small></h3>
+  <div class="frow"><label class="f">Strategist<select class="in" id="b-strat"><option value="">Choose</option>${opt(strat,d.strategist)}</select></label><label class="f">Designer<select class="in" id="b-des"><option value="">Choose</option>${opt(des,d.designer)}</select></label><label class="f">Batch<input class="in mono" id="b-batch" value="${esc(d.batch)}"></label></div>
+  <div class="frow"><label class="f">Move<select class="in" id="b-jurus"><option value="J3" ${d.jurus==="J3"?"selected":""}>New concept (J3)</option><option value="J1" ${d.jurus==="J1"?"selected":""}>Proven concept from elsewhere (J1)</option><option value="J2" ${d.jurus==="J2"?"selected":""}>New form of a past winner (J2)</option></select></label><label class="f">Concept code<input class="in mono" id="b-code" value="${esc(d.concept_code)}" ${d.jurus==="J1"?"readonly":""}></label><label class="f">Concept name<input class="in" id="b-cname" value="${esc(d.concept_name)}" placeholder="StandUp"></label></div>
+  ${d.jurus==="J2"?`<label class="f">Source winner<select class="in" id="b-src">${(t.past||[]).map(p=>`<option value="${esc(p.code)}" ${p.code===d.source_code?"selected":""}>${esc(p.code)} · ${esc(p.name)}</option>`).join("")}<option value="">Other</option></select></label>`:""}
+  <label class="f">Hypothesis<textarea class="in" id="b-hyp" placeholder="Because [what the data shows across these adsets], we believe [this concept] will win 20%+ of spend in week 1 and become #1 in [which adsets or languages], because [the audience insight, in their words].">${esc(d.hypothesis)}</textarea></label>
+  ${S.sample?`<div class="li"><button class="btn small" data-draft ${d.drafting?"disabled":""}>${d.drafting?"Claude is drafting…":"Draft with Claude"}</button><small>${d.ai?`Claude's odds of a hit: <b>${pct(d.ai.p_hit)}</b>. ${esc(d.ai.why||"")}`:"Uses this ticket's numbers, the proven concepts and the persona's signals."}</small></div>`:""}
+  <div><div class="li" style="justify-content:space-between"><b style="font-size:12px;color:var(--muted)">VARIANTS (hook · headline · angle · awareness · format)</b><span class="${okVar?"ok":"warnc"}">each adset gets ${perAdset}, in its language ${okVar?"✓":"· aim for 3+"}</span></div><div class="vartable">${d.variants.map((v,i)=>`<div class="vrow"><input class="in" data-v="${i}" data-k="hook" placeholder="Hook (who + variant)" value="${esc(v.hook)}"><input class="in" data-v="${i}" data-k="headline" placeholder="headline slug" value="${esc(v.headline)}"><input class="in" data-v="${i}" data-k="angle" list="angles" placeholder="angle" value="${esc(v.angle)}"><select class="in" data-v="${i}" data-k="modifier">${MODIFIERS.map(m=>`<option ${m===v.modifier?"selected":""}>${m}</option>`).join("")}</select><select class="in" data-v="${i}" data-k="fmt">${["VID","IMG","VID+IMG"].map(m=>`<option ${m===v.fmt?"selected":""}>${m}</option>`).join("")}</select><button class="x del" style="width:28px;height:34px;margin:0" data-delvar="${i}" aria-label="Remove variant">×</button></div>`).join("")}</div><datalist id="angles">${ANGLES.map(a=>`<option value="${a}">`).join("")}</datalist><div style="margin-top:6px"><button class="btn small" data-addvar>Add a variant</button> <small style="color:var(--muted)">Re-cuts and re-sequenced openings count as variants.</small></div></div>
+  <div><div class="li" style="justify-content:space-between"><b style="font-size:12px;color:var(--muted)">COVERS</b><small class="num">${covT.length} adset${covT.length===1?"":"s"} · ${money(covT.reduce((a,x)=>a+(x.spend||0),0))}/week · ${esc(covLangs.join(", "))} · ${esc(covOS.join(" + "))}</small></div>
+  <small style="color:var(--muted)">Tick every adset this concept should land in. Same language on the other OS is ticked for you; other languages are your call.</small>
+  <div class="list" style="margin-top:6px">${[...sameP, ...extraCov].map(x=>`<label class="li" style="gap:6px;font-size:13px"><input type="checkbox" data-cover="${esc(x.id)}" ${d.covers.includes(x.id)?"checked":""} ${x.id===t.id?"disabled":""}><span class="chip ${typeClass(x.type)}">${esc(x.type)}</span><span class="grow">${esc(x.adset)}</span><small class="num">${money(x.spend)} · ${r2(x.roas)}</small>${activeWorkFor(x.id).length?`<span class="pill">has a brief</span>`:""}</label>`).join("")}</div>
+  ${others.length?`<label class="f" style="margin-top:8px">Add an adset from another persona<select class="in" id="b-addother"><option value="">Choose an adset…</option>${others.map(x=>`<option value="${esc(x.id)}">${esc(x.adset)} · ${esc(x.type)} · ${money(x.spend)}</option>`).join("")}</select></label>`:""}
+  <div class="li" style="margin-top:8px"><small>New languages for ${esc(t.persona)}:</small>${["EN","ES","PT","FR","DE","IT","TR","JP","KR","ID","TH","RU","AR"].filter(l=>!covLangs.includes(l)).map(l=>`<label class="li" style="gap:4px;font-size:13px"><input type="checkbox" data-xlang="${esc(l)}" ${d.xlangs.includes(l)?"checked":""}> ${esc(l)}</label>`).join("")}</div>
+  <small style="color:var(--muted)">Names are made for ${tg.length} persona × language pair${tg.length===1?"":"s"}: ${esc(tg.map(x=>x.persona+" "+aud(x.lang)).join(", "))}.</small></div>
+  <div><b style="font-size:12px;color:var(--muted)">CREATIVE TAGS</b> <small style="color:var(--muted)">for the format-gap audit: what we've tried per persona, and what we haven't</small><div class="frow" style="margin-top:4px">${TAGS.map(([k,l,opts])=>`<label class="f">${esc(l)}<input class="in" data-tag="${k}" list="tl-${k}" value="${esc(d.tags[k]||"")}"><datalist id="tl-${k}">${opts.map(o=>`<option value="${esc(o)}">`).join("")}</datalist></label>`).join("")}</div></div>
+  <label class="f">Brief document (optional)<input class="in" id="b-link" type="url" placeholder="Link to the full brief" value="${esc(d.brief_link)}"></label>`;
+  const w = briefDraftWork(t); const names = w.concept_code && w.concept_name && w.strategist && w.designer ? adNames(w) : [];
+  h+=`<div><div class="li" style="justify-content:space-between"><b style="font-size:12px;color:var(--muted)">DRIVE FOLDER AND AD NAMES</b>${names.length?`<button class="btn small" data-copynames>Copy all</button>`:""}</div>${names.length?`<div class="names" id="namesout">${esc(folderName(w))}/\n${names.map(n=>"  "+n+(n.includes("-VID-")?".mp4":".png")).join("\n")}</div><small style="color:var(--muted)">${names.length} files. These names let the board find the ads in Meta's export and move the refresh to TESTING and RESULT READY by itself.</small>`:`<small style="color:var(--muted)">Choose a strategist, a designer and a concept name to generate them.</small>`}</div>
+  <div class="li"><button class="btn primary" data-savebrief ${names.length?"":"disabled"}>Create brief</button><button class="btn" data-cancelbrief>Cancel</button></div></div>`;
+  return h;
+}
+function targetsFromForm(t){ const d=S.drawer.form; const seen=new Set(), out=[];
+  const add=(persona,lang)=>{ if(!persona||!lang) return; const k=persona+"|"+aud(lang); if(seen.has(k)) return; seen.add(k); out.push({persona, lang}); };
+  d.covers.map(ticketById).filter(Boolean).forEach(x=>add(x.persona||t.persona, x.lang)); d.xlangs.forEach(l=>add(t.persona,l)); if(!out.length) add(t.persona, t.lang||"EN"); return out; }
+function briefDraftWork(t){ const d=S.drawer.form; const tg=targetsFromForm(t); return { persona:t.persona||"", targets:tg, langs:[...new Set(tg.map(x=>x.lang))], concept_code:d.concept_code, concept_name:d.concept_name, variants:d.variants.filter(v=>v.hook&&v.headline), strategist:d.strategist, designer:d.designer, batch:d.batch }; }
+
+function workPanel(w){
+  const t = ticketById(w.ticket) || {adset:w.adset, id:w.ticket};
+  let h=`<div class="dhead"><div style="min-width:0"><div class="li" style="margin-bottom:6px"><span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span><span class="mono">${esc(w.concept_code)}</span><small>${esc(w.jurus||"")}</small></div><h2 id="d-title">${esc(w.concept_name||"Concept")}</h2><div class="full">${esc(w.adset||"")}${(w.tickets||[]).length>1?` + ${w.tickets.length-1} more adsets`:""}</div></div><button class="x" data-close aria-label="Close">×</button></div><div class="dbody">`;
+  h+=`<div class="box">${flowHTML(w.status)}<div class="facts"><div><b class="mono">${esc(w.strategist||"–")}</b><span>Strategist</span></div><div><b class="mono">${esc(w.designer||"–")}</b><span>Designer</span></div><div><b class="mono" style="font-size:13px">${esc(w.batch||"–")}</b><span>Batch</span></div><div><b class="num">${(w.variants||[]).length}</b><span>Variants per adset</span></div><div><b class="num">${(w.tickets||[w.ticket]).length}</b><span>Adsets covered</span></div><div><b class="num">${adNames(w).length}</b><span>Files</span></div></div>${w.hypothesis?`<div><small style="color:var(--muted)">Hypothesis</small><div>${esc(w.hypothesis)}</div></div>`:""}${w.ai?`<small style="color:var(--muted)">Claude drafted this brief and gave it ${pct(w.ai.p_hit)} odds of a hit.</small>`:""}${w.brief_link?`<a href="${esc(/^https?:\/\//.test(w.brief_link)?w.brief_link:"#")}" target="_blank" rel="noopener noreferrer">Open the brief document</a>`:""}<div class="li"><button class="btn small" data-goto="${esc(w.ticket)}">Open the ticket</button><button class="btn small" data-copyw>Copy ad names</button></div></div>`;
+  const L = w.landings || (w.tickets||[w.ticket]).map(id=>{ const x=ticketById(id)||{}; return {ticket:id, adset:x.adset||id, type:x.type||"", lang:x.lang||"", os:x.os||""}; });
+  const R = w.results||{}; const won = L.filter(l=>/Hit|Home run/.test(R[l.ticket]?.verdict||"")).length;
+  h+=`<div class="box"><h3>Adsets covered <small>${L.length} · ${Object.keys(R).length?`${won} won so far`:"results arrive from Monday's export"}</small></h3><div class="list">${L.map(l=>{ const r=R[l.ticket]||{}; return `<div class="li"><span class="chip ${typeClass(l.type)}">${esc(l.type||"–")}</span><button class="btn small" data-goto="${esc(l.ticket)}" style="flex:1;text-align:left;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(l.adset)}</button>${r.w1_share!=null?`<small class="num">${pct(r.w1_share)} wk 1</small>`:""}${r.verdict?`<span class="pill ${verdictClass(r.verdict)}">${esc(r.verdict)}</span>`:`<span class="pill">waiting</span>`}</div>`; }).join("")}</div><small style="color:var(--muted)">Each adset gets its own verdict. Results often differ by language; iOS and Android usually agree.</small></div>`;
+  // action by status
+  if(!S.readOnly){
+    if(w.status==="BRIEF CREATED") h+=`<div class="box"><h3>Next: production</h3><small style="color:var(--muted)">${esc(w.designer)} starts when ready. The board stamps the date.</small><div><button class="btn primary" data-move="IN PRODUCTION">Start production</button></div></div>`;
+    if(w.status==="IN PRODUCTION") h+=handoffForm(w);
+    if(w.status==="READY TO UPLOAD") h+=`<div class="box"><h3>Next: upload</h3><small style="color:var(--muted)">Assets are in Drive${w.handoff?.drive?`: <a href="${esc(/^https?:\/\//.test(w.handoff.drive)?w.handoff.drive:"#")}" target="_blank" rel="noopener noreferrer">open folder</a>`:""}. Mark it live when the ads are on in Meta (the export confirms it on Monday).</small><div><button class="btn primary" data-move="TESTING">Mark live</button></div></div>`;
+    if(w.status==="TESTING") h+=`<div class="box"><h3>Testing</h3><small style="color:var(--muted)">Live since ${esc(fmtDate(w.dates?.live))}. Claude reads week 1 from Monday's export: 20%+ of the adset's spend is an early hit. The final call comes at week 4. Keep quiet ads on: a third of winners start under 5%.</small>${w.result?.w1_share!=null?`<div>Week-1 share: <b>${pct(w.result.w1_share)}</b></div>`:""}<div><button class="btn small" data-move="RESULT READY">Results are in</button></div></div>`;
+    if(w.status==="RESULT READY") h+=retroForm(w);
+  }
+  if(w.result?.verdict) h+=`<div class="box"><h3>Result <span class="pill ${verdictClass(w.result.verdict)}">${esc(w.result.verdict)}</span></h3>${w.result.note?`<div>${esc(w.result.note)}</div>`:""}<small style="color:var(--muted)">${w.result.w1_share!=null?`Week 1: ${pct(w.result.w1_share)} of the adset's spend. `:""}${w.result.adset_lift!=null?`Adset ROAS vs before: ${(w.result.adset_lift>=0?"+":"")+Math.round(w.result.adset_lift*100)}%. `:""}${w.result.updated?`Updated ${esc(fmtDate(w.result.updated))}.`:""}</small></div>`;
+  if(w.retro?.at) h+=`<div class="box"><h3>Retro</h3><div>Hypothesis answered: <b>${esc(w.retro.answered)}</b></div>${(w.retro.flags||[]).length?`<div class="li">${w.retro.flags.map(f=>`<span class="pill v-strike">${esc((FLAGS.find(x=>x[0]===f)||[f,f])[1])}</span>`).join("")}</div>`:""}${w.retro.learning?`<div>${esc(w.retro.learning)}</div>`:""}<small style="color:var(--muted)">${esc(fmtDate(w.retro.at))} · ${esc(nameOf(w.retro.by))}</small></div>`;
+  if(w.handoff?.at) h+=`<div class="box"><h3>Handoff <small>${esc(fmtDate(w.handoff.at))}</small></h3><div class="facts"><div><b class="num">${+w.handoff.videos||0}</b><span>Videos</span></div><div><b class="num">${+w.handoff.images||0}</b><span>Images</span></div>${Object.entries(w.handoff.tasks||{}).filter(([k,v])=>+v>0).map(([k,v])=>`<div><b class="num">${+v}</b><span>${esc(k)}</span></div>`).join("")}</div></div>`;
+  h+=`<div class="box"><h3>Ad names <small>${adNames(w).length} files</small></h3><div class="names">${esc(folderName(w))}/\n${adNames(w).map(n=>"  "+n).join("\n")}</div></div>`;
+  h+=`<div class="box"><h3>History</h3><div class="log">${(w.log||[]).slice().reverse().map(l=>`<div>${esc(fmtDate(l.at))} · ${esc(nameOf(l.by))} · ${esc(l.what)}</div>`).join("")}</div></div>`;
+  return h+`</div>`;
+}
+function handoffForm(w){
+  const tasks=(S.people?.tasks)||[];
+  return `<div class="box" id="handoff"><h3>Hand off <small>30 seconds</small></h3><label class="f">Google Drive folder<input class="in" id="h-drive" type="url" placeholder="https://drive.google.com/…"></label><div class="frow"><label class="f">Videos delivered<input class="in num" id="h-vid" type="number" min="0" value="${(w.variants||[]).filter(v=>v.fmt!=="IMG").length*targetsOf(w).length}"></label><label class="f">Images delivered<input class="in num" id="h-img" type="number" min="0" value="${(w.variants||[]).filter(v=>v.fmt!=="VID").length*targetsOf(w).length}"></label></div><details><summary style="cursor:pointer;font-size:12px;font-weight:700;color:var(--muted)">Production counts by task (the tracker's 10 types)</summary><div class="frow" style="margin-top:6px">${tasks.map((k,i)=>`<label class="f">${esc(k)}<input class="in num" data-task="${esc(k)}" type="number" min="0" value="0"></label>`).join("")}</div></details><div><button class="btn primary" data-handoff>Hand off · ready to upload</button></div></div>`;
+}
+function retroForm(w){
+  return `<div class="box" id="retro"><h3>Retro <small>strategist and designer together</small></h3><small style="color:var(--muted)">${w.result?.verdict?`Result: ${esc(w.result.verdict)}.`:"Claude adds the verdict from Monday's export; you can hold the retro now or wait for it."}</small><div class="li"><b style="font-size:12px;color:var(--muted)">DID IT ANSWER THE HYPOTHESIS?</b>${["Yes","No","Not testable"].map(a=>`<label class="li" style="gap:4px;font-size:13px"><input type="radio" name="r-ans" value="${a}"> ${a}</label>`).join("")}</div><div class="li"><b style="font-size:12px;color:var(--muted)">FLAGS</b>${FLAGS.map(([k,l])=>`<label class="li" style="gap:4px;font-size:13px"><input type="checkbox" data-flag="${k}"> ${esc(l)}</label>`).join("")}</div><label class="f">Learning, in one line (goes to the persona file)<textarea class="in" id="r-learn" placeholder="What did this audience or Meta respond to, and what do we do next?"></textarea></label><div><button class="btn primary" data-retro>Save retro and retire</button></div></div>`;
+}
+
+function renderDrawer(){
+  const D=S.drawer, el=$("#drawer"); if(!D){ return; }
+  const keep = el.querySelector(".dbody")?.scrollTop||0;
+  if(D.kind==="ticket"){ const t=ticketById(D.id); el.innerHTML = t? ticketPanel(t) : `<div class="dhead"><h2 id="d-title">Ticket closed</h2><button class="x" data-close aria-label="Close">×</button></div><div class="dbody"><div class="notice">This ticket is no longer in the queue.</div></div>`; }
+  else { const w=S.work.find(x=>x._id===D.id); el.innerHTML = w? workPanel(w) : `<div class="dhead"><h2 id="d-title">Not found</h2><button class="x" data-close aria-label="Close">×</button></div>`; }
+  const b=el.querySelector(".dbody"); if(b) b.scrollTop=keep;
+}
+
+/* ---------- writes ---------- */
+function logEntry(what){ return {at:new Date().toISOString(), by:S.me.id||"", what}; }
+async function guard(fn){ if(!S.db){ toast("Open this board in Claude to save changes."); return; } try{ await fn(); }catch(e){ console.error(e); if(e&&e.code==="invalid_argument"){ S.readOnly=true; toast("You can view this board, but not change it. Ask the owner for edit access."); renderAll(); } else toast("That didn't save. Try again in a moment."); } }
+async function moveWork(w, status, extra={}){
+  if(S.drawer) S.drawer.dirty=false;
+  await guard(async()=>{ const now=new Date().toISOString(); const key={"IN PRODUCTION":"start","READY TO UPLOAD":"ready","TESTING":"live","RESULT READY":"result","RETIRED":"retired"}[status];
+    const patch={ status, status_at:now, updated_at:now, log:[...(w.log||[]), logEntry(`moved to ${status}`)], ...extra };
+    if(key) patch.dates = {...(w.dates||{}), [key]: now};
+    await S.db.collection("work").doc(w._id).update(patch); toast(`Moved to ${status}`); });
+}
+function startBrief(t, preset={}){
+  const myRole = roster().find(p=>p.code===S.myCode)?.role;
+  S.drawer.mode="brief";
+  S.drawer.form = { strategist: myRole==="strategist"?S.myCode:"", designer: myRole==="designer"?S.myCode:"", batch: isoWeek(), jurus:"J3", concept_code:newCode(), concept_name:"", source_code:"", hypothesis:"",
+    variants:[1,2,3].map(()=>({hook:"",headline:"",angle:"recommendation",modifier:"ProductAware",fmt:"VID"})), xlangs:[], brief_link:"", ai:null, drafting:false, tags:{},
+    covers:[t.id, ...(S.queue?.tickets||[]).filter(x=>x.id!==t.id && x.persona===t.persona && x.lang===t.lang && !activeWorkFor(x.id).length).map(x=>x.id)], ...preset };
+  if(!S.drawer.form.covers.includes(t.id)) S.drawer.form.covers.unshift(t.id);
+  renderDrawer(); setTimeout(()=>document.getElementById("briefbox")?.scrollIntoView({behavior:"smooth",block:"start"}),30);
+}
+async function saveBrief(t){
+  const d=S.drawer.form; const w=briefDraftWork(t);
+  if(!w.concept_name || !w.strategist || !w.designer || !w.variants.length){ toast("Add a concept name, both people and at least one variant."); return; }
+  if(/-/.test([w.concept_name,...w.variants.map(v=>v.hook+v.headline)].join(""))){ toast("Names can't contain hyphens."); return; }
+  if(d.jurus!=="J1" && usedCodes().has(String(d.concept_code).toLowerCase())){ d.concept_code=newCode(); toast("That code was taken; here's a new one."); renderDrawer(); return; }
+  const now=new Date().toISOString(); const tickets=[...new Set([t.id, ...d.covers])];
+  const landings = tickets.map(id=>{ const x=ticketById(id)||{}; return {ticket:id, adset_id:x.adset_id||"", adset:x.adset||x.title||id, persona:x.persona||"", lang:x.lang||"", os:x.os||"", type:x.type||""}; });
+  const doc={ ticket:t.id, tickets, landings, targets:w.targets, adset_id:t.adset_id||"", adset:t.adset||t.title||"", persona:t.persona||"", lang:t.lang||"", os:t.os||"", ticket_type:t.type||"",
+    status:"BRIEF CREATED", status_at:now, strategist:d.strategist, designer:d.designer, batch:d.batch, jurus:d.jurus, concept_code:d.concept_code, concept_name:pascal(d.concept_name), source_code:d.source_code||"",
+    hypothesis:d.hypothesis, variants:w.variants.map(v=>({hook:pascal(v.hook),headline:lowerslug(v.headline),angle:lowerslug(v.angle),modifier:v.modifier,fmt:v.fmt})), langs:w.langs, brief_link:d.brief_link||"",
+    tags:d.tags||{}, ai: d.ai ? {p_hit:d.ai.p_hit, hypothesis:d.ai.hypothesis||"", why:d.ai.why||"", at:d.ai.at} : null,
+    dates:{brief:now}, created_at:now, updated_at:now, created_by:S.me.id||"", log:[logEntry("created the brief")] };
+  doc.ad_names = adNames(doc); doc.folder = folderName(doc);
+  await guard(async()=>{ const ref = await S.db.collection("work").add(doc); S.drawer={kind:"work", id:ref.id, mode:null}; toast("Brief created"); renderDrawer(); });
+}
+async function draftWithClaude(t){
+  const d=S.drawer.form; if(!S.sample) return; d.drafting=true; renderDrawer();
+  const sigs=S.signals.filter(s=>personasOf(s).includes(t.persona)).slice(0,6).map(s=>`- ${s.platform||platformOf(s.url)}: ${s.note||""} (${s.url})${s.metrics?.views?` · ${short(s.metrics.views)} views`:""}`).join("\n");
+  const learnings=S.work.filter(w=>w.persona===t.persona && w.retro?.learning).slice(-6).map(w=>`- ${w.concept_name}: ${w.result?.verdict||""}. ${w.retro.learning}`).join("\n");
+  const prompt = `You are the assistant strategist for Bumpy, an international dating app, writing a creative brief for one Meta adset that needs a refresh.
+Rules from our data: a creative is judged by whether it wins 20%+ of the adset's spend in week 1 and becomes its #1 within 4 weeks; one concept per refresh is fine, landed with 3+ variants (different hooks, text, re-cuts); proven concepts from sibling adsets win more often (28% vs 19% for brand-new). About 31% of refreshes produce a new #1; 43% when the adset is struggling.
+
+Adset: ${t.adset} (persona ${t.persona}, language ${t.lang}, ${t.os}). Status: ${statusWord(t)}; ${t.why}. Spend last week $${t.spend}, ROAS ${t.roas} (bar ${S.queue.bar.green}).
+Current #1: ${t.top_code} "${t.top_name}", leading ${t.reign} weeks with ${pct(t.top_share)} of spend. Strikes in a row: ${t.strikes}.
+Past #1s here: ${(t.past||[]).map(p=>`${p.name} (${p.weeks} wk)`).join(", ")||"none recorded"}.
+Proven concepts nearby, never run here: ${(t.j1||[]).map(c=>`${c.code} "${c.name}" (${c.fit}, #1 in ${c.won_in})`).join("; ")||"none"}.
+Recent refreshes here: ${(t.atbats||[]).map(a=>`${a.codes}: ${a.verdict}`).join("; ")||"none"}.
+This brief covers ${d.covers.length} adset(s): ${d.covers.map(ticketById).filter(Boolean).map(x=>`${x.adset} (${x.type}, ROAS ${x.roas}, #1 ${x.top_name} for ${x.reign} wk)`).join("; ")}.
+Move chosen by the strategist: ${d.jurus}${d.concept_name?`, concept "${d.concept_name}"`:""}.
+Signals from the wild for this persona:
+${sigs||"- none yet"}
+Learnings from past retros for this persona:
+${learnings||"- none yet"}
+
+Return JSON only: {"concept_name": PascalCase name if none was chosen, "hypothesis": "Because …, we believe … will win 20%+ of the adset in week 1 and become its #1, because …" (max 60 words), "variants": [{"hook": PascalCase who+variant, "headline": lowercase slug of the on-screen line, "angle": lowercase, "modifier": one of ${MODIFIERS.join("/")}}] (3 to 4 items), "p_hit": your probability 0-1 that this becomes the adset's #1 within 4 weeks (be calibrated; the base rate is about 0.3), "why": one sentence on the odds}.`;
+  try{ const r = await S.sample.json(prompt, {modelTier:"default"});
+    if(r && typeof r==="object"){ if(!d.concept_name && r.concept_name) d.concept_name=pascal(r.concept_name); if(r.hypothesis) d.hypothesis=String(r.hypothesis);
+      if(Array.isArray(r.variants) && r.variants.length){ d.variants = r.variants.slice(0,6).map(v=>({hook:pascal(v.hook),headline:lowerslug(v.headline),angle:lowerslug(v.angle)||"recommendation",modifier:MODIFIERS.includes(v.modifier)?v.modifier:"ProductAware",fmt:"VID"})); }
+      const p=Number(r.p_hit); d.ai={p_hit: isFinite(p)?Math.max(0,Math.min(1,p)):null, why:String(r.why||""), hypothesis:String(r.hypothesis||""), at:new Date().toISOString()}; }
+  }catch(e){ toast(e&&e.code==="not_granted"?"Claude drafting is off for this view.":e&&e.code==="rate_limited"?"Claude is busy. Try again in a minute.":"Claude couldn't draft this one."); }
+  d.drafting=false; if(S.drawer?.form===d) renderDrawer();
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", async ev => {
+  const el = ev.target.closest("[data-present],[data-pmove],[data-pclose],[data-note-edit],[data-note-save],[data-note-cancel],[data-psel],[data-gbrief],[data-pchip],[data-editnums],[data-savenums],[data-ticket],[data-work],[data-close],[data-goto],[data-newbrief],[data-brief-j1],[data-addvar],[data-delvar],[data-savebrief],[data-cancelbrief],[data-copynames],[data-copyw],[data-move],[data-handoff],[data-retro],[data-draft],[data-sigused],[data-resurrect],[data-close-manual],#open-manual,[data-savemanual],[data-cancelmanual]");
+  if(!el) return;
+  const D=S.drawer;
+  if(el.matches("[data-gbrief]")){ const g=el.dataset.gbrief; const ids=[...(S.gsel[g]||[])].map(ticketById).filter(Boolean).sort((a,b)=>a.rank-b.rank).map(x=>x.id); if(!ids.length) return;
+    openDrawer("ticket", ids[0]); return startBrief(ticketById(ids[0]), {covers:ids}); }
+  if(el.matches("[data-pchip]")){ const p=el.dataset.pchip; S.sigPersonas = S.sigPersonas.includes(p) ? S.sigPersonas.filter(x=>x!==p) : [...S.sigPersonas,p]; el.setAttribute("aria-pressed", String(S.sigPersonas.includes(p))); return; }
+  if(el.matches("[data-editnums]")){ S.editNums = S.editNums===el.dataset.editnums ? null : el.dataset.editnums; return renderSignals(); }
+  if(el.matches("[data-savenums]")){ const id=el.dataset.savenums; const box=el.closest(".sig"); const m={}; box.querySelectorAll("[data-num]").forEach(i=>{ const v=i.dataset.num==="running_since"? i.value : parseNum(i.value); if(v!==null && v!=="") m[i.dataset.num]=v; });
+    return guard(async()=>{ await S.db.collection("signals").doc(id).update({metrics:m, metrics_by:S.me.id||"", metrics_at:new Date().toISOString()}); S.editNums=null; toast("Numbers saved"); }); }
+  if(el.matches("[data-present]")){ S.presentIdx=+el.dataset.present; return renderPresent(); }
+  if(el.matches("[data-pmove]")){ S.presentIdx+=+el.dataset.pmove; return renderPresent(); }
+  if(el.matches("[data-pclose]")) return closePresent();
+  if(el.matches("[data-note-edit]")){ S.editNote=el.dataset.noteEdit; return S.presentIdx>=0?renderPresent():renderReport(); }
+  if(el.matches("[data-note-cancel]")){ S.editNote=null; return S.presentIdx>=0?renderPresent():renderReport(); }
+  if(el.matches("[data-note-save]")){ const key=el.dataset.noteSave, val=$("#note-ta").value; const wk=S.repWeek;
+    return guard(async()=>{ await S.db.doc("report_notes/"+noteId(wk,key)).set({week:wk, key, text:val, by:S.me.id||"", at:new Date().toISOString()}); S.editNote=null; toast("Saved"); }); }
+  if(el.matches("[data-psel]")){ S.personaSel=el.dataset.psel; return renderPersonas(); }
+  if(el.matches("[data-ticket]")) return openDrawer("ticket", el.dataset.ticket);
+  if(el.matches("[data-work]")) return openDrawer("work", el.dataset.work);
+  if(el.matches("[data-close]")) return closeDrawer();
+  if(el.matches("[data-goto]")) return openDrawer("ticket", el.dataset.goto);
+  if(el.id==="open-manual") return manualForm();
+  if(el.matches("[data-cancelmanual]")) { $("#manual-form")?.remove(); return; }
+  if(el.matches("[data-savemanual]")) return saveManual();
+  if(el.matches("[data-resurrect]")) { const z=(S.queue.resurrect||[]).find(x=>x.adset_id===el.dataset.resurrect); return manualForm({type:"Resurrection", title:`Resurrect ${z.adset}`, persona:(z.adset||"").split(" · ")[0], os:(z.adset||"").split(" · ")[1]||"", lang:(z.adset||"").split(" · ")[2]||"", note:`Off since ${z.last_week}; peak ${money(z.peak)}/wk; ${r2(z.rel)}× its OS average in its last 4 weeks.`}); }
+  if(el.matches("[data-sigused]")) return guard(async()=>{ await S.db.collection("signals").doc(el.dataset.sigused).update({used:true, used_at:new Date().toISOString()}); toast("Marked used"); });
+  if(el.matches("[data-close-manual]")) return guard(async()=>{ await S.db.collection("manual").doc(el.dataset.closeManual).update({closed:true, closed_at:new Date().toISOString(), closed_by:S.me.id||""}); closeDrawer(); toast("Ticket closed"); });
+  if(!D) return;
+  const t = D.kind==="ticket" ? ticketById(D.id) : null; const w = D.kind==="work" ? S.work.find(x=>x._id===D.id) : null;
+  if(el.matches("[data-newbrief]") && t) return startBrief(t);
+  if(el.matches("[data-brief-j1]") && t){ const c=t.j1[+el.dataset.briefJ1]; return startBrief(t,{jurus:"J1", concept_code:c.code, concept_name:pascal(c.name), source_code:c.code}); }
+  if(el.matches("[data-cancelbrief]")){ D.mode=null; return renderDrawer(); }
+  if(el.matches("[data-addvar]")){ D.form.variants.push({hook:"",headline:"",angle:"recommendation",modifier:"ProductAware",fmt:"VID"}); return renderDrawer(); }
+  if(el.matches("[data-delvar]")){ D.form.variants.splice(+el.dataset.delvar,1); return renderDrawer(); }
+  if(el.matches("[data-savebrief]") && t) return saveBrief(t);
+  if(el.matches("[data-draft]") && t) return draftWithClaude(t);
+  if(el.matches("[data-copynames]")||el.matches("[data-copyw]")){ const txt = el.matches("[data-copyw]") ? [folderName(w)+"/", ...adNames(w)].join("\n") : ($("#namesout")?.textContent||"");
+    try{ await navigator.clipboard.writeText(txt); toast("Copied"); }catch(e){ const r=document.createRange(); const n=$("#namesout")||el.closest(".box").querySelector(".names"); if(n){ r.selectNodeContents(n); const s=getSelection(); s.removeAllRanges(); s.addRange(r); toast("Selected. Press Ctrl/Cmd+C to copy."); } } return; }
+  if(el.matches("[data-move]") && w) return moveWork(w, el.dataset.move);
+  if(el.matches("[data-handoff]") && w){ const tasks={}; document.querySelectorAll("[data-task]").forEach(i=>tasks[i.dataset.task]=+i.value||0);
+    const drive=$("#h-drive").value.trim(); if(drive && !/^https?:\/\//.test(drive)){ toast("The Drive link should start with https://"); return; }
+    return moveWork(w,"READY TO UPLOAD",{handoff:{drive, videos:+$("#h-vid").value||0, images:+$("#h-img").value||0, tasks, at:new Date().toISOString(), by:S.me.id||""}}); }
+  if(el.matches("[data-retro]") && w){ const ans=document.querySelector('input[name="r-ans"]:checked')?.value; if(!ans){ toast("Pick whether it answered the hypothesis."); return; }
+    const flags=[...document.querySelectorAll("[data-flag]:checked")].map(i=>i.dataset.flag);
+    return moveWork(w,"RETIRED",{retro:{answered:ans, flags, learning:$("#r-learn").value.trim(), at:new Date().toISOString(), by:S.me.id||""}}); }
+});
+document.addEventListener("input", ev => { const D=S.drawer;
+  if(ev.target.dataset.gsel){ const g=ev.target.dataset.gsel; const set=S.gsel[g]||(S.gsel[g]=new Set()); ev.target.checked?set.add(ev.target.value):set.delete(ev.target.value); renderQueue(); return; }
+  if(D && ev.target.closest("#handoff,#retro,.numform")) D.dirty=true; if(!D||D.mode!=="brief") return; const f=D.form; const el=ev.target;
+  if(el.dataset.v!=null){ f.variants[+el.dataset.v][el.dataset.k]=el.value; if(el.tagName==="SELECT") renderDrawerSoft(); else scheduleSoft(); return; }
+  const map={"b-strat":"strategist","b-des":"designer","b-batch":"batch","b-code":"concept_code","b-cname":"concept_name","b-hyp":"hypothesis","b-link":"brief_link","b-src":"source_code"};
+  if(map[el.id]){ f[map[el.id]]=el.value; if(el.tagName==="SELECT") renderDrawerSoft(); else scheduleSoft(); return; }
+  if(el.id==="b-jurus"){ f.jurus=el.value; if(el.value==="J3"||el.value==="J2"){ if(!f.concept_code||f.concept_code===f.source_code) f.concept_code=newCode(); if(el.value==="J2") f.source_code=f.source_code||((ticketById(D.id)?.past||[])[0]?.code||""); } return renderDrawer(); }
+  if(el.dataset.tag){ f.tags={...f.tags,[el.dataset.tag]:el.value}; return; }
+  if(el.dataset.cover){ const id=el.dataset.cover; f.covers = el.checked ? [...new Set([...f.covers,id])] : f.covers.filter(x=>x!==id); return renderDrawer(); }
+  if(el.dataset.xlang){ const l=el.dataset.xlang; f.xlangs = el.checked ? [...new Set([...f.xlangs,l])] : f.xlangs.filter(x=>x!==l); return renderDrawer(); }
+  if(el.id==="b-addother" && el.value){ f.covers=[...new Set([...f.covers, el.value])]; return renderDrawer(); }
+});
+let softT; function scheduleSoft(){ clearTimeout(softT); softT=setTimeout(renderDrawerSoft,350); }
+function renderDrawerSoft(){ // re-render only the names preview and variant counter, keep focus in inputs
+  const D=S.drawer; if(!D||D.mode!=="brief") return; const t=ticketById(D.id); if(!t) return; const box=$("#briefbox"); if(!box) return;
+  const active=document.activeElement; const id=active?.id, dv=active?.dataset?.v, dk=active?.dataset?.k, pos=active?.selectionStart;
+  const tmp=document.createElement("div"); tmp.innerHTML=briefForm(t); box.replaceWith(tmp.firstElementChild);
+  let back = id ? document.getElementById(id) : (dv!=null ? document.querySelector(`[data-v="${dv}"][data-k="${dk}"]`) : null);
+  if(back){ back.focus(); try{ if(pos!=null && back.setSelectionRange) back.setSelectionRange(pos,pos); }catch(e){} }
+}
+$("#scrim").addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e => {
+  if(S.presentIdx>=0 && !S.editNote){ if(e.key==="ArrowRight"||e.key==="PageDown"){ S.presentIdx++; renderPresent(); e.preventDefault(); return; } if(e.key==="ArrowLeft"||e.key==="PageUp"){ S.presentIdx--; renderPresent(); e.preventDefault(); return; } if(e.key==="Escape"){ closePresent(); return; } }
+  if(e.key==="Escape" && S.drawer) closeDrawer(); });
+document.addEventListener("change", e => { if(e.target.id==="rep-week"){ S.repWeek=e.target.value; renderReport(); } });
+["f-view","f-type","f-os","f-open","sig-filter"].forEach(id => $("#"+id).addEventListener("click", e => { const b=e.target.closest("button"); if(!b) return; [...e.currentTarget.children].forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+  if(id==="sig-filter"){ S.sigf.used=b.dataset.v; renderSignals(); } else { S.f[{"f-view":"view","f-type":"type","f-os":"os","f-open":"open"}[id]]=b.dataset.v; renderQueue(); } }));
+$("#f-q").addEventListener("input", e => { S.f.q=e.target.value; renderQueue(); });
+$("#log-view").addEventListener("click", e => { const b=e.target.closest("button"); if(!b) return; [...e.currentTarget.children].forEach(x=>x.setAttribute("aria-pressed", String(x===b))); S.logf.view=b.dataset.v; renderLog(); });
+$("#log-persona").addEventListener("change", e => { S.logf.persona=e.target.value; renderLog(); });
+$("#log-person").addEventListener("change", e => { S.logf.person=e.target.value; renderLog(); });
+$("#log-q").addEventListener("input", e => { S.logf.q=e.target.value; renderLog(); });
+$("#log-notion").addEventListener("change", e => { S.logf.notion=e.target.checked; renderLog(); });
+$("#sig-fpersona").addEventListener("change", e => { S.sigf.persona=e.target.value; renderSignals(); });
+$("#sigform").addEventListener("submit", ev => { ev.preventDefault(); const url=$("#sig-url").value.trim(); if(!/^https?:\/\//.test(url)){ toast("Paste a full link starting with https://"); return; }
+  guard(async()=>{ await S.db.collection("signals").add({url, platform:platformOf(url), personas:[...S.sigPersonas], note:$("#sig-note").value.trim(), by:S.me.id||"", at:new Date().toISOString(), used:false, metrics:{}}); $("#sig-url").value=""; $("#sig-note").value=""; S.sigPersonas=[]; fillPersonaSelects(); toast("Added to the bank"); }); });
+$("#sig-sort").addEventListener("change", e => { S.sigf.sort=e.target.value; renderSignals(); });
+$("#meselect").addEventListener("change", e => { const code=e.target.value; if(!code||!S.me.id) return; guard(async()=>{ await S.db.collection("team").doc(code).set({uid:S.me.id, at:new Date().toISOString()}); S.myCode=code; try{localStorage.setItem("bumpy-board-me",code);}catch(_){} toast(`You're ${code} on this board`); }); });
+
+function manualForm(p={}){
+  if($("#manual-form")) $("#manual-form").remove();
+  const personas=(S.queue?.personas)||[];
+  const html=`<div class="box" id="manual-form" style="margin-bottom:14px"><h3>Open a ticket <small>for work the data doesn't open by itself</small></h3><div class="frow"><label class="f">Type<select class="in" id="m-type">${MANUAL_TYPES.map(x=>`<option ${x===p.type?"selected":""}>${esc(x)}</option>`).join("")}</select></label><label class="f">Persona<input class="in" id="m-persona" list="m-personas" value="${esc(p.persona||"")}"><datalist id="m-personas">${personas.map(x=>`<option value="${esc(x)}">`).join("")}</datalist></label><label class="f">OS<select class="in" id="m-os">${["","iOS","Android","Both"].map(x=>`<option ${x===p.os?"selected":""}>${x}</option>`).join("")}</select></label><label class="f">Language<input class="in" id="m-lang" value="${esc(p.lang||"")}" placeholder="EN"></label></div><label class="f">Title<input class="in" id="m-title" value="${esc(p.title||"")}" placeholder="e.g. AXON 30–60 s versions of the top 3 winners"></label><label class="f">Note<textarea class="in" id="m-note">${esc(p.note||"")}</textarea></label><div class="li"><button class="btn primary" data-savemanual>Open ticket</button><button class="btn" data-cancelmanual>Cancel</button></div></div>`;
+  $("#manual-box").insertAdjacentHTML("afterbegin", html); $("#m-title").focus();
+}
+async function saveManual(){ const title=$("#m-title").value.trim(); if(!title){ toast("Give the ticket a title."); return; }
+  const id="M-"+Math.random().toString(36).slice(2,8);
+  await guard(async()=>{ await S.db.collection("manual").doc(id).set({id, type:$("#m-type").value, title, persona:$("#m-persona").value.trim(), os:$("#m-os").value, lang:$("#m-lang").value.trim().toUpperCase(), note:$("#m-note").value.trim(), by:S.me.id||"", at:new Date().toISOString(), closed:false}); $("#manual-form")?.remove(); toast("Ticket opened"); }); }
+
+/* ---------- report ---------- */
+function canEditReport(){ return !S.readOnly && !!S.db; }
+function noteId(wk,key){ return (wk+"_"+key).replace(/[^A-Za-z0-9_-]/g,"-").slice(0,140); }
+function noteBlock(doc, key, label, draft){ const n=(S.repNotes[doc.week]||{})[key]; const text = n?.text ?? draft ?? "";
+  if(S.editNote===key) return `<div class="note-b"><div class="lbl">${esc(label)}</div><textarea class="in" id="note-ta" style="min-height:80px">${esc(text)}</textarea><div class="li"><button class="btn small primary" data-note-save="${esc(key)}">Save</button><button class="btn small" data-note-cancel>Cancel</button></div></div>`;
+  return `<div class="note-b"><div class="lbl">${esc(label)} ${n?`<span class="ed">edited by ${esc(nameOf(n.by))}</span>`:`<em>draft</em>`}${canEditReport()?`<button data-note-edit="${esc(key)}">Edit</button>`:""}</div><div>${esc(text)}</div></div>`; }
+function amtTable(rows){ rows=rows.filter(Boolean); const segs=rows.map(r=>String(r.label||"").split(" · ")); const strip=rows.length>0 && segs.every(x=>x[0]===segs[0][0]);
+  rows=rows.map((r,i)=>({...r, label: strip?segs[i].slice(1).join(" · "):r.label, first:i===0})); const cell=(v,ratio,fmt)=>{ const cls = ratio==null?"":ratio<0.8?"lo":ratio>1.2?"hi":""; return `<td class="${cls}">${fmt(v)}</td>`; };
+  return `<div class="amt"><table><thead><tr><th>Adset</th><th>Spend</th><th>CTR</th><th>C&gt;I</th><th>IPM</th><th>ROAS</th></tr></thead><tbody>${rows.map(r=>`<tr${r.dim?` style="color:var(--muted)"`:""}><td>${r.first?`<b>${esc(r.label||"")}</b> <small style="color:var(--muted)">this adset</small>`:esc(r.label||"")}</td><td>${money(r.spend)}</td>${cell(r.ctr,r.vs?.ctr,v=>v==null?"–":(v*100).toFixed(2)+"%")}${cell(r.c2i,r.vs?.c2i,v=>v==null?"–":v.toFixed(2))}${cell(r.ipm,r.vs?.ipm,v=>v==null?"–":v.toFixed(2))}${cell(r.roas,r.vs?.roas,v=>v==null?"–":v.toFixed(2))}</tr>`).join("")}</tbody></table></div><small style="color:var(--muted)">Last week. Red / green: 20%+ below / above the same OS's average that week.</small>`; }
+function topTable(top){ if(!(top||[]).length) return ""; return `<div class="amt"><table><thead><tr><th>Top creatives (latest ad week)</th><th>Share</th><th>CTR</th><th>IPM</th><th>ROAS</th></tr></thead><tbody>${top.map(c=>`<tr><td><span class="mono">${esc(c.code)}</span> ${esc(c.name)}</td><td>${pct(c.share)}</td><td>${c.ctr==null?"–":(c.ctr*100).toFixed(2)+"%"}</td><td>${c.ipm==null?"–":c.ipm.toFixed(2)}</td><td>${r2(c.roas)}</td></tr>`).join("")}</tbody></table></div>`; }
+function reportSections(doc){
+  const M=doc.money||{}, secs=[];
+  secs.push({title:"Account in one line", num:"", html:`<div class="facts"><div><b class="num">${money(M.meta_spend)}</b><span>Meta spend, week of ${esc(fmtDate(M.week))}</span></div><div><b class="num">${M.meta_vs_4w==null?"–":(M.meta_vs_4w>=0?"+":"")+Math.round(M.meta_vs_4w*100)+"%"}</b><span>vs its 4-week average</span></div><div><b class="num">${r2(M.roas_ios)} · ${r2(M.roas_and)}</b><span>Meta ROAS iOS · Android (bar ${r2(M.bar)})</span></div><div><b class="num">${pct(M.under_share)}</b><span>Meta spend under the bar</span></div><div><b class="num">${money(M.store)}</b><span>App Store proceeds (${esc(fmtDate(M.store_week))})</span></div><div><b class="num">${money(M.tt_spend)}</b><span>TikTok spend</span></div></div>${noteBlock(doc,"money","What happened",M.insight)}`});
+  // 01 team output
+  const O=doc.output||{}; const [from,to]=(O.window||"").split(" to "); const t0=from?new Date(from+"T00:00:00").getTime():0, t1=to?new Date(to+"T23:59:59").getTime():Date.now();
+  const hs=S.work.filter(w=>w.handoff?.at && new Date(w.handoff.at).getTime()>=t0 && new Date(w.handoff.at).getTime()<=t1);
+  const grp={}; hs.forEach(w=>{ const k=`${w.ticket_type||"Team ticket"} · ${w.persona||""}`; (grp[k]=grp[k]||[]).push(w); });
+  const vids=hs.reduce((a,w)=>a+(+w.handoff.videos||0),0), imgs=hs.reduce((a,w)=>a+(+w.handoff.images||0),0);
+  secs.push({title:"Team output", num:"01", html:`<div class="facts"><div><b class="num">${vids}</b><span>Videos</span></div><div><b class="num">${imgs}</b><span>Images</span></div><div><b class="num">${hs.length}</b><span>Briefs handed off</span></div><div><b class="num">${hs.reduce((a,w)=>a+(w.tickets||[w.ticket]).length,0)}</b><span>Adsets they cover</span></div></div>
+    ${hs.length?`<div class="rcards">${Object.entries(grp).map(([k,ws])=>`<div class="rcard"><h4>${esc(k)}</h4><div class="list">${ws.map(w=>`<div class="li"><b>${esc(w.concept_name)}</b><span class="who"><b>${esc(w.designer)}</b></span><small>${+w.handoff.videos||0} videos · ${+w.handoff.images||0} images · ${(w.tickets||[]).length} adsets</small></div>`).join("")}</div></div>`).join("")}</div>`:""}
+    ${(O.notion||[]).length?`<div class="rcard"><h4>Finished in Notion, ${esc(O.window)}</h4><div class="list">${O.notion.map(n=>`<div class="li"><span class="grow">${esc(n.title)}</span><small>${esc(n.designer)} · ${esc(n.campaign)} · ${esc(fmtDate(n.finished))}</small></div>`).join("")}</div></div>`:""}
+    <small style="color:var(--muted)">${esc(O.note||"")}</small>`});
+  const launchCard = (l) => `<div class="rcard"><h4>${esc(l.adset)} <span class="pill ${l.kind==="New persona"?"p-READY":"p-BRIEF"}">${esc(l.kind)}</span></h4><small style="color:var(--muted)">Launched ${esc(fmtDate(l.launched))} · ${l.weeks} week${l.weeks>1?"s":""} · ${money(l.spend_total)} spent · ROAS ${r2(l.roas_total)} since launch</small>${amtTable([l.now,...(l.siblings||[])])}${(l.flags||[]).map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${topTable(l.top)}${noteBlock(doc,`l:${l.adset_id}:insight`,"Insight",l.insight)}${noteBlock(doc,`l:${l.adset_id}:action`,"Action item",l.action)}</div>`;
+  const NP=(doc.launches||[]).filter(l=>l.kind==="New persona"), EX=(doc.launches||[]).filter(l=>l.kind==="Expansion");
+  secs.push({title:"New personas", num:"02", html: NP.length?`<div class="rcards">${NP.map(launchCard).join("")}</div>`:`<div class="empty">No new persona launched in the last 4 weeks.</div>`});
+  secs.push({title:"Persona expansion", num:"03", html: EX.length?`<div class="rcards">${EX.map(launchCard).join("")}</div>`:`<div class="empty">No expansion (new language, market or OS for an existing persona) in the last 4 weeks.</div>`});
+  const R=doc.results||{}; const cardR=(c)=>`<div class="rcard"><h4>${esc(c.adset)} <span class="pill ${verdictClass(c.verdict)}">${esc(c.verdict)}</span></h4><small style="color:var(--muted)">${esc(c.kind)} · landed ${esc(fmtDate(c.week_in))} · ${esc(c.concepts)} · ${c.variants} variant${c.variants===1?"":"s"} · ${pct(c.s1)} of spend in week 1 · ${esc(c.context)}</small>${amtTable([c.now, c.before?{...c.before, label:`${c.before.label} · week before it landed`, dim:true}:null, ...(c.siblings||[])])}${(c.flags||[]).map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${topTable(c.top)}${noteBlock(doc,`r:${c.adset_id}:${c.week_in}:insight`,"Insight",c.insight)}${noteBlock(doc,`r:${c.adset_id}:${c.week_in}:action`,"Action item",c.action)}</div>`;
+  const reads=(R.cards||[]).filter(c=>c.kind==="Week-1 read"), fins=(R.cards||[]).filter(c=>c.kind==="Final verdict");
+  const board=S.work.filter(w=>Object.keys(w.results||{}).length);
+  secs.push({title:"Refresh and iteration", num:"04", html:`${noteBlock(doc,"results","Summary",R.summary)}${board.length?`<div class="rcard"><h4>Briefs from this board with results</h4><div class="list">${board.map(w=>{const L=landingStats([w]); return `<div class="li"><b>${esc(w.concept_name)}</b><small>${esc(w.strategist)}/${esc(w.designer)} · won ${L.won} of ${L.final||Object.keys(w.results).length} adsets</small></div>`;}).join("")}</div></div>`:""}
+    ${reads.length?`<h4 style="margin:6px 0 0;font-family:var(--display)">Week-1 reads</h4><div class="rcards">${reads.map(cardR).join("")}</div>`:""}${fins.length?`<h4 style="margin:6px 0 0;font-family:var(--display)">Final verdicts (week 4)</h4><div class="rcards">${fins.map(cardR).join("")}</div>`:""}`});
+  const T=doc.tiktok||{};
+  secs.push({title:"TikTok", num:"05", html:`<div class="facts"><div><b class="num">${money((T.spend_ios||0)+(T.spend_and||0))}</b><span>Spend, week of ${esc(fmtDate(T.week))}</span></div><div><b class="num">${pct(T.share)}</b><span>of paid spend</span></div><div><b class="num">${r2(T.roas_ios)} · ${r2(T.roas_and)}</b><span>TikTok's own ROAS iOS · Android (live ad groups)</span></div></div>
+    <div class="amt"><table><thead><tr><th>Biggest ad groups</th><th>OS</th><th>Spend</th><th>ROAS</th><th>vs TikTok avg, 4 wks</th></tr></thead><tbody>${(T.adgroups||[]).map(a=>`<tr><td style="max-width:360px;overflow:hidden;text-overflow:ellipsis">${esc(a.name)}</td><td>${esc(a.os)}</td><td>${money(a.spend)}</td><td>${r2(a.roas)}</td><td class="${a.vs_avg==null?"":a.vs_avg<0.85?"lo":a.vs_avg>=1?"hi":""}">${a.vs_avg==null?"–":a.vs_avg.toFixed(2)+"×"}</td></tr>`).join("")}</tbody></table></div>${noteBlock(doc,"tiktok:insight","Insight",T.insight)}${noteBlock(doc,"tiktok:action","Action item",T.action)}`});
+  const W=doc.week_ahead||{};
+  secs.push({title:"This week and decisions", num:"06", html:`${noteBlock(doc,"week:insight","Where to put the team",W.insight)}
+    <div class="amt"><table><thead><tr><th>Top tickets</th><th>Type</th><th>Spend</th><th>ROAS</th><th>#1 for</th><th>Strikes</th></tr></thead><tbody>${(W.top||[]).map(t=>`<tr><td>${esc(t.adset)}${t.fading?` <span class="fade">Fading</span>`:""}</td><td>${esc(t.type)}</td><td>${money(t.spend)}</td><td>${r2(t.roas)}</td><td>${t.reign} wk</td><td>${t.strikes}/3</td></tr>`).join("")}</tbody></table></div>
+    <div class="rcard"><h4>Decisions needed</h4><div class="list">${(W.decisions||[]).map(d=>`<div class="li"><span class="grow">${esc(d.action)}</span><small>${esc(d.owner)}</small></div>`).join("")}</div></div>${noteBlock(doc,"week:asks","Asks for the UA team","Nothing yet. Add what you need from the UA team before Tuesday.")}`});
+  return secs;
+}
+function renderReport(){
+  const out=$("#report-out"); const weeks=Object.keys(S.reports).sort().reverse();
+  if(!weeks.length){ out.innerHTML=`<div class="notice"><h2>No report yet</h2>Claude writes the report every Monday from the new exports.</div>`; return; }
+  if(!S.repWeek || !S.reports[S.repWeek]) S.repWeek=weeks[0]; const doc=S.reports[S.repWeek];
+  const secs=reportSections(doc);
+  out.innerHTML = `<div class="rhead"><h2>Weekly creative report · week of ${esc(fmtDate(doc.week))}</h2><select class="in" id="rep-week" style="width:auto" aria-label="Report week">${weeks.map(w=>`<option value="${esc(w)}" ${w===S.repWeek?"selected":""}>Week of ${esc(fmtDate(w))}</option>`).join("")}</select><button class="btn primary" data-present="0">Present</button></div><p class="note" style="margin-top:-4px">${esc(doc.data_note||"")}</p>
+    ${secs.map(x=>`<section class="rsec"><h3>${x.num?`<span class="n">${esc(x.num)}</span>`:""}${esc(x.title)}</h3>${x.html}</section>`).join("")}`;
+  if(S.presentIdx>=0) renderPresent();
+}
+function renderPresent(){ const doc=S.reports[S.repWeek]; if(!doc){ return; } const secs=reportSections(doc); const i=Math.max(0,Math.min(S.presentIdx,secs.length-1)); S.presentIdx=i; const x=secs[i]; const el=$("#present");
+  el.innerHTML=`<div class="pbar"><b style="font-family:var(--display)">Week of ${esc(fmtDate(doc.week))}</b><small style="color:var(--muted)">${i+1} / ${secs.length}</small><span class="spacer"></span><button class="btn small" data-pmove="-1" ${i===0?"disabled":""}>← Back</button><button class="btn small primary" data-pmove="1" ${i===secs.length-1?"disabled":""}>Next →</button><button class="x" data-pclose aria-label="Close" style="margin-left:6px">×</button></div><div class="pbody"><section class="rsec"><h3>${x.num?`<span class="n">${esc(x.num)}</span>`:""}${esc(x.title)}</h3>${x.html}</section></div>`;
+  el.hidden=false; document.body.style.overflow="hidden"; }
+function closePresent(){ S.presentIdx=-1; $("#present").hidden=true; document.body.style.overflow=""; }
+
+/* ---------- log ---------- */
+function verdictPill(v){ return v?`<span class="pill ${verdictClass(v)}">${esc(v)}</span>`:""; }
+function renderLog(){
+  const out=$("#log-out"), f=S.logf, needle=f.q.trim().toLowerCase();
+  const ps=[...new Set([...(S.queue?.personas||[])])]; const sel=$("#log-persona"); if(sel.options.length<=1){ sel.innerHTML=`<option value="">All personas</option>`+ps.map(p=>`<option>${esc(p)}</option>`).join(""); }
+  const pe=$("#log-person"); if(pe.options.length<=1 && S.people){ pe.innerHTML=`<option value="">Everyone</option>`+(S.people.roster||[]).map(p=>`<option value="${esc(p.code)}">${esc(p.code)} · ${esc(p.name)}</option>`).join(""); }
+  $("#log-notion").closest("label").hidden = f.view!=="briefs";
+  if(f.view==="briefs"){
+    const rows=[];
+    S.work.forEach(w=>{ const L=landingStats([w]); rows.push({src:"Board", date:(w.created_at||"").slice(0,10), id:w._id, code:w.concept_code, name:w.concept_name, persona:[...new Set((w.landings||[]).map(l=>l.persona).filter(Boolean))].join(", ")||w.persona, adsets:(w.tickets||[w.ticket]).length, move:w.jurus, strat:w.strategist, des:w.designer, status:w.status,
+      result: L.final?`won ${L.won} of ${L.final} adsets`:(w.result?.verdict||""), hyp:w.hypothesis||"", learn:w.retro?.learning||"", answered:w.retro?.answered||"", tags:Object.values(w.tags||{}).filter(Boolean).join(" · ")}); });
+    if(f.notion) (S.archive?.briefs||[]).forEach(b=>{ rows.push({src:"Notion", date:b.fin||"", code:b.code, name:(b.t||"").split("-").slice(2).join("-"), persona:b.camp, adsets:null, move:"", strat:"", des:b.des, status:b.st,
+      result: b.w1==null?"":`${pct(b.w1)} wk 1${b.top?" · became #1":""}`, hyp:"", learn:"", answered:"", tags:b.lang}); });
+    const xs=rows.filter(r=>(!f.persona || String(r.persona||"").includes(f.persona)) && (!f.person || r.strat===f.person || String(r.des||"").split(" ").includes(f.person))
+      && (!needle || [r.code,r.name,r.persona,r.hyp,r.learn,r.tags].join(" ").toLowerCase().includes(needle)));
+    xs.sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+    if(!S.archive && f.notion) loadArchive();
+    out.innerHTML = `<p class="note" style="margin-top:0">Every brief made on this board, kept forever: who, what, which adsets, the hypothesis, each adset's result and the retro. Notion history (${(S.archive?.briefs||[]).length} briefs) is kept read-only below it, with outcomes where its code and batch match Meta's ads.</p><div class="tablewrap scroll"><table class="ltable"><thead><tr><th>Date</th><th>Source</th><th>Concept</th><th>Persona / campaign</th><th class="r">Adsets</th><th>Move</th><th>People</th><th>Status</th><th>Result</th><th>Hypothesis</th><th>Retro learning</th></tr></thead><tbody>${xs.slice(0,600).map(r=>`<tr class="${r.id?"click":""}" ${r.id?`data-work="${esc(r.id)}"`:""}><td class="num">${esc(String(r.date).slice(0,10))}</td><td>${esc(r.src)}</td><td><span class="mono">${esc(r.code||"")}</span> ${esc(r.name||"")}${r.tags?`<div class="clip" style="font-size:11px">${esc(r.tags)}</div>`:""}</td><td>${esc(r.persona||"")}</td><td class="r num">${r.adsets??""}</td><td>${esc(r.move||"")}</td><td class="mono">${esc([r.strat,r.des].filter(Boolean).join(" / "))}</td><td>${esc(r.status||"")}</td><td>${esc(r.result)}${r.answered?`<div style="font-size:11px;color:var(--muted)">answered: ${esc(r.answered)}</div>`:""}</td><td class="clip">${esc(r.hyp)}</td><td class="clip">${esc(r.learn)}</td></tr>`).join("")||`<tr><td colspan="11" style="color:var(--muted)">Nothing matches.</td></tr>`}</tbody></table></div>`;
+  } else if(f.view==="atbats"){
+    const xs=(S.log?.atbats||[]).filter(a=>(!f.persona||a.persona===f.persona) && (!needle||[a.codes,a.adset].join(" ").toLowerCase().includes(needle))).slice().sort((a,b)=>b.w0.localeCompare(a.w0));
+    const fin=xs.filter(a=>!/provisional/.test(a.verdict)); const k=v=>fin.filter(a=>v.test(a.verdict)).length;
+    out.innerHTML = `<p class="note" style="margin-top:0">Every refresh that landed in an established adset since December, read from Meta's exports: what went in, how many variants, its share of spend in week 1, and the verdict at week 4. ${fin.length} with a final verdict: ${k(/Home run/)} home runs, ${k(/^Hit/)} hits, ${k(/Late/)} late hits, ${k(/^Strike/)} strikes, ${k(/^Foul/)} fouls.</p><div class="tablewrap scroll"><table class="ltable"><thead><tr><th>Week in</th><th>Adset</th><th>Concepts</th><th class="r">Variants</th><th class="r">Week-1 share</th><th>Verdict</th><th>Context</th><th class="r">Adset ROAS after</th></tr></thead><tbody>${xs.map(a=>`<tr><td class="num">${esc(a.w0)}</td><td>${esc(a.adset)}</td><td class="mono">${esc(a.codes)}</td><td class="r num">${a.variants}</td><td class="r num">${pct(a.s1)}</td><td>${verdictPill(a.verdict)}</td><td>${esc(a.context)}</td><td class="r num">${a.lift==null?"–":(a.lift>=0?"+":"")+Math.round(a.lift*100)+"%"}</td></tr>`).join("")}</tbody></table></div>`;
+  } else {
+    const ws=(S.log?.weeks||[]).slice().reverse(); const snaps=Object.fromEntries(S.history.map(h=>[h.week,h]));
+    out.innerHTML = `<p class="note" style="margin-top:0">One row per week since December. Meta ROAS is shown on the ruler of its own week: before 23 Feb (iOS) and 9 Mar (Android) Meta used its own attribution, so those numbers read higher and aren't comparable with today's. The queue columns start on 27 Oct 2026, when the board began keeping a copy of each week's queue.</p><div class="tablewrap scroll"><table class="ltable"><thead><tr><th>Week</th><th class="r">Live adsets</th><th class="r">Meta spend</th><th class="r">Spend under the bar</th><th class="r">ROAS iOS · Android</th><th class="r">App Store</th><th class="r">Refreshes landed</th><th class="r">Hits · strikes · fouls</th><th class="r">Open tickets</th><th class="r">Fading</th></tr></thead><tbody>${ws.map(w=>{ const sn=snaps[w.week]; return `<tr><td class="num">${esc(w.week)}${w.era&&w.era!=="singular"?` <small style="color:var(--faint)">${w.era==="pre"?"Meta ruler":"switching"}</small>`:""}</td><td class="r num">${w.live_adsets}</td><td class="r num">${money(w.spend)}</td><td class="r num">${pct(w.under_share)}</td><td class="r num">${r2(w.roas_ios)} · ${r2(w.roas_android)}</td><td class="r num">${money(w.store)}</td><td class="r num">${w.atbats}</td><td class="r num">${w.hits} · ${w.strikes} · ${w.fouls}</td><td class="r num">${sn?sn.tickets.length:"–"}</td><td class="r num">${sn?sn.tickets.filter(t=>t.fading).length:"–"}</td></tr>`; }).join("")}</tbody></table></div>`;
+  }
+}
+let archLoading=false; function loadArchive(){ if(archLoading||!S.db) return; archLoading=true; S.db.doc("engine/archive").get().then(s=>{ S.archive=s.exists?s.data():{briefs:[]}; if(S.tab==="log") renderLog(); }).catch(()=>{}); }
+
+/* ---------- personas ---------- */
+function renderPersonas(){
+  const out=$("#personas-out"); const PD=S.personaDoc; if(!PD||!S.queue){ out.innerHTML=`<div class="notice"><h2>Loading personas</h2>Persona files load with the board.</div>`; return; }
+  const P=PD.personas||{}; const names=[...new Set([...Object.keys(P), ...(PD.cards||[]).map(c=>c.persona).filter(Boolean)])].sort((a,b)=>((P[b]?.spend||0)-(P[a]?.spend||0)));
+  if(!S.personaSel) S.personaSel=names[0]; const p=S.personaSel; const d=P[p]||{};
+  const tk=S.queue.tickets.filter(t=>t.persona===p); const cards=(PD.cards||[]).filter(c=>c.persona===p);
+  const learn=S.work.filter(w=>(w.landings||[]).some(l=>l.persona===p)||w.persona===p).filter(w=>w.retro?.learning||w.status!=="RETIRED");
+  const sigs=S.signals.filter(s=>personasOf(s).includes(p)).sort((a,b)=>((b.metrics?.views||0)-(a.metrics?.views||0))).slice(0,8);
+  const unm=(PD.cards||[]).filter(c=>!c.persona||/confirm/.test(c.mapped));
+  out.innerHTML = `<div class="ptwo"><div class="plist">${names.map(n=>`<button data-psel="${esc(n)}" aria-current="${n===p}"><span>${esc(n)}</span><small class="num">${P[n]?.spend?money(P[n].spend):"dark"}</small></button>`).join("")}</div>
+  <div class="pdetail"><div class="box"><h3>${esc(p)} <small>living file · updates every Monday and with every retro</small></h3><div class="facts"><div><b class="num">${d.live_adsets??0} / ${d.adsets_ever??0}</b><span>Adsets live / ever</span></div><div><b class="num">${money(d.spend)}</b><span>Spend last week</span></div><div><b class="num">${r2(d.roas)}</b><span>ROAS (bar ${r2(S.queue.bar.green)})</span></div><div><b class="num">${tk.length}</b><span>Open tickets</span></div></div>
+    ${tk.length?`<div class="list">${tk.map(t=>`<button class="card" data-ticket="${esc(t.id)}"><div class="row"><span class="chip ${typeClass(t.type)}">${esc(t.type)}</span><b>${esc(t.adset)}</b>${fadeHTML(t)}<small class="num">${money(t.spend)} · ${r2(t.roas)} · ${strikesHTML(t.strikes)} ${t.strikes}/3</small></div></button>`).join("")}</div>`:""}</div>
+    <div class="box"><h3>What wins here <small>#1 concepts, last 26 weeks</small></h3>${(d.winners||[]).length?`<div class="list">${d.winners.map(w=>`<div class="li"><span class="mono">${esc(w.code)}</span><b>${esc(w.name)}</b><small>#1 for ${w.weeks} adset-weeks in ${w.adsets} adset${w.adsets>1?"s":""} · ${money(w.spend)} as #1 · last ${esc(fmtDate(w.last))}</small></div>`).join("")}</div>`:`<small style="color:var(--muted)">No #1 concept recorded in the last 26 weeks.</small>`}</div>
+    ${cards.map(c=>`<div class="box"><h3>Notion card: ${esc(c.card)} <small>${esc(c.status)}${c.churn_app?` · churn from ${esc(c.churn_app)}`:""} · mapped ${esc(c.mapped)}</small></h3>${c.lore?`<div><small style="color:var(--muted)">WHO THEY ARE</small><div class="prewrap">${esc(c.lore)}</div></div>`:""}${c.pattern?`<div><small style="color:var(--muted)">WINNING PATTERN</small><div class="prewrap">${esc(c.pattern)}</div></div>`:""}${c.message?`<div><small style="color:var(--muted)">PROVEN MESSAGE</small><div class="prewrap">${esc(c.message)}</div></div>`:""}${c.hook?`<div><small style="color:var(--muted)">HOOK WORDS / HEADLINE</small><div class="prewrap">${esc(c.hook)}</div></div>`:""}${(c.top_ads||[]).length?`<div><small style="color:var(--muted)">TOP SPENDERS</small><div class="mono" style="font-size:11px;word-break:break-all">${c.top_ads.map(esc).join("<br>")}</div></div>`:""}</div>`).join("")}
+    <div class="box"><h3>Learnings and briefs <small>from this board's retros</small></h3>${learn.length?`<div class="list">${learn.map(w=>`<button class="card" data-work="${esc(w._id)}"><div class="row"><span class="pill ${PCLASS[w.status]}">${esc(w.status)}</span><b>${esc(w.concept_name)}</b>${(()=>{const L=landingStats([w]); return L.final?`<small>won ${L.won} of ${L.final}</small>`:"";})()}</div>${w.retro?.learning?`<small>${esc(w.retro.learning)}</small>`:`<small>${esc(w.hypothesis||"")}</small>`}</button>`).join("")}</div>`:`<small style="color:var(--muted)">Learnings appear here as retros are saved.</small>`}</div>
+    <div class="box"><h3>Signals <small>most viewed first</small></h3>${sigs.length?`<div class="list">${sigs.map(s=>`<div class="li"><span class="chip t-Manual">${esc(s.platform||platformOf(s.url))}</span><a class="grow" style="word-break:break-all" href="${esc(/^https?:\/\//.test(s.url)?s.url:"#")}" target="_blank" rel="noopener noreferrer">${esc(s.note||s.url)}</a>${s.metrics?.views?`<small>${short(s.metrics.views)} views</small>`:""}</div>`).join("")}</div>`:`<small style="color:var(--muted)">No signals tagged ${esc(p)} yet.</small>`}</div>
+    ${unm.length?`<div class="box"><h3>Cards to confirm <small>mapped by name, or not mapped</small></h3><div class="list">${unm.map(c=>`<div class="li"><b>${esc(c.card)}</b><small>→ ${esc(c.persona||"no persona yet")} (${esc(c.mapped)})</small></div>`).join("")}</div></div>`:""}
+  </div></div>`;
+}
+
+/* ---------- guide ---------- */
+function renderGuide(){
+  const q=S.queue||{}, F=q.facts||{}, bar=r2(q.bar?.green||0.4), crit=r2(q.bar?.amber||0.32), cap=Math.round(q.capacity||8);
+  $("#guide-out").innerHTML = `
+  <div class="box"><h3>How it all fits together</h3>
+  <div class="map">
+    <div class="col2"><div class="node"><b>Monday inputs</b>Meta adset × country and ad exports, App Store and Play by country, TikTok. The team adds signals and opens tickets any day.</div><div class="node"><b>The spec</b>The rulebook: definitions, the 0.40 bar, at-bats and strikes, decisions. In the Claude project.</div></div>
+    <div class="arrow">→</div>
+    <div class="col2"><div class="node key"><b>The engine</b>Claude runs it every Monday. It applies the spec to the exports: statuses, decay clocks, tickets and ranking, verdicts per adset, strikes, history.</div></div>
+    <div class="arrow">→</div>
+    <div class="col2"><div class="node"><b>Account dashboard: why</b>Money, markets, channels, measurement eras and creative patterns. For the creative lead and management to set strategy (bar, budget, tests).</div><div class="node key"><b>Creative Board: do</b>Tickets → briefs → production → results → retro, scorecards, persona files, signals and the permanent log. Where the team works every day.</div><div class="node"><b>Report tab: tell</b>The Tuesday deck for the UA team, generated every Monday from the board and the engine, with drafted insights you edit and present from here.</div></div>
+    <div class="loop">↺ Briefs create the ad names → the ads run → next Monday's exports carry those names → the engine reads each adset's result → it lands back on the brief, the persona file, the scorecards and the next report.</div>
+  </div></div>
+  <div class="box"><h3>What this board is</h3><p>Every Monday Claude reads the Meta, TikTok and store exports and opens a <b>ticket</b> for every adset that needs new creative, ranked by how badly it needs it and how much it spends. The team turns tickets into <b>briefs</b>, briefs into ads, and ads into results. One brief can cover several tickets. Everything done here feeds the Tuesday report and the scorecards, so nobody has to type statuses into a separate tracker.</p>
+  <div class="steps"><span>NEED REFRESH</span><i>→</i><span>BRIEF CREATED</span><i>→</i><span>IN PRODUCTION</span><i>→</i><span>READY TO UPLOAD</span><i>→</i><span>TESTING</span><i>→</i><span>RESULT READY</span><i>→</i><span>RETIRED</span></div>
+  <small style="color:var(--muted)">Strategist creates the brief · designer starts production and hands off · media buyer marks it live · Claude reads the result from Monday's export · strategist and designer hold the retro, which retires it.</small></div>
+
+  <h2>Decaying, Due and 3 strikes</h2>
+  <div class="types3">
+    <div class="box"><h3><span class="chip t-Decaying">Decaying</span></h3><p><b>The adset is hurting now.</b> ROAS under ${bar}, or falling week on week, or its hook rate dropped 20% or more. It needs new creative this week.</p><small style="color:var(--muted)">Under ${crit} it is critical and ranks first.</small></div>
+    <div class="box"><h3><span class="chip t-Due">Due</span></h3><p><b>The adset is fine today, but its winner is getting old.</b> Its #1 creative has led for 2+ weeks. Winners usually fade from week 3, and a refresh takes about 2 weeks (one to make, one to read), so the successor has to start now.</p><small style="color:var(--muted)">A Due adset that shares a persona with a Decaying one can ride the same brief at no extra production.</small></div>
+    <div class="box"><h3><span class="chip t-Strikes">3 strikes</span></h3><p><b>Three refreshes in a row missed.</b> None produced a new #1 while the adset was under the bar. Don't send a fourth blindly: check whether the problem is the concepts, the execution, the audience or the setup.</p><small style="color:var(--muted)">A challenger that can't beat a healthy #1 is a foul, not a strike.</small></div>
+  </div>
+  <div class="box"><h3>Rules of thumb</h3><ul>
+    <li><b>The bar:</b> ${bar}+ is acceptable, under ${bar} needs a refresh, under ${crit} is critical.</li>
+    <li><b>Week 1 tells you a lot:</b> a concept that takes 20%+ of its adset's spend in its first week becomes #1 about 8 times in 10. The final call is at week 4.</li>
+    <li><b>Keep quiet ads on:</b> a third of winners start under 5% of spend.</li>
+    <li><b>3+ variants per adset:</b> a refresh whose concept lands in the adset with 3+ variants produces a new #1 about ${pct(F.hit_rate_3var)} of the time, vs ${pct(F.hit_rate_12var)} with 1–2. Re-cuts, new text and re-sequenced openings all count.</li>
+    <li><b>Spread wide, judge per adset:</b> concepts already land in a median ${F.adsets_per_concept_median||3} adsets. Each adset keeps about a ${pct(F.landing_win_rate)} chance, so a concept in 5+ adsets wins somewhere ${pct(F.won_anywhere_5plus)} of the time. Languages often disagree; iOS and Android usually agree.</li>
+    <li><b>Capacity:</b> about ${cap} adset refreshes land a week. Grouping tickets into one brief is how we cover more.</li>
+  </ul></div>
+
+  <h2>Strategist</h2>
+  <div class="box"><ol>
+    <li><b>Pick the work.</b> Queue → <b>By persona</b>. Start with groups that hold Decaying or 3-strike tickets. Tick the adsets one concept can serve (other languages, both OS) and press <b>Brief the selected</b>. This is where your judgment matters: group what truly shares an insight, and leave out what doesn't.</li>
+    <li><b>Write the brief.</b> Pick the move: a new concept, a proven concept from nearby ("Using what" lists concepts winning in the same persona or language that never ran here), or a new form of a past winner. Write the hypothesis, or press <b>Draft with Claude</b> and edit it. Add 3+ variants and choose the designer.</li>
+    <li><b>Create it.</b> The board makes the v5 ad names, the Drive folder name and the file names. Share the brief link with the designer if you wrote a longer one.</li>
+    <li><b>When results land</b> (RESULT READY), hold the retro with the designer: did it answer the hypothesis, any flags, and one line of learning. Each adset shows its own result: say where it worked and where it didn't.</li>
+  </ol><p><b>What your card shows:</b> briefs, how many are grounded in a signal or a proven concept, hits on the adsets you briefed, and how often the hypothesis got a clear answer.</p></div>
+
+  <h2>Designer</h2>
+  <div class="box"><ol>
+    <li><b>Board tab</b> → your briefs under BRIEF CREATED → open → <b>Start production</b>. One brief may cover many adsets: that's still one brief, and your card counts the files and adsets it covers.</li>
+    <li><b>Use the generated file names exactly.</b> They are how the board finds your ads in Meta's export and moves them to TESTING and RESULT READY by itself.</li>
+    <li><b>Milk every generation:</b> each adset should get 3+ variants in its language (new hook, new text, a re-cut, a re-sequenced opening).</li>
+    <li><b>Hand off</b> in 30 seconds: the Drive folder link, videos and images delivered, and task counts if you can.</li>
+    <li><b>Retro</b> with the strategist when results land.</li>
+  </ol><p><b>What moves the needle:</b> winning 20%+ of the adset's spend in week 1, a strong hook and hold compared with the other variants of the same concept, realistic visuals (nothing "too AI"), and staying on-brief. <b>Your card:</b> output, days from brief to handoff, results on your briefs against the team baseline, and retro flags. Nobody is ranked on fewer than 10 results.</p></div>
+
+  <h2>UA team and management</h2>
+  <div class="box"><ul>
+    <li><b>The header</b> is the week in five numbers: open tickets, tickets with no brief yet, briefs in flight, refreshes the team lands a week, and the ROAS bar.</li>
+    <li><b>Queue, top 10:</b> where money is at risk. Ranking = how bad × how much the adset spends. The dashed line shows roughly what fits this week.</li>
+    <li><b>Report tab, Tuesday:</b> the deck in the team's order: account in one line, 01 Team output, 02 New personas, 03 Persona expansion, 04 Refresh and iteration, 05 TikTok, 06 This week and decisions. <b>Present</b> shows one section per screen (arrow keys, Esc). Every insight and action item is a draft: press Edit to rewrite it before the meeting; your edits survive Monday's refresh. Past weeks stay in the week menu.</li>
+    <li><b>People:</b> each card shows what the person is on, anything waiting past its usual time (brief 3 days, production 7, upload 3) and their score. Full tables underneath, plus Claude's own record (the odds it gave vs what happened).</li>
+    <li><b>Board:</b> every brief by status, and how long it has been there.</li>
+  </ul></div>
+
+  <h2>Personas and Log</h2>
+  <div class="box"><ul>
+    <li><b>Personas</b> is the living persona file: live state, open tickets, what wins (the #1 concepts of the last 26 weeks), the Notion persona card, every learning from this board's retros, and the persona's signals. It updates every Monday and with every retro, and anyone with access can read it.</li>
+    <li><b>Log</b> keeps everything, permanently. <b>Briefs and experiments</b>: every brief made here (hypothesis, move, people, adsets, each adset's result, the retro), plus the Notion tracker history. <b>Refreshes since Dec</b>: every refresh read from Meta's exports with its verdict. <b>Week by week</b>: one row per week, and from 27 Oct a copy of each week's queue.</li>
+    <li>The weekly update only adds to this history. It replaces this week's queue and numbers, never your briefs, retros or signals.</li>
+  </ul></div>
+
+  <h2>Signals</h2>
+  <div class="box"><p>Found something in the wild? Paste the link and, if you like, one line on how we could use it. Tag one or more personas. Claude adds views, likes, shares and comments on the weekly run where the site shows them (for ad-library links it uses how long the ad has run), so the bank can be sorted. Signals tagged with a persona show up inside that persona's tickets and in Claude's brief drafts.</p></div>`;
+}
+
+/* ---------- routing ---------- */
+function setTab(){ const h=(location.hash||"#queue").slice(1); const tab=["queue","board","report","people","signals","personas","log","guide"].includes(h)?h:"queue"; S.tab=tab;
+  document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current", a.dataset.tab===tab?"page":"false"));
+  document.querySelectorAll(".view").forEach(v=>v.hidden = v.id!=="v-"+tab); renderTab(); }
+function renderTab(){ if(S.tab==="queue"){ renderManual(); renderQueue(); } else if(S.tab==="board") renderBoard(); else if(S.tab==="people") renderPeople(); else if(S.tab==="guide") renderGuide(); else if(S.tab==="report") renderReport(); else if(S.tab==="personas") renderPersonas(); else if(S.tab==="log") renderLog(); else renderSignals(); }
+function drawerBusy(){ const a=document.activeElement; const d=$("#drawer"); return !!(S.drawer && (S.drawer.dirty || (a && d.contains(a) && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)))); }
+function renderAll(){ renderHeader(); renderTab(); if(!drawerBusy()) renderDrawer(); renderMe(); }
+addEventListener("hashchange", setTab);
+
+function renderMe(){ const box=$("#mebox"); if(!S.db||!S.me.id||!S.people){ box.hidden=true; return; } box.hidden=false; $("#meimg").src=S.me.avatar||"";
+  const mine = Object.entries(S.team).find(([c,v])=>v.uid===S.me.id)?.[0] || ""; S.myCode = mine || S.myCode;
+  const sel=$("#meselect"); const cur=sel.value; sel.innerHTML = `<option value="">${esc(S.me.name||"You")}: who are you?</option>` + roster().map(p=>`<option value="${esc(p.code)}" ${p.code===S.myCode?"selected":""}>${esc(p.code)} · ${esc(p.name)}</option>`).join("") + `<option value="LEAD" ${S.myCode==="LEAD"?"selected":""}>Creative lead</option><option value="UA" ${S.myCode==="UA"?"selected":""}>Media buyer / UA</option>`; if(S.readOnly) sel.disabled=true; }
+function fillPersonaSelects(){ const ps=(S.queue?.personas)||[]; const b=$("#sig-fpersona"); const bv=b.value; b.innerHTML=`<option value="">All personas</option>`+ps.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join(""); b.value=bv;
+  $("#sig-personas").innerHTML = ps.map(p=>`<button type="button" class="pchip" data-pchip="${esc(p)}" aria-pressed="${S.sigPersonas.includes(p)}">${esc(p)}</button>`).join(""); }
+
+/* ---------- boot ---------- */
+async function boot(){
+  setTab();
+  const c = window.claude; if(!c || !c.use){ $("#queue-out").innerHTML=`<div class="notice"><h2>Open this board in Claude</h2>The queue, the work and the scorecards live in the board's shared data, which loads when the page is opened from Claude.</div>`; return; }
+  const [db,user,sample] = await Promise.all([c.use("db"), c.use("user"), c.use("sample")]);
+  S.db=db; S.user=user; S.sample=sample;
+  if(!db){ $("#queue-out").innerHTML=`<div class="notice"><h2>Sign in to see the board</h2>The shared queue loads for people the board is shared with.</div>`; return; }
+  if(user){ try{ const me=await user.me(); S.me={id:me.id, name:me.name, avatar:me.avatarUrl}; const cw=await user.can("data.write"); S.canWrite=cw; if(cw===false) S.readOnly=true; }catch(e){} }
+  try{ const saved=localStorage.getItem("bumpy-board-me"); if(saved) S.myCode=saved; }catch(e){}
+  const err = e => { console.warn("db", e); };
+  db.doc("engine/queue").onSnapshot(s => { S.queue = s.exists ? s.data() : null; if(!S.queue){ $("#queue-out").innerHTML=`<div class="notice"><h2>No queue yet</h2>Claude fills the queue after each Monday's exports. Nothing to do here until then.</div>`; } fillPersonaSelects(); renderAll(); }, err);
+  db.doc("engine/people").onSnapshot(s => { S.people = s.exists ? s.data() : null; renderAll(); }, err);
+  db.doc("engine/codes").get().then(s => { S.codes = s.exists ? s.data() : {codes:[]}; }).catch(err);
+  db.doc("engine/log").onSnapshot(s => { S.log = s.exists ? s.data() : null; if(S.tab==="log") renderLog(); }, err);
+  db.doc("engine/personas").onSnapshot(s => { S.personaDoc = s.exists ? s.data() : null; if(S.tab==="personas") renderPersonas(); }, err);
+  db.collection("reports").onSnapshot(s => { S.reports={}; s.docs.forEach(d=>S.reports[d.id]=d.data()); if(S.tab==="report" && !S.editNote) renderReport(); else if(S.presentIdx>=0 && !S.editNote) renderPresent(); }, err);
+  db.collection("report_notes").onSnapshot(s => { S.repNotes={}; s.docs.forEach(d=>{ const n=d.data(); (S.repNotes[n.week]=S.repNotes[n.week]||{})[n.key]=n; }); if(!S.editNote){ if(S.presentIdx>=0) renderPresent(); else if(S.tab==="report") renderReport(); } }, err);
+  db.collection("history").onSnapshot(s => { S.history = s.docs.map(d=>d.data()); if(S.tab==="log") renderLog(); }, err);
+  db.collection("work").onSnapshot(async s => { S.work = s.docs.map(d=>({...d.data(), _id:d.id})); await resolveProfiles(S.work.flatMap(w=>[w.created_by, ...(w.log||[]).map(l=>l.by), w.retro?.by])); renderAll(); }, err);
+  db.collection("signals").onSnapshot(async s => { S.signals = s.docs.map(d=>({...d.data(), _id:d.id})); await resolveProfiles(S.signals.map(x=>x.by)); renderAll(); }, err);
+  db.collection("manual").onSnapshot(async s => { S.manual = s.docs.map(d=>({...d.data(), _id:d.id, id:d.data().id||d.id})); await resolveProfiles(S.manual.map(x=>x.by)); renderAll(); }, err);
+  db.collection("team").onSnapshot(async s => { S.team = {}; s.docs.forEach(d=>S.team[d.id]=d.data()); await resolveProfiles(Object.values(S.team).map(v=>v.uid)); renderAll(); }, err);
+}
+boot();
+})();
+</script>
