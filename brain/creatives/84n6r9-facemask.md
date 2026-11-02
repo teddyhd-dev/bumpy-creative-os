@@ -18,7 +18,7 @@ decoded: false
 
 <!-- generated:start facts -->
 ## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 6 of 25 adsets it ran in · $4.0k spent as #1 · $8.8k in total.
+#1 in 5 of 25 adsets it ran in · $4.0k spent as #1 · $8.8k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -26,10 +26,10 @@ decoded: false
 | LGBTQ-EN | LGBTQ · iOS · EN | 2026-03-30 | 2026-04-27 | 2 | 41% | $1.2k |
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-02-23 | 2026-08-24 | 2 | 37% | $594 |
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-02-23 | 2026-10-05 | 1 | 17% | $581 |
-| GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-02-23 | 2026-08-31 | 1 | 30% | $375 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-02-23 | 2026-05-04 | 1 | 4% | $160 |
 | LGBTQ-EN | LGBTQ · iOS · EN | 2026-02-23 | 2026-04-06 | 0 | 12% | $644 |
 | GringoMaleLover-TR | GringoMaleLover · Android · TR | 2026-02-23 | 2026-05-11 | 0 | 14% | $379 |
+| GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-02-23 | 2026-08-31 | 0 | 30% | $375 |
 | GringoMaleLover-TR | GringoMaleLover · iOS · TR | 2026-02-23 | 2026-03-23 | 0 | 8% | $245 |
 | PassportBro-EN | PassportBro · Android · EN · Serious | 2026-03-30 | 2026-10-05 | 0 | 3% | $205 |
 | GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-02-23 | 2026-07-13 | 0 | 2% | $160 |

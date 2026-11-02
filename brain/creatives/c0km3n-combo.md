@@ -35,7 +35,7 @@ Includes ads written as c0kM3N (confirmed fixes in core/code_aliases.csv).
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-07-27 | 2026-10-05 | 0 | 31% | $5.8k |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-09-21 | 2026-10-05 | 0 | 18% | $733 |
 | LatinaFemaleLover-ES | LatinaFemaleLover · Android · ES · Casual | 2026-09-21 | 2026-10-05 | 0 | 15% | $722 |
-| SexyBeachGuy-EN | SexyBeachGuy · iOS · EN · Casual | 2026-09-21 | 2026-10-05 | 0 | 38% | $666 |
+| SexyMaleLover-EN | SexyMaleLover · iOS · EN · Casual | 2026-09-21 | 2026-10-05 | 0 | 38% | $666 |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2026-08-03 | 2026-08-31 | 0 | 29% | $608 |
 | MuslimMatchWorldwide-RU | MuslimMatchWorldwide · iOS · RU | 2026-07-27 | 2026-08-24 | 0 | 13% | $445 |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-07-27 | 2026-08-10 | 0 | 46% | $354 |

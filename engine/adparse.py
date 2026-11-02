@@ -1,7 +1,7 @@
 import re, sys
 import pandas as pd, numpy as np
 sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
-from build import parse_name as parse_adset
+from build import parse_name as parse_adset, PERSONA_ALIAS
 
 AWARE = {'unaware':'Unaware','completelyunaware':'Unaware','problemaware':'ProblemAware','solutionaware':'SolutionAware',
          'productaware':'ProductAware','mostaware':'MostAware'}
@@ -19,7 +19,7 @@ PMAP = [
  (r'^attractiveblack', 'AttractiveBlackFemale'), (r'^koreaboo', 'KoreanMaleCultureLover'),
  (r'^matur|^304050|^3040|^5060|^3060', 'MatureDating'), (r'^lgbt', 'LGBTQ'), (r'^singlemom', 'SingleMom'),
  (r'^churnlocal|^angrywithlocal|^localdating', 'LocalDatingFatigue'), (r'^churnraya|^celebrity', 'CelebrityCrushLookalikeLover'),
- (r'^learnlanguage|^newlanguage', 'NewLanguageLearner'), (r'^chat', 'ChatOnly'), (r'^plussize', 'PlusSizeWomen'),
+ (r'^learnlanguage|^newlanguage', 'NewLanguageLearner'), (r'^chat', 'ChatOnly'), (r'^plussize', 'PlusSizeWomen'), (r'^translat', 'Translation'), (r'^interlocal', 'InterlocalDating'), (r'^shortking', 'ShortKings'),
  (r'^beachgirl', 'BeachGirl'), (r'^beachboy|^sexybeach', 'SexyBeachGuy'), (r'^womanmarriage|^richhusband', 'RichHusbandFinder'),
  (r'^divorcee', 'Divorcee'), (r'^middleeast', 'MiddleEastern'), (r'^sexyfemale', 'SexyFemaleLover'),
  (r'^general', 'General'),
@@ -74,7 +74,7 @@ def parse_ad(name):
     low = first.lower()
     for pat, p in PMAP:
         if re.search(pat, low):
-            out['ad_persona'] = p; break
+            out['ad_persona'] = PERSONA_ALIAS.get(p, p); break
     if out['lang'] in ('US', 'ENG'): out['lang'] = 'EN'
     if out['lang'] == 'BR': out['lang'] = 'PT'
     # fields after concept

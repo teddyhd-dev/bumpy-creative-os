@@ -20,6 +20,9 @@ import sys
 
 import yaml
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from new_concept import check_names  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 errors, warnings = [], []
 
@@ -186,6 +189,16 @@ def main():
         cc = str(fm.get("concept_code", ""))
         if cc not in exact and cc.lower() in seen:
             err(p, f"concept code '{cc}' differs only by letter case from one in brain/creatives/{seen[cc.lower()]}: pick another code")
+        reg = concepts.get(cc)
+        if reg is None:
+            err(p, f"concept code {cc} is not in core/concepts.csv: register it (code, name, confirmed) when the brief is approved")
+        elif re.sub(r"[^a-z]", "", reg.lower()) != re.sub(r"[^a-z]", "", str(fm.get("concept_name", "")).lower()):
+            err(p, f"concept_name '{fm.get('concept_name')}' differs from core/concepts.csv ('{reg}')")
+        brief = body.split("## Brief", 1)[1].split("\n## ", 1)[0] if "## Brief" in body else ""
+        names = re.findall(r"\b[A-Za-z]+-[A-Z]{2}-[A-Za-z0-9]{6}-[^\s`|]+-Batch20\d\dWeek\d\d\b", brief)
+        for n, problems in check_names(names).items():
+            for x in problems:
+                err(p, f"ad name {n}: {x}")
         if not re.search(r"^## Prediction\s*\n+\s*\S", body, flags=re.M):
             err(p, "Prediction is empty: say how the exports will show it worked")
 

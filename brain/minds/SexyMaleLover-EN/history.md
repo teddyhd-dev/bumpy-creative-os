@@ -1,8 +1,8 @@
 ---
 contract: history/1
-mind: InstagramPost-PT
+mind: SexyMaleLover-EN
 ---
-# InstagramPost · PT — history
+# SexyMaleLover · EN — history
 
 Every observation and change of belief, oldest first. Never edited or deleted.
 

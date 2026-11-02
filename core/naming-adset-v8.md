@@ -1,10 +1,16 @@
 # Bumpy — Campaign & Adset Naming Convention
-version: 8.1.0
+version: 8.2.0
 status: FOUNDATIONAL — do not deviate without updating this doc first
 
 > Copied from the Claude project file `bumpy-naming-convention UPDATED.md`. Note: Meta exports show
 > the separator as ` / ` (with spaces); the engine reads both.
 
+> **Changelog 8.2.0 (2 Nov 2026, creative lead):** new canonical personas `AttractiveBlackFemale`,
+> `SexyFemaleLover`, `SexyMaleLover` (was written `SexyBeachGuy`) and `Translation`. Past personas kept so
+> history reads correctly: `PlusSizeWomen`, `MiddleEasternMaleLover` (was written `MiddleEastern`),
+> `Divorcee`, `InterlocalDating`, `ShortKings`. `InstagramPost` and `BrandTest` are tests, not personas.
+> Spellings that map to a canonical persona: `core/persona_aliases.csv`.
+>
 > **Changelog 8.1.0 (2 Nov 2026, creative lead):** four live personas added to the canonical list —
 > `AsianMaleLover`, `SoutheastAsianFemaleLover`, `LatinoMaleLover`, `ChatOnly`. `IntlFriendFinder`,
 > `Friends` and `InternationalFriend` are all `InternationalFriendFinder` (adsets already named
@@ -225,7 +231,26 @@ Two rules:
 | `SoutheastAsianFemaleLover` | A | Southeast Asian Lover | Male |
 | `LatinoMaleLover` | A | Latino Lover, TikTok Safe Latino | Female |
 | `ChatOnly` | C | Chat Persona, Talk only, Chat/Talk-only persona | BothGender |
+| `AttractiveBlackFemale` | A | Attractive Black Female | Male |
+| `SexyFemaleLover` | A | Sexy Female Lover | Male |
+| `SexyMaleLover` | A | Sexy Beach Guy, SexyBeachGuy | Female |
+| `Translation` | C | Translation (wants to date abroad but worried about the language barrier) | BothGender |
 | `General` | — | Incremental Attribution, Spark Ads Organic Content | BothGender |
+
+### Past personas (no longer launched; kept so old names read correctly)
+
+| Persona (canonical) | Pattern | Old names it replaces | Typical Gender* |
+|---|---|---|---|
+| `PlusSizeWomen` | C | Plus Size, PlusSize | BothGender |
+| `MiddleEasternMaleLover` | A | Middle Eastern, MiddleEastern | Female |
+| `Divorcee` | C | Divorcee | BothGender |
+| `InterlocalDating` | C | Inter-local dating (date someone in another city or island) | BothGender |
+| `ShortKings` | C | Short Kings | Female |
+
+### Not personas (tests)
+
+`InstagramPost` and `BrandTest` label tests, not audiences. New test adsets use `General` as Persona and the
+test as a Modifier (e.g. `Test-InstagramPost`).
 
 *Typical Gender = default for the adset's `Gender` field only when the old name doesn't
 explicitly state one.

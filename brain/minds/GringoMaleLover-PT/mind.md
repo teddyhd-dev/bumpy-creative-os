@@ -47,11 +47,9 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 ### #1 history (latest first)
 - 2026-09-07 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 5 wk at 58% of spend  
   top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
-- 2026-08-31 · GringoMaleLover · Android · PT · PT · 84n6r9 facemask · 1 wk at – of spend  
-  top ad: `GringoLover-PT-84n6r9-FaceMask-Clay-IMG-Batch2026Week07`
 - 2026-08-31 · GringoMaleLover · iOS · PT · PT · n6f2Wt banner · 1 wk at 48% of spend  
   top ad: `GringoLover-PT-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
-- 2026-08-10 · GringoMaleLover · Android · PT · PT · j4g89om iconicplaces · 3 wk at 31% of spend  
+- 2026-08-10 · GringoMaleLover · Android · PT · PT · 4g89om iconicplaces · 4 wk at 31% of spend  
   top ad: `Gringolover-PT-j4g89om-IconicPlaces-Carnival-IMG-Batch2026Week08`
 - 2026-07-27 · GringoMaleLover · Android · PT · PT · Mw4ucH fly · 2 wk at 46% of spend  
   top ad: `GringoLover-PT-Mw4ucH-Fly-Latinas-VID-Batch2026Week08`
@@ -65,7 +63,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `Gringolover-PT-iPohxY-BusinessClass-flight-BrasileiraGanhandoTratamentoPremiumByGringosnoBumpy-firstclasslife-luxury-VID-Batch2026Week20`
 - 2026-05-18 · GringoMaleLover · Android · PT · PT · 7nf3oE slideshow · 1 wk at 78% of spend  
   top ad: `Gringolover-PT-7nf3oE-slideshow-LatinaWithItalianManWrappedInTowel-OsGringosNoBumpySaoObcecadosPorSairComLatinasDeBelezaExotica-obsessed-morethanyouimagine-VID-Batch2026Week17`
-- 2026-05-11 · GringoMaleLover · Android · PT · PT · j4g89om iconicplaces · 1 wk at 36% of spend  
+- 2026-05-11 · GringoMaleLover · Android · PT · PT · 4g89om iconicplaces · 1 wk at 36% of spend  
   top ad: `Gringolover-PT-j4g89om-IconicPlaces-Food-IMG-Batch2026Week08`
 - 2026-05-04 · GringoMaleLover · Android · PT · PT · m9Gh2d whisper · 1 wk at 33% of spend  
   top ad: `GringoLover-PT-m9Gh2d-whisper-imagine-IMG-Batch2026Week12`
@@ -75,9 +73,11 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
 - 2026-04-20 · GringoMaleLover · Android · PT · PT · F4z7K2 fastcarousel · 2 wk at 40% of spend  
   top ad: `GringoLover-BR-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12`
+- 2026-04-13 · GringoMaleLover · iOS · PT · PT · v8Gn7M pulseblack · 1 wk at 42% of spend  
+  top ad: `GringoLover-BR-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (22 finished reigns). Longest: H7kM3N airport, 14 weeks from 2026-01-05.
+A #1 here has led a median 2 weeks (21 finished reigns). Longest: H7kM3N airport, 14 weeks from 2026-01-05.
 
 ### Refreshes read from the exports
 10 since Dec: 3 hits of 8 with a final verdict (38%), 0 strikes, 5 fouls.

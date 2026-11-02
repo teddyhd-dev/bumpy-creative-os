@@ -1,6 +1,6 @@
 ---
 name: brainstorm
-version: 0.2.0
+version: 0.3.0
 description: Brainstormer + Brief Maker for Bumpy. Use when a strategist wants to brainstorm a refresh for a ticket, adset or persona ("let's brainstorm T-691223"), decode a winning creative, or turn an agreed idea into a Notion-ready brief. Reads and writes the shared memory in brain/.
 ---
 # Brainstormer + Brief Maker
@@ -78,10 +78,21 @@ then sibling languages).
 
 **7. Write the brief** with `tools/brainstormer/brief-template.md`: hypothesis, prediction, hook, story
 beats, variants (3+ per adset, in each language), the milking plan, and the v5 ad names
-(`core/naming-ad-v5.md`). New concept code: 6 characters, unique ignoring case against `brain/creatives/`,
-`brain/experiments/` and `detected-refreshes.csv`. Show it to the strategist; revise until approved.
+(`core/naming-ad-v5.md`). Before showing it, make sure nothing clashes with what exists:
+- **Concept code.** A new concept gets `python3 checks/new_concept.py new` (unique ignoring letter case, never
+  one character away from an existing code). Then `python3 checks/new_concept.py check --code <code> --name
+  <ConceptName>`. If it says the name is already another code's concept, ask the strategist: same idea →
+  reuse that code (new variants); different idea → a distinct name. New variants of a past winner keep its
+  code and its registered name (`core/concepts.csv`).
+- **Ad names.** Put every generated name through `python3 checks/new_concept.py names -` (one per line) and fix
+  everything it reports: canonical persona for the adset (never a past persona or a test label), audience
+  code, the registered concept name, hook/headline/angle format, awareness modifier, VID/IMG, active
+  strategist and designer codes, batch.
+- **Same creative for another persona** (proven elsewhere): its names carry the target adset's persona, same code.
+Show it to the strategist; revise until approved.
 
 **8. On approval, save and commit.**
+- a new code goes into `core/concepts.csv`: `code,name,confirmed,<today>,EXP-<today>-<code>`.
 - `brain/experiments/EXP-<today>-<code>.md` per `contracts/experiment.md`: front matter (tickets, minds,
   move, `status: briefed`, `made_with: brainstorm/<version>`), Hypothesis, Prediction, Evidence, Options not
   chosen (with their hypotheses), Inspiration used, Brief (the exact text), empty results block, empty

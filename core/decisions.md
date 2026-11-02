@@ -5,6 +5,12 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-02 · More naming decisions; briefs can't create clashes
+- **Decided by:** creative lead.
+- **Concepts:** `i48opT` = carousel, `d4osYW` = dancing (scene names go in the hook field); `j4g89om` is `4g89om` (iconicplaces).
+- **Personas:** new `AttractiveBlackFemale`, `SexyFemaleLover`, `SexyMaleLover` (was written SexyBeachGuy), `Translation` (wants to date abroad but worries about the language barrier). Past personas: `PlusSizeWomen`, `MiddleEasternMaleLover` (was written MiddleEastern), `Divorcee`, `InterlocalDating` (another city or island), `ShortKings`. `InstagramPost` and `BrandTest` are tests, not personas: no mind, not flagged. Naming v8.2.0; spellings in `core/persona_aliases.csv`.
+- **Guard at brief time:** the brief maker picks new codes with `checks/new_concept.py` (unique ignoring letter case, never one character from an existing code), checks the concept name against `core/concepts.csv`, and checks every ad name; the validator repeats it on every experiment record.
+
 ### 2026-11-02 · Code fixes, concept names and personas (naming audit)
 - **Decided by:** creative lead.
 - **Codes:** `n62Wt` is `n6f2Wt` (banner); `a2Ef3Y` is `a2Ef3y` (letter case); the *wanted* ads coded `h7km3n` or `H7kM3N` are the wanted concept `a2Ef3y` (`H7kM3N` stays *airport*). By the same rule (letter case is not a new concept) `H7kM3n`, `c0kM3N`, `k4rm9p`, `P8c7ao` merge into `H7kM3N`, `C0kM3N`, `k4Rm9p`, `p8C7aO`. Kept in `core/code_aliases.csv`; the engine merges confirmed rows. `j4g89om` → `4g89om` still to confirm.

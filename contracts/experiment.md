@@ -10,6 +10,7 @@ sections: [Hypothesis, Prediction, Evidence, Options not chosen, Inspiration use
 generated_blocks: [results]
 written_by:
   everything except results and status: brainstormer, with the strategist, when the brief is agreed
+  core/concepts.csv row for a new code: brainstormer, when the brief is approved (checks/new_concept.py first)
   designer: brainstormer or the strategist, when known
   results block and status: engine/brain_sync.py, every Monday
   Lesson: strategist + designer at the retro (the brainstormer can write it for them)
@@ -23,6 +24,10 @@ gets its own result row.
 
 - `move` is one of the playbook moves (tools/brainstormer/playbook.md). It lets us learn which kind of
   refresh works for which mind.
+- `concept_code` is picked with `python3 checks/new_concept.py new` and checked with `... check`; a new code
+  is added to `core/concepts.csv` (code, name, confirmed, date, EXP id) when the brief is approved. The
+  validator fails a record whose code isn't registered, whose name differs from the registry, or whose ad
+  names in the Brief break core/naming-ad-v5.md (same checks as `... names`).
 - `Prediction` must be checkable from the exports: e.g. "takes 20%+ of spend in week 1 in at least 2 of
   the 3 adsets, and SlavicFemaleLover · iOS · EN is back at 0.40+ by week 4".
 - `Options not chosen` keeps the other options with their hypotheses, for the next round.

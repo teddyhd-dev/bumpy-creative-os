@@ -78,8 +78,16 @@ LEGACY_PERSONA = [
 LEGACY_LANG = {"ENG": "EN", "ES": "ES", "PT": "PT", "TH": "TH", "ID": "ID", "JP": "JP",
                "KR": "KR", "RU": "RU", "PL": "PL", "UA": "UA", "TR": "TR", "DE": "DE",
                "FR": "FR", "CH": "CH", "NL": "NL", "NO": "NO", "VN": "VN", "IT": "IT", "IN": "EN"}
-# persona spellings in adset names → the canonical name (core/naming-adset-v8.md)
-PERSONA_ALIAS = {"IntlFriendFinder": "InternationalFriendFinder"}
+# persona spellings → the canonical name: core/persona_aliases.csv (one home for every tool)
+def _persona_aliases():
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "core", "persona_aliases.csv")
+    if not os.path.exists(p):
+        return {}
+    a = pd.read_csv(p, dtype=str).fillna("")
+    return dict(zip(a.spelling, a.persona))
+
+
+PERSONA_ALIAS = _persona_aliases()
 
 
 def parse_name(name: str) -> dict:
@@ -110,6 +118,7 @@ def parse_name(name: str) -> dict:
         objective = "Sales"
     else:
         objective = "Purchase"
+    persona = PERSONA_ALIAS.get(persona, persona)
     return dict(version="legacy", persona=persona, subangle="", os=os_, geo=geo, lang=lang,
                 gender="", objective=objective, bid="", modifier="", launch="")
 

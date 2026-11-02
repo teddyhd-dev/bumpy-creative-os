@@ -33,7 +33,7 @@ from personas import load_cards  # noqa: E402
 from settings import BARS  # noqa: E402
 from tickets import concept_weeks, short_label  # noqa: E402
 from creative_relay import load_variants  # noqa: E402
-from naming_audit import taxonomy  # noqa: E402
+from naming_audit import taxonomy, test_labels  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "output", "data")
@@ -276,7 +276,7 @@ def prebrief(t, n_tickets, G, runs, V, D, aw, acc, last_ad_week, bar, tickets_by
     aid = t["adset_id"]
     g = G.set_index("adset_id")
     os_ = g.os.get(aid, "")
-    L = [f"Let's brainstorm {t['id']}: {t['adset']} (mind {t['mind']})",
+    L = [f"Let's brainstorm {t['id']}: {t['adset']} " + (f"(mind {t['mind']})" if t["mind"] else "(a test adset, no persona)"),
          f"Adset name: {t.get('name', '')}",
          f"Ticket: {t['type']} · rank {t['rank']} of {n_tickets} · {str(t.get('status', '')).lstrip('✅🔻🆘🚀⚠️ ')} · {t['why']}"]
     h = t.get("hist") or {}
@@ -385,7 +385,7 @@ def main():
     Q = pd.read_csv(os.path.join(OUT, "tk_queue.csv"), dtype={"adset_id": str})
     cards = load_cards()
     exps = load_exps()
-    G_ok = G[G.mind_ok]
+    G_ok = G[G.mind_ok & ~G.persona.isin(test_labels())]      # tests (InstagramPost, BrandTest) are not audiences
 
     # registry
     reg = G_ok.groupby("mind").agg(persona=("persona", "first"), language=("lang", "first"),
@@ -546,7 +546,7 @@ def main():
     accdf = aw.groupby(["week", "os"])[["spend", "rev", "impressions", "installs", "clicks"]].sum()
     acc = {k: v.to_dict() for k, v in accdf.iterrows()}
     for t in q["tickets"]:
-        t["mind"] = f"{t['persona']}-{LANG_ALIAS.get(t['lang'], t['lang'])}"
+        t["mind"] = "" if t["persona"] in test_labels() else f"{t['persona']}-{LANG_ALIAS.get(t['lang'], t['lang'])}"
         t["brief"] = brief_of.get(t["id"])
         rr = runs[runs.adset_id == t["adset_id"]].sort_values("start")
         t["top_ad"] = rr.top_ad.iloc[-1] if len(rr) else ""

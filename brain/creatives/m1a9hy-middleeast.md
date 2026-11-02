@@ -22,8 +22,8 @@ decoded: false
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| MiddleEastern-EN | MiddleEastern · iOS · EN | 2026-01-05 | 2026-03-02 | 5 | 68% | $7.0k |
-| MiddleEastern-EN | MiddleEastern · Android · EN | 2026-01-05 | 2026-02-16 | 4 | 71% | $3.5k |
+| MiddleEasternMaleLover-EN | MiddleEasternMaleLover · iOS · EN | 2026-01-05 | 2026-03-02 | 5 | 68% | $7.0k |
+| MiddleEasternMaleLover-EN | MiddleEasternMaleLover · Android · EN | 2026-01-05 | 2026-02-16 | 4 | 71% | $3.5k |
 
 ### Variants (full ad names, 5 in total, top 10 by spend)
 - `MiddleEastLover-US-m1A9hY-middleeast-airportview-VID-Batch2025Week51` · $8.7k · 2 adsets

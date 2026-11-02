@@ -7,7 +7,7 @@ file short: it points to where things are. Read only what your task needs.
 ## Where things are
 | Folder | What | Who writes |
 |---|---|---|
-| `core/` | The foundation every tool reads: `spec.md` (rules, the 0.40 bar, verdicts), `naming-adset-v8.md`, `naming-ad-v5.md`, `team.csv`, `minds.csv` (registry of minds), `concepts.csv` (every concept code and its name), `code_aliases.csv` (confirmed code fixes), `decisions.md` | the creative lead (changes reviewed); the engine adds new rows to `minds.csv` and `concepts.csv` |
+| `core/` | The foundation every tool reads: `spec.md` (rules, the 0.40 bar, verdicts), `naming-adset-v8.md`, `naming-ad-v5.md`, `team.csv`, `minds.csv` (registry of minds), `concepts.csv` (every concept code and its name), `code_aliases.csv` (confirmed code fixes), `decisions.md` | the creative lead (changes reviewed); the engine adds new rows to `minds.csv` and `concepts.csv` (from ad names); the brainstormer adds a new code to `concepts.csv` when a brief is approved |
 | `contracts/` | The formats tools share (mind, history, creative, experiment, state). Front matter = the rules `checks/validate.py` enforces | the creative lead (changes reviewed) |
 | `brain/minds/<Persona>-<LANG>/` | The persona clone: `mind.md` (current understanding + facts block) and `history.md` (append-only diary) | brainstormer + engine |
 | `brain/creatives/` | One file per concept: decode (first second, hook, message, why) + where it ran; snapshots in `img/` | brainstormer + engine |
@@ -31,4 +31,4 @@ file short: it points to where things are. Read only what your task needs.
 3. Never edit, move or delete anything in `data/raw/`. Don't upload data anywhere outside this repo; no credentials in the repo.
 4. Don't change thresholds, the bar or ROAS zones without the creative lead; log decisions in `core/decisions.md` and the spec changelog.
 5. Never compare Meta ROAS across the Singular switch (iOS 23 Feb, Android 9 Mar 2026) or Meta's ROAS with TikTok's (`core/spec.md` §3.3–3.4). Judge creatives by delivery (week-1 share, became #1) and the adset's relative ROAS, never by their own ROAS row.
-6. Before committing: `python3 checks/validate.py` must pass. Commit messages say which tool: `brainstorm: …`, `engine: …`, `report: …`, `core: …`.
+6. New concept codes and ad names go through `python3 checks/new_concept.py` before they reach a brief. Before committing: `python3 checks/validate.py` must pass. Commit messages say which tool: `brainstorm: …`, `engine: …`, `report: …`, `core: …`.

@@ -31,10 +31,27 @@ AWARE = {"Unaware", "ProblemAware", "SolutionAware", "ProductAware", "MostAware"
 SEV = {"error": 0, "warn": 1, "info": 2}
 
 
-def taxonomy():
-    s = open(os.path.join(ROOT, "core", "naming-adset-v8.md"), encoding="utf-8").read()
-    part = s[s.index("### Canonical Persona List"):s.index("### SubAngle")]
-    return set(re.findall(r"^\| `([A-Za-z]+)` \|", part, flags=re.M))
+def _naming_doc():
+    return open(os.path.join(ROOT, "core", "naming-adset-v8.md"), encoding="utf-8").read()
+
+
+def taxonomy(include_past=True):
+    """Canonical personas from core/naming-adset-v8.md (current list, plus past personas by default)."""
+    s = _naming_doc()
+    end = s.index("### Past personas") if "### Past personas" in s else s.index("### SubAngle")
+    names = set(re.findall(r"^\| `([A-Za-z]+)` \|", s[s.index("### Canonical Persona List"):end], flags=re.M))
+    if include_past and "### Past personas" in s:
+        names |= set(re.findall(r"^\| `([A-Za-z]+)` \|", s[s.index("### Past personas"):s.index("### SubAngle")], flags=re.M))
+    return names
+
+
+def test_labels():
+    """Adset 'personas' that are tests, not audiences (core/naming-adset-v8.md, 'Not personas')."""
+    s = _naming_doc()
+    if "### Not personas" not in s:
+        return set()
+    part = s[s.index("### Not personas"):s.index("### SubAngle")]
+    return set(re.findall(r"`([A-Za-z]+)`", part.split("\n\n")[1])) - {"General"}
 
 
 def norm_lang(x):
@@ -44,6 +61,7 @@ def norm_lang(x):
 
 def main():
     canon = taxonomy()
+    tests = test_labels()
     team = set(pd.read_csv(os.path.join(ROOT, "core", "team.csv")).code)
     d = load_ads()
     d = d[d.spend.fillna(0) > 0].copy()
@@ -241,7 +259,7 @@ def main():
     for aid, r in G[G.spend_total > 0].iterrows():
         kw = dict(adset=r.short, adset_id=aid, adset_persona=r.persona, adset_lang=r.lang, spend=round(r.spend_total, 2),
                   first_week=r.first_week, last_week=r.last_week, ad_name=r["name"])
-        if r.persona not in canon and r.persona not in ("Unknown",):
+        if r.persona not in canon and r.persona not in ("Unknown",) and r.persona not in tests:
             add("warn", "adset persona not on taxonomy", f"persona '{r.persona}' is not on the canonical list",
                 "Add it to the taxonomy (core/naming-adset-v8.md) or use the canonical name", **kw)
         if r.lang in ("JA", "KO", "UK", "ZH", "VI"):
