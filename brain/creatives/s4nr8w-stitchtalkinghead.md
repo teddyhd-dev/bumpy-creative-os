@@ -26,4 +26,10 @@ decoded: false
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-01-05 | 2026-02-09 | 5 | 56% | $887 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · iOS · EN | 2025-12-01 | 2025-12-22 | 2 | 87% | $4.5k |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2025-12-01 | 2025-12-01 | 0 | 15% | $3 |
+
+### Variants (full ad names, 4 in total, top 10 by spend)
+- `BLK-US-S4nR8W-StitchTalkingHead-BlackManQuestion-VID-Batch2025Week47` · $11.1k · 3 adsets
+- `BLK-US-S4nR8W-StitchTalkingHead-LatinaStitch-VID-Batch2025Week47` · $1.8k · 2 adsets
+- `BLK-US-S4nR8W-StitchTalkingHead-Blackwomanquestion-VID-Batch2025Week47` · $1.1k · 3 adsets
+- `BLK-US-S4nR8W-StitchTalkingHead-Asianstitch-VID-Batch2025Week47` · $1.0k · 2 adsets
 <!-- generated:end facts -->

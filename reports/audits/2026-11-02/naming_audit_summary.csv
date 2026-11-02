@@ -1,0 +1,18 @@
+severity,check,issues,spend
+error,likely typo of another code,6,2873402.18
+error,code case collision,5,2209895.97
+error,"one code, several concepts",13,1525186.9000000001
+error,persona mismatch,18,46447.04
+warn,persona not canonical in ad name,86,4772418.19
+warn,adset persona not on taxonomy,61,924163.98
+warn,concept name written several ways,4,285821.37
+warn,unreadable name,94,261630.94999999998
+warn,code format,89,131281.68
+warn,language written two ways,11,67190.29
+warn,language mismatch,12,36157.79
+warn,adset language unreadable,13,16640.170000000002
+warn,batch,25,10146.78
+warn,format,4,1828.23
+info,copy or file suffix,1,6675851.63
+info,adset separators,1,4451165.51
+info,adset spacing,6,73706.84

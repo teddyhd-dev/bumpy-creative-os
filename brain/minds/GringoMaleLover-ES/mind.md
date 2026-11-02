@@ -40,29 +40,42 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · ES · ES | 🔻 Falling | $1.4k | 0.38 | n6f2Wt banner (2026-08-24, 7 wk) |
-| GringoMaleLover · iOS · ES · ES | 🆘 Critical | $1.1k | 0.24 | n6f2Wt banner (2026-08-24, 7 wk) |
+| GringoMaleLover · Android · ES · ES | 🔻 Falling | $1.4k | 0.38 | n6f2Wt banner (since 2026-08-24, 7 wk) |
+| GringoMaleLover · iOS · ES · ES | 🆘 Critical | $1.1k | 0.24 | n6f2Wt banner (since 2026-08-24, 7 wk) |
 
 **Open tickets:** T-298889 Decaying (Android · ES · ES: Under 0.40 and falling: ROAS 0.38 from 0.47); T-293353 Decaying (iOS · ES · ES: ROAS 0.24 (prev 0.25), under 0.32)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GringoMaleLover · Android · ES · ES | n6f2Wt banner | 2026-08-24 | 7 | 80% |
-| GringoMaleLover · iOS · ES · ES | n6f2Wt banner | 2026-08-24 | 7 | 70% |
-| GringoMaleLover · iOS · ES · ES | 4Bm9of banner | 2026-08-17 | 1 | 22% |
-| GringoMaleLover · Android · ES · ES | n1wM3B omaze | 2026-08-17 | 1 | 29% |
-| GringoMaleLover · Android · ES · ES | 84n6r9 facemask | 2026-08-10 | 1 | 17% |
-| GringoMaleLover · Android · ES · ES | 7nf3oE slideshow | 2026-07-27 | 2 | 44% |
-| GringoMaleLover · iOS · ES · ES | n6f2Wt banner | 2026-07-13 | 5 | 37% |
-| GringoMaleLover · Android · ES · ES | F4z7K2 fastcarousel | 2026-07-13 | 2 | 39% |
-| GringoMaleLover · iOS · ES · ES | 4Bm9of banner | 2026-06-29 | 2 | 35% |
-| GringoMaleLover · Android · ES · ES | 4Bm9of banner | 2026-06-22 | 3 | 53% |
-| GringoMaleLover · iOS · ES · ES | n6f2Wt banner | 2026-06-22 | 1 | 71% |
-| GringoMaleLover · iOS · ES · ES | 4Bm9of banner | 2026-06-15 | 1 | 39% |
-| GringoMaleLover · iOS · ES · ES | n6f2Wt banner | 2026-06-01 | 2 | 59% |
-| GringoMaleLover · Android · ES · ES | n6f2Wt banner | 2026-06-01 | 3 | 60% |
-| GringoMaleLover · iOS · ES · ES | 4Bm9of banner | 2026-05-11 | 3 | 55% |
+- 2026-08-24 · GringoMaleLover · Android · ES · ES · n6f2Wt banner · 7 wk at 80% of spend  
+  top ad: `GringoLover-ES-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
+- 2026-08-24 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 7 wk at 70% of spend  
+  top ad: `GringoLover-ES-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
+- 2026-08-17 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 1 wk at 22% of spend  
+  top ad: `Gringolover-ES-4Bm9of-banner-WomanFeetInsideSportsCar-MuchosGringosEnBumpySaliendoYTratandoALasLatinasComoPrincesas-status-combopic-VID-Batch2026Week17`
+- 2026-08-17 · GringoMaleLover · Android · ES · ES · n1wM3B omaze · 1 wk at 29% of spend  
+  top ad: `GringoLover-ES-n1wM3B-Omaze-Earth-VID-Batch2026Week11`
+- 2026-08-10 · GringoMaleLover · Android · ES · ES · 84n6r9 facemask · 1 wk at 17% of spend  
+  top ad: `GringoLover-ES-84n6r9-FaceMask-Sheet-VID-Batch2026Week07`
+- 2026-07-27 · GringoMaleLover · Android · ES · ES · 7nf3oE slideshow · 2 wk at 44% of spend  
+  top ad: `Gringolover-ES-7nf3oE-slideshow-LatinaWithItalianMan-HayMasGringosQueriendoSalirConLatinasDeLoQueImaginas-wantingtodate-morethanyouimagine-VID-Batch2026Week17`
+- 2026-07-13 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 5 wk at 37% of spend  
+  top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
+- 2026-07-13 · GringoMaleLover · Android · ES · ES · F4z7K2 fastcarousel · 2 wk at 39% of spend  
+  top ad: `GringoLover-ES-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12`
+- 2026-06-29 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 2 wk at 35% of spend  
+  top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
+- 2026-06-22 · GringoMaleLover · Android · ES · ES · 4Bm9of banner · 3 wk at 53% of spend  
+  top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
+- 2026-06-22 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 1 wk at 71% of spend  
+  top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
+- 2026-06-15 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 1 wk at 39% of spend  
+  top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
+- 2026-06-01 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 2 wk at 59% of spend  
+  top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
+- 2026-06-01 · GringoMaleLover · Android · ES · ES · n6f2Wt banner · 3 wk at 60% of spend  
+  top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
+- 2026-05-11 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 3 wk at 55% of spend  
+  top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
 
 ### Fatigue clock
 A #1 here has led a median 3 weeks (24 finished reigns). Longest: H7kM3N airport, 8 weeks from 2026-03-16.

@@ -40,4 +40,16 @@ decoded: false
 | ChristianMatchWorldwide-EN | ChristianMatchWorldwide · iOS · EN · US | 2026-08-17 | 2026-10-05 | 0 | 1% | $27 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2026-08-17 | 2026-09-21 | 0 | 0% | $17 |
 | SexyFemaleLover-EN | SexyFemaleLover · iOS · EN · Casual | 2026-08-24 | 2026-10-05 | 0 | 0% | $15 |
+
+### Variants (full ad names, 13 in total, top 10 by spend)
+- `AsianFemaleLover-US-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-lonely23korea-recommendation-ProblemAware-IMG-Batch2026Week33` · $32.3k · 2 adsets
+- `PassportBro-US-Q7mZ2x-POVBAIT-FilipinaCloseup-lonely22philippines-recommendation-ProblemAware-IMG-Batch2026Week33` · $11.4k · 3 adsets
+- `LatinaFemaleLover-US-Q7mZ2x-POVBAIT-VenezuelanFemaleCloseup-lonely25venezuela-recommendation-ProblemAware-IMG-Batch2026Week33` · $2.3k · 2 adsets
+- `LatinaFemaleLoverES-ES-Q7mZ2x-POVBAIT-VenezuelanFemaleCloseup-serastuvenezuela-recommendation-ProblemAware-IMG-Batch2026Week33` · $2.0k · 3 adsets
+- `LocalDatingFatigue-US-Q7mZ2x-POVBAIT-IndonesianFemaleCloseup-lonely26indonesia-recommendation-ProblemAware-IMG-Batch2026Week33` · $1.0k · 1 adset
+- `MatureDating-US-Q7mZ2x-POVBAIT-FilipinaCloseup-lonely29philippines-recommendation-ProblemAware-IMG-Batch2026Week33` · $416 · 2 adsets
+- `ChristianMatchWorldwidePT-PT-Q7mZ2x-POVBAIT-BrazilianFemaleCrossCloseup-serastubrasil-recommendation-ProblemAware-IMG-Batch2026Week33` · $348 · 1 adset
+- `AsianFemaleLover-TR-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-Lonely23KoreaWantsToTalkMaybeYou-recommendation-ProblemAware-IMG-Batch2026Week36` · $224 · 1 adset
+- `AsianFemaleLover-TR-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-Lonely23KoreaWantsToTalkMaybeYou-recommendation-ProblemAware-VID-Batch2026Week36` · $203 · 1 adset
+- `TurkishGeneral-TR-Q7mZ2x-POVBAIT-IndonesianFemaleCloseup-belkisensin-recommendation-ProblemAware-IMG-Batch2026Week33` · $148 · 1 adset
 <!-- generated:end facts -->

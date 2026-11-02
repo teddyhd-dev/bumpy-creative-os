@@ -35,11 +35,23 @@ decoded: false
 | General-PT | General · iOS · PT | 2026-01-05 | 2026-03-09 | 0 | 2% | $258 |
 | General-TH | General · Android · TH | 2025-12-15 | 2026-01-12 | 0 | 4% | $114 |
 | General-ID | General · Android · ID | 2025-12-29 | 2026-01-19 | 0 | 7% | $90 |
-| General-JA | General · iOS · JA | 2025-12-15 | 2026-02-02 | 0 | 1% | $71 |
+| General-JP | General · iOS · JA | 2025-12-15 | 2026-02-02 | 0 | 1% | $71 |
 | General-EN | General · iOS · EN | 2025-12-15 | 2025-12-22 | 0 | 2% | $71 |
 | General-ES | General · Android · ES | 2025-12-15 | 2026-02-02 | 0 | 1% | $57 |
 | General-EN | General · Android · EN | 2025-12-15 | 2026-02-02 | 0 | 1% | $49 |
 | General-TR | General · Android · TR | 2025-12-29 | 2026-03-02 | 0 | 1% | $33 |
-| General-KO | General · iOS · KO | 2025-12-15 | 2026-02-02 | 0 | 3% | $28 |
+| General-KR | General · iOS · KO | 2025-12-15 | 2026-02-02 | 0 | 3% | $28 |
 | General-ES | General · iOS · ES | 2025-12-15 | 2025-12-15 | 0 | 1% | $23 |
+
+### Variants (full ad names, 17 in total, top 10 by spend)
+- `muslim-US-d0E4h-dual-muslim-wallahi1-VID-Batch2025Week48` · $9.6k · 6 adsets
+- `muslim-US-d0E4h-dual-muslim-disgustfemale-VID-Batch2025Week48` · $1.8k · 8 adsets
+- `muslim-US-d0E4h-dual-muslim-wallahi2-VID-Batch2025Week48` · $1.6k · 3 adsets
+- `general-BR-d0E4h-dual-diaspora-brazilfemale-VID-Batch2025Week48` · $1.3k · 3 adsets
+- `general-ES-d0E4h-dual-diaspora-latamfemale-VID-Batch2025Week48` · $961 · 7 adsets
+- `general-ID-d0E4h-dual-diaspora-indonesiafemale-VID-Batch2025Week48` · $469 · 2 adsets
+- `general-TH-d0E4h-dual-diaspora-thaimale-VID-Batch2025Week48` · $240 · 2 adsets
+- `general-TH-d0E4h-dual-diaspora-thaifemale-VID-Batch2025Week48` · $220 · 2 adsets
+- `general-IN-d0E4h-dual-diaspora-indiafemale-VID-Batch2025Week48` · $109 · 2 adsets
+- `general-JP-d0E4h-dual-diaspora-japanesefemale-VID-Batch2025Week48` · $67 · 1 adset
 <!-- generated:end facts -->

@@ -30,4 +30,8 @@ decoded: false
 | MatureDating-EN | MatureDating · iOS · EN | 2026-01-12 | 2026-02-02 | 0 | 4% | $20 |
 | MatureDating-EN | MatureDating · Android · EN | 2025-12-08 | 2026-01-12 | 0 | 0% | $1 |
 | MatureDating-EN | MatureDating · Android · EN | 2025-12-08 | 2026-01-12 | 0 | 1% | $1 |
+
+### Variants (full ad names, 2 in total, top 10 by spend)
+- `US-i9D7eK-Runoutoftime-3040-female-VID-Batch2025Week44` · $8.9k · 6 adsets
+- `US-i9D7eK-Runoutoftime-3040-male-VID-Batch2025Week44` · $472 · 6 adsets
 <!-- generated:end facts -->

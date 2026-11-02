@@ -33,4 +33,8 @@ decoded: false
 | SlavicFemaleLover-EN | SlavicFemaleLover · Android · EN | 2026-05-18 | 2026-06-15 | 0 | 9% | $210 |
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-08-10 | 2026-08-24 | 0 | 14% | $197 |
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-08-03 | 2026-08-17 | 0 | 3% | $13 |
+
+### Variants (full ad names, 2 in total, top 10 by spend)
+- `Chinese-US-r04k2B-pickyourasian-3AsianWomen-ItsTimeforYoutoDateAsianGirl-Options-FaceCovered-VID-Batch2026Week15` · $33.3k · 10 adsets
+- `Chinese-US-r04k2B-pickyourasian-3AsianMen-ItsTimeforYoutoDateAsianBoy-Options-FaceCovered-VID-Batch2026Week15` · $10.3k · 7 adsets
 <!-- generated:end facts -->

@@ -29,4 +29,9 @@ decoded: false
 | SingleMom-EN | SingleMom · iOS · EN | 2026-02-23 | 2026-04-27 | 0 | 2% | $88 |
 | PlusSizeWomen-EN | PlusSizeWomen · Android · EN | 2026-04-20 | 2026-05-04 | 0 | 8% | $84 |
 | PlusSizeWomen-EN | PlusSizeWomen · iOS · EN | 2026-04-20 | 2026-04-27 | 0 | 7% | $18 |
+
+### Variants (full ad names, 3 in total, top 10 by spend)
+- `PlusSize-US-V0E7hW-dancingstairs-Pool-VID-Batch2026Week11` · $2.9k · 5 adsets
+- `PlusSize-US-V0E7hW-dancingstairs-Outdoor-VID-Batch2026Week11` · $357 · 3 adsets
+- `SingleMom-US-V0E7hW-dancingstairs-latinagirlwhitemale-VID-Batch2026Week07` · $282 · 2 adsets
 <!-- generated:end facts -->

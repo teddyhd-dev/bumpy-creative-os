@@ -24,4 +24,14 @@ decoded: false
 |---|---|---|---|---|---|---|
 | GirlWantsToRelocate-EN | GirlWantsToRelocate · iOS · EN | 2026-04-13 | 2026-06-08 | 4 | 96% | $13.7k |
 | General-EN | General · iOS · EN | 2026-05-04 | 2026-05-11 | 0 | 4% | $12 |
+
+### Variants (full ad names, 8 in total, top 10 by spend)
+- `PassportGirl-US-bRk4t3-banner-envelope-IMG-Batch2026Week14` · $12.0k · 2 adsets
+- `PassportGirl-US-bRk4t3-banner-envelope-VID-Batch2026Week14` · $737 · 1 adset
+- `PassportGirl-US-bRk4t3-banner-colorfultext-IMG-Batch2026Week14` · $341 · 1 adset
+- `PassportGirl-US-bRk4t3-banner-mirror-IMG-Batch2026Week14` · $162 · 1 adset
+- `PassportGirl-US-bRk4t3-banner-mirror-VID-Batch2026Week14` · $155 · 1 adset
+- `PassportGirl-US-bRk4t3-banner-rearview-IMG-Batch2026Week14` · $145 · 1 adset
+- `PassportGirl-US-bRk4t3-banner-rearview-VID-Batch2026Week14` · $83 · 1 adset
+- `PassportGirl-US-bRk4t3-banner-colorfultext-VID-Batch2026Week14` · $60 · 1 adset
 <!-- generated:end facts -->

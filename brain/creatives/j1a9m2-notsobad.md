@@ -42,4 +42,16 @@ decoded: false
 | General-RU | General · Android · RU | 2025-12-22 | 2026-04-13 | 0 | 8% | $434 |
 | General-UA | General · Android · UA | 2026-04-06 | 2026-08-10 | 0 | 29% | $409 |
 | General-ES | General · Android · ES | 2025-12-01 | 2026-02-09 | 0 | 4% | $381 |
+
+### Variants (full ad names, 27 in total, top 10 by spend)
+- `US-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46` · $44.0k · 3 adsets
+- `SPANISH ES-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46` · $10.4k · 5 adsets
+- `US-j1A9m2-notsobad-passportbro-whiteguy-VID-Batch2025Week46` · $3.3k · 4 adsets
+- `PORTUGUESE BR-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46` · $1.8k · 4 adsets
+- `PORTUGUESE BR-j1A9m2-notsobad-passportgirl-latina-IMG-Batch2025Week46` · $1.4k · 3 adsets
+- `indianboydream-US-j1A9m2-notsobad-Indian-VID-Batch2025Week49` · $1.4k · 5 adsets
+- `Slavic-UA-j1A9m2-notsobad-Slavicfemale-VID-Batch2025Week50` · $1.1k · 4 adsets
+- `Slavic-RU-j1A9m2-notsobad-Slavicfemale-VID-Batch2025Week50` · $1.0k · 1 adset
+- `THAI TH-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46` · $944 · 2 adsets
+- `Slavic-RU-j1A9m2-notsobad-Slavicfemale-IMG-Batch2025Week50` · $823 · 3 adsets
 <!-- generated:end facts -->

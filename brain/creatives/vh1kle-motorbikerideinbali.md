@@ -42,4 +42,16 @@ decoded: false
 | GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-06-15 | 2026-10-05 | 0 | 3% | $201 |
 | AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-06-15 | 2026-07-13 | 0 | 2% | $129 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-06-15 | 2026-10-05 | 0 | 1% | $101 |
+
+### Variants (full ad names, 40 in total, top 10 by spend)
+- `Gringolover-PT-vh1kle-LatinaGirlAmericanGuy-TemMuitoGringoTratandoLatinaComoPrincesaNoBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $2.8k · 2 adsets
+- `Gringolover-ES-vh1kle-LatinaGirlAmericanGuy-MuchosGringosLesDanTratodePrincesa247ALasLatinasenBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $2.7k · 2 adsets
+- `304050-ES-vh1kle-MatureLatinaWithHotItalianManVibingInTheCar-EstaBienEmpezarDeNuevoSalirConAlguienNuevoDeOtroPaisEnBumpy-startover-rooflesscar-IMG-Batch2026Week23` · $1.7k · 2 adsets
+- `304050-US-vh1kle-VespaRideInBali-StartFreshAndDateSomeoneOutsideYourCountryFromBumpy-startfresh-scenery-VID-Batch2026Week23` · $1.4k · 2 adsets
+- `Muslim-US-vh1kle-MuslimCoupleInDubai-MashaallahHalalLoveFromDatingAppStillExistsGiveBumpyATry-halal-rooflesscar-VID-Batch2026Week23` · $1.4k · 2 adsets
+- `Muslim-US-vh1kle-MuslimCoupleInDubai-MashaallahHalalLoveFromDatingAppStillExistsGiveBumpyATry-halal-rooflesscar-IMG-Batch2026Week23` · $732 · 2 adsets
+- `PassportBro-US-vh1kle-MotorbikeRideinBali-HowItFeelsDatingGirlsOutsideAmericaWhoDontCareAboutHowMuchYouMake-money-riderPOV-VID-Batch2026Week23` · $712 · 4 adsets
+- `GringoLover-PH-vh1kle-SEAGirlWhiteGuyInsideCar-DatingAFAMSMeansReceing247PrincessTreatmentGetYoursOnBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $706 · 2 adsets
+- `PassportGirl-US-vh1kle-SEAWomanBlondeGuyInsideCar-BeingPassengerPrincessBecauseYouDateManAbroadFromBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $589 · 1 adset
+- `LatinaLover-US-vh1kle-LatinaWomanBlondeGuyVibingInTheCar-HowItFeelsDatingLatinaFromBumpyFindYours-vibingtogether-POVcarrearview-IMG-Batch2026Week23` · $587 · 3 adsets
 <!-- generated:end facts -->

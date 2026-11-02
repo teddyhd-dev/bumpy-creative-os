@@ -36,20 +36,24 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| IntlFriendFinder · Android · ES · Friend | 🟠 Amber | $2.7k | 0.36 | q4Xr9m tweetoverlay (2026-08-17, 8 wk) |
-| IntlFriendFinder · iOS · ES · Friend | ✅ Healthy | $2.1k | 0.42 | q4Xr9m tweetoverlay (2026-08-17, 8 wk) |
+| IntlFriendFinder · Android · ES · Friend | 🟠 Amber | $2.7k | 0.36 | q4Xr9m tweetoverlay (since 2026-08-17, 8 wk) |
+| IntlFriendFinder · iOS · ES · Friend | ✅ Healthy | $2.1k | 0.42 | q4Xr9m tweetoverlay (since 2026-08-17, 8 wk) |
 
 **Open tickets:** T-038097 Decaying (Android · ES · Friend: ROAS 0.36, under 0.40, not falling); T-999972 Due (iOS · ES · Friend: ROAS 0.42)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| IntlFriendFinder · iOS · ES · Friend | q4Xr9m tweetoverlay | 2026-08-17 | 8 | 68% |
-| IntlFriendFinder · Android · ES · Friend | q4Xr9m tweetoverlay | 2026-08-17 | 8 | 65% |
-| IntlFriendFinder · iOS · ES · Friend | w1Tr7K carousel | 2026-08-03 | 2 | 65% |
-| IntlFriendFinder · iOS · ES · Friend | S6j8tG excitement | 2026-07-27 | 1 | 40% |
-| IntlFriendFinder · iOS · ES · Friend | n6f2Wt banner | 2026-04-06 | 16 | 80% |
-| IntlFriendFinder · Android · ES · Friend | n6f2Wt banner | 2026-04-06 | 19 | 79% |
+- 2026-08-17 · IntlFriendFinder · iOS · ES · Friend · q4Xr9m tweetoverlay · 8 wk at 68% of spend  
+  top ad: `Friends-ES-q4Xr9m-TweetOverlay-Collageof4-siquieresamigosbumpy-recommendation-ProductAware-IMG-Batch2026Week31`
+- 2026-08-17 · IntlFriendFinder · Android · ES · Friend · q4Xr9m tweetoverlay · 8 wk at 65% of spend  
+  top ad: `Friends-ES-q4Xr9m-TweetOverlay-Collageof4-siquieresamigosbumpy-recommendation-ProductAware-IMG-Batch2026Week31`
+- 2026-08-03 · IntlFriendFinder · iOS · ES · Friend · w1Tr7K carousel · 2 wk at 65% of spend  
+  top ad: `Friends-ES-w1Tr7K-carousel-NYC-VID-Batch2026Week13`
+- 2026-07-27 · IntlFriendFinder · iOS · ES · Friend · S6j8tG excitement · 1 wk at 40% of spend  
+  top ad: `Friends-ES-S6j8tG-Excitement-MarkAirplane-VID-Batch2026Week13`
+- 2026-04-06 · IntlFriendFinder · iOS · ES · Friend · n6f2Wt banner · 16 wk at 80% of spend  
+  top ad: `Friends-ES-n6f2Wt-banner-carwindow-VID-Batch2026Week13`
+- 2026-04-06 · IntlFriendFinder · Android · ES · Friend · n6f2Wt banner · 19 wk at 79% of spend  
+  top ad: `Friends-ES-n6f2Wt-banner-carwindow-VID-Batch2026Week13`
 
 ### Fatigue clock
 A #1 here has led a median 9 weeks (4 finished reigns). Longest: n6f2Wt banner, 19 weeks from 2026-04-06.

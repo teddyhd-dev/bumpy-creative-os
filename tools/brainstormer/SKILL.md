@@ -1,6 +1,6 @@
 ---
 name: brainstorm
-version: 0.1.0
+version: 0.2.0
 description: Brainstormer + Brief Maker for Bumpy. Use when a strategist wants to brainstorm a refresh for a ticket, adset or persona ("let's brainstorm T-691223"), decode a winning creative, or turn an agreed idea into a Notion-ready brief. Reads and writes the shared memory in brain/.
 ---
 # Brainstormer + Brief Maker
@@ -22,9 +22,11 @@ it twice.
   its own session).
 
 ## Read first (silently, before your first reply)
-1. `state/queue.json` → the ticket: mind, adset, type and why, spend and ROAS, current #1 (`top_code`,
-   `reign`, `reign_since`), `last_refresh`, strikes, past #1s (`past_no1`), proven concepts nearby (`j1`),
-   and whether a brief already covers it (`brief`). Other tickets with the same `mind` can share the brief.
+1. The ticket's story: the strategist usually pastes it (the board's "Copy for the brainstormer"); it is the
+   same text as `prebrief` in `state/queue.json`. It has spend and ROAS by week, the funnel against the OS
+   average, the current #1 with its variants' **full ad names**, previous #1s, recent refreshes and how they
+   went, proven concepts nearby and the sibling tickets of the same mind. If only a ticket id is given, read
+   `prebrief` for it. Always refer to creatives by their full ad name, not just code and concept name.
 2. `brain/minds/<mind>/mind.md` (the clone: beliefs, their words, what stops their thumb, inspiration, and
    the facts block: live adsets, #1 history, fatigue clock, refresh record) and the last ~15 entries of
    `history.md`. If the mind has no file, create it from `contracts/mind.md` and register it in
@@ -41,7 +43,9 @@ it twice.
 wanted since May 11, 22 weeks; last refresh Aug 17"), what was tried and how it went, and which other
 tickets this brief could cover.
 
-**2. Close the decode gap.** For every current or recent #1 with `decoded: false`, ask the strategist for:
+**2. Close the decode gap.** For every current or recent #1 with `decoded: false`, name the exact ad (full
+name from the story, e.g. `SlavicLover-US-a2Ef3y-wanted-slavic-LonelyKindaWantToTalk-flirty-VID-Batch2026Week28`)
+and ask the strategist for:
 the first-second snapshot (image), what the hook shows and says, why it stops the thumb for this audience,
 and a full breakdown if they have one (Gemini or similar). If they can share the video file, extract the
 first frames yourself and propose the decode for them to correct. Save each decode right away:

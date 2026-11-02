@@ -39,4 +39,16 @@ decoded: false
 | GringoMaleLover-TR | GringoMaleLover · iOS · TR | 2026-02-23 | 2026-03-23 | 0 | 1% | $66 |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-02-23 | 2026-06-15 | 0 | 1% | $61 |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-02-23 | 2026-06-29 | 0 | 1% | $46 |
+
+### Variants (full ad names, 22 in total, top 10 by spend)
+- `PassportGirl-US-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07` · $2.2k · 1 adset
+- `304050-US-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07` · $905 · 3 adsets
+- `304050-US-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07` · $822 · 2 adsets
+- `GringoLover-TH-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07` · $540 · 2 adsets
+- `GringoLover-ID-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07GringoLover-ID-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07` · $448 · 2 adsets
+- `PassportGirl-US-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07` · $348 · 1 adset
+- `GringoLover-ID-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07GringoLover-ID-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07` · $303 · 2 adsets
+- `GringoLover-PH-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07` · $249 · 2 adsets
+- `GringoLover-PH-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07` · $175 · 2 adsets
+- `GringoLover-TH-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07` · $168 · 2 adsets
 <!-- generated:end facts -->

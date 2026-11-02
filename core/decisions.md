@@ -5,6 +5,10 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-02 · Language codes: country-style for now
+- **Decided by:** creative lead.
+- **What:** names keep country-style codes in the Language field (JP, KR, UA, CH, VN; ads write US for English) until the planned move to ISO 639-1. Minds and the naming audit read legacy JA/KO/UK/ZH/VI as JP/KR/UA/CH/VN, so one language is one mind.
+
 ### 2026-11-02 · Separate tools around one shared memory
 - **Decided by:** creative lead (Teddy).
 - **What:** the board keeps the ticket system only; briefs are written in a brainstorm session and pasted into Notion by the strategist (no Notion connection); the report becomes a weekly PDF in the house style; signals and brain dumps happen in the brainstorm for now; persona knowledge and the experiment log live in the repo's `brain/`; the strategist runs the brainstormer (Claude project or Codex).

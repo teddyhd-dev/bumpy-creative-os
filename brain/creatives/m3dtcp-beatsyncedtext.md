@@ -42,4 +42,16 @@ decoded: false
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-06-29 | 2026-10-05 | 0 | 2% | $296 |
 | IntlFriendFinder-ES | IntlFriendFinder · iOS · ES · Friend | 2026-06-29 | 2026-10-05 | 0 | 1% | $225 |
 | AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-06-29 | 2026-10-05 | 0 | 7% | $192 |
+
+### Variants (full ad names, 27 in total, top 10 by spend)
+- `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-IMG-Batch2026Week25` · $23.1k · 3 adsets
+- `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-VID-Batch2026Week25` · $5.4k · 3 adsets
+- `PassportBro-US-m3dtCp-beatsyncedtext-swimming-DatingAbroadIsHalfThePrice-cheapdating-IMG-Batch2026Week25` · $3.3k · 5 adsets
+- `InternationalFriends-CH-m3dtCp-beatsyncedtext-aerialMixedFriends-MakeFriendsFromDifferentCountries-makeintlfriends-VID-Batch2026Week25` · $1.9k · 2 adsets
+- `Gringolover-ID-m3dtCp-beatsyncedtext-aerialCoupleWalking-BanyakBuleMacarinCewekIndo-intldatinginterest-VID-Batch2026Week25` · $1.6k · 1 adset
+- `Christian-US-m3dtCp-beatsyncedtext-droneCandleEvent-MeetChristianSinglesAbroad-faithdating-IMG-Batch2026Week25` · $1.5k · 1 adset
+- `Gringolover-ES-m3dtCp-beatsyncedtext-AerialCoupleSnow-GringosBuscanLatinasMas-intldatinginterest-IMG-Batch2026Week25` · $1.4k · 2 adsets
+- `Gringolover-TH-m3dtCp-beatsyncedtext-aerialCoupleSnow-ForeignMenOnBumpyDatingThaiWomenAndTreatingLikePrincess-princesstreatment-VID-Batch2026Week25` · $816 · 2 adsets
+- `Gringolover-PH-m3dtCp-beatsyncedtext-aerialCoupleSnow-AFAMsFallForFilipinas-intldatinginterest-VID-Batch2026Week25` · $589 · 2 adsets
+- `AsianLover-US-m3dtCp-beatsyncedtext-swimmingcouple-DateAnAsianAbroad-dateabroad-IMG-Batch2026Week25` · $501 · 5 adsets
 <!-- generated:end facts -->

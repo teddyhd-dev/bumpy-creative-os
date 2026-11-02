@@ -39,17 +39,19 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · PT | 🆘 Critical | $1.1k | 0.27 | H7kM3N airport (2026-09-28, 2 wk) |
+| GirlWantsToRelocate · iOS · PT | 🆘 Critical | $1.1k | 0.27 | H7kM3N airport (since 2026-09-28, 2 wk) |
 
 **Open tickets:** T-317444 Decaying (iOS · PT: ROAS 0.27 (prev 0.19), under 0.32)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GirlWantsToRelocate · iOS · PT | H7kM3N airport | 2026-09-28 | 2 | 45% |
-| GirlWantsToRelocate · iOS · PT | Co3Mb0 coupleproof | 2026-08-10 | 7 | 56% |
-| GirlWantsToRelocate · iOS · PT | v8Gn7M pulseblack | 2026-07-27 | 2 | 49% |
-| GirlWantsToRelocate · iOS · PT | n6f2Wt banner | 2026-07-20 | 1 | 79% |
+- 2026-09-28 · GirlWantsToRelocate · iOS · PT · H7kM3N airport · 2 wk at 45% of spend  
+  top ad: `PassportGirl-PT-H7kM3N-Wanted-ItalianGuyInKitchen-QueroUmaNamoradaLatina-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
+- 2026-08-10 · GirlWantsToRelocate · iOS · PT · Co3Mb0 coupleproof · 7 wk at 56% of spend  
+  top ad: `PassportGirl-PT-Co3Mb0-CoupleProof-MixedCouplesCombo-NamoraEMudaTeParaOGringo-dateMoveAbroad-CompletelyUnaware-VID-Batch2026Week28`
+- 2026-07-27 · GirlWantsToRelocate · iOS · PT · v8Gn7M pulseblack · 2 wk at 49% of spend  
+  top ad: `PassportGirl-PT-v8Gn7M-PulseBlack-GirlWalking-HighlyRecommendDatingUAGringoFromBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
+- 2026-07-20 · GirlWantsToRelocate · iOS · PT · n6f2Wt banner · 1 wk at 79% of spend  
+  top ad: `PassportGirl-PT-n6f2Wt-Banner-Envelope-SuperRecomendoNamorarUmGringoNoBumpy-PersonalRecommendation-ProductAware-IMG-Batch2026Week280`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (3 finished reigns). Longest: Co3Mb0 coupleproof, 7 weeks from 2026-08-10.

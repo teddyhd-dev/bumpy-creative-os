@@ -40,28 +40,41 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · PT · PT | 🔻 Falling | $2.1k | 0.55 | H7kM3N airport (2026-09-07, 5 wk) |
+| GringoMaleLover · iOS · PT · PT | 🔻 Falling | $2.1k | 0.55 | H7kM3N airport (since 2026-09-07, 5 wk) |
 
 **Open tickets:** T-291846 Decaying (iOS · PT · PT: Green, but hook rate -22% vs 4-wk avg)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GringoMaleLover · iOS · PT · PT | H7kM3N airport | 2026-09-07 | 5 | 58% |
-| GringoMaleLover · Android · PT · PT | 84n6r9 facemask | 2026-08-31 | 1 | – |
-| GringoMaleLover · iOS · PT · PT | n6f2Wt banner | 2026-08-31 | 1 | 48% |
-| GringoMaleLover · Android · PT · PT | j4g89om iconicplaces | 2026-08-10 | 3 | 31% |
-| GringoMaleLover · Android · PT · PT | Mw4ucH fly | 2026-07-27 | 2 | 46% |
-| GringoMaleLover · iOS · PT · PT | H7kM3N airport | 2026-06-29 | 9 | 43% |
-| GringoMaleLover · Android · PT · PT | vh1kle motorbikerideinbali | 2026-06-29 | 4 | 65% |
-| GringoMaleLover · Android · PT · PT | n6f2Wt banner | 2026-06-01 | 4 | 70% |
-| GringoMaleLover · Android · PT · PT | iPohxY businessclass | 2026-05-25 | 1 | 92% |
-| GringoMaleLover · Android · PT · PT | 7nf3oE slideshow | 2026-05-18 | 1 | 78% |
-| GringoMaleLover · Android · PT · PT | j4g89om iconicplaces | 2026-05-11 | 1 | 36% |
-| GringoMaleLover · Android · PT · PT | m9Gh2d whisper | 2026-05-04 | 1 | 33% |
-| GringoMaleLover · iOS · PT · PT | v8Gn7M pulseblack | 2026-04-27 | 9 | 46% |
-| GringoMaleLover · iOS · PT · PT | H7kM3N airport | 2026-04-20 | 1 | 47% |
-| GringoMaleLover · Android · PT · PT | F4z7K2 fastcarousel | 2026-04-20 | 2 | 40% |
+- 2026-09-07 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 5 wk at 58% of spend  
+  top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
+- 2026-08-31 · GringoMaleLover · Android · PT · PT · 84n6r9 facemask · 1 wk at – of spend  
+  top ad: `GringoLover-PT-84n6r9-FaceMask-Clay-IMG-Batch2026Week07`
+- 2026-08-31 · GringoMaleLover · iOS · PT · PT · n6f2Wt banner · 1 wk at 48% of spend  
+  top ad: `GringoLover-PT-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
+- 2026-08-10 · GringoMaleLover · Android · PT · PT · j4g89om iconicplaces · 3 wk at 31% of spend  
+  top ad: `Gringolover-PT-j4g89om-IconicPlaces-Carnival-IMG-Batch2026Week08`
+- 2026-07-27 · GringoMaleLover · Android · PT · PT · Mw4ucH fly · 2 wk at 46% of spend  
+  top ad: `GringoLover-PT-Mw4ucH-Fly-Latinas-VID-Batch2026Week08`
+- 2026-06-29 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 9 wk at 43% of spend  
+  top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
+- 2026-06-29 · GringoMaleLover · Android · PT · PT · vh1kle motorbikerideinbali · 4 wk at 65% of spend  
+  top ad: `Gringolover-PT-vh1kle-LatinaGirlAmericanGuy-TemMuitoGringoTratandoLatinaComoPrincesaNoBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23`
+- 2026-06-01 · GringoMaleLover · Android · PT · PT · n6f2Wt banner · 4 wk at 70% of spend  
+  top ad: `Gringolover-PT-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-TemMaisGringoQuerendoNamorarBrasileiraDoQueVocaImagina-imagine-dating-VID-Batch2026Week19`
+- 2026-05-25 · GringoMaleLover · Android · PT · PT · iPohxY businessclass · 1 wk at 92% of spend  
+  top ad: `Gringolover-PT-iPohxY-BusinessClass-flight-BrasileiraGanhandoTratamentoPremiumByGringosnoBumpy-firstclasslife-luxury-VID-Batch2026Week20`
+- 2026-05-18 · GringoMaleLover · Android · PT · PT · 7nf3oE slideshow · 1 wk at 78% of spend  
+  top ad: `Gringolover-PT-7nf3oE-slideshow-LatinaWithItalianManWrappedInTowel-OsGringosNoBumpySaoObcecadosPorSairComLatinasDeBelezaExotica-obsessed-morethanyouimagine-VID-Batch2026Week17`
+- 2026-05-11 · GringoMaleLover · Android · PT · PT · j4g89om iconicplaces · 1 wk at 36% of spend  
+  top ad: `Gringolover-PT-j4g89om-IconicPlaces-Food-IMG-Batch2026Week08`
+- 2026-05-04 · GringoMaleLover · Android · PT · PT · m9Gh2d whisper · 1 wk at 33% of spend  
+  top ad: `GringoLover-PT-m9Gh2d-whisper-imagine-IMG-Batch2026Week12`
+- 2026-04-27 · GringoMaleLover · iOS · PT · PT · v8Gn7M pulseblack · 9 wk at 46% of spend  
+  top ad: `GringoLover-BR-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05`
+- 2026-04-20 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 1 wk at 47% of spend  
+  top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
+- 2026-04-20 · GringoMaleLover · Android · PT · PT · F4z7K2 fastcarousel · 2 wk at 40% of spend  
+  top ad: `GringoLover-BR-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (22 finished reigns). Longest: H7kM3N airport, 14 weeks from 2026-01-05.

@@ -42,4 +42,16 @@ decoded: false
 | GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-03-23 | 2026-05-04 | 0 | 16% | $225 |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-03-23 | 2026-04-20 | 0 | 2% | $182 |
 | General-PT | General · ? · PT | 2026-03-23 | 2026-05-11 | 0 | 2% | $154 |
+
+### Variants (full ad names, 17 in total, top 10 by spend)
+- `GringoLover-TH-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $2.8k · 2 adsets
+- `304050-US-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $1.4k · 2 adsets
+- `GringoLover-ID-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $1.3k · 2 adsets
+- `PassportGirl-US-n1wM3B-Omaze-Map-VID-Batch2026Week11` · $1.2k · 1 adset
+- `PassportBro-US-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $1.2k · 6 adsets
+- `PassportBro-US-n1wM3B-Omaze-Map-VID-Batch2026Week11` · $1.1k · 6 adsets
+- `GringoLover-ES-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $657 · 2 adsets
+- `General-BR-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $626 · 3 adsets
+- `Muslim-US-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $515 · 3 adsets
+- `General-ES-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $496 · 5 adsets
 <!-- generated:end facts -->

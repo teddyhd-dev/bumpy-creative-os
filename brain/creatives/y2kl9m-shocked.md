@@ -39,4 +39,16 @@ decoded: false
 | General-ES | General · iOS · ES | 2026-03-16 | 2026-04-13 | 0 | 0% | $0 |
 | General-EN | General · iOS · EN | 2025-12-01 | 2025-12-08 | 0 | 0% | $0 |
 | General-ES | General · iOS · ES | nan | 2026-01-26 | 0 | 0% | $0 |
+
+### Variants (full ad names, 12 in total, top 10 by spend)
+- `BLK-US-Y2kL9M-Shocked-Female-IMG-Batch2025Week470` · $7.1k · 6 adsets
+- `BLK-US-Y2kL9M-Shocked-WalkMale-IMG-Batch2025Week470` · $330 · 7 adsets
+- `EN-Y2kL9M-Shocked-Zeromatchfemale-1-VID-Batch2025Week39` · $233 · 3 adsets
+- `BLK-US-Y2kL9M-Shocked-WalkMale-VID-Batch2025Week47` · $97 · 3 adsets
+- `BLK-US-Y2kL9M-Shocked-Female-VID-Batch2025Week47` · $69 · 3 adsets
+- `ES-Y2kL9M-Shocked-Zeromatchfemale-1-VID-Batch2025Week39` · $46 · 5 adsets
+- `TR-Y2kL9M-Shocked-Zeromatchmale-1-VID-Batch2025Week39` · $12 · 1 adset
+- `EN-Y2kL9M-Shocked-Zeromatchmale-1-VID-Batch2025Week39` · $8 · 2 adsets
+- `TR-Y2kL9M-Shocked-Zeromatchfemale-1-VID-Batch2025Week39` · $3 · 1 adset
+- `EN-Y2kL9M-Shocked-Dateukrainianfemale-1-VID-Batch2025Week39` · $2 · 1 adset
 <!-- generated:end facts -->

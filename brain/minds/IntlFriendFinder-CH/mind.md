@@ -36,26 +36,44 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| IntlFriendFinder · iOS · CH · Friend | 🔻 Falling | $1.8k | 0.46 | n6f2Wt banner (2026-08-31, 6 wk) |
+| IntlFriendFinder · iOS · CH · Friend | 🔻 Falling | $1.8k | 0.46 | n6f2Wt banner (since 2026-08-31, 6 wk) |
 
 **Open tickets:** T-844172 Decaying (iOS · CH · Friend: Green, but hook rate -28% vs 4-wk avg)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| IntlFriendFinder · iOS · CH · Friend | n6f2Wt banner | 2026-08-31 | 6 | 43% |
-| IntlFriendFinder · Web · CH | m3dtCp beatsyncedtext | 2026-08-31 | 3 | 50% |
-| IntlFriendFinder · iOS · CH · Friend | q4Xr9m tweetoverlay | 2026-08-24 | 1 | 31% |
-| IntlFriendFinder · Web · CH | n6f2Wt banner | 2026-08-17 | 2 | 42% |
-| IntlFriendFinder · iOS · CH · Friend | n6f2Wt banner | 2026-07-20 | 5 | 37% |
-| IntlFriendFinder · iOS · CH · Friend | S6j8tG excitement | 2026-07-13 | 1 | 41% |
-| IntlFriendFinder · iOS · CH · Friend | n6f2Wt banner | 2026-07-06 | 1 | 41% |
-| IntlFriendFinder · iOS · CH · Friend | S6j8tG excitement | 2026-06-15 | 3 | 44% |
-| IntlFriendFinder · iOS · CH · Friend | n6f2Wt banner | 2026-04-13 | 9 | 68% |
-| IntlFriendFinder · iOS · CH · Friend | S6j8tG excitement | 2026-04-06 | 1 | 34% |
+- 2026-08-31 · IntlFriendFinder · iOS · CH · Friend · n6f2Wt banner · 6 wk at 43% of spend  
+  top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
+- 2026-08-31 · IntlFriendFinder · Web · CH · m3dtCp beatsyncedtext · 3 wk at 50% of spend  
+  top ad: `InternationalFriends-CH-m3dtCp-beatsyncedtext-aerialMixedFriends-MakeFriendsFromDifferentCountries-makeintlfriends-VID-Batch2026Week25`
+- 2026-08-24 · IntlFriendFinder · iOS · CH · Friend · q4Xr9m tweetoverlay · 1 wk at 31% of spend  
+  top ad: `Friends-CH-q4Xr9m-MomentsOverlay-StreetFlagWalkWeChat-internationalfriendsbumpycn-recommendation-ProductAware-VID-Batch2026Week31`
+- 2026-08-17 · IntlFriendFinder · Web · CH · n6f2Wt banner · 2 wk at 42% of spend  
+  top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
+- 2026-07-20 · IntlFriendFinder · iOS · CH · Friend · n6f2Wt banner · 5 wk at 37% of spend  
+  top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
+- 2026-07-13 · IntlFriendFinder · iOS · CH · Friend · S6j8tG excitement · 1 wk at 41% of spend  
+  top ad: `Friends-CH-S6j8tG-Excitement-Sunset-VID-Batch2026Week13`
+- 2026-07-06 · IntlFriendFinder · iOS · CH · Friend · n6f2Wt banner · 1 wk at 41% of spend  
+  top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
+- 2026-06-15 · IntlFriendFinder · iOS · CH · Friend · S6j8tG excitement · 3 wk at 44% of spend  
+  top ad: `Friends-CH-S6j8tG-Excitement-Sunset-VID-Batch2026Week13`
+- 2026-06-08 · IntlFriendFinder · Android · ZH · w1Tr7K carousel · 1 wk at 68% of spend  
+  top ad: `Friends-CH-w1Tr7K-carousel-female-VID-Batch2026Week13`
+- 2026-06-01 · IntlFriendFinder · Android · ZH · S6j8tG excitement · 1 wk at 78% of spend  
+  top ad: `Friends-CH-S6j8tG-Excitement-MarkSnowboard-VID-Batch2026Week13`
+- 2026-05-04 · IntlFriendFinder · Android · ZH · B9dF4J slider · 1 wk at – of spend  
+  top ad: `Friends-CH-B9dF4J-Slider-KoreanHook-VID-Batch2026Week13`
+- 2026-04-27 · IntlFriendFinder · Android · ZH · w1Tr7K carousel · 1 wk at 43% of spend  
+  top ad: `Friends-CH-w1Tr7K-carousel-female-VID-Batch2026Week13`
+- 2026-04-13 · IntlFriendFinder · iOS · CH · Friend · n6f2Wt banner · 9 wk at 68% of spend  
+  top ad: `Friends-CH-n6f2Wt-banner-carwindow-VID-Batch2026Week13`
+- 2026-04-13 · IntlFriendFinder · Android · ZH · n6f2Wt banner · 2 wk at 45% of spend  
+  top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
+- 2026-04-06 · IntlFriendFinder · iOS · CH · Friend · S6j8tG excitement · 1 wk at 34% of spend  
+  top ad: `Friends-CH-S6j8tG-Excitement-MarkAirplane-VID-Batch2026Week13`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (9 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-04-13.
+A #1 here has led a median 1 weeks (15 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-04-13.
 
 ### Refreshes read from the exports
 4 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls.

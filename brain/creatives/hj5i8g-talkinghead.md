@@ -33,4 +33,16 @@ decoded: false
 | General-EN | General · iOS · EN | 2025-12-01 | 2025-12-08 | 0 | 0% | $1 |
 | General-ES | General · iOS · ES | 2025-12-01 | 2025-12-08 | 0 | 0% | $0 |
 | General-IT | General · iOS · IT | 2025-12-01 | 2025-12-01 | 0 | 0% | $0 |
+
+### Variants (full ad names, 16 in total, top 10 by spend)
+- `TR-Hj5i8G-TalkingHead-Diealonemale-IMG-Batch2025Week38` · $1.5k · 2 adsets
+- `ES-Hj5i8G-TalkingHead-Zeromatchfemale-IMG-Batch2025Week38` · $677 · 2 adsets
+- `TR-Hj5i8G-TalkingHead-Zeromatchmale-IMG-Batch2025Week38` · $619 · 2 adsets
+- `TR-Hj5i8G-TalkingHead-Socialstatusmale-IMG-Batch2025Week38` · $405 · 2 adsets
+- `US-Hj5i8G-TalkingHead-Diealonemale-IMG-Batch2025Week38` · $31 · 1 adset
+- `ES-Hj5i8G-TalkingHead-Diealonefemale-IMG-Batch2025Week38` · $16 · 4 adsets
+- `TR-Hj5i8G-TalkingHead-Zeromatchfemale-IMG-Batch2025Week38` · $15 · 2 adsets
+- `TR-Hj5i8G-TalkingHead-Samepoolmale-IMG-Batch2025Week38` · $5 · 1 adset
+- `US-Hj5i8G-TalkingHead-Zeromatchmale-IMG-Batch2025Week38` · $2 · 2 adsets
+- `TR-Hj5i8G-TalkingHead-Samepoolfemale-IMG-Batch2025Week38` · $1 · 1 adset
 <!-- generated:end facts -->

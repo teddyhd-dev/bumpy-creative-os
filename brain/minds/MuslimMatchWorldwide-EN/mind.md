@@ -40,28 +40,41 @@ _Source: Notion persona card "Muslim want to relocate" (written for the persona 
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MuslimMatchWorldwide · iOS · EN | 🔻 Falling | $2.6k | 0.55 | a2Ef3y wanted (2026-08-03, 10 wk) |
+| MuslimMatchWorldwide · iOS · EN | 🔻 Falling | $2.6k | 0.55 | a2Ef3y wanted (since 2026-08-03, 10 wk) |
 
 **Open tickets:** T-825527 Decaying (iOS · EN: Green, but hook rate -33% vs 4-wk avg)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| MuslimMatchWorldwide · Android · EN | a2Ef3y wanted | 2026-08-03 | 6 | 75% |
-| MuslimMatchWorldwide · iOS · EN | a2Ef3y wanted | 2026-08-03 | 10 | 55% |
-| MuslimMatchWorldwide · iOS · EN | a2Ef3y wanted | 2026-07-27 | 3 | 66% |
-| MuslimMatchWorldwide · iOS · EN | j7G5d2 wanted | 2026-07-27 | 1 | 48% |
-| MuslimMatchWorldwide · iOS · EN | a2Ef3y wanted | 2026-07-06 | 1 | – |
-| MuslimMatchWorldwide · iOS · EN | h4ywx8 banner | 2026-06-29 | 4 | 48% |
-| MuslimMatchWorldwide · iOS · EN | vh1kle motorbikerideinbali | 2026-06-22 | 1 | 43% |
-| MuslimMatchWorldwide · iOS · EN | n6f2Wt banner | 2026-06-22 | 2 | 61% |
-| MuslimMatchWorldwide · iOS · EN | H7kM3N airport | 2026-06-15 | 1 | 59% |
-| MuslimMatchWorldwide · iOS · EN | a2Ef3y wanted | 2026-06-08 | 1 | 44% |
-| MuslimMatchWorldwide · iOS · EN | h4ywx8 banner | 2026-06-08 | 2 | 63% |
-| MuslimMatchWorldwide · iOS · EN | n6f2Wt banner | 2026-06-01 | 1 | 34% |
-| MuslimMatchWorldwide · iOS · EN | j7G5d2 wanted | 2026-05-18 | 3 | 55% |
-| MuslimMatchWorldwide · iOS · EN | A1A9hY airportview | 2026-05-18 | 2 | 56% |
-| MuslimMatchWorldwide · Android · EN | m9Gh2d whisper | 2026-04-20 | 6 | 50% |
+- 2026-08-03 · MuslimMatchWorldwide · Android · EN · a2Ef3y wanted · 6 wk at 75% of spend  
+  top ad: `MuslimMatch-NG-a2Ef3y-Wanted-WhiteBedroomPrayerFemale-halalPartnerAbroad-Recommendation-ProblemAware-VID-Batch2026Week29`
+- 2026-08-03 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 10 wk at 55% of spend  
+  top ad: `MuslimMatch-EN-a2Ef3y-Wanted-WhiteBedroomPrayerFemale-marryMuslimAnotherCountry-Recommendation-ProblemAware-VID-Batch2026Week33`
+- 2026-07-27 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 3 wk at 66% of spend  
+  top ad: `MuslimMatch-NG-a2Ef3y-Wanted-ArabCarSelfieFemale-marryMuslimAbroad-Recommendation-ProblemAware-VID-Batch2026Week29`
+- 2026-07-27 · MuslimMatchWorldwide · iOS · EN · j7G5d2 wanted · 1 wk at 48% of spend  
+  top ad: `muslim-US-j7G5d2-wanted-whitemuslimfemale-IMG-Batch2025Week48`
+- 2026-07-06 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 1 wk at – of spend  
+  top ad: `Muslim-US-a2Ef3y-wanted-persian-VID-Batch2026Week05`
+- 2026-06-29 · MuslimMatchWorldwide · iOS · EN · h4ywx8 banner · 4 wk at 48% of spend  
+  top ad: `Muslim-US-h4ywx8-banner-carwindowcombo-VID-Batch2026Week13`
+- 2026-06-22 · MuslimMatchWorldwide · iOS · EN · vh1kle motorbikerideinbali · 1 wk at 43% of spend  
+  top ad: `Muslim-US-vh1kle-MuslimCoupleInDubai-MashaallahHalalLoveFromDatingAppStillExistsGiveBumpyATry-halal-rooflesscar-VID-Batch2026Week23`
+- 2026-06-22 · MuslimMatchWorldwide · iOS · EN · n6f2Wt banner · 2 wk at 61% of spend  
+  top ad: `Muslim-US-n6f2Wt-banner-totebag-VID-Batch2026Week05`
+- 2026-06-15 · MuslimMatchWorldwide · iOS · EN · H7kM3N airport · 1 wk at 59% of spend  
+  top ad: `Christian-US-H7kM3N-Airport-USMaleSelfie-VID-Batch2026Week06`
+- 2026-06-08 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 1 wk at 44% of spend  
+  top ad: `Chinese-US-a2Ef3y-wanted-chinesefemaleparking-VID-Batch2026Week04`
+- 2026-06-08 · MuslimMatchWorldwide · iOS · EN · h4ywx8 banner · 2 wk at 63% of spend  
+  top ad: `Muslim-US-h4ywx8-banner-carwindowcombo-VID-Batch2026Week13`
+- 2026-06-01 · MuslimMatchWorldwide · iOS · EN · n6f2Wt banner · 1 wk at 34% of spend  
+  top ad: `IndianBoyDream-US-n6f2Wt-banner-IndianMan-HotTakeIndianMenAreInHighDemandWorldwideToWomenOnBumpy-proven-highdemand-VID-Batch2026Week19`
+- 2026-05-18 · MuslimMatchWorldwide · iOS · EN · j7G5d2 wanted · 3 wk at 55% of spend  
+  top ad: `muslim-US-j7G5d2-wanted-whitemuslimfemale-IMG-Batch2025Week48`
+- 2026-05-18 · MuslimMatchWorldwide · iOS · EN · A1A9hY airportview · 2 wk at 56% of spend  
+  top ad: `Christian-US-A1A9hY-airportview-TokyoHaneda-VID-Batch2026Week06`
+- 2026-04-20 · MuslimMatchWorldwide · Android · EN · m9Gh2d whisper · 6 wk at 50% of spend  
+  top ad: `Muslim-US-m9Gh2d-whisper-female-IMG-Batch2026Week12`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (25 finished reigns). Longest: j7G5d2 wanted, 12 weeks from 2026-01-19.

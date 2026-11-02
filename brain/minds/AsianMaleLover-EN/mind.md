@@ -37,16 +37,16 @@ _Source: Notion persona card "Gringo Lover from India —> Turned to Asian Man L
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AsianMaleLover · Android · EN | 🔻 Falling | $2.2k | 0.34 | dR1elf dreamlife (2026-09-21, 3 wk) |
-| AsianMaleLover · iOS · EN | ✅ Healthy | $1.1k | 0.41 | dR1elf dreamlife (2026-09-28, 2 wk) |
+| AsianMaleLover · Android · EN | 🔻 Falling | $2.2k | 0.34 | dR1elf dreamlife (since 2026-09-21, 3 wk) |
+| AsianMaleLover · iOS · EN | ✅ Healthy | $1.1k | 0.41 | dR1elf dreamlife (since 2026-09-28, 2 wk) |
 
 **Open tickets:** T-423742 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.47); T-802966 Due (iOS · EN: ROAS 0.41)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| AsianMaleLover · iOS · EN | dR1elf dreamlife | 2026-09-28 | 2 | 88% |
-| AsianMaleLover · Android · EN | dR1elf dreamlife | 2026-09-21 | 3 | 81% |
+- 2026-09-28 · AsianMaleLover · iOS · EN · dR1elf dreamlife · 2 wk at 88% of spend  
+  top ad: `AsianMaleLover-US-dR1elf-DreamLife-AsianMaleSmellingTruffleRestaurant-ItsYourTimeToTryDatingAnAsianManFromBumpy-YourTimeUrgency-MostAware-VID-Batch2026Week36`
+- 2026-09-21 · AsianMaleLover · Android · EN · dR1elf dreamlife · 3 wk at 81% of spend  
+  top ad: `AsianMaleLover-US-dR1elf-DreamLife-AsianMaleSmellingTruffleRestaurant-ItsYourTimeToTryDatingAnAsianManFromBumpy-YourTimeUrgency-MostAware-VID-Batch2026Week36`
 
 ### Experiments logged
 - none yet

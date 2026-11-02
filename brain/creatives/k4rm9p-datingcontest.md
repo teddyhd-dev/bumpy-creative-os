@@ -28,4 +28,13 @@ decoded: false
 | PassportBro-EN | PassportBro · Android · EN · Serious | 2026-09-28 | 2026-10-05 | 1 | 36% | $2.5k |
 | LocalDatingFatigue-ES | LocalDatingFatigue · iOS · ES | 2026-10-05 | 2026-10-05 | 0 | 0% | $0 |
 | LocalDatingFatigue-ES | LocalDatingFatigue · Android · ES | nan | 2026-10-05 | 0 | 0% | $0 |
+
+### Variants (full ad names, 7 in total, top 10 by spend)
+- `AngryWithLocalDating-US-k4Rm9p-DatingContest-BarHook-Datingappsin2026-skit-Vertical-VID-Batch2026Week36` · $9.4k · 4 adsets
+- `AngryWithLocalDating-US-k4Rm9p-DatingContest-AshleyHook-AshleyWaling-skit-Vertical-VID-Batch2026Week36` · $6.5k · 4 adsets
+- `AngryWithLocalDating-US-k4Rm9p-DatingContest-QueueHook-IwannaDateYou-skit-Vertical-VID-Batch2026Week36` · $1.9k · 4 adsets
+- `AngryWithLocalDating-US-k4Rm9p-DatingContest-OrderHook-OnePremiumPlease-skit-Vertical-VID-Batch2026Week36` · $821 · 4 adsets
+- `AngryWithLocalDating-US-k4Rm9p-DatingContest-MCHook-NextSingLadies-skit-Vertical-VID-Batch2026Week36` · $310 · 4 adsets
+- `ChurnLocal-ES-k4Rm9p-DatingContest-BarHook-DatingAppsIn2026-Skit-Vertical-VID-Batch2026Week39` · $0 · 2 adsets
+- `ChurnLocal-ES-k4Rm9p-DatingContest-QueueHook-IwannaDateYou-skit-Vertical-VID-Batch2026Week39` · $0 · 2 adsets
 <!-- generated:end facts -->

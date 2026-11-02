@@ -26,4 +26,7 @@ decoded: false
 | General-ID | General · Android · ID | 2025-12-22 | 2026-01-12 | 0 | 7% | $351 |
 | General-ID | General · iOS · ID | 2025-12-22 | 2026-01-19 | 0 | 4% | $331 |
 | General-ID | General · Android · ID | 2026-01-05 | 2026-01-26 | 0 | 8% | $32 |
+
+### Variants (full ad names, 1 in total, top 10 by spend)
+- `General-ID-u7Od3N-TalkingHead-AdvanceFilter-VID-Batch2025Week51` · $1.4k · 4 adsets
 <!-- generated:end facts -->

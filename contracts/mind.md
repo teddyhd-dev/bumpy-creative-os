@@ -2,7 +2,7 @@
 contract: mind
 version: 1
 path: brain/minds/<Mind>/mind.md
-id_format: "<Persona>-<LANG>, e.g. LatinaFemaleLover-ES (persona and language values from core/naming-adset-v8.md)"
+id_format: "<Persona>-<LANG>, e.g. LatinaFemaleLover-ES (persona and language as written in the adset names; legacy JA/KO/UK/ZH/VI read as JP/KR/UA/CH/VN)"
 front_matter: [contract, mind, persona, language, status, updated]
 sections:
   - Who they are
@@ -37,8 +37,11 @@ version of both files as well.
 - "Their words" holds verbatim quotes with source and date, in the original language plus an English gloss.
 - The facts block sits between `<!-- generated:start facts -->` and `<!-- generated:end facts -->`.
   Nobody edits inside it: the Monday run rewrites it.
-- A new mind is created from this template the first time a brainstorm needs it (or by the Monday run
-  when an adset for it goes live) and registered in `core/minds.csv`.
+- The Monday run creates a mind when it has a live adset (language as written in the adset names: for now
+  country-style codes, e.g. JP, KR, UA), or the brainstormer creates one the first time a brainstorm needs it.
+  Every persona × language seen in the adset names is registered in `core/minds.csv`, file or not. A
+  mind's file is never deleted once anyone has written in it; untouched seed files of dormant minds are
+  removed and come back with their full facts if the mind goes live again.
 
 ## Template
 ```markdown

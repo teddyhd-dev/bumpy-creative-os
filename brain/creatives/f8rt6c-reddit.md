@@ -34,7 +34,7 @@ decoded: false
 | PassportBro-EN | PassportBro · Android · EN | 2025-12-01 | 2025-12-22 | 0 | 18% | $955 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-09-21 | 0 | 3% | $643 |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-01-05 | 2026-03-09 | 0 | 4% | $567 |
-| General-JA | General · iOS · JA | 2025-12-01 | 2025-12-29 | 0 | 6% | $339 |
+| General-JP | General · iOS · JA | 2025-12-01 | 2025-12-29 | 0 | 6% | $339 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-01-19 | 2026-02-09 | 0 | 4% | $331 |
 | General-ID | General · iOS · ID | 2025-12-01 | 2026-02-02 | 0 | 10% | $264 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN | 2026-01-05 | 2026-02-02 | 0 | 5% | $232 |
@@ -42,4 +42,16 @@ decoded: false
 | General-EN | General · iOS · EN | 2025-12-01 | 2025-12-08 | 0 | 3% | $216 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN | 2025-12-15 | 2026-02-09 | 0 | 1% | $157 |
 | General-EN | General · iOS · EN | 2025-12-01 | 2025-12-01 | 0 | 7% | $119 |
+
+### Variants (full ad names, 31 in total, top 10 by spend)
+- `US-F8rT6C-Reddit-PassportBro-Airplane-IMG-Batch2025Week42` · $27.2k · 9 adsets
+- `BLK-US-F8rT6C-Reddit-ShockedFemale-IMG-Batch2025Week470` · $7.8k · 7 adsets
+- `US-F8rT6C-Reddit-PassportBro-Airplane-VID-Batch2025Week42` · $4.3k · 8 adsets
+- `US-F8rT6C-Reddit-PassportBro-Office-VID-Batch2025Week42` · $1.2k · 5 adsets
+- `ID-F8rT6C-Reddit-Versus-Couple-IMG-Batch2025Week40_105` · $938 · 1 adset
+- `IndianBoyDream-US-F8rT6C-Reddit-Airplane-VID-Batch2025Week50` · $578 · 3 adsets
+- `ID-F8rT6C-Reddit-Versus-Bedroom-VID-Batch2025Week40` · $566 · 3 adsets
+- `US-F8rT6C-Reddit-PassportBro-Office-IMG-Batch2025Week42` · $498 · 9 adsets
+- `IndianBoyDream-US-F8rT6C-Reddit-Airplane-IMG-Batch2025Week50` · $474 · 5 adsets
+- `BLK-US-F8rT6C-Reddit-WalkMale-VID-Batch2025Week47` · $430 · 3 adsets
 <!-- generated:end facts -->

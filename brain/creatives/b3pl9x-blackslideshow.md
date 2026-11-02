@@ -23,4 +23,10 @@ decoded: false
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-04-06 | 2026-05-25 | 6 | 99% | $8.2k |
+
+### Variants (full ad names, 4 in total, top 10 by spend)
+- `BLK-US-b3pl9x-blackslideshow-blackwomanformalhook-VID-Batch2026Week13` · $3.9k · 1 adset
+- `BLK-US-b3pl9x-blackslideshow-blackmanairporthook-VID-Batch2026Week13` · $3.3k · 1 adset
+- `BLK-US-b3pl9x-blackslideshow-blackmanpoolhook-VID-Batch2026Week13` · $927 · 1 adset
+- `BLK-US-b3pl9x-blackslideshow-blackwomanairplanehook-VID-Batch2026Week13` · $100 · 1 adset
 <!-- generated:end facts -->

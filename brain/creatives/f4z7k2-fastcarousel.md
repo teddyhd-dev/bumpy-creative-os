@@ -42,4 +42,16 @@ decoded: false
 | MatureDating-ES | MatureDating · Android · ES · 30to40 | 2026-03-30 | 2026-07-20 | 0 | 4% | $145 |
 | GringoMaleLover-ID | GringoMaleLover · iOS · ID | 2026-03-30 | 2026-04-27 | 0 | 11% | $140 |
 | GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-04-06 | 2026-04-20 | 0 | 5% | $103 |
+
+### Variants (full ad names, 13 in total, top 10 by spend)
+- `GringoLover-ES-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $12.1k · 2 adsets
+- `Christian-ES-F4z7K2-FastCarousel-PraiseHook-conocecristianosolteros-recommendation-SolutionAware-VID-Batch2026Week06` · $4.3k · 1 adset
+- `GringoLover-BR-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $3.6k · 2 adsets
+- `GringoLover-PH-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $2.7k · 2 adsets
+- `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-Batch2026Week06` · $2.7k · 1 adset
+- `304050-US-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $2.3k · 4 adsets
+- `304050-ES-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $1.4k · 2 adsets
+- `GringoLover-TH-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $731 · 2 adsets
+- `SingleMom-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $668 · 2 adsets
+- `GringoLover-ID-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $625 · 2 adsets
 <!-- generated:end facts -->

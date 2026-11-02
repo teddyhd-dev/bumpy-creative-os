@@ -34,4 +34,16 @@ decoded: false
 | General-EN | General · iOS · EN | 2026-04-27 | 2026-05-11 | 0 | 0% | $5 |
 | General-ES | General · iOS · ES | 2026-03-23 | 2026-04-20 | 0 | 0% | $3 |
 | General-PT | General · ? · PT | 2026-03-16 | 2026-04-06 | 0 | 0% | $0 |
+
+### Variants (full ad names, 16 in total, top 10 by spend)
+- `General-ES-3r3a50-3reasons-bumpy-blondeguyhook-VID-Batch2026Week11` · $2.0k · 5 adsets
+- `General-ES-3r3a50-3reasons-bumpy-blondegirlhook-VID-Batch2026Week11` · $1.4k · 5 adsets
+- `General-IN-3r3a50-3reasons-bumpy-blondegirlhook-IMG-Batch2026Week11` · $1.1k · 2 adsets
+- `General-BR-3r3a50-3reasons-bumpy-blondegirlhook-IMG-Batch2026Week11` · $648 · 3 adsets
+- `General-ES-3r3a50-3reasons-bumpy-blondegirlhook-IMG-Batch2026Week11` · $454 · 5 adsets
+- `General-BR-3r3a50-3reasons-bumpy-blondeguyhook-IMG-Batch2026Week11` · $300 · 3 adsets
+- `General-US-3r3a50-3reasons-bumpy-latinahook-VID-Batch2026Week11` · $238 · 2 adsets
+- `General-IN-3r3a50-3reasons-bumpy-blondegirlhook-VID-Batch2026Week11` · $208 · 2 adsets
+- `General-BR-3r3a50-3reasons-bumpy-blondegirlhook-VID-Batch2026Week11` · $202 · 3 adsets
+- `General-ES-3r3a50-3reasons-bumpy-blondeguyhook-IMG-Batch2026Week11` · $137 · 5 adsets
 <!-- generated:end facts -->

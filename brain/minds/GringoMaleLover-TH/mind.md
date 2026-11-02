@@ -40,28 +40,41 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · TH · TH | ✅ Healthy | $1.2k | 0.43 | C0kM3N combo (2026-09-28, 2 wk) |
+| GringoMaleLover · iOS · TH · TH | ✅ Healthy | $1.2k | 0.43 | C0kM3N combo (since 2026-09-28, 2 wk) |
 
 **Open tickets:** T-294559 Due (iOS · TH · TH: ROAS 0.43)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GringoMaleLover · iOS · TH · TH | C0kM3N combo | 2026-09-28 | 2 | 47% |
-| GringoMaleLover · Web · TH | 4Bm9of banner | 2026-09-14 | 1 | 39% |
-| GringoMaleLover · iOS · TH · TH | H7kM3N airport | 2026-08-31 | 4 | 35% |
-| GringoMaleLover · Android · TH · TH | 0u48ny meandparents | 2026-08-31 | 1 | – |
-| GringoMaleLover · Web · TH | n6f2Wt banner | 2026-08-17 | 4 | 55% |
-| GringoMaleLover · Android · TH · TH | 84n6r9 facemask | 2026-08-17 | 2 | 31% |
-| GringoMaleLover · iOS · TH · TH | n6f2Wt banner | 2026-08-10 | 3 | 29% |
-| GringoMaleLover · iOS · TH · TH | H7kM3N airport | 2026-07-27 | 2 | 34% |
-| GringoMaleLover · Android · TH · TH | m3dtCp beatsyncedtext | 2026-07-27 | 3 | 28% |
-| GringoMaleLover · Android · TH · TH | i48opT carousel | 2026-07-20 | 1 | 23% |
-| GringoMaleLover · iOS · TH · TH | n6f2Wt banner | 2026-07-13 | 2 | 28% |
-| GringoMaleLover · Android · TH · TH | m3dtCp beatsyncedtext | 2026-07-13 | 1 | 25% |
-| GringoMaleLover · Android · TH · TH | n6f2Wt banner | 2026-06-29 | 2 | 51% |
-| GringoMaleLover · Android · TH · TH | H7kM3N airport | 2026-06-22 | 1 | 46% |
-| GringoMaleLover · iOS · TH · TH | 4Bm9of banner | 2026-06-08 | 5 | 44% |
+- 2026-09-28 · GringoMaleLover · iOS · TH · TH · C0kM3N combo · 2 wk at 47% of spend  
+  top ad: `Gringolover-TH-C0kM3N-Combo-ComboFarangToThai-YouNeverRealizedThisManyFarangMarriedThaiWomenFromBumpy-FOMO-ProductAware-VID-Batch2026Week37`
+- 2026-09-14 · GringoMaleLover · Web · TH · 4Bm9of banner · 1 wk at 39% of spend  
+  top ad: `Gringolover-TH-4Bm9of-banner-WomanFeetInsideSportsCar-FarangBoysOnBumpyWantingToDateAndTreatYouLikePrincess-status-combopic-VID-Batch2026Week17`
+- 2026-08-31 · GringoMaleLover · iOS · TH · TH · H7kM3N airport · 4 wk at 35% of spend  
+  top ad: `GringoLover-TH-H7kM3N-Airport-ThaiFemaleSelfieInBedroom-POVJoePuchaiFakAmerika-StoryTelling-ProblemUnaware-VID-Batch2026Week21`
+- 2026-08-31 · GringoMaleLover · Android · TH · TH · 0u48ny meandparents · 1 wk at – of spend  
+  top ad: `GringoLover-TH-0u48ny-MeAndParents-ThaiParents-IMG-Batch2026Week08`
+- 2026-08-17 · GringoMaleLover · Web · TH · n6f2Wt banner · 4 wk at 55% of spend  
+  top ad: `GringoLover-TH-n6f2Wt-banner-sunny-IMG-Batch2026Week05`
+- 2026-08-17 · GringoMaleLover · Android · TH · TH · 84n6r9 facemask · 2 wk at 31% of spend  
+  top ad: `GringoLover-TH-84n6r9-FaceMask-Sheet-VID-Batch2026Week07`
+- 2026-08-10 · GringoMaleLover · iOS · TH · TH · n6f2Wt banner · 3 wk at 29% of spend  
+  top ad: `Gringolover-TH-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-IDidntKnowForeignMenOnBumpyAreCompetingForThaiWomen-didntrealize-competing-IMG-Batch2026Week19`
+- 2026-07-27 · GringoMaleLover · iOS · TH · TH · H7kM3N airport · 2 wk at 34% of spend  
+  top ad: `GringoLover-TH-H7kM3N-Airport-ThaiFemaleSelfieInBedroom-POVJoePuchaiFakAmerika-StoryTelling-ProblemUnaware-VID-Batch2026Week21`
+- 2026-07-27 · GringoMaleLover · Android · TH · TH · m3dtCp beatsyncedtext · 3 wk at 28% of spend  
+  top ad: `Gringolover-TH-m3dtCp-beatsyncedtext-aerialCoupleSnow-ForeignMenOnBumpyDatingThaiWomenAndTreatingLikePrincess-princesstreatment-VID-Batch2026Week25`
+- 2026-07-20 · GringoMaleLover · Android · TH · TH · i48opT carousel · 1 wk at 23% of spend  
+  top ad: `Gringolover-TH-i48opT-fastcarouselartsy-AirplaneKiss-POVYoureDatingAForeignGuyFromBumpy-dateabroad-princesstreatment-VID-Batch2026Week23`
+- 2026-07-13 · GringoMaleLover · iOS · TH · TH · n6f2Wt banner · 2 wk at 28% of spend  
+  top ad: `Gringolover-TH-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-IDidntKnowForeignMenOnBumpyAreCompetingForThaiWomen-didntrealize-competing-IMG-Batch2026Week19`
+- 2026-07-13 · GringoMaleLover · Android · TH · TH · m3dtCp beatsyncedtext · 1 wk at 25% of spend  
+  top ad: `Gringolover-TH-m3dtCp-beatsyncedtext-aerialCoupleSnow-ForeignMenOnBumpyDatingThaiWomenAndTreatingLikePrincess-princesstreatment-IMG-Batch2026Week25`
+- 2026-06-29 · GringoMaleLover · Android · TH · TH · n6f2Wt banner · 2 wk at 51% of spend  
+  top ad: `Gringolover-TH-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-IDidntKnowForeignMenOnBumpyAreCompetingForThaiWomen-didntrealize-competing-IMG-Batch2026Week19`
+- 2026-06-22 · GringoMaleLover · Android · TH · TH · H7kM3N airport · 1 wk at 46% of spend  
+  top ad: `GringoLover-TH-H7kM3N-Airport-ThaiFemaleSelfieInBedroom-POVJoePuchaiFakAmerika-StoryTelling-ProblemUnaware-VID-Batch2026Week21`
+- 2026-06-08 · GringoMaleLover · iOS · TH · TH · 4Bm9of banner · 5 wk at 44% of spend  
+  top ad: `Gringolover-TH-4Bm9of-banner-WomanFeetInsideSportsCar-FarangBoysOnBumpyWantingToDateAndTreatYouLikePrincess-status-combopic-VID-Batch2026Week17`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (24 finished reigns). Longest: H7kM3N airport, 20 weeks from 2026-01-05.

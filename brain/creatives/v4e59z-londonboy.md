@@ -42,4 +42,16 @@ decoded: false
 | General-TH | General · Android · TH | 2025-12-01 | 2025-12-01 | 0 | 5% | $88 |
 | General-PT | General · Android · PT | 2026-03-02 | 2026-03-23 | 0 | 3% | $57 |
 | General-ES | General · iOS · ES | nan | 2025-12-01 | 0 | 0% | $0 |
+
+### Variants (full ad names, 22 in total, top 10 by spend)
+- `US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46` · $38.2k · 4 adsets
+- `BR-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46` · $12.1k · 5 adsets
+- `Chinese-US-v4E59z-londonboy-chinesefoot-VID-Batch2026Week11` · $10.6k · 5 adsets
+- `passportgirl-US-v4E59z-londonboy-swedish-IMG-Batch2026Week02` · $3.2k · 1 adset
+- `passportgirl-US-v4E59z-londonboy-italian-IMG-Batch2026Week02` · $2.7k · 1 adset
+- `TH-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46` · $2.5k · 2 adsets
+- `passportgirl-US-v4E59z-londonboy-italian-VID-Batch2026Week02` · $2.1k · 1 adset
+- `passportgirl-US-v4E59z-londonboy-korean-VID02-Batch2026Week02` · $1.5k · 1 adset
+- `ES-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46` · $1.3k · 3 adsets
+- `passportgirl-US-v4E59z-londonboy-french-IMG-Batch2026Week02` · $994 · 1 adset
 <!-- generated:end facts -->

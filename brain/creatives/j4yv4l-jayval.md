@@ -42,4 +42,15 @@ decoded: false
 | General-EN | General · Android · EN | 2025-12-01 | 2026-01-05 | 0 | 9% | $820 |
 | General-PT | General · Android · PT | 2025-12-22 | 2026-01-12 | 0 | 9% | $820 |
 | General-EN | General · iOS · EN | 2025-12-01 | 2026-01-05 | 0 | 14% | $732 |
+
+### Variants (full ad names, 9 in total, top 10 by spend)
+- `US-j4yV4l-jayval-3040-toolatefemale-VID-Batch2025Week45` · $58.8k · 11 adsets
+- `3040-ES-j4yV4l-jayval-toolatefemale-VID-Batch2025Week50` · $13.7k · 6 adsets
+- `3040-BR-j4yV4l-jayval-toolatefemale-VID-Batch2025Week50` · $13.2k · 5 adsets
+- `US-j4yV4l-jayval-couple-never-VID-Batch2025Week45` · $11.2k · 10 adsets
+- `US-j4yV4l-jayval-3040-toolate,ale-VID-Batch2025Week45` · $3.5k · 9 adsets
+- `Slavic-PL-j4yV4l-jayval-toolatefemale-VID-Bat` · $856 · 3 adsets
+- `Slavic-UA-j4yV4l-jayval-toolatefemale-VID-Bat` · $661 · 2 adsets
+- `US-j4yV4l-jayval-couple-twoculture-VID-Batch2025Week45` · $299 · 10 adsets
+- `Slavic-RU-j4yV4l-jayval-toolatefemale-VID-Bat` · $196 · 2 adsets
 <!-- generated:end facts -->

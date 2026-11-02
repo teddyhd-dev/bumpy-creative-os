@@ -3,6 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 engine/build.py          # adset grid, account, checks, drivers
+python3 engine/naming_audit.py   # naming_audit.csv: ad and adset names vs the conventions, weighted by spend
 python3 engine/rootcause.py      # rc_*  (diagnosis)
 python3 engine/creative_relay.py # cr_*  (creatives)
 python3 engine/model.py          # data/model/*.pkl (joined model)

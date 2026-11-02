@@ -36,29 +36,42 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| IntlFriendFinder · Android · EN · Friend | 🔻 Falling | $4.3k | 0.37 | q4Xr9m tweetoverlay (2026-08-17, 8 wk) |
-| IntlFriendFinder · iOS · EN · Friend | ✅ Healthy | $2.9k | 0.47 | n6f2Wt banner (2026-07-13, 13 wk) |
+| IntlFriendFinder · Android · EN · Friend | 🔻 Falling | $4.3k | 0.37 | q4Xr9m tweetoverlay (since 2026-08-17, 8 wk) |
+| IntlFriendFinder · iOS · EN · Friend | ✅ Healthy | $2.9k | 0.47 | n6f2Wt banner (since 2026-07-13, 13 wk) |
 
 **Open tickets:** T-910899 Decaying (Android · EN · Friend: Under 0.40 and falling: ROAS 0.37 from 0.40); T-700177 Due (iOS · EN · Friend: ROAS 0.47)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| IntlFriendFinder · Android · EN · Friend | q4Xr9m tweetoverlay | 2026-08-17 | 8 | 74% |
-| IntlFriendFinder · Android · EN · Friend | L2a9Md created | 2026-08-10 | 1 | 44% |
-| IntlFriendFinder · Web · EN | m3dtCp beatsyncedtext | 2026-07-20 | 9 | 100% |
-| IntlFriendFinder · iOS · EN · Friend | n6f2Wt banner | 2026-07-13 | 13 | 48% |
-| IntlFriendFinder · iOS · EN · Friend | m3dtCp beatsyncedtext | 2026-07-06 | 1 | 44% |
-| IntlFriendFinder · Android · EN · Friend | m3dtCp beatsyncedtext | 2026-07-06 | 5 | 68% |
-| IntlFriendFinder · Android · EN · Friend | a2Ef3y wanted | 2026-06-01 | 5 | 64% |
-| IntlFriendFinder · Android · EN · Friend | n6f2Wt banner | 2026-05-18 | 2 | 40% |
-| IntlFriendFinder · Web · EN | a2Ef3y wanted | 2026-04-27 | 4 | 56% |
-| IntlFriendFinder · iOS · EN · Friend | n6f2Wt banner | 2026-04-20 | 11 | 61% |
-| IntlFriendFinder · Android · EN · Friend | a2Ef3y wanted | 2026-04-20 | 4 | 45% |
-| IntlFriendFinder · Android · EN · Friend | w1Tr7K carousel | 2026-03-30 | 3 | 36% |
-| IntlFriendFinder · Android · EN · Friend | n6f2Wt banner | 2026-03-16 | 2 | 39% |
-| IntlFriendFinder · Android · EN · Friend | a2Ef3y wanted | 2026-03-02 | 2 | 43% |
-| IntlFriendFinder · Android · EN · Friend | w1Tr7K carousel | 2026-02-23 | 1 | 35% |
+- 2026-08-17 · IntlFriendFinder · Android · EN · Friend · q4Xr9m tweetoverlay · 8 wk at 74% of spend  
+  top ad: `Friends-US-q4Xr9m-TweetOverlay-Collageof4-internationalfriendsbumpy-recommendation-ProductAware-VID-Batch2026Week31`
+- 2026-08-10 · IntlFriendFinder · Android · EN · Friend · L2a9Md created · 1 wk at 44% of spend  
+  top ad: `Friends-US-L2a9Md-created-founder-IMG-Batch2026Week03`
+- 2026-07-20 · IntlFriendFinder · Web · EN · m3dtCp beatsyncedtext · 9 wk at 100% of spend  
+  top ad: `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-IMG-Batch2026Week25`
+- 2026-07-13 · IntlFriendFinder · iOS · EN · Friend · n6f2Wt banner · 13 wk at 48% of spend  
+  top ad: `Friends-US-n6f2Wt-banner-carwindow-IMG-Batch2026Week03`
+- 2026-07-06 · IntlFriendFinder · iOS · EN · Friend · m3dtCp beatsyncedtext · 1 wk at 44% of spend  
+  top ad: `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-IMG-Batch2026Week25`
+- 2026-07-06 · IntlFriendFinder · Android · EN · Friend · m3dtCp beatsyncedtext · 5 wk at 68% of spend  
+  top ad: `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-IMG-Batch2026Week25`
+- 2026-06-01 · IntlFriendFinder · Android · EN · Friend · a2Ef3y wanted · 5 wk at 64% of spend  
+  top ad: `Friends-US-a2Ef3y-wanted-koreanfemale-VID-Batch2026Week03`
+- 2026-05-18 · IntlFriendFinder · Android · EN · Friend · n6f2Wt banner · 2 wk at 40% of spend  
+  top ad: `Friends-US-n6f2Wt-banner-phonecase-IMG-Batch2026Week03`
+- 2026-04-27 · IntlFriendFinder · Web · EN · a2Ef3y wanted · 4 wk at 56% of spend  
+  top ad: `Friends-US-a2Ef3y-wanted-koreanfemale-VID-Batch2026Week03`
+- 2026-04-20 · IntlFriendFinder · iOS · EN · Friend · n6f2Wt banner · 11 wk at 61% of spend  
+  top ad: `Friends-US-n6f2Wt-banner-carwindow-IMG-Batch2026Week03`
+- 2026-04-20 · IntlFriendFinder · Android · EN · Friend · a2Ef3y wanted · 4 wk at 45% of spend  
+  top ad: `Friends-US-a2Ef3y-wanted-koreanfemale-VID-Batch2026Week03`
+- 2026-03-30 · IntlFriendFinder · Android · EN · Friend · w1Tr7K carousel · 3 wk at 36% of spend  
+  top ad: `Friends-US-w1Tr7K-carousel-NYC-VID-Batch2026Week03`
+- 2026-03-16 · IntlFriendFinder · Android · EN · Friend · n6f2Wt banner · 2 wk at 39% of spend  
+  top ad: `Friends-US-n6f2Wt-banner-carwindow-VID-Batch2026Week03`
+- 2026-03-02 · IntlFriendFinder · Android · EN · Friend · a2Ef3y wanted · 2 wk at 43% of spend  
+  top ad: `Friends-US-a2Ef3y-wanted-koreanfemale-VID-Batch2026Week03`
+- 2026-02-23 · IntlFriendFinder · Android · EN · Friend · w1Tr7K carousel · 1 wk at 35% of spend  
+  top ad: `Friends-US-w1Tr7K-carousel-NYC-VID-Batch2026Week03`
 
 ### Fatigue clock
 A #1 here has led a median 4 weeks (15 finished reigns). Longest: n6f2Wt banner, 13 weeks from 2026-07-13.

@@ -42,4 +42,16 @@ decoded: false
 | General-ES | General · iOS · ES | 2026-02-23 | 2026-03-23 | 0 | 3% | $196 |
 | GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-02-23 | 2026-03-16 | 0 | 17% | $188 |
 | GirlWantsToRelocate-EN | GirlWantsToRelocate · iOS · EN | 2026-02-23 | 2026-05-18 | 0 | 2% | $180 |
+
+### Variants (full ad names, 16 in total, top 10 by spend)
+- `General-ES-L2vM8X-ManyHugs3-latinomaleturkishfemale-VID-Batch2026Week05` · $3.4k · 8 adsets
+- `304050-US-L2vM8X-ManyHugs3-runoutoftime-VID-Batch2026Week05` · $1.6k · 2 adsets
+- `General-ES-L2vM8X-ManyHugs3-whitemalelatinafemale-VID-Batch2026Week05` · $1.2k · 8 adsets
+- `General-PT-L2vM8X-ManyHugs3-latinomalewhitefemale-VID-Batch2026Week05` · $1000 · 4 adsets
+- `Muslim-US-L2vM8X-ManyHugs3-malaysianmaleturkishfemale-VID-Batch2026Week05` · $873 · 3 adsets
+- `GringoLover-ID-L2vM8X-ManyHugs3-Valentine-VID-Batch2026Week05` · $864 · 2 adsets
+- `PassportBro-US-L2vM8X-ManyHugs3-Valentine-VID-Batch2026Week05` · $735 · 8 adsets
+- `GringoLover-PT-L2vM8X-ManyHugs3-Valentine-VID-Batch2026Week05` · $601 · 2 adsets
+- `Muslim-US-L2vM8X-ManyHugs3-whitemalemorrocoanfemale-VID-Batch2026Week05` · $484 · 3 adsets
+- `304050-US-L2vM8X-ManyHugs3-Valentine-VID-Batch2026Week05` · $442 · 2 adsets
 <!-- generated:end facts -->

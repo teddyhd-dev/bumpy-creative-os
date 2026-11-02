@@ -41,4 +41,16 @@ decoded: false
 | ChristianMatchWorldwide-EN | ChristianMatchWorldwide · iOS · EN | 2026-06-22 | 2026-06-29 | 0 | 4% | $52 |
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-08-03 | 2026-08-17 | 0 | 12% | $40 |
 | AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-06-22 | 2026-08-03 | 0 | 1% | $25 |
+
+### Variants (full ad names, 11 in total, top 10 by spend)
+- `PassportBro-7i40dX-walking-filipinainthebeach-POVDatingYourDreamGirlOutsideYourCountry-dateabroad-beach-VID-Batch2026Week24` · $18.6k · 4 adsets
+- `AsianLover-US-7i40dX-walking-beach-MeetAsianSinglesFromAbroad-asianmen-sliders-VID-Batch2026Week24` · $12.0k · 11 adsets
+- `5060-US-7i40dX-walking-OldAsianWoman-Meet50PlusYOSingleWomenAbroad-findmaturewomen-beach-VID-Batch2026Week24` · $2.2k · 2 adsets
+- `5060-US-7i40dX-walking-OldLatinoGuyWithAKid-MeetMatureLatinoAbroad-findmaturemen-beach-VID-Batch2026Week24` · $1.3k · 2 adsets
+- `5060-US-7i40dX-walking-OldLatinaWoman-MeetMatureLatinaAbroad-findmaturemen-beach-VID-Batch2026Week24` · $1.1k · 2 adsets
+- `5060-US-7i40dX-walking-OldBlackWoman-MeetMatureSinglesFromAnotherCountry-findmaturewomen-beach-VID-Batch2026Week24` · $675 · 2 adsets
+- `5060-US-7i40dX-walking-OldAsianMan-Meet50yo-findmaturemen-beach-VID-Batch2026Week24` · $416 · 2 adsets
+- `5060-US-7i40dX-walking-OldWhiteGuy-MeetMatureMenAbroad-findmatureMen-beach-VID-Batch2026Week24` · $390 · 1 adset
+- `5060-US-7i40dX-walking-OldBlondeWoman-MeetMatureSinglesAbroad-findmaturewomen-beach-VID-Batch2026Week24` · $247 · 2 adsets
+- `5060-US-7i40dX-walking-OldBlackGuyWithKid-AnAppForFindingMatureBlackGuyAroundTheWorld-findmaturemen-beach-VID-Batch2026Week24` · $174 · 2 adsets
 <!-- generated:end facts -->

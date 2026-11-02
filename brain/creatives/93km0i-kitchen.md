@@ -39,4 +39,12 @@ decoded: false
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-08-10 | 2026-08-24 | 0 | 1% | $16 |
 | AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-06-01 | 2026-06-15 | 0 | 1% | $8 |
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-08-03 | 2026-08-17 | 0 | 0% | $0 |
+
+### Variants (full ad names, 6 in total, top 10 by spend)
+- `PassportBro-US-93km0i-kitchen-BlondeGuyFilipinaWomanInTheKitchen-DatingGirlOutsideAmericaHalfThePriceTwiceTheFun-cooking-kitchen-VID-Batch2026Week20` · $17.0k · 5 adsets
+- `AsianLover-US-93km0i-kitchen-ChineseGirlAmericanGuyInTheKitchen-MatchedWithAsianOnBumpyNowYoureLivingHappyEnding-happyending-cook-VID-Batch2026Week20` · $1.6k · 8 adsets
+- `PassportBro-US-93km0i-kitchen-BlondeGuyFilipinaWomanInTheKitchen-DatingGirlOutsideAmericaHalfThePriceTwiceTheFun-cooking-kitchen-IMG-Batch2026Week20` · $833 · 5 adsets
+- `LatinaLover-US-93km0i-kitchen-LatinaGirlBlondeGuyIntheKitchen-POVALatinaChoseYouOnBumpyNowYoureLivingTheHappyEnding-happyending-cook-IMG-Batch2026Week20` · $607 · 4 adsets
+- `AsianLover-US-93km0i-kitchen-ChineseGirlAmericanGuyInTheKitchen-MatchedWithAsianOnBumpyNowYoureLivingHappyEnding-happyending-cook-IMG-Batch2026Week20` · $409 · 5 adsets
+- `LatinaLover-US-93km0i-kitchen-LatinaGirlBlondeGuyIntheKitchen-POVALatinaChoseYouOnBumpyNowYoureLivingTheHappyEnding-happyending-cook-VID-Batch2026Week20` · $278 · 4 adsets
 <!-- generated:end facts -->

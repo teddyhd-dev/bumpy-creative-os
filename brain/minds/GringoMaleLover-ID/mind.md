@@ -40,28 +40,41 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.0k | 0.31 | C0kM3N combo (2026-10-05, 1 wk) |
+| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.0k | 0.31 | C0kM3N combo (since 2026-10-05, 1 wk) |
 
 **Open tickets:** T-298888 Decaying (Android · ID · ID: ROAS 0.31 (prev 0.42), under 0.32)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GringoMaleLover · Android · ID · ID | C0kM3N combo | 2026-10-05 | 1 | 40% |
-| GringoMaleLover · Android · ID · ID | t3Wq8n bigtext | 2026-09-21 | 2 | 54% |
-| GringoMaleLover · Android · ID · ID | n6f2Wt banner | 2026-09-14 | 1 | 54% |
-| GringoMaleLover · Android · ID · ID | w1Tr7K carousel | 2026-08-31 | 2 | 47% |
-| GringoMaleLover · Android · ID · ID | 7nf3oE slideshow | 2026-08-10 | 3 | 63% |
-| GringoMaleLover · Android · ID · ID | m3dtCp beatsyncedtext | 2026-08-03 | 1 | 37% |
-| GringoMaleLover · Android · ID · ID | H7kM3N airport | 2026-07-27 | 1 | 42% |
-| GringoMaleLover · Android · ID · ID | m3dtCp beatsyncedtext | 2026-07-20 | 1 | 38% |
-| GringoMaleLover · Android · ID · ID | i48opT carousel | 2026-06-22 | 4 | 61% |
-| GringoMaleLover · Android · ID · ID | 7nf3oE slideshow | 2026-06-08 | 2 | 50% |
-| GringoMaleLover · iOS · ID | 7bn40k passenger | 2026-05-11 | 1 | – |
-| GringoMaleLover · Android · ID · ID | 4Bm9of banner | 2026-05-11 | 4 | 54% |
-| GringoMaleLover · Android · ID · ID | 4g89om iconicplaces | 2026-04-20 | 3 | 28% |
-| GringoMaleLover · iOS · ID | 4g89om iconicplaces | 2026-04-20 | 3 | 25% |
-| GringoMaleLover · iOS · ID | F4irne egaliter | 2026-04-13 | 1 | 16% |
+- 2026-10-05 · GringoMaleLover · Android · ID · ID · C0kM3N combo · 1 wk at 40% of spend  
+  top ad: `Gringolover-ID-C0kM3N-Combo-ComboBuleToIndonesian-BanyakCowokBuleDiBumpyYangPengenNikahinCewekIndo-FOMO-ProductAware-VID-Batch2026Week36`
+- 2026-09-21 · GringoMaleLover · Android · ID · ID · t3Wq8n bigtext · 2 wk at 54% of spend  
+  top ad: `GringoLover-ID-t3Wq8n-BigText-SeaGirlSelfie-easierbutfaraway-confession-ProductAware-IMG-Batch2026Week35`
+- 2026-09-14 · GringoMaleLover · Android · ID · ID · n6f2Wt banner · 1 wk at 54% of spend  
+  top ad: `GringoLover-ID-n6f2Wt-Banner-bigticket-DateAWhiteForeignGuyOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
+- 2026-08-31 · GringoMaleLover · Android · ID · ID · w1Tr7K carousel · 2 wk at 47% of spend  
+  top ad: `GringoLover-ID-w1Tr7K-Carousel-IndonesianCloseup-pacaransamabule-recommendation-ProblemAware-IMG-Batch2026Week32`
+- 2026-08-10 · GringoMaleLover · Android · ID · ID · 7nf3oE slideshow · 3 wk at 63% of spend  
+  top ad: `Gringolover-ID-7nf3oE-slideshow-GakNyangkaBanyakBuleDiBumpyYangMauKomitSamaCeweIndo-komit-cowobule-VID-Batch2026Week17`
+- 2026-08-03 · GringoMaleLover · Android · ID · ID · m3dtCp beatsyncedtext · 1 wk at 37% of spend  
+  top ad: `Gringolover-ID-m3dtCp-beatsyncedtext-aerialCoupleWalking-BanyakBuleMacarinCewekIndo-intldatinginterest-VID-Batch2026Week25`
+- 2026-07-27 · GringoMaleLover · Android · ID · ID · H7kM3N airport · 1 wk at 42% of spend  
+  top ad: `GringoLover-ID-H7kM3N-Airport-IndonesianFemaleSelfieInBedroom-POVKetemoCowokDariUS-StoryTelling-ProblemUnaware-VID-Batch2026Week21`
+- 2026-07-20 · GringoMaleLover · Android · ID · ID · m3dtCp beatsyncedtext · 1 wk at 38% of spend  
+  top ad: `Gringolover-ID-m3dtCp-beatsyncedtext-aerialCoupleWalking-BanyakBuleMacarinCewekIndo-intldatinginterest-VID-Batch2026Week25`
+- 2026-06-22 · GringoMaleLover · Android · ID · ID · i48opT carousel · 4 wk at 61% of spend  
+  top ad: `Gringolover-ID-i48opT-fastcarouselartsy-SelfieAtWashingtonSquarePark-POVDipacarinCowoBuleDariBumpy-dateabroad-princesstreatment-VID-Batch2026Week23`
+- 2026-06-08 · GringoMaleLover · Android · ID · ID · 7nf3oE slideshow · 2 wk at 50% of spend  
+  top ad: `Gringolover-ID-7nf3oE-slideshow-GakNyangkaBanyakBuleDiBumpyYangMauKomitSamaCeweIndo-komit-cowobule-VID-Batch2026Week17`
+- 2026-05-11 · GringoMaleLover · iOS · ID · 7bn40k passenger · 1 wk at – of spend  
+  top ad: `GringoLover-ID-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07GringoLover-ID-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07`
+- 2026-05-11 · GringoMaleLover · Android · ID · ID · 4Bm9of banner · 4 wk at 54% of spend  
+  top ad: `Gringolover-ID-4Bm9of-banner-envelope-money-GakNyangkaBanyakBulediBumpyKomitSamaCewekIndo-status-combopic-VID-Batch2026Week17`
+- 2026-04-20 · GringoMaleLover · Android · ID · ID · 4g89om iconicplaces · 3 wk at 28% of spend  
+  top ad: `GringoLover-ID-4g89om-IconicPlaces-Waterfall-VID-Batch2026Week08`
+- 2026-04-20 · GringoMaleLover · iOS · ID · 4g89om iconicplaces · 3 wk at 25% of spend  
+  top ad: `GringoLover-ID-4g89om-IconicPlaces-Waterfall-IMG-Batch2026Week08`
+- 2026-04-13 · GringoMaleLover · iOS · ID · F4irne egaliter · 1 wk at 16% of spend  
+  top ad: `Gringolover-ID-F4irne-Egaliter-GoingOutDinner-VID-Batch2026Week11`
 
 ### Fatigue clock
 A #1 here has led a median 1 weeks (29 finished reigns). Longest: H7kM3N airport, 5 weeks from 2026-01-12.

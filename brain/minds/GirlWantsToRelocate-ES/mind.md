@@ -39,14 +39,13 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · ES | 🟠 Amber | $1.1k | 0.36 | n6f2Wt banner (2026-07-20, 12 wk) |
+| GirlWantsToRelocate · iOS · ES | 🟠 Amber | $1.1k | 0.36 | n6f2Wt banner (since 2026-07-20, 12 wk) |
 
 **Open tickets:** T-311248 Decaying (iOS · ES: ROAS 0.36, under 0.40, not falling)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GirlWantsToRelocate · iOS · ES | n6f2Wt banner | 2026-07-20 | 12 | 82% |
+- 2026-07-20 · GirlWantsToRelocate · iOS · ES · n6f2Wt banner · 12 wk at 82% of spend  
+  top ad: `PassportGirl-ES-n6f2Wt-Banner-Envelope-RecomiendoMuchisimoSalirConUnGringoEnBumpy-PersonalRecommendation-ProductAware-IMG-Batch2026Week280`
 
 ### Experiments logged
 - none yet

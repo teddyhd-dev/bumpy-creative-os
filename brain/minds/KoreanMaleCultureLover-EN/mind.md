@@ -34,21 +34,26 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| KoreanMaleCultureLover · Android · EN | 🆘 Critical | $2.5k | 0.27 | B9dF4J slider (2026-10-05, 1 wk) |
-| KoreanMaleCultureLover · iOS · EN | ✅ Healthy | $1.1k | 0.44 | a2Ef3y wanted (2026-08-03, 10 wk) |
+| KoreanMaleCultureLover · Android · EN | 🆘 Critical | $2.5k | 0.27 | B9dF4J slider (since 2026-10-05, 1 wk) |
+| KoreanMaleCultureLover · iOS · EN | ✅ Healthy | $1.1k | 0.44 | a2Ef3y wanted (since 2026-08-03, 10 wk) |
 
 **Open tickets:** T-333147 Decaying (Android · EN: ROAS 0.27 (prev 0.34), under 0.32); T-161832 Due (iOS · EN: ROAS 0.44)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| KoreanMaleCultureLover · Android · EN | B9dF4J slider | 2026-10-05 | 1 | 37% |
-| KoreanMaleCultureLover · Android · EN | n6f2Wt banner | 2026-08-10 | 8 | 45% |
-| KoreanMaleCultureLover · iOS · EN | a2Ef3y wanted | 2026-08-03 | 10 | 54% |
-| KoreanMaleCultureLover · Android · EN | B9dF4J slider | 2026-06-29 | 6 | 55% |
-| KoreanMaleCultureLover · iOS · EN | B9dF4J slider | 2026-06-08 | 8 | 65% |
-| KoreanMaleCultureLover · iOS · EN | a2Ef3y wanted | 2026-06-01 | 1 | 50% |
-| KoreanMaleCultureLover · iOS · EN | B9dF4J slider | 2026-05-18 | 2 | 74% |
+- 2026-10-05 · KoreanMaleCultureLover · Android · EN · B9dF4J slider · 1 wk at 37% of spend  
+  top ad: `Koreaboo-US-B9dF4J-slider-KoreanGuyOfficer-KoreanMenOnBumpy-choices-oppas-VID-Batch2026Week20`
+- 2026-08-10 · KoreanMaleCultureLover · Android · EN · n6f2Wt banner · 8 wk at 45% of spend  
+  top ad: `Koreaboo-US-n6f2Wt-Banner-BigTicket-KoreanRedHairHook-DateKoreanOppaOnBumpy-OppaFantasy-MostAware-VID-Batch2026Week29`
+- 2026-08-03 · KoreanMaleCultureLover · iOS · EN · a2Ef3y wanted · 10 wk at 54% of spend  
+  top ad: `Koreaboo-US-a2Ef3y-WANTED-KoreanMaleWonderingAttheAirportAnyone-InternationalFunCompanion-SolutionAware-VID-Batch2026Week29`
+- 2026-06-29 · KoreanMaleCultureLover · Android · EN · B9dF4J slider · 6 wk at 55% of spend  
+  top ad: `Koreaboo-US-B9dF4J-slider-KoreanManInAGym-KoreanMenOnBumpy-choices-oppas-VID-Batch2026Week20`
+- 2026-06-08 · KoreanMaleCultureLover · iOS · EN · B9dF4J slider · 8 wk at 65% of spend  
+  top ad: `Koreaboo-US-B9dF4J-slider-KoreanManInAGym-KoreanMenOnBumpy-choices-oppas-VID-Batch2026Week20`
+- 2026-06-01 · KoreanMaleCultureLover · iOS · EN · a2Ef3y wanted · 1 wk at 50% of spend  
+  top ad: `Koreaboo-US-a2Ef3y-wanted-KoreanBoyInABeach-YourLifeIsntBoringYouJustNeedAFunKoreanBoyOnBumpy-koreanmen-dateoppas-VID-Batch2026Week20`
+- 2026-05-18 · KoreanMaleCultureLover · iOS · EN · B9dF4J slider · 2 wk at 74% of spend  
+  top ad: `Koreaboo-US-B9dF4J-slider-KpopOppaInsidetheAirplane-KoreanMenOnBumpy-choices-oppas-VID-Batch2026Week20`
 
 ### Fatigue clock
 A #1 here has led a median 6 weeks (5 finished reigns). Longest: a2Ef3y wanted, 10 weeks from 2026-08-03.

@@ -34,16 +34,16 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SoutheastAsianFemaleLover · Android · EN | 🔻 Falling | $1.9k | 0.42 | w1Tr7K carousel (2026-09-14, 4 wk) |
-| SoutheastAsianFemaleLover · iOS · EN | 🚀 Scaling | $1.8k | 0.53 | w1Tr7K carousel (2026-09-14, 4 wk) |
+| SoutheastAsianFemaleLover · Android · EN | 🔻 Falling | $1.9k | 0.42 | w1Tr7K carousel (since 2026-09-14, 4 wk) |
+| SoutheastAsianFemaleLover · iOS · EN | 🚀 Scaling | $1.8k | 0.53 | w1Tr7K carousel (since 2026-09-14, 4 wk) |
 
 **Open tickets:** T-843110 Decaying (Android · EN: Green, but hook rate -20% vs 4-wk avg); T-509491 Due (iOS · EN: ROAS 0.53, spend +63% vs 2 weeks ago)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| SoutheastAsianFemaleLover · iOS · EN | w1Tr7K carousel | 2026-09-14 | 4 | 72% |
-| SoutheastAsianFemaleLover · Android · EN | w1Tr7K carousel | 2026-09-14 | 4 | 77% |
+- 2026-09-14 · SoutheastAsianFemaleLover · iOS · EN · w1Tr7K carousel · 4 wk at 72% of spend  
+  top ad: `SouthEastAsianFemaleLover-US-w1Tr7K-Carousel-TreadmillGirl-AttractiveSingles-ProductAware-VID-Batch2026Week35`
+- 2026-09-14 · SoutheastAsianFemaleLover · Android · EN · w1Tr7K carousel · 4 wk at 77% of spend  
+  top ad: `SouthEastAsianFemaleLover-US-w1Tr7K-Carousel-TreadmillGirl-SadLifeFix-MostAware-VID-Batch2026Week35`
 
 ### Experiments logged
 - none yet

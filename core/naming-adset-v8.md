@@ -90,6 +90,9 @@ Character Limit section.
 | **OS** | ✓ | ✓ | `All` | `iOS` · `Android` · `Web` · `All` |
 | **Geo** | ✓ | ✓ | `WW` | `WW` · country codes joined `-` (`US-CA-GB`) · region groups `T1`/`T2`/`EU` · exclusions prefixed `x` (`WW-xUS`) |
 | **Language** | ✓ | ✓ | `All` | ISO 639-1 (`EN`, `ES`, `PT`...) + one exception (`TX` for Taglish) |
+
+> **Current practice (2 Nov 2026, creative lead):** names still write country-style codes in the Language field (`JP`, `KR`, `UA`, `CH`, `VN`…; ads write `US` for English). The move to ISO 639-1 comes later. Until then the engine reads `JA/KO/UK/ZH/VI` as `JP/KR/UA/CH/VN`.
+
 | **Gender** | — | ✓ | `BothGender` | `BothGender` · `Male` · `Female` |
 | **Objective** | ✓ | ✓ | `Purchase*` if unstated | `Purchase` · `Install` · `Signup` · `Sales` · `Retention` · `Awareness` |
 | **BudgetStrategy** | ✓ | — | `ABO*` (Meta/TikTok) · `Auto` (Google) | `CBO` · `ABO` · `Auto` |

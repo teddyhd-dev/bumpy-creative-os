@@ -42,4 +42,16 @@ decoded: false
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-01-05 | 2026-02-09 | 0 | 46% | $1.7k |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-01-05 | 2026-03-09 | 0 | 14% | $1.4k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN · Serious | 2026-03-30 | 2026-07-13 | 0 | 13% | $1.2k |
+
+### Variants (full ad names, 37 in total, top 10 by spend)
+- `US-v07e5T-IndianBoyDream-LoveStory-Airporthug-VID-Batch2025Week49` · $17.4k · 6 adsets
+- `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetWhiteMaleBlackFemale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15` · $11.2k · 3 adsets
+- `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetAsianMaleBlackFemale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15` · $9.6k · 4 adsets
+- `GringoLover-ES-v07e5T-LoveStory-Airporthug-VID-Batch2026Week01` · $8.1k · 2 adsets
+- `GringoLover-US-v07e5T-LoveStory-AirportHugHook-VID-Batch2026Week13` · $7.5k · 2 adsets
+- `GringoLover-TH-v07e5T-LoveStory-Airporthug-VID-Batch2026Week01` · $6.8k · 2 adsets
+- `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetBlackMaleBlackFemale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15` · $4.2k · 3 adsets
+- `SingleMom-US-v07e5T-LoveStory-KidSleepHook-VID-Batch2026Week07` · $3.6k · 2 adsets
+- `GringoLover-US-v07e5T-LoveStory-AirportHook-IMG-Batch2026Week13` · $3.5k · 2 adsets
+- `SingleMom-US-v07e5T-LoveStory-KidSleepHook-IMG-Batch2026Week07` · $3.0k · 2 adsets
 <!-- generated:end facts -->

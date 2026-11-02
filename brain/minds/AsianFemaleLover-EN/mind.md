@@ -37,31 +37,44 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AsianFemaleLover · iOS · EN | ✅ Healthy | $5.0k | 0.46 | Q7mZ2x povbait (2026-09-28, 2 wk) |
-| AsianFemaleLover · Android · EN | 🔻 Falling | $2.6k | 0.34 | Q7mZ2x povbait (2026-09-07, 5 wk) |
+| AsianFemaleLover · iOS · EN | ✅ Healthy | $5.0k | 0.46 | Q7mZ2x povbait (since 2026-09-28, 2 wk) |
+| AsianFemaleLover · Android · EN | 🔻 Falling | $2.6k | 0.34 | Q7mZ2x povbait (since 2026-09-07, 5 wk) |
 | AsianFemaleLover · Android · EN | ▫️ Not judged | $300 | 0.01 | – |
 | AsianFemaleLover · Android · EN | ▫️ Not judged | $299 | 0.03 | – |
 
 **Open tickets:** T-014937 Due (iOS · EN: ROAS 0.46); T-296005 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.45)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| AsianFemaleLover · iOS · EN | Q7mZ2x povbait | 2026-09-28 | 2 | 53% |
-| AsianFemaleLover · iOS · EN | a2Ef3y wanted | 2026-09-21 | 1 | 60% |
-| AsianFemaleLover · Android · EN | Q7mZ2x povbait | 2026-09-07 | 5 | 81% |
-| AsianFemaleLover · iOS · EN | Q7mZ2x povbait | 2026-08-31 | 3 | 55% |
-| AsianFemaleLover · Android · EN | 5trdiM streetinterview | 2026-08-10 | 1 | – |
-| AsianFemaleLover · Android · EN | 93km0i kitchen | 2026-08-03 | 1 | 24% |
-| AsianFemaleLover · Android · EN | H7kM3N airport | 2026-07-27 | 6 | 71% |
-| AsianFemaleLover · Android · EN | H7kM3N airport | 2026-07-20 | 1 | – |
-| AsianFemaleLover · Web · EN | 7i40dX walking | 2026-07-20 | 2 | 64% |
-| AsianFemaleLover · Android · EN | 5trdiM streetinterview | 2026-07-13 | 1 | – |
-| AsianFemaleLover · Android · EN | r04k2B pickyourasian | 2026-06-29 | 4 | 76% |
-| AsianFemaleLover · Android · EN | 7i40dX walking | 2026-06-22 | 4 | 73% |
-| AsianFemaleLover · Android · EN | a2Ef3y wanted | 2026-06-22 | 3 | 64% |
-| AsianFemaleLover · Android · EN | 7i40dX walking | 2026-06-22 | 1 | 51% |
-| AsianFemaleLover · Android · EN | n6f2Wt banner | 2026-06-15 | 1 | 41% |
+- 2026-09-28 · AsianFemaleLover · iOS · EN · Q7mZ2x povbait · 2 wk at 53% of spend  
+  top ad: `AsianFemaleLover-US-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-lonely23korea-recommendation-ProblemAware-IMG-Batch2026Week33`
+- 2026-09-21 · AsianFemaleLover · iOS · EN · a2Ef3y wanted · 1 wk at 60% of spend  
+  top ad: `Chinese-US-a2Ef3y-wanted-chinesefemaleparking-IMG-Batch2026Week04`
+- 2026-09-07 · AsianFemaleLover · Android · EN · Q7mZ2x povbait · 5 wk at 81% of spend  
+  top ad: `AsianFemaleLover-US-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-lonely23korea-recommendation-ProblemAware-IMG-Batch2026Week33`
+- 2026-08-31 · AsianFemaleLover · iOS · EN · Q7mZ2x povbait · 3 wk at 55% of spend  
+  top ad: `AsianFemaleLover-US-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-lonely23korea-recommendation-ProblemAware-IMG-Batch2026Week33`
+- 2026-08-10 · AsianFemaleLover · Android · EN · 5trdiM streetinterview · 1 wk at – of spend  
+  top ad: `AsianLover-US-5trdiM-streetinterview-KoreanManHook-WhereAreYouFrom-RateKoreanGirl-V1-VID-Batch2026Week16`
+- 2026-08-03 · AsianFemaleLover · Android · EN · 93km0i kitchen · 1 wk at 24% of spend  
+  top ad: `AsianLover-US-93km0i-kitchen-ChineseGirlAmericanGuyInTheKitchen-MatchedWithAsianOnBumpyNowYoureLivingHappyEnding-happyending-cook-VID-Batch2026Week20`
+- 2026-07-27 · AsianFemaleLover · Android · EN · H7kM3N airport · 6 wk at 71% of spend  
+  top ad: `Chinese-US-H7kM3N-Airport-ComboAsianFemaleWhiteMale-combo3-IMG-Batch2026Week03`
+- 2026-07-20 · AsianFemaleLover · Android · EN · H7kM3N airport · 1 wk at – of spend  
+  top ad: `Chinese-US-H7kM3N-Airport-ComboAsianMaleBlackFemale-combo3-IMG-Batch2026Week03`
+- 2026-07-20 · AsianFemaleLover · Web · EN · 7i40dX walking · 2 wk at 64% of spend  
+  top ad: `AsianLover-US-7i40dX-walking-beach-MeetAsianSinglesFromAbroad-asianmen-sliders-VID-Batch2026Week24`
+- 2026-07-13 · AsianFemaleLover · Android · EN · 5trdiM streetinterview · 1 wk at – of spend  
+  top ad: `AsianLover-US-5trdiM-streetinterview-SeattleManHook-WhereAreYouFrom-RateKoreanGirl-V1-VID-Batch2026Week16`
+- 2026-06-29 · AsianFemaleLover · Android · EN · r04k2B pickyourasian · 4 wk at 76% of spend  
+  top ad: `Chinese-US-r04k2B-pickyourasian-3AsianWomen-ItsTimeforYoutoDateAsianGirl-Options-FaceCovered-VID-Batch2026Week15`
+- 2026-06-22 · AsianFemaleLover · Android · EN · 7i40dX walking · 4 wk at 73% of spend  
+  top ad: `AsianLover-US-7i40dX-walking-beach-MeetAsianSinglesFromAbroad-asianmen-sliders-VID-Batch2026Week24`
+- 2026-06-22 · AsianFemaleLover · Android · EN · a2Ef3y wanted · 3 wk at 64% of spend  
+  top ad: `Chinese-US-a2Ef3y-wanted-chinesefemaleparking-VID-Batch2026Week04`
+- 2026-06-22 · AsianFemaleLover · Android · EN · 7i40dX walking · 1 wk at 51% of spend  
+  top ad: `AsianLover-US-7i40dX-walking-beach-MeetAsianSinglesFromAbroad-asianmen-sliders-VID-Batch2026Week24`
+- 2026-06-15 · AsianFemaleLover · Android · EN · n6f2Wt banner · 1 wk at 41% of spend  
+  top ad: `Chinese-US-n6f2Wt-banner-whiteboardgf-IMG-Batch2026Week04`
 
 ### Fatigue clock
 A #1 here has led a median 1 weeks (31 finished reigns). Longest: a2Ef3y wanted, 20 weeks from 2026-04-13.

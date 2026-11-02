@@ -42,4 +42,16 @@ decoded: false
 | PassportBro-FR | PassportBro · iOS · FR | 2026-03-30 | 2026-04-20 | 0 | 12% | $192 |
 | General-PT | General · Android · PT | 2026-03-30 | 2026-04-27 | 0 | 6% | $108 |
 | PassportBro-DE | PassportBro · iOS · DE | 2026-03-30 | 2026-04-20 | 0 | 6% | $81 |
+
+### Variants (full ad names, 10 in total, top 10 by spend)
+- `PlusSize-ES-s7l0bB-SLOP-PlusSizeFemaleBed-IfYoureASinglePlusSizeGirl-Infographic-Tips-VID-Batch2026Week21` · $12.3k · 4 adsets
+- `PassportBro-US-s7l0bB-SLOP-cloneself-VID-Batch2026Week12` · $9.7k · 6 adsets
+- `PlusSize-US-s7l0bB-SLOP-10timeseasier-VID-Batch202` · $5.3k · 5 adsets
+- `PlusSize-JP-s7l0bB-SLOP-PlusSizeFemaleBed-IfYoureASinglePlusSizeGirl-Infographic-Tips-VID-Batch2026Week21` · $2.6k · 1 adset
+- `PassportBro-ES-s7l0bB-SLOP-cloneself-VID-Batch2026` · $821 · 5 adsets
+- `PassportBro-PL-s7l0bB-SLOP-cloneself-VID-Batch2026` · $223 · 2 adsets
+- `PassportBro-FR-s7l0bB-SLOP-cloneself-VID-Batch2026` · $192 · 1 adset
+- `PassportBro-PT-s7l0bB-SLOP-cloneself-VID-Batch2026` · $160 · 2 adsets
+- `PassportBro-DE-s7l0bB-SLOP-cloneself-VID-Batch2026` · $81 · 1 adset
+- `PassportBro-UA-s7l0bB-SLOP-cloneself-VID-Batch2026` · $81 · 2 adsets
 <!-- generated:end facts -->

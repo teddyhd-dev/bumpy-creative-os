@@ -42,4 +42,16 @@ decoded: false
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-02-02 | 2026-10-05 | 0 | 6% | $1.3k |
 | PassportBro-EN | PassportBro · iOS · EN | 2026-02-02 | 2026-03-09 | 0 | 8% | $900 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-02-09 | 2026-03-16 | 0 | 14% | $884 |
+
+### Variants (full ad names, 29 in total, top 10 by spend)
+- `BlackAfrican-US-w5K8bX-TalkingToForeigner-VideoCallBlackFemaleWhiteFemale-TalkingToAForeignerIsFun-SuccessStory-BlacknonBlack-VID-Batch2026Week15` · $35.4k · 4 adsets
+- `304050-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05` · $14.6k · 3 adsets
+- `BlackAfrican-US-w5K8bX-TalkingToForeigner-VideoCallBlackFemaleBlackMale-TalkingToAForeignerIsFun-SuccessStory-BlacktoBlack-VID-Batch2026Week15` · $10.5k · 3 adsets
+- `Muslim-US-w5K8bX-Talkingtoforeigner-Valentine-VID-Batch2026Week05` · $7.7k · 3 adsets
+- `PassportBro-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05` · $7.4k · 8 adsets
+- `IndianBoyDream-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05` · $6.1k · 4 adsets
+- `PassportBro-US-w5K8bX-Talkingtoforeigner-Valentine-VID-Batch2026Week05` · $5.4k · 7 adsets
+- `GringoLover-ES-w5K8bX-Talkingtoforeigner-WalkingGay-VID-Batch2026Week05` · $4.9k · 2 adsets
+- `IndianBoyDream-US-w5K8bX-Talkingtoforeigner-Valentine-VID-Batch2026Week05` · $4.8k · 4 adsets
+- `GringoLover-ES-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05` · $3.1k · 2 adsets
 <!-- generated:end facts -->

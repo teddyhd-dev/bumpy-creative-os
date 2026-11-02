@@ -30,4 +30,13 @@ decoded: false
 | GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-01-05 | 2026-03-09 | 0 | 5% | $300 |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-01-05 | 2026-03-09 | 0 | 2% | $115 |
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-01-05 | 2026-03-09 | 0 | 1% | $93 |
+
+### Variants (full ad names, 7 in total, top 10 by spend)
+- `GringoLover-ID-z0E7hW-suitanddress-apartment-IMG-Batch2026Week01` · $993 · 2 adsets
+- `GringoLover-TH-z0E7hW-suitanddress-apartment-VID-Batch2026Week01` · $760 · 2 adsets
+- `GringoLover-BR-z0E7hW-suitanddress-apartment-VID-Batch2026Week01` · $716 · 2 adsets
+- `GringoLover-BR-z0E7hW-suitanddress-apartment-IMG-Batch2026Week01` · $449 · 2 adsets
+- `GringoLover-ID-z0E7hW-suitanddress-apartment-VID-Batch2026Week01` · $318 · 2 adsets
+- `GringoLover-TH-z0E7hW-suitanddress-apartment-IMG-Batch2026Week01` · $290 · 2 adsets
+- `GringoLover-ES-z0E7hW-suitanddress-apartment-IMG-Batch2026Week01` · $208 · 2 adsets
 <!-- generated:end facts -->

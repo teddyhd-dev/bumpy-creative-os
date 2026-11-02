@@ -42,4 +42,16 @@ decoded: false
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-05-18 | 2026-09-28 | 0 | 7% | $443 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN | 2026-05-11 | 2026-06-15 | 0 | 4% | $388 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2026-05-11 | 2026-07-27 | 0 | 9% | $300 |
+
+### Variants (full ad names, 22 in total, top 10 by spend)
+- `Gringolover-PH-7nf3oE-slideshow-SEAGirlWithWhiteGuy-AFAMSAreObsessedWithFilipinaOnBumpy-obsession-AFAM-VID-Batch2026Week17` · $4.8k · 2 adsets
+- `Gringolover-ID-7nf3oE-slideshow-GakNyangkaBanyakBuleDiBumpyYangMauKomitSamaCeweIndo-komit-cowobule-VID-Batch2026Week17` · $3.1k · 1 adset
+- `Gringolover-PT-7nf3oE-slideshow-LatinaWithItalianMan-TemMaisGringoQuerandoNamorarBrasileiraDoQueVoceImagina-obsessedwithlatina-morethanyouimagine-VID-Batch2026Week17` · $2.6k · 2 adsets
+- `Chinese-US-7nf3oE-slideshow-ChineseGirlBlondeGuy-ItsTimeForYouToDateAsianFromBumpy-romance-carousel-VID-Batch2026Week17` · $2.5k · 6 adsets
+- `LatinaLover-US-7nf3oE-slideshow-LatinaWithItalianGuyWrappedInTowel-BestDecisionInLifeDatingLatinasOnBumpy-howitfeels-POV-VID-Batch2026Week17` · $1.8k · 4 adsets
+- `IndianBoyLover-US-7nf3oE-slideshow-BlondeGirlIndianManHotTakeIndianMenAreinHighDemandWorldwideAmongWomenOnBumpy-highdemand-hottake-POV-VID-Batch2026Week17` · $1.6k · 3 adsets
+- `Gringolover-TH-7nf3oE-slideshow-SEAGirlWithWhiteGuyWrappedInTowel-MenAbroadAreIntoDatingThaiWomenOnBumpy-obsessed-intodatingthaiwomen-VID-Batch2026Week17` · $1.6k · 2 adsets
+- `Gringolover-ES-7nf3oE-slideshow-LatinaWithItalianMan-HayMasGringosQueriendoSalirConLatinasDeLoQueImaginas-wantingtodate-morethanyouimagine-VID-Batch2026Week17` · $1.6k · 2 adsets
+- `304050-US-7nf3oE-slideshow-MatureLatinaWithItalianMan-SignToDateLatinasonBumpyTheyAgedLikeFineWine-agelikefinewine-signtodate-VID-Batch2026Week17` · $1.2k · 3 adsets
+- `304050-ES-7nf3oE-slideshow-MatureLatinaWithWhiteItalianManWrappedInTowel-DeMujerAMujerMuchosGringosQuerenSalirConLatinasPorqueEnvejecemosComoElBuenVino-agelikefinewine-mujeramujer-VID-Batc` · $1.1k · 2 adsets
 <!-- generated:end facts -->

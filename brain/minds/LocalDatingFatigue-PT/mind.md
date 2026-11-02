@@ -34,14 +34,13 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LocalDatingFatigue · iOS · PT | ✅ Healthy | $675 | 0.63 | X4nR8W talkinghead (2026-08-31, 6 wk) |
+| LocalDatingFatigue · iOS · PT | ✅ Healthy | $675 | 0.63 | X4nR8W talkinghead (since 2026-08-31, 6 wk) |
 
 **Open tickets:** T-095695 Due (iOS · PT: ROAS 0.63)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| LocalDatingFatigue · iOS · PT | X4nR8W talkinghead | 2026-08-31 | 6 | 90% |
+- 2026-08-31 · LocalDatingFatigue · iOS · PT · X4nR8W talkinghead · 6 wk at 90% of spend  
+  top ad: `ChurnLocal-PT-X4nR8W-TalkingHead-GirlCarAlgorithmRigged-AlgorithmDoesntFavorYou-ProblemSolutionEducational-ProblemAware-VID-Batch2026Week34`
 
 ### Experiments logged
 - none yet

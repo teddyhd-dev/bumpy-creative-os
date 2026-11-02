@@ -42,4 +42,16 @@ decoded: false
 | PassportBro-EN | PassportBro · Android · EN | 2026-04-13 | 2026-05-04 | 0 | 1% | $15 |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-02-23 | 2026-06-15 | 0 | 0% | $15 |
 | PassportBro-EN | PassportBro · iOS · EN | 2026-05-18 | 2026-06-15 | 0 | 3% | $14 |
+
+### Variants (full ad names, 40 in total, top 10 by spend)
+- `LGBT-US-84n6r9-FaceMask-GayV2-VID-Batch2026Week07` · $1.3k · 3 adsets
+- `LGBT-US-84n6r9-FaceMask-Transwoman-VID-Batch2026Week07` · $1.0k · 3 adsets
+- `LGBT-US-84n6r9-FaceMask-TranswomanV2-VID-Batch2026Week07` · $729 · 3 adsets
+- `LGBT-US-84n6r9-FaceMask-Transwoman-IMG-Batch2026Week07` · $711 · 3 adsets
+- `GringoLover-ES-84n6r9-FaceMask-Sheet-VID-Batch2026Week07` · $530 · 2 adsets
+- `LGBT-US-84n6r9-FaceMask-Gay-VID-Batch2026Week07` · $521 · 3 adsets
+- `LGBT-US-84n6r9-FaceMask-LesbianV2-IMG-Batch2026Week07` · $381 · 3 adsets
+- `GringoLover-TR-84n6r9-FaceMask-Sheet-VID-Batch2026Week07` · $376 · 2 adsets
+- `LGBT-US-84n6r9-FaceMask-LesbianV2-VID-Batch2026Week07` · $364 · 3 adsets
+- `PassportBro-US-84n6r9-FaceMask-Sheet-IMG-Batch2026Week07` · $289 · 10 adsets
 <!-- generated:end facts -->

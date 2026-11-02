@@ -23,4 +23,8 @@ decoded: false
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | General-TR | General · iOS · TR | 2026-09-14 | 2026-10-05 | 3 | 42% | $4.7k |
+
+### Variants (full ad names, 2 in total, top 10 by spend)
+- `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-VID-Batch2026Week36` · $4.6k · 1 adset
+- `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-IMG-Batch2026Week36` · $55 · 1 adset
 <!-- generated:end facts -->

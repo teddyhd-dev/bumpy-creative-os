@@ -24,7 +24,7 @@ decoded: false
 |---|---|---|---|---|---|---|
 | General-TH | General · Android · TH | 2025-12-01 | 2026-01-12 | 2 | 60% | $1.7k |
 | General-TR | General · iOS · TR | 2025-12-01 | 2025-12-22 | 1 | 46% | $2.5k |
-| General-KO | General · iOS · KO | 2025-12-01 | 2026-02-02 | 1 | 22% | $696 |
+| General-KR | General · iOS · KO | 2025-12-01 | 2026-02-02 | 1 | 22% | $696 |
 | General-PT | General · iOS · PT | 2025-12-01 | 2026-03-09 | 0 | 13% | $4.7k |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-23 | 0 | 14% | $2.6k |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-23 | 0 | 5% | $2.6k |
@@ -34,12 +34,24 @@ decoded: false
 | General-TH | General · iOS · TH | 2025-12-01 | 2026-02-02 | 0 | 12% | $1.2k |
 | General-ES | General · Android · ES · Serious | 2025-12-01 | 2026-02-09 | 0 | 4% | $1.2k |
 | General-ES | General · iOS · ES | 2026-03-16 | 2026-05-25 | 0 | 17% | $977 |
-| General-JA | General · iOS · JA | 2025-12-01 | 2026-02-02 | 0 | 9% | $864 |
+| General-JP | General · iOS · JA | 2025-12-01 | 2026-02-02 | 0 | 9% | $864 |
 | General-PT | General · Android · PT | 2025-12-01 | 2026-02-09 | 0 | 10% | $829 |
 | General-PT | General · iOS · PT | 2026-01-05 | 2026-03-23 | 0 | 5% | $735 |
 | General-ES | General · Android · ES | 2025-12-01 | 2026-02-09 | 0 | 6% | $690 |
 | General-ES | General · iOS · ES | 2026-01-19 | 2026-03-23 | 0 | 6% | $352 |
 | General-EN | General · iOS · EN | 2025-12-01 | 2026-01-05 | 0 | 7% | $319 |
 | General-ID | General · Android · ID | 2025-12-01 | 2025-12-22 | 0 | 8% | $319 |
-| General-KO | General · Android · KO | 2025-12-01 | 2025-12-01 | 0 | 7% | $40 |
+| General-KR | General · Android · KO | 2025-12-01 | 2025-12-01 | 0 | 7% | $40 |
+
+### Variants (full ad names, 23 in total, top 10 by spend)
+- `ES-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-VID-Batch2025Week45` · $7.4k · 8 adsets
+- `BR-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-VID-Batch2025Week45` · $4.0k · 2 adsets
+- `TR-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-IMG-Batch2025Week45` · $3.7k · 2 adsets
+- `US-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-VID-Batch2025Week45` · $2.6k · 5 adsets
+- `TH-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-IMG-Batch2025Week45` · $1.8k · 2 adsets
+- `BR-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-IMG-Batch2025Week47` · $1.6k · 3 adsets
+- `TH-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-VID-Batch2025Week45` · $1.1k · 2 adsets
+- `ES-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-IMG-Batch2025Week47` · $1.0k · 4 adsets
+- `BR-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-VID-Batch2025Week47` · $700 · 1 adset
+- `JP-b3kP4G-Thankyou-Bumpy-AsianMaleSouthEastAsianFemale-VID-Batch2025Week45` · $648 · 1 adset
 <!-- generated:end facts -->

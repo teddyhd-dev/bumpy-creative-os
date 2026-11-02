@@ -34,20 +34,25 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| CelebrityCrushLookalikeLover · iOS · EN | 🟠 Amber | $1.1k | 0.38 | p0nPrF phoneprofile (2026-09-21, 3 wk) |
+| CelebrityCrushLookalikeLover · iOS · EN | 🟠 Amber | $1.1k | 0.38 | p0nPrF phoneprofile (since 2026-09-21, 3 wk) |
 
 **Open tickets:** T-302837 Decaying (iOS · EN: ROAS 0.38, under 0.40, not falling)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| CelebrityCrushLookalikeLover · iOS · EN | p0nPrF phoneprofile | 2026-09-21 | 3 | 93% |
-| CelebrityCrushLookalikeLover · iOS · EN | n6f2Wt banner | 2026-09-07 | 2 | 51% |
-| CelebrityCrushLookalikeLover · iOS · EN | w1Tr7K carousel | 2026-08-31 | 1 | 41% |
-| CelebrityCrushLookalikeLover · iOS · EN | p0nPrF phoneprofile | 2026-08-17 | 2 | 61% |
-| CelebrityCrushLookalikeLover · iOS · EN | n6f2Wt banner | 2026-08-10 | 1 | 46% |
-| CelebrityCrushLookalikeLover · iOS · EN | p0nPrF phoneprofile | 2026-07-27 | 2 | 55% |
-| CelebrityCrushLookalikeLover · iOS · EN | X4nR8W talkinghead | 2026-07-06 | 3 | 66% |
+- 2026-09-21 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 3 wk at 93% of spend  
+  top ad: `ChurnRaya-US-p0nPrF-phoneprofile-models-GirlsAbroadOnBumpyLooksLikeTheyBelongInAPalace-princess-ProductAware-VID-Batch2026Week26`
+- 2026-09-07 · CelebrityCrushLookalikeLover · iOS · EN · n6f2Wt banner · 2 wk at 51% of spend  
+  top ad: `ChurnRaya-US-n6f2Wt-Banner-Airplane-IfYouAreIntoAmbitiousInternationalCareerManDateOneOnBumpy-career-VID-ProductAware-Batch2026Week26`
+- 2026-08-31 · CelebrityCrushLookalikeLover · iOS · EN · w1Tr7K carousel · 1 wk at 41% of spend  
+  top ad: `CelebCrush-US-w1Tr7K-Carousel-SEAFemaleCloseup-datingasupermodel-recommendation-ProblemAware-IMG-Batch2026Week32`
+- 2026-08-17 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 2 wk at 61% of spend  
+  top ad: `ChurnRaya-US-p0nPrF-phoneprofile-jobseeker-RevealingMyBumpyMatchWhoGaveMeMyFirstRemoteJobAbroad-workingopportunities-ProductAware-VID-Batch2026Week26`
+- 2026-08-10 · CelebrityCrushLookalikeLover · iOS · EN · n6f2Wt banner · 1 wk at 46% of spend  
+  top ad: `ChurnRaya-US-n6f2Wt-Banner-CarWindow-DateCelebrityFromOtherCountry-celeb-ProductAware-IMG-Batch2026Week26`
+- 2026-07-27 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 2 wk at 55% of spend  
+  top ad: `ChurnRaya-US-p0nPrF-phoneprofile-premiumlookgirls-JustScrollingThroughBumpyWhen-hotgirls-ProductAware-VID-Batch2026Week26`
+- 2026-07-06 · CelebrityCrushLookalikeLover · iOS · EN · X4nR8W talkinghead · 3 wk at 66% of spend  
+  top ad: `ChurnRaya-US-X4nR8W-TalkingHead-BlondeGirl-ICancelledMyBumpySubscription-premiumusers-ProductAware-VID-Batch2026Week26`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (6 finished reigns). Longest: p0nPrF phoneprofile, 3 weeks from 2026-09-21.

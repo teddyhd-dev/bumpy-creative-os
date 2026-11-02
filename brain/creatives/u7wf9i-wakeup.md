@@ -40,4 +40,16 @@ decoded: false
 | MatureDating-ES | MatureDating · iOS · ES · 30to40 | 2026-05-04 | 2026-05-25 | 0 | 3% | $113 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-04 | 2026-05-18 | 0 | 2% | $98 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · iOS · EN | 2026-06-08 | 2026-06-29 | 0 | 5% | $61 |
+
+### Variants (full ad names, 14 in total, top 10 by spend)
+- `IndianBoyDream-US-u7Wf9i-wakeup-blondewoman-IMG-Batch2026Week14` · $36.6k · 5 adsets
+- `IndianBoyDream-US-u7Wf9i-wakeup-filipinawoman-IMG-Batch2026Week14` · $5.7k · 4 adsets
+- `304050-US-u7Wf9i-wakeup-blondewoman-IfYouAre30ItsNotTooLateToStartFreshDateMenAbroadonBumpyTheyAgedLikeFineWine-kissing-blackmanchoice-IMG-Batch2026Week17` · $4.5k · 3 adsets
+- `LatinaLover-US-u7Wf9i-wakeup-latinawoman-ALatinaChoseYouOnBumpy-kissing-latinaschoice-VID-Batch2026Week17` · $3.1k · 4 adsets
+- `PassportBro-US-u7Wf9i-wakeup-filipinawoman-DatingOutsideAmericaIsHalfThePriceAndTwicetheFun-cheapdating-VID-Batch2026Week17` · $2.7k · 3 adsets
+- `IndianBoyDream-US-u7Wf9i-wakeup-filipinawoman-VID-Batch2026Week14` · $1.4k · 2 adsets
+- `304050-ES-u7Wf9i-wakeup-blondewoman-LosGringosEnBumpyQuierenSalirConBrasilenasPorqueEnvejecenComoElBuenVino-kissing-blackmanchoice-VID-Batch2026Week17` · $828 · 2 adsets
+- `IndianBoyDream-US-u7Wf9i-wakeup-koreanwoman-IMG-Batch2026Week14` · $719 · 3 adsets
+- `LatinaLover-US-u7Wf9i-wakeup-latinawoman-ALatinaChoseYouOnBumpy-kissing-latinaschoice-IMG-Batch2026Week17` · $584 · 3 adsets
+- `PassportBro-US-u7Wf9i-wakeup-filipinawoman-DatingOutsideAmericaIsHalfThePriceAndTwicetheFun-cheapdating-IMG-Batch2026Week17` · $465 · 3 adsets
 <!-- generated:end facts -->

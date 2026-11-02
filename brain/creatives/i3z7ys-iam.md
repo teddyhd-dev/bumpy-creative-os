@@ -27,4 +27,9 @@ decoded: false
 | PlusSizeWomen-EN | PlusSizeWomen · Android · EN | 2026-03-16 | 2026-05-04 | 0 | 34% | $1.6k |
 | PlusSizeWomen-EN | PlusSizeWomen · Android · EN | 2026-04-20 | 2026-05-04 | 0 | 37% | $345 |
 | PlusSizeWomen-EN | PlusSizeWomen · iOS · EN | 2026-04-20 | 2026-04-27 | 0 | 32% | $83 |
+
+### Variants (full ad names, 3 in total, top 10 by spend)
+- `PlusSize-US-i3Z7Ys-IAM-CarHook-VID-Batch2026Week11` · $2.9k · 3 adsets
+- `PlusSize-US-i3Z7Ys-IAM-HikingHook-VID-Batch2026Week11` · $1.6k · 5 adsets
+- `PlusSize-US-i3Z7Ys-IAM-CarHook-IMG-Batch2026Week11` · $239 · 3 adsets
 <!-- generated:end facts -->

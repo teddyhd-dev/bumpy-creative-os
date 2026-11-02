@@ -39,4 +39,15 @@ decoded: false
 | GringoMaleLover-EN | GringoMaleLover · iOS · EN | 2026-03-30 | 2026-05-11 | 0 | 3% | $56 |
 | GringoMaleLover-ID | GringoMaleLover · iOS · ID | 2026-03-23 | 2026-04-06 | 0 | 3% | $47 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN · Serious | 2026-07-27 | 2026-08-10 | 0 | 3% | $19 |
+
+### Variants (full ad names, 9 in total, top 10 by spend)
+- `Gringolover-ES-pr13n5-princesstreatment-IMG-Batch2026Week11` · $4.7k · 2 adsets
+- `Gringolover-PT-pr13n5-princesstreatment-IMG-Batch2026Week11` · $4.2k · 2 adsets
+- `BlackAfrican-US-pr13n5-PrincessTreatment-3CollageMuseumShoppingHugging-PrincessTreatmentFromAFAMs-Envy-BlackWomanWhiteGuy-IMG-Batch2026Week15` · $2.9k · 2 adsets
+- `BlackAfrican-US-pr13n5-PrincessTreatment-CarryingGirlonHandMuseum-PrincessTreatmentFromAFAMs-Envy-BlackWomanWhiteGuy-VID-Batch2026Week15` · $1.9k · 4 adsets
+- `Gringolover-ID-pr13n5-princesstreatment-IMG-Batch2026Week11` · $945 · 2 adsets
+- `Gringolover-TH-pr13n5-princesstreatment-IMG-Batch2026Week11` · $601 · 2 adsets
+- `Gringolover-PH-pr13n5-princesstreatment-IMG-Batch2026Week11` · $484 · 2 adsets
+- `Gringolover-TR-pr13n5-princesstreatment-IMG-Batch2026Week11` · $442 · 1 adset
+- `Gringolover-IN-pr13n5-princesstreatment-IMG-Batch2026Week11` · $171 · 2 adsets
 <!-- generated:end facts -->

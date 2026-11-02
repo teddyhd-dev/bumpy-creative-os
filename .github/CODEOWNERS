@@ -1,6 +1,6 @@
 # Changes to the shared foundation affect every tool, so the creative lead reviews them.
-# Replace @CREATIVE-LEAD with your GitHub username once the repo is on GitHub.
-/core/       @CREATIVE-LEAD
-/contracts/  @CREATIVE-LEAD
-/checks/     @CREATIVE-LEAD
-/AGENTS.md   @CREATIVE-LEAD
+
+/core/       @teddyhd-dev
+/contracts/  @teddyhd-dev
+/checks/     @teddyhd-dev
+/AGENTS.md   @teddyhd-dev

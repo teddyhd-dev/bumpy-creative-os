@@ -42,4 +42,16 @@ decoded: false
 | IntlFriendFinder-CH | IntlFriendFinder · iOS · CH · Friend | 2026-06-15 | 2026-06-29 | 0 | 29% | $541 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-06-15 | 2026-07-20 | 0 | 6% | $486 |
 | IntlFriendFinder-PT | IntlFriendFinder · Android · PT · Friend | 2026-06-15 | 2026-08-24 | 0 | 13% | $423 |
+
+### Variants (full ad names, 41 in total, top 10 by spend)
+- `Gringolover-PH-i48opT-fastcarouselartsy-BusinessClass-POVDatingAnAFAMOnBumpy-dateabroad-princesstreatment-VID-Batch2026Week23` · $3.9k · 2 adsets
+- `5060-US-i48opT-carousel-CoupleTeasingInABeach-HowItFeelsToDateMatureSinglesOnBumpy-romanticshots-maturecouple-VID-Batch2026Week24` · $2.9k · 2 adsets
+- `LatinoLover-US-i48opT-carousel-LatinoInCar-LatinosFromLatamCountries-LatamLatino-ProductAware-VID-Batch2026Week28` · $2.5k · 4 adsets
+- `LatinoLover-US-i48opT-carousel-LatinoBeachSelfie-MakeLatinoFriendsOnBumpy-LatinoFriend-ProductAware-VID-Batch2026Week28` · $2.3k · 4 adsets
+- `Gringolover-ID-i48opT-fastcarouselartsy-SelfieAtWashingtonSquarePark-POVDipacarinCowoBuleDariBumpy-dateabroad-princesstreatment-VID-Batch2026Week23` · $2.3k · 1 adset
+- `AsianDating-TR-i48opT-carousel-KoreanGirlinBikini-BuBumpydeTatliVeSevgiDoluAsyaliKizlarlaTanismanIcinBirIsaret-cuteandloving-signtodate-VID-Batch2026Week21` · $2.0k · 2 adsets
+- `5060-US-i48opT-carousel-maturewomen-DateMatureSingleWomanAbroadOnBumpy-maturewomen-choices-VID-Batch2026Week24` · $1.9k · 2 adsets
+- `LatinoLover-ES-i48opT-Carousel-LatinoInCar-ConocerLatinosDeLatanCountries-LatamLatino-ProductAware-VID-Batch2026Week27` · $1.6k · 2 adsets
+- `InternationalFriends-JP-i48opT-fastcarouselartsy-CoffeeOnABeach-POVYouHaveFriendsFromDifferentCountryBecauseOfBumpy-friends-makefriends-VID-Batch2026Week23` · $1.5k · 1 adset
+- `Gringolover-TH-i48opT-fastcarouselartsy-AirplaneKiss-POVYoureDatingAForeignGuyFromBumpy-dateabroad-princesstreatment-VID-Batch2026Week23` · $1.2k · 2 adsets
 <!-- generated:end facts -->

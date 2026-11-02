@@ -39,12 +39,14 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GirlWantsToRelocate · iOS · ID | Co3Mb0 coupleproof | 2026-10-05 | 1 | – |
-| GirlWantsToRelocate · iOS · ID | n6f2Wt banner | 2026-09-07 | 4 | 44% |
-| GirlWantsToRelocate · iOS · ID | v8Gn7M pulseblack | 2026-07-27 | 6 | 56% |
-| GirlWantsToRelocate · iOS · ID | n6f2Wt banner | 2026-07-20 | 1 | 70% |
+- 2026-10-05 · GirlWantsToRelocate · iOS · ID · Co3Mb0 coupleproof · 1 wk at – of spend  
+  top ad: `PassportGirl-ID-Co3Mb0-CoupleProof-MixedCouplesCombo-PacaranPindahKeLuarNegeri-dateMoveAbroad-CompletelyUnaware-VID-Batch2026Week28`
+- 2026-09-07 · GirlWantsToRelocate · iOS · ID · n6f2Wt banner · 4 wk at 44% of spend  
+  top ad: `PassportGirl-ID-n6f2Wt-Banner-Envelope-RecommendedBgtPacaranSamaBuleDariBumpy-PersonalRecommendation-ProductAware-VID-Batch2026Week28`
+- 2026-07-27 · GirlWantsToRelocate · iOS · ID · v8Gn7M pulseblack · 6 wk at 56% of spend  
+  top ad: `PassportGirl-ID-v8Gn7M-PulseBlack-GirlWalking-HarusCobainPacaranSamaBuleUSDariBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
+- 2026-07-20 · GirlWantsToRelocate · iOS · ID · n6f2Wt banner · 1 wk at 70% of spend  
+  top ad: `PassportGirl-ID-n6f2Wt-Banner-ManyGifts-CarFullOfGiftsWithLogoSteeringWheel-POVGotAskedOutByARichForeignGuyFromBumpy-RichSuitorFantasy-ProductAware-IMG-Batch2026Week280`
 
 ### Fatigue clock
 A #1 here has led a median 4 weeks (3 finished reigns). Longest: v8Gn7M pulseblack, 6 weeks from 2026-07-27.

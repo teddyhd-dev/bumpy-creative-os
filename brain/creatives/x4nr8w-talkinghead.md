@@ -42,4 +42,16 @@ decoded: false
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · iOS · EN | 2026-04-27 | 2026-10-05 | 2 | 43% | $12.4k |
 | MatureDating-EN | MatureDating · Android · EN · 30to40 | 2026-08-03 | 2026-10-05 | 2 | 49% | $7.9k |
 | RichHusbandFinder-EN | RichHusbandFinder · iOS · EN | 2026-05-04 | 2026-06-08 | 2 | 57% | $2.7k |
+
+### Variants (full ad names, 203 in total, top 10 by spend)
+- `US-X4nR8W-TalkingHead-Passportbro-airpolaneseat-VID-Batch2025Week42` · $25.9k · 13 adsets
+- `ChurnLocal-US-X4nR8W-TalkingHead-PersianFemaleWalking-DeleteYourDatingApps-RawAdvice-ProblemAware-VID-Batch2026Week22` · $13.7k · 5 adsets
+- `MatureDating-US-X4nR8W-TALKINGHEAD-MatureMaleTalkingHeadJacket-secondchance-testimonial-ProductAware-VID-Batch2026Week33` · $8.5k · 2 adsets
+- `MatureDating-US-X4nR8W-TalkingHead-WhiteSexyMomWithCat-DateYourAgeAbroad-ProductAware-VID-Batch2026Week30` · $8.1k · 2 adsets
+- `BlackDatingWorldwide-US-X4nR8W-TALKINGHEAD-BlackManPointingDirectAddress-caringblackman-recommendation-ProductAware-VID-Batch2026Week32` · $7.4k · 2 adsets
+- `ChristianWorldwide-US-X4nR8W-TalkingHead-AmericanManInCarHardToFindValues-hardfindshareyourvalues-recommendation-ProductAware-VID-Batch2026Week30` · $6.5k · 1 adset
+- `ChristianMatchWorldwide-US-X4nR8W-TALKINGHEAD-FemaleTalkingHeadCrossNecklace-shareourfaith-testimonial-ProductAware-VID-Batch2026Week33` · $5.0k · 1 adset
+- `LatinaFemaleLoverES-ES-X4nR8W-TALKINGHEAD-WhiteMaleTalkingHeadJacket-melatinas-testimonial-ProductAware-VID-Batch2026Week33` · $4.9k · 3 adsets
+- `LatinoLover-ES-X4nR8W-TalkingHead-BlondeLatinaLowCutTanktop-ParaTodasMisLatinasQueSiemprePreguntanDondeConocerLatinos-LatAmCountrySpecificity-ProductAware-VID-Batc` · $4.1k · 2 adsets
+- `ChurnLocal-US-X4nR8W-TalkingHead-AfricanAmerican-ProblemWithDatingApp-RawAdvice-ProblemAware-VID-Batch2026Week22` · $4.0k · 2 adsets
 <!-- generated:end facts -->

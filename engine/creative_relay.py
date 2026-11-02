@@ -24,7 +24,8 @@ ADD = ["spend", "rev", "impressions", "installs", "clicks", "purchases", "hook_x
 MIN_ADSET_WEEK = 500
 
 
-def load():
+def _weekly_rows():
+    """Ad rows parsed and prorated into Mon-Sun weeks (judged objectives only)."""
     d = load_ads()
     Pa = pd.DataFrame([dict(ad_name=n, **parse_ad(n)) for n in d["ad_name"].unique()])
     d = d.merge(Pa, on="ad_name", how="left")
@@ -32,6 +33,13 @@ def load():
     A = A.rename(columns={c: "as_" + c for c in A.columns if c != "adset_name"})
     d = d.merge(A, on="adset_name", how="left")
     d["concept_key"] = np.where(d["concept"] != "", d["concept"], "name:" + d["ad_clean"])
+    # confirmed code fixes (typos, letter case) from core/code_aliases.csv: one concept, one key
+    al = os.path.join(os.path.dirname(HERE), "core", "code_aliases.csv")
+    if os.path.exists(al):
+        A_ = pd.read_csv(al)
+        A_ = A_[A_.status.astype(str).str.lower() == "confirmed"]
+        if len(A_):
+            d["concept_key"] = d["concept_key"].replace(dict(zip(A_.alias, A_.code)))
     d = d[d["as_objective"].isin(JUDGED_OBJECTIVES)]
     # prorate each export bucket evenly over its days, then sum into Mon-Sun weeks
     d = d.copy()
@@ -46,6 +54,17 @@ def load():
     full_weeks = rep.groupby("week")["day"].max()
     keep = full_weeks[full_weeks - pd.to_datetime(full_weeks.index) >= pd.Timedelta(days=6)].index
     rep = rep[rep["week"].isin(keep)]
+    return d, rep, last_day
+
+
+def load_variants():
+    """adset × week × concept × full ad name (cleaned of '- Copy' and file extensions) → spend."""
+    d, rep, _ = _weekly_rows()
+    return rep.groupby(["adset_id", "week", "concept_key", "ad_clean"]).agg(spend=("spend", "sum")).reset_index()
+
+
+def load():
+    d, rep, last_day = _weekly_rows()
     c = rep.groupby(["adset_id", "week", "concept_key"]).agg(
         spend=("spend", "sum"), rev=("rev", "sum"), imp=("impressions", "sum"), ins=("installs", "sum"),
         clk=("clicks", "sum"), pur=("purchases", "sum"), hx=("hook_x_imp", "sum")).reset_index()

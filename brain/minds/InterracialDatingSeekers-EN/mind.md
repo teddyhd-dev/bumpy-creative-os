@@ -39,29 +39,42 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.3k | 0.47 | H7kM3N airport (2026-09-14, 4 wk) |
-| InterracialDatingSeekers · Android · EN | 🆘 Critical | $4.2k | 0.32 | w5K8bX talkingtoforeigner (2026-09-14, 4 wk) |
+| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.3k | 0.47 | H7kM3N airport (since 2026-09-14, 4 wk) |
+| InterracialDatingSeekers · Android · EN | 🆘 Critical | $4.2k | 0.32 | w5K8bX talkingtoforeigner (since 2026-09-14, 4 wk) |
 
 **Open tickets:** T-628890 Decaying (Android · EN: ROAS 0.317 (prev 0.31), under 0.32); T-602912 Due (iOS · EN: ROAS 0.47)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| InterracialDatingSeekers · Android · EN | w5K8bX talkingtoforeigner | 2026-09-14 | 4 | 45% |
-| InterracialDatingSeekers · iOS · EN | H7kM3N airport | 2026-09-14 | 4 | 41% |
-| InterracialDatingSeekers · Android · EN | v07e5T lovestory | 2026-09-07 | 1 | 27% |
-| InterracialDatingSeekers · iOS · EN | X4nR8W talkinghead | 2026-08-31 | 2 | 41% |
-| InterracialDatingSeekers · Android · EN · Serious | v07e5T lovestory | 2026-08-03 | 3 | 61% |
-| InterracialDatingSeekers · Android · EN · Serious | H7kM3N airport | 2026-07-27 | 1 | 46% |
-| InterracialDatingSeekers · iOS · EN · Serious | H7kM3N airport | 2026-06-29 | 5 | 68% |
-| InterracialDatingSeekers · Android · EN | w5K8bX talkingtoforeigner | 2026-06-29 | 10 | 44% |
-| InterracialDatingSeekers · iOS · EN | H7kM3N airport | 2026-05-18 | 15 | 66% |
-| InterracialDatingSeekers · Android · EN | H7kM3N airport | 2026-05-11 | 7 | 51% |
-| InterracialDatingSeekers · Android · EN | b3pl9x blackslideshow | 2026-05-04 | 4 | 72% |
-| InterracialDatingSeekers · iOS · EN | v07e5T lovestory | 2026-05-04 | 2 | 41% |
-| InterracialDatingSeekers · iOS · EN | a2Ef3Y wanted | 2026-04-27 | 1 | 51% |
-| InterracialDatingSeekers · Android · EN | p8C7aO mirrorselfie | 2026-04-27 | 1 | 45% |
-| InterracialDatingSeekers · Android · EN | b3pl9x blackslideshow | 2026-04-13 | 2 | 58% |
+- 2026-09-14 · InterracialDatingSeekers · Android · EN · w5K8bX talkingtoforeigner · 4 wk at 45% of spend  
+  top ad: `BlackAfrican-US-w5K8bX-TalkingToForeigner-VideoCallBlackFemaleWhiteFemale-TalkingToAForeignerIsFun-SuccessStory-BlacknonBlack-VID-Batch2026Week15`
+- 2026-09-14 · InterracialDatingSeekers · iOS · EN · H7kM3N airport · 4 wk at 41% of spend  
+  top ad: `BlackAfrican-US-H7kM3N-Airport-ComboBlacktoNonBlack-ThousandofAfrican-FOMO-BlacktoBlack-VID-Batch2026Week15`
+- 2026-09-07 · InterracialDatingSeekers · Android · EN · v07e5T lovestory · 1 wk at 27% of spend  
+  top ad: `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetAsianMaleBlackFemale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15`
+- 2026-08-31 · InterracialDatingSeekers · iOS · EN · X4nR8W talkinghead · 2 wk at 41% of spend  
+  top ad: `BlackDatingWorldwide-US-X4nR8W-TALKINGHEAD-BlackManPointingDirectAddress-caringblackman-recommendation-ProductAware-VID-Batch2026Week32`
+- 2026-08-03 · InterracialDatingSeekers · Android · EN · Serious · v07e5T lovestory · 3 wk at 61% of spend  
+  top ad: `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetAsianFemaleBlackMale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15`
+- 2026-07-27 · InterracialDatingSeekers · Android · EN · Serious · H7kM3N airport · 1 wk at 46% of spend  
+  top ad: `BlackAfrican-US-H7kM3N-Airport-KoreanFemaleSelfieinBedroom-AsiansLiningUp-Desired-Girls-VID-Batch2026Week15`
+- 2026-06-29 · InterracialDatingSeekers · iOS · EN · Serious · H7kM3N airport · 5 wk at 68% of spend  
+  top ad: `BlackAfrican-US-H7kM3N-Airport-KoreanFemaleSelfieinBedroom-AsiansLiningUp-Desired-Girls-VID-Batch2026Week15`
+- 2026-06-29 · InterracialDatingSeekers · Android · EN · w5K8bX talkingtoforeigner · 10 wk at 44% of spend  
+  top ad: `BlackAfrican-US-w5K8bX-TalkingToForeigner-VideoCallBlackFemaleWhiteFemale-TalkingToAForeignerIsFun-SuccessStory-BlacknonBlack-VID-Batch2026Week15`
+- 2026-05-18 · InterracialDatingSeekers · iOS · EN · H7kM3N airport · 15 wk at 66% of spend  
+  top ad: `BlackAfrican-US-H7kM3N-Airport-ComboBlacktoNonBlack-ThousandofAfrican-FOMO-BlacktoBlack-VID-Batch2026Week15`
+- 2026-05-11 · InterracialDatingSeekers · Android · EN · H7kM3N airport · 7 wk at 51% of spend  
+  top ad: `BlackAfrican-US-H7kM3N-Airport-ComboBlacktoNonBlack-ThousandofAfrican-FOMO-BlacktoBlack-VID-Batch2026Week15`
+- 2026-05-04 · InterracialDatingSeekers · Android · EN · b3pl9x blackslideshow · 4 wk at 72% of spend  
+  top ad: `BLK-US-b3pl9x-blackslideshow-blackwomanformalhook-VID-Batch2026Week13`
+- 2026-05-04 · InterracialDatingSeekers · iOS · EN · v07e5T lovestory · 2 wk at 41% of spend  
+  top ad: `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetWhiteMaleBlackFemale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15`
+- 2026-04-27 · InterracialDatingSeekers · iOS · EN · a2Ef3Y wanted · 1 wk at 51% of spend  
+  top ad: `BlackAfrican-US-a2Ef3Y-wanted-BlackMaleinCar-ConnectWithBlackSignles-Connection-BLKads-IMG-Batch2026Week15`
+- 2026-04-27 · InterracialDatingSeekers · Android · EN · p8C7aO mirrorselfie · 1 wk at 45% of spend  
+  top ad: `BLK-US-p8C7aO-MirrorSelfie-interracialfemale-VID-Batch2026Week02`
+- 2026-04-13 · InterracialDatingSeekers · Android · EN · b3pl9x blackslideshow · 2 wk at 58% of spend  
+  top ad: `BLK-US-b3pl9x-blackslideshow-blackmanairporthook-VID-Batch2026Week13`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (35 finished reigns). Longest: H7kM3N airport, 15 weeks from 2026-05-18.

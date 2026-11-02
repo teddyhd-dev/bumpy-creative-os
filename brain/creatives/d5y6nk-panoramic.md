@@ -34,7 +34,7 @@ decoded: false
 | MatureDating-PT | MatureDating · iOS · PT | 2025-12-29 | 2026-03-09 | 0 | 15% | $1.0k |
 | General-RU | General · Android · RU | 2025-12-22 | 2026-04-13 | 0 | 16% | $839 |
 | General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-07-27 | 0 | 12% | $731 |
-| General-UK | General · Android · UK | 2025-12-22 | 2026-04-06 | 0 | 12% | $617 |
+| General-UA | General · Android · UK | 2025-12-22 | 2026-04-06 | 0 | 12% | $617 |
 | General-RU | General · Android · RU · Serious | 2026-07-06 | 2026-08-03 | 0 | 21% | $540 |
 | General-ES | General · iOS · ES | 2025-12-22 | 2026-01-05 | 0 | 3% | $354 |
 | MatureDating-ES | MatureDating · Android · ES · 30to40 | 2025-12-29 | 2026-04-06 | 0 | 11% | $325 |
@@ -42,4 +42,16 @@ decoded: false
 | General-ES | General · iOS · ES | 2025-12-22 | 2026-01-05 | 0 | 3% | $237 |
 | MatureDating-PT | MatureDating · Android · PT | 2026-03-02 | 2026-04-27 | 0 | 11% | $237 |
 | General-ES | General · Android · ES · Serious | 2025-12-22 | 2026-01-12 | 0 | 1% | $203 |
+
+### Variants (full ad names, 15 in total, top 10 by spend)
+- `US-d5Y6nK-Panoramic-PassportBro-Mountain-VID-Batch2025Week42` · $7.7k · 7 adsets
+- `3040-BR-d5Y6nK-Panoramic-Mountain-VID-Batch2025Week50` · $2.1k · 5 adsets
+- `US-d5Y6nK-Panoramic-PassportBro-Beach-VID-Batch2025Week42` · $2.1k · 4 adsets
+- `Slavic-KZ-d5Y6nK-Panoramic-Mountain-VID-Batch2025Week50` · $1.5k · 1 adset
+- `3040-ES-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $1.5k · 2 adsets
+- `3040-ES-d5Y6nK-Panoramic-Mountain-VID-Batch2025Week50` · $1.1k · 6 adsets
+- `Slavic-KZ-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $1.1k · 3 adsets
+- `Slavic-UA-d5Y6nK-Panoramic-Mountain-VID-Batch2025Week50` · $919 · 2 adsets
+- `Slavic-LV-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $728 · 3 adsets
+- `Slavic-UA-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $706 · 2 adsets
 <!-- generated:end facts -->

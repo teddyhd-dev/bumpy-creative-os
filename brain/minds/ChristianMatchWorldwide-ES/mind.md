@@ -38,15 +38,15 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · ES | 🆘 Critical | $1.7k | 0.28 | Q3fN8Z airportfirst (2026-08-31, 6 wk) |
+| ChristianMatchWorldwide · iOS · ES | 🆘 Critical | $1.7k | 0.28 | Q3fN8Z airportfirst (since 2026-08-31, 6 wk) |
 
 **Open tickets:** T-662610 Decaying (iOS · ES: ROAS 0.28 (prev 0.32), under 0.32)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · ES | Q3fN8Z airportfirst | 2026-08-31 | 6 | 58% |
-| ChristianMatchWorldwide · iOS · ES | X4nR8W talkinghead | 2026-08-03 | 4 | 41% |
+- 2026-08-31 · ChristianMatchWorldwide · iOS · ES · Q3fN8Z airportfirst · 6 wk at 58% of spend  
+  top ad: `Christian-ES-Q3fN8Z-AirportFirst-NigerianMaleLatinaFemaleAirportHug-conocemuchoscristianos-recommendation-SolutionAware-VID-Batch2026Week30`
+- 2026-08-03 · ChristianMatchWorldwide · iOS · ES · X4nR8W talkinghead · 4 wk at 41% of spend  
+  top ad: `ChristianWorldwide-ES-X4nR8W-TalkingHead-LatinaWalkingStreetFishingGlassWater-pescandoenvaso-recommendation-ProductAware-VID-Batch2026Week30`
 
 ### Fatigue clock
 A #1 here has led a median 4 weeks (1 finished reigns). Longest: Q3fN8Z airportfirst, 6 weeks from 2026-08-31.

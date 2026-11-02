@@ -32,4 +32,16 @@ decoded: false
 | IntlFriendFinder-TH | IntlFriendFinder · iOS · TH · Friend | 2026-08-10 | 2026-10-05 | 0 | 27% | $805 |
 | IntlFriendFinder-FR | IntlFriendFinder · iOS · FR · Friend | 2026-08-10 | 2026-09-14 | 0 | 31% | $745 |
 | IntlFriendFinder-CH | IntlFriendFinder · Web · CH | 2026-08-17 | 2026-09-14 | 0 | 16% | $36 |
+
+### Variants (full ad names, 58 in total, top 10 by spend)
+- `Friends-ES-q4Xr9m-TweetOverlay-Collageof4-siquieresamigosbumpy-recommendation-ProductAware-IMG-Batch2026Week31` · $15.3k · 2 adsets
+- `Friends-US-q4Xr9m-TweetOverlay-Collageof4-internationalfriendsbumpy-recommendation-ProductAware-VID-Batch2026Week31` · $8.8k · 2 adsets
+- `Friends-US-q4Xr9m-TweetOverlay-Collageof4-internationalfriendsbumpy-recommendation-ProductAware-IMG-Batch2026Week31` · $8.6k · 2 adsets
+- `Friends-US-q4Xr9m-TweetOverlay-FlagWalk-brazilitalykoreafriends-recommendation-ProductAware-IMG-Batch2026Week31` · $5.8k · 2 adsets
+- `Friends-ES-q4Xr9m-TweetOverlay-RoomHangout-amigosotrospaisesapp-recommendation-ProductAware-IMG-Batch2026Week31` · $3.5k · 2 adsets
+- `Friends-ES-q4Xr9m-TweetOverlay-EscalatorSelfie-brasilcoreaitaliaespanaamigos-recommendation-ProductAware-VID-Batch2026Week31` · $3.3k · 2 adsets
+- `Friends-US-q4Xr9m-TweetOverlay-RoomHangout-friendsfromothercountries-recommendation-ProductAware-VID-Batch2026Week31` · $2.6k · 2 adsets
+- `Friends-US-q4Xr9m-TweetOverlay-EscalatorSelfie-brazilkoreaitalyspainfriends-recommendation-ProductAware-IMG-Batch2026Week31` · $2.5k · 2 adsets
+- `Friends-ES-q4Xr9m-TweetOverlay-StreetFlagWalk-nopenseibafuncionar-recommendation-ProductAware-VID-Batch2026Week31` · $2.0k · 2 adsets
+- `Friends-US-q4Xr9m-TweetOverlay-RoomHangout-friendsfromothercountries-recommendation-ProductAware-IMG-Batch2026Week31` · $1.9k · 2 adsets
 <!-- generated:end facts -->

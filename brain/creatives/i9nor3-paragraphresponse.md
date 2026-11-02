@@ -40,4 +40,16 @@ decoded: false
 | PassportBro-EN | PassportBro · Android · EN | 2026-06-15 | 2026-07-13 | 0 | 3% | $64 |
 | GringoMaleLover-ID | GringoMaleLover · iOS · ID | 2026-03-02 | 2026-05-04 | 0 | 3% | $63 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-03-30 | 2026-04-20 | 0 | 11% | $47 |
+
+### Variants (full ad names, 14 in total, top 10 by spend)
+- `GringoLover-PH-i9Nor3-paragraphresponse-drake-IMG-Batch2026Week09` · $2.4k · 2 adsets
+- `PassportBro-US-i9Nor3-paragraphresponse-drake-IMG-Batch2026Week09` · $1.4k · 6 adsets
+- `PassportBro-US-i9Nor3-paragraphresponse-button-IMG-Batch2026Week09` · $1.2k · 6 adsets
+- `GringoLover-PH-i9Nor3-paragraphresponse-button-IMG-Batch2026Week09` · $1.1k · 2 adsets
+- `GringoLover-PT-i9Nor3-paragraphresponse-button-IMG-Batch2026Week09` · $540 · 2 adsets
+- `GringoLover-ES-i9Nor3-paragraphresponse-button-IMG-Batch2026Week09` · $423 · 2 adsets
+- `GringoLover-TR-i9Nor3-paragraphresponse-button-IMG-Batch2026Week09` · $386 · 2 adsets
+- `GringoLover-ES-i9Nor3-paragraphresponse-drake-IMG-Batch2026Week09` · $331 · 2 adsets
+- `GringoLover-TH-i9Nor3-paragraphresponse-drake-IMG-Batch2026Week09` · $302 · 2 adsets
+- `GringoLover-ID-i9Nor3-paragraphresponse-button-IMG-Batch2026Week09` · $232 · 2 adsets
 <!-- generated:end facts -->

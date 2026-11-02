@@ -24,7 +24,7 @@ decoded: false
 |---|---|---|---|---|---|---|
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-01-05 | 2026-04-06 | 12 | 55% | $16.8k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2025-12-08 | 2026-02-09 | 10 | 100% | $33.3k |
-| General-JA | General · iOS · JA | 2025-12-08 | 2026-02-02 | 7 | 71% | $7.4k |
+| General-JP | General · iOS · JA | 2025-12-08 | 2026-02-02 | 7 | 71% | $7.4k |
 | General-ID | General · iOS · ID | 2025-12-08 | 2026-02-02 | 7 | 68% | $5.0k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2025-12-08 | 2026-04-13 | 6 | 100% | $18.3k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-03-30 | 2026-10-05 | 6 | 61% | $14.1k |
@@ -42,4 +42,16 @@ decoded: false
 | General-ES | General · iOS · ES | 2026-03-16 | 2026-04-20 | 2 | 40% | $473 |
 | General-PT | General · iOS · PT | 2025-12-08 | 2026-01-26 | 1 | 33% | $13.9k |
 | General-EN | General · Android · EN | 2025-12-08 | 2026-02-02 | 1 | 28% | $3.4k |
+
+### Variants (full ad names, 60 in total, top 10 by spend)
+- `general-ES-j7G5d2-wanted-usmale-IMG-Batch2025Week48` · $22.3k · 8 adsets
+- `general-ES-j7G5d2-wanted-eurofemale-IMG-Batch2025Week48` · $16.5k · 8 adsets
+- `muslim-US-j7G5d2-wanted-whitemuslimfemale-IMG-Batch2025Week48` · $15.8k · 8 adsets
+- `general-ES-j7G5d2-wanted-usmale-VID-Batch2025Week48` · $14.9k · 7 adsets
+- `muslim-US-j7G5d2-wanted-seamuslimfemale-IMG-Batch2025Week48` · $11.2k · 8 adsets
+- `muslim-US-j7G5d2-wanted-whitemuslimmale-IMG-Batch2025Week48` · $11.0k · 10 adsets
+- `muslim-US-j7G5d2-wanted-moroccanmuslimfemale-IMG-Batch2025Week48` · $10.1k · 8 adsets
+- `general-BR-j7G5d2-wanted-usmale-IMG-Batch2025Week48` · $10.1k · 5 adsets
+- `muslim-US-j7G5d2-wanted-turkishmuslimfemale-IMG-Batch2025Week48` · $7.9k · 11 adsets
+- `muslim-US-j7G5d2-wanted-japanesemuslimmale-IMG-Batch2025Week48` · $7.2k · 7 adsets
 <!-- generated:end facts -->

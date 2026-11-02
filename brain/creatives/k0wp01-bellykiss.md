@@ -22,6 +22,18 @@ decoded: false
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| PassportBro-KO | PassportBro · iOS · KO | 2026-03-09 | 2026-05-11 | 6 | 100% | $3.4k |
-| PassportBro-KO | PassportBro · Android · KO | 2026-03-09 | 2026-04-20 | 1 | 62% | $1.9k |
+| PassportBro-KR | PassportBro · iOS · KO | 2026-03-09 | 2026-05-11 | 6 | 100% | $3.4k |
+| PassportBro-KR | PassportBro · Android · KO | 2026-03-09 | 2026-04-20 | 1 | 62% | $1.9k |
+
+### Variants (full ad names, 10 in total, top 10 by spend)
+- `PassportBro-KR-K0wp01-bellykiss-filipinawoman-VID-Batch2026Week10` · $1.3k · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-macedonianwoman-VID-Batch2026Week10` · $834 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-blackwoman-VID-Batch2026Week10` · $609 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-moroccowoman-VID-Batch2026Week10` · $603 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-filipinawoman-IMG-Batch2026Week10` · $572 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-azerbaijanwoman-VID-Batch2026Week10` · $526 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-moroccowoman-IMG-Batch2026Week10` · $309 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-azerbaijanwoman-IMG-Batch2026Week10` · $274 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-macedonianwoman-IMG-Batch2026Week10` · $152 · 2 adsets
+- `PassportBro-KR-K0wp01-bellykiss-blackwoman-IMG-Batch2026Week10` · $79 · 2 adsets
 <!-- generated:end facts -->

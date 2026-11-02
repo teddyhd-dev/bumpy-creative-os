@@ -42,4 +42,16 @@ decoded: false
 | LatinaFemaleLover-EN | LatinaFemaleLover · iOS · EN · Casual | 2026-04-20 | 2026-05-04 | 0 | 24% | $167 |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-02-23 | 2026-07-13 | 0 | 1% | $144 |
 | MatureDating-PT | MatureDating · Android · PT | 2026-03-02 | 2026-03-16 | 0 | 7% | $140 |
+
+### Variants (full ad names, 28 in total, top 10 by spend)
+- `LatinaLover-US-d5Y6mG-View-SeaBirdEye-VID-Batch2026Week08` · $8.7k · 4 adsets
+- `GringoLover-TH-d5Y6mG-View-manygringos-VID-Batch2026Week08` · $1.5k · 2 adsets
+- `LatinaLover-US-d5Y6mG-View-BeachFar-VID-Batch2026Week08` · $1.1k · 5 adsets
+- `LatinaLover-US-d5Y6mG-View-Yacth-VID-Batch2026Week08` · $1.0k · 3 adsets
+- `304050-US-d5Y6mG-View-nevertoolate-VID-Batch2026Week08` · $804 · 2 adsets
+- `GringoLover-ID-d5Y6mG-View-manygringos-VID-Batch2026Week08` · $690 · 2 adsets
+- `PassportBro-US-d5Y6mG-View-peaceful-VID-Batch2026Week08` · $668 · 9 adsets
+- `304050-ES-d5Y6mG-View-nevertoolate-VID-Batch2026Week08` · $660 · 2 adsets
+- `PassportGirl-US-d5Y6mG-View-notsobad-VID-Batch2026Week08` · $584 · 1 adset
+- `LatinaLover-FR-d5Y6mG-View-SeaBirdEye-VID-Batch2026Week08` · $425 · 1 adset
 <!-- generated:end facts -->

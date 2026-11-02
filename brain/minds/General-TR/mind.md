@@ -34,27 +34,39 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · TR | 🆘 Critical | $3.0k | 0.31 | k9R4mP parkingselfie (2026-09-21, 3 wk) |
+| General · iOS · TR | 🆘 Critical | $3.0k | 0.31 | k9R4mP parkingselfie (since 2026-09-21, 3 wk) |
 
 **Open tickets:** T-359282 Decaying (iOS · TR: ROAS 0.31 (prev 0.34), under 0.32)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| General · iOS · TR | k9R4mP parkingselfie | 2026-09-21 | 3 | 42% |
-| General · iOS · TR | n6f2Wt banner | 2026-06-08 | 15 | 67% |
-| General · Android · TR | L2vM8Q manyhugs2 | 2026-03-09 | 1 | – |
-| General · Android · TR | j7G5d2 wanted | 2026-03-02 | 1 | 45% |
-| General · iOS · TR | Hj5i8G talkinghead | 2026-01-05 | 2 | 37% |
-| General · iOS · TR | Hj5i8G talkinghead | 2026-01-05 | 3 | 70% |
-| General · iOS · TR | j7G5d2 wanted | 2025-12-29 | 1 | 22% |
-| General · Android · TR | L2vM8Q manyhugs2 | 2025-12-29 | 9 | 47% |
-| General · iOS · TR | i7P5Th banner | 2025-12-22 | 1 | 32% |
-| General · Android · TR | i7P5Th banner | 2025-12-22 | 1 | 56% |
-| General · iOS · TR | b3kP4G thankyou | 2025-12-15 | 1 | 46% |
-| General · Android · TR | Hj5i8G talkinghead | 2025-12-15 | 1 | 38% |
-| General · iOS · TR | L2vM8Q manyhugs2 | 2025-12-01 | 2 | 57% |
-| General · Android · TR | L2vM8Q manyhugs2 | 2025-12-01 | 2 | 48% |
+- 2026-09-21 · General · iOS · TR · k9R4mP parkingselfie · 3 wk at 42% of spend  
+  top ad: `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-VID-Batch2026Week36`
+- 2026-06-08 · General · iOS · TR · n6f2Wt banner · 15 wk at 67% of spend  
+  top ad: `AsianDating-TR-n6f2Wt-banner-Whiteboard-CinliBirSevgiliIstiyorsanBumpydeBiriyleCikmayaBasla-cuteasiangirl-asianlover-VID-Batch2026Week21`
+- 2026-03-09 · General · Android · TR · L2vM8Q manyhugs2 · 1 wk at – of spend  
+  top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
+- 2026-03-02 · General · Android · TR · j7G5d2 wanted · 1 wk at 45% of spend  
+  top ad: `muslim-US-j7G5d2-wanted-seamuslimfemale-VID-Batch2025Week48`
+- 2026-01-05 · General · iOS · TR · Hj5i8G talkinghead · 2 wk at 37% of spend  
+  top ad: `TR-Hj5i8G-TalkingHead-Diealonemale-IMG-Batch2025Week38`
+- 2026-01-05 · General · iOS · TR · Hj5i8G talkinghead · 3 wk at 70% of spend  
+  top ad: `TR-Hj5i8G-TalkingHead-Diealonemale-IMG-Batch2025Week38`
+- 2025-12-29 · General · iOS · TR · j7G5d2 wanted · 1 wk at 22% of spend  
+  top ad: `muslim-US-j7G5d2-wanted-seamuslimfemale-IMG-Batch2025Week48`
+- 2025-12-29 · General · Android · TR · L2vM8Q manyhugs2 · 9 wk at 47% of spend  
+  top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
+- 2025-12-22 · General · iOS · TR · i7P5Th banner · 1 wk at 32% of spend  
+  top ad: `General-TR-i7P5Th-Banner-Thorn-VID-Batch2025Week50`
+- 2025-12-22 · General · Android · TR · i7P5Th banner · 1 wk at 56% of spend  
+  top ad: `General-TR-i7P5Th-Banner-Thorn-VID-Batch2025Week50`
+- 2025-12-15 · General · iOS · TR · b3kP4G thankyou · 1 wk at 46% of spend  
+  top ad: `TR-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-IMG-Batch2025Week45`
+- 2025-12-15 · General · Android · TR · Hj5i8G talkinghead · 1 wk at 38% of spend  
+  top ad: `TR-Hj5i8G-TalkingHead-Zeromatchmale-IMG-Batch2025Week38`
+- 2025-12-01 · General · iOS · TR · L2vM8Q manyhugs2 · 2 wk at 57% of spend  
+  top ad: `TR-L2vM8Q-Manyhugs-Movecountry-VID-Batch2025Week40`
+- 2025-12-01 · General · Android · TR · L2vM8Q manyhugs2 · 2 wk at 48% of spend  
+  top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
 
 ### Fatigue clock
 A #1 here has led a median 1 weeks (13 finished reigns). Longest: n6f2Wt banner, 15 weeks from 2026-06-08.

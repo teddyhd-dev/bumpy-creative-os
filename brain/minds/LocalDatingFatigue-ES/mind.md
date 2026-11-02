@@ -34,16 +34,16 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LocalDatingFatigue · Android · ES | 🚀 Scaling | $1.3k | 0.43 | X4nR8W talkinghead (2026-09-14, 4 wk) |
-| LocalDatingFatigue · iOS · ES | 🟠 Amber | $906 | 0.35 | X4nR8W talkinghead (2026-08-31, 6 wk) |
+| LocalDatingFatigue · Android · ES | 🚀 Scaling | $1.3k | 0.43 | X4nR8W talkinghead (since 2026-09-14, 4 wk) |
+| LocalDatingFatigue · iOS · ES | 🟠 Amber | $906 | 0.35 | X4nR8W talkinghead (since 2026-08-31, 6 wk) |
 
 **Open tickets:** T-552375 Due (Android · ES: ROAS 0.43, spend +53% vs 2 weeks ago); T-094451 Decaying (iOS · ES: ROAS 0.35, under 0.40, not falling)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| LocalDatingFatigue · Android · ES | X4nR8W talkinghead | 2026-09-14 | 4 | 100% |
-| LocalDatingFatigue · iOS · ES | X4nR8W talkinghead | 2026-08-31 | 6 | 100% |
+- 2026-09-14 · LocalDatingFatigue · Android · ES · X4nR8W talkinghead · 4 wk at 100% of spend  
+  top ad: `ChurnLocal-ES-X4nR8W-TalkingHead-2PodcastFemaleConfidence-NotificationsDingDingDing-PersonalTestimonial-ProblemAware-VID-Batch2026Week34`
+- 2026-08-31 · LocalDatingFatigue · iOS · ES · X4nR8W talkinghead · 6 wk at 100% of spend  
+  top ad: `ChurnLocal-ES-X4nR8W-TalkingHead-PersianFemaleWalking-DeleteYourDatingApps-RawAdvice-ProblemAware-VID-Batch2026Week34`
 
 ### Experiments logged
 - none yet

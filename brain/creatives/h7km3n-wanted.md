@@ -37,4 +37,16 @@ decoded: false
 | SlavicFemaleLover-ES | SlavicFemaleLover · Android · ES | 2026-08-10 | 2026-08-24 | 0 | 48% | $240 |
 | SexyFemaleLover-PT | SexyFemaleLover · iOS · PT · Casual | 2026-08-10 | 2026-08-17 | 0 | 19% | $42 |
 | SexyFemaleLover-ES | SexyFemaleLover · iOS · ES · Casual | 2026-08-10 | 2026-08-17 | 0 | 10% | $22 |
+
+### Variants (full ad names, 66 in total, top 10 by spend)
+- `SlavicFemaleLover-ES-h7km3n-wanted-SlavicBlondeFemaleSnowOutdoor-ConectaConChicasEslavas-SeriousDating-ProductAware-IMG-Batch2026Week31` · $9.1k · 3 adsets
+- `SlavicFemaleLover-ES-h7km3n-wanted-SlavicBlondeFemaleBeachLoungerSelfie-27UaSoloQuiereRelacionSeria-SeriousDating-SolutionAware-VID-Batch2026Week31` · $8.0k · 3 adsets
+- `SlavicFemaleLover-PT-h7km3n-wanted-SlavicBlondeFemaleSnowOutdoor-ConhecaMulheresEslavas-SeriousDating-ProductAware-IMG-Batch2026Week31` · $3.2k · 3 adsets
+- `LatinaLover-ES-h7km3n-wanted-Tengo25AnosSoyDeVenezuela-Talk-ProductAware-VID-Batch2026Week35` · $2.5k · 3 adsets
+- `LatinaLover-US-h7km3n-wanted-LonelyKindaWantToTalkToSomeoneInADifferentCountry-Talk-ProductAware-VID-Batch2026Week35` · $2.5k · 2 adsets
+- `SlavicFemaleLover-PT-h7km3n-wanted-SlavicBlondeFemaleBeachLoungerSelfie-27UaSoQuerRelacaoSeria-SeriousDating-SolutionAware-IMG-Batch2026Week31` · $2.2k · 3 adsets
+- `SlavicFemaleLover-ES-h7km3n-wanted-SlavicBlondeFemaleBedroomCrying-27UaCansadaDeSituationships-SeriousDating-ProblemAware-IMG-Batch2026Week31` · $1.9k · 3 adsets
+- `SlavicFemaleLover-PT-h7km3n-wanted-SlavicBlondeFemaleSnowOutdoor-ConhecaMulheresEslavas-SeriousDating-ProductAware-VID-Batch2026Week31` · $1.8k · 3 adsets
+- `SlavicFemaleLover-ES-h7km3n-wanted-SlavicBlondeFemaleSnowOutdoor-ConectaConChicasEslavas-SeriousDating-ProductAware-VID-Batch2026Week31` · $1.3k · 3 adsets
+- `SouthEastAsianFemaleLover-US-h7km3n-wanted-Single27FemaleFromThailand-HaveFun-ProductAware-VID-Batch2026Week35` · $1.1k · 2 adsets
 <!-- generated:end facts -->

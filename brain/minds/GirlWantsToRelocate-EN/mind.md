@@ -39,28 +39,41 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.8k | 0.40 | H7kM3N airport (2026-08-24, 7 wk) |
+| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.8k | 0.40 | H7kM3N airport (since 2026-08-24, 7 wk) |
 
 **Open tickets:** T-455544 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.40 from 0.43)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| GirlWantsToRelocate · iOS · EN | H7kM3N airport | 2026-08-24 | 7 | 59% |
-| GirlWantsToRelocate · iOS · EN | Kj4Rp7 firstdate | 2026-06-08 | 11 | 77% |
-| GirlWantsToRelocate · iOS · EN | n6f2Wt banner | 2026-06-08 | 1 | 34% |
-| GirlWantsToRelocate · iOS · EN | d5Y6mG view | 2026-06-01 | 1 | 31% |
-| GirlWantsToRelocate · iOS · EN | n6f2Wt banner | 2026-05-25 | 1 | 33% |
-| GirlWantsToRelocate · iOS · EN | 7bn40k passenger | 2026-05-18 | 1 | 28% |
-| GirlWantsToRelocate · iOS · EN | bRk4t3 banner | 2026-04-20 | 4 | 80% |
-| GirlWantsToRelocate · iOS · EN | v4E59z londonboy | 2026-03-30 | 3 | 57% |
-| GirlWantsToRelocate · iOS · EN | j1A9m2 notsobad | 2026-03-23 | 1 | 41% |
-| GirlWantsToRelocate · iOS · EN | v4E59z londonboy | 2026-03-16 | 1 | 49% |
-| GirlWantsToRelocate · iOS · EN | j1A9m2 notsobad | 2026-02-23 | 3 | 41% |
-| GirlWantsToRelocate · iOS · EN | v8Gn7M pulseblack | 2026-02-16 | 1 | 39% |
-| GirlWantsToRelocate · Android · EN | p8C7aO mirrorselfie | 2026-02-09 | 1 | – |
-| GirlWantsToRelocate · iOS · EN | p8C7aO mirrorselfie | 2026-02-02 | 1 | 41% |
-| GirlWantsToRelocate · iOS · EN | v4E59z londonboy | 2026-01-26 | 1 | 40% |
+- 2026-08-24 · GirlWantsToRelocate · iOS · EN · H7kM3N airport · 7 wk at 59% of spend  
+  top ad: `PassportGirl-US-H7kM3N-Wanted-ItalianGuyInCar-29fromUKLonelyLookingForGirlfriendFromAnotherCountryLetsChat-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
+- 2026-06-08 · GirlWantsToRelocate · iOS · EN · Kj4Rp7 firstdate · 11 wk at 77% of spend  
+  top ad: `PassportGirl-US-Kj4Rp7-FirstDate-CoupleOutfitCheckonStreet-GirlDateTheForeignOne-PassportGirl-TikTokTrendComedic-VID-Batch2026Week22`
+- 2026-06-08 · GirlWantsToRelocate · iOS · EN · n6f2Wt banner · 1 wk at 34% of spend  
+  top ad: `PassportGirl-US-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HighlyRecommendFallingInLoveWithManAbroadOnBumpy-proven-growing-IMG-Batch2026Week19`
+- 2026-06-01 · GirlWantsToRelocate · iOS · EN · d5Y6mG view · 1 wk at 31% of spend  
+  top ad: `PassportGirl-US-d5Y6mG-View-notsobad-VID-Batch2026Week08`
+- 2026-05-25 · GirlWantsToRelocate · iOS · EN · n6f2Wt banner · 1 wk at 33% of spend  
+  top ad: `PassportGirl-US-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HighlyRecommendFallingInLoveWithManAbroadOnBumpy-proven-growing-VID-Batch2026Week19`
+- 2026-05-18 · GirlWantsToRelocate · iOS · EN · 7bn40k passenger · 1 wk at 28% of spend  
+  top ad: `PassportGirl-US-7bn40k-Passenger-BackseatPOV-VID-Batch2026Week07`
+- 2026-04-20 · GirlWantsToRelocate · iOS · EN · bRk4t3 banner · 4 wk at 80% of spend  
+  top ad: `PassportGirl-US-bRk4t3-banner-envelope-IMG-Batch2026Week14`
+- 2026-03-30 · GirlWantsToRelocate · iOS · EN · v4E59z londonboy · 3 wk at 57% of spend  
+  top ad: `US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46`
+- 2026-03-23 · GirlWantsToRelocate · iOS · EN · j1A9m2 notsobad · 1 wk at 41% of spend  
+  top ad: `US-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46`
+- 2026-03-16 · GirlWantsToRelocate · iOS · EN · v4E59z londonboy · 1 wk at 49% of spend  
+  top ad: `US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46`
+- 2026-02-23 · GirlWantsToRelocate · iOS · EN · j1A9m2 notsobad · 3 wk at 41% of spend  
+  top ad: `US-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46`
+- 2026-02-16 · GirlWantsToRelocate · iOS · EN · v8Gn7M pulseblack · 1 wk at 39% of spend  
+  top ad: `PassportGirl-US-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05`
+- 2026-02-09 · GirlWantsToRelocate · Android · EN · p8C7aO mirrorselfie · 1 wk at – of spend  
+  top ad: `PassportGirl-US-p8C7aO-MirrorSelfie-notsobad-VID-Batch2026Week02`
+- 2026-02-02 · GirlWantsToRelocate · iOS · EN · p8C7aO mirrorselfie · 1 wk at 41% of spend  
+  top ad: `PassportGirl-US-p8C7aO-MirrorSelfie-notsobad-VID-Batch2026Week02`
+- 2026-01-26 · GirlWantsToRelocate · iOS · EN · v4E59z londonboy · 1 wk at 40% of spend  
+  top ad: `US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46`
 
 ### Fatigue clock
 A #1 here has led a median 1 weeks (21 finished reigns). Longest: Kj4Rp7 firstdate, 11 weeks from 2026-06-08.

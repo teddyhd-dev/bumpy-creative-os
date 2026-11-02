@@ -24,4 +24,10 @@ decoded: false
 |---|---|---|---|---|---|---|
 | LocalDatingFatigue-EN | LocalDatingFatigue · Android · EN | 2026-06-29 | 2026-10-05 | 2 | 64% | $3.0k |
 | LocalDatingFatigue-EN | LocalDatingFatigue · iOS · EN | 2026-06-08 | 2026-10-05 | 1 | 22% | $1.2k |
+
+### Variants (full ad names, 4 in total, top 10 by spend)
+- `ChurnLocal-US-Ap4rT7-AirplaneSelfie-WhiteFemalePlaneSelfie-DownloadedBumpyBoredNowFlyingNorway-Churn-ProblemAware-VID-Batch2026Week22` · $2.9k · 2 adsets
+- `ChurnLocal-US-Ap4rT7-AirplaneSelfie-WhiteMalePlaneSelfie-DatingAppsNotWorkingFlyNewCountry-Churn-ProblemAware-IMG-Batch2026Week22` · $507 · 2 adsets
+- `ChurnLocal-US-Ap4rT7-AirplaneSelfie-WhiteMalePlaneSelfie-DatingAppsNotWorkingFlyNewCountry-Churn-ProblemAware-VID-Batch2026Week22` · $506 · 2 adsets
+- `ChurnLocal-US-Ap4rT7-AirplaneSelfie-WhiteFemalePlaneSelfie-DownloadedBumpyBoredNowFlyingNorway-Churn-ProblemAware-IMG-Batch2026Week22` · $283 · 2 adsets
 <!-- generated:end facts -->

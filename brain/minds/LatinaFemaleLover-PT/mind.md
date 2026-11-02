@@ -38,16 +38,17 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · PT | 🟠 Amber | $1.1k | 0.34 | n62Wt banner (2026-07-13, 13 wk) |
+| LatinaFemaleLover · iOS · PT | 🟠 Amber | $1.1k | 0.34 | n62Wt banner (since 2026-07-13, 13 wk) |
 
 **Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.34, under 0.40, not falling)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| LatinaFemaleLover · Web · PT | n62Wt banner | 2026-08-10 | 6 | 100% |
-| LatinaFemaleLover · iOS · PT | n62Wt banner | 2026-07-13 | 13 | 83% |
-| LatinaFemaleLover · Android · PT · Casual | n62Wt banner | 2026-07-13 | 4 | 96% |
+- 2026-08-10 · LatinaFemaleLover · Web · PT · n62Wt banner · 6 wk at 100% of spend  
+  top ad: `LatinaLover-PT-n62Wt-Banner-VenezuelanaFenceBridge-quernamoradavenezuelana-recommendation-ProductAware-VID-Batch2026Week27`
+- 2026-07-13 · LatinaFemaleLover · iOS · PT · n62Wt banner · 13 wk at 83% of spend  
+  top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
+- 2026-07-13 · LatinaFemaleLover · Android · PT · Casual · n62Wt banner · 4 wk at 96% of spend  
+  top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
 
 ### Fatigue clock
 A #1 here has led a median 5 weeks (2 finished reigns). Longest: n62Wt banner, 13 weeks from 2026-07-13.

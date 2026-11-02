@@ -23,7 +23,7 @@ decoded: false
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | IntlFriendFinder-PT | IntlFriendFinder · iOS · PT · Friend | 2026-04-06 | 2026-09-28 | 11 | 91% | $17.9k |
-| IntlFriendFinder-JA | IntlFriendFinder · Android · JA | 2026-04-06 | 2026-06-01 | 6 | 63% | $2.9k |
+| IntlFriendFinder-JP | IntlFriendFinder · Android · JA | 2026-04-06 | 2026-06-01 | 6 | 63% | $2.9k |
 | General-EN-JP | General · iOS · EN-JP · Friend | 2026-05-04 | 2026-08-24 | 5 | 85% | $5.6k |
 | SlavicFemaleLover-PT | SlavicFemaleLover · iOS · PT | 2026-08-10 | 2026-10-05 | 5 | 60% | $3.5k |
 | IntlFriendFinder-FR | IntlFriendFinder · iOS · FR · Friend | 2026-08-10 | 2026-09-14 | 5 | 55% | $1.4k |
@@ -40,6 +40,18 @@ decoded: false
 | SexyFemaleLover-ES | SexyFemaleLover · iOS · ES · Casual | 2026-08-10 | 2026-08-24 | 3 | 90% | $198 |
 | IntlFriendFinder-ES | IntlFriendFinder · iOS · ES · Friend | 2026-04-06 | 2026-10-05 | 2 | 69% | $9.1k |
 | GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-08-17 | 2026-09-21 | 2 | 47% | $921 |
-| IntlFriendFinder-ZH | IntlFriendFinder · Android · ZH | 2026-04-06 | 2026-06-08 | 2 | 68% | $759 |
+| IntlFriendFinder-CH | IntlFriendFinder · Android · ZH | 2026-04-06 | 2026-06-08 | 2 | 68% | $759 |
 | SlavicFemaleLover-EN | SlavicFemaleLover · Android · EN | 2026-05-18 | 2026-06-01 | 2 | 50% | $360 |
+
+### Variants (full ad names, 62 in total, top 10 by spend)
+- `Friends-US-w1Tr7K-carousel-NYC-VID-Batch2026Week03` · $42.5k · 8 adsets
+- `Friends-US-w1Tr7K-carousel-female-VID-Batch2026Week03` · $22.6k · 6 adsets
+- `Friends-PT-w1Tr7K-carousel-NYC-VID-Batch2026Week13` · $19.9k · 3 adsets
+- `Friends-ES-w1Tr7K-carousel-NYC-VID-Batch2026Week13` · $11.1k · 2 adsets
+- `Friends-JP-w1Tr7K-carousel-female-VID-Batch2026Week13` · $9.8k · 3 adsets
+- `SlavicFemaleLover-ES-w1Tr7K-Carousel-PullingGymEquipment-MujeresSolterasEnBumpy-OpenToForeignMen-SolutionAware-VID-Batch2026Week31` · $8.2k · 3 adsets
+- `SexyFemaleLover-US-w1Tr7K-Carousel-Treadmill-SingleWomenOnBumpy-MeetSingleWomen-CompletelyUnaware-VID-Batch2026Week31` · $5.4k · 1 adset
+- `Friends-PT-w1Tr7K-carousel-female-VID-Batch2026Week13` · $5.0k · 2 adsets
+- `SlavicFemaleLover-PT-w1Tr7K-Carousel-TripodFullBody-ConhecaMulheresSolteirasNoBumpy-MeetSingleWomen-CompletelyUnaware-VID-Batch2026Week31` · $3.5k · 3 adsets
+- `GringoLover-PH-w1Tr7K-Carousel-FilipinaCloseup-datinganafam-recommendation-ProblemAware-IMG-Batch2026Week32` · $3.1k · 1 adset
 <!-- generated:end facts -->

@@ -32,4 +32,13 @@ decoded: false
 | General-EN | General · Android · EN | 2025-12-01 | 2025-12-08 | 0 | 0% | $16 |
 | General-EN | General · iOS · EN | 2026-04-27 | 2026-05-11 | 0 | 4% | $12 |
 | General-EN | General · iOS · EN | 2025-12-01 | 2025-12-08 | 0 | 0% | $3 |
+
+### Variants (full ad names, 7 in total, top 10 by spend)
+- `EN-Q8rX2V-Wedding-KRBR-VID-Batch2025Week39` · $41.9k · 3 adsets
+- `ES-Q8rX2V-Wedding-KRBR-VID-Batch2025Week39` · $3.1k · 2 adsets
+- `PT-Q8rX2V-Wedding-KRBR-VID-Batch2025Week39` · $790 · 2 adsets
+- `PassportBroGB-US-Q8rX2V-Wedding-BestManPhoto-MyMateFromPeckham-TalkingHeadOverAnalogPhoto-ProblemAware-VID-Batch2026Week18` · $33 · 1 adset
+- `EN-Q8rX2V-Wedding-JPNG-VID-Batch2025Week39` · $16 · 1 adset
+- `EN-Q8rX2V-Wedding-UKBL-VID-Batch2025Week39` · $3 · 1 adset
+- `ES-Q8rX2V-Wedding-JPNG-VID-Batch2025Week39` · $0 · 1 adset
 <!-- generated:end facts -->

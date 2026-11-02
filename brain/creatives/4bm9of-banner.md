@@ -40,4 +40,16 @@ decoded: false
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-05-04 | 2026-10-05 | 0 | 17% | $1.7k |
 | PlusSizeWomen-EN | PlusSizeWomen · iOS · EN | 2026-05-04 | 2026-05-18 | 0 | 25% | $459 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-04 | 2026-05-25 | 0 | 8% | $386 |
+
+### Variants (full ad names, 20 in total, top 10 by spend)
+- `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17` · $24.7k · 4 adsets
+- `Gringolover-PH-4Bm9of-banner-envelope-money-AFAMsAreObsessedWithFilipinaOnBumpy-status-combopic-VID-Batch2026Week17` · $6.5k · 2 adsets
+- `Gringolover-TH-4Bm9of-banner-WomanFeetInsideSportsCar-FarangBoysOnBumpyWantingToDateAndTreatYouLikePrincess-status-combopic-VID-Batch2026Week17` · $5.2k · 3 adsets
+- `Gringolover-PH-4Bm9of-banner-WomanFeetInsideSportsCar-ALotOfAFAMsOnBumpyAlreadyDateAndTreatingFilipinaLikeAPrincess-status-combopic-VID-Batch2026Week17` · $2.5k · 2 adsets
+- `Gringolover-ES-4Bm9of-banner-WomanFeetInsideSportsCar-MuchosGringosEnBumpySaliendoYTratandoALasLatinasComoPrincesas-status-combopic-VID-Batch2026Week17` · $2.3k · 2 adsets
+- `Gringolover-ID-4Bm9of-banner-envelope-money-GakNyangkaBanyakBulediBumpyKomitSamaCewekIndo-status-combopic-VID-Batch2026Week17` · $1.8k · 1 adset
+- `WomanMarriagePressure-US-4Bm9of-banner-WomanFeetInsideSportsCar-MetMyHusbandFromAbroadOnBumpyAtTheAgeOf30-status-combopic-VID-Batch2026Week17` · $1.7k · 2 adsets
+- `304050-ES-4Bm9of-banner-envelope-money-ALos34EmpecedeNuevoConMiEsposoGringoqueConociEnBumpyYMeMudaSuPaisUnAnoDespues-status-combopic-VID-Batch2026Week17` · $1.7k · 2 adsets
+- `Gringolover-PT-4Bm9of-banner-envelope-money-TratamentoDePrincesaDeUmGringoNoBumpy-status-combopic-VID-Batch2026Week17` · $1.6k · 1 adset
+- `Gringolover-TH-4Bm9of-banner-envelope-money-IDidntRealizeThatFarangonBumpyLiningUpToDateThaiWomen-status-combopic-VID-Batch2026Week17` · $1.6k · 2 adsets
 <!-- generated:end facts -->

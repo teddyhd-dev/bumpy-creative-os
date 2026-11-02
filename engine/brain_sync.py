@@ -2,8 +2,8 @@
 
 Runs last in engine/run_all.sh. It only ever writes the parts the engine owns (contracts/*.md):
   * core/minds.csv            registry of minds (persona × language); keeps the human columns
-  * brain/minds/<mind>/       creates mind.md + history.md for live or sizeable minds (seeded from the
-                              Notion persona card), rewrites the facts block, appends new-#1 and result
+  * brain/minds/<mind>/       creates mind.md + history.md for minds with a live adset (seeded from the
+                              Notion persona card), removes untouched seed-only files of minds gone dormant, rewrites the facts block, appends new-#1 and result
                               events to history.md (never edits existing lines)
   * brain/creatives/<code>.md creates a stub for every coded concept that became an adset's #1,
                               rewrites its facts block
@@ -32,6 +32,8 @@ sys.path.insert(0, HERE)
 from personas import load_cards  # noqa: E402
 from settings import BARS  # noqa: E402
 from tickets import concept_weeks, short_label  # noqa: E402
+from creative_relay import load_variants  # noqa: E402
+from naming_audit import taxonomy  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "output", "data")
@@ -41,16 +43,13 @@ CRE = os.path.join(ROOT, "brain", "creatives")
 EXP = os.path.join(ROOT, "brain", "experiments")
 STATE = os.path.join(ROOT, "state")
 CORE = os.path.join(ROOT, "core")
-SEED_MIN_SPEND = 5000        # a mind gets its own file when it is live or has spent this much since Dec
 CREATIVE_MIN_SPEND = 200     # a coded concept gets a creative file once it spent this much as an adset's #1
 TODAY = dt.date.today().isoformat()
 BAR = BARS["singular"]["green"]
 LANG_OK = re.compile(r"^[A-Z]{2}(-[A-Z]{2})?$")
-# legacy adset names used country codes for some languages; minds use ISO 639-1 (core/naming-adset-v8.md)
-LANG_ALIAS = {"JP": "JA", "KR": "KO"}
-LANG_CHECK = {"UA": "country code: Ukrainian is UK in ISO 639-1", "UK": "Ukrainian (ISO) or British English?",
-              "CH": "country code: which language?", "PH": "country code: Filipino/Taglish (TX)?",
-              "NG": "country code: which language?", "EN-JP": "two languages in one adset"}
+# For now the team writes country-style codes in the Language field (JP, KR, UA, CH, VN…). Older names were
+# read as ISO codes; map them to the codes in use so one language is one mind.
+LANG_ALIAS = {"JA": "JP", "KO": "KR", "UK": "UA", "ZH": "CH", "VI": "VN"}
 
 
 # ---------- markdown helpers ----------
@@ -122,8 +121,8 @@ def load():
     return G, c, meta, names, D
 
 
-def no1_runs(c, names):
-    """Every reign: adset × concept that was the adset's #1 for consecutive weeks."""
+def no1_runs(c, names, V):
+    """Every reign: adset × concept that was the adset's #1 for consecutive weeks, with its top ad (full name)."""
     t = c[c["rank"] == 1].sort_values(["adset_id", "week"])
     rows = []
     for aid, g in t.groupby("adset_id"):
@@ -132,8 +131,24 @@ def no1_runs(c, names):
             k = r.concept_key.iloc[0]
             rows.append(dict(adset_id=aid, code=k.replace("name:", ""), key=k, name=str(names.get(k, ""))[:40],
                              start=r.week.min(), end=r.week.max(), weeks=len(r), share=r.share.mean(),
-                             spend=r.spend.sum(), coded=not k.startswith("name:")))
+                             spend=r.spend.sum(), coded=not k.startswith("name:"),
+                             top_ad=top_ad(V, aid, k, r.week.min(), r.week.max())))
     return pd.DataFrame(rows)
+
+
+def top_ad(V, aid, key, w_from=None, w_to=None):
+    """The ad (full name) that spent most for this concept in this adset, optionally within weeks."""
+    x = V[(V.adset_id == aid) & (V.concept_key == key)]
+    if w_from is not None:
+        x = x[(x.week >= w_from) & (x.week <= (w_to or w_from))]
+    if x.empty:
+        return ""
+    return x.groupby("ad_clean").spend.sum().idxmax()
+
+
+def variants_now(V, aid, key, week, as_spend):
+    x = V[(V.adset_id == aid) & (V.concept_key == key) & (V.week == week)].sort_values("spend", ascending=False)
+    return [(r.ad_clean, r.spend / as_spend if as_spend else np.nan) for r in x.itertuples()]
 
 
 # ---------- minds ----------
@@ -205,7 +220,7 @@ def mind_facts(mid, G, runs, D, Q, exps, last_ad_week):
         lines += ["| Adset | Status | Spend | ROAS | #1 now (since) |", "|---|---|---|---|---|"]
         for r in live.sort_values("spend_last", ascending=False).itertuples():
             cur = runs[(runs.adset_id == r.adset_id)].sort_values("end").tail(1)
-            no1 = f"{cur.code.iloc[0]} {cur.name.iloc[0]} ({cur.start.iloc[0]}, {cur.weeks.iloc[0]} wk)" if len(cur) else "–"
+            no1 = f"{cur.code.iloc[0]} {cur.name.iloc[0]} (since {cur.start.iloc[0]}, {cur.weeks.iloc[0]} wk)" if len(cur) else "–"
             lines.append(f"| {r.label} | {r.status} | {money(r.spend_last)} | {r2(r.roas_last)} | {no1} |")
     tk = Q[Q.adset_id.isin(a.adset_id)]
     if len(tk):
@@ -213,9 +228,10 @@ def mind_facts(mid, G, runs, D, Q, exps, last_ad_week):
     r = runs[runs.adset_id.isin(a.adset_id)].copy()
     if len(r):
         r["adset"] = r.adset_id.map(a.set_index("adset_id").label)
-        lines += ["", "### #1 history (latest first)", "| Adset | Creative | From | Weeks as #1 | Share while #1 |", "|---|---|---|---|---|"]
+        lines += ["", "### #1 history (latest first)"]
         for x in r.sort_values("start", ascending=False).head(15).itertuples():
-            lines.append(f"| {x.adset} | {x.code} {x.name} | {x.start} | {x.weeks} | {pct(x.share)} |")
+            lines.append(f"- {x.start} · {x.adset} · {x.code} {x.name} · {x.weeks} wk at {pct(x.share)} of spend"
+                         + (f"  \n  top ad: `{x.top_ad}`" if x.top_ad else ""))
         done = r[r.end < last_ad_week]
         if len(done):
             top = r.sort_values("weeks").iloc[-1]
@@ -238,6 +254,90 @@ def mind_facts(mid, G, runs, D, Q, exps, last_ad_week):
     lines += ["", "### Experiments logged"]
     lines += [f"- {e['fm']['id']} · {e['fm'].get('move', '')} · {e['fm'].get('status', '')}" for e in mine] or ["- none yet"]
     return "\n".join(lines)
+
+
+# ---------- the story of an adset, for the brainstormer ----------
+def fmt_d(d):
+    try:
+        return pd.to_datetime(d).strftime("%b %-d")
+    except Exception:
+        return str(d or "–")
+
+
+def funnel(r):
+    if r is None or not r.get("spend"):
+        return None
+    return dict(roas=r["rev"] / r["spend"], ctr=r["clicks"] / r["impressions"] if r["impressions"] else np.nan,
+                c2i=r["installs"] / r["clicks"] if r["clicks"] else np.nan,
+                ipm=r["installs"] / r["impressions"] * 1000 if r["impressions"] else np.nan)
+
+
+def prebrief(t, n_tickets, G, runs, V, D, aw, acc, last_ad_week, bar, tickets_by_mind):
+    aid = t["adset_id"]
+    g = G.set_index("adset_id")
+    os_ = g.os.get(aid, "")
+    L = [f"Let's brainstorm {t['id']}: {t['adset']} (mind {t['mind']})",
+         f"Adset name: {t.get('name', '')}",
+         f"Ticket: {t['type']} · rank {t['rank']} of {n_tickets} · {str(t.get('status', '')).lstrip('✅🔻🆘🚀⚠️ ')} · {t['why']}"]
+    h = t.get("hist") or {}
+    if h.get("w"):
+        L.append(f"Spend and ROAS, last {len(h['w'])} weeks (bar {bar:.2f}): " + " · ".join(
+            f"{fmt_d(w)} {money(sv)} / {r2(rv)}" for w, sv, rv in zip(h["w"], h["s"], h["r"])))
+    rows = aw[aw.adset_id == aid].sort_values("week").tail(4)
+    if len(rows):
+        parts = []
+        for r in rows.to_dict("records"):
+            f = funnel(r)
+            if f:
+                parts.append(f"{fmt_d(r['week'])} CTR {f['ctr'] * 100:.2f}% · C>I {r2(f['c2i'])} · IPM {r2(f['ipm'])}")
+        L.append("Funnel, last 4 weeks: " + " | ".join(parts))
+        last = rows.iloc[-1].to_dict()
+        fa = funnel(acc.get((last["week"], os_))) if (last["week"], os_) in acc else None
+        fl = funnel(last)
+        if fa and fl:
+            L.append(f"Last week vs the {os_} average: " + " · ".join(
+                f"{k} ×{fl[key] / fa[key]:.2f}" for k, key in (("CTR", "ctr"), ("C>I", "c2i"), ("IPM", "ipm"), ("ROAS", "roas"))
+                if fa[key] and not pd.isna(fa[key]) and not pd.isna(fl[key])))
+    L.append(f"Weeks under the bar in a row: {t.get('weeks_under', 0)}"
+             + (" · FADING: no new concept since it went under" if t.get("fading") else "")
+             + f" · turnaround strikes {t.get('strikes', 0)}/3")
+    r = runs[runs.adset_id == aid].sort_values("start")
+    if t.get("top_code"):
+        L.append(f"Current #1: {t['top_code']} {t.get('top_name', '')} · {pct(t.get('top_share'))} of spend · "
+                 f"#1 since {fmt_d(t.get('reign_since'))} ({t.get('reign', 0)} wk)")
+        key = r.key.iloc[-1] if len(r) else t["top_code"]
+        sp = V[(V.adset_id == aid) & (V.week == last_ad_week)].spend.sum()
+        for ad, sh in variants_now(V, aid, key, last_ad_week, sp)[:4]:
+            L.append(f"  - {ad} ({pct(sh)} of the adset, week of {fmt_d(last_ad_week)})")
+    prev = r.iloc[:-1].tail(4).iloc[::-1] if len(r) > 1 else r.iloc[0:0]
+    if len(prev):
+        L.append("Previous #1s here:")
+        for x in prev.itertuples():
+            L.append(f"  - {fmt_d(x.start)}–{fmt_d(x.end)} ({x.weeks} wk, {pct(x.share)} of spend): {x.code} {x.name}"
+                     + (f" · top ad {x.top_ad}" if x.top_ad else ""))
+    lr = t.get("last_refresh")
+    if lr:
+        ago = (pd.to_datetime(last_ad_week) - pd.to_datetime(lr)).days // 7
+        L.append(f"Last refresh: {fmt_d(lr)} ({ago} wk ago){' (the adset launched then)' if lr == t.get('data_start') else ''}")
+    d = D[D.adset_id == aid].sort_values("w0").tail(5).iloc[::-1]
+    if len(d):
+        L.append("Recent refreshes (Hit = became #1 · Strike = no new #1 while under the bar · Foul = didn't unseat a healthy #1):")
+        for x in d.itertuples():
+            ads = [top_ad(V, aid, k, x.w0, (pd.to_datetime(x.w0) + pd.Timedelta(days=7)).strftime("%Y-%m-%d")) for k in str(x.codes).split()]
+            L.append(f"  - {fmt_d(x.w0)}: {x.codes} · {int(x.variants_max)} variant{'s' if x.variants_max != 1 else ''} · "
+                     f"{pct(x.best_s1)} of spend in week 1 → {x.verdict}" + (f" · top ad {', '.join(a for a in ads if a)}" if any(ads) else ""))
+    if t.get("in_test"):
+        L.append(f"In test now: {t['in_test']} ({t.get('test_verdict', '')}, {pct(t.get('test_s1'))} of spend in week 1)")
+    if t.get("j1"):
+        L.append("Proven nearby, never run here: " + "; ".join(
+            f"{j['code']} {j['name']} (#1 in {j['won_in']}, {money(j.get('spend_as_1'))} as #1)" for j in t["j1"][:3]))
+    sib = [x for x in tickets_by_mind.get(t["mind"], []) if x["id"] != t["id"]]
+    if sib:
+        L.append("Same mind, other open tickets (one brief can cover them): " + "; ".join(f"{x['id']} {x['adset']} ({x['type']})" for x in sib[:5]))
+    if t.get("brief"):
+        b = t["brief"]
+        L.append(f"Brief already logged: {b['id']} ({b['status']}, {b['strategist']})")
+    return "\n".join(L)
 
 
 # ---------- experiments ----------
@@ -279,7 +379,9 @@ def exp_results(e, c, G, D, last_ad_week):
 def main():
     G, c, meta, names, D = load()
     last_ad_week = c.week.max()
-    runs = no1_runs(c, names)
+    V = load_variants()
+    runs = no1_runs(c, names, V)
+    canon = taxonomy()
     Q = pd.read_csv(os.path.join(OUT, "tk_queue.csv"), dtype={"adset_id": str})
     cards = load_cards()
     exps = load_exps()
@@ -291,7 +393,7 @@ def main():
                                    spend_since_dec=("spend_total", "sum"), first_seen=("first_week", "min"),
                                    last_seen=("last_week", "max")).reset_index()
     reg["status"] = np.where(reg.live_adsets > 0, "live", "dormant")
-    seed = set(reg[(reg.live_adsets > 0) | (reg.spend_since_dec >= SEED_MIN_SPEND)].mind)
+    seed = set(reg[reg.live_adsets > 0].mind)     # a mind gets a file when it has a live adset (or an experiment)
     for e in exps:
         seed |= set(e["fm"].get("minds") or [])
     created = 0
@@ -302,7 +404,13 @@ def main():
             r = reg[reg.mind == m].iloc[0]
             seed_mind(m, r.persona, r.language, card_for(cards, r.persona))
             created += 1
-    reg["check"] = reg.language.map(LANG_CHECK).fillna("")
+    # drop seed-only files nobody has written in yet: minds gone dormant, or renamed by a code fix
+    for path in glob.glob(os.path.join(MINDS, "*", "history.md")):
+        m = os.path.basename(os.path.dirname(path))
+        untouched = len(re.findall(r"^## ", open(path, encoding="utf-8").read(), flags=re.M)) <= 1
+        if untouched and m not in seed:
+            shutil.rmtree(os.path.dirname(path))
+    reg["check"] = np.where(reg.persona.isin(canon), "", "persona not on the taxonomy (core/naming-adset-v8.md)")
     reg["has_file"] = reg.mind.map(lambda m: os.path.exists(os.path.join(MINDS, m, "mind.md")))
     reg["notion_card"] = reg.persona.map(lambda p: (card_for(cards, p) or {}).get("card", ""))
     old = os.path.join(CORE, "minds.csv")
@@ -372,6 +480,10 @@ def main():
             for r in agg.head(20).itertuples():
                 lines.append(f"| {lab.mind.get(r.adset_id, '')} | {lab.label.get(r.adset_id, r.adset_id)} | {r.first} | {r.last} | "
                              f"{r.weeks1} | {pct(r.peak)} | {money(r.spend)} |")
+            vv = V[V.concept_key.isin(keys)].groupby("ad_clean").agg(spend=("spend", "sum"), adsets=("adset_id", "nunique"))
+            vv = vv.sort_values("spend", ascending=False)
+            lines += ["", f"### Variants (full ad names, {len(vv)} in total, top 10 by spend)"]
+            lines += [f"- `{n}` · {money(x.spend)} · {int(x.adsets)} adset{'s' if int(x.adsets) != 1 else ''}" for n, x in vv.head(10).iterrows()]
         else:
             lines.append("Not in the ad exports.")
         write_md(p, fm, set_block(body, "facts", "\n".join(lines)))
@@ -409,13 +521,32 @@ def main():
         for t in e["fm"].get("tickets") or []:
             brief_of[t] = dict(id=e["fm"]["id"], strategist=e["fm"].get("strategist", ""), date=str(e["fm"].get("date", "")),
                                status=e["fm"].get("status", ""), concept=f"{e['fm'].get('concept_code', '')} {e['fm'].get('concept_name', '')}")
+    aw = pd.read_pickle(os.path.join(ROOT, "data", "model", "adset_week.pkl"))
+    aw["adset_id"] = aw.adset_id.astype(str)
+    aw["os"] = aw.adset_id.map(lab.os)
+    accdf = aw.groupby(["week", "os"])[["spend", "rev", "impressions", "installs", "clicks"]].sum()
+    acc = {k: v.to_dict() for k, v in accdf.iterrows()}
     for t in q["tickets"]:
         t["mind"] = f"{t['persona']}-{LANG_ALIAS.get(t['lang'], t['lang'])}"
         t["brief"] = brief_of.get(t["id"])
-    json.dump(q, open(qpath, "w"), separators=(",", ":"))
+        rr = runs[runs.adset_id == t["adset_id"]].sort_values("start")
+        t["top_ad"] = rr.top_ad.iloc[-1] if len(rr) else ""
+        for pp in t.get("past") or []:
+            m = rr[rr.code == pp.get("code")]
+            pp["top_ad"] = m.top_ad.iloc[-1] if len(m) else ""
+    by_mind = {}
+    for t in q["tickets"]:
+        by_mind.setdefault(t["mind"], []).append(t)
+    for t in q["tickets"]:
+        t["prebrief"] = prebrief(t, len(q["tickets"]), G, runs, V, D, aw, acc, last_ad_week, BAR, by_mind)
+    # the board's database caps a document at 256 KB: the stories go in their own document
+    json.dump({t["id"]: t["prebrief"] for t in q["tickets"]}, open(os.path.join(BOARD, "prebriefs.json"), "w"),
+              separators=(",", ":"), ensure_ascii=False)
+    qb = dict(q, tickets=[{k: v for k, v in t.items() if k != "prebrief"} for t in q["tickets"]])
+    json.dump(qb, open(qpath, "w"), separators=(",", ":"))
     os.makedirs(STATE, exist_ok=True)
     keys = ["id", "rank", "type", "mind", "adset", "adset_id", "os", "why", "spend", "roas", "top_code", "top_name", "top_share",
-            "reign", "reign_since", "last_refresh", "strikes", "weeks_under", "fading", "past_no1", "j1", "brief"]
+            "top_ad", "reign", "reign_since", "last_refresh", "strikes", "weeks_under", "fading", "past_no1", "j1", "brief", "prebrief"]
     json.dump(dict(week=q.get("adset_week"), ad_week=q.get("ad_week"), generated=TODAY,
                    tickets=[{k: t.get("past" if k == "past_no1" else k) for k in keys} for t in q["tickets"]]),
               open(os.path.join(STATE, "queue.json"), "w"), indent=1, ensure_ascii=False)

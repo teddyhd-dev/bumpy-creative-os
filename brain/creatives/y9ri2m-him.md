@@ -29,4 +29,11 @@ decoded: false
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · iOS · EN | 2025-12-29 | 2026-01-26 | 0 | 9% | $541 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-01-05 | 2026-02-02 | 0 | 5% | $32 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2025-12-01 | 2025-12-01 | 0 | 18% | $3 |
+
+### Variants (full ad names, 5 in total, top 10 by spend)
+- `BLK-US-y9Ri2M-Him-BlackinScandinaviai-VID-Batch2025Week47` · $10.7k · 5 adsets
+- `BLK-US-y9Ri2M-Him-SummerhHelsinki-IMG-Batch2025Week47` · $3.9k · 7 adsets
+- `BLK-US-y9Ri2M-Him-SummerhHelsinki-VID-Batch2025Week47` · $2.0k · 4 adsets
+- `BLK-US-y9Ri2M-Him-BlackinScandinaviai-IMG01-Batch2025Week47` · $1.6k · 6 adsets
+- `BLK-US-y9Ri2M-Him-BlackinScandinaviai-IMG02-Batch2025Week47` · $110 · 6 adsets
 <!-- generated:end facts -->

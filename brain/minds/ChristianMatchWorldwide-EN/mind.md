@@ -38,21 +38,27 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · EN · US | ✅ Healthy | $3.0k | 0.49 | L2vM8Q manyhugs2 (2026-09-28, 2 wk) |
+| ChristianMatchWorldwide · iOS · EN · US | ✅ Healthy | $3.0k | 0.49 | L2vM8Q manyhugs2 (since 2026-09-28, 2 wk) |
 
 **Open tickets:** T-766870 Due (iOS · EN · US: ROAS 0.49)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · EN · US | L2vM8Q manyhugs2 | 2026-09-28 | 2 | 53% |
-| ChristianMatchWorldwide · iOS · EN · US | X4nR8W talkinghead | 2026-08-31 | 4 | 53% |
-| ChristianMatchWorldwide · iOS · EN | H7kM3N airport | 2026-08-24 | 1 | – |
-| ChristianMatchWorldwide · iOS · EN | Q3fN8Z airportfirst | 2026-08-03 | 3 | 36% |
-| ChristianMatchWorldwide · iOS · EN | 8k4opR manyplaces | 2026-07-06 | 1 | – |
-| ChristianMatchWorldwide · iOS · EN | L2vM8Q manyhugs2 | 2026-06-22 | 2 | 55% |
-| ChristianMatchWorldwide · iOS · EN | H7kM3N airport | 2026-06-15 | 1 | 50% |
-| ChristianMatchWorldwide · iOS · EN · US | L2vM8Q manyhugs2 | 2026-02-23 | 27 | 65% |
+- 2026-09-28 · ChristianMatchWorldwide · iOS · EN · US · L2vM8Q manyhugs2 · 2 wk at 53% of spend  
+  top ad: `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06`
+- 2026-08-31 · ChristianMatchWorldwide · iOS · EN · US · X4nR8W talkinghead · 4 wk at 53% of spend  
+  top ad: `ChristianMatchWorldwide-US-X4nR8W-TALKINGHEAD-FemaleTalkingHeadCrossNecklace-shareourfaith-testimonial-ProductAware-VID-Batch2026Week33`
+- 2026-08-24 · ChristianMatchWorldwide · iOS · EN · H7kM3N airport · 1 wk at – of spend  
+  top ad: `Christian-NG-H7kM3N-Airport-USMaleSelfie-naijaalotchristiansingles-recommendation-SolutionAware-VID-Batch2026Week30`
+- 2026-08-03 · ChristianMatchWorldwide · iOS · EN · Q3fN8Z airportfirst · 3 wk at 36% of spend  
+  top ad: `Christian-NG-Q3fN8Z-AirportFirst-NigerianMaleLatinaFemaleAirportHug-naijaalotchristiansingles-recommendation-SolutionAware-VID-Batch2026Week30`
+- 2026-07-06 · ChristianMatchWorldwide · iOS · EN · 8k4opR manyplaces · 1 wk at – of spend  
+  top ad: `Christian-US-8k4opR-manyplaces-biblestudydate-DatesAreFunButGrowingInChristWithAManAbroadHitsDifferentTryBumpy-godcentered-worshipping-IMG-Batch2026Week24`
+- 2026-06-22 · ChristianMatchWorldwide · iOS · EN · L2vM8Q manyhugs2 · 2 wk at 55% of spend  
+  top ad: `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06`
+- 2026-06-15 · ChristianMatchWorldwide · iOS · EN · H7kM3N airport · 1 wk at 50% of spend  
+  top ad: `Christian-US-H7kM3N-Airport-USMaleSelfie-VID-Batch2026Week06`
+- 2026-02-23 · ChristianMatchWorldwide · iOS · EN · US · L2vM8Q manyhugs2 · 27 wk at 65% of spend  
+  top ad: `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06`
 
 ### Fatigue clock
 A #1 here has led a median 2 weeks (7 finished reigns). Longest: L2vM8Q manyhugs2, 27 weeks from 2026-02-23.

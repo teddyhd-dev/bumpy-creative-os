@@ -30,4 +30,16 @@ decoded: false
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-02-23 | 2026-10-05 | 0 | 7% | $288 |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-02-23 | 2026-10-05 | 0 | 1% | $134 |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-02-23 | 2026-10-05 | 0 | 1% | $51 |
+
+### Variants (full ad names, 16 in total, top 10 by spend)
+- `Gringolover-PH-j4g89om-IconicPlaces-Waterfall-VID-Batch2026Week08` · $692 · 2 adsets
+- `Gringolover-PH-j4g89om-IconicPlaces-Food-VID-Batch2026Week08` · $503 · 2 adsets
+- `Gringolover-TR-j4g89om-IconicPlaces-HagiaSophia-VID-Batch2026Week08` · $472 · 2 adsets
+- `Gringolover-PT-j4g89om-IconicPlaces-Carnival-IMG-Batch2026Week08` · $429 · 2 adsets
+- `Gringolover-PT-j4g89om-IconicPlaces-Food-VID-Batch2026Week08` · $393 · 2 adsets
+- `Gringolover-TR-j4g89om-IconicPlaces-Kebab-VID-Batch2026Week08` · $377 · 2 adsets
+- `Gringolover-PT-j4g89om-IconicPlaces-Carnival-VID-Batch2026Week08` · $301 · 2 adsets
+- `Gringolover-PH-j4g89om-IconicPlaces-Waterfall-IMG-Batch2026Week08` · $247 · 2 adsets
+- `Gringolover-ES-j4g89om-IconicPlaces-Food-VID-Batch2026Week08` · $207 · 2 adsets
+- `Gringolover-PT-j4g89om-IconicPlaces-Food-IMG-Batch2026Week08` · $140 · 2 adsets
 <!-- generated:end facts -->

@@ -45,4 +45,16 @@ Also written as a2Ef3Y in ad names: same concept? (creative lead to confirm; new
 | PassportBro-EN | PassportBro · Android · EN | 2026-01-19 | 2026-05-04 | 11 | 77% | $16.7k |
 | KoreanMaleCultureLover-EN | KoreanMaleCultureLover · iOS · EN | 2026-05-18 | 2026-10-05 | 11 | 75% | $15.4k |
 | SexyFemaleLover-EN | SexyFemaleLover · iOS · EN · Casual | 2026-06-29 | 2026-10-05 | 11 | 100% | $12.1k |
+
+### Variants (full ad names, 542 in total, top 10 by spend)
+- `SlavicLover-US-a2Ef3y-wanted-slavic-LonelyKindaWantToTalk-flirty-VID-Batch2026Week28` · $128.7k · 5 adsets
+- `Chinese-US-a2Ef3y-wanted-chinesefemaleparking-VID-Batch2026Week04` · $116.0k · 17 adsets
+- `SlavicLover-a2Ef3y-wanted-BlondeSlavicGirl-Anyone27FromUANeedAPartnerForSeriousRelationshipOnly-seriousrelationship-beachlife-IMG-Batch2026Week18` · $71.8k · 11 adsets
+- `PassportBro-US-a2Ef3y-wanted-kitchen-HowLifeFeelsAfterMatchedAnd MarriedWithAsianGirlOnBumpy-geomaxxing-VID-Batch2026Week26` · $65.3k · 4 adsets
+- `Friends-US-a2Ef3y-wanted-koreanfemale-VID-Batch2026Week03` · $56.4k · 9 adsets
+- `SlavicLover-a2Ef3y-wanted-DarkHairedSlavicGirlWearingPashmina-AnastasiaSingleLookingForAsianMan-moslemmentarget-value-VID-Batch2026Week18` · $33.3k · 7 adsets
+- `US-a2Ef3Y-wanted-3040-whitemale-VID-Batch2025Week44` · $32.7k · 8 adsets
+- `304050-US-a2Ef3y-wanted-MatureLatinaInBeachSelfie-LindafromBarcelona33SingleNeedSeriousRelationshipOnlyLetsTalkOnBumpy-newcomer-startover-VID-Batch2026Week22` · $24.1k · 2 adsets
+- `Chinese-US-a2Ef3y-wanted-chinesefemaleparking-IMG-Batch2026Week04` · $22.6k · 4 adsets
+- `SlavicLover-a2Ef3y-wanted-BlondeSlavicGirlinLondon-29FromBelarusSingleNowInLondonWantSeriousRelationshipWithYou-seriousrelationship-snowy-IMG-Batch2026Week18` · $22.5k · 4 adsets
 <!-- generated:end facts -->

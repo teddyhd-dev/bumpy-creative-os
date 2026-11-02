@@ -25,4 +25,14 @@ decoded: false
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-04-06 | 2026-10-05 | 6 | 75% | $11.8k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2026-04-06 | 2026-05-25 | 0 | 20% | $2.3k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-06-22 | 2026-06-29 | 0 | 2% | $23 |
+
+### Variants (full ad names, 8 in total, top 10 by spend)
+- `Muslim-US-h4ywx8-banner-carwindowcombo-VID-Batch2026Week13` · $10.8k · 3 adsets
+- `Muslim-US-h4ywx8-banner-prayinginmosquecombo-IMG-Batch2026Week13` · $819 · 3 adsets
+- `Muslim-US-h4ywx8-banner-mirrorcouplecombo-VID-Batch2026Week13` · $810 · 2 adsets
+- `Muslim-US-h4ywx8-banner-prayinginmosquecombo-VID-Batch2026Week13` · $410 · 2 adsets
+- `Muslim-US-h4ywx8-banner-powerpolecombo-IMG-Batch2026Week13` · $379 · 3 adsets
+- `Muslim-US-h4ywx8-banner-mirrorcouplecombo-IMG-Batch2026Week13` · $341 · 2 adsets
+- `Muslim-US-h4ywx8-banner-powerpolecombo-VID-Batch2026Week13` · $308 · 3 adsets
+- `Muslim-US-h4ywx8-banner-carwindowcombo-IMG-Batch2026Week13` · $287 · 2 adsets
 <!-- generated:end facts -->

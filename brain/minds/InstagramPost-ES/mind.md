@@ -34,15 +34,15 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InstagramPost · iOS · ES | 🟠 Amber | $1.4k | 0.33 | EP - Instagram Apr 9 - ES  (2026-08-03, 10 wk) |
+| InstagramPost · iOS · ES | 🟠 Amber | $1.4k | 0.33 | EP - Instagram Apr 9 - ES  (since 2026-08-03, 10 wk) |
 
 **Open tickets:** T-889773 Decaying (iOS · ES: ROAS 0.33, under 0.40, not falling)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| InstagramPost · iOS · ES | EP - Instagram Apr 9 - ES  | 2026-08-03 | 10 | 86% |
-| InstagramPost · iOS · ES | EP - Instagram June 2 - ES  | 2026-07-27 | 1 | 41% |
+- 2026-08-03 · InstagramPost · iOS · ES · EP - Instagram Apr 9 - ES  · 10 wk at 86% of spend  
+  top ad: `EP - Instagram Apr 9 - ES`
+- 2026-07-27 · InstagramPost · iOS · ES · EP - Instagram June 2 - ES  · 1 wk at 41% of spend  
+  top ad: `EP - Instagram June 2 - ES`
 
 ### Fatigue clock
 A #1 here has led a median 1 weeks (1 finished reigns). Longest: EP - Instagram Apr 9 - ES , 10 weeks from 2026-08-03.

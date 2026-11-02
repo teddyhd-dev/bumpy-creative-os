@@ -34,14 +34,13 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AttractiveBlackFemale · iOS · EN · Casual | 🆘 Critical | $1.1k | 0.30 | a2Ef3y wanted (2026-08-24, 7 wk) |
+| AttractiveBlackFemale · iOS · EN · Casual | 🆘 Critical | $1.1k | 0.30 | a2Ef3y wanted (since 2026-08-24, 7 wk) |
 
 **Open tickets:** T-917060 Decaying (iOS · EN · Casual: ROAS 0.30 (prev 0.40), under 0.32)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| AttractiveBlackFemale · iOS · EN · Casual | a2Ef3y wanted | 2026-08-24 | 7 | 99% |
+- 2026-08-24 · AttractiveBlackFemale · iOS · EN · Casual · a2Ef3y wanted · 7 wk at 99% of spend  
+  top ad: `AttractiveBlackFemale-US-a2Ef3y-wanted-blackbedroom-26FromGhanaSingleLookingForAFriendOutsideMyCountry-friend-CompletelyUnaware-VID-Batch2026Week32`
 
 ### Experiments logged
 - none yet

@@ -29,4 +29,16 @@ decoded: false
 | LatinaFemaleLover-EN | LatinaFemaleLover · iOS · EN · Casual | 2026-09-07 | 2026-10-05 | 0 | 3% | $186 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-09-07 | 2026-10-05 | 0 | 4% | $145 |
 | LatinoMaleLover-EN | LatinoMaleLover · iOS · EN · Casual | 2026-09-07 | 2026-10-05 | 0 | 9% | $55 |
+
+### Variants (full ad names, 18 in total, top 10 by spend)
+- `BlackDatingWorldwide-US-m4pw0r-MapTapedOnWall-BlackWomanHook-FindABlackGirlfriendFromOtherState-DifferentState-ProblemAware-VID-Batch2026Week34` · $3.4k · 2 adsets
+- `InterlocalDating-US-m4pw0r-MapTapedOnWall-BlackWomanHook-FindABlackGirlfriendElsewhere-FindHerElsewhere-ProblemAware-VID-Batch2026Week34` · $469 · 2 adsets
+- `BlackDatingWorldwide-US-m4pw0r-MapTapedOnWall-BlackWomanHook-FindABlackGirlfriendFromOtherState-DifferentState-ProblemAware-IMG-Batch2026Week34` · $275 · 2 adsets
+- `InterlocalDating-US-m4pw0r-MapTapedOnWall-WhiteWomanHook-TryDatingSomeoneOutsideYourState-UpgradedLife-ProductAware-VID-Batch2026Week34` · $191 · 2 adsets
+- `LatinaLover-US-m4pw0r-MapTapedOnWall-LatinoGymRatHook-DateALatinaOutsideYourCity-BreakTheLocalPattern-ProductAware-VID-Batch2026Week34` · $169 · 2 adsets
+- `LatinaLover-US-m4pw0r-MapTapedOnWall-LatinoGymRatHook-DateALatinaOutsideYourCity-BreakTheLocalPattern-ProductAware-IMG-Batch2026Week34` · $161 · 2 adsets
+- `InterlocalDating-US-m4pw0r-MapTapedOnWall-WhiteItalianManHook-DateSomeoneFromDifferentStatesUSA-BiggerPool-ProductAware-VID-Batch2026Week34` · $51 · 2 adsets
+- `LatinoLover-US-m4pw0r-MapTapedOnWall-LatinaGirlHook-MeetAManOutsideYourTown-ConstantVacation-SolutionAware-IMG-Batch2026Week34` · $34 · 1 adset
+- `LatinoLover-US-m4pw0r-MapTapedOnWall-LatinaGirlHook-MeetAManOutsideYourTown-ConstantVacation-SolutionAware-VID-Batch2026Week34` · $21 · 1 adset
+- `InterlocalDating-US-m4pw0r-MapTapedOnWall-WhiteManHook-DateSomeoneFromDifferentStatesUSA-BiggerPool-ProductAware-VID-Batch2026Week34` · $20 · 2 adsets
 <!-- generated:end facts -->

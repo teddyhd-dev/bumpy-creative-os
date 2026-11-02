@@ -38,8 +38,20 @@ decoded: false
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-01-05 | 2026-06-29 | 11 | 71% | $6.3k |
 | GringoMaleLover-EN | GringoMaleLover · iOS · EN | 2026-01-26 | 2026-05-11 | 11 | 100% | $6.0k |
 | GringoMaleLover-PH | GringoMaleLover · Android · PH · PH | 2026-02-02 | 2026-05-18 | 10 | 100% | $12.4k |
-| MatureDating-JA | MatureDating · iOS · JP · 30to40 | 2026-08-03 | 2026-10-05 | 10 | 81% | $10.0k |
+| MatureDating-JP | MatureDating · iOS · JP · 30to40 | 2026-08-03 | 2026-10-05 | 10 | 81% | $10.0k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-04-13 | 9 | 64% | $25.2k |
 | GringoMaleLover-TR | GringoMaleLover · iOS · TR | 2026-01-26 | 2026-03-23 | 9 | 100% | $10.8k |
 | GringoMaleLover-EN | GringoMaleLover · iOS · EN | 2026-04-06 | 2026-10-05 | 8 | 86% | $17.7k |
+
+### Variants (full ad names, 440 in total, top 10 by spend)
+- `US-H7kM3N-Airport-Hug-GrowingWorking-VID-Batch2025Week42` · $91.1k · 10 adsets
+- `BlackAfrican-US-H7kM3N-Airport-ComboBlacktoNonBlack-ThousandofAfrican-FOMO-BlacktoBlack-VID-Batch2026Week15` · $77.7k · 9 adsets
+- `GringoLover-US-H7kM3N-Airport-NigerianCombo-VID-Batch2026Week13` · $56.4k · 7 adsets
+- `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01` · $53.3k · 2 adsets
+- `IndianBoyDream-US-H7kM3N-Airport-ForeignGirl-VID-Batch2025Week49` · $28.6k · 6 adsets
+- `IndianBoyDream-US-H7kM3N-Airport-USASelfiels-VID-Batch2025Week49` · $23.5k · 8 adsets
+- `GringoLover-ES-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01` · $22.9k · 1 adset
+- `Chinese-US-H7kM3N-Airport-ComboAsianFemaleBlackMale-combo4-IMG-Batch2026Week03` · $18.6k · 8 adsets
+- `GringoLover-TH-H7kM3N-Airport-USASelfie-VID-Batch2026Week01` · $16.4k · 2 adsets
+- `Christian-US-H7kM3N-Airport-USMaleSelfie-VID-Batch2026Week06` · $14.3k · 3 adsets
 <!-- generated:end facts -->

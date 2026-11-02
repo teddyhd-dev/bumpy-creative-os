@@ -38,16 +38,17 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · PT | 🚀 Scaling | $1.6k | 0.42 | F4z7K2 fastcarousel (2026-09-28, 2 wk) |
+| ChristianMatchWorldwide · iOS · PT | 🚀 Scaling | $1.6k | 0.42 | F4z7K2 fastcarousel (since 2026-09-28, 2 wk) |
 
 **Open tickets:** T-666702 Due (iOS · PT: ROAS 0.42, spend +82% vs 2 weeks ago)
 
 ### #1 history (latest first)
-| Adset | Creative | From | Weeks as #1 | Share while #1 |
-|---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · PT | F4z7K2 fastcarousel | 2026-09-28 | 2 | 46% |
-| ChristianMatchWorldwide · iOS · PT | Q3fN8Z airportfirst | 2026-08-24 | 5 | 68% |
-| ChristianMatchWorldwide · iOS · PT | F4z7K2 fastcarousel | 2026-08-03 | 3 | 40% |
+- 2026-09-28 · ChristianMatchWorldwide · iOS · PT · F4z7K2 fastcarousel · 2 wk at 46% of spend  
+  top ad: `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-Batch2026Week06`
+- 2026-08-24 · ChristianMatchWorldwide · iOS · PT · Q3fN8Z airportfirst · 5 wk at 68% of spend  
+  top ad: `Christian-PT-Q3fN8Z-AirportFirst-NigerianMaleLatinaFemaleAirportHug-conhecemuitoscristaos-recommendation-SolutionAware-VID-Batch2026Week30`
+- 2026-08-03 · ChristianMatchWorldwide · iOS · PT · F4z7K2 fastcarousel · 3 wk at 40% of spend  
+  top ad: `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-Batch2026Week06`
 
 ### Fatigue clock
 A #1 here has led a median 4 weeks (2 finished reigns). Longest: Q3fN8Z airportfirst, 5 weeks from 2026-08-24.
