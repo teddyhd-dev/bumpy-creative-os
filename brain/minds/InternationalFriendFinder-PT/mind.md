@@ -79,7 +79,7 @@ A #1 here has led a median 2 weeks (16 finished reigns). Longest: n6f2Wt banner,
 7 since Dec: 1 hits of 6 with a final verdict (17%), 2 strikes, 3 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | InternationalFriendFinder · iOS · PT · Friend | a2Ef3y | 3 | 67% | Hit (provisional) |
+| 2026-10-26 | InternationalFriendFinder · iOS · PT · Friend | a2Ef3y | 3 | 67% | Strike (provisional, worse) |
 | 2026-08-10 | InternationalFriendFinder · iOS · PT · Friend | k7Lp2Q q4Xr9m | 10 | 12% | Home run |
 | 2026-06-22 | InternationalFriendFinder · iOS · PT · Friend | 8k4opR | 2 | 10% | Foul |
 | 2026-06-22 | InternationalFriendFinder · Android · PT · Friend | 8k4opR | 2 | 18% | Strike |

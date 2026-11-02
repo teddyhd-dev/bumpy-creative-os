@@ -36,7 +36,7 @@ updated: '2026-11-02'
 |---|---|---|---|---|
 | General · iOS · EN | ✅ Healthy | $3.8k | 0.48 | EP - Instagram Jul 22  (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-492461 Due (iOS · EN: ROAS 0.48)
+**Open tickets:** T-492461 Decaying (iOS · EN: ROAS 0.48)
 
 ### #1 history (latest first)
 - 2026-10-26 · General · iOS · EN · EP - Instagram Jul 22  · 1 wk at 37% of spend  
@@ -74,10 +74,10 @@ updated: '2026-11-02'
 A #1 here has led a median 2 weeks (87 finished reigns). Longest: Q8rX2V wedding, 21 weeks from 2025-12-22.
 
 ### Refreshes read from the exports
-11 since Dec: 7 hits of 9 with a final verdict (78%), 1 strikes, 1 fouls.
+11 since Dec: 7 hits of 9 with a final verdict (78%), 0 strikes, 2 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | General · iOS · EN | EP - Instagram Oct 11 EP - Instagram Oct 12 EP - Instagram Oct 13 | 1 | 28% | Hit (provisional) |
+| 2026-10-19 | General · iOS · EN | EP - Instagram Oct 11 EP - Instagram Oct 12 EP - Instagram Oct 13 | 1 | 28% | Strike (provisional, worse) |
 | 2026-10-05 | General · iOS · EN | EP - Instagram Aug 12 EP - Instagram Jul 22 EP - Instagram Oct 6 EP - Instagram Oct 6 NY | 1 | 15% | Hit (provisional) |
 | 2026-04-27 | General · Android · EN | 5trdiM | 14 | 6% | Late hit |
 | 2026-04-27 | General · Android · EN | 5trdiM | 14 | 22% | Hit |

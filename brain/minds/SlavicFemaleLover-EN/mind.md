@@ -42,7 +42,7 @@ updated: '2026-11-02'
 | SlavicFemaleLover · Android · EN | ▫️ Not judged | $198 | 0.08 | – |
 | SlavicFemaleLover · Android · EN | ▫️ Not judged | $197 | 0.00 | – |
 
-**Open tickets:** T-903549 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.36 from 0.45); T-691223 Due (iOS · EN: ROAS 0.47, spend +17% vs 2 weeks ago); T-295013 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.39); T-769202 Decaying (iOS · EN: Green, but hook rate -25% vs 4-wk avg); T-083468 Decaying (Android · EN: ROAS 0.24, under 0.32)
+**Open tickets:** T-691223 Due (iOS · EN: ROAS 0.47, spend +17% vs 2 weeks ago); T-903549 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.36 from 0.45); T-295013 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.39); T-769202 Decaying (iOS · EN: Green, but hook rate -25% vs 4-wk avg); T-083468 Decaying (Android · EN: ROAS 0.24, under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · SlavicFemaleLover · Android · EN · a2Ef3y wanted · 1 wk at 66% of spend  
@@ -80,7 +80,7 @@ A #1 here has led a median 3 weeks (8 finished reigns). Longest: a2Ef3y wanted, 
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-10-19 | SlavicFemaleLover · iOS · EN | B9dF4J C0kM3N MpL2Xe u7Wf9i | 3 | 5% | Void (incident, provisional) |
-| 2026-10-19 | SlavicFemaleLover · Android · EN | B9dF4J C0kM3N MpL2Xe u7Wf9i | 3 | 8% | Foul (provisional) |
+| 2026-10-19 | SlavicFemaleLover · Android · EN | B9dF4J C0kM3N MpL2Xe u7Wf9i | 3 | 8% | Strike (provisional) |
 | 2026-10-19 | SlavicFemaleLover · iOS · EN | B9dF4J C0kM3N u7Wf9i | 3 | 10% | Void (incident, provisional) |
 | 2026-08-17 | SlavicFemaleLover · iOS · EN | w1Tr7K | 2 | 2% | Foul |
 | 2026-08-17 | SlavicFemaleLover · Android · EN | w1Tr7K | 2 | 2% | Foul |

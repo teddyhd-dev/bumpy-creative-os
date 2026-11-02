@@ -42,7 +42,7 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 | InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.3k | 0.41 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
 | InterracialDatingSeekers · Android · EN | 🟠 Amber | $4.1k | 0.39 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-602912 Due (iOS · EN: ROAS 0.41); T-628890 Decaying (Android · EN: ROAS 0.39, under 0.40, not falling)
+**Open tickets:** T-602912 Decaying (iOS · EN: ROAS 0.41); T-628890 Decaying (Android · EN: ROAS 0.39, under 0.40, not falling)
 
 ### #1 history (latest first)
 - 2026-10-26 · InterracialDatingSeekers · Android · EN · u7Wf91 wakeup · 1 wk at 43% of spend  
@@ -80,10 +80,10 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 A #1 here has led a median 2 weeks (38 finished reigns). Longest: H7kM3N airport, 15 weeks from 2026-05-18.
 
 ### Refreshes read from the exports
-10 since Dec: 2 hits of 8 with a final verdict (25%), 3 strikes, 3 fouls.
+10 since Dec: 2 hits of 8 with a final verdict (25%), 2 strikes, 4 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | InterracialDatingSeekers · iOS · EN | C0kM3N u7Wf91 | 4 | 5% | Hit (provisional) |
+| 2026-10-19 | InterracialDatingSeekers · iOS · EN | C0kM3N u7Wf91 | 4 | 5% | Strike (provisional, worse) |
 | 2026-10-19 | InterracialDatingSeekers · Android · EN | C0kM3N u7Wf91 | 4 | 6% | Hit (provisional) |
 | 2026-09-21 | InterracialDatingSeekers · iOS · EN | B9dF4J | 5 | 4% | Foul |
 | 2026-09-21 | InterracialDatingSeekers · Android · EN | B9dF4J e34spy | 5 | 3% | Foul |

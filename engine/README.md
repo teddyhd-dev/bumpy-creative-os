@@ -48,7 +48,9 @@ file, run `gzip -k -n data/raw/<source>/<file>.csv` and commit the `.csv.gz` (th
 6. Refresh the account dashboard (https://claude.ai/artifact/QJnA8xeAWjv2D8NVozMp8X): upload each changed
    CSV from `output/data/` as an asset (one call per CSV), point `datasets/<name>` at the new `/_blob/` url;
    if `tools/dashboard/page.html` changed, write it to `files/index.html` as `{text}`.
-7. Commit: `engine: weekly update <adset week>` (new `.csv.gz`, `brain/`, `state/`, `core/minds.csv`,
+7. Launch review: `python3 tools/report/refresh_review.py --batch <refresh batch>` and the deck per
+   `tools/report/REFRESH-REVIEW.md` (refresh read = spec §6.2b).
+8. Commit: `engine: weekly update <adset week>` (new `.csv.gz`, `brain/`, `state/`, `core/minds.csv`,
    `reports/<week>/`). Then the report tool makes the PDF.
 
 ## Data rules

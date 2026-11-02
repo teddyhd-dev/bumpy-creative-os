@@ -78,10 +78,10 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 A #1 here has led a median 2 weeks (35 finished reigns). Longest: a2Ef3y wanted, 20 weeks from 2026-04-13.
 
 ### Refreshes read from the exports
-26 since Dec: 5 hits of 24 with a final verdict (21%), 6 strikes, 13 fouls.
+26 since Dec: 5 hits of 24 with a final verdict (21%), 5 strikes, 14 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-05 | AsianFemaleLover · Android · EN | b7Kq4n | 8 | 8% | Hit (provisional) |
+| 2026-10-05 | AsianFemaleLover · Android · EN | b7Kq4n | 8 | 8% | Strike (provisional, worse) |
 | 2026-10-05 | AsianFemaleLover · iOS · EN | b7Kq4n | 8 | 36% | Hit (provisional) |
 | 2026-08-17 | AsianFemaleLover · iOS · EN | Q7mZ2x | 1 | 3% | Home run |
 | 2026-08-17 | AsianFemaleLover · Android · EN | Q7mZ2x | 1 | 3% | Home run |

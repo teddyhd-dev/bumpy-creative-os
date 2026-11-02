@@ -81,11 +81,11 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 A #1 here has led a median 3 weeks (28 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-08-24.
 
 ### Refreshes read from the exports
-16 since Dec: 4 hits of 14 with a final verdict (29%), 4 strikes, 6 fouls.
+16 since Dec: 4 hits of 14 with a final verdict (29%), 3 strikes, 7 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | GringoMaleLover · iOS · ES · ES | dR1elf | 6 | 2% | Strike (provisional) |
-| 2026-10-26 | GringoMaleLover · Android · ES · ES | Fy3sK8 | 1 | 3% | Strike (provisional) |
+| 2026-10-26 | GringoMaleLover · iOS · ES · ES | dR1elf | 6 | 2% | Foul (provisional) |
+| 2026-10-26 | GringoMaleLover · Android · ES · ES | Fy3sK8 | 1 | 3% | Foul (provisional) |
 | 2026-09-14 | GringoMaleLover · iOS · ES · ES | k9Rd4m t3Wq8n | 2 | 13% | Strike |
 | 2026-09-14 | GringoMaleLover · Android · ES · ES | k9Rd4m t3Wq8n | 2 | 7% | Foul |
 | 2026-06-29 | GringoMaleLover · iOS · ES · ES | m3dtCp | 2 | 22% | Foul |

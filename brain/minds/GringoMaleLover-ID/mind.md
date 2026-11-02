@@ -43,7 +43,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.1k | 0.21 | t3Wq8n bigtext (since 2026-10-19, 2 wk) |
 | GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.1k | 0.19 | C0kM3N combo (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-420311 Decaying (Android · ID · ID: ROAS 0.21 (prev 0.18), under 0.32); T-298888 Decaying (Android · ID · ID: ROAS 0.19 (prev 0.44), under 0.32)
+**Open tickets:** T-298888 Decaying (Android · ID · ID: ROAS 0.19 (prev 0.44), under 0.32); T-420311 Decaying (Android · ID · ID: ROAS 0.21 (prev 0.18), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · GringoMaleLover · Android · ID · ID · C0kM3N combo · 1 wk at 31% of spend  
@@ -84,7 +84,7 @@ A #1 here has led a median 1 weeks (29 finished reigns). Longest: t3Wq8n bigtext
 4 since Dec: 3 hits of 3 with a final verdict (100%), 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | GringoMaleLover · Android · ID · ID | Hd5mX9 Wb7cR2 | 1 | 13% | Foul (provisional) |
+| 2026-10-26 | GringoMaleLover · Android · ID · ID | Hd5mX9 Wb7cR2 | 1 | 13% | Strike (provisional) |
 | 2026-02-23 | GringoMaleLover · iOS · ID | 7bn40k | 2 | 1% | Late hit |
 | 2026-02-02 | GringoMaleLover · iOS · ID | n6f2Wt | 3 | 2% | Hit |
 | 2026-02-02 | GringoMaleLover · Android · ID · ID | n6f2Wt | 5 | 3% | Hit |

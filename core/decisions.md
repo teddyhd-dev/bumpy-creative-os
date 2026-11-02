@@ -5,6 +5,13 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-02 · Refresh read: Worked / Almost / Flat / Worse / Miss, and what each does to strikes and tickets
+- **Decided by:** creative lead, reviewing the first launch review (Batch 40).
+- **Rule:** did the new creative reach the adset's top 3 spenders? If yes: ROAS up and 0.40+ = Worked; up but under 0.40 = Almost; no move = Flat; down = Worse. If no: Miss; Miss (left) when the adset is 0.40+ on old creatives.
+- **Consequences:** Worse = strike in any context and the top of the queue ("fix first"); Almost / Flat = refresh again, no strike; Miss (left) = leave it (no strike, no Due ticket); Miss under the bar in a turnaround = strike.
+- **Report:** the launch review deck follows `tools/report/REFRESH-REVIEW.md`; action items rank by weekly spend × read weight (Worse 1.0, Miss 0.8, Almost / Flat 0.6), same-language pairs briefed together; a second section, Account news, lists adsets outside the refresh whose #1 changed or got a new top-3 riser.
+- **How we'll know it worked:** fewer Worse reads repeating on the same adset; Almost reads turning into Worked on the second swing.
+
 ### 2026-11-02 · Incident weeks and when an incident's effect ends
 - **Decided by:** creative lead (rules proposed by Claude).
 - **Rules:** a refresh that landed in an incident week and missed is Void (a hit still counts); a week under the bar during an incident doesn't count toward weeks under the bar or Fading.

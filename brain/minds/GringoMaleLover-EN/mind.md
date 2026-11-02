@@ -44,7 +44,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | GringoMaleLover · Android · EN | 🚀 Scaling | $3.0k | 0.50 | H7kM3N airport (since 2026-09-14, 7 wk) |
 | GringoMaleLover · Web · EN · PH | ▫️ Not judged | $724 | 0.02 | – |
 
-**Open tickets:** T-950156 Due (Android · EN: ROAS 0.50, spend +16% vs 2 weeks ago); T-902208 Decaying (iOS · EN: ROAS 0.33, under 0.40, not falling)
+**Open tickets:** T-902208 Decaying (iOS · EN: ROAS 0.33, under 0.40, not falling)
 
 ### #1 history (latest first)
 - 2026-09-28 · GringoMaleLover · iOS · EN · C0kM3N combo · 5 wk at 71% of spend  
@@ -85,10 +85,10 @@ A #1 here has led a median 5 weeks (13 finished reigns). Longest: H7kM3N airport
 9 since Dec: 2 hits of 5 with a final verdict (40%), 1 strikes, 2 fouls, 1 void (landed in an incident week).
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | GringoMaleLover · iOS · EN | Nc6tP3 dR1elf | 6 | 7% | Strike (provisional) |
+| 2026-10-26 | GringoMaleLover · iOS · EN | Nc6tP3 dR1elf | 6 | 7% | Foul (provisional) |
 | 2026-10-26 | GringoMaleLover · Android · EN | Nc6tP3 dR1elf | 6 | 4% | Foul (provisional) |
 | 2026-10-19 | GringoMaleLover · iOS · EN | X4nR8W | 2 | 3% | Void (incident, provisional) |
-| 2026-10-19 | GringoMaleLover · Android · EN | X4nR8W | 2 | 3% | Strike (provisional) |
+| 2026-10-19 | GringoMaleLover · Android · EN | X4nR8W | 2 | 3% | Foul (provisional) |
 | 2026-09-21 | GringoMaleLover · iOS · EN | B9dF4J C0kM3N e34spy k9Rd4m | 5 | 10% | Home run |
 | 2026-09-14 | GringoMaleLover · Android · EN | k9Rd4m | 2 | 1% | Strike |
 | 2026-08-17 | GringoMaleLover · iOS · EN | w1Tr7K | 1 | 1% | Foul |

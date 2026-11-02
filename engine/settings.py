@@ -61,7 +61,12 @@ TICKET_WEIGHTS = {
     "critical_small": 0.3,      # critical but below the alert floor
     "in_test_factor": 0.5,      # a challenger already entered in the last 2 weeks
     "low_ceiling_factor": 0.5,  # 🧱: creative may not be the fix
+    "refresh_worse": 1.0,       # last refresh reached the top 3 and the adset's ROAS fell: fix first (2 Nov)
+    "refresh_again": 0.7,       # last refresh almost / flat: swing again (2 Nov)
 }
+# Refresh read (spec §6.2b, creative lead 2 Nov 2026): did the new creative reach the top N spenders,
+# then did the adset's ROAS move by more than `flat`?
+READ = {"top_n": 3, "flat": 0.02}
 
 
 def ruler(week: str, os: str | None = None) -> str:

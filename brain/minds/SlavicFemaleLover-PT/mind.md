@@ -37,7 +37,7 @@ updated: '2026-11-02'
 | SlavicFemaleLover · iOS · PT | 🚀 Scaling | $1.4k | 0.58 | X4nR8W talkinghead (since 2026-10-12, 3 wk) |
 | SlavicFemaleLover · Android · PT | ✅ Healthy | $1.3k | 0.45 | n6f2Wt banner (since 2026-10-05, 4 wk) |
 
-**Open tickets:** T-239874 Due (Android · PT: ROAS 0.45)
+**Open tickets:** T-403592 Decaying (iOS · PT: ROAS 0.58, spend +75% vs 2 weeks ago)
 
 ### #1 history (latest first)
 - 2026-10-12 · SlavicFemaleLover · iOS · PT · X4nR8W talkinghead · 3 wk at 52% of spend  
@@ -62,7 +62,7 @@ A #1 here has led a median 3 weeks (5 finished reigns). Longest: a2Ef3y wanted, 
 4 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | SlavicFemaleLover · iOS · PT | C0kM3N u7Wf9i | 2 | 29% | Hit (provisional) |
+| 2026-10-19 | SlavicFemaleLover · iOS · PT | C0kM3N u7Wf9i | 2 | 29% | Strike (provisional, worse) |
 | 2026-10-19 | SlavicFemaleLover · Android · PT | C0kM3N u7Wf9i | 2 | 7% | Foul (provisional) |
 | 2026-10-05 | SlavicFemaleLover · iOS · PT | X4nR8W d5ns2k n6f2Wt | 4 | 39% | Hit (provisional) |
 | 2026-10-05 | SlavicFemaleLover · Android · PT | X4nR8W n6f2Wt | 4 | 42% | Hit (provisional) |

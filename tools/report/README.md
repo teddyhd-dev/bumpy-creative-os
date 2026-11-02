@@ -1,5 +1,7 @@
 # Weekly report (PDF)
 
+**Launch review deck (Tuesday):** `REFRESH-REVIEW.md` (structure, rules, design) + `refresh_review.py` (numbers).
+
 **Status: style captured, generator not built yet** (next session for this tool).
 
 - Data: `reports/<week>/report.json`, written every Monday by `engine/report.py` (copied by `engine/brain_sync.py`).

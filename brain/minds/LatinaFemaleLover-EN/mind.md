@@ -42,7 +42,7 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 | LatinaFemaleLover · iOS · EN · Casual | 🆘 Critical | $1.9k | 0.29 | C0kM3N combo (since 2026-09-28, 5 wk) |
 | LatinaFemaleLover · Android · EN · Casual | 🟠 Amber | $1.1k | 0.33 | n6f2Wt banner (since 2026-09-21, 6 wk) |
 
-**Open tickets:** T-309916 Decaying (iOS · EN · Casual: ROAS 0.29 (prev 0.39), under 0.32); T-721949 Due (iOS · EN · Talk: ROAS 0.65, spend +17% vs 2 weeks ago); T-140322 Decaying (Android · EN · Casual: ROAS 0.33, under 0.40, not falling)
+**Open tickets:** T-140322 3 strikes (Android · EN · Casual: ROAS 0.33, under 0.40, not falling); T-309916 Decaying (iOS · EN · Casual: ROAS 0.29 (prev 0.39), under 0.32); T-721949 Due (iOS · EN · Talk: ROAS 0.65, spend +17% vs 2 weeks ago)
 
 ### #1 history (latest first)
 - 2026-09-28 · LatinaFemaleLover · iOS · EN · Casual · C0kM3N combo · 5 wk at 59% of spend  
@@ -83,8 +83,8 @@ A #1 here has led a median 2 weeks (30 finished reigns). Longest: a2Ef3y wanted,
 16 since Dec: 4 hits of 14 with a final verdict (29%), 6 strikes, 4 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-12 | LatinaFemaleLover · iOS · EN · Casual | w1Tr7K | 6 | 13% | Strike (provisional) |
-| 2026-10-12 | LatinaFemaleLover · Android · EN · Casual | w1Tr7K | 5 | 24% | Hit (provisional) |
+| 2026-10-12 | LatinaFemaleLover · iOS · EN · Casual | w1Tr7K | 6 | 13% | Foul (provisional) |
+| 2026-10-12 | LatinaFemaleLover · Android · EN · Casual | w1Tr7K | 5 | 24% | Strike (provisional, worse) |
 | 2026-09-21 | LatinaFemaleLover · iOS · EN · Casual | C0kM3N | 1 | 8% | Home run |
 | 2026-09-21 | LatinaFemaleLover · Android · EN · Casual | C0kM3N | 1 | 6% | Strike |
 | 2026-09-07 | LatinaFemaleLover · iOS · EN · Casual | m4pw0r | 2 | 1% | Foul |

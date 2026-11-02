@@ -56,7 +56,7 @@ A #1 here has led a median 3 weeks (2 finished reigns). Longest: a2Ef3y wanted, 
 2 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | SlavicFemaleLover · iOS · ES | C0kM3N MpL2Xe u7Wf9i | 2 | 24% | Hit (provisional) |
+| 2026-10-19 | SlavicFemaleLover · iOS · ES | C0kM3N MpL2Xe u7Wf9i | 2 | 24% | Strike (provisional, worse) |
 | 2026-10-19 | SlavicFemaleLover · Android · ES | B9dF4J C0kM3N MpL2Xe u7Wf9i | 3 | 16% | Strike (provisional) |
 
 ### Experiments logged

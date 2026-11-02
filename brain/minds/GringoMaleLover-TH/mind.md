@@ -80,13 +80,13 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 A #1 here has led a median 2 weeks (24 finished reigns). Longest: H7kM3N airport, 20 weeks from 2026-01-05.
 
 ### Refreshes read from the exports
-7 since Dec: 4 hits of 7 with a final verdict (57%), 2 strikes, 1 fouls.
+7 since Dec: 4 hits of 7 with a final verdict (57%), 1 strikes, 2 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-09-21 | GringoMaleLover · iOS · TH · TH | C0kM3N | 1 | 3% | Home run |
 | 2026-09-14 | GringoMaleLover · iOS · TH · TH | t3Wq8n | 1 | 16% | Foul |
 | 2026-06-29 | GringoMaleLover · Android · TH · TH | m3dtCp | 2 | 5% | Hit |
-| 2026-06-15 | GringoMaleLover · iOS · TH · TH | i48opT | 1 | 4% | Strike |
+| 2026-06-15 | GringoMaleLover · iOS · TH · TH | i48opT | 1 | 4% | Foul |
 | 2026-06-15 | GringoMaleLover · Android · TH · TH | i48opT vh1kle | 1 | 5% | Late hit |
 | 2026-05-04 | GringoMaleLover · Android · TH · TH | 4Bm9of | 1 | 3% | Hit |
 | 2026-04-06 | GringoMaleLover · iOS · TH · TH | F4z7K2 | 1 | 5% | Strike |

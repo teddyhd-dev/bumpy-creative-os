@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.2
+version: 1.3.3
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,12 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.3 (2026-11-02): the refresh read and the launch review (decided by the creative lead).**
+- **Refresh read (§6.2b):** first question, did the new creative reach the adset's top 3 spenders? Yes → the adset's ROAS decides: **Worked** (up and 0.40+), **Almost** (up, still under 0.40), **Flat** (moved under 0.02), **Worse** (down). No → **Miss**, or **Miss (left)** when old creatives keep the adset at 0.40+.
+- **Strikes:** Worse is a strike in any context (the batch took spend and the adset lost money: fix first). Miss under the bar in a turnaround is a strike. Almost and Flat are not strikes, but the ticket stays open to swing again. Miss (left) is no strike and no Due ticket: leave it. Worked resets the count.
+- **Tickets:** Worse weighs 1.0 (as critical), Almost / Flat 0.7, and neither is halved for "challenger in test" (the read is in). `READ` and `TICKET_WEIGHTS.refresh_*` in `engine/settings.py`.
+- **Launch review deck:** `tools/report/REFRESH-REVIEW.md` (structure, rules, design) and `tools/report/refresh_review.py` (the numbers, from daily ad rows). First run: Batch 40, `reports/2026-10-26/`.
 
 **1.3.2 (2026-11-02): incident rules confirmed; when an effect ends.**
 - The creative lead confirmed the incident rules (void refreshes, incident weeks not counted under the bar). Both known incidents were on **iOS**; the 5–6 Oct effect is estimated to 11 Oct.
@@ -414,6 +420,18 @@ New concepts entering an adset in the same week (their first week with spend the
 **Week-1 read (provisional):** 20%+ of adset spend = provisional hit (79% go on to become #1). Under 20% = provisional strike or foul, and the ads stay on: they cost little, and about 1 in 8 entries under 5% still becomes #1 (a third of refresh winners started that way).
 
 **Why not the new ads' ROAS:** within a week an ad's ROAS sits near its adset's (#1 vs the rest 1.03–1.11×), so it can't separate creatives. The adset after the takeover can: fast winners (20%+ in week 1) lift its relative ROAS +7% at weeks 3–4, vs −5% with no new #1, and every lift fades by weeks 5–6 (the decay clock, §6.7). All comparisons are relative (same OS, same week), so a measurement switch can't distort a verdict.
+
+### 6.2b Refresh read: the early call on every refresh (since 1.3.3)
+Measured per adset from the day the batch first spent there (daily ad rows), against the 7 days before.
+| Read | New creative in the adset's top 3? | Adset ROAS after vs before | Strike | Ticket |
+|---|---|---|---|---|
+| **Worked** | yes | up, and at the bar (0.40+) | resets | closes when the read holds; watch week 2 |
+| **Almost** | yes | up, still under the bar | no | stays open: swing again (weight 0.7) |
+| **Flat** | yes | moved less than 0.02 | no | stays open: swing again (weight 0.7) |
+| **Worse** | yes | down | **yes, any context** | fix first (weight 1.0) |
+| **Miss** | no | under the bar | yes in a turnaround, foul otherwise | stays open: a different concept |
+| **Miss (left)** | no | at the bar | no | leave it: no Due ticket while old creatives carry it |
+"Top 3" counts the batch's ads per concept, apart from older ads of the same concept, so new variants of a running concept count as new. A relaunched adset with no week before is Worse when it lands under the critical line. The week-4 verdict (§6.2) still decides hit / late hit for records; the read decides strikes and tickets while the at-bat is provisional.
 
 ### 6.3 Turnaround and three strikes (since 1.2)
 - The turnaround starts when an adset goes under green (a Decaying ticket). At-bat 1 within a week; each next at-bat follows the previous one's week-1 read.

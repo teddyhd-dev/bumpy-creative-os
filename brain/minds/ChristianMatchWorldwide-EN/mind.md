@@ -64,13 +64,13 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 A #1 here has led a median 2 weeks (7 finished reigns). Longest: L2vM8Q manyhugs, 27 weeks from 2026-02-23.
 
 ### Refreshes read from the exports
-4 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls.
+4 since Dec: 1 hits of 4 with a final verdict (25%), 0 strikes, 3 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-08-03 | ChristianMatchWorldwide · iOS · EN · US | X4nR8W | 2 | 7% | Hit |
 | 2026-06-29 | ChristianMatchWorldwide · iOS · EN · US | m3dtCp | 2 | 34% | Foul |
 | 2026-06-22 | ChristianMatchWorldwide · iOS · EN · US | 7i40dX 8k4opR | 2 | 16% | Foul |
-| 2026-06-15 | ChristianMatchWorldwide · iOS · EN · US | vh1kle | 2 | 1% | Strike |
+| 2026-06-15 | ChristianMatchWorldwide · iOS · EN · US | vh1kle | 2 | 1% | Foul |
 
 ### Experiments logged
 - none yet

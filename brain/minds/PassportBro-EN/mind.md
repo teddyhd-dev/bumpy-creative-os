@@ -84,7 +84,7 @@ A #1 here has led a median 2 weeks (47 finished reigns). Longest: a2Ef3y wanted,
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-10-19 | PassportBro · Android · EN · Serious | C0kM3N | 2 | 14% | Hit (provisional) |
-| 2026-10-12 | PassportBro · Android · EN · Serious | ac0N7i w1Tr7K | 8 | 1% | Strike (provisional) |
+| 2026-10-12 | PassportBro · Android · EN · Serious | ac0N7i w1Tr7K | 8 | 1% | Foul (provisional) |
 | 2026-10-12 | PassportBro · iOS · EN · Serious | ac0N7i w1Tr7K | 8 | 1% | Foul (provisional) |
 | 2026-10-05 | PassportBro · iOS · EN · Serious | k4Rm9p | 5 | 70% | Hit (provisional) |
 | 2026-10-05 | PassportBro · Android · EN · Serious | b7Kq4n k4Rm9p | 8 | 46% | Hit (provisional) |

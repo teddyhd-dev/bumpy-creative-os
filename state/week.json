@@ -8,7 +8,7 @@
   "deep": 0.28
  },
  "capacity": 8.6,
- "tickets_open": 77,
+ "tickets_open": 76,
  "facts": {
   "atbats_final": 248.0,
   "hit_rate": 0.3145,
@@ -26,7 +26,7 @@
   "chance_3_misses_2plus": 0.125,
   "v8_adsets_off": 23.0,
   "v8_adsets_off_no_new_concept": 19.0,
-  "turnaround_second_swing": 33.0,
+  "turnaround_second_swing": 31.0,
   "turnaround_atbats": 142.0,
   "turnaround_hit_1concept": 0.3333,
   "turnaround_hit_2plus": 0.7333,
@@ -36,10 +36,10 @@
   "won_anywhere_1": 0.3333,
   "won_anywhere_5plus": 0.7273,
   "capacity_per_week": 8.625,
-  "tickets_open": 77.0,
-  "tickets_need_refresh": 57.0,
+  "tickets_open": 76.0,
+  "tickets_need_refresh": 56.0,
   "tickets_fading": 17.0,
-  "tickets_review": 0.0,
+  "tickets_review": 1.0,
   "brief_groups_need_refresh": 42.0,
   "turnaround_hit_rate": 0.4359,
   "challenger_hit_rate": 0.2061

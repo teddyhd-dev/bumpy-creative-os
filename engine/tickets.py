@@ -35,7 +35,7 @@ sys.path.insert(0, HERE)
 import creative_relay as cr  # noqa: E402
 from adload import load_ads  # noqa: E402
 from adparse import parse_ad  # noqa: E402
-from settings import TICKET_WEIGHTS as W, ATBAT, bar  # noqa: E402
+from settings import TICKET_WEIGHTS as W, ATBAT, READ, bar  # noqa: E402
 from codes import concept_keys  # noqa: E402
 import incidents  # noqa: E402
 
@@ -75,6 +75,29 @@ def variant_weeks():
     return d.groupby(["adset_id", "concept_key", "week"]).ad_clean.apply(set)
 
 
+def refresh_read(rank, before, after, b):
+    """The refresh read (spec §6.2b, creative lead 2 Nov 2026). First: did the new creative reach the
+    adset's top 3 spenders? If not it's a Miss, and the adset's ROAS says whether to leave it (old
+    creatives are carrying it at the bar) or swing again. If it did, the adset's ROAS decides:
+    Worked (up and at the bar), Almost (up but under the bar), Flat, or Worse (down)."""
+    green = b["green"]
+    if pd.isna(rank) or rank > READ["top_n"]:
+        if pd.notna(after) and after >= green:
+            return "Miss (left)"
+        return "Miss"
+    if pd.isna(before) or pd.isna(after):
+        # no week before (relaunch): judge on where it landed
+        if pd.isna(after):
+            return "Almost"
+        return "Worked" if after >= green else "Worse" if after < b["amber"] else "Almost"
+    d = after - before
+    if abs(d) < READ["flat"]:
+        return "Flat"
+    if d < 0:
+        return "Worse"
+    return "Worked" if after >= green else "Almost"
+
+
 def at_bats(c, A):
     """One row per at-bat (concepts entering an adset in the same week, adset 3+ weeks old)."""
     weeks = sorted(c.week.unique())
@@ -93,11 +116,22 @@ def at_bats(c, A):
     V = variant_weeks()
     nxt = lambda w: (pd.to_datetime(w) + pd.Timedelta(weeks=1)).strftime("%Y-%m-%d")
     arr["variants"] = [len(V.get((a, k, w), set()) | V.get((a, k, nxt(w)), set())) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
+    # refresh read (spec §6.2b): the concept's best rank in the adset in its first 2 weeks there
+    RK = c.set_index(["adset_id", "concept_key", "week"])["rank"].to_dict()
+    arr["rank12"] = [min(RK.get((a, k, w), 99), RK.get((a, k, nxt(w)), 99)) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
     D = arr.groupby(["adset_id", "w0"]).agg(
         variants=("variants", "sum"), variants_max=("variants", "max"),
         concepts=("concept_key", "size"), codes=("concept_key", lambda s: " ".join(k.replace("name:", "")[:24] for k in s)),
-        best_s1=("s1", "max"), wk_top=("wk_top", "min"), age=("age", "first")).reset_index()
+        best_s1=("s1", "max"), wk_top=("wk_top", "min"), age=("age", "first"), best_rank=("rank12", "min")).reset_index()
     D = D.sort_values(["adset_id", "w0"]).reset_index(drop=True)
+    # adset ROAS the week before the refresh vs after it (the week after when it exists, else the landing week)
+    AR = A.assign(r=A.as_r / A.as_s.replace(0, np.nan)).set_index(["adset_id", "week"]).r.to_dict()
+    prv = lambda w: (pd.to_datetime(w) - pd.Timedelta(weeks=1)).strftime("%Y-%m-%d")
+    D["roas_before"] = [AR.get((a, prv(w)), np.nan) for a, w in zip(D.adset_id, D.w0)]
+    D["roas_after"] = [AR.get((a, nxt(w)), AR.get((a, w), np.nan)) for a, w in zip(D.adset_id, D.w0)]
+    D["after_week"] = [nxt(w) if (a, nxt(w)) in AR else w for a, w in zip(D.adset_id, D.w0)]
+    D["read"] = [refresh_read(rk, b, f, bar(aw, A_os.get(a)))
+                 for rk, b, f, aw, a in zip(D.best_rank, D.roas_before, D.roas_after, D.after_week, D.adset_id)]
     final = D.age >= ATBAT["final_week"]
     D["verdict"] = np.select(
         [final & (D.wk_top <= ATBAT["final_week"]),
@@ -162,17 +196,33 @@ def count_strikes(D, G):
             turnaround = bool(aid in under.index and wprev in under.columns and under.at[aid, wprev])
             D.at[i, "context"] = "turnaround" if turnaround else "challenger"
             D.at[i, "strikes_before"] = k
-            if r.counts_as_hit:
+            void = str(r.verdict).startswith("Void")
+            provisional = r.age < ATBAT["final_week"]
+            strike = False
+            if provisional and not void and r.read == "Worse":
+                strike = True                      # the new creative took spend and the adset got worse: fix first
+            elif provisional and r.read == "Worked":
                 k = 0
-            elif turnaround and not str(r.verdict).startswith("Void"):
+            elif provisional and r.read in ("Almost", "Flat", "Miss (left)"):
+                pass                               # almost / flat: swing again, no strike; miss but at the bar: leave
+            elif r.counts_as_hit:
+                k = 0
+            elif turnaround and not void and r.read != "Miss (left)":
+                strike = True
+            D.at[i, "counts_as_strike"] = strike
+            if strike:
                 k += 1
         # back on green since the last at-bat?
         last2 = [c for c in ok.columns][-2:]
         if aid in ok.index and all(ok.at[aid, c] for c in last2):
             k = 0
         run_now[aid] = k
-    D.loc[(D.context == "challenger") & D.verdict.str.startswith("Strike"), "verdict"] = \
-        D.verdict.str.replace("Strike", "Foul", regex=False)
+    D["counts_as_strike"] = D.counts_as_strike.fillna(False).astype(bool)
+    # verdict words stay in their families (Hit / Strike / Foul / Void) for the board and the report
+    no_strike = D.verdict.str.startswith("Strike") & ~D.counts_as_strike
+    D.loc[no_strike, "verdict"] = D.loc[no_strike, "verdict"].str.replace("Strike", "Foul", regex=False)
+    worse = D.counts_as_strike & ~D.verdict.str.startswith("Strike")
+    D.loc[worse, "verdict"] = "Strike (provisional, worse)"
     return run_now
 
 
@@ -245,7 +295,8 @@ def main():
 
     # challengers in test: at-bats in the last 2 ad weeks
     recent = D[D.age <= 1].groupby("adset_id").agg(test_codes=("codes", " | ".join), test_best_s1=("best_s1", "max"),
-                                                   test_verdict=("verdict", "last"), test_since=("w0", "min"))
+                                                   test_verdict=("verdict", "last"), test_since=("w0", "min"),
+                                                   test_read=("read", "last"))
     last_hit = D[D.counts_as_hit].groupby("adset_id").w0.max()
     since8 = (pd.to_datetime(last_ad_week) - pd.Timedelta(weeks=8)).strftime("%Y-%m-%d")
     tried8 = D[D.w0 > since8].groupby("adset_id").size()
@@ -273,11 +324,23 @@ def main():
             typ, w = "Due", W["due"] + (W["due_falling_bonus"] if falling else 0)
         else:
             typ, w = "Watch", 0.0
+        # the latest refresh read (spec §6.2b) overrides the queue order
+        read = recent.test_read.get(aid, "") if in_test else ""
+        if read == "Worse" and typ != "3 strikes":
+            typ, w = "Decaying", max(w, W["refresh_worse"])
+        elif read in ("Almost", "Flat") and typ != "3 strikes":
+            typ, w = ("Decaying" if typ == "Watch" else typ), max(w, W["refresh_again"])
+        elif read == "Miss (left)" and typ == "Due":
+            typ, w = "Watch", 0.0           # old creatives carry it at the bar: leave it
         if typ == "Watch":
             continue
         score = w * r.spend_last
         notes = []
-        if in_test and typ != "3 strikes":
+        if read == "Worse":
+            notes.append("last refresh took spend and ROAS got worse: fix first")
+        elif read in ("Almost", "Flat"):
+            notes.append(f"last refresh {read.lower()}: refresh again")
+        if in_test and typ != "3 strikes" and read not in ("Worse", "Almost", "Flat"):
             score *= W["in_test_factor"]
             notes.append("challenger already in test")
         inc = incidents.affecting(rc[-1][2:], r.os)
@@ -299,6 +362,7 @@ def main():
             in_test=recent.test_codes.get(aid, "") if in_test else "",
             test_week1_share=recent.test_best_s1.get(aid, np.nan) if in_test else np.nan,
             test_verdict=recent.test_verdict.get(aid, "") if in_test else "",
+            test_read=read,
             low_ceiling=r.low_ceiling_b, notes="; ".join(notes)))
     Q = pd.DataFrame(rows)
     # Review tickets sit on top, then by score

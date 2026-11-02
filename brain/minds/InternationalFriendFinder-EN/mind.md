@@ -77,7 +77,7 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 A #1 here has led a median 4 weeks (15 finished reigns). Longest: n6f2Wt banner, 16 weeks from 2026-07-13.
 
 ### Refreshes read from the exports
-9 since Dec: 3 hits of 9 with a final verdict (33%), 2 strikes, 4 fouls.
+9 since Dec: 3 hits of 9 with a final verdict (33%), 1 strikes, 5 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-09-14 | InternationalFriendFinder · iOS · EN · Friend | X4nR8W | 2 | 4% | Strike |
@@ -87,7 +87,7 @@ A #1 here has led a median 4 weeks (15 finished reigns). Longest: n6f2Wt banner,
 | 2026-06-29 | InternationalFriendFinder · Android · EN · Friend | m3dtCp | 2 | 33% | Hit |
 | 2026-06-22 | InternationalFriendFinder · iOS · EN · Friend | 8k4opR | 2 | 4% | Foul |
 | 2026-06-22 | InternationalFriendFinder · Android · EN · Friend | 8k4opR | 2 | 5% | Foul |
-| 2026-04-06 | InternationalFriendFinder · iOS · EN · Friend | m9Gh2d | 2 | 1% | Strike |
+| 2026-04-06 | InternationalFriendFinder · iOS · EN · Friend | m9Gh2d | 2 | 1% | Foul |
 
 ### Experiments logged
 - none yet

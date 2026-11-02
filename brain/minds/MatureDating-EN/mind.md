@@ -83,13 +83,13 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 A #1 here has led a median 2 weeks (46 finished reigns). Longest: a2Ef3y wanted, 12 weeks from 2026-08-10.
 
 ### Refreshes read from the exports
-10 since Dec: 6 hits of 10 with a final verdict (60%), 4 strikes, 0 fouls.
+10 since Dec: 6 hits of 10 with a final verdict (60%), 3 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-08-17 | MatureDating · iOS · EN · 50to60 | X4nR8W | 1 | 9% | Home run |
 | 2026-08-17 | MatureDating · Android · EN · 50to60 | X4nR8W | 1 | 6% | Home run |
 | 2026-08-03 | MatureDating · iOS · EN · 30to40 | 8k4opR | 4 | 2% | Strike |
-| 2026-08-03 | MatureDating · Android · EN · 30to40 | 8k4opR | 4 | 2% | Strike |
+| 2026-08-03 | MatureDating · Android · EN · 30to40 | 8k4opR | 4 | 2% | Foul |
 | 2026-06-15 | MatureDating · iOS · EN · 30to40 | vh1kle | 4 | 2% | Late hit |
 | 2026-05-11 | MatureDating · iOS · EN · 30to40 | 7nf3oE | 2 | 3% | Strike |
 | 2026-05-04 | MatureDating · iOS · EN · 30to40 | 304050-US-banner-WomanFe u7Wf9i | 1 | 4% | Strike |
