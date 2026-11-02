@@ -17,8 +17,8 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 8 of 21 adsets it ran in · $3.1k spent as #1 · $22.3k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 8 of 21 adsets it ran in · $3.1k spent as #1 · $22.9k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -31,10 +31,10 @@ decoded: false
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-07-27 | 2026-07-27 | 1 | 63% | $101 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN | 2026-06-15 | 2026-06-22 | 1 | 7% | $49 |
 | AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-04-27 | 2026-07-13 | 0 | 12% | $3.8k |
-| AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-04-27 | 2026-10-05 | 0 | 9% | $3.6k |
+| AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-04-27 | 2026-10-26 | 0 | 9% | $3.6k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2026-04-27 | 2026-09-21 | 0 | 25% | $2.3k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN · Serious | 2026-04-27 | 2026-06-22 | 0 | 40% | $2.2k |
-| AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-05-18 | 2026-10-05 | 0 | 24% | $1.5k |
+| AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-05-18 | 2026-10-26 | 0 | 24% | $2.1k |
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-07-27 | 2026-08-10 | 0 | 24% | $425 |
 | General-EN | General · iOS · EN | 2026-04-27 | 2026-05-11 | 0 | 21% | $339 |
 | AsianFemaleLover-? | AsianFemaleLover · Web · ? | 2026-07-27 | 2026-08-10 | 0 | 11% | $206 |
@@ -45,8 +45,8 @@ decoded: false
 
 ### Variants (full ad names, 53 in total, top 10 by spend)
 - `AsianLover-US-5trdiM-streetinterview-KoreanManHook-WhereAreYouFrom-RateKoreanGirl-V1-VID-Batch2026Week16` · $4.3k · 12 adsets
+- `AsianLover-US-5trdiM-streetinterview-KoreanManHook-WouldYouDateHer-RateKoreanGirl-V3-VID-Batch2026Week16` · $2.5k · 5 adsets
 - `IndianBoyDream-IN-5trdiM-streetinterview-ChineseGirl-WouldYouDateHim-RateIndianGuy-V3-VID-Batch2026Week16` · $2.4k · 4 adsets
-- `AsianLover-US-5trdiM-streetinterview-KoreanManHook-WouldYouDateHer-RateKoreanGirl-V3-VID-Batch2026Week16` · $2.3k · 5 adsets
 - `AsianLover-US-5trdiM-streetinterview-ItalianManHook-WhereAreYouFrom-RateKoreanGirl-V1-VID-Batch2026Week16` · $1.7k · 6 adsets
 - `AsianLover-US-5trdiM-streetinterview-ItalianManHook-RateNoBlur-RateKoreanGirl-V2-VID-Batch2026Week16` · $1.5k · 12 adsets
 - `IndianBoyDream-IN-5trdiM-streetinterview-ChineseGirl-WhereAreYouFrom-RateIndianGuy-V1-VID-Batch2026Week16` · $1.3k · 2 adsets

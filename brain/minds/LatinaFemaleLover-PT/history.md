@@ -9,3 +9,7 @@ Every observation and change of belief, oldest first. Never edited or deleted.
 ## 2026-11-02 · seed · Claude
 Created from the exports and the Notion persona card "Latina Lover". Nothing in it is tested for PT yet: beliefs start at low confidence.
 <!-- event:seed -->
+
+## 2026-10-26 · new-1 · data
+n6f2Wt banner became #1 in LatinaFemaleLover · iOS · PT with 92% of spend (it entered on 2026-07-13 with 89% in its first week), replacing a2Ef3y wanted after 1 week as #1.
+<!-- event:new1:120250103215000469:2026-10-26 -->

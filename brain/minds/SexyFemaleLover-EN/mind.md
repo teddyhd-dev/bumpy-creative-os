@@ -29,18 +29,18 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 1 live adset · $1.4k last week · ROAS 0.26 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SexyFemaleLover · iOS · EN · Casual | 🆘 Critical | $1.4k | 0.26 | a2Ef3y wanted (since 2026-09-21, 3 wk) |
+| SexyFemaleLover · iOS · EN · Casual | 🆘 Critical | $1.4k | 0.26 | a2Ef3y wanted (since 2026-09-21, 6 wk) |
 
-**Open tickets:** T-344410 Decaying (iOS · EN · Casual: ROAS 0.26 (prev 0.50), under 0.32)
+**Open tickets:** T-344410 Decaying (iOS · EN · Casual: ROAS 0.26 (prev 0.32), under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-21 · SexyFemaleLover · iOS · EN · Casual · a2Ef3y wanted · 3 wk at 89% of spend  
-  top ad: `BeachGirl-US-a2Ef3y-wanted-latina-23FromVenezuelaSingleNeedSomeoneFromDifferentCountryToHaveFunWithMeLetsMeet-flirty-VID-Batch2026Week25`
+- 2026-09-21 · SexyFemaleLover · iOS · EN · Casual · a2Ef3y wanted · 6 wk at 91% of spend  
+  top ad: `BeachGirl-US-a2Ef3y-wanted-blonde-Anyone28FromAUSNeedAManFromDifferentCountryToHaveAGoodTimeTogetherLetsMeet-partybuddy-IMG-Batch2026Week25`
 - 2026-08-24 · SexyFemaleLover · iOS · EN · Casual · w1Tr7K carousel · 4 wk at 67% of spend  
   top ad: `SexyFemaleLover-US-w1Tr7K-Carousel-Treadmill-SingleWomenOnBumpy-MeetSingleWomen-CompletelyUnaware-VID-Batch2026Week31`
 - 2026-06-29 · SexyFemaleLover · iOS · EN · Casual · a2Ef3y wanted · 8 wk at 92% of spend  

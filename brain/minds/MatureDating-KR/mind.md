@@ -35,17 +35,24 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 - https://www.tiktok.com/@timchris46/video/7541947242257599751 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $715 last week · ROAS 0.20 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 2 live adsets · $1.3k last week · ROAS 0.14 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $715 | 0.20 | a2Ef3y wanted (since 2026-09-21, 3 wk) |
+| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $806 | 0.07 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $536 | 0.25 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-118607 Decaying (iOS · KR · 30to40: ROAS 0.20 (prev 0.16), under 0.32)
+**Open tickets:** T-118607 Decaying (iOS · KR · 30to40: ROAS 0.07, under 0.32); T-002715 Decaying (iOS · KR · 30to40: ROAS 0.25, under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-21 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 3 wk at 76% of spend  
+- 2026-10-26 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 1 wk at 78% of spend  
+  top ad: `MatureDating-KR-H7kM3N-wanted-MatureChineseFemaleInBeachSelfie-SheIsLookingForSomethingSeriousWithKoreanMan-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
+- 2026-10-26 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 1 wk at 65% of spend  
+  top ad: `MatureDating-KR-H7kM3N-wanted-MatureLatinaInBeachSelfie-SheWantsSeriousRelationshipWithKoreanMan-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
+- 2026-10-19 · MatureDating · iOS · KR · 30to40 · 8k4opR manyplaces · 1 wk at – of spend  
+  top ad: `MatureDating-KR-8k4opR-manyplaces-airport-hug-WhiteMan-AsianMom-StartFresh-ProductAware-VID-Batch2026Week30`
+- 2026-09-21 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 4 wk at 78% of spend  
   top ad: `MatureDating-KR-H7kM3N-wanted-MatureWhiteFemaleInBeachSelfie-EmmaFromLondon45SingleSeriousRelationshipOnlyLetsTalkOnBumpy-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
 - 2026-09-07 · MatureDating · iOS · KR · 30to40 · 8k4opR manyplaces · 2 wk at 51% of spend  
   top ad: `MatureDating-KR-8k4opR-manyplaces-restaurant-TurnsOutTrueLoveCanStillHappenAt50WithSomeoneFromAbroadOnBumpy-StartFresh-ProductAware-VID-Batch2026Week30`
@@ -53,7 +60,7 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
   top ad: `MatureDating-KR-H7kM3N-wanted-MatureLatinaInBeachSelfie-SheWantsSeriousRelationshipWithKoreanMan-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
 
 ### Fatigue clock
-A #1 here has led a median 4 weeks (2 finished reigns). Longest: a2Ef3y wanted, 5 weeks from 2026-08-03.
+A #1 here has led a median 3 weeks (4 finished reigns). Longest: a2Ef3y wanted, 5 weeks from 2026-08-03.
 
 ### Experiments logged
 - none yet

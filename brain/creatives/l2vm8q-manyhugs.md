@@ -17,15 +17,15 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 48 of 84 adsets it ran in · $316.1k spent as #1 · $428.7k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 48 of 86 adsets it ran in · $324.1k spent as #1 · $436.9k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| ChristianMatchWorldwide-EN | ChristianMatchWorldwide · iOS · EN · US | 2026-02-23 | 2026-10-05 | 29 | 98% | $64.9k |
-| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-05 | 24 | 65% | $15.1k |
+| ChristianMatchWorldwide-EN | ChristianMatchWorldwide · iOS · EN · US | 2026-02-23 | 2026-10-26 | 32 | 98% | $69.6k |
+| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-26 | 27 | 65% | $17.0k |
+| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-26 | 23 | 85% | $11.4k |
 | General-EN | General · Android · EN | 2025-12-01 | 2026-04-13 | 20 | 56% | $26.9k |
-| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-05 | 20 | 85% | $10.1k |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-30 | 15 | 67% | $37.2k |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-01-05 | 2026-05-11 | 12 | 80% | $31.0k |
 | General-PT | General · iOS · PT | 2026-01-05 | 2026-03-23 | 12 | 74% | $28.8k |
@@ -44,7 +44,7 @@ decoded: false
 | General-UA | General · Web · UA | 2026-08-17 | 2026-09-14 | 5 | 85% | $360 |
 
 ### Variants (full ad names, 156 in total, top 10 by spend)
-- `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06` · $61.9k · 6 adsets
+- `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06` · $66.4k · 6 adsets
 - `PassportBro-US-L2vM8Q-ManyHugs2-NewYearSilly-VID-Batch2025Week50` · $45.9k · 4 adsets
 - `General-BR-L2vM8Q-ManyHugs2-Abroad-VID-Batch2025Week50` · $37.8k · 3 adsets
 - `US-L2vM8Q-Manyhugs-Intentionally-IMG-Batch2025Week40` · $31.4k · 6 adsets
@@ -53,5 +53,5 @@ decoded: false
 - `BLK-US-L2vM8Q-manyhugs-chocolateandcaramelmale-IMG03-Batch2025Week47` · $24.1k · 7 adsets
 - `ES-L2vM8Q-Manyhugs-Movecountry-VID-Batch2025Week40` · $20.1k · 7 adsets
 - `BR-L2vM8Q-Manyhugs-Movecountry-VID-Batch2025Week40` · $18.2k · 2 adsets
-- `RU-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50` · $16.4k · 3 adsets
+- `RU-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50` · $18.0k · 3 adsets
 <!-- generated:end facts -->

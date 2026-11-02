@@ -17,20 +17,20 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 6 of 19 adsets it ran in · $6.2k spent as #1 · $47.3k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 7 of 19 adsets it ran in · $6.2k spent as #1 · $48.4k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| InternationalFriendFinder-CH | InternationalFriendFinder · iOS · CH · Friend | 2026-04-06 | 2026-10-05 | 5 | 45% | $9.8k |
+| InternationalFriendFinder-CH | InternationalFriendFinder · iOS · CH · Friend | 2026-04-06 | 2026-10-26 | 5 | 45% | $10.9k |
 | InternationalFriendFinder-TH | InternationalFriendFinder · iOS · TH · Friend | 2026-08-10 | 2026-09-28 | 4 | 75% | $2.5k |
 | InternationalFriendFinder-CH | InternationalFriendFinder · Android · CH | 2026-04-06 | 2026-06-08 | 2 | 78% | $693 |
-| InternationalFriendFinder-ES | InternationalFriendFinder · iOS · ES · Friend | 2026-04-06 | 2026-10-05 | 1 | 40% | $8.8k |
+| InternationalFriendFinder-ES | InternationalFriendFinder · iOS · ES · Friend | 2026-04-06 | 2026-10-26 | 1 | 40% | $8.8k |
 | InternationalFriendFinder-PT | InternationalFriendFinder · Android · PT · Friend | 2026-04-06 | 2026-08-24 | 1 | 33% | $2.7k |
+| InternationalFriendFinder-PT | InternationalFriendFinder · iOS · PT · Friend | 2026-04-06 | 2026-10-05 | 1 | 23% | $1.7k |
 | InternationalFriendFinder-FR | InternationalFriendFinder · iOS · FR · Friend | 2026-08-10 | 2026-09-14 | 1 | 10% | $235 |
-| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-01-26 | 2026-10-05 | 0 | 12% | $12.1k |
-| InternationalFriendFinder-EN | InternationalFriendFinder · Android · EN · Friend | 2026-01-26 | 2026-10-05 | 0 | 13% | $5.2k |
-| InternationalFriendFinder-PT | InternationalFriendFinder · iOS · PT · Friend | 2026-04-06 | 2026-10-05 | 0 | 26% | $1.7k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-01-26 | 2026-10-26 | 0 | 12% | $12.1k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · Android · EN · Friend | 2026-01-26 | 2026-10-26 | 0 | 13% | $5.3k |
 | InternationalFriendFinder-ES | InternationalFriendFinder · Android · ES · Friend | 2026-04-06 | 2026-08-17 | 0 | 11% | $1.3k |
 | InternationalFriendFinder-JP | InternationalFriendFinder · iOS · JP | 2026-04-06 | 2026-06-15 | 0 | 32% | $989 |
 | InternationalFriendFinder-JP | InternationalFriendFinder · Android · JP | 2026-04-06 | 2026-06-01 | 0 | 33% | $564 |
@@ -43,7 +43,7 @@ decoded: false
 | InternationalFriendFinder-ID | InternationalFriendFinder · Android · ID | 2026-04-06 | 2026-04-27 | 0 | 5% | $10 |
 
 ### Variants (full ad names, 26 in total, top 10 by spend)
-- `Friends-CH-S6j8tG-Excitement-Sunset-VID-Batch2026Week13` · $9.6k · 3 adsets
+- `Friends-CH-S6j8tG-Excitement-Sunset-VID-Batch2026Week13` · $10.6k · 3 adsets
 - `Friends-ES-S6j8tG-Excitement-MarkAirplane-VID-Batch2026Week13` · $8.6k · 3 adsets
 - `Friends-US-S6j8tG-Excitement-Sunset-VID-Batch2026Week03` · $7.1k · 5 adsets
 - `Friends-US-S6j8tG-Excitement-passport-VID-Batch2026Week03` · $6.6k · 2 adsets

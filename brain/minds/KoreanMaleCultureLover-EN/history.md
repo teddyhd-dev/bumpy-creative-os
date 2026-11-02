@@ -13,3 +13,7 @@ Created from the exports. No persona card found.
 ## 2026-10-05 · new-1 · data
 B9dF4J slider became #1 in KoreanMaleCultureLover · Android · EN with 37% of spend (it entered on 2026-06-29 with 62% in its first week), replacing n6f2Wt banner after 8 weeks as #1.
 <!-- event:new1:120249813331470469:2026-10-05 -->
+
+## 2026-10-26 · new-1 · data
+B9dF4J slider became #1 in KoreanMaleCultureLover · Android · EN with 49% of spend (it entered on 2026-06-29 with 62% in its first week), replacing a2Ef3y wanted after 1 week as #1.
+<!-- event:new1:120249813331470469:2026-10-26 -->

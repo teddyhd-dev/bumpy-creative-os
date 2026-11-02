@@ -17,3 +17,7 @@ k4Rm9p datingcontest became #1 in PassportBro · iOS · EN · Serious with 56% o
 ## 2026-10-05 · new-1 · data
 k4Rm9p datingcontest became #1 in PassportBro · Android · EN · Serious with 36% of spend (it entered on 2026-09-28 with 10% in its first week), replacing a2Ef3y wanted after 11 weeks as #1.
 <!-- event:new1:120244138017090469:2026-10-05 -->
+
+## 2026-10-26 · new-1 · data
+C0kM3N combo became #1 in PassportBro · Android · EN · Serious with 34% of spend (it entered on 2026-10-19 with 14% in its first week), replacing b7Kq4n boysvmen after 2 weeks as #1.
+<!-- event:new1:120244138017090469:2026-10-26 -->

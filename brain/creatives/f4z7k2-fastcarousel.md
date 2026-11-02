@@ -17,18 +17,18 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 6 of 24 adsets it ran in · $12.4k spent as #1 · $31.5k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 6 of 24 adsets it ran in · $13.8k spent as #1 · $34.2k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
+| ChristianMatchWorldwide-PT | ChristianMatchWorldwide · iOS · PT | 2026-08-03 | 2026-10-26 | 7 | 49% | $4.6k |
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-03-30 | 2026-07-27 | 5 | 64% | $9.6k |
-| ChristianMatchWorldwide-PT | ChristianMatchWorldwide · iOS · PT | 2026-08-03 | 2026-10-05 | 5 | 47% | $2.7k |
 | GringoMaleLover-PH | GringoMaleLover · Android · PH · PH | 2026-03-30 | 2026-05-11 | 4 | 65% | $2.7k |
 | GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-04-06 | 2026-05-04 | 2 | 56% | $904 |
 | MatureDating-EN | MatureDating · iOS · EN | 2026-04-20 | 2026-05-04 | 2 | 51% | $396 |
 | MatureDating-ES | MatureDating · iOS · ES · 30to40 | 2026-03-30 | 2026-07-27 | 1 | 61% | $1.2k |
-| ChristianMatchWorldwide-ES | ChristianMatchWorldwide · iOS · ES | 2026-08-03 | 2026-09-28 | 0 | 30% | $4.3k |
+| ChristianMatchWorldwide-ES | ChristianMatchWorldwide · iOS · ES | 2026-08-03 | 2026-10-26 | 0 | 30% | $5.1k |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-04-06 | 2026-08-31 | 0 | 7% | $2.7k |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-04-06 | 2026-05-25 | 0 | 16% | $2.5k |
 | MatureDating-EN | MatureDating · Android · EN · 30to40 | 2026-06-08 | 2026-08-03 | 0 | 13% | $771 |
@@ -45,10 +45,10 @@ decoded: false
 
 ### Variants (full ad names, 13 in total, top 10 by spend)
 - `GringoLover-ES-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $12.1k · 2 adsets
-- `Christian-ES-F4z7K2-FastCarousel-PraiseHook-conocecristianosolteros-recommendation-SolutionAware-VID-Batch2026Week06` · $4.3k · 1 adset
+- `Christian-ES-F4z7K2-FastCarousel-PraiseHook-conocecristianosolteros-recommendation-SolutionAware-VID-Batch2026Week06` · $5.1k · 1 adset
+- `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-Batch2026Week06` · $4.6k · 1 adset
 - `GringoLover-BR-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $3.6k · 2 adsets
 - `GringoLover-PH-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $2.7k · 2 adsets
-- `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-Batch2026Week06` · $2.7k · 1 adset
 - `304050-US-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $2.3k · 4 adsets
 - `304050-ES-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $1.4k · 2 adsets
 - `GringoLover-TH-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12` · $731 · 2 adsets

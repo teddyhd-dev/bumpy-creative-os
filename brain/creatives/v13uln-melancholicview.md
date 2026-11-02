@@ -17,25 +17,29 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 3 of 4 adsets it ran in · $10.2k spent as #1 · $13.6k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 5 of 8 adsets it ran in · $16.5k spent as #1 · $24.3k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| ChatOnly-EN | ChatOnly · Android · EN · Talk | 2026-09-14 | 2026-10-05 | 4 | 70% | $6.2k |
-| ChatOnly-EN | ChatOnly · iOS · EN · Talk | 2026-08-31 | 2026-10-05 | 2 | 72% | $6.8k |
-| InterlocalDating-EN | InterlocalDating · Android · EN | 2026-09-21 | 2026-10-05 | 2 | 58% | $386 |
+| ChatOnly-EN | ChatOnly · Android · EN · Talk | 2026-09-14 | 2026-10-26 | 5 | 70% | $10.7k |
+| ChatOnly-EN | ChatOnly · iOS · EN · Talk | 2026-08-31 | 2026-10-26 | 3 | 78% | $10.5k |
+| ChatOnly-PT | ChatOnly · Android · PT · Talk | 2026-10-19 | 2026-10-26 | 2 | 66% | $1.0k |
+| ChatOnly-PT | ChatOnly · iOS · PT · Talk | 2026-10-19 | 2026-10-26 | 1 | 80% | $1.0k |
+| InterlocalDating-EN | InterlocalDating · Android · EN | 2026-09-21 | 2026-09-28 | 1 | 57% | $386 |
+| ChatOnly-ES | ChatOnly · Android · ES · Talk | 2026-10-19 | 2026-10-26 | 0 | 35% | $519 |
 | InterlocalDating-EN | InterlocalDating · iOS · EN | 2026-09-07 | 2026-09-28 | 0 | 19% | $159 |
+| ChatOnly-ES | ChatOnly · iOS · ES · Talk | 2026-10-19 | 2026-10-26 | 0 | 1% | $15 |
 
-### Variants (full ad names, 25 in total, top 10 by spend)
-- `ChatPersona-US-v13uln-MelancholicView-NightStreet-SadAndNeedSomeoneToTalkAlt2-SolutionAware-VID-Batch2026Week34` · $8.6k · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-NightStreet-SadAndNeedSomeoneToTalk-SolutionAware-VID-Batch2026Week34` · $3.3k · 2 adsets
+### Variants (full ad names, 27 in total, top 10 by spend)
+- `ChatPersona-US-v13uln-MelancholicView-NightStreet-SadAndNeedSomeoneToTalkAlt2-SolutionAware-VID-Batch2026Week34` · $14.6k · 2 adsets
+- `ChatPersona-US-v13uln-MelancholicView-NightStreet-SadAndNeedSomeoneToTalk-SolutionAware-VID-Batch2026Week34` · $4.5k · 2 adsets
+- `ChatPersona-PT-v13uln-MelancholicView-NightStreet-SeVoceEstaTriste-SolutionAware-VID-Batch2026Week39` · $2.0k · 2 adsets
+- `ChatPersona-ES-v13uln-MelancholicView-NightStreet-SiEstasTristeYNecesitasHablarConAlguienPruebaAConversarConAlguienDeOtroPais-SolutionAware-VID-Batch2026Week39` · $533 · 2 adsets
+- `ChatPersona-US-v13uln-MelancholicView-DrivingCarPOV-Lonely-SolutionAware-VID-Batch2026Week34` · $439 · 2 adsets
 - `InterlocalDating-US-v13uln-ManyViewWithQuote-NewYorkCityNightStreet-BtwItsJustLikeAMovieDatingANYCGuyFromBumpy-FeelsLikeAMovie-ProductAware-VID-Batch2026Week34` · $330 · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-DrivingCarPOV-Lonely-SolutionAware-VID-Batch2026Week34` · $194 · 2 adsets
+- `ChatPersona-US-v13uln-MelancholicView-JapaneseCityView-LonelyRecently-SolutionAware-VID-Batch2026Week34` · $324 · 2 adsets
+- `ChatPersona-US-v13uln-MelancholicView-WarmLampInDarkNight-TalkWithoutJudgementAlt2-SolutionAware-VID-Batch2026Week34` · $318 · 2 adsets
+- `ChatPersona-US-v13uln-MelancholicView-DrivingCarPOVAlt2-Lonely-SolutionAware-VID-Batch2026Week34` · $201 · 2 adsets
 - `ChatPersona-US-v13uln-MelancholicView-JapaneseCityView-LonelyRecentlyAlt2-SolutionAware-VID-Batch2026Week34` · $193 · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-JapaneseCityView-LonelyRecently-SolutionAware-VID-Batch2026Week34` · $175 · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-WarmLampInDarkNight-TalkWithoutJudgementAlt2-SolutionAware-VID-Batch2026Week34` · $147 · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-SwingingAlt2-Lonely-SolutionAware-VID-Batch2026Week34` · $69 · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-Friends-LonelyAlt2-SolutionAware-VID-Batch2026Week34` · $66 · 2 adsets
-- `ChatPersona-US-v13uln-MelancholicView-NightStreet-TalkingToAFriendWithDifferentLanguage-SolutionAware-VID-Batch2026Week34` · $64 · 2 adsets
 <!-- generated:end facts -->

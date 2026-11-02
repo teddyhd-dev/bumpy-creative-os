@@ -29,14 +29,25 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 3 live adsets · $353 last week · ROAS 0.11 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $854 last week · ROAS 0.44 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| Translation · iOS · EN | 🆘 Critical | $247 | 0.13 | – |
-| Translation · iOS · EN | 🆘 Critical | $68 | 0.07 | – |
-| Translation · iOS · EN | 🆘 Critical | $38 | 0.07 | – |
+| Translation · iOS · EN | 🔻 Falling | $854 | 0.44 | oGkiWm excited (since 2026-10-12, 3 wk) |
+
+**Open tickets:** T-551779 Decaying (iOS · EN: Green, but hook rate -40% vs 4-wk avg)
+
+### #1 history (latest first)
+- 2026-10-12 · Translation · iOS · EN · oGkiWm excited · 1 wk at 81% of spend  
+  top ad: `TranslationPersona-US-oGkiWm-Excited-ManWithEarphoneExcited-PorFinEncontreComoSalirConUnGringoSinPreocuparmePorNoHablarIngles-NoLanguageBarrier-SolutionAware-VID-Batch2026Week38`
+- 2026-10-12 · Translation · iOS · EN · oGkiWm excited · 2 wk at 90% of spend  
+  top ad: `TranslationPersona-US-oGkiWm-Excited-ManWithEarphoneExcited-PorFinEncontreComoSalirConUnGringoSinPreocuparmePorNoHablarIngles-NoLanguageBarrier-SolutionAware-VID-Batch2026Week38`
+- 2026-10-12 · Translation · iOS · EN · oGkiWm excited · 3 wk at 89% of spend  
+  top ad: `TranslationPersona-US-oGkiWm-Excited-ManWithEarphoneExcited-PorFinEncontreComoSalirConUnGringoSinPreocuparmePorNoHablarIngles-NoLanguageBarrier-SolutionAware-VID-Batch2026Week38`
+
+### Fatigue clock
+A #1 here has led a median 2 weeks (2 finished reigns). Longest: oGkiWm excited, 3 weeks from 2026-10-12.
 
 ### Experiments logged
 - none yet

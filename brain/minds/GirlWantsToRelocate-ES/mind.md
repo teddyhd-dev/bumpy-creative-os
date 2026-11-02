@@ -34,18 +34,23 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.1k last week · ROAS 0.36 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.2k last week · ROAS 0.42 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · ES | 🟠 Amber | $1.1k | 0.36 | n6f2Wt banner (since 2026-07-20, 12 wk) |
+| GirlWantsToRelocate · iOS · ES | ✅ Healthy | $1.2k | 0.42 | v8Gn7M pulseblack (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-311248 Decaying (iOS · ES: ROAS 0.36, under 0.40, not falling)
+**Open tickets:** T-311248 Due (iOS · ES: ROAS 0.42)
 
 ### #1 history (latest first)
-- 2026-07-20 · GirlWantsToRelocate · iOS · ES · n6f2Wt banner · 12 wk at 82% of spend  
+- 2026-10-26 · GirlWantsToRelocate · iOS · ES · v8Gn7M pulseblack · 1 wk at 96% of spend  
+  top ad: `PassportGirl-ES-v8Gn7M-PulseBlack-GirlWalking-HighlyRecommendDatingUSGringoFromBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
+- 2026-07-20 · GirlWantsToRelocate · iOS · ES · n6f2Wt banner · 14 wk at 81% of spend  
   top ad: `PassportGirl-ES-n6f2Wt-Banner-Envelope-RecomiendoMuchisimoSalirConUnGringoEnBumpy-PersonalRecommendation-ProductAware-IMG-Batch2026Week280`
+
+### Fatigue clock
+A #1 here has led a median 14 weeks (1 finished reigns). Longest: n6f2Wt banner, 14 weeks from 2026-07-20.
 
 ### Experiments logged
 - none yet

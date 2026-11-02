@@ -17,8 +17,8 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 28 of 69 adsets it ran in · $269.6k spent as #1 · $417.0k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 28 of 69 adsets it ran in · $269.6k spent as #1 · $418.6k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -33,7 +33,7 @@ decoded: false
 | General-PL | General · Android · PL | 2025-12-22 | 2026-04-13 | 4 | 79% | $3.9k |
 | General-UA | General · Android · UA | 2026-04-06 | 2026-08-03 | 4 | 65% | $1.1k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-03-16 | 3 | 43% | $16.9k |
-| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-05 | 3 | 51% | $4.2k |
+| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-26 | 3 | 51% | $4.6k |
 | General-ES | General · Android · ES | 2025-12-22 | 2026-06-29 | 3 | 27% | $2.9k |
 | General-PL | General · iOS · PL | 2025-12-22 | 2026-03-23 | 3 | 55% | $1.8k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN | 2026-01-26 | 2026-02-16 | 3 | 60% | $740 |
@@ -51,7 +51,7 @@ decoded: false
 - `General-BR-i7P5Th-Banner-Thorn-VID-Batch2025Week50` · $17.1k · 5 adsets
 - `US-i7P5Th-Banner-PassportBro-Yesno-IMG-Batch2025Week42` · $13.1k · 9 adsets
 - `IndianBoyDream-US-i7P5Th-Banner-NotesPicture-VID-Batch2025Week49` · $12.9k · 5 adsets
+- `Slavic-RU-i7P5Th-Banner-Ashpalt-Female-VID-Batch2025Week50` · $6.0k · 3 adsets
 - `BLK-US-i7P5Th-Banner-Yesnomale-IMG-Batch2025Week47` · $5.6k · 7 adsets
-- `Slavic-RU-i7P5Th-Banner-Ashpalt-Female-VID-Batch2025Week50` · $5.6k · 3 adsets
 - `IndianBoyDream-US-i7P5Th-Banner-Wall-VID-Batch2025Week49` · $5.2k · 6 adsets
 <!-- generated:end facts -->

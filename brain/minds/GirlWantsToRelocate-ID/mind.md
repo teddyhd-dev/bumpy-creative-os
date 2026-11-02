@@ -34,13 +34,11 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 0 live adsets · $0 last week · ROAS – (bar 0.40)
 
 
 ### #1 history (latest first)
-- 2026-10-05 · GirlWantsToRelocate · iOS · ID · Co3Mb0 coupleproof · 1 wk at – of spend  
-  top ad: `PassportGirl-ID-Co3Mb0-CoupleProof-MixedCouplesCombo-PacaranPindahKeLuarNegeri-dateMoveAbroad-CompletelyUnaware-VID-Batch2026Week28`
 - 2026-09-07 · GirlWantsToRelocate · iOS · ID · n6f2Wt banner · 4 wk at 44% of spend  
   top ad: `PassportGirl-ID-n6f2Wt-Banner-Envelope-RecommendedBgtPacaranSamaBuleDariBumpy-PersonalRecommendation-ProductAware-VID-Batch2026Week28`
 - 2026-07-27 · GirlWantsToRelocate · iOS · ID · v8Gn7M pulseblack · 6 wk at 56% of spend  

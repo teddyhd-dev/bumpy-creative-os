@@ -35,18 +35,31 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 2 live adsets · $1.4k last week · ROAS 0.26 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 3 live adsets · $2.0k last week · ROAS 0.10 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · JP · JP | 🆘 Critical | $706 | 0.32 | a2Ef3y wanted (since 2026-10-05, 1 wk) |
-| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $697 | 0.20 | n6f2Wt banner (since 2026-09-21, 3 wk) |
+| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $804 | 0.04 | n6f2Wt banner (since 2026-10-26, 1 wk) |
+| GringoMaleLover · Android · JP · JP | 🆘 Critical | $685 | 0.14 | t3Wq8n bigtext (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $531 | 0.16 | H7kM3N airport (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-564005 Decaying (Android · JP · JP: ROAS 0.316 (prev 0.27), under 0.32); T-319678 Decaying (iOS · JP · JP: ROAS 0.20 (prev 0.91), under 0.32)
+**Open tickets:** T-319678 Decaying (iOS · JP · JP: ROAS 0.04 (prev 0.12), under 0.32); T-564005 Decaying (Android · JP · JP: ROAS 0.14 (prev 0.11), under 0.32); T-997635 Decaying (iOS · JP · JP: ROAS 0.16, under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-05 · GringoMaleLover · Android · JP · JP · a2Ef3y wanted · 1 wk at 31% of spend  
+- 2026-10-26 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 1 wk at 31% of spend  
+  top ad: `Gringolover-JP-n6f2Wt-Banner-Car-BlondeGuyRooflessCar-ForeignGuysAreAlreadyDatingJapaneseGirlsOnBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
+- 2026-10-26 · GringoMaleLover · Android · JP · JP · t3Wq8n bigtext · 1 wk at 36% of spend  
+  top ad: `GringoLover-JP-t3Wq8n-BigText-EastAsianSelfie-easierbutfaraway-confession-ProductAware-IMG-Batch2026Week35`
+- 2026-10-26 · GringoMaleLover · iOS · JP · JP · H7kM3N airport · 1 wk at 53% of spend  
+  top ad: `Gringolover-JP-H7kM3N-AirportHook-CoupleAirportHug-KoishiteKaigaiEIjuShiyo-dateMoveAbroad-CompletelyUnaware-VID-Batch2026Week28`
+- 2026-10-19 · GringoMaleLover · iOS · JP · JP · a2Ef3y wanted · 1 wk at 36% of spend  
+  top ad: `Gringolover-JP-H7kM3N-Wanted-ItalianGuyInCar-KaigaiNoKoibitoGaHoshii-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
+- 2026-10-19 · GringoMaleLover · Android · JP · JP · H7kM3N airport · 1 wk at 44% of spend  
+  top ad: `Gringolover-JP-H7kM3N-AirportHook-CoupleAirportHug-KoishiteKaigaiEIjuShiyo-dateMoveAbroad-CompletelyUnaware-VID-Batch2026Week28`
+- 2026-10-12 · GringoMaleLover · iOS · JP · JP · v8Gn7M pulseblack · 1 wk at 32% of spend  
+  top ad: `GringoLover-JP-v8Gn7M-PulseBlack-Singing-ManyForeignGuysAreDatingJapaneseGirls-DatingAbroad-ProductAware-IMG-Batch2026Week28`
+- 2026-10-05 · GringoMaleLover · Android · JP · JP · a2Ef3y wanted · 2 wk at 35% of spend  
   top ad: `Gringolover-JP-H7kM3N-Wanted-ItalianGuyInKitchen-NihonjinNoOnnanokoToTsukiaitai-someoneWantsYou-CompletelyUnaware-VID-Batch2026Week28`
 - 2026-09-21 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 3 wk at 41% of spend  
   top ad: `Gringolover-JP-n6f2Wt-Banner-BigTicket-BlondeGuyHoldingSign-DateAForeignOppaOnBumpy-DirectCTA-ProductAware-VID-Batch2026Week28`
@@ -62,13 +75,13 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `GringoLover-JP-n6f2Wt-Banner-Envelope-HighlyRecommendDatingForeignGuyOnBumpy-PersonalRecommendation-ProductAware-VID-Batch2026Week28`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (5 finished reigns). Longest: n6f2Wt banner, 3 weeks from 2026-09-14.
+A #1 here has led a median 2 weeks (10 finished reigns). Longest: n6f2Wt banner, 3 weeks from 2026-09-14.
 
 ### Refreshes read from the exports
-1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
+1 since Dec: 0 hits of 1 with a final verdict (0%), 0 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-14 | GringoMaleLover · iOS · JP · JP | k9Rd4m t3Wq8n | 2 | 11% | Foul (provisional) |
+| 2026-09-14 | GringoMaleLover · iOS · JP · JP | k9Rd4m t3Wq8n | 2 | 11% | Foul |
 
 ### Experiments logged
 - none yet

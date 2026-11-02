@@ -17,15 +17,15 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 2 of 29 adsets it ran in · $869 spent as #1 · $21.2k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 2 of 29 adsets it ran in · $869 spent as #1 · $21.3k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | PassportBro-EN | PassportBro · Android · EN | 2026-01-26 | 2026-02-23 | 2 | 38% | $886 |
 | General-PL | General · iOS · PL | 2025-12-22 | 2026-03-23 | 1 | 39% | $542 |
 | PassportBro-EN | PassportBro · iOS · EN | 2025-12-01 | 2026-03-02 | 0 | 12% | $5.3k |
-| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-05 | 0 | 19% | $2.5k |
+| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-26 | 0 | 19% | $2.6k |
 | MatureDating-ES | MatureDating · iOS · ES · 30to40 | 2025-12-29 | 2026-04-06 | 0 | 19% | $1.4k |
 | PassportBro-EN | PassportBro · Android · EN | 2025-12-01 | 2026-01-26 | 0 | 45% | $1.3k |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-01-05 | 2026-03-09 | 0 | 28% | $1.2k |
@@ -52,6 +52,6 @@ decoded: false
 - `3040-ES-d5Y6nK-Panoramic-Mountain-VID-Batch2025Week50` · $1.1k · 6 adsets
 - `Slavic-KZ-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $1.1k · 3 adsets
 - `Slavic-UA-d5Y6nK-Panoramic-Mountain-VID-Batch2025Week50` · $919 · 2 adsets
-- `Slavic-LV-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $728 · 3 adsets
+- `Slavic-LV-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $743 · 3 adsets
 - `Slavic-UA-d5Y6nK-Panoramic-Mountain-IMG-Batch2025Week50` · $706 · 2 adsets
 <!-- generated:end facts -->

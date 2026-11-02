@@ -31,20 +31,20 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 2 live adsets · $4.9k last week · ROAS 0.39 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 2 live adsets · $4.6k last week · ROAS 0.45 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · Android · ES · Friend | 🟠 Amber | $2.7k | 0.36 | q4Xr9m tweetoverlay (since 2026-08-17, 8 wk) |
-| InternationalFriendFinder · iOS · ES · Friend | ✅ Healthy | $2.1k | 0.42 | q4Xr9m tweetoverlay (since 2026-08-17, 8 wk) |
+| InternationalFriendFinder · Android · ES · Friend | ✅ Healthy | $2.5k | 0.43 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
+| InternationalFriendFinder · iOS · ES · Friend | ✅ Healthy | $2.1k | 0.48 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
 
-**Open tickets:** T-038097 Decaying (Android · ES · Friend: ROAS 0.36, under 0.40, not falling); T-999972 Due (iOS · ES · Friend: ROAS 0.42)
+**Open tickets:** T-038097 Due (Android · ES · Friend: ROAS 0.43); T-999972 Due (iOS · ES · Friend: ROAS 0.48)
 
 ### #1 history (latest first)
-- 2026-08-17 · InternationalFriendFinder · iOS · ES · Friend · q4Xr9m tweetoverlay · 8 wk at 68% of spend  
+- 2026-08-17 · InternationalFriendFinder · iOS · ES · Friend · q4Xr9m tweetoverlay · 11 wk at 67% of spend  
   top ad: `Friends-ES-q4Xr9m-TweetOverlay-Collageof4-siquieresamigosbumpy-recommendation-ProductAware-IMG-Batch2026Week31`
-- 2026-08-17 · InternationalFriendFinder · Android · ES · Friend · q4Xr9m tweetoverlay · 8 wk at 65% of spend  
+- 2026-08-17 · InternationalFriendFinder · Android · ES · Friend · q4Xr9m tweetoverlay · 11 wk at 65% of spend  
   top ad: `Friends-ES-q4Xr9m-TweetOverlay-Collageof4-siquieresamigosbumpy-recommendation-ProductAware-IMG-Batch2026Week31`
 - 2026-08-03 · InternationalFriendFinder · iOS · ES · Friend · w1Tr7K carousel · 2 wk at 65% of spend  
   top ad: `Friends-ES-w1Tr7K-carousel-NYC-VID-Batch2026Week13`

@@ -33,17 +33,17 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $3.0k last week · ROAS 0.49 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $3.3k last week · ROAS 0.52 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · EN · US | ✅ Healthy | $3.0k | 0.49 | L2vM8Q manyhugs (since 2026-09-28, 2 wk) |
+| ChristianMatchWorldwide · iOS · EN · US | ✅ Healthy | $3.3k | 0.52 | L2vM8Q manyhugs (since 2026-09-28, 5 wk) |
 
-**Open tickets:** T-766870 Due (iOS · EN · US: ROAS 0.49)
+**Open tickets:** T-766870 Due (iOS · EN · US: ROAS 0.52)
 
 ### #1 history (latest first)
-- 2026-09-28 · ChristianMatchWorldwide · iOS · EN · US · L2vM8Q manyhugs · 2 wk at 53% of spend  
+- 2026-09-28 · ChristianMatchWorldwide · iOS · EN · US · L2vM8Q manyhugs · 5 wk at 52% of spend  
   top ad: `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06`
 - 2026-08-31 · ChristianMatchWorldwide · iOS · EN · US · X4nR8W talkinghead · 4 wk at 53% of spend  
   top ad: `ChristianMatchWorldwide-US-X4nR8W-TALKINGHEAD-FemaleTalkingHeadCrossNecklace-shareourfaith-testimonial-ProductAware-VID-Batch2026Week33`

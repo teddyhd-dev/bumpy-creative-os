@@ -34,22 +34,26 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.8k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.8k last week · ROAS 0.36 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.8k | 0.40 | a2Ef3y wanted (since 2026-08-24, 7 wk) |
+| GirlWantsToRelocate · iOS · EN | 🟠 Amber | $1.8k | 0.36 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-455544 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.40 from 0.43)
+**Open tickets:** T-455544 Decaying (iOS · EN: ROAS 0.36, under 0.40, not falling)
 
 ### #1 history (latest first)
-- 2026-08-24 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 7 wk at 59% of spend  
+- 2026-10-19 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 2 wk at 53% of spend  
   top ad: `PassportGirl-US-H7kM3N-Wanted-ItalianGuyInCar-29fromUKLonelyLookingForGirlfriendFromAnotherCountryLetsChat-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
-- 2026-06-08 · GirlWantsToRelocate · iOS · EN · Kj4Rp7 firstdate · 11 wk at 77% of spend  
+- 2026-10-12 · GirlWantsToRelocate · iOS · EN · Kj4Rp7 firstdate · 1 wk at 51% of spend  
   top ad: `PassportGirl-US-Kj4Rp7-FirstDate-CoupleOutfitCheckonStreet-GirlDateTheForeignOne-PassportGirl-TikTokTrendComedic-VID-Batch2026Week22`
+- 2026-08-24 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 7 wk at 60% of spend  
+  top ad: `PassportGirl-US-H7kM3N-Wanted-ItalianGuyInCar-29fromUKLonelyLookingForGirlfriendFromAnotherCountryLetsChat-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
 - 2026-06-08 · GirlWantsToRelocate · iOS · EN · n6f2Wt banner · 1 wk at 34% of spend  
   top ad: `PassportGirl-US-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HighlyRecommendFallingInLoveWithManAbroadOnBumpy-proven-growing-IMG-Batch2026Week19`
+- 2026-06-08 · GirlWantsToRelocate · iOS · EN · Kj4Rp7 firstdate · 11 wk at 77% of spend  
+  top ad: `PassportGirl-US-Kj4Rp7-FirstDate-CoupleOutfitCheckonStreet-GirlDateTheForeignOne-PassportGirl-TikTokTrendComedic-VID-Batch2026Week22`
 - 2026-06-01 · GirlWantsToRelocate · iOS · EN · d5Y6mG view · 1 wk at 31% of spend  
   top ad: `PassportGirl-US-d5Y6mG-View-notsobad-VID-Batch2026Week08`
 - 2026-05-25 · GirlWantsToRelocate · iOS · EN · n6f2Wt banner · 1 wk at 33% of spend  
@@ -70,13 +74,9 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
   top ad: `PassportGirl-US-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05`
 - 2026-02-09 · GirlWantsToRelocate · Android · EN · p8C7aO mirrorselfie · 1 wk at – of spend  
   top ad: `PassportGirl-US-p8C7aO-MirrorSelfie-notsobad-VID-Batch2026Week02`
-- 2026-02-02 · GirlWantsToRelocate · iOS · EN · p8C7aO mirrorselfie · 1 wk at 41% of spend  
-  top ad: `PassportGirl-US-p8C7aO-MirrorSelfie-notsobad-VID-Batch2026Week02`
-- 2026-01-26 · GirlWantsToRelocate · iOS · EN · v4E59z londonboy · 1 wk at 40% of spend  
-  top ad: `US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46`
 
 ### Fatigue clock
-A #1 here has led a median 1 weeks (21 finished reigns). Longest: Kj4Rp7 firstdate, 11 weeks from 2026-06-08.
+A #1 here has led a median 1 weeks (23 finished reigns). Longest: Kj4Rp7 firstdate, 11 weeks from 2026-06-08.
 
 ### Refreshes read from the exports
 5 since Dec: 2 hits of 5 with a final verdict (40%), 2 strikes, 1 fouls.

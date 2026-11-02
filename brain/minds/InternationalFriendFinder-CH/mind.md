@@ -31,17 +31,17 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.8k last week · ROAS 0.46 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.8k last week · ROAS 0.32 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · iOS · CH · Friend | 🔻 Falling | $1.8k | 0.46 | n6f2Wt banner (since 2026-08-31, 6 wk) |
+| InternationalFriendFinder · iOS · CH · Friend | 🔻 Falling | $1.8k | 0.32 | n6f2Wt banner (since 2026-08-31, 9 wk) |
 
-**Open tickets:** T-844172 Decaying (iOS · CH · Friend: Green, but hook rate -28% vs 4-wk avg)
+**Open tickets:** T-844172 Decaying (iOS · CH · Friend: Under 0.40 and falling: ROAS 0.32 from 0.40)
 
 ### #1 history (latest first)
-- 2026-08-31 · InternationalFriendFinder · iOS · CH · Friend · n6f2Wt banner · 6 wk at 43% of spend  
+- 2026-08-31 · InternationalFriendFinder · iOS · CH · Friend · n6f2Wt banner · 9 wk at 43% of spend  
   top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
 - 2026-08-31 · InternationalFriendFinder · Web · CH · m3dtCp beatsyncedtext · 3 wk at 50% of spend  
   top ad: `InternationalFriends-CH-m3dtCp-beatsyncedtext-aerialMixedFriends-MakeFriendsFromDifferentCountries-makeintlfriends-VID-Batch2026Week25`
@@ -76,9 +76,10 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 A #1 here has led a median 1 weeks (15 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-04-13.
 
 ### Refreshes read from the exports
-4 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls.
+5 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
+| 2026-10-26 | InternationalFriendFinder · iOS · CH · Friend | a2Ef3y | 3 | 6% | Foul (provisional) |
 | 2026-08-10 | InternationalFriendFinder · iOS · CH · Friend | k7Lp2Q q4Xr9m | 8 | 5% | Hit |
 | 2026-06-29 | InternationalFriendFinder · iOS · CH · Friend | m3dtCp | 2 | 6% | Foul |
 | 2026-06-22 | InternationalFriendFinder · iOS · CH · Friend | 8k4opR | 2 | 16% | Foul |

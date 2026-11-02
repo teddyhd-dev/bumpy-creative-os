@@ -33,31 +33,36 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.1k last week · ROAS 0.34 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.1k last week · ROAS 0.25 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · PT | 🟠 Amber | $1.1k | 0.34 | n6f2Wt banner (since 2026-07-13, 13 wk) |
+| LatinaFemaleLover · iOS · PT | 🆘 Critical | $1.1k | 0.25 | n6f2Wt banner (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.34, under 0.40, not falling)
+**Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.25 (prev 0.28), under 0.32)
 
 ### #1 history (latest first)
+- 2026-10-26 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 1 wk at 92% of spend  
+  top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
+- 2026-10-19 · LatinaFemaleLover · iOS · PT · a2Ef3y wanted · 1 wk at 36% of spend  
+  top ad: `LatinaLover-PT-a2Ef3y-Wanted-ArgentinaWantedSelfie-precisodeolatinoargentina-recommendation-ProductAware-VID-Batch2026Week27`
 - 2026-08-10 · LatinaFemaleLover · Web · PT · n6f2Wt banner · 6 wk at 100% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-VenezuelanaFenceBridge-quernamoradavenezuelana-recommendation-ProductAware-VID-Batch2026Week27`
-- 2026-07-13 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 13 wk at 84% of spend  
+- 2026-07-13 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 14 wk at 83% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
 - 2026-07-13 · LatinaFemaleLover · Android · PT · Casual · n6f2Wt banner · 4 wk at 96% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
 
 ### Fatigue clock
-A #1 here has led a median 5 weeks (2 finished reigns). Longest: n6f2Wt banner, 13 weeks from 2026-07-13.
+A #1 here has led a median 5 weeks (4 finished reigns). Longest: n6f2Wt banner, 14 weeks from 2026-07-13.
 
 ### Refreshes read from the exports
-1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
+2 since Dec: 0 hits of 1 with a final verdict (0%), 1 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | LatinaFemaleLover · iOS · PT | C0kM3N | 1 | 3% | Strike (provisional) |
+| 2026-10-12 | LatinaFemaleLover · iOS · PT | w1Tr7K | 6 | 2% | Strike (provisional) |
+| 2026-09-21 | LatinaFemaleLover · iOS · PT | C0kM3N | 1 | 3% | Strike |
 
 ### Experiments logged
 - none yet

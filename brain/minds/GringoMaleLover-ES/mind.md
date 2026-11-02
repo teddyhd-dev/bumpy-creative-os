@@ -35,18 +35,26 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 2 live adsets · $2.5k last week · ROAS 0.32 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 2 live adsets · $2.3k last week · ROAS 0.39 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · ES · ES | 🔻 Falling | $1.4k | 0.38 | n6f2Wt banner (since 2026-08-24, 7 wk) |
-| GringoMaleLover · iOS · ES · ES | 🆘 Critical | $1.1k | 0.24 | n6f2Wt banner (since 2026-08-24, 7 wk) |
+| GringoMaleLover · Android · ES · ES | 🆘 Critical | $1.3k | 0.30 | X4nR8W talkinghead (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · ES · ES | ✅ Healthy | $1.0k | 0.50 | X4nR8W talkinghead (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-298889 Decaying (Android · ES · ES: Under 0.40 and falling: ROAS 0.38 from 0.47); T-293353 Decaying (iOS · ES · ES: ROAS 0.24 (prev 0.25), under 0.32)
+**Open tickets:** T-298889 Decaying (Android · ES · ES: ROAS 0.30 (prev 0.28), under 0.32)
 
 ### #1 history (latest first)
-- 2026-08-24 · GringoMaleLover · Android · ES · ES · n6f2Wt banner · 7 wk at 80% of spend  
+- 2026-10-26 · GringoMaleLover · Android · ES · ES · X4nR8W talkinghead · 1 wk at 52% of spend  
+  top ad: `GringoMaleLover-ES-X4nR8W-TalkingHeadHorizontal-SideProfileHotLatinaPicnicAtCentralPark-SuccessStory-ProductAware-VID-JAC-USM-Batch2026Week39`
+- 2026-10-26 · GringoMaleLover · iOS · ES · ES · X4nR8W talkinghead · 1 wk at 94% of spend  
+  top ad: `GringoMaleLover-ES-X4nR8W-TalkingHeadHorizontal-SideProfileHotLatinaPicnicAtCentralPark-SuccessStory-ProductAware-VID-JAC-USM-Batch2026Week39`
+- 2026-10-19 · GringoMaleLover · iOS · ES · ES · w1Tr7K carousel · 1 wk at 37% of spend  
+  top ad: `GringoLover-ES-w1Tr7K-Carousel-HappyGuyAtTheBeach-POVTrayendoPorPrimeraVezAMiNovioGringoDeCiudadAMiTierra-FirstTimeHere-SolutionAware-VID-Batch2026Week38`
+- 2026-10-12 · GringoMaleLover · iOS · ES · ES · a2Ef3y wanted · 1 wk at 29% of spend  
+  top ad: `GringoLover-ES-a2Ef3y-wanted-Valentine-VID-Batch2026Week05`
+- 2026-08-24 · GringoMaleLover · Android · ES · ES · n6f2Wt banner · 9 wk at 77% of spend  
   top ad: `GringoLover-ES-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
 - 2026-08-24 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 7 wk at 70% of spend  
   top ad: `GringoLover-ES-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
@@ -64,34 +72,26 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `GringoLover-ES-F4z7K2-FastCarousel-HugHook-VID-Batch2026Week12`
 - 2026-06-29 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 2 wk at 35% of spend  
   top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
-- 2026-06-22 · GringoMaleLover · Android · ES · ES · 4Bm9of banner · 3 wk at 53% of spend  
-  top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
 - 2026-06-22 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 1 wk at 71% of spend  
   top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
-- 2026-06-15 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 1 wk at 39% of spend  
-  top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
-- 2026-06-01 · GringoMaleLover · iOS · ES · ES · n6f2Wt banner · 2 wk at 59% of spend  
-  top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
-- 2026-06-01 · GringoMaleLover · Android · ES · ES · n6f2Wt banner · 3 wk at 60% of spend  
-  top ad: `Gringolover-ES-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-HayMasGringosQueriendoSalirConLatinasDeLo QueImaginas-imagine-latinawanted-VID-Batch2026Week19`
-- 2026-05-11 · GringoMaleLover · iOS · ES · ES · 4Bm9of banner · 3 wk at 55% of spend  
+- 2026-06-22 · GringoMaleLover · Android · ES · ES · 4Bm9of banner · 3 wk at 53% of spend  
   top ad: `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17`
 
 ### Fatigue clock
-A #1 here has led a median 3 weeks (24 finished reigns). Longest: H7kM3N airport, 8 weeks from 2026-03-16.
+A #1 here has led a median 3 weeks (28 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-08-24.
 
 ### Refreshes read from the exports
-14 since Dec: 4 hits of 12 with a final verdict (33%), 3 strikes, 5 fouls.
+16 since Dec: 4 hits of 14 with a final verdict (29%), 4 strikes, 6 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-14 | GringoMaleLover · iOS · ES · ES | k9Rd4m t3Wq8n | 2 | 13% | Strike (provisional) |
-| 2026-09-14 | GringoMaleLover · Android · ES · ES | k9Rd4m t3Wq8n | 2 | 7% | Foul (provisional) |
+| 2026-10-26 | GringoMaleLover · iOS · ES · ES | dR1elf | 6 | 2% | Strike (provisional) |
+| 2026-10-26 | GringoMaleLover · Android · ES · ES | Fy3sK8 | 1 | 3% | Strike (provisional) |
+| 2026-09-14 | GringoMaleLover · iOS · ES · ES | k9Rd4m t3Wq8n | 2 | 13% | Strike |
+| 2026-09-14 | GringoMaleLover · Android · ES · ES | k9Rd4m t3Wq8n | 2 | 7% | Foul |
 | 2026-06-29 | GringoMaleLover · iOS · ES · ES | m3dtCp | 2 | 22% | Foul |
 | 2026-06-29 | GringoMaleLover · Android · ES · ES | m3dtCp | 2 | 16% | Strike |
 | 2026-06-15 | GringoMaleLover · iOS · ES · ES | i48opT vh1kle | 2 | 7% | Foul |
 | 2026-06-15 | GringoMaleLover · Android · ES · ES | i48opT | 1 | 1% | Foul |
-| 2026-05-18 | GringoMaleLover · iOS · ES · ES | iPohxY | 2 | 4% | Foul |
-| 2026-05-18 | GringoMaleLover · Android · ES · ES | iPohxY | 2 | 2% | Strike |
 
 ### Experiments logged
 - none yet

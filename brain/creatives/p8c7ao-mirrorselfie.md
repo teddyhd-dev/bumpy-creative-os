@@ -19,9 +19,9 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
 Includes ads written as P8c7ao (confirmed fixes in core/code_aliases.csv).
-#1 in 12 of 59 adsets it ran in · $18.5k spent as #1 · $89.5k in total.
+#1 in 12 of 59 adsets it ran in · $18.5k spent as #1 · $89.8k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -43,7 +43,7 @@ Includes ads written as P8c7ao (confirmed fixes in core/code_aliases.csv).
 | PassportBro-EN | PassportBro · Android · EN | 2026-01-19 | 2026-04-27 | 0 | 14% | $2.8k |
 | General-ES | General · iOS · ES | 2025-12-22 | 2026-01-05 | 0 | 16% | $2.3k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2026-01-19 | 2026-05-25 | 0 | 14% | $1.9k |
-| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-05 | 0 | 13% | $1.4k |
+| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-26 | 0 | 13% | $1.4k |
 | General-PT | General · ? · PT | 2026-03-16 | 2026-05-11 | 0 | 32% | $1.3k |
 
 ### Variants (full ad names, 52 in total, top 10 by spend)
@@ -54,7 +54,7 @@ Includes ads written as P8c7ao (confirmed fixes in core/code_aliases.csv).
 - `US-p8C7aO-MirrorSelfie-3040-male-IMG-Batch2025Week44_01` · $5.7k · 8 adsets
 - `BLK-US-p8C7aO-MirrorSelfie-interracialfemale-VID-Batch2026Week02` · $5.7k · 3 adsets
 - `LGBT-US-p8C7aO-MirrorSelfie-gay-VID-Batch2026Week02` · $4.6k · 3 adsets
-- `RU-p8C7aO-Slavic-MirrorSelfie-female-VID-Batch2025Week50` · $3.3k · 3 adsets
+- `RU-p8C7aO-Slavic-MirrorSelfie-female-VID-Batch2025Week50` · $3.4k · 3 adsets
 - `LGBT-US-p8C7aO-MirrorSelfie-gay-IMG-Batch2026Week02` · $3.0k · 2 adsets
 - `PassportBro-US-p8C7aO-MirrorSelfie-dontcare-IMG-Batch2026Week02` · $2.3k · 6 adsets
 <!-- generated:end facts -->

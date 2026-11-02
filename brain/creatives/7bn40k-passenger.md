@@ -17,7 +17,7 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
 #1 in 3 of 17 adsets it ran in · $887 spent as #1 · $7.5k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
@@ -31,7 +31,7 @@ decoded: false
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-02-23 | 2026-08-24 | 0 | 22% | $482 |
 | GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-02-23 | 2026-07-06 | 0 | 3% | $293 |
 | GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-02-23 | 2026-06-15 | 0 | 4% | $227 |
-| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-02-23 | 2026-10-05 | 0 | 2% | $179 |
+| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-02-23 | 2026-10-26 | 0 | 2% | $179 |
 | GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-02-23 | 2026-08-24 | 0 | 8% | $161 |
 | GringoMaleLover-PH | GringoMaleLover · Android · PH · PH | 2026-02-23 | 2026-03-16 | 0 | 5% | $131 |
 | GringoMaleLover-TR | GringoMaleLover · Android · TR | 2026-02-23 | 2026-05-04 | 0 | 4% | $119 |

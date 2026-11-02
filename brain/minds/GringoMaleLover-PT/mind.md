@@ -35,17 +35,17 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $2.1k last week · ROAS 0.55 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $2.1k last week · ROAS 0.65 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · PT · PT | 🔻 Falling | $2.1k | 0.55 | H7kM3N airport (since 2026-09-07, 5 wk) |
+| GringoMaleLover · iOS · PT · PT | ✅ Healthy | $2.1k | 0.65 | H7kM3N airport (since 2026-09-07, 8 wk) |
 
-**Open tickets:** T-291846 Decaying (iOS · PT · PT: Green, but hook rate -22% vs 4-wk avg)
+**Open tickets:** T-291846 Due (iOS · PT · PT: ROAS 0.65)
 
 ### #1 history (latest first)
-- 2026-09-07 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 5 wk at 58% of spend  
+- 2026-09-07 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 8 wk at 59% of spend  
   top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
 - 2026-08-31 · GringoMaleLover · iOS · PT · PT · n6f2Wt banner · 1 wk at 48% of spend  
   top ad: `GringoLover-PT-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
@@ -80,11 +80,11 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 A #1 here has led a median 2 weeks (21 finished reigns). Longest: H7kM3N airport, 14 weeks from 2026-01-05.
 
 ### Refreshes read from the exports
-10 since Dec: 3 hits of 8 with a final verdict (38%), 0 strikes, 5 fouls.
+10 since Dec: 3 hits of 10 with a final verdict (30%), 0 strikes, 7 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | GringoMaleLover · iOS · PT · PT | C0kM3N | 1 | 2% | Foul (provisional) |
-| 2026-09-14 | GringoMaleLover · iOS · PT · PT | k9Rd4m | 2 | 6% | Foul (provisional) |
+| 2026-09-21 | GringoMaleLover · iOS · PT · PT | C0kM3N | 1 | 2% | Foul |
+| 2026-09-14 | GringoMaleLover · iOS · PT · PT | k9Rd4m | 2 | 6% | Foul |
 | 2026-06-29 | GringoMaleLover · iOS · PT · PT | m3dtCp | 2 | 1% | Foul |
 | 2026-06-15 | GringoMaleLover · iOS · PT · PT | vh1kle | 2 | 5% | Foul |
 | 2026-06-15 | GringoMaleLover · Android · PT · PT | vh1kle | 2 | 5% | Hit |

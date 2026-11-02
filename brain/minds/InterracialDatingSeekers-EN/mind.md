@@ -34,21 +34,27 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 - https://www.tiktok.com/@auxiliaryst4tic/video/7559989081686412574 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 2 live adsets · $9.5k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 2 live adsets · $9.4k last week · ROAS 0.40 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.3k | 0.47 | H7kM3N airport (since 2026-09-14, 4 wk) |
-| InterracialDatingSeekers · Android · EN | 🆘 Critical | $4.2k | 0.32 | w5K8bX talkingtoforeigner (since 2026-09-14, 4 wk) |
+| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.3k | 0.41 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
+| InterracialDatingSeekers · Android · EN | 🟠 Amber | $4.1k | 0.39 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-628890 Decaying (Android · EN: ROAS 0.317 (prev 0.31), under 0.32); T-602912 Due (iOS · EN: ROAS 0.47)
+**Open tickets:** T-602912 Due (iOS · EN: ROAS 0.41); T-628890 Decaying (Android · EN: ROAS 0.39, under 0.40, not falling)
 
 ### #1 history (latest first)
-- 2026-09-14 · InterracialDatingSeekers · Android · EN · w5K8bX talkingtoforeigner · 4 wk at 45% of spend  
-  top ad: `BlackAfrican-US-w5K8bX-TalkingToForeigner-VideoCallBlackFemaleWhiteFemale-TalkingToAForeignerIsFun-SuccessStory-BlacknonBlack-VID-Batch2026Week15`
-- 2026-09-14 · InterracialDatingSeekers · iOS · EN · H7kM3N airport · 4 wk at 41% of spend  
+- 2026-10-26 · InterracialDatingSeekers · Android · EN · u7Wf91 wakeup · 1 wk at 43% of spend  
+  top ad: `InterracialDating-US-u7Wf91-WakeUp-WhiteGuySneakyGlanceSleepingWithBlackGirl-thankyoubumpy-BecauseOfBumpy-ProductAware-VID-JAC-OST-Batch2026Week39`
+- 2026-10-26 · InterracialDatingSeekers · iOS · EN · u7Wf91 wakeup · 1 wk at 32% of spend  
+  top ad: `InterracialDating-US-u7Wf91-WakeUp-WhiteGuySneakyGlanceSleepingWithBlackGirl-thankyoubumpy-BecauseOfBumpy-ProductAware-VID-JAC-OST-Batch2026Week39`
+- 2026-10-19 · InterracialDatingSeekers · Android · EN · n6f2Wt banner · 1 wk at 36% of spend  
+  top ad: `InterracialDating-US-n6f2Wt-Banner-bigticket-DateBlackSinglesOnBumpy-interracialdating-ProductAware-VID-Batch2026Week32`
+- 2026-09-14 · InterracialDatingSeekers · iOS · EN · H7kM3N airport · 6 wk at 43% of spend  
   top ad: `BlackAfrican-US-H7kM3N-Airport-ComboBlacktoNonBlack-ThousandofAfrican-FOMO-BlacktoBlack-VID-Batch2026Week15`
+- 2026-09-14 · InterracialDatingSeekers · Android · EN · w5K8bX talkingtoforeigner · 5 wk at 47% of spend  
+  top ad: `BlackAfrican-US-w5K8bX-TalkingToForeigner-VideoCallBlackFemaleWhiteFemale-TalkingToAForeignerIsFun-SuccessStory-BlacknonBlack-VID-Batch2026Week15`
 - 2026-08-31 · InterracialDatingSeekers · Android · EN · a2Ef3y wanted · 2 wk at 37% of spend  
   top ad: `InterracialDating-US-a2Ef3y-wanted-blackbedroom-25FromNigeriaLonelyLookingForABlackManToTalkWith-chatbuddy-CompletelyUnaware-VID-Batch2026Week32`
 - 2026-08-31 · InterracialDatingSeekers · iOS · EN · X4nR8W talkinghead · 2 wk at 41% of spend  
@@ -69,28 +75,22 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
   top ad: `BLK-US-b3pl9x-blackslideshow-blackwomanformalhook-VID-Batch2026Week13`
 - 2026-05-04 · InterracialDatingSeekers · iOS · EN · v07e5T lovestory · 2 wk at 41% of spend  
   top ad: `BlackAfrican-US-v07e5T-LoveStory-WalkingonStreetWhiteMaleBlackFemale-ImetForeigneronBumpy-SuccessStory-VoiceOver-VID-Batch2026Week15`
-- 2026-04-27 · InterracialDatingSeekers · iOS · EN · a2Ef3y wanted · 1 wk at 51% of spend  
-  top ad: `BlackAfrican-US-a2Ef3Y-wanted-BlackMaleinCar-ConnectWithBlackSignles-Connection-BLKads-IMG-Batch2026Week15`
-- 2026-04-27 · InterracialDatingSeekers · Android · EN · p8C7aO mirrorselfie · 1 wk at 45% of spend  
-  top ad: `BLK-US-p8C7aO-MirrorSelfie-interracialfemale-VID-Batch2026Week02`
-- 2026-04-13 · InterracialDatingSeekers · Android · EN · b3pl9x blackslideshow · 2 wk at 58% of spend  
-  top ad: `BLK-US-b3pl9x-blackslideshow-blackmanairporthook-VID-Batch2026Week13`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (35 finished reigns). Longest: H7kM3N airport, 15 weeks from 2026-05-18.
+A #1 here has led a median 2 weeks (38 finished reigns). Longest: H7kM3N airport, 15 weeks from 2026-05-18.
 
 ### Refreshes read from the exports
-8 since Dec: 2 hits of 6 with a final verdict (33%), 3 strikes, 1 fouls.
+10 since Dec: 2 hits of 8 with a final verdict (25%), 3 strikes, 3 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | InterracialDatingSeekers · iOS · EN | B9dF4J | 5 | 4% | Foul (provisional) |
-| 2026-09-21 | InterracialDatingSeekers · Android · EN | B9dF4J e34spy | 5 | 3% | Foul (provisional) |
+| 2026-10-19 | InterracialDatingSeekers · iOS · EN | C0kM3N u7Wf91 | 4 | 5% | Hit (provisional) |
+| 2026-10-19 | InterracialDatingSeekers · Android · EN | C0kM3N u7Wf91 | 4 | 6% | Hit (provisional) |
+| 2026-09-21 | InterracialDatingSeekers · iOS · EN | B9dF4J | 5 | 4% | Foul |
+| 2026-09-21 | InterracialDatingSeekers · Android · EN | B9dF4J e34spy | 5 | 3% | Foul |
 | 2026-09-07 | InterracialDatingSeekers · Android · EN | m4pw0r | 2 | 1% | Strike |
 | 2026-06-15 | InterracialDatingSeekers · iOS · EN | 82kodp | 1 | 1% | Foul |
 | 2026-05-04 | InterracialDatingSeekers · Android · EN | 4Bm9of u7Wf9i | 2 | 4% | Strike |
 | 2026-04-06 | InterracialDatingSeekers · Android · EN | b3pl9x gl3p0b | 9 | 30% | Hit |
-| 2026-02-23 | InterracialDatingSeekers · iOS · EN | L2vM8X | 2 | 1% | Strike |
-| 2026-01-19 | InterracialDatingSeekers · Android · EN | a2Ef3y p8C7aO | 8 | 28% | Hit |
 
 ### Experiments logged
 - none yet

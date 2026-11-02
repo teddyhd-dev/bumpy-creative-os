@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.2k last week · ROAS 0.77 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.2k last week · ROAS 0.45 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · RU · Serious | ✅ Healthy | $1.2k | 0.77 | L2vM8Q manyhugs (since 2025-12-22, 24 wk) |
+| General · iOS · RU · Serious | ✅ Healthy | $1.2k | 0.45 | L2vM8Q manyhugs (since 2025-12-22, 27 wk) |
 
-**Open tickets:** T-465558 Due (iOS · RU · Serious: ROAS 0.77)
+**Open tickets:** T-465558 Due (iOS · RU · Serious: ROAS 0.45)
 
 ### #1 history (latest first)
 - 2026-07-06 · General · Android · RU · Serious · L2vM8Q manyhugs · 6 wk at 50% of spend  
@@ -51,11 +51,11 @@ updated: '2026-11-02'
   top ad: `RU-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50`
 - 2025-12-22 · General · Android · RU · i7P5Th banner · 1 wk at 46% of spend  
   top ad: `Slavic-RU-i7P5Th-Banner-ThornMale-VID-Batch2025Week50`
-- 2025-12-22 · General · iOS · RU · Serious · L2vM8Q manyhugs · 24 wk at 53% of spend  
+- 2025-12-22 · General · iOS · RU · Serious · L2vM8Q manyhugs · 27 wk at 53% of spend  
   top ad: `RU-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50`
 
 ### Fatigue clock
-A #1 here has led a median 4 weeks (6 finished reigns). Longest: L2vM8Q manyhugs, 24 weeks from 2025-12-22.
+A #1 here has led a median 4 weeks (6 finished reigns). Longest: L2vM8Q manyhugs, 27 weeks from 2025-12-22.
 
 ### Experiments logged
 - none yet

@@ -29,21 +29,34 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 2 live adsets · $2.2k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 2 live adsets · $2.0k last week · ROAS 0.38 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LocalDatingFatigue · Android · ES | 🚀 Scaling | $1.3k | 0.43 | X4nR8W talkinghead (since 2026-09-14, 4 wk) |
-| LocalDatingFatigue · iOS · ES | 🟠 Amber | $906 | 0.35 | X4nR8W talkinghead (since 2026-08-31, 6 wk) |
+| LocalDatingFatigue · Android · ES | 🟠 Amber | $1.1k | 0.38 | k4Rm9p datingcontest (since 2026-10-12, 3 wk) |
+| LocalDatingFatigue · iOS · ES | 🔻 Falling | $839 | 0.37 | k4Rm9p datingcontest (since 2026-10-12, 3 wk) |
 
-**Open tickets:** T-552375 Due (Android · ES: ROAS 0.43, spend +53% vs 2 weeks ago); T-094451 Decaying (iOS · ES: ROAS 0.35, under 0.40, not falling)
+**Open tickets:** T-094451 Decaying (iOS · ES: Under 0.40 and falling: ROAS 0.37 from 0.40); T-552375 Decaying (Android · ES: ROAS 0.38, under 0.40, not falling)
 
 ### #1 history (latest first)
+- 2026-10-12 · LocalDatingFatigue · iOS · ES · k4Rm9p datingcontest · 3 wk at 88% of spend  
+  top ad: `ChurnLocal-ES-k4rm9p-datingcontest-ashleywalkinghook-skit-vertical-vid-batch2026week39`
+- 2026-10-12 · LocalDatingFatigue · Android · ES · k4Rm9p datingcontest · 3 wk at 69% of spend  
+  top ad: `ChurnLocal-ES-k4Rm9p-DatingContest-BarHook-DatingAppsIn2026-Skit-Vertical-VID-Batch2026Week39`
 - 2026-09-14 · LocalDatingFatigue · Android · ES · X4nR8W talkinghead · 4 wk at 100% of spend  
   top ad: `ChurnLocal-ES-X4nR8W-TalkingHead-2PodcastFemaleConfidence-NotificationsDingDingDing-PersonalTestimonial-ProblemAware-VID-Batch2026Week34`
 - 2026-08-31 · LocalDatingFatigue · iOS · ES · X4nR8W talkinghead · 6 wk at 100% of spend  
   top ad: `ChurnLocal-ES-X4nR8W-TalkingHead-PersianFemaleWalking-DeleteYourDatingApps-RawAdvice-ProblemAware-VID-Batch2026Week34`
+
+### Fatigue clock
+A #1 here has led a median 5 weeks (2 finished reigns). Longest: X4nR8W talkinghead, 6 weeks from 2026-08-31.
+
+### Refreshes read from the exports
+1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
+| Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
+|---|---|---|---|---|---|
+| 2026-10-12 | LocalDatingFatigue · Android · ES | k4Rm9p | 3 | 84% | Hit (provisional) |
 
 ### Experiments logged
 - none yet

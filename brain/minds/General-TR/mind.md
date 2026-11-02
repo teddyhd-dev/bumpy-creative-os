@@ -29,17 +29,21 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $3.0k last week · ROAS 0.31 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $2.5k last week · ROAS 0.20 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · TR | 🆘 Critical | $3.0k | 0.31 | k9R4mP parkingselfie (since 2026-09-21, 3 wk) |
+| General · iOS · TR | 🆘 Critical | $2.5k | 0.20 | k9R4mP parkingselfie (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-359282 Decaying (iOS · TR: ROAS 0.31 (prev 0.34), under 0.32)
+**Open tickets:** T-359282 Decaying (iOS · TR: ROAS 0.20 (prev 0.27), under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-21 · General · iOS · TR · k9R4mP parkingselfie · 3 wk at 42% of spend  
+- 2026-10-26 · General · iOS · TR · k9R4mP parkingselfie · 1 wk at 46% of spend  
+  top ad: `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-VID-Batch2026Week36`
+- 2026-10-12 · General · iOS · TR · n6f2Wt banner · 2 wk at 47% of spend  
+  top ad: `AsianDating-TR-n6f2Wt-banner-Whiteboard-CinliBirSevgiliIstiyorsanBumpydeBiriyleCikmayaBasla-cuteasiangirl-asianlover-VID-Batch2026Week21`
+- 2026-09-21 · General · iOS · TR · k9R4mP parkingselfie · 3 wk at 43% of spend  
   top ad: `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-VID-Batch2026Week36`
 - 2026-06-08 · General · iOS · TR · n6f2Wt banner · 15 wk at 67% of spend  
   top ad: `AsianDating-TR-n6f2Wt-banner-Whiteboard-CinliBirSevgiliIstiyorsanBumpydeBiriyleCikmayaBasla-cuteasiangirl-asianlover-VID-Batch2026Week21`
@@ -65,18 +69,16 @@ updated: '2026-11-02'
   top ad: `TR-Hj5i8G-TalkingHead-Zeromatchmale-IMG-Batch2025Week38`
 - 2025-12-01 · General · iOS · TR · L2vM8Q manyhugs · 2 wk at 57% of spend  
   top ad: `TR-L2vM8Q-Manyhugs-Movecountry-VID-Batch2025Week40`
-- 2025-12-01 · General · Android · TR · L2vM8Q manyhugs · 2 wk at 48% of spend  
-  top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
 
 ### Fatigue clock
-A #1 here has led a median 1 weeks (13 finished reigns). Longest: n6f2Wt banner, 15 weeks from 2026-06-08.
+A #1 here has led a median 2 weeks (15 finished reigns). Longest: n6f2Wt banner, 15 weeks from 2026-06-08.
 
 ### Refreshes read from the exports
-7 since Dec: 4 hits of 5 with a final verdict (80%), 1 strikes, 0 fouls.
+7 since Dec: 5 hits of 7 with a final verdict (71%), 2 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | General · iOS · TR | C0kM3N | 1 | 2% | Strike (provisional) |
-| 2026-09-14 | General · iOS · TR | k9R4mP | 2 | 34% | Hit (provisional) |
+| 2026-09-21 | General · iOS · TR | C0kM3N | 1 | 2% | Strike |
+| 2026-09-14 | General · iOS · TR | k9R4mP | 2 | 34% | Hit |
 | 2026-08-17 | General · iOS · TR | Q7mZ2x | 1 | 1% | Strike |
 | 2025-12-29 | General · iOS · TR | B9dF4J a2Ef3y i9D7eK j7G5d2 n6f2Wt p8C7aO | 9 | 22% | Hit |
 | 2025-12-29 | General · Android · TR | B9dF4J a2Ef3y j7G5d2 | 6 | 9% | Late hit |

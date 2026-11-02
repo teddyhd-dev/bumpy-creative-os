@@ -29,17 +29,19 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.1k last week · ROAS 0.38 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.0k last week · ROAS 0.21 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| CelebrityCrushLookalikeLover · iOS · EN | 🟠 Amber | $1.1k | 0.38 | p0nPrF phoneprofile (since 2026-09-21, 3 wk) |
+| CelebrityCrushLookalikeLover · iOS · EN | 🆘 Critical | $1.0k | 0.21 | p0nPrF phoneprofile (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-302837 Decaying (iOS · EN: ROAS 0.38, under 0.40, not falling)
+**Open tickets:** T-488772 Decaying (iOS · EN: ROAS 0.21 (prev 0.61), under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-21 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 3 wk at 93% of spend  
+- 2026-10-19 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 2 wk at 90% of spend  
+  top ad: `ChurnRaya-US-p0nPrF-phoneprofile-models-GirlsAbroadOnBumpyLooksLikeTheyBelongInAPalace-princess-ProductAware-VID-Batch2026Week26`
+- 2026-09-21 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 6 wk at 94% of spend  
   top ad: `ChurnRaya-US-p0nPrF-phoneprofile-models-GirlsAbroadOnBumpyLooksLikeTheyBelongInAPalace-princess-ProductAware-VID-Batch2026Week26`
 - 2026-09-07 · CelebrityCrushLookalikeLover · iOS · EN · n6f2Wt banner · 2 wk at 51% of spend  
   top ad: `ChurnRaya-US-n6f2Wt-Banner-Airplane-IfYouAreIntoAmbitiousInternationalCareerManDateOneOnBumpy-career-VID-ProductAware-Batch2026Week26`
@@ -55,7 +57,7 @@ updated: '2026-11-02'
   top ad: `ChurnRaya-US-X4nR8W-TalkingHead-BlondeGirl-ICancelledMyBumpySubscription-premiumusers-ProductAware-VID-Batch2026Week26`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (6 finished reigns). Longest: p0nPrF phoneprofile, 3 weeks from 2026-09-21.
+A #1 here has led a median 2 weeks (6 finished reigns). Longest: p0nPrF phoneprofile, 6 weeks from 2026-09-21.
 
 ### Refreshes read from the exports
 1 since Dec: 1 hits of 1 with a final verdict (100%), 0 strikes, 0 fouls.

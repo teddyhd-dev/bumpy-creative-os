@@ -33,19 +33,22 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 3 live adsets · $8.3k last week · ROAS 0.37 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 2 live adsets · $5.8k last week · ROAS 0.46 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · ES | 🚀 Scaling | $4.6k | 0.44 | n6f2Wt banner (since 2026-07-13, 13 wk) |
-| LatinaFemaleLover · Android · ES · Casual | 🆘 Critical | $3.5k | 0.26 | n6f2Wt banner (since 2026-07-13, 13 wk) |
-| LatinaFemaleLover · iOS · ES | 🔻 Falling | $223 | 0.55 | a2Ef3y wanted (since 2026-09-21, 3 wk) |
+| LatinaFemaleLover · iOS · ES | ✅ Healthy | $4.2k | 0.53 | n6f2Wt banner (since 2026-07-13, 16 wk) |
+| LatinaFemaleLover · Android · ES · Casual | 🆘 Critical | $1.7k | 0.29 | C0kM3N combo (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-324425 Decaying (Android · ES · Casual: ROAS 0.26 (prev 0.24), under 0.32); T-319999 Due (iOS · ES: ROAS 0.44, spend +110% vs 2 weeks ago)
+**Open tickets:** T-319999 Due (iOS · ES: ROAS 0.53); T-324425 Decaying (Android · ES · Casual: ROAS 0.29 (prev 0.22), under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-21 · LatinaFemaleLover · iOS · ES · a2Ef3y wanted · 3 wk at 57% of spend  
+- 2026-10-19 · LatinaFemaleLover · Android · ES · Casual · C0kM3N combo · 2 wk at 33% of spend  
+  top ad: `LatinaLover-ES-C0kM3N-Combo-ComboVenezuelanToGringo-ManyVenezuelanWomenWantToDateAManFromAnotherCountry-FOMO-ProductAware-VID-Batch2026Week36`
+- 2026-10-12 · LatinaFemaleLover · iOS · ES · n6f2Wt banner · 1 wk at 75% of spend  
+  top ad: `LatinaLover-ES-n62Wt-Banner-BrasilenaFenceStreet-quieresbrasilena-recommendation-ProductAware-VID-Batch2026Week27`
+- 2026-09-21 · LatinaFemaleLover · iOS · ES · a2Ef3y wanted · 3 wk at 60% of spend  
   top ad: `LatinaLover-ES-h7km3n-wanted-Tengo25AnosSoyDeVenezuela-Talk-ProductAware-VID-Batch2026Week35`
 - 2026-09-07 · LatinaFemaleLover · iOS · ES · u7W9fi wakeup · 2 wk at 33% of spend  
   top ad: `LatinaLover-ES-u7W9fi-WakeUp-VenezolanaWakeUpKiss-salconchamavenezolana-recommendation-ProductAware-VID-Batch2026Week27`
@@ -53,19 +56,21 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
   top ad: `LatinaLover-ES-n62Wt-Banner-VenezolanaFenceBridge-quieresvenezolana-recommendation-ProductAware-VID-Batch2026Week27`
 - 2026-08-10 · LatinaFemaleLover · Web · ES · n6f2Wt banner · 6 wk at 86% of spend  
   top ad: `LatinaLover-ES-n62Wt-Banner-VenezolanaFenceBridge-quieresvenezolana-recommendation-ProductAware-VID-Batch2026Week27`
-- 2026-07-13 · LatinaFemaleLover · iOS · ES · n6f2Wt banner · 13 wk at 86% of spend  
+- 2026-07-13 · LatinaFemaleLover · iOS · ES · n6f2Wt banner · 16 wk at 83% of spend  
   top ad: `LatinaLover-ES-n62Wt-Banner-VenezolanaFenceBridge-quieresvenezolana-recommendation-ProductAware-VID-Batch2026Week27`
-- 2026-07-13 · LatinaFemaleLover · Android · ES · Casual · n6f2Wt banner · 13 wk at 77% of spend  
+- 2026-07-13 · LatinaFemaleLover · Android · ES · Casual · n6f2Wt banner · 14 wk at 75% of spend  
   top ad: `LatinaLover-ES-n62Wt-Banner-VenezolanaFenceBridge-quieresvenezolana-recommendation-ProductAware-VID-Batch2026Week27`
 
 ### Fatigue clock
-A #1 here has led a median 3 weeks (3 finished reigns). Longest: n6f2Wt banner, 13 weeks from 2026-07-13.
+A #1 here has led a median 3 weeks (6 finished reigns). Longest: n6f2Wt banner, 16 weeks from 2026-07-13.
 
 ### Refreshes read from the exports
-2 since Dec: 0 hits of 1 with a final verdict (0%), 0 strikes, 1 fouls.
+4 since Dec: 1 hits of 2 with a final verdict (50%), 0 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | LatinaFemaleLover · Android · ES · Casual | C0kM3N | 1 | 1% | Strike (provisional) |
+| 2026-10-12 | LatinaFemaleLover · iOS · ES | w1Tr7K | 6 | 1% | Foul (provisional) |
+| 2026-10-12 | LatinaFemaleLover · Android · ES · Casual | w1Tr7K | 6 | 1% | Strike (provisional) |
+| 2026-09-21 | LatinaFemaleLover · Android · ES · Casual | C0kM3N | 1 | 1% | Hit |
 | 2026-08-17 | LatinaFemaleLover · Android · ES · Casual | Q7mZ2x | 1 | 1% | Foul |
 
 ### Experiments logged

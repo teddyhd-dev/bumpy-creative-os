@@ -17,8 +17,8 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 4 of 35 adsets it ran in · $36.2k spent as #1 · $70.9k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 4 of 35 adsets it ran in · $36.2k spent as #1 · $71.1k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -28,9 +28,9 @@ decoded: false
 | General-PT | General · Android · PT | 2026-03-02 | 2026-05-18 | 1 | 28% | $394 |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-23 | 0 | 24% | $4.6k |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-23 | 0 | 13% | $4.4k |
+| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-26 | 0 | 19% | $1.8k |
 | General-PT | General · iOS · PT | 2025-12-01 | 2026-02-16 | 0 | 5% | $1.7k |
-| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-05 | 0 | 19% | $1.6k |
-| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-05 | 0 | 34% | $1.2k |
+| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-26 | 0 | 34% | $1.3k |
 | General-TH | General · iOS · TH | 2025-12-01 | 2026-02-09 | 0 | 8% | $1.2k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-03-16 | 0 | 5% | $1.0k |
 | General-ES | General · Android · ES · Serious | 2025-12-01 | 2026-03-30 | 0 | 3% | $1.0k |
@@ -50,8 +50,8 @@ decoded: false
 - `PORTUGUESE BR-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46` · $1.8k · 4 adsets
 - `PORTUGUESE BR-j1A9m2-notsobad-passportgirl-latina-IMG-Batch2025Week46` · $1.4k · 3 adsets
 - `indianboydream-US-j1A9m2-notsobad-Indian-VID-Batch2025Week49` · $1.4k · 5 adsets
+- `Slavic-RU-j1A9m2-notsobad-Slavicfemale-VID-Batch2025Week50` · $1.3k · 1 adset
 - `Slavic-UA-j1A9m2-notsobad-Slavicfemale-VID-Batch2025Week50` · $1.1k · 4 adsets
-- `Slavic-RU-j1A9m2-notsobad-Slavicfemale-VID-Batch2025Week50` · $1.0k · 1 adset
 - `THAI TH-j1A9m2-notsobad-passportgirl-latina-VID-Batch2025Week46` · $944 · 2 adsets
 - `Slavic-RU-j1A9m2-notsobad-Slavicfemale-IMG-Batch2025Week50` · $823 · 3 adsets
 <!-- generated:end facts -->

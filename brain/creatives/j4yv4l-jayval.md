@@ -17,8 +17,8 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 7 of 29 adsets it ran in · $10.2k spent as #1 · $102.3k in total.
+## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+#1 in 7 of 29 adsets it ran in · $10.2k spent as #1 · $102.4k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -50,7 +50,7 @@ decoded: false
 - `US-j4yV4l-jayval-couple-never-VID-Batch2025Week45` · $11.2k · 10 adsets
 - `US-j4yV4l-jayval-3040-toolate,ale-VID-Batch2025Week45` · $3.5k · 9 adsets
 - `Slavic-PL-j4yV4l-jayval-toolatefemale-VID-Bat` · $856 · 3 adsets
-- `Slavic-UA-j4yV4l-jayval-toolatefemale-VID-Bat` · $661 · 2 adsets
+- `Slavic-UA-j4yV4l-jayval-toolatefemale-VID-Bat` · $804 · 2 adsets
 - `US-j4yV4l-jayval-couple-twoculture-VID-Batch2025Week45` · $299 · 10 adsets
 - `Slavic-RU-j4yV4l-jayval-toolatefemale-VID-Bat` · $196 · 2 adsets
 <!-- generated:end facts -->

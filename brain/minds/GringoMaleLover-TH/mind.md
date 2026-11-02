@@ -35,17 +35,17 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-12, ads to 2026-10-05)
-**Now:** 1 live adset · $1.2k last week · ROAS 0.43 (bar 0.40)
+## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+**Now:** 1 live adset · $1.3k last week · ROAS 0.68 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · TH · TH | ✅ Healthy | $1.2k | 0.43 | C0kM3N combo (since 2026-09-28, 2 wk) |
+| GringoMaleLover · iOS · TH · TH | ✅ Healthy | $1.3k | 0.68 | C0kM3N combo (since 2026-09-28, 5 wk) |
 
-**Open tickets:** T-294559 Due (iOS · TH · TH: ROAS 0.43)
+**Open tickets:** T-294559 Due (iOS · TH · TH: ROAS 0.68)
 
 ### #1 history (latest first)
-- 2026-09-28 · GringoMaleLover · iOS · TH · TH · C0kM3N combo · 2 wk at 47% of spend  
+- 2026-09-28 · GringoMaleLover · iOS · TH · TH · C0kM3N combo · 5 wk at 48% of spend  
   top ad: `Gringolover-TH-C0kM3N-Combo-ComboFarangToThai-YouNeverRealizedThisManyFarangMarriedThaiWomenFromBumpy-FOMO-ProductAware-VID-Batch2026Week37`
 - 2026-09-14 · GringoMaleLover · Web · TH · 4Bm9of banner · 1 wk at 39% of spend  
   top ad: `Gringolover-TH-4Bm9of-banner-WomanFeetInsideSportsCar-FarangBoysOnBumpyWantingToDateAndTreatYouLikePrincess-status-combopic-VID-Batch2026Week17`
@@ -80,11 +80,11 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 A #1 here has led a median 2 weeks (24 finished reigns). Longest: H7kM3N airport, 20 weeks from 2026-01-05.
 
 ### Refreshes read from the exports
-7 since Dec: 3 hits of 5 with a final verdict (60%), 2 strikes, 0 fouls.
+7 since Dec: 4 hits of 7 with a final verdict (57%), 2 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | GringoMaleLover · iOS · TH · TH | C0kM3N | 1 | 3% | Hit (provisional) |
-| 2026-09-14 | GringoMaleLover · iOS · TH · TH | t3Wq8n | 1 | 16% | Foul (provisional) |
+| 2026-09-21 | GringoMaleLover · iOS · TH · TH | C0kM3N | 1 | 3% | Home run |
+| 2026-09-14 | GringoMaleLover · iOS · TH · TH | t3Wq8n | 1 | 16% | Foul |
 | 2026-06-29 | GringoMaleLover · Android · TH · TH | m3dtCp | 2 | 5% | Hit |
 | 2026-06-15 | GringoMaleLover · iOS · TH · TH | i48opT | 1 | 4% | Strike |
 | 2026-06-15 | GringoMaleLover · Android · TH · TH | i48opT vh1kle | 1 | 5% | Late hit |
