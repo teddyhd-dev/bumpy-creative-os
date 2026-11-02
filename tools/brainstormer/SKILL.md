@@ -1,6 +1,6 @@
 ---
 name: brainstorm
-version: 0.3.0
+version: 0.3.1
 description: Brainstormer + Brief Maker for Bumpy. Use when a strategist wants to brainstorm a refresh for a ticket, adset or persona ("let's brainstorm T-691223"), decode a winning creative, or turn an agreed idea into a Notion-ready brief. Reads and writes the shared memory in brain/.
 ---
 # Brainstormer + Brief Maker
@@ -54,7 +54,9 @@ first frames yourself and propose the decode for them to correct. Save each deco
 - add a `decode` entry to the mind's `history.md`: why it works (or stopped working) *for this mind*.
 Then say "Saved" in one line and move on. Skip this step when everything is decoded.
 
-**3. Read the winners through the mind.** Current vs past winners: what stayed the same (the core desire
+**3. Read the winners through the mind.** Weeks marked ⚠ in the story are app/tracking incidents
+(`core/incidents.csv`): don't read a drop in those weeks as the audience's reaction, and treat a Void refresh
+as untested, not as evidence against its concept. Current vs past winners: what stayed the same (the core desire
 or promise), what changed (visual, format, voice), why it worked, why it faded (fatigue clock, share
 curve), what failed here and why. End with what this says about the mind. If it changes a belief, propose
 the change and write it only when the strategist agrees (`belief` entry in history.md, then the row in

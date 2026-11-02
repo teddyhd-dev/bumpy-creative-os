@@ -10,6 +10,7 @@ Run it before every commit; GitHub runs it on every push and pull request.
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import csv
 import glob
 import json
@@ -201,6 +202,22 @@ def main():
                 err(p, f"ad name {n}: {x}")
         if not re.search(r"^## Prediction\s*\n+\s*\S", body, flags=re.M):
             err(p, "Prediction is empty: say how the exports will show it worked")
+
+    # incidents
+    ip = os.path.join(ROOT, "core", "incidents.csv")
+    if os.path.exists(ip):
+        for r in csv.DictReader(open(ip)):
+            try:
+                s_, e_ = dt.date.fromisoformat(r["start"]), dt.date.fromisoformat(r["end"] or r["start"])
+                u_ = dt.date.fromisoformat(r["effect_until"]) if r["effect_until"] else e_
+                if not (s_ <= e_ <= u_):
+                    err(ip, f"{r['id']}: dates must run start ≤ end ≤ effect_until")
+            except ValueError:
+                err(ip, f"{r['id']}: dates must be YYYY-MM-DD")
+            if r["os"] not in ("all", "iOS", "Android"):
+                err(ip, f"{r['id']}: os must be all, iOS or Android")
+            if not r["id"].startswith("INC-"):
+                err(ip, f"{r['id']}: id must start with INC-")
 
     # state
     q = os.path.join(ROOT, "state", "queue.json")

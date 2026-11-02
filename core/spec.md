@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.0
+version: 1.3.1
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,11 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.1 (2026-11-02): app and tracking incidents.**
+- `core/incidents.csv` (format: `contracts/incident.md`) logs app or tracking problems that hurt results for reasons outside the creative. Known so far: 5–6 Oct 2026 (effect lasting some days) and 20–21 Oct 2026 (effect until 22–24 Oct).
+- In an incident week (for that OS): a refresh that landed and missed is **Void** (no strike, no foul; a hit still counts); a week under the bar isn't counted toward weeks under the bar or Fading (a week above the bar still counts); ticket stories mark the week ⚠; the report names the incident. Measured on today's data: 24 tickets count one fewer week under the bar, 7 are no longer Fading; no refresh landed in an incident week yet, so nothing is void.
+- Incidents are a short-lived cousin of measurement eras (§3.3): an era changes the ruler for good, an incident spoils a few days.
 
 **1.3.0 (2026-11-02): separate tools around one shared memory (decided by the creative lead).**
 - **The repo is the home.** Rules in `core/`, shared formats in `contracts/` (checked by `checks/validate.py` on every push), memory in `brain/`, this week's tickets in `state/`, each tool in `tools/<tool>/`. Map: `AGENTS.md`; design and change process: `ARCHITECTURE.md`. Exports are kept compressed in git (230 MB → 24 MB; the rebuilt datasets are identical).

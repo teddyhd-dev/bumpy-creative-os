@@ -2,6 +2,9 @@
 
 Bump `version` in SKILL.md with every change. Experiment records carry `made_with: brainstorm/<version>`.
 
+## 0.3.1 · 2026-11-02
+Incident weeks (⚠ in the story, `core/incidents.csv`) are not read as the audience's reaction; Void refreshes are untested.
+
 ## 0.3.0 · 2026-11-02
 No clashes with what exists: new codes come from `checks/new_concept.py new` and are checked against the concept
 registry (letter case, one-character typos, a name already used by another code); every ad name in the brief

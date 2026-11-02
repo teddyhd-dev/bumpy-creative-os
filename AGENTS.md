@@ -7,7 +7,7 @@ file short: it points to where things are. Read only what your task needs.
 ## Where things are
 | Folder | What | Who writes |
 |---|---|---|
-| `core/` | The foundation every tool reads: `spec.md` (rules, the 0.40 bar, verdicts), `naming-adset-v8.md`, `naming-ad-v5.md`, `team.csv`, `minds.csv` (registry of minds), `concepts.csv` (every concept code and its name), `code_aliases.csv` (confirmed code fixes), `decisions.md` | the creative lead (changes reviewed); the engine adds new rows to `minds.csv` and `concepts.csv` (from ad names); the brainstormer adds a new code to `concepts.csv` when a brief is approved |
+| `core/` | The foundation every tool reads: `spec.md` (rules, the 0.40 bar, verdicts), `naming-adset-v8.md`, `naming-ad-v5.md`, `team.csv`, `minds.csv` (registry of minds), `concepts.csv` (every concept code and its name), `code_aliases.csv` (confirmed code fixes), `incidents.csv` (app/tracking incidents), `decisions.md` | the creative lead (changes reviewed); the engine adds new rows to `minds.csv` and `concepts.csv` (from ad names); the brainstormer adds a new code to `concepts.csv` when a brief is approved |
 | `contracts/` | The formats tools share (mind, history, creative, experiment, state). Front matter = the rules `checks/validate.py` enforces | the creative lead (changes reviewed) |
 | `brain/minds/<Persona>-<LANG>/` | The persona clone: `mind.md` (current understanding + facts block) and `history.md` (append-only diary) | brainstormer + engine |
 | `brain/creatives/` | One file per concept: decode (first second, hook, message, why) + where it ran; snapshots in `img/` | brainstormer + engine |
@@ -24,6 +24,7 @@ file short: it points to where things are. Read only what your task needs.
 - **Weekly update** ("run the weekly update"): `engine/README.md`.
 - **Work on one tool**: that tool's folder only, plus `contracts/` for anything it reads or writes.
 - **Change a rule, a threshold or a shared format**: `ARCHITECTURE.md` → "Changing the foundation".
+- **Log an app or tracking incident** ("tracking broke on…", "the release on … had a bug"): add a row to `core/incidents.csv` per `contracts/incident.md`, run `python3 checks/validate.py`, commit as `core: incident …`.
 
 ## Golden rules
 1. The conversation is not the record. Anything learned goes into `brain/` (and `core/decisions.md` for decisions).

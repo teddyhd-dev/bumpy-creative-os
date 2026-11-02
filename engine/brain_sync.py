@@ -34,6 +34,7 @@ from settings import BARS  # noqa: E402
 from tickets import concept_weeks, short_label  # noqa: E402
 from creative_relay import load_variants  # noqa: E402
 from naming_audit import taxonomy, test_labels  # noqa: E402
+import incidents  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "output", "data")
@@ -240,13 +241,15 @@ def mind_facts(mid, G, runs, D, Q, exps, last_ad_week):
                       f"Longest: {top['code']} {top['name']}, {top['weeks']} weeks from {top['start']}."]
     d = D[D.adset_id.isin(a.adset_id)].copy()
     if len(d):
-        fin = d[~d.verdict.str.contains("provisional")]
+        nvoid = int(d.verdict.str.startswith("Void").sum())
+        fin = d[~d.verdict.str.contains("provisional") & ~d.verdict.str.startswith("Void")]
         hits = fin.verdict.isin(["Hit", "Home run", "Late hit"]).sum()
         d["adset"] = d.adset_id.map(a.set_index("adset_id").label)
         lines += ["", "### Refreshes read from the exports",
                   f"{len(d)} since Dec: {hits} hits of {len(fin)} with a final verdict"
                   + (f" ({hits / len(fin) * 100:.0f}%)" if len(fin) else "") + ", "
-                  f"{(fin.verdict == 'Strike').sum()} strikes, {(fin.verdict == 'Foul').sum()} fouls.",
+                  f"{(fin.verdict == 'Strike').sum()} strikes, {(fin.verdict == 'Foul').sum()} fouls"
+                  + (f", {nvoid} void (landed in an incident week)." if nvoid else "."),
                   "| Landed | Adset | Concepts | Variants | Week-1 share | Verdict |", "|---|---|---|---|---|---|"]
         for x in d.sort_values("w0", ascending=False).head(8).itertuples():
             lines.append(f"| {x.w0} | {x.adset} | {x.codes} | {x.variants_max} | {pct(x.best_s1)} | {x.verdict} |")
@@ -281,8 +284,11 @@ def prebrief(t, n_tickets, G, runs, V, D, aw, acc, last_ad_week, bar, tickets_by
          f"Ticket: {t['type']} · rank {t['rank']} of {n_tickets} · {str(t.get('status', '')).lstrip('✅🔻🆘🚀⚠️ ')} · {t['why']}"]
     h = t.get("hist") or {}
     if h.get("w"):
-        L.append(f"Spend and ROAS, last {len(h['w'])} weeks (bar {bar:.2f}): " + " · ".join(
-            f"{fmt_d(w)} {money(sv)} / {r2(rv)}" for w, sv, rv in zip(h["w"], h["s"], h["r"])))
+        L.append(f"Spend and ROAS, last {len(h['w'])} weeks (bar {bar:.2f}; ⚠ = app/tracking incident that week): " + " · ".join(
+            f"{fmt_d(w)} {money(sv)} / {r2(rv)}{' ⚠' if incidents.affecting(w, os_) else ''}" for w, sv, rv in zip(h["w"], h["s"], h["r"])))
+        inc = incidents.in_window(h["w"][0], h["w"][-1])
+        if len(inc):
+            L.append("Incidents in this window (results those weeks are not the creative's fault): " + incidents.label(inc.id.tolist()))
     rows = aw[aw.adset_id == aid].sort_values("week").tail(4)
     if len(rows):
         parts = []
@@ -321,7 +327,8 @@ def prebrief(t, n_tickets, G, runs, V, D, aw, acc, last_ad_week, bar, tickets_by
         L.append(f"Last refresh: {fmt_d(lr)} ({ago} wk ago){' (the adset launched then)' if lr == t.get('data_start') else ''}")
     d = D[D.adset_id == aid].sort_values("w0").tail(5).iloc[::-1]
     if len(d):
-        L.append("Recent refreshes (Hit = became #1 · Strike = no new #1 while under the bar · Foul = didn't unseat a healthy #1):")
+        L.append("Recent refreshes (Hit = became #1 · Strike = no new #1 while under the bar · Foul = didn't unseat a healthy #1 · "
+                 "Void = landed in an incident week, not counted):")
         for x in d.itertuples():
             ads = [top_ad(V, aid, k, x.w0, (pd.to_datetime(x.w0) + pd.Timedelta(days=7)).strftime("%Y-%m-%d")) for k in str(x.codes).split()]
             L.append(f"  - {fmt_d(x.w0)}: {x.codes} · {int(x.variants_max)} variant{'s' if x.variants_max != 1 else ''} · "
@@ -435,10 +442,12 @@ def main():
                 new, prev = r.iloc[-1], r.iloc[-2]
                 g = c[(c.adset_id == aid) & (c.concept_key == new.key)].sort_values("week")
                 s1 = g[g.wk == 0].share.max()
+                inc = incidents.affecting(last_ad_week, a.os.get(aid, "all"))
                 append_event(hist, f"## {last_ad_week} · new-1 · data",
                              f"{new['code']} {new['name']} became #1 in {a.label[aid]} with {pct(new.share)} of spend "
                              f"(it entered on {g.first_in.iloc[0]} with {pct(s1)} in its first week), replacing "
-                             f"{prev['code']} {prev['name']} after {prev.weeks} week{'s' if prev.weeks != 1 else ''} as #1.",
+                             f"{prev['code']} {prev['name']} after {prev.weeks} week{'s' if prev.weeks != 1 else ''} as #1."
+                             + (f" Incident that week ({', '.join(inc)}): read with care." if inc else ""),
                              f"new1:{aid}:{last_ad_week}")
 
     # creatives: one file per concept (lowercase file names stay safe on a Mac). Code fixes and names come from

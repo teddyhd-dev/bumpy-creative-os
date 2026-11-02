@@ -28,6 +28,8 @@ their `Reporting starts`/`Reporting ends` columns. In git the exports are stored
 file, run `gzip -k -n data/raw/<source>/<file>.csv` and commit the `.csv.gz` (the `.csv` stays local).
 
 ## Weekly routine ("run the weekly update")
+0. Ask whether anything broke in the app or tracking since the last update; log it in `core/incidents.csv`
+   (`contracts/incident.md`) before running, so verdicts and tickets treat those weeks fairly.
 1. Put the new exports in `data/raw/<source>/` (named as above, starting on a Monday) and compress them.
 2. `bash engine/run_all.sh`. If a step fails, fix the code, not the data. The last step is the validator.
 3. Read `output/data/checks.csv` and `output/data/naming_audit.md` (+ `naming_audit.csv`): naming errors, code

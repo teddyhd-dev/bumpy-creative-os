@@ -135,6 +135,9 @@ def main():
             else:
                 ins = f"Took {pct(s1)} of the adset's spend in week 1: on track to become #1 (8 in 10 do)."
             act = "Keep it running; brief the next form of this message (J2) and offer it to sibling adsets (J1)."
+        elif v.startswith("Void"):
+            ins = f"{pct(s1)} of the adset's spend in week 1, but it landed during an app/tracking incident, so the miss doesn't count."
+            act = "Give it a fair read: keep it on, or re-launch it once results are back to normal."
         elif v.startswith("Strike"):
             ins = f"Only {pct(s1)} of the adset's spend in week 1 while the adset is under the bar" + (f": strike {strikes} of 3." if strikes else ".")
             act = ("Next swing with a different concept" + (f", e.g. {j1t} (winning nearby, never run here)." if j1t else ".")
@@ -253,7 +256,16 @@ def main():
     summary = (f"{n_read} refreshes got their week-1 read (landed {ad_weeks[-2]} – {AW}): {n_hit} early hit{'s' if n_hit != 1 else ''}. "
                f"{len(n_fin)} reached their week-4 verdict (landed {fin_w}): "
                + ", ".join(f"{n} {k.lower()}{'' if n == 1 else 's'}" for k in ("Home run", "Hit", "Strike", "Foul") for n in [sum(1 for x in n_fin if x['verdict'].startswith(k))]) + ".")
-    doc = dict(week=W, generated=date.today().isoformat(), ad_week=AW, data_note=(
+    import incidents
+    inc = incidents.in_window((pd.to_datetime(W) - pd.Timedelta(weeks=4)).strftime("%Y-%m-%d"), W)
+    inc_list = [dict(id=r.id, start=r.start, end=r.end, effect_until=r.effect_until, os=r.os, kind=r.kind, what=r.what) for r in inc.itertuples()]
+    if inc_list:
+        money_["insight"] += (" App/tracking incidents in the last 5 weeks: " + incidents.label(inc.id.tolist())
+                              + ". Refreshes that landed in those weeks and missed are void, not strikes.")
+        n_void = sum(1 for x in results if str(x["verdict"]).startswith("Void"))
+        if n_void:
+            summary += f" {n_void} landed in an incident week and missed: void, not counted."
+    doc = dict(week=W, generated=date.today().isoformat(), ad_week=AW, incidents=inc_list, data_note=(
         f"Adsets to the week of {W}; ads (creatives) to the week of {AW}; TikTok to {tiktok['week']}; App Store to {money_['store_week']}. "
         "Every insight and action is a draft from the numbers, for the presenter to edit."),
         money=money_, output=output, results=dict(summary=summary, cards=results), launches=launches, tiktok=tiktok, week_ahead=week_)

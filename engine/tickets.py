@@ -37,6 +37,7 @@ from adload import load_ads  # noqa: E402
 from adparse import parse_ad  # noqa: E402
 from settings import TICKET_WEIGHTS as W, ATBAT, bar  # noqa: E402
 from codes import concept_keys  # noqa: E402
+import incidents  # noqa: E402
 
 OUT = os.path.join(os.path.dirname(HERE), "output", "data")
 ROOT = os.path.dirname(HERE)
@@ -78,6 +79,7 @@ def at_bats(c, A):
     """One row per at-bat (concepts entering an adset in the same week, adset 3+ weeks old)."""
     weeks = sorted(c.week.unique())
     last = weeks[-1]
+    A_os = A.drop_duplicates("adset_id").set_index("adset_id").os.to_dict()
     born = A[A.as_s > 0].groupby("adset_id").week.min()
     arr = c[(c.wk == 0) & (c.as_s >= ATBAT["adset_min"]) & (c.spend >= ATBAT["concept_min"])][
         ["adset_id", "concept_key", "week", "share"]].rename(columns={"week": "w0", "share": "s1"})
@@ -104,6 +106,10 @@ def at_bats(c, A):
          D.wk_top.notna() | (D.best_s1 >= ATBAT["w1_hit_share"])],
         ["Hit", "Late hit", "Strike", "Hit (provisional)"], "Strike (provisional)")
     D["counts_as_hit"] = D.verdict.isin(["Hit", "Late hit", "Hit (provisional)"])
+    # landed in an app/tracking incident week (core/incidents.csv): a miss there says nothing about the creative
+    D["incident"] = [";".join(incidents.affecting(w, A_os.get(a, "all"))) for a, w in zip(D.adset_id, D.w0)] if len(D) else []
+    void = (D.incident != "") & ~D.counts_as_hit
+    D.loc[void, "verdict"] = np.where(D.loc[void, "verdict"].str.contains("provisional"), "Void (incident, provisional)", "Void (incident)")
     # adset relative ROAS weeks 3–4 after vs the 2 weeks before (home run = hit that lifted the adset)
     rel = A.set_index(["adset_id", "week"]).rel
 
@@ -158,7 +164,7 @@ def count_strikes(D, G):
             D.at[i, "strikes_before"] = k
             if r.counts_as_hit:
                 k = 0
-            elif turnaround:
+            elif turnaround and not str(r.verdict).startswith("Void"):
                 k += 1
         # back on green since the last at-bat?
         last2 = [c for c in ok.columns][-2:]
@@ -223,15 +229,18 @@ def main():
     live = G[G.active_b & G.judged_b & (G.spend_last >= W["min_spend"])].copy()
     # weeks under the bar in a row, up to the latest week (each week on its own ruler)
     rc = sorted(c_ for c_ in G.columns if c_.startswith("r_"))
-    def weeks_under(row):
+    def weeks_under(row, span=False):
         n = 0
         for col in reversed(rc):
             v = pd.to_numeric(row[col], errors="coerce")
             if pd.isna(v) or v >= bar(col[2:], row["os"])["green"]:
                 break
+            if not span and incidents.affecting(col[2:], row["os"]):
+                continue        # under the bar in an incident week: not counted, doesn't break the run
             n += 1
         return n
     live["weeks_under"] = live.apply(weeks_under, axis=1)
+    live["under_span"] = live.apply(weeks_under, axis=1, span=True)     # calendar weeks since it went under
     last_ab = D.groupby("adset_id").w0.max()
 
     # challengers in test: at-bats in the last 2 ad weeks
@@ -271,6 +280,9 @@ def main():
         if in_test and typ != "3 strikes":
             score *= W["in_test_factor"]
             notes.append("challenger already in test")
+        inc = incidents.affecting(rc[-1][2:], r.os)
+        if inc:
+            notes.append("incident in the latest week (" + ", ".join(inc) + "): read the drop with care")
         if r.low_ceiling_b:
             score *= W["low_ceiling_factor"]
             notes.append("🧱 low ceiling: check beyond creative first")
@@ -283,7 +295,7 @@ def main():
             strikes=strikes, last_hit=last_hit.get(aid, ""), tried_8w=int(tried8.get(aid, 0)),
             weeks_under=int(r.weeks_under),
             fading=bool(r.weeks_under >= 2 and not in_test and (aid not in last_ab.index or
-                        (pd.to_datetime(last_ad_week) - pd.to_datetime(last_ab[aid])).days // 7 >= r.weeks_under)),
+                        (pd.to_datetime(last_ad_week) - pd.to_datetime(last_ab[aid])).days // 7 >= r.under_span)),
             in_test=recent.test_codes.get(aid, "") if in_test else "",
             test_week1_share=recent.test_best_s1.get(aid, np.nan) if in_test else np.nan,
             test_verdict=recent.test_verdict.get(aid, "") if in_test else "",
@@ -360,7 +372,7 @@ def main():
         silent += not any(w6[0] <= w <= w6[-1] and b is not None and w > b for w in newc.get(aid, set()))
 
     # facts for the spec and the weekly note
-    fin = D[D.age >= ATBAT["final_week"]]
+    fin = D[(D.age >= ATBAT["final_week"]) & ~D.verdict.str.startswith("Void")]
     one = fin[fin.concepts == 1]
     multi = fin[fin.concepts >= 2]
     facts = [

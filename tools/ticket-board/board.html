@@ -117,7 +117,7 @@ nav a[hidden]{display:none!important}
 /* strikes sequence, log, personas */
 .seq{display:inline-flex;gap:2px;margin-left:6px;vertical-align:middle}
 .seq b{font-family:var(--mono);font-size:10px;width:15px;height:15px;border-radius:4px;display:inline-grid;place-items:center;font-weight:600}
-.seq .H{background:var(--good-soft);color:var(--good)} .seq .S{background:var(--bad-soft);color:var(--bad)} .seq .F{background:var(--slate-soft);color:var(--slate)} .seq .P{outline:1px dashed var(--faint);color:var(--faint)}
+.seq .V{background:var(--sunk);color:var(--faint);text-decoration:line-through} .seq .H{background:var(--good-soft);color:var(--good)} .seq .S{background:var(--bad-soft);color:var(--bad)} .seq .F{background:var(--slate-soft);color:var(--slate)} .seq .P{outline:1px dashed var(--faint);color:var(--faint)}
 .stk small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
 .fade{display:inline-flex;font-size:11px;font-weight:700;color:var(--bad);background:var(--bad-soft);border-radius:5px;padding:1px 6px;margin-left:6px;white-space:nowrap}
 table.ltable{border-collapse:collapse;width:100%;min-width:900px;font-size:12.5px}
@@ -452,9 +452,9 @@ const activeWorkFor = tid => { const b=briefOf(tid); if(!b || b.status==="final"
   const [code,...nm]=String(b.concept||"").split(" "); return [{status:b.status, label:BWORD[b.status]||b.status, cls:BCLASS[b.status]||"", concept_code:code, concept_name:nm.join(" "), strategist:b.strategist, designer:"", id:b.id}]; };
 function statusClass(t){ const s=t.status||""; if(s.includes("Critical")) return "st-bad"; if(s.includes("Refresh")||s.includes("Falling")||s.includes("Amber")) return "st-warn"; if(s.includes("Healthy")||s.includes("Scaling")) return "st-good"; return "st-muted"; }
 const statusWord = t => String(t.status||"").replace(/^[^A-Za-z]+/,"");
-function verdictClass(v){ v=v||""; const p = v.includes("provisional") ? " v-prov" : ""; if(/Hit|Home run/.test(v)) return "v-hit"+p; if(/Strike/.test(v)) return "v-strike"+p; return "v-foul"+p; }
+function verdictClass(v){ v=v||""; const p = v.includes("provisional") ? " v-prov" : ""; if(/Void/.test(v)) return "v-foul"+p; if(/Hit|Home run/.test(v)) return "v-hit"+p; if(/Strike/.test(v)) return "v-strike"+p; return "v-foul"+p; }
 function seqHTML(t){ const ab=(t.atbats||[]).slice(-5); if(!ab.length) return "";
-  return `<span class="seq" title="Last ${ab.length} refreshes here, oldest first: H hit, S strike, F foul (didn't unseat a healthy #1); dashed = provisional">${ab.map(a=>{ const v=a.verdict||""; const c=/Hit|Home run/.test(v)?"H":/Strike/.test(v)?"S":"F"; return `<b class="${c}${/provisional/.test(v)?" P":""}">${c}</b>`; }).join("")}</span>`; }
+  return `<span class="seq" title="Last ${ab.length} refreshes here, oldest first: H hit, S strike, F foul (didn't unseat a healthy #1), V void (landed in an app/tracking incident week, not counted); dashed = provisional">${ab.map(a=>{ const v=a.verdict||""; const c=/Hit|Home run/.test(v)?"H":/Strike/.test(v)?"S":/Void/.test(v)?"V":"F"; return `<b class="${c}${/provisional/.test(v)?" P":""}">${c}</b>`; }).join("")}</span>`; }
 function fadeHTML(t){ return t.fading ? `<span class="fade" title="Under the bar ${t.weeks_under} weeks in a row and no new concept since">Fading ${t.weeks_under} wks</span>` : ""; }
 function strikesHTML(n){ let h='<span class="strikes" aria-label="'+n+' strikes in a row">'; for(let i=0;i<3;i++) h+='<i class="'+(i<n?"on":"")+'"></i>'; return h+'</span>'; }
 function roster(role){ return (S.people?.roster||[]).filter(p => (!role || p.role===role) && p.active); }
