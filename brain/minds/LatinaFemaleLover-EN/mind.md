@@ -42,55 +42,55 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 | LatinaFemaleLover · iOS · EN · Talk | 🔻 Falling | $1.6k | 0.34 | a2Ef3y wanted (since 2026-08-10, 9 wk) |
 | LatinaFemaleLover · Android · EN · Casual | 🆘 Critical | $1.4k | 0.31 | n6f2Wt banner (since 2026-09-21, 3 wk) |
 
-**Open tickets:** T-721949 Decaying (iOS · EN · Talk: Under 0.40 and falling: ROAS 0.34 from 0.53); T-309916 Decaying (iOS · EN · Casual: Green, but hook rate -43% vs 4-wk avg); T-140322 Decaying (Android · EN · Casual: ROAS 0.31 (prev 0.28), under 0.32)
+**Open tickets:** T-140322 3 strikes (Android · EN · Casual: ROAS 0.31 (prev 0.28), under 0.32); T-721949 Decaying (iOS · EN · Talk: Under 0.40 and falling: ROAS 0.34 from 0.53); T-309916 Decaying (iOS · EN · Casual: Green, but hook rate -43% vs 4-wk avg)
 
 ### #1 history (latest first)
 - 2026-09-28 · LatinaFemaleLover · iOS · EN · Casual · C0kM3N combo · 2 wk at 58% of spend  
   top ad: `LatinaLover-US-C0kM3N-Combo-ComboLatinaToGringo-ManyLatinasWantToDateAManFromADifferentCountry-FOMO-ProductAware-VID-Batch2026Week36`
-- 2026-09-21 · LatinaFemaleLover · iOS · EN · Casual · h7km3n wanted · 1 wk at 42% of spend  
-  top ad: `LatinaLover-US-h7km3n-wanted-LonelyKindaWantToTalkToSomeoneInADifferentCountry-Talk-ProductAware-VID-Batch2026Week35`
 - 2026-09-21 · LatinaFemaleLover · Android · EN · Casual · n6f2Wt banner · 3 wk at 68% of spend  
   top ad: `LatinaLover-US-n6f2Wt-Banner-bigticket-DateAVenezuelanOnBumpy-latinadatingfixed-ProductAware-VID-Batch2026Week35`
-- 2026-09-14 · LatinaFemaleLover · Android · EN · Casual · h7km3n wanted · 1 wk at 34% of spend  
-  top ad: `LatinaLover-US-h7km3n-wanted-LonelyKindaWantToTalkToSomeoneInADifferentCountry-Talk-ProductAware-VID-Batch2026Week35`
 - 2026-08-10 · LatinaFemaleLover · iOS · EN · Talk · a2Ef3y wanted · 9 wk at 100% of spend  
-  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-InAMoodToTalk-flirty-VID-Batch2026Week28`
-- 2026-07-20 · LatinaFemaleLover · iOS · EN · Curious · a2Ef3y wanted · 3 wk at 100% of spend  
-  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-NGLkindacurous-curious-VID-Batch2026Week28`
-- 2026-07-20 · LatinaFemaleLover · iOS · EN · Friend · a2Ef3y wanted · 3 wk at 100% of spend  
-  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-WantToHaveInternationalFriend-flirty-VID-Batch2026Week28`
-- 2026-07-20 · LatinaFemaleLover · iOS · EN · Talk · a2Ef3y wanted · 5 wk at 100% of spend  
   top ad: `LatinaLover-US-a2Ef3y-wanted-latina-InAMoodToTalk-flirty-VID-Batch2026Week28`
 - 2026-07-20 · LatinaFemaleLover · iOS · EN · Serious · a2Ef3y wanted · 5 wk at 100% of spend  
   top ad: `LatinaLover-US-a2Ef3y-wanted-latina-EveryoneHereOnlyDoesSituationship-flirty-IMG-Batch2026Week28`
-- 2026-07-06 · LatinaFemaleLover · iOS · EN · Casual · a2Ef3y wanted · 11 wk at 78% of spend  
-  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-23FromVenezuelaSingleNeedSomeoneFromDifferentCountryToHaveFunWithMeLetsMeet-flirty-VID-Batch2026Week25`
+- 2026-07-20 · LatinaFemaleLover · iOS · EN · Curious · a2Ef3y wanted · 3 wk at 100% of spend  
+  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-NGLkindacurous-curious-VID-Batch2026Week28`
+- 2026-07-20 · LatinaFemaleLover · iOS · EN · Talk · a2Ef3y wanted · 5 wk at 100% of spend  
+  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-InAMoodToTalk-flirty-VID-Batch2026Week28`
+- 2026-07-20 · LatinaFemaleLover · iOS · EN · Friend · a2Ef3y wanted · 3 wk at 100% of spend  
+  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-WantToHaveInternationalFriend-flirty-VID-Batch2026Week28`
 - 2026-07-06 · LatinaFemaleLover · iOS · EN · a2Ef3y wanted · 1 wk at – of spend  
   top ad: `LatinaLover-US-a2Ef3y-wanted-DateLatinas-VID-Batch2026Week08`
+- 2026-07-06 · LatinaFemaleLover · iOS · EN · Casual · a2Ef3y wanted · 12 wk at 81% of spend  
+  top ad: `LatinaLover-US-a2Ef3y-wanted-latina-23FromVenezuelaSingleNeedSomeoneFromDifferentCountryToHaveFunWithMeLetsMeet-flirty-VID-Batch2026Week25`
 - 2026-06-29 · LatinaFemaleLover · iOS · EN · n6f2Wt banner · 1 wk at 49% of spend  
   top ad: `LatinaLover-US-n6f2Wt-banner-thorn-VID-Batch2026Week08`
-- 2026-06-29 · LatinaFemaleLover · Android · EN · Casual · a2Ef3y wanted · 11 wk at 62% of spend  
+- 2026-06-29 · LatinaFemaleLover · Android · EN · Casual · a2Ef3y wanted · 12 wk at 61% of spend  
   top ad: `LatinaLover-US-a2Ef3y-wanted-latina-23FromVenezuelaSingleNeedSomeoneFromDifferentCountryToHaveFunWithMeLetsMeet-flirty-VID-Batch2026Week25`
 - 2026-06-22 · LatinaFemaleLover · iOS · EN · Casual · n6f2Wt banner · 2 wk at 57% of spend  
   top ad: `LatinaLover-US-n6f2Wt-banner-thorn-VID-Batch2026Week08`
+- 2026-06-22 · LatinaFemaleLover · Android · EN · Casual · n6f2Wt banner · 1 wk at 49% of spend  
+  top ad: `LatinaLover-US-n6f2Wt-banner-bigticket-VID-Batch2026Week08`
 - 2026-06-22 · LatinaFemaleLover · iOS · EN · 93km0i kitchen · 1 wk at 32% of spend  
   top ad: `LatinaLover-US-93km0i-kitchen-LatinaGirlBlondeGuyIntheKitchen-POVALatinaChoseYouOnBumpyNowYoureLivingTheHappyEnding-happyending-cook-IMG-Batch2026Week20`
+- 2026-06-22 · LatinaFemaleLover · Android · EN · 82kodp combotiktokstyle · 1 wk at 77% of spend  
+  top ad: `LatinaLover-US-82kodp-combotiktokstyle-braziliangfwithwhiteguy-BRgfUSAbf-beach-tiktokdance-VID-Batch2026Week23`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (32 finished reigns). Longest: a2Ef3y wanted, 11 weeks from 2026-06-29.
+A #1 here has led a median 2 weeks (30 finished reigns). Longest: a2Ef3y wanted, 12 weeks from 2026-06-29.
 
 ### Refreshes read from the exports
-16 since Dec: 3 hits of 12 with a final verdict (25%), 5 strikes, 4 fouls.
+14 since Dec: 3 hits of 12 with a final verdict (25%), 5 strikes, 4 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-09-21 | LatinaFemaleLover · iOS · EN · Casual | C0kM3N | 1 | 8% | Hit (provisional) |
 | 2026-09-21 | LatinaFemaleLover · Android · EN · Casual | C0kM3N | 1 | 6% | Strike (provisional) |
-| 2026-09-14 | LatinaFemaleLover · iOS · EN · Casual | h7km3n | 4 | 36% | Hit (provisional) |
-| 2026-09-14 | LatinaFemaleLover · Android · EN · Casual | h7km3n | 4 | 34% | Hit (provisional) |
 | 2026-09-07 | LatinaFemaleLover · iOS · EN · Casual | m4pw0r | 2 | 1% | Foul |
 | 2026-09-07 | LatinaFemaleLover · Android · EN · Casual | m4pw0r | 2 | 2% | Strike |
 | 2026-08-17 | LatinaFemaleLover · Android · EN · Casual | Q7mZ2x | 1 | 3% | Strike |
 | 2026-06-15 | LatinaFemaleLover · Android · EN | 82kodp i48opT vh1kle | 2 | 13% | Hit |
+| 2026-06-15 | LatinaFemaleLover · iOS · EN · Casual | 82kodp i48opT vh1kle | 2 | 13% | Foul |
+| 2026-06-01 | LatinaFemaleLover · Android · EN | 83i0px | 2 | 5% | Foul |
 
 ### Experiments logged
 - none yet

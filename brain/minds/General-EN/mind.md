@@ -49,7 +49,7 @@ updated: '2026-11-02'
   top ad: `SlavicLover-a2Ef3y-wanted-BlondeSlavicGirl-Anyone27FromUANeedAPartnerForSeriousRelationshipOnly-seriousrelationship-beachlife-IMG-Batch2026Week18`
 - 2026-06-29 · General · iOS · EN · EP - Instagram Apr 3  · 15 wk at 69% of spend  
   top ad: `EP - Instagram Apr 3`
-- 2026-06-29 · General · Web · EN · a2Ef3Y wanted · 3 wk at 75% of spend  
+- 2026-06-29 · General · Web · EN · a2Ef3y wanted · 3 wk at 75% of spend  
   top ad: `Muslim-US-a2Ef3Y-wanted-turkishhijabi-IMG-Batch2026Week02`
 - 2026-06-29 · General · Android · EN · d5X3gC explainer · 1 wk at 82% of spend  
   top ad: `Friends-US-d5X3gC-explainer-internationalfriendfemale-VID-Batch2026Week03`

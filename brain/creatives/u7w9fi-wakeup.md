@@ -18,11 +18,11 @@ decoded: false
 
 <!-- generated:start facts -->
 ## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 1 of 6 adsets it ran in · $2.0k spent as #1 · $8.8k in total.
+#1 in 1 of 6 adsets it ran in · $1.4k spent as #1 · $8.8k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| LatinaFemaleLover-ES | LatinaFemaleLover · iOS · ES | 2026-08-17 | 2026-10-05 | 3 | 37% | $3.4k |
+| LatinaFemaleLover-ES | LatinaFemaleLover · iOS · ES | 2026-08-17 | 2026-10-05 | 2 | 37% | $3.4k |
 | LatinaFemaleLover-ES | LatinaFemaleLover · iOS · ES | 2026-07-13 | 2026-10-05 | 0 | 9% | $3.0k |
 | LatinaFemaleLover-ES | LatinaFemaleLover · Android · ES · Casual | 2026-07-13 | 2026-10-05 | 0 | 9% | $1.2k |
 | LatinaFemaleLover-PT | LatinaFemaleLover · iOS · PT | 2026-07-13 | 2026-10-05 | 0 | 21% | $1.0k |

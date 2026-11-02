@@ -40,47 +40,47 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · Android · EN · 30to40 | 🔻 Falling | $2.1k | 0.33 | H7kM3N airport (since 2026-08-31, 6 wk) |
-| MatureDating · iOS · EN · 30to40 | 🔻 Falling | $1.8k | 0.49 | H7kM3N airport (since 2026-09-28, 2 wk) |
+| MatureDating · Android · EN · 30to40 | 🔻 Falling | $2.1k | 0.33 | a2Ef3y wanted (since 2026-08-31, 6 wk) |
+| MatureDating · iOS · EN · 30to40 | 🔻 Falling | $1.8k | 0.49 | a2Ef3y wanted (since 2026-08-10, 9 wk) |
 | MatureDating · iOS · EN · 50to60 | 🔻 Falling | $1.8k | 0.43 | X4nR8W talkinghead (since 2026-08-24, 7 wk) |
 | MatureDating · Android · EN · 50to60 | 🆘 Critical | $1.1k | 0.29 | 8k4opR manyplaces (since 2026-09-14, 4 wk) |
 
 **Open tickets:** T-160708 Decaying (Android · EN · 30to40: Under 0.40 and falling: ROAS 0.33 from 0.36); T-339740 Decaying (iOS · EN · 30to40: Green, but hook rate -57% vs 4-wk avg); T-983928 Decaying (iOS · EN · 50to60: Green, but IPM -55% vs 4-wk avg; hook rate -55% vs 4-wk avg); T-338070 Decaying (Android · EN · 50to60: ROAS 0.29 (prev 0.28), under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-28 · MatureDating · iOS · EN · 30to40 · H7kM3N airport · 2 wk at 51% of spend  
-  top ad: `MatureDating-US-H7kM3N-wanted-MatureWhiteMaleShirtlessBeachSelfie-JamesFromLondon49SingleSeriousRelationshipOnlyLetsTalkOnBumpy-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
-- 2026-09-14 · MatureDating · iOS · EN · 30to40 · a2Ef3y wanted · 2 wk at 55% of spend  
-  top ad: `304050-US-a2Ef3y-wanted-MatureLatinaInBeachSelfie-LindafromBarcelona33SingleNeedSeriousRelationshipOnlyLetsTalkOnBumpy-newcomer-startover-IMG-Batch2026Week22`
 - 2026-09-14 · MatureDating · Android · EN · 50to60 · 8k4opR manyplaces · 4 wk at 53% of spend  
   top ad: `5060-US-8k4opR-manyplaces-dogwalker-WomenAbroadAreAlreadyDatingMenOver50OnBumpy-dateabroad-oldcouple-VID-Batch2026Week24`
 - 2026-09-07 · MatureDating · Android · EN · 50to60 · 7i40dX walking · 1 wk at 37% of spend  
   top ad: `5060-US-7i40dX-walking-OldAsianWoman-Meet50PlusYOSingleWomenAbroad-findmaturewomen-beach-VID-Batch2026Week24`
+- 2026-08-31 · MatureDating · Android · EN · 30to40 · a2Ef3y wanted · 6 wk at 56% of spend  
+  top ad: `MatureDating-US-H7kM3N-wanted-MatureLatinaInBeachSelfie-SheWantsSeriousRelationshipWithManFromAnotherCountry-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
 - 2026-08-31 · MatureDating · Android · EN · 50to60 · X4nR8W talkinghead · 1 wk at 43% of spend  
   top ad: `MatureDating-US-X4nR8W-TALKINGHEAD-MatureMaleTalkingHeadJacket-secondchance-testimonial-ProductAware-VID-Batch2026Week33`
-- 2026-08-31 · MatureDating · Android · EN · 30to40 · H7kM3N airport · 6 wk at 56% of spend  
-  top ad: `MatureDating-US-H7kM3N-wanted-MatureLatinaInBeachSelfie-SheWantsSeriousRelationshipWithManFromAnotherCountry-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
 - 2026-08-24 · MatureDating · iOS · EN · 50to60 · X4nR8W talkinghead · 7 wk at 76% of spend  
   top ad: `MatureDating-US-X4nR8W-TALKINGHEAD-MatureMaleTalkingHeadJacket-secondchance-testimonial-ProductAware-VID-Batch2026Week33`
-- 2026-08-17 · MatureDating · iOS · EN · 30to40 · H7kM3N airport · 4 wk at 49% of spend  
-  top ad: `MatureDating-US-H7kM3N-wanted-MatureChineseFemaleInBeachSelfie-MeiFromShanghai45SingleLookingForASeriousRelationship-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
 - 2026-08-17 · MatureDating · Android · EN · 30to40 · X4nR8W talkinghead · 2 wk at 46% of spend  
   top ad: `MatureDating-US-X4nR8W-TalkingHead-WhiteSexyMomWithCat-DateYourAgeAbroad-ProductAware-VID-Batch2026Week30`
 - 2026-08-17 · MatureDating · iOS · EN · 30to40 · 8k4opR manyplaces · 2 wk at 59% of spend  
   top ad: `MatureDating-NG-8k4opR-manyplaces-restaurant-TurnsOutTrueLoveCanStillHappenAt50WithSomeoneFromAbroadOnBumpy-StartFresh-ProductAware-VID-Batch2026Week30`
-- 2026-08-10 · MatureDating · iOS · EN · 30to40 · a2Ef3y wanted · 1 wk at 40% of spend  
-  top ad: `304050-US-a2Ef3y-wanted-MatureLatinaInBeachSelfie-LindafromBarcelona33SingleNeedSeriousRelationshipOnlyLetsTalkOnBumpy-newcomer-startover-VID-Batch2026Week22`
+- 2026-08-10 · MatureDating · Android · EN · 30to40 · a2Ef3y wanted · 1 wk at 41% of spend  
+  top ad: `MatureDating-US-H7kM3N-wanted-MatureMidEastFemaleInCafeSelfie-LaylaFromDubai40SingleHopingToMeetManFromDifferentCountryForASeriousRelationship-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
 - 2026-08-10 · MatureDating · iOS · EN · 50to60 · n6f2Wt banner · 2 wk at 47% of spend  
   top ad: `5060-US-n6f2Wt-banner-bigticket-Date50+YOSinglesAbroadOnBumpy-maturemen-dateabroad-IMG-Batch2026Week24`
-- 2026-08-10 · MatureDating · Android · EN · 30to40 · H7kM3N airport · 1 wk at 44% of spend  
-  top ad: `MatureDating-US-H7kM3N-wanted-MatureMidEastFemaleInCafeSelfie-LaylaFromDubai40SingleHopingToMeetManFromDifferentCountryForASeriousRelationship-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
-- 2026-08-03 · MatureDating · iOS · EN · 30to40 · H7kM3N airport · 2 wk at 69% of spend  
+- 2026-08-10 · MatureDating · iOS · EN · 30to40 · a2Ef3y wanted · 9 wk at 90% of spend  
+  top ad: `304050-US-a2Ef3y-wanted-MatureLatinaInBeachSelfie-LindafromBarcelona33SingleNeedSeriousRelationshipOnlyLetsTalkOnBumpy-newcomer-startover-IMG-Batch2026Week22`
+- 2026-08-03 · MatureDating · iOS · EN · 30to40 · a2Ef3y wanted · 2 wk at 69% of spend  
   top ad: `MatureDating-NG-H7kM3N-wanted-MatureBlackFemaleInBeachSelfie-MiaFromAtlanta35SingleSeriousRelationshipOnly-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
 - 2026-08-03 · MatureDating · Android · EN · 50to60 · 8k4opR manyplaces · 4 wk at 54% of spend  
   top ad: `5060-US-8k4opR-manyplaces-street-IfYoure50DateWomanYoureAgeOnBumpyTheyOnlyWantASeriousRelationship-startfresh-oldcouple-VID-Batch2026Week24`
+- 2026-07-27 · MatureDating · Android · EN · 50to60 · n6f2Wt banner · 1 wk at 40% of spend  
+  top ad: `5060-US-n6f2Wt-banner-carwindow-MeetSingleWomenOver50AbroadTryBumpy-womenover50-maturewoman-VID-Batch2026Week24`
+- 2026-07-27 · MatureDating · iOS · EN · 50to60 · 8k4opR manyplaces · 2 wk at 42% of spend  
+  top ad: `5060-US-8k4opR-manyplaces-street-IfYoure50DateWomanYoureAgeOnBumpyTheyOnlyWantASeriousRelationship-startfresh-oldcouple-IMG-Batch2026Week24`
+- 2026-07-27 · MatureDating · Android · EN · 30to40 · u7Wf9i wakeup · 2 wk at 36% of spend  
+  top ad: `304050-US-u7Wf9i-wakeup-blondewoman-IfYouAre30ItsNotTooLateToStartFreshDateMenAbroadonBumpyTheyAgedLikeFineWine-kissing-blackmanchoice-IMG-Batch2026Week17`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (45 finished reigns). Longest: a2Ef3Y wanted, 11 weeks from 2025-12-01.
+A #1 here has led a median 2 weeks (42 finished reigns). Longest: a2Ef3y wanted, 11 weeks from 2025-12-01.
 
 ### Refreshes read from the exports
 10 since Dec: 6 hits of 10 with a final verdict (60%), 4 strikes, 0 fouls.

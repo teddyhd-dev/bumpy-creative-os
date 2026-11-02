@@ -34,13 +34,13 @@ decoded: false
 | MatureDating-EN | MatureDating · iOS · EN | 2025-12-01 | 2026-02-23 | 1 | 9% | $2.9k |
 | MatureDating-PT | MatureDating · Android · PT | 2026-03-02 | 2026-04-27 | 1 | 28% | $512 |
 | KoreanMaleCultureLover-PT | KoreanMaleCultureLover · iOS · PT | 2026-08-03 | 2026-08-31 | 1 | 79% | $386 |
-| IntlFriendFinder-CH | IntlFriendFinder · Android · ZH | 2026-04-06 | 2026-05-04 | 1 | 17% | $191 |
+| InternationalFriendFinder-CH | InternationalFriendFinder · Android · CH | 2026-04-06 | 2026-05-04 | 1 | 17% | $191 |
 | General-ID | General · Android · ID | 2025-12-01 | 2026-01-19 | 1 | 3% | $137 |
 | MatureDating-PT | MatureDating · Android · PT | 2026-03-02 | 2026-03-16 | 1 | 1% | $12 |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2025-12-08 | 2026-02-09 | 0 | 35% | $9.5k |
-| IntlFriendFinder-ES | IntlFriendFinder · iOS · ES · Friend | 2026-04-06 | 2026-10-05 | 0 | 17% | $3.5k |
-| IntlFriendFinder-ES | IntlFriendFinder · Android · ES · Friend | 2026-04-06 | 2026-08-03 | 0 | 34% | $2.2k |
-| IntlFriendFinder-CH | IntlFriendFinder · iOS · CH · Friend | 2026-04-06 | 2026-08-31 | 0 | 10% | $1.7k |
+| InternationalFriendFinder-ES | InternationalFriendFinder · iOS · ES · Friend | 2026-04-06 | 2026-10-05 | 0 | 17% | $3.5k |
+| InternationalFriendFinder-ES | InternationalFriendFinder · Android · ES · Friend | 2026-04-06 | 2026-08-03 | 0 | 34% | $2.2k |
+| InternationalFriendFinder-CH | InternationalFriendFinder · iOS · CH · Friend | 2026-04-06 | 2026-08-31 | 0 | 10% | $1.7k |
 | KoreanMaleCultureLover-ES | KoreanMaleCultureLover · Android · ES | 2026-07-27 | 2026-10-05 | 0 | 23% | $1.5k |
 
 ### Variants (full ad names, 88 in total, top 10 by spend)

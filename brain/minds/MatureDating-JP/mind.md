@@ -40,12 +40,12 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · iOS · JP · 30to40 | 🆘 Critical | $1.8k | 0.28 | H7kM3N airport (since 2026-08-03, 10 wk) |
+| MatureDating · iOS · JP · 30to40 | 🆘 Critical | $1.8k | 0.28 | a2Ef3y wanted (since 2026-08-03, 10 wk) |
 
 **Open tickets:** T-118034 Decaying (iOS · JP · 30to40: ROAS 0.28 (prev 0.44), under 0.32)
 
 ### #1 history (latest first)
-- 2026-08-03 · MatureDating · iOS · JP · 30to40 · H7kM3N airport · 10 wk at 72% of spend  
+- 2026-08-03 · MatureDating · iOS · JP · 30to40 · a2Ef3y wanted · 10 wk at 72% of spend  
   top ad: `MatureDating-JP-H7kM3N-wanted-MatureMidEastFemaleInBeachSelfie-SheHopesToMeetJapaneseManForSomethingSerious-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
 
 ### Experiments logged

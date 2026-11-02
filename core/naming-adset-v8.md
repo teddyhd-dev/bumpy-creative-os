@@ -1,10 +1,15 @@
 # Bumpy — Campaign & Adset Naming Convention
-version: 8.0.0
+version: 8.1.0
 status: FOUNDATIONAL — do not deviate without updating this doc first
 
 > Copied from the Claude project file `bumpy-naming-convention UPDATED.md`. Note: Meta exports show
 > the separator as ` / ` (with spaces); the engine reads both.
 
+> **Changelog 8.1.0 (2 Nov 2026, creative lead):** four live personas added to the canonical list —
+> `AsianMaleLover`, `SoutheastAsianFemaleLover`, `LatinoMaleLover`, `ChatOnly`. `IntlFriendFinder`,
+> `Friends` and `InternationalFriend` are all `InternationalFriendFinder` (adsets already named
+> `IntlFriendFinder` keep their names; the engine reads them as the canonical persona).
+>
 > **Changelog from v7.0.0 (team correction round 5):**
 > - **Added a dedicated BidStrategy field**, separate from BudgetStrategy and separate from
 >   Modifier. BudgetStrategy answers *where the money is pooled* (CBO/ABO). BidStrategy
@@ -209,13 +214,17 @@ Two rules:
 | `MatureDating` | C | 30-40-50, 50-60, Dating on 50-60, Dating on 30-40+ | BothGender |
 | `InterracialDatingSeekers` | C | Inter racial dating, Interracial Dating, Black Women Interracial, Black Dating | Female |
 | `SingleMom` | C | Single Mom | Female |
-| `InternationalFriendFinder` | C | International Friend | BothGender |
+| `InternationalFriendFinder` | C | International Friend, Friends, IntlFriendFinder | BothGender |
 | `NewLanguageLearner` | C | Learn Language, Language Learner | BothGender |
 | `EgoBoostForIndianBoy` | C | Indian Boy, Indian Boy Dream | Male |
 | `RichHusbandFinder` | C | Woman Marriage, Rich Husband Finder | Female |
 | `LGBTQ` | C | LGBTQ+ | BothGender |
 | `LocalDatingFatigue` | C | Local Dating, Angry with Local Dating | BothGender |
 | `CelebrityCrushLookalikeLover` | C² | Churn Raya | BothGender |
+| `AsianMaleLover` | A | Asian Male Lover | Female |
+| `SoutheastAsianFemaleLover` | A | Southeast Asian Lover | Male |
+| `LatinoMaleLover` | A | Latino Lover, TikTok Safe Latino | Female |
+| `ChatOnly` | C | Chat Persona, Talk only, Chat/Talk-only persona | BothGender |
 | `General` | — | Incremental Attribution, Spark Ads Organic Content | BothGender |
 
 *Typical Gender = default for the adset's `Gender` field only when the old name doesn't

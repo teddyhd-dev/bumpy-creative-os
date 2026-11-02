@@ -34,7 +34,7 @@ decoded: false
 | MatureDating-PT | MatureDating · iOS · PT | 2025-12-29 | 2026-03-09 | 0 | 15% | $1.0k |
 | General-RU | General · Android · RU | 2025-12-22 | 2026-04-13 | 0 | 16% | $839 |
 | General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-07-27 | 0 | 12% | $731 |
-| General-UA | General · Android · UK | 2025-12-22 | 2026-04-06 | 0 | 12% | $617 |
+| General-UA | General · Android · UA | 2025-12-22 | 2026-04-06 | 0 | 12% | $617 |
 | General-RU | General · Android · RU · Serious | 2026-07-06 | 2026-08-03 | 0 | 21% | $540 |
 | General-ES | General · iOS · ES | 2025-12-22 | 2026-01-05 | 0 | 3% | $354 |
 | MatureDating-ES | MatureDating · Android · ES · 30to40 | 2025-12-29 | 2026-04-06 | 0 | 11% | $325 |

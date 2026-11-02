@@ -18,11 +18,11 @@ decoded: false
 
 <!-- generated:start facts -->
 ## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 1 of 13 adsets it ran in · $342 spent as #1 · $3.3k in total.
+#1 in 1 of 13 adsets it ran in · $682 spent as #1 · $3.3k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| GringoMaleLover-KR | GringoMaleLover · iOS · KR · KR | 2026-09-14 | 2026-09-28 | 1 | 33% | $682 |
+| GringoMaleLover-KR | GringoMaleLover · iOS · KR · KR | 2026-09-14 | 2026-09-28 | 3 | 33% | $682 |
 | KoreanMaleCultureLover-EN | KoreanMaleCultureLover · iOS · EN | 2026-09-14 | 2026-10-05 | 0 | 39% | $820 |
 | GringoMaleLover-JP | GringoMaleLover · iOS · JP · JP | 2026-09-14 | 2026-10-05 | 0 | 11% | $330 |
 | GringoMaleLover-EN | GringoMaleLover · iOS · EN | 2026-09-21 | 2026-10-05 | 0 | 3% | $307 |

@@ -22,8 +22,8 @@ decoded: false
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| IntlFriendFinder-EN | IntlFriendFinder · Android · EN · Friend | 2026-01-26 | 2026-10-05 | 1 | 44% | $4.5k |
-| IntlFriendFinder-EN | IntlFriendFinder · iOS · EN · Friend | 2026-01-26 | 2026-10-05 | 0 | 6% | $3.2k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · Android · EN · Friend | 2026-01-26 | 2026-10-05 | 1 | 44% | $4.5k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-01-26 | 2026-10-05 | 0 | 6% | $3.2k |
 
 ### Variants (full ad names, 8 in total, top 10 by spend)
 - `Friends-US-L2a9Md-created-founder-IMG-Batch2026Week03` · $4.4k · 2 adsets

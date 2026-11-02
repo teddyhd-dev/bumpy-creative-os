@@ -11,7 +11,7 @@ PMAP = [
  (r'^passportgirl', 'GirlWantsToRelocate'), (r'^passportbro', 'PassportBro'),
  (r'^gringolover', 'GringoMaleLover'), (r'^slavic', 'SlavicFemaleLover'),
  (r'^latina', 'LatinaFemaleLover'), (r'^tiktoksafelatino|^latino', 'LatinoMaleLover'),
- (r'^friends|^internationalfriend|^intlfriend', 'IntlFriendFinder'),
+ (r'^friends|^internationalfriend|^intlfriend', 'InternationalFriendFinder'),
  (r'^chinese|^asianfemale|^asianlover|^asiandating|^koreanfemale', 'AsianFemaleLover'),
  (r'^southeastasian', 'SoutheastAsianFemaleLover'), (r'^asianmale', 'AsianMaleLover'),
  (r'^indianboy|^egoboost', 'EgoBoostForIndianBoy'), (r'^christian', 'ChristianMatchWorldwide'),

@@ -49,7 +49,7 @@ updated: '2026-11-02'
   top ad: `SlavicLover-US-a2Ef3y-wanted-slavic-LonelyKindaWantToTalk-flirty-VID-Batch2026Week28`
 - 2026-09-07 · SlavicFemaleLover · iOS · EN · a2Ef3y wanted · 4 wk at 67% of spend  
   top ad: `SlavicLover-US-a2Ef3y-wanted-slavic-LonelyKindaWantToTalk-flirty-VID-Batch2026Week28`
-- 2026-07-13 · SlavicFemaleLover · iOS · EN · L2vM8Q manyhugs2 · 1 wk at – of spend  
+- 2026-07-13 · SlavicFemaleLover · iOS · EN · L2vM8Q manyhugs · 1 wk at – of spend  
   top ad: `SlavicLover-L2vM8Q-ManyHugs-SlavicGirlTurkishGuyV1-LetThat1010SlavicGirlOnBumpyChangedYourLife-TypeOfHugs-MirrorSelfie-VID-Batch2026Week18`
 - 2026-06-22 · SlavicFemaleLover · Android · EN · a2Ef3y wanted · 3 wk at 73% of spend  
   top ad: `Friends-US-a2Ef3y-wanted-frenchnmale-VID-Batch2026Week03`

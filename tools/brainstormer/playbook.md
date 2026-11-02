@@ -30,3 +30,8 @@ record (`move:`), so over time we learn which move works for which mind.
 ## Rules learned
 Add a line when a strategist corrects the brainstormer on something that will come up again
 (date · who · rule).
+
+- 2026-11-02 · TED · A concept moved into another persona's adset (proven elsewhere) gets its own copy named for
+  that persona, same concept code, so each audience is credited correctly.
+- 2026-11-02 · TED · Pick new concept codes from `core/concepts.csv` (unique ignoring letter case); write the
+  concept name exactly as it is there, and put scene detail in the hook field.

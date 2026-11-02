@@ -24,12 +24,12 @@ decoded: false
 |---|---|---|---|---|---|---|
 | General-EN | General · iOS · EN | 2025-12-01 | 2026-04-20 | 17 | 74% | $166.2k |
 | General-EN | General · Android · EN | 2025-12-01 | 2026-05-25 | 16 | 63% | $25.2k |
-| General-UA | General · Android · UK | 2025-12-22 | 2026-04-20 | 14 | 94% | $5.8k |
+| General-UA | General · Android · UA | 2025-12-22 | 2026-04-20 | 14 | 94% | $5.8k |
 | General-RU | General · Android · RU | 2025-12-22 | 2026-04-13 | 10 | 57% | $5.0k |
 | PassportBro-EN | PassportBro · iOS · EN | 2025-12-01 | 2026-03-09 | 9 | 71% | $37.6k |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-01-05 | 2026-06-15 | 9 | 85% | $33.1k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN | 2025-12-15 | 2026-02-16 | 6 | 57% | $14.1k |
-| General-KR | General · iOS · KO | 2025-12-22 | 2026-01-26 | 6 | 79% | $3.9k |
+| General-KR | General · iOS · KR | 2025-12-22 | 2026-01-26 | 6 | 79% | $3.9k |
 | General-PL | General · Android · PL | 2025-12-22 | 2026-04-13 | 4 | 79% | $3.9k |
 | General-UA | General · Android · UA | 2026-04-06 | 2026-08-03 | 4 | 65% | $1.1k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-03-16 | 3 | 43% | $16.9k |

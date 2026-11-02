@@ -31,17 +31,17 @@ decoded: false
 | MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-08-03 | 2026-08-24 | 2 | 59% | $430 |
 | ChristianMatchWorldwide-EN | ChristianMatchWorldwide · iOS · EN | 2026-06-22 | 2026-07-06 | 1 | 27% | $394 |
 | MatureDating-JP | MatureDating · iOS · JP · 30to40 | 2026-08-03 | 2026-10-05 | 0 | 42% | $3.9k |
-| IntlFriendFinder-PT | IntlFriendFinder · iOS · PT · Friend | 2026-06-22 | 2026-10-05 | 0 | 18% | $1.1k |
+| InternationalFriendFinder-PT | InternationalFriendFinder · iOS · PT · Friend | 2026-06-22 | 2026-10-05 | 0 | 18% | $1.1k |
 | AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-06-22 | 2026-10-05 | 0 | 5% | $847 |
-| IntlFriendFinder-PT | IntlFriendFinder · Android · PT · Friend | 2026-06-22 | 2026-08-24 | 0 | 18% | $549 |
+| InternationalFriendFinder-PT | InternationalFriendFinder · Android · PT · Friend | 2026-06-22 | 2026-08-24 | 0 | 18% | $549 |
 | ChristianMatchWorldwide-EN | ChristianMatchWorldwide · iOS · EN · US | 2026-06-22 | 2026-10-05 | 0 | 16% | $532 |
-| IntlFriendFinder-CH | IntlFriendFinder · iOS · CH · Friend | 2026-06-22 | 2026-10-05 | 0 | 16% | $530 |
+| InternationalFriendFinder-CH | InternationalFriendFinder · iOS · CH · Friend | 2026-06-22 | 2026-10-05 | 0 | 16% | $530 |
 | MatureDating-EN | MatureDating · Android · EN · 30to40 | 2026-08-03 | 2026-10-05 | 0 | 13% | $481 |
 | General-EN-JP | General · iOS · EN-JP · Friend | 2026-06-22 | 2026-08-24 | 0 | 19% | $458 |
-| IntlFriendFinder-ES | IntlFriendFinder · iOS · ES · Friend | 2026-06-22 | 2026-06-22 | 0 | 7% | $322 |
-| IntlFriendFinder-ES | IntlFriendFinder · Android · ES · Friend | 2026-06-22 | 2026-08-17 | 0 | 11% | $249 |
+| InternationalFriendFinder-ES | InternationalFriendFinder · iOS · ES · Friend | 2026-06-22 | 2026-06-22 | 0 | 7% | $322 |
+| InternationalFriendFinder-ES | InternationalFriendFinder · Android · ES · Friend | 2026-06-22 | 2026-08-17 | 0 | 11% | $249 |
 | MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-08-03 | 2026-10-05 | 0 | 14% | $245 |
-| IntlFriendFinder-EN | IntlFriendFinder · iOS · EN · Friend | 2026-06-22 | 2026-10-05 | 0 | 4% | $231 |
+| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-06-22 | 2026-10-05 | 0 | 4% | $231 |
 
 ### Variants (full ad names, 71 in total, top 10 by spend)
 - `5060-US-8k4opR-manyplaces-street-IfYoure50DateWomanYoureAgeOnBumpyTheyOnlyWantASeriousRelationship-startfresh-oldcouple-VID-Batch2026Week24` · $7.1k · 2 adsets

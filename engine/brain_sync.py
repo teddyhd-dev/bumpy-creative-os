@@ -441,33 +441,52 @@ def main():
                              f"{prev['code']} {prev['name']} after {prev.weeks} week{'s' if prev.weeks != 1 else ''} as #1.",
                              f"new1:{aid}:{last_ad_week}")
 
-    # creatives: one file per concept; codes that differ only by letter case AND share a name are kept in
-    # one file (aliases) for the creative lead to confirm; lowercase file names stay safe on a Mac.
+    # creatives: one file per concept (lowercase file names stay safe on a Mac). Code fixes and names come from
+    # core/code_aliases.csv and core/concepts.csv, already applied to the concept keys.
+    from codes import code_aliases
+    al = code_aliases()
+    aliases_of = {}
+    for r in al.itertuples():
+        aliases_of.setdefault(r.code, []).append(r.alias + (f" (when named {r.conceptname})" if r.conceptname else ""))
     cc = runs[runs.coded].groupby("code").agg(spend=("spend", "sum")).reset_index()
     cc = cc[cc.spend >= CREATIVE_MIN_SPEND]
     cc["name"] = cc.code.map(lambda k: str(names.get(k, "")))
-    cc["file"] = [creative_file(k, n) for k, n in zip(cc.code, cc.name)]
     lab = G.set_index("adset_id")
-    for f, g in cc.sort_values("spend", ascending=False).groupby("file", sort=False):
-        p = os.path.join(CRE, f)
-        if not os.path.exists(p):
-            code, name = g.code.iloc[0], g.name.iloc[0]
-            fm = dict(contract="creative/1", code=code, name=name, decoded=False)
-            if len(g) > 1:
-                fm["aliases"] = g.code.iloc[1:].tolist()
-            write_md(p, fm, f"# {code} · {name}\n\n## Decode\n- First second:\n- Hook:\n- Message:\n- Format:\n"
+    existing = {}
+    for p in glob.glob(os.path.join(CRE, "*.md")):
+        fm, _ = read_md(p)
+        existing[str(fm.get("code", ""))] = p
+    live_keys = set(c.concept_key)
+    for code, p in list(existing.items()):
+        fm, body = read_md(p)
+        if code not in live_keys and not fm.get("decoded"):
+            os.remove(p)                       # merged into another code, nothing written in it yet
+            existing.pop(code)
+    for r in cc.itertuples():
+        want = os.path.join(CRE, creative_file(r.code, r.name))
+        fm0 = dict(contract="creative/1", code=r.code, name=r.name, decoded=False)
+        if r.code in existing and existing[r.code] != want:
+            fm, body = read_md(existing[r.code])
+            os.remove(existing[r.code])
+            fm["name"] = r.name
+            write_md(want, fm, re.sub(r"^# .*$", f"# {r.code} · {r.name}", body, count=1, flags=re.M))
+        elif r.code not in existing:
+            write_md(want, fm0, f"# {r.code} · {r.name}\n\n## Decode\n- First second:\n- Hook:\n- Message:\n- Format:\n"
                      f"- Why it stops the thumb:\n- Full breakdown:\n- Snapshot:\n- Decoded by:\n\n"
                      "<!-- generated:start facts -->\n<!-- generated:end facts -->\n")
     for p in sorted(glob.glob(os.path.join(CRE, "*.md"))):
         fm, body = read_md(p)
         code = str(fm.get("code", ""))
-        keys = [code] + [str(a) for a in fm.get("aliases") or []]
+        keys = [code]
+        if aliases_of.get(code):
+            fm["aliases"] = aliases_of[code]
+        else:
+            fm.pop("aliases", None)
         x = c[c.concept_key.isin(keys)]
         rr = runs[runs.key.isin(keys)]
         lines = [f"## Where it ran (updated {TODAY}; ads to {last_ad_week})"]
         if fm.get("aliases"):
-            lines.append(f"Also written as {', '.join(fm['aliases'])} in ad names: same concept? (creative lead to confirm; "
-                         "new codes must be unique ignoring case).")
+            lines.append(f"Includes ads written as {', '.join(fm['aliases'])} (confirmed fixes in core/code_aliases.csv).")
         if len(x):
             agg = x.groupby("adset_id").agg(first=("first_in", "first"), last=("week", "max"), spend=("spend", "sum"),
                                             peak=("share", "max")).reset_index()

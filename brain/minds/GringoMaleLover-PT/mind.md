@@ -57,7 +57,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `GringoLover-PT-Mw4ucH-Fly-Latinas-VID-Batch2026Week08`
 - 2026-06-29 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 9 wk at 43% of spend  
   top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
-- 2026-06-29 · GringoMaleLover · Android · PT · PT · vh1kle motorbikerideinbali · 4 wk at 65% of spend  
+- 2026-06-29 · GringoMaleLover · Android · PT · PT · vh1kle vehicle · 4 wk at 65% of spend  
   top ad: `Gringolover-PT-vh1kle-LatinaGirlAmericanGuy-TemMuitoGringoTratandoLatinaComoPrincesaNoBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23`
 - 2026-06-01 · GringoMaleLover · Android · PT · PT · n6f2Wt banner · 4 wk at 70% of spend  
   top ad: `Gringolover-PT-n6f2Wt-banner-WhiteItalianManDrivingFancyCar-TemMaisGringoQuerendoNamorarBrasileiraDoQueVocaImagina-imagine-dating-VID-Batch2026Week19`

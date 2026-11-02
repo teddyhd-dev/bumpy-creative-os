@@ -18,11 +18,11 @@ decoded: false
 
 <!-- generated:start facts -->
 ## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 11 of 32 adsets it ran in · $51.3k spent as #1 · $117.2k in total.
+#1 in 11 of 32 adsets it ran in · $49.4k spent as #1 · $117.2k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-11 | 2026-10-05 | 14 | 57% | $32.2k |
+| InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-11 | 2026-10-05 | 13 | 57% | $32.2k |
 | MatureDating-EN | MatureDating · Android · EN | 2026-02-02 | 2026-05-25 | 5 | 55% | $8.2k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2026-02-02 | 2026-04-20 | 5 | 86% | $8.1k |
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-02-02 | 2026-04-13 | 3 | 69% | $6.0k |

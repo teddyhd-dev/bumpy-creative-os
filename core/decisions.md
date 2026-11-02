@@ -5,6 +5,13 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-02 · Code fixes, concept names and personas (naming audit)
+- **Decided by:** creative lead.
+- **Codes:** `n62Wt` is `n6f2Wt` (banner); `a2Ef3Y` is `a2Ef3y` (letter case); the *wanted* ads coded `h7km3n` or `H7kM3N` are the wanted concept `a2Ef3y` (`H7kM3N` stays *airport*). By the same rule (letter case is not a new concept) `H7kM3n`, `c0kM3N`, `k4rm9p`, `P8c7ao` merge into `H7kM3N`, `C0kM3N`, `k4Rm9p`, `p8C7aO`. Kept in `core/code_aliases.csv`; the engine merges confirmed rows. `j4g89om` → `4g89om` still to confirm.
+- **Concept names:** `vh1kle` = vehicle (the other names are scenes), `v07e5T` = lovestory and `L2vM8Q` = manyhugs (*indianboydream* and *slavic* are persona names written in the wrong field). One home for concept names: `core/concepts.csv`.
+- **Personas:** Friends / IntlFriendFinder / InternationalFriend = `InternationalFriendFinder`; GringoLover = GringoMaleLover; Chinese = AsianFemaleLover; LatinaLover = LatinaFemaleLover; 304050 = MatureDating; AngryWithLocalDating = ChurnLocal = LocalDatingFatigue. New canonical personas: AsianMaleLover, SoutheastAsianFemaleLover, LatinoMaleLover, ChatOnly (naming v8.1.0).
+- **Creative moved to another persona** (e.g. the k4Rm9p LocalDatingFatigue ads put into PassportBro by the media buyer when PassportBro iOS was spending a lot at low ROAS): fine as a move, but the copy gets the adset's persona in its file name, same concept code.
+
 ### 2026-11-02 · Language codes: country-style for now
 - **Decided by:** creative lead.
 - **What:** names keep country-style codes in the Language field (JP, KR, UA, CH, VN; ads write US for English) until the planned move to ISO 639-1. Minds and the naming audit read legacy JA/KO/UK/ZH/VI as JP/KR/UA/CH/VN, so one language is one mind.

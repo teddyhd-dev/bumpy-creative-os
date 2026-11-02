@@ -28,7 +28,7 @@ decoded: false
 | General-TH | General · iOS · TH | 2025-12-01 | 2026-03-02 | 0 | 9% | $664 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-07-27 | 0 | 3% | $496 |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-01-19 | 0 | 2% | $414 |
-| General-KR | General · iOS · KO | 2025-12-01 | 2026-02-02 | 0 | 9% | $340 |
+| General-KR | General · iOS · KR | 2025-12-01 | 2026-02-02 | 0 | 9% | $340 |
 | General-PT | General · Android · PT | 2025-12-01 | 2026-01-19 | 0 | 4% | $307 |
 | General-EN | General · iOS · EN | 2025-12-01 | 2026-04-13 | 0 | 3% | $300 |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-02-09 | 0 | 1% | $239 |

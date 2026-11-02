@@ -15,7 +15,9 @@ money is the one currency for both channels (§3.4).
 - Rebuild everything: `bash engine/run_all.sh` (about 40 seconds). Order: `build.py` → `rootcause.py` →
   `creative_relay.py` → `model.py` → `eras.py` → `channels.py` → `holistic.py` → `tickets.py` →
   `board_export.py` → `report.py` → `make_dashboard.py` → `brain_sync.py` → `checks/validate.py`
-  (`naming_audit.py` runs right after `build.py`).
+  (`naming_audit.py` runs right after `build.py` and adds new concept codes to `core/concepts.csv`).
+  Every step that groups ads by concept builds its key in `engine/codes.py`, which applies the confirmed fixes
+  in `core/code_aliases.csv` and the names in `core/concepts.csv`.
 - Local dashboard: `python3 -m http.server 8000 -d output`, then open http://localhost:8000/dashboard/
 
 ## Export file names

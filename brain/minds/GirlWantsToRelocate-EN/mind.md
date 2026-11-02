@@ -39,12 +39,12 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.8k | 0.40 | H7kM3N airport (since 2026-08-24, 7 wk) |
+| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.8k | 0.40 | a2Ef3y wanted (since 2026-08-24, 7 wk) |
 
 **Open tickets:** T-455544 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.40 from 0.43)
 
 ### #1 history (latest first)
-- 2026-08-24 · GirlWantsToRelocate · iOS · EN · H7kM3N airport · 7 wk at 59% of spend  
+- 2026-08-24 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 7 wk at 59% of spend  
   top ad: `PassportGirl-US-H7kM3N-Wanted-ItalianGuyInCar-29fromUKLonelyLookingForGirlfriendFromAnotherCountryLetsChat-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
 - 2026-06-08 · GirlWantsToRelocate · iOS · EN · Kj4Rp7 firstdate · 11 wk at 77% of spend  
   top ad: `PassportGirl-US-Kj4Rp7-FirstDate-CoupleOutfitCheckonStreet-GirlDateTheForeignOne-PassportGirl-TikTokTrendComedic-VID-Batch2026Week22`

@@ -1,10 +1,10 @@
 ---
 contract: creative/1
 code: L2vM8Q
-name: manyhugs2
+name: manyhugs
 decoded: false
 ---
-# L2vM8Q · manyhugs2
+# L2vM8Q · manyhugs
 
 ## Decode
 - First second:

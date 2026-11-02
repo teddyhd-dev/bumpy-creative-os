@@ -22,8 +22,8 @@ decoded: false
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| PassportBro-KR | PassportBro · iOS · KO | 2026-03-09 | 2026-05-11 | 6 | 100% | $3.4k |
-| PassportBro-KR | PassportBro · Android · KO | 2026-03-09 | 2026-04-20 | 1 | 62% | $1.9k |
+| PassportBro-KR | PassportBro · iOS · KR | 2026-03-09 | 2026-05-11 | 6 | 100% | $3.4k |
+| PassportBro-KR | PassportBro · Android · KR | 2026-03-09 | 2026-04-20 | 1 | 62% | $1.9k |
 
 ### Variants (full ad names, 10 in total, top 10 by spend)
 - `PassportBro-KR-K0wp01-bellykiss-filipinawoman-VID-Batch2026Week10` · $1.3k · 2 adsets

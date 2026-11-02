@@ -64,7 +64,7 @@ LEGACY_PERSONA = [
     (r"lgbtq", "LGBTQ"),
     (r"single mom", "SingleMom"),
     (r"gringo lover", "GringoMaleLover"),
-    (r"international friend|friends v1", "IntlFriendFinder"),
+    (r"international friend|friends v1", "InternationalFriendFinder"),
     (r"woman marriage|wedding", "RichHusbandFinder"),
     (r"slavic", "SlavicFemaleLover"),
     (r"churn raya", "CelebrityCrushLookalikeLover"),
@@ -74,15 +74,19 @@ LEGACY_PERSONA = [
     (r"short kings", "ShortKings"),
     (r"divorcee", "Divorcee"),
 ]
-LEGACY_LANG = {"ENG": "EN", "ES": "ES", "PT": "PT", "TH": "TH", "ID": "ID", "JP": "JA",
-               "KR": "KO", "RU": "RU", "PL": "PL", "UA": "UK", "TR": "TR", "DE": "DE",
-               "FR": "FR", "CH": "ZH", "NL": "NL", "NO": "NO", "VN": "VI", "IT": "IT", "IN": "EN"}
+# Language as the team writes it today: country-style codes (JP, KR, UA, CH, VN), see core/decisions.md 2026-11-02
+LEGACY_LANG = {"ENG": "EN", "ES": "ES", "PT": "PT", "TH": "TH", "ID": "ID", "JP": "JP",
+               "KR": "KR", "RU": "RU", "PL": "PL", "UA": "UA", "TR": "TR", "DE": "DE",
+               "FR": "FR", "CH": "CH", "NL": "NL", "NO": "NO", "VN": "VN", "IT": "IT", "IN": "EN"}
+# persona spellings in adset names → the canonical name (core/naming-adset-v8.md)
+PERSONA_ALIAS = {"IntlFriendFinder": "InternationalFriendFinder"}
 
 
 def parse_name(name: str) -> dict:
     parts = [p.strip() for p in name.split("/")]
     if parts[0] == "AS" and len(parts) == 12:
         persona = re.sub(r"\s+", "", parts[2])
+        persona = PERSONA_ALIAS.get(persona, persona)
         return dict(version="v8", persona=persona, subangle=parts[3], os=parts[4], geo=parts[5],
                     lang=parts[6], gender=parts[7], objective=parts[8], bid=parts[9],
                     modifier=parts[10], launch=parts[11])

@@ -24,10 +24,10 @@ decoded: false
 |---|---|---|---|---|---|---|
 | General-TH | General · iOS · TH | 2025-12-01 | 2026-03-02 | 10 | 78% | $8.1k |
 | General-ID | General · iOS · ID | 2025-12-01 | 2026-01-26 | 2 | 35% | $4.2k |
-| General-VN | General · Android · VI | 2025-12-08 | 2025-12-15 | 1 | 40% | $378 |
-| General-JP | General · iOS · JA | 2025-12-01 | 2026-02-02 | 0 | 18% | $211 |
+| General-VN | General · Android · VN | 2025-12-08 | 2025-12-15 | 1 | 40% | $378 |
+| General-JP | General · iOS · JP | 2025-12-01 | 2026-02-02 | 0 | 18% | $211 |
 | General-TH | General · Android · TH | 2025-12-01 | 2025-12-01 | 0 | 8% | $145 |
-| General-KR | General · Android · KO | 2025-12-01 | 2025-12-08 | 0 | 13% | $75 |
+| General-KR | General · Android · KR | 2025-12-01 | 2025-12-08 | 0 | 13% | $75 |
 | General-EN | General · Android · EN | 2025-12-01 | 2025-12-01 | 0 | 3% | $3 |
 | General-ID | General · Android · ID | nan | 2025-12-01 | 0 | 0% | $0 |
 

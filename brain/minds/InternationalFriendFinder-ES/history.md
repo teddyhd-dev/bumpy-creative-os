@@ -1,8 +1,8 @@
 ---
 contract: history/1
-mind: IntlFriendFinder-ES
+mind: InternationalFriendFinder-ES
 ---
-# IntlFriendFinder · ES — history
+# InternationalFriendFinder · ES — history
 
 Every observation and change of belief, oldest first. Never edited or deleted.
 

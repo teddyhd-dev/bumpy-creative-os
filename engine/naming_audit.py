@@ -20,7 +20,8 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from adload import load_ads  # noqa: E402
-from adparse import parse_ad  # noqa: E402
+from adparse import parse_ad, PMAP  # noqa: E402
+from codes import apply_code_aliases  # noqa: E402
 from build import JUDGED_OBJECTIVES  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
@@ -116,34 +117,76 @@ def main():
         add("info", "copy or file suffix", f"{len(cp)} ad names carry '- Copy' or a file extension (.mp4, .png)",
             "Name ads without '- Copy' / '.mp4' (the engine strips them, so this is cosmetic)", spend=round(cp.spend.sum(), 2))
 
-    # codes: case collisions, typos, and one code used for different concepts
+    # codes: confirmed fixes first (core/code_aliases.csv), then the concept registry (core/concepts.csv)
     cc = ad[ad.concept != ""].copy()
-    cc["low"] = cc.concept.str.lower()
+    cc["cn"] = cc.conceptname.fillna("").str.lower()
+    allal = pd.read_csv(os.path.join(ROOT, "core", "code_aliases.csv"), dtype=str).fillna("")
+    cc["fixed"] = apply_code_aliases(cc.concept, cc.cn)
+    for r in allal.itertuples():
+        hit = cc[(cc.concept == r.alias) & ((r.conceptname == "") | (cc.cn == r.conceptname.lower()))]
+        if not len(hit):
+            continue
+        if r.status.lower() == "confirmed":
+            add("warn", "known code fix (merged by the engine)", f"{r.alias}{' + ' + r.conceptname if r.conceptname else ''} → {r.code}: "
+                f"{len(hit)} ads (${hit.spend.sum():,.0f}). {r.note}", f"Write {r.code} in new names",
+                code=f"{r.alias} → {r.code}", conceptname=r.conceptname, spend=round(hit.spend.sum(), 2))
+        else:
+            add("warn", "proposed code fix waiting", f"{r.alias} → {r.code}: {len(hit)} ads (${hit.spend.sum():,.0f}). {r.note}",
+                "Confirm it in core/code_aliases.csv (status: confirmed) or delete the row", code=f"{r.alias} → {r.code}",
+                spend=round(hit.spend.sum(), 2))
+    cc["low"] = cc.fixed.str.lower()
     for low, g in cc.groupby("low"):
-        spell = g.groupby("concept").spend.sum().sort_values(ascending=False)
-        names = sorted(set(g.conceptname.str.lower()) - {""})
+        spell = g.groupby("fixed").spend.sum().sort_values(ascending=False)
         if len(spell) > 1:
+            names = sorted(set(g.cn) - {""})
             add("error", "code case collision", f"{' / '.join(spell.index)} differ only by letter case "
                 f"(concepts: {', '.join(names)}; {', '.join(f'{k} ${v:,.0f}' for k, v in spell.items())})",
-                "Same concept → use one spelling; different concepts → give one a new code",
+                "Same concept → add a row to core/code_aliases.csv; different concepts → give one a new code",
                 code=" / ".join(spell.index), conceptname=", ".join(names), spend=round(g.spend.sum(), 2))
-        for code, h in g.groupby("concept"):
-            nm = h.groupby(h.conceptname.str.lower()).spend.sum().sort_values(ascending=False)
-            nm = nm[nm.index != ""]
-            if len(nm) > 1:
-                stem = lambda x: re.sub(r"\d+$", "", x)
-                main = stem(nm.index[0])
-                family = all(stem(k).startswith(main) or main.startswith(stem(k)) for k in nm.index)
-                if family:
-                    add("warn", "concept name written several ways", f"code {code}: {', '.join(f'{k} (${v:,.0f})' for k, v in nm.items())}",
-                        "Keep one generic concept name; put the variant detail in the hook field",
-                        code=code, conceptname=", ".join(nm.index), spend=round(h.spend.sum(), 2))
-                else:
-                    add("error", "one code, several concepts", f"code {code} is used for {', '.join(f'{k} (${v:,.0f})' for k, v in list(nm.items())[:6])}"
-                        + (f" and {len(nm) - 6} more" if len(nm) > 6 else ""),
-                        "One code per concept: keep the code for the main one, new codes for the others",
-                        code=code, conceptname=", ".join(nm.index[:6]), spend=round(h.spend.sum(), 2))
-    # likely typos: two codes, same concept name, one character apart (the concept gets split in two)
+
+    # the concept registry: one name per code; new codes are added from the ad names
+    regp = os.path.join(ROOT, "core", "concepts.csv")
+    reg = pd.read_csv(regp, dtype=str).fillna("") if os.path.exists(regp) else pd.DataFrame(columns=["code", "name", "status", "first_seen", "note"])
+    # a persona spelling seen in field 1 of some ad name, or a canonical persona (exact, lowercased)
+    persona_words = {str(x).lower() for x in ad.ad_persona_raw.dropna() if str(x)} | {x.lower() for x in canon}
+    is_persona = lambda x: bool(x) and x in persona_words
+    new = []
+    for code, g in cc.groupby("fixed"):
+        if code in set(reg.code):
+            continue
+        nm = g[~g.cn.map(is_persona) & (g.cn != "")].groupby("cn").spend.sum().sort_values(ascending=False)
+        nm = nm if len(nm) else g[g.cn != ""].groupby("cn").spend.sum().sort_values(ascending=False)
+        new.append(dict(code=code, name=nm.index[0] if len(nm) else "", status="from ad names", first_seen=g["first"].min(), note=""))
+    if new:
+        reg = pd.concat([reg, pd.DataFrame(new)], ignore_index=True)
+    reg.sort_values(["status", "code"], key=lambda s: s.map({"confirmed": "0"}).fillna(s) if s.name == "status" else s.str.lower()) \
+       .to_csv(regp, index=False)
+    rname, rstat = dict(zip(reg.code, reg.name)), dict(zip(reg.code, reg.status))
+    stem = lambda x: re.sub(r"\d+$", "", x)
+    for code, g in cc.groupby("fixed"):
+        want = rname.get(code, "")
+        nm = g[(g.cn != "") & (g.cn != want)].groupby("cn").spend.sum().sort_values(ascending=False)
+        if not len(nm) or not want:
+            continue
+        kinds = {"persona": [], "family": [], "other": []}
+        for k, v in nm.items():
+            kinds["persona" if is_persona(k) else "family" if (stem(k).startswith(stem(want)) or stem(want).startswith(stem(k))) else "other"].append((k, v))
+        lst = lambda xs: ", ".join(f"{k} (${v:,.0f})" for k, v in xs[:6]) + (f" and {len(xs) - 6} more" if len(xs) > 6 else "")
+        if kinds["persona"]:
+            add("info", "persona written in the concept-name field", f"code {code} ({want}): {lst(kinds['persona'])} — older names put the persona there",
+                "v5 order: persona first, concept name in field 4", code=code, conceptname=want, spend=round(sum(v for _, v in kinds["persona"]), 2))
+        if kinds["family"]:
+            add("warn", "concept name written several ways", f"code {code} ({want}): {lst(kinds['family'])}",
+                f"Write '{want}'; put the variant detail in the hook field", code=code, conceptname=want, spend=round(sum(v for _, v in kinds["family"]), 2))
+        if kinds["other"]:
+            conf = rstat.get(code) == "confirmed"
+            add("warn" if conf else "error", "concept name differs from the registry" if conf else "one code, several concepts",
+                f"code {code} is '{want}' in core/concepts.csv, but ads also call it {lst(kinds['other'])}",
+                f"Write '{want}' in field 4 and put the scene in the hook field" if conf else
+                "Same concept: confirm its name in core/concepts.csv. Different concept: give it a new code (core/code_aliases.csv with a concept name fixes the past)",
+                code=code, conceptname=want, spend=round(sum(v for _, v in kinds["other"]), 2))
+
+    # likely typos left: two codes, same concept name, one character apart (the concept gets split in two)
     def near(a, b):
         if a == b or abs(len(a) - len(b)) > 1:
             return False
@@ -151,17 +194,16 @@ def main():
             return sum(x != y for x, y in zip(a, b)) == 1
         lo, hi = (a, b) if len(a) < len(b) else (b, a)
         return any(hi[:i] + hi[i + 1:] == lo for i in range(len(hi)))
-    byname = cc.groupby([cc.conceptname.str.lower(), "concept"]).spend.sum().reset_index()
-    done = set()
-    for nmx, g in byname[byname.conceptname != ""].groupby("conceptname"):
-        codes = g.sort_values("spend", ascending=False).concept.tolist()
+    known = set(zip(allal.alias, allal.code)) | set(zip(allal.code, allal.alias))
+    byname = cc.groupby([cc.cn, "fixed"]).spend.sum().reset_index()
+    for nmx, g in byname[byname.cn != ""].groupby("cn"):
+        codes = g.sort_values("spend", ascending=False).fixed.tolist()
         for i, a in enumerate(codes):
             for b in codes[i + 1:]:
-                if near(a, b) and (a, b) not in done:
-                    done.add((a, b))
-                    sa, sb = g.set_index("concept").spend[a], g.set_index("concept").spend[b]
+                if near(a, b) and (a, b) not in known:
+                    sa, sb = g.set_index("fixed").spend[a], g.set_index("fixed").spend[b]
                     add("error", "likely typo of another code", f"{b} (${sb:,.0f}) looks like a typo of {a} (${sa:,.0f}), both '{nmx}': "
-                        "the data treats them as two concepts", f"Use {a} in new names; the engine should map {b} → {a} once confirmed",
+                        "the data treats them as two concepts", f"Add {b} → {a} to core/code_aliases.csv once confirmed",
                         code=f"{a} / {b}", conceptname=nmx, spend=round(sa + sb, 2))
 
     # ad vs its adset: persona and language
@@ -176,9 +218,9 @@ def main():
         if g.spend.sum() < 50:
             continue
         top = g.sort_values("spend").iloc[-1]
-        add("error", "persona mismatch", f"{len(g)} ad{'s' if len(g) > 1 else ''} named for {ap} ran in a {top.adset_persona} adset "
+        add("warn", "persona mismatch", f"{len(g)} ad{'s' if len(g) > 1 else ''} named for {ap} ran in a {top.adset_persona} adset "
             f"(codes {', '.join(sorted(set(g.concept) - {''}))[:60]})",
-            "A concept moved to another persona keeps working, but name the copies for the adset's persona so results credit the right audience",
+            "Moving a concept to another persona is fine (move: proven-elsewhere); duplicate the file named for the adset's persona, same concept code",
             ad_name=top.ad_clean, code=top.concept, conceptname=top.conceptname, spend=round(g.spend.sum(), 2), first_week=g["first"].min(),
             last_week=g["last"].max(), adset=top.adset, adset_id=aid, ad_persona=ap, adset_persona=top.adset_persona)
     pa["al"], pa["sl"] = pa.lang.map(norm_lang), pa.adset_lang.map(norm_lang)

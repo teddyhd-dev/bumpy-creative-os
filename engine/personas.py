@@ -20,7 +20,7 @@ ROOT = os.path.dirname(HERE)
 BY_NAME = [  # (pattern in the card name, canonical persona)
     (r"turned to asian man", "AsianMaleLover"), (r"passport bro", "PassportBro"), (r"passport girl|relocate\)", "GirlWantsToRelocate"),
     (r"indian young", "EgoBoostForIndianBoy"), (r"muslim", "MuslimMatchWorldwide"), (r"single mom", "SingleMom"),
-    (r"friend", "IntlFriendFinder"), (r"latina", "LatinaFemaleLover"), (r"lgbt", "LGBTQ"), (r"gringo", "GringoMaleLover"),
+    (r"friend", "InternationalFriendFinder"), (r"latina", "LatinaFemaleLover"), (r"lgbt", "LGBTQ"), (r"gringo", "GringoMaleLover"),
     (r"christian", "ChristianMatchWorldwide"), (r"asian dating", "AsianFemaleLover"), (r"40\+|second chance|304050|30\+ yolo", "MatureDating"),
     (r"interacial|interracial|black people", "InterracialDatingSeekers"),
 ]

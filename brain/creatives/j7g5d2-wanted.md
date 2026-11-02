@@ -18,13 +18,13 @@ decoded: false
 
 <!-- generated:start facts -->
 ## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 25 of 40 adsets it ran in · $123.0k spent as #1 · $206.7k in total.
+#1 in 25 of 40 adsets it ran in · $122.6k spent as #1 · $206.7k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-01-05 | 2026-04-06 | 12 | 55% | $16.8k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2025-12-08 | 2026-02-09 | 10 | 100% | $33.3k |
-| General-JP | General · iOS · JA | 2025-12-08 | 2026-02-02 | 7 | 71% | $7.4k |
+| General-JP | General · iOS · JP | 2025-12-08 | 2026-02-02 | 7 | 71% | $7.4k |
 | General-ID | General · iOS · ID | 2025-12-08 | 2026-02-02 | 7 | 68% | $5.0k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2025-12-08 | 2026-04-13 | 6 | 100% | $18.3k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-03-30 | 2026-10-05 | 6 | 61% | $14.1k |
@@ -36,12 +36,12 @@ decoded: false
 | General-ID | General · Android · ID | 2026-01-05 | 2026-02-02 | 3 | 37% | $181 |
 | General-ES | General · Android · ES · Serious | 2025-12-08 | 2026-04-20 | 2 | 28% | $10.3k |
 | General-PT | General · Android · PT | 2025-12-08 | 2026-02-16 | 2 | 65% | $5.5k |
-| General-ES | General · iOS · ES | 2026-03-16 | 2026-05-25 | 2 | 27% | $2.1k |
 | General-EN | General · iOS · EN | 2025-12-22 | 2026-01-12 | 2 | 66% | $1.9k |
 | General-ES | General · iOS · ES | 2026-03-16 | 2026-06-15 | 2 | 64% | $1.2k |
 | General-ES | General · iOS · ES | 2026-03-16 | 2026-04-20 | 2 | 40% | $473 |
 | General-PT | General · iOS · PT | 2025-12-08 | 2026-01-26 | 1 | 33% | $13.9k |
 | General-EN | General · Android · EN | 2025-12-08 | 2026-02-02 | 1 | 28% | $3.4k |
+| General-ES | General · iOS · ES | 2026-03-16 | 2026-05-25 | 1 | 27% | $2.1k |
 
 ### Variants (full ad names, 60 in total, top 10 by spend)
 - `general-ES-j7G5d2-wanted-usmale-IMG-Batch2025Week48` · $22.3k · 8 adsets

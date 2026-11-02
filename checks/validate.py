@@ -128,6 +128,8 @@ def main():
                    "(add a 'correction' entry instead)")
 
     # creatives
+    cpath = os.path.join(ROOT, "core", "concepts.csv")
+    concepts = {r["code"]: r["name"] for r in csv.DictReader(open(cpath))} if os.path.exists(cpath) else {}
     seen, exact = {}, {}
     for p in sorted(glob.glob(os.path.join(ROOT, "brain", "creatives", "*.md"))):
         fm, body = front(p)
@@ -137,7 +139,9 @@ def main():
         slug = re.sub(r"[^a-z0-9]+", "-", str((fm or {}).get("name", "")).lower()).strip("-") or "untitled"
         if os.path.basename(p) != f"{code.lower()}-{slug}.md":
             err(p, f"file name should be {code.lower()}-{slug}.md")
-        for k in [code] + [str(a) for a in (fm or {}).get("aliases") or []]:
+        if concepts.get(code) and str((fm or {}).get("name", "")) != concepts[code]:
+            err(p, f"name '{(fm or {}).get('name')}' differs from core/concepts.csv ('{concepts[code]}')")
+        for k in [code]:
             if k in exact:
                 err(p, f"code '{k}' is also in {exact[k]}")
             exact[k] = os.path.basename(p)

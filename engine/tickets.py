@@ -36,6 +36,7 @@ import creative_relay as cr  # noqa: E402
 from adload import load_ads  # noqa: E402
 from adparse import parse_ad  # noqa: E402
 from settings import TICKET_WEIGHTS as W, ATBAT, bar  # noqa: E402
+from codes import concept_keys  # noqa: E402
 
 OUT = os.path.join(os.path.dirname(HERE), "output", "data")
 ROOT = os.path.dirname(HERE)
@@ -65,9 +66,9 @@ def variant_weeks():
     """adset × concept × week → distinct ads (variants) with spend."""
     d = load_ads()
     d = d[d.spend > 0]
-    P = pd.DataFrame([dict(ad_name=n, **parse_ad(n)) for n in d.ad_name.unique()])[["ad_name", "concept", "ad_clean"]]
+    P = pd.DataFrame([dict(ad_name=n, **parse_ad(n)) for n in d.ad_name.unique()])[["ad_name", "concept", "conceptname", "ad_clean"]]
     d = d.merge(P, on="ad_name", how="left")
-    d["concept_key"] = np.where(d.concept != "", d.concept, "name:" + d.ad_clean)
+    d["concept_key"] = concept_keys(d)
     mid = d.start + (d.end - d.start) / 2
     d["week"] = (mid - pd.to_timedelta(mid.dt.weekday, unit="D")).dt.strftime("%Y-%m-%d")
     return d.groupby(["adset_id", "concept_key", "week"]).ad_clean.apply(set)

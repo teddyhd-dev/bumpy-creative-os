@@ -22,16 +22,16 @@ decoded: false
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| IntlFriendFinder-EN | IntlFriendFinder · Android · EN · Friend | 2026-08-10 | 2026-10-05 | 8 | 80% | $23.6k |
-| IntlFriendFinder-ES | IntlFriendFinder · Android · ES · Friend | 2026-08-10 | 2026-10-05 | 8 | 74% | $14.7k |
-| IntlFriendFinder-ES | IntlFriendFinder · iOS · ES · Friend | 2026-08-10 | 2026-10-05 | 8 | 85% | $11.4k |
-| IntlFriendFinder-PT | IntlFriendFinder · iOS · PT · Friend | 2026-08-10 | 2026-10-05 | 5 | 68% | $5.1k |
-| IntlFriendFinder-PT | IntlFriendFinder · Android · PT · Friend | 2026-08-10 | 2026-09-07 | 3 | 86% | $730 |
-| IntlFriendFinder-CH | IntlFriendFinder · iOS · CH · Friend | 2026-08-10 | 2026-10-05 | 1 | 31% | $2.7k |
-| IntlFriendFinder-EN | IntlFriendFinder · iOS · EN · Friend | 2026-08-10 | 2026-10-05 | 0 | 35% | $7.4k |
-| IntlFriendFinder-TH | IntlFriendFinder · iOS · TH · Friend | 2026-08-10 | 2026-10-05 | 0 | 27% | $805 |
-| IntlFriendFinder-FR | IntlFriendFinder · iOS · FR · Friend | 2026-08-10 | 2026-09-14 | 0 | 31% | $745 |
-| IntlFriendFinder-CH | IntlFriendFinder · Web · CH | 2026-08-17 | 2026-09-14 | 0 | 16% | $36 |
+| InternationalFriendFinder-EN | InternationalFriendFinder · Android · EN · Friend | 2026-08-10 | 2026-10-05 | 8 | 80% | $23.6k |
+| InternationalFriendFinder-ES | InternationalFriendFinder · Android · ES · Friend | 2026-08-10 | 2026-10-05 | 8 | 74% | $14.7k |
+| InternationalFriendFinder-ES | InternationalFriendFinder · iOS · ES · Friend | 2026-08-10 | 2026-10-05 | 8 | 85% | $11.4k |
+| InternationalFriendFinder-PT | InternationalFriendFinder · iOS · PT · Friend | 2026-08-10 | 2026-10-05 | 5 | 68% | $5.1k |
+| InternationalFriendFinder-PT | InternationalFriendFinder · Android · PT · Friend | 2026-08-10 | 2026-09-07 | 3 | 86% | $730 |
+| InternationalFriendFinder-CH | InternationalFriendFinder · iOS · CH · Friend | 2026-08-10 | 2026-10-05 | 1 | 31% | $2.7k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-08-10 | 2026-10-05 | 0 | 35% | $7.4k |
+| InternationalFriendFinder-TH | InternationalFriendFinder · iOS · TH · Friend | 2026-08-10 | 2026-10-05 | 0 | 27% | $805 |
+| InternationalFriendFinder-FR | InternationalFriendFinder · iOS · FR · Friend | 2026-08-10 | 2026-09-14 | 0 | 31% | $745 |
+| InternationalFriendFinder-CH | InternationalFriendFinder · Web · CH | 2026-08-17 | 2026-09-14 | 0 | 16% | $36 |
 
 ### Variants (full ad names, 58 in total, top 10 by spend)
 - `Friends-ES-q4Xr9m-TweetOverlay-Collageof4-siquieresamigosbumpy-recommendation-ProductAware-IMG-Batch2026Week31` · $15.3k · 2 adsets

@@ -36,12 +36,12 @@ decoded: false
 | MatureDating-EN | MatureDating · iOS · EN · 50to60 | 2026-06-22 | 2026-09-07 | 0 | 30% | $3.9k |
 | MatureDating-EN | MatureDating · Android · EN · 50to60 | 2026-06-29 | 2026-09-21 | 0 | 23% | $2.1k |
 | LatinoMaleLover-PT | LatinoMaleLover · Android · PT · Casual | 2026-07-13 | 2026-08-31 | 0 | 30% | $892 |
-| IntlFriendFinder-ES | IntlFriendFinder · iOS · ES · Friend | 2026-06-15 | 2026-10-05 | 0 | 4% | $704 |
+| InternationalFriendFinder-ES | InternationalFriendFinder · iOS · ES · Friend | 2026-06-15 | 2026-10-05 | 0 | 4% | $704 |
 | LatinoMaleLover-EN | LatinoMaleLover · Android · EN · Casual | 2026-07-20 | 2026-08-24 | 0 | 24% | $680 |
 | GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-06-15 | 2026-10-05 | 0 | 6% | $563 |
-| IntlFriendFinder-CH | IntlFriendFinder · iOS · CH · Friend | 2026-06-15 | 2026-06-29 | 0 | 29% | $541 |
+| InternationalFriendFinder-CH | InternationalFriendFinder · iOS · CH · Friend | 2026-06-15 | 2026-06-29 | 0 | 29% | $541 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-06-15 | 2026-07-20 | 0 | 6% | $486 |
-| IntlFriendFinder-PT | IntlFriendFinder · Android · PT · Friend | 2026-06-15 | 2026-08-24 | 0 | 13% | $423 |
+| InternationalFriendFinder-PT | InternationalFriendFinder · Android · PT · Friend | 2026-06-15 | 2026-08-24 | 0 | 13% | $423 |
 
 ### Variants (full ad names, 41 in total, top 10 by spend)
 - `Gringolover-PH-i48opT-fastcarouselartsy-BusinessClass-POVDatingAnAFAMOnBumpy-dateabroad-princesstreatment-VID-Batch2026Week23` · $3.9k · 2 adsets

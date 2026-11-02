@@ -38,26 +38,25 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · PT | 🟠 Amber | $1.1k | 0.34 | n62Wt banner (since 2026-07-13, 13 wk) |
+| LatinaFemaleLover · iOS · PT | 🟠 Amber | $1.1k | 0.34 | n6f2Wt banner (since 2026-07-13, 13 wk) |
 
 **Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.34, under 0.40, not falling)
 
 ### #1 history (latest first)
-- 2026-08-10 · LatinaFemaleLover · Web · PT · n62Wt banner · 6 wk at 100% of spend  
+- 2026-08-10 · LatinaFemaleLover · Web · PT · n6f2Wt banner · 6 wk at 100% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-VenezuelanaFenceBridge-quernamoradavenezuelana-recommendation-ProductAware-VID-Batch2026Week27`
-- 2026-07-13 · LatinaFemaleLover · iOS · PT · n62Wt banner · 13 wk at 83% of spend  
+- 2026-07-13 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 13 wk at 84% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
-- 2026-07-13 · LatinaFemaleLover · Android · PT · Casual · n62Wt banner · 4 wk at 96% of spend  
+- 2026-07-13 · LatinaFemaleLover · Android · PT · Casual · n6f2Wt banner · 4 wk at 96% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
 
 ### Fatigue clock
-A #1 here has led a median 5 weeks (2 finished reigns). Longest: n62Wt banner, 13 weeks from 2026-07-13.
+A #1 here has led a median 5 weeks (2 finished reigns). Longest: n6f2Wt banner, 13 weeks from 2026-07-13.
 
 ### Refreshes read from the exports
-2 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
+1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-28 | LatinaFemaleLover · iOS · PT | n6f2Wt | 4 | 2% | Strike (provisional) |
 | 2026-09-21 | LatinaFemaleLover · iOS · PT | C0kM3N | 1 | 3% | Strike (provisional) |
 
 ### Experiments logged

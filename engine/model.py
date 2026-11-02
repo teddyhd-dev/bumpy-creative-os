@@ -23,6 +23,7 @@ from adload import load_ads  # noqa: E402
 from adparse import parse_ad  # noqa: E402
 from apple import load_apple  # noqa: E402
 from files import raw_files, supersede  # noqa: E402
+from codes import concept_keys  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
 RAW = os.path.join(ROOT, "data", "raw")
@@ -129,7 +130,7 @@ def build_model():
     d = load_ads()
     Pa = pd.DataFrame([dict(ad_name=n, **parse_ad(n)) for n in d["ad_name"].unique()])
     d = d.merge(Pa, on="ad_name", how="left")
-    d["concept_key"] = np.where(d["concept"] != "", d["concept"], "name:" + d["ad_clean"])
+    d["concept_key"] = concept_keys(d)
     ad_dim = d.sort_values("start").groupby("ad_id")[[
         "ad_name", "ad_clean", "ad_version", "ad_persona", "lang", "concept_key", "conceptname", "hook", "headline", "angle",
         "awareness", "fmt", "strategist", "designer", "batch"]].last()

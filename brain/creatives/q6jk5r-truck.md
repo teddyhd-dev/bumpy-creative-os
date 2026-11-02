@@ -22,18 +22,18 @@ decoded: false
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| General-JP | General · iOS · JA | 2025-12-01 | 2026-02-02 | 2 | 34% | $1.2k |
+| General-JP | General · iOS · JP | 2025-12-01 | 2026-02-02 | 2 | 34% | $1.2k |
 | General-TH | General · Android · TH | 2025-12-01 | 2026-01-05 | 1 | 42% | $1.1k |
-| General-JP | General · Android · JA | 2025-12-01 | 2025-12-01 | 1 | 27% | $22 |
+| General-JP | General · Android · JP | 2025-12-01 | 2025-12-01 | 1 | 27% | $22 |
 | General-NO | General · iOS · NO | nan | 2025-12-01 | 1 | – | $0 |
 | General-TH | General · iOS · TH | 2025-12-01 | 2026-02-09 | 0 | 10% | $1.2k |
-| General-KR | General · iOS · KO | 2025-12-01 | 2026-02-02 | 0 | 21% | $599 |
+| General-KR | General · iOS · KR | 2025-12-01 | 2026-02-02 | 0 | 21% | $599 |
 | General-ID | General · iOS · ID | 2025-12-01 | 2026-02-02 | 0 | 13% | $361 |
 | General-NL | General · Android · NL | 2025-12-01 | 2025-12-01 | 0 | 28% | $139 |
-| General-KR | General · Android · KO | 2025-12-01 | 2025-12-01 | 0 | 21% | $123 |
+| General-KR | General · Android · KR | 2025-12-01 | 2025-12-01 | 0 | 21% | $123 |
 | General-ID | General · Android · ID | 2025-12-01 | 2025-12-08 | 0 | 3% | $54 |
 | General-EN | General · Android · EN | 2025-12-01 | 2025-12-01 | 0 | 10% | $9 |
-| General-VN | General · Android · VI | 2025-12-01 | 2025-12-22 | 0 | 15% | $8 |
+| General-VN | General · Android · VN | 2025-12-01 | 2025-12-22 | 0 | 15% | $8 |
 | General-NO | General · Android · NO | 2025-12-01 | 2025-12-01 | 0 | 7% | $7 |
 
 ### Variants (full ad names, 34 in total, top 10 by spend)

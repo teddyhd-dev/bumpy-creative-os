@@ -18,6 +18,7 @@ sys.path.insert(0, HERE)
 from build import parse_name, JUDGED_OBJECTIVES  # noqa: E402
 from adload import load_ads  # noqa: E402
 from adparse import parse_ad  # noqa: E402
+from codes import code_aliases, apply_code_aliases, concept_keys, concept_names  # noqa: E402,F401
 
 OUT = os.path.join(os.path.dirname(HERE), "output", "data")
 ADD = ["spend", "rev", "impressions", "installs", "clicks", "purchases", "hook_x_imp"]
@@ -32,14 +33,7 @@ def _weekly_rows():
     A = pd.DataFrame([dict(adset_name=n, **parse_name(n)) for n in d["adset_name"].unique()])
     A = A.rename(columns={c: "as_" + c for c in A.columns if c != "adset_name"})
     d = d.merge(A, on="adset_name", how="left")
-    d["concept_key"] = np.where(d["concept"] != "", d["concept"], "name:" + d["ad_clean"])
-    # confirmed code fixes (typos, letter case) from core/code_aliases.csv: one concept, one key
-    al = os.path.join(os.path.dirname(HERE), "core", "code_aliases.csv")
-    if os.path.exists(al):
-        A_ = pd.read_csv(al)
-        A_ = A_[A_.status.astype(str).str.lower() == "confirmed"]
-        if len(A_):
-            d["concept_key"] = d["concept_key"].replace(dict(zip(A_.alias, A_.code)))
+    d["concept_key"] = concept_keys(d)
     d = d[d["as_objective"].isin(JUDGED_OBJECTIVES)]
     # prorate each export bucket evenly over its days, then sum into Mon-Sun weeks
     d = d.copy()
@@ -73,6 +67,8 @@ def load():
     hooks = d.groupby(["concept_key", "hook"])["spend"].sum().reset_index().sort_values("spend", ascending=False) \
         .drop_duplicates("concept_key").set_index("concept_key")["hook"]
     attrs["top_hook"] = attrs["concept_key"].map(hooks).fillna("")
+    reg = concept_names()
+    attrs["cname"] = [reg.get(k) or n for k, n in zip(attrs.concept_key, attrs.cname)]
     meta = d.drop_duplicates("adset_id").set_index("adset_id")[["as_persona", "as_lang", "as_os"]]
     return c, attrs, meta, last_day
 

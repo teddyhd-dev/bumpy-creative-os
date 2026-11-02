@@ -20,6 +20,7 @@ from adload import load_ads  # noqa: E402
 from adparse import parse_ad  # noqa: E402
 from apple import load_apple  # noqa: E402
 from settings import SWITCH  # noqa: E402
+from codes import concept_keys  # noqa: E402
 
 OUT = os.path.join(os.path.dirname(HERE), "output", "data")
 PRE_END = "2026-02-22"      # last week (Mon) before the break window
@@ -114,7 +115,7 @@ def main():
     d = d.merge(A2, on="adset_name", how="left")
     d = d[d["as_objective"].isin(JUDGED_OBJECTIVES) & (d["spend"] > 0)].copy()
     d["month"] = d["start"].dt.strftime("%Y-%m")
-    d["concept_key"] = np.where(d["concept"] != "", d["concept"], "name:" + d["ad_clean"])
+    d["concept_key"] = concept_keys(d)
     first_m = d.groupby("concept_key")["start"].transform("min").dt.strftime("%Y-%m")
 
     def cohort(m):

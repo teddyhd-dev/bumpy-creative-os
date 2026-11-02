@@ -34,7 +34,7 @@ decoded: false
 | PassportBro-EN | PassportBro · Android · EN | 2025-12-01 | 2025-12-22 | 0 | 18% | $955 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-09-21 | 0 | 3% | $643 |
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-01-05 | 2026-03-09 | 0 | 4% | $567 |
-| General-JP | General · iOS · JA | 2025-12-01 | 2025-12-29 | 0 | 6% | $339 |
+| General-JP | General · iOS · JP | 2025-12-01 | 2025-12-29 | 0 | 6% | $339 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-01-19 | 2026-02-09 | 0 | 4% | $331 |
 | General-ID | General · iOS · ID | 2025-12-01 | 2026-02-02 | 0 | 10% | $264 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN | 2026-01-05 | 2026-02-02 | 0 | 5% | $232 |

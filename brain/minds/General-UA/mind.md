@@ -34,32 +34,32 @@ updated: '2026-11-02'
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · UA · Serious | 🟠 Amber | $693 | 0.37 | L2vM8Q manyhugs2 (since 2026-07-27, 11 wk) |
+| General · iOS · UA · Serious | 🟠 Amber | $693 | 0.37 | L2vM8Q manyhugs (since 2026-07-27, 11 wk) |
 
 **Open tickets:** T-465557 Decaying (iOS · UA · Serious: ROAS 0.37, under 0.40, not falling)
 
 ### #1 history (latest first)
-- 2026-08-17 · General · Web · UA · L2vM8Q manyhugs2 · 5 wk at 76% of spend  
+- 2026-08-17 · General · Web · UA · L2vM8Q manyhugs · 5 wk at 76% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-intentionally-VID-Batch2025Week50`
-- 2026-07-27 · General · iOS · UA · Serious · L2vM8Q manyhugs2 · 11 wk at 63% of spend  
+- 2026-07-27 · General · iOS · UA · Serious · L2vM8Q manyhugs · 11 wk at 63% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50`
 - 2026-07-13 · General · iOS · UA · Serious · i7P5Th banner · 2 wk at 48% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-Ashpalt-Female-VID-Batch2025Week50`
-- 2026-07-13 · General · Android · UA · L2vM8Q manyhugs2 · 5 wk at 51% of spend  
+- 2026-07-13 · General · Android · UA · L2vM8Q manyhugs · 5 wk at 51% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-intentionally-VID-Batch2025Week50`
 - 2026-07-06 · General · Android · UA · i7P5Th banner · 1 wk at 44% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-Ashpalt-Female-VID-Batch2025Week50`
-- 2026-06-29 · General · Android · UA · L2vM8Q manyhugs2 · 1 wk at 47% of spend  
+- 2026-06-29 · General · Android · UA · L2vM8Q manyhugs · 1 wk at 47% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50`
 - 2026-04-06 · General · Android · UA · i7P5Th banner · 3 wk at 64% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-ThornFemale-VID-Batch2025Week50`
-- 2026-01-05 · General · Android · UK · i7P5Th banner · 13 wk at 77% of spend  
+- 2026-01-05 · General · Android · UA · i7P5Th banner · 13 wk at 77% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-StreetMale-VID-Batch2025Week50`
-- 2025-12-29 · General · Android · UK · L2vM8Q manyhugs2 · 1 wk at 47% of spend  
+- 2025-12-29 · General · Android · UA · L2vM8Q manyhugs · 1 wk at 47% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-intentionally-VID-Batch2025Week50`
-- 2025-12-29 · General · iOS · UA · Serious · L2vM8Q manyhugs2 · 9 wk at 64% of spend  
+- 2025-12-29 · General · iOS · UA · Serious · L2vM8Q manyhugs · 9 wk at 64% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-intentionally-VID-Batch2025Week50`
-- 2025-12-22 · General · Android · UK · i7P5Th banner · 1 wk at 59% of spend  
+- 2025-12-22 · General · Android · UA · i7P5Th banner · 1 wk at 59% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-ThornMale-VID-Batch2025Week50`
 - 2025-12-22 · General · iOS · UA · Serious · i7P5Th banner · 1 wk at 45% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-ThornFemale-VID-Batch2025Week50`

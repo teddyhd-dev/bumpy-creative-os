@@ -52,9 +52,41 @@ The roster lives in `core/team.csv` (one place for every tool). New team member 
 
 ---
 
+## Persona: write this, not that
+
+Ad names before v5 used many spellings. From now on field 1 is always the canonical persona:
+
+| Write | Not |
+|---|---|
+| `InternationalFriendFinder` | Friends, InternationalFriends, IntlFriendFinder |
+| `GringoMaleLover` | GringoLover, Gringolover |
+| `AsianFemaleLover` | Chinese, AsianLover, AsianDating |
+| `LatinaFemaleLover` | LatinaLover, LatinaFemaleLoverES |
+| `SlavicFemaleLover` | SlavicLover, Slavic |
+| `MatureDating` | 304050, 3040, 5060 |
+| `LocalDatingFatigue` | AngryWithLocalDating, ChurnLocal |
+| `EgoBoostForIndianBoy` | IndianBoyDream |
+| `InterracialDatingSeekers` | BlackAfrican, BLK |
+| `GirlWantsToRelocate` | PassportGirl |
+| `KoreanMaleCultureLover` | Koreaboo |
+| `MuslimMatchWorldwide` | muslim, Muslim, MuslimMatch |
+| `ChristianMatchWorldwide` | Christian |
+| `NewLanguageLearner` | LearnLanguage |
+| `LGBTQ` | LGBT |
+| `LatinoMaleLover` | LatinoLover |
+| `ChatOnly` | ChatPersona |
+
+**Same creative in another persona's adset** (e.g. a LocalDatingFatigue concept moved into PassportBro):
+duplicate the file and name the copy for the adset's persona, keeping the same concept code. The concept's
+results then stay together, and each audience gets its own credit.
+
+---
+
 ## Concept Code Rule
 
 A concept = hook + video structure. New hook (different first 2 seconds) = new concept code, even if every other scene is reused footage. Never reuse a code across different concepts.
+
+Every code and its concept name are listed in `core/concepts.csv` (the engine adds new codes from the ad names every Monday; the creative lead confirms them). Check it before picking a new code: it must be unique ignoring letter case. Known typos of old codes are in `core/code_aliases.csv`.
 
 Sub-hook-types that open the same way (e.g. Big Ticket and Fence Banner) may share one code. Confirm with whoever owns Meta reporting first.
 

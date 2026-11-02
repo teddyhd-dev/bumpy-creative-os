@@ -7,7 +7,7 @@ file short: it points to where things are. Read only what your task needs.
 ## Where things are
 | Folder | What | Who writes |
 |---|---|---|
-| `core/` | The foundation every tool reads: `spec.md` (rules, the 0.40 bar, verdicts), `naming-adset-v8.md`, `naming-ad-v5.md`, `team.csv`, `minds.csv` (registry of minds), `decisions.md` | the creative lead (changes reviewed) |
+| `core/` | The foundation every tool reads: `spec.md` (rules, the 0.40 bar, verdicts), `naming-adset-v8.md`, `naming-ad-v5.md`, `team.csv`, `minds.csv` (registry of minds), `concepts.csv` (every concept code and its name), `code_aliases.csv` (confirmed code fixes), `decisions.md` | the creative lead (changes reviewed); the engine adds new rows to `minds.csv` and `concepts.csv` |
 | `contracts/` | The formats tools share (mind, history, creative, experiment, state). Front matter = the rules `checks/validate.py` enforces | the creative lead (changes reviewed) |
 | `brain/minds/<Persona>-<LANG>/` | The persona clone: `mind.md` (current understanding + facts block) and `history.md` (append-only diary) | brainstormer + engine |
 | `brain/creatives/` | One file per concept: decode (first second, hook, message, why) + where it ran; snapshots in `img/` | brainstormer + engine |

@@ -25,6 +25,7 @@ ROOT = os.path.dirname(HERE)
 MODEL = os.path.join(ROOT, "data", "model")
 OUT = os.path.join(ROOT, "output", "data")
 from settings import PRE_END, SWITCH, BARS, era, bar  # noqa: E402
+from codes import concept_names  # noqa: E402
 
 PRE = ("2025-12-01", PRE_END)            # before the Singular switch (12 weeks, Meta's own attribution)
 NOW_N = 10                               # last 10 full weeks = "now" (Singular)
@@ -221,6 +222,8 @@ def main():
     tl = top[top.week == lw].set_index("adset_id")
     cname = m["ad_week"].join(pd.read_pickle(os.path.join(MODEL, "ad_dim.pkl"))[["conceptname"]], on="ad_id") \
         .groupby("concept_key").conceptname.agg(lambda s: s.mode().iat[0] if len(s.mode()) else "")
+    cname = cname.to_dict()
+    cname.update(concept_names())
     cl = cw[cw.week == lw].groupby(["adset_id", "country"]).spend.sum().reset_index()
     cl["sh"] = cl.spend / cl.groupby("adset_id").spend.transform("sum")
     us_sh = cl[cl.country == "US"].set_index("adset_id").sh

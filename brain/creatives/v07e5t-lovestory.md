@@ -18,7 +18,7 @@ decoded: false
 
 <!-- generated:start facts -->
 ## Where it ran (updated 2026-11-02; ads to 2026-10-05)
-#1 in 9 of 27 adsets it ran in · $12.6k spent as #1 · $92.1k in total.
+#1 in 8 of 27 adsets it ran in · $11.6k spent as #1 · $92.1k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -28,9 +28,9 @@ decoded: false
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-01-05 | 2026-03-09 | 3 | 84% | $3.7k |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN · Serious | 2026-07-27 | 2026-08-17 | 3 | 62% | $634 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · iOS · EN | 2026-04-27 | 2026-08-10 | 2 | 46% | $9.9k |
-| InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-11 | 2026-10-05 | 1 | 32% | $17.3k |
 | GringoMaleLover-ID | GringoMaleLover · iOS · ID | 2026-01-05 | 2026-04-20 | 1 | 70% | $1.8k |
 | GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-01-05 | 2026-02-16 | 1 | 60% | $1.1k |
+| InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-11 | 2026-10-05 | 0 | 32% | $17.3k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-09-21 | 0 | 17% | $7.7k |
 | SingleMom-EN | SingleMom · iOS · EN | 2026-02-23 | 2026-06-08 | 0 | 40% | $5.2k |
 | GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-01-05 | 2026-04-06 | 0 | 43% | $5.1k |

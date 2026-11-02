@@ -43,7 +43,7 @@ updated: '2026-11-02'
   top ad: `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-VID-Batch2026Week36`
 - 2026-06-08 · General · iOS · TR · n6f2Wt banner · 15 wk at 67% of spend  
   top ad: `AsianDating-TR-n6f2Wt-banner-Whiteboard-CinliBirSevgiliIstiyorsanBumpydeBiriyleCikmayaBasla-cuteasiangirl-asianlover-VID-Batch2026Week21`
-- 2026-03-09 · General · Android · TR · L2vM8Q manyhugs2 · 1 wk at – of spend  
+- 2026-03-09 · General · Android · TR · L2vM8Q manyhugs · 1 wk at – of spend  
   top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
 - 2026-03-02 · General · Android · TR · j7G5d2 wanted · 1 wk at 45% of spend  
   top ad: `muslim-US-j7G5d2-wanted-seamuslimfemale-VID-Batch2025Week48`
@@ -53,7 +53,7 @@ updated: '2026-11-02'
   top ad: `TR-Hj5i8G-TalkingHead-Diealonemale-IMG-Batch2025Week38`
 - 2025-12-29 · General · iOS · TR · j7G5d2 wanted · 1 wk at 22% of spend  
   top ad: `muslim-US-j7G5d2-wanted-seamuslimfemale-IMG-Batch2025Week48`
-- 2025-12-29 · General · Android · TR · L2vM8Q manyhugs2 · 9 wk at 47% of spend  
+- 2025-12-29 · General · Android · TR · L2vM8Q manyhugs · 9 wk at 47% of spend  
   top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
 - 2025-12-22 · General · iOS · TR · i7P5Th banner · 1 wk at 32% of spend  
   top ad: `General-TR-i7P5Th-Banner-Thorn-VID-Batch2025Week50`
@@ -63,9 +63,9 @@ updated: '2026-11-02'
   top ad: `TR-b3kP4G-Thankyou-Bumpy-WhiteguyLatinaGirl-IMG-Batch2025Week45`
 - 2025-12-15 · General · Android · TR · Hj5i8G talkinghead · 1 wk at 38% of spend  
   top ad: `TR-Hj5i8G-TalkingHead-Zeromatchmale-IMG-Batch2025Week38`
-- 2025-12-01 · General · iOS · TR · L2vM8Q manyhugs2 · 2 wk at 57% of spend  
+- 2025-12-01 · General · iOS · TR · L2vM8Q manyhugs · 2 wk at 57% of spend  
   top ad: `TR-L2vM8Q-Manyhugs-Movecountry-VID-Batch2025Week40`
-- 2025-12-01 · General · Android · TR · L2vM8Q manyhugs2 · 2 wk at 48% of spend  
+- 2025-12-01 · General · Android · TR · L2vM8Q manyhugs · 2 wk at 48% of spend  
   top ad: `TR-L2vM8Q-Manyhugs-Intentionally-VID-Batch2025Week40`
 
 ### Fatigue clock
@@ -78,8 +78,8 @@ A #1 here has led a median 1 weeks (13 finished reigns). Longest: n6f2Wt banner,
 | 2026-09-21 | General · iOS · TR | C0kM3N | 1 | 2% | Strike (provisional) |
 | 2026-09-14 | General · iOS · TR | k9R4mP | 2 | 34% | Hit (provisional) |
 | 2026-08-17 | General · iOS · TR | Q7mZ2x | 1 | 1% | Strike |
-| 2025-12-29 | General · iOS · TR | B9dF4J P8c7ao a2Ef3Y i9D7eK j7G5d2 n6f2Wt p8C7aO | 9 | 22% | Hit |
-| 2025-12-29 | General · Android · TR | B9dF4J a2Ef3Y j7G5d2 | 6 | 9% | Late hit |
+| 2025-12-29 | General · iOS · TR | B9dF4J a2Ef3y i9D7eK j7G5d2 n6f2Wt p8C7aO | 9 | 22% | Hit |
+| 2025-12-29 | General · Android · TR | B9dF4J a2Ef3y j7G5d2 | 6 | 9% | Late hit |
 | 2025-12-22 | General · iOS · TR | i7P5Th t7R4iN | 1 | 32% | Hit |
 | 2025-12-22 | General · Android · TR | i7P5Th t7R4iN | 1 | 56% | Home run |
 

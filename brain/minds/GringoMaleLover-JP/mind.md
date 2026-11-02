@@ -40,31 +40,29 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · JP · JP | 🆘 Critical | $706 | 0.32 | H7kM3N airport (since 2026-09-28, 2 wk) |
+| GringoMaleLover · Android · JP · JP | 🆘 Critical | $706 | 0.32 | a2Ef3y wanted (since 2026-10-05, 1 wk) |
 | GringoMaleLover · iOS · JP · JP | 🆘 Critical | $697 | 0.20 | n6f2Wt banner (since 2026-09-21, 3 wk) |
 
 **Open tickets:** T-564005 Decaying (Android · JP · JP: ROAS 0.316 (prev 0.27), under 0.32); T-319678 Decaying (iOS · JP · JP: ROAS 0.20 (prev 0.91), under 0.32)
 
 ### #1 history (latest first)
-- 2026-09-28 · GringoMaleLover · Android · JP · JP · H7kM3N airport · 2 wk at 35% of spend  
+- 2026-10-05 · GringoMaleLover · Android · JP · JP · a2Ef3y wanted · 1 wk at 31% of spend  
   top ad: `Gringolover-JP-H7kM3N-Wanted-ItalianGuyInKitchen-NihonjinNoOnnanokoToTsukiaitai-someoneWantsYou-CompletelyUnaware-VID-Batch2026Week28`
 - 2026-09-21 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 3 wk at 41% of spend  
   top ad: `Gringolover-JP-n6f2Wt-Banner-BigTicket-BlondeGuyHoldingSign-DateAForeignOppaOnBumpy-DirectCTA-ProductAware-VID-Batch2026Week28`
-- 2026-09-14 · GringoMaleLover · Android · JP · JP · n6f2Wt banner · 2 wk at 57% of spend  
+- 2026-09-14 · GringoMaleLover · Android · JP · JP · n6f2Wt banner · 3 wk at 48% of spend  
   top ad: `Gringolover-JP-n6f2Wt-Banner-BigTicket-BlondeGuyHoldingSign-DateForeignGuyOnBumpy-DirectCTA-ProductAware-IMG-Batch2026Week280`
-- 2026-09-07 · GringoMaleLover · iOS · JP · JP · H7kM3N airport · 2 wk at 53% of spend  
+- 2026-09-07 · GringoMaleLover · iOS · JP · JP · a2Ef3y wanted · 2 wk at 37% of spend  
   top ad: `Gringolover-JP-H7kM3N-Wanted-ItalianGuyInKitchen-NihonjinNoOnnanokoToTsukiaitai-someoneWantsYou-CompletelyUnaware-VID-Batch2026Week28`
-- 2026-08-24 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 2 wk at 52% of spend  
+- 2026-08-17 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 3 wk at 50% of spend  
   top ad: `Gringolover-JP-n6f2Wt-Banner-Car-BlondeGuyRooflessCar-ForeignGuysAreAlreadyDatingJapaneseGirlsOnBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
-- 2026-08-10 · GringoMaleLover · iOS · JP · JP · H7kM3N airport · 2 wk at 45% of spend  
-  top ad: `Gringolover-JP-H7kM3N-Wanted-ItalianGuyOnBeach-KaigaiNoHitoToTanoshikuSugoshitai-someoneWantsYou-CompletelyUnaware-VID-Batch2026Week28`
-- 2026-08-03 · GringoMaleLover · iOS · JP · JP · v8Gn7M pulseblack · 1 wk at 43% of spend  
+- 2026-08-03 · GringoMaleLover · iOS · JP · JP · v8Gn7M pulseblack · 2 wk at 37% of spend  
   top ad: `GringoLover-JP-v8Gn7M-PulseBlack-MirrorSelfie-ManyForeignGuysAreDatingJapaneseGirls-DatingAbroad-ProductAware-IMG-Batch2026Week28`
 - 2026-07-20 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 2 wk at 67% of spend  
   top ad: `GringoLover-JP-n6f2Wt-Banner-Envelope-HighlyRecommendDatingForeignGuyOnBumpy-PersonalRecommendation-ProductAware-VID-Batch2026Week28`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (6 finished reigns). Longest: n6f2Wt banner, 3 weeks from 2026-09-21.
+A #1 here has led a median 2 weeks (5 finished reigns). Longest: n6f2Wt banner, 3 weeks from 2026-09-14.
 
 ### Refreshes read from the exports
 1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.

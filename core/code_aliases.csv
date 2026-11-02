@@ -1,8 +1,10 @@
-alias,code,status,note
-a2Ef3Y,a2Ef3y,proposed,"both 'wanted'; letter-case typo; $273k spent under the alias"
-n62Wt,n6f2Wt,proposed,"both 'banner' (LatinaLover); 'f' missing; $107k under the alias"
-H7kM3n,H7kM3N,proposed,"both 'airport'; letter-case typo; $5k under the alias"
-c0kM3N,C0kM3N,proposed,"both 'combo'; letter-case typo; $3 under the alias"
-k4rm9p,k4Rm9p,proposed,"both 'datingcontest'; letter-case typo; $6 under the alias"
-j4g89om,4g89om,proposed,"both 'iconicplaces'; extra 'j'; $4k under the alias"
-P8c7ao,p8C7aO,proposed,"both 'mirrorselfie' ($42k and $47k): pick the spelling to keep, then confirm"
+alias,conceptname,code,status,note
+n62Wt,,n6f2Wt,confirmed,"banner (LatinaLover): 'f' missing. Creative lead, 2 Nov 2026"
+a2Ef3Y,,a2Ef3y,confirmed,"wanted: letter case. Creative lead, 2 Nov 2026"
+h7km3n,,a2Ef3y,confirmed,"these are wanted ads: the wanted concept is a2Ef3y. Creative lead, 2 Nov 2026"
+H7kM3N,wanted,a2Ef3y,confirmed,"ads named H7kM3N + wanted are the wanted concept (H7kM3N stays airport). Creative lead, 2 Nov 2026"
+H7kM3n,,H7kM3N,confirmed,"airport: letter case (same rule as a2Ef3Y)"
+c0kM3N,,C0kM3N,confirmed,"combo: letter case (same rule)"
+k4rm9p,,k4Rm9p,confirmed,"datingcontest: letter case (same rule)"
+P8c7ao,,p8C7aO,confirmed,"mirrorselfie: letter case (same rule); kept the spelling with more spend, flip it if you prefer"
+j4g89om,,4g89om,proposed,"both iconicplaces; an extra 'j' (not letter case): confirm"

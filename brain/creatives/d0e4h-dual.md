@@ -35,12 +35,12 @@ decoded: false
 | General-PT | General · iOS · PT | 2026-01-05 | 2026-03-09 | 0 | 2% | $258 |
 | General-TH | General · Android · TH | 2025-12-15 | 2026-01-12 | 0 | 4% | $114 |
 | General-ID | General · Android · ID | 2025-12-29 | 2026-01-19 | 0 | 7% | $90 |
-| General-JP | General · iOS · JA | 2025-12-15 | 2026-02-02 | 0 | 1% | $71 |
+| General-JP | General · iOS · JP | 2025-12-15 | 2026-02-02 | 0 | 1% | $71 |
 | General-EN | General · iOS · EN | 2025-12-15 | 2025-12-22 | 0 | 2% | $71 |
 | General-ES | General · Android · ES | 2025-12-15 | 2026-02-02 | 0 | 1% | $57 |
 | General-EN | General · Android · EN | 2025-12-15 | 2026-02-02 | 0 | 1% | $49 |
 | General-TR | General · Android · TR | 2025-12-29 | 2026-03-02 | 0 | 1% | $33 |
-| General-KR | General · iOS · KO | 2025-12-15 | 2026-02-02 | 0 | 3% | $28 |
+| General-KR | General · iOS · KR | 2025-12-15 | 2026-02-02 | 0 | 3% | $28 |
 | General-ES | General · iOS · ES | 2025-12-15 | 2025-12-15 | 0 | 1% | $23 |
 
 ### Variants (full ad names, 17 in total, top 10 by spend)
