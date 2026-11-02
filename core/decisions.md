@@ -5,6 +5,13 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-02 · Incident weeks and when an incident's effect ends
+- **Decided by:** creative lead (rules proposed by Claude).
+- **Rules:** a refresh that landed in an incident week and missed is Void (a hit still counts); a week under the bar during an incident doesn't count toward weeks under the bar or Fading.
+- **The two known incidents were on iOS.** 5–6 Oct: effect estimated to 11 Oct. 20–21 Oct: effect until 24 Oct.
+- **End of effect:** measured from daily data once a daily Meta export by OS exists (tracking: Meta purchase value ÷ App Store proceeds back to 90%+ of its 14-day baseline for 2 days; bugs: App Store money back to 95%+ of a normal day for 2 days), capped at 14 days after the problem ended (longer = a lasting change, handled like a measurement era). Until then, the logged estimate.
+- **Evidence for 5–6 Oct:** App Store money held (0.98× a normal day, lowest 0.93×) while Meta iOS ROAS went 0.41 → 0.40 → 0.45: points to tracking, recovered the week after.
+
 ### 2026-11-02 · More naming decisions; briefs can't create clashes
 - **Decided by:** creative lead.
 - **Concepts:** `i48opT` = carousel, `d4osYW` = dancing (scene names go in the hook field); `j4g89om` is `4g89om` (iconicplaces).
@@ -48,11 +55,6 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 - Board = shared Claude page (team gets access). Scorecards visible to everyone. Yuli Nur Hakim = KIM, Hanna Dolhikh = HAN; Deyan Haider and Hussein Saleh Cabrera have left.
 
 ## Proposed, waiting for the creative lead
-
-### 2026-11-02 · How incident weeks are treated (applied, confirm or change)
-- **Proposed by:** Claude, after the creative lead logged the 5–6 Oct and 20–21 Oct incidents.
-- **Rules now applied:** a refresh that landed in an incident week and missed is Void (a hit still counts); a week under the bar during an incident doesn't count toward weeks under the bar or Fading; an incident with no end of effect is assumed to last to the end of that week.
-- **Open:** for each incident, which OS and what kind (tracking vs a release bug). App Store money didn't dip on 5–6 Oct (1.03× and 0.99× a normal Monday / Tuesday), which points to tracking rather than lost purchases on iOS; Android can't be checked until Play data comes in.
 
 ### ~~2026-10-23 · Singular-era bar: green ≥ 0.35, critical < 0.28~~ (superseded 27 Oct by 0.40)
 - **Why:** old bar 0.50 / 0.40 × 0.70 (measured ruler change). Keeps the same real-money standard: 79% of spend was green on the old bar before the switch; 74% is green on 0.35 since.

@@ -22,7 +22,8 @@ money is the one currency for both channels (§3.4).
 
 ## Export file names
 `<prefix>_<YYYY-MM-DD>_<YYYY-MM-DD>.csv` (start and end dates). Prefixes: `adset_`, `ad_`, `country_`,
-`tiktok_`, `apple_proceeds_`, `play_`, `singular_`. Exports must start on a Monday. Overlaps are fine: the
+`tiktok_`, `apple_proceeds_`, `play_`, `singular_`, `meta_daily_` (Meta by day and OS: date, campaign or OS,
+spend, purchases, purchase value; measures when an incident's effect ended, spec §3.5). Exports must start on a Monday. Overlaps are fine: the
 newest file wins for overlapping days (`engine/files.py`). Rename files that arrive with other names from
 their `Reporting starts`/`Reporting ends` columns. In git the exports are stored compressed: after adding a
 file, run `gzip -k -n data/raw/<source>/<file>.csv` and commit the `.csv.gz` (the `.csv` stays local).

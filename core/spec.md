@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.1
+version: 1.3.2
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,10 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.2 (2026-11-02): incident rules confirmed; when an effect ends.**
+- The creative lead confirmed the incident rules (void refreshes, incident weeks not counted under the bar). Both known incidents were on **iOS**; the 5–6 Oct effect is estimated to 11 Oct.
+- How the end of an incident's effect is defined (§3.5): measured from daily data (signal ratio for tracking, App Store money for bugs), capped at 14 days; until a daily Meta export by OS exists, the logged estimate is used. A weekly check (`incident_check.csv`) compares each incident with App Store money and Meta's iOS ROAS: on 5–6 Oct store money held (0.98× a normal day) while Meta iOS ROAS went 0.41 → 0.40 and back to 0.45 the week after, which points to tracking, over by about 11 Oct.
 
 **1.3.1 (2026-11-02): app and tracking incidents.**
 - `core/incidents.csv` (format: `contracts/incident.md`) logs app or tracking problems that hurt results for reasons outside the creative. Known so far: 5–6 Oct 2026 (effect lasting some days) and 20–21 Oct 2026 (effect until 22–24 Oct).
@@ -313,6 +317,25 @@ Known gaps: Singular doesn't report adsets, so Meta's adset numbers remain the o
 5. TikTok runs broad General ad groups, so persona statuses and strikes stay Meta-only until TikTok ad-level exports with v5 names arrive.
 
 ---
+
+### 3.5 App and tracking incidents (since 1.3.1)
+Logged in `core/incidents.csv` (format: `contracts/incident.md`). An incident week (any day of the Mon–Sun week
+inside `start`…`effect_until`, for that OS) can't count against an adset, a creative or a person: a refresh that
+landed then and missed is Void; a week under the bar then doesn't count toward weeks under the bar or Fading.
+
+**When the effect ends.** `start` and `end` are when the problem itself was live (from the dev team or the
+release notes). The end of the *effect* is measured, not guessed, once a daily Meta export by OS is in
+`data/raw/meta_daily/`:
+- **tracking** (Meta saw less than really happened): the daily signal ratio = Meta-reported purchase value ÷
+  App Store proceeds, for that OS. Baseline = its median over the 14 days before `start`. The effect ends on
+  the first day after `end` from which the ratio stays at 90%+ of the baseline for 2 days in a row.
+- **release bug, store or payments** (users really bought less): App Store proceeds per day ÷ the same weekday's
+  average over the 4 weeks before `start`. The effect ends when it is back to 95%+ for 2 days in a row.
+- **Cap: 14 days after `end`.** Not back by then means it isn't an incident but a lasting change: treat it as a
+  measurement era (§3.3) and decide a restated bar.
+- Until the daily export exists, `effect_until` is the logged estimate (`effect_basis: estimate`), and
+  `output/data/incident_check.csv` shows whether App Store money held and whether Meta's weekly ROAS was back
+  the week after.
 
 ## 4. The page
 

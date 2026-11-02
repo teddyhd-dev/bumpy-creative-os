@@ -214,6 +214,8 @@ def main():
                     err(ip, f"{r['id']}: dates must run start ≤ end ≤ effect_until")
             except ValueError:
                 err(ip, f"{r['id']}: dates must be YYYY-MM-DD")
+            if r.get("effect_basis", "") not in ("", "estimate", "measured"):
+                err(ip, f"{r['id']}: effect_basis must be estimate or measured")
             if r["os"] not in ("all", "iOS", "Android"):
                 err(ip, f"{r['id']}: os must be all, iOS or Android")
             if not r["id"].startswith("INC-"):

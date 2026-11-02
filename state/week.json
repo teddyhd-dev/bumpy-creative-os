@@ -38,7 +38,7 @@
   "capacity_per_week": 7.375,
   "tickets_open": 70.0,
   "tickets_need_refresh": 66.0,
-  "tickets_fading": 10.0,
+  "tickets_fading": 11.0,
   "tickets_review": 1.0,
   "brief_groups_need_refresh": 46.0,
   "turnaround_hit_rate": 0.4327,
