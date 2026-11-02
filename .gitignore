@@ -1,8 +1,15 @@
+# generated: rebuilt by `bash engine/run_all.sh`
+output/
 data/model/
-output/data/
-output/dashboard/index.html
+# raw exports are committed compressed (.csv.gz); local uncompressed copies stay out of git
+data/raw/adset/*.csv
+data/raw/ad/*.csv
+data/raw/country/*.csv
+data/raw/tiktok/*.csv
+data/raw/apple/*.csv
+data/raw/play/*.csv
+data/raw/singular/*.csv
+*.zip
 __pycache__/
 *.pyc
 .DS_Store
-data/raw/
-*.zip

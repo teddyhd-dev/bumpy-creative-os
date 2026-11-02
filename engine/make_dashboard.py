@@ -1,6 +1,6 @@
 """Builds the local dashboard: output/dashboard/index.html.
 
-The page itself lives in output/dashboard/page.html (the same file that is
+The page itself lives in tools/dashboard/page.html (the same file that is
 published to the claude.ai dashboard). This wraps it with a local data loader,
 d3 and styles so it runs from your own computer:
 
@@ -9,8 +9,11 @@ d3 and styles so it runs from your own computer:
 """
 import os
 
+import shutil
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DASH = os.path.join(ROOT, "output", "dashboard")
+SRC = os.path.join(ROOT, "tools", "dashboard")      # page source (published to claude.ai) + local helpers
+DASH = os.path.join(ROOT, "output", "dashboard")     # generated local copy
 
 HEAD = """<!doctype html>
 <html lang="en">
@@ -34,7 +37,11 @@ TAIL = """
 
 
 def main():
-    page = open(os.path.join(DASH, "page.html"), encoding="utf-8").read()
+    os.makedirs(DASH, exist_ok=True)
+    for f in ("dash-local.css", "dash-local.js"):
+        shutil.copy(os.path.join(SRC, f), os.path.join(DASH, f))
+    shutil.copytree(os.path.join(SRC, "vendor"), os.path.join(DASH, "vendor"), dirs_exist_ok=True)
+    page = open(os.path.join(SRC, "page.html"), encoding="utf-8").read()
     with open(os.path.join(DASH, "index.html"), "w", encoding="utf-8") as f:
         f.write(HEAD + page + TAIL)
     print("wrote", os.path.join(DASH, "index.html"))

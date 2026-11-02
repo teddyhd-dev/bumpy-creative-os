@@ -18,7 +18,12 @@ RAW = os.path.join(ROOT, "data", "raw")
 
 
 def raw_files(source: str, prefix: str) -> list[str]:
-    return sorted(glob.glob(os.path.join(RAW, source, f"{prefix}_*.csv")))
+    """Every export for a source. In git the exports are stored compressed (.csv.gz); a local
+    uncompressed copy with the same name wins, so a file is never read twice."""
+    found = {}
+    for p in glob.glob(os.path.join(RAW, source, f"{prefix}_*.csv.gz")) + glob.glob(os.path.join(RAW, source, f"{prefix}_*.csv")):
+        found[p[:-3] if p.endswith(".gz") else p] = p   # the .csv is listed last, so it wins
+    return sorted(found.values())
 
 
 def supersede(df: pd.DataFrame, additive: list[str], file_col: str = "_file",

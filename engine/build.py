@@ -120,7 +120,8 @@ def safe_div(a, b):
 
 def load_raw() -> pd.DataFrame:
     frames = []
-    for path in sorted(glob.glob(os.path.join(RAW, "adset", "adset_*.csv"))):
+    from files import raw_files
+    for path in raw_files("adset", "adset"):
         f = pd.read_csv(path, encoding="utf-8-sig")
         f["_file"] = os.path.basename(path)
         frames.append(f)

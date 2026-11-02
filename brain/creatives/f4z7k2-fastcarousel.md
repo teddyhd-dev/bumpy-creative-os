@@ -1,0 +1,45 @@
+---
+contract: creative/1
+code: F4z7K2
+name: fastcarousel
+decoded: false
+---
+# F4z7K2 · fastcarousel
+
+## Decode
+- First second:
+- Hook:
+- Message:
+- Format:
+- Why it stops the thumb:
+- Full breakdown:
+- Snapshot:
+- Decoded by:
+
+<!-- generated:start facts -->
+## Where it ran (updated 2026-11-02; ads to 2026-10-05)
+#1 in 6 of 24 adsets it ran in · $12.4k spent as #1 · $31.5k in total.
+
+| Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
+|---|---|---|---|---|---|---|
+| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-03-30 | 2026-07-27 | 5 | 64% | $9.6k |
+| ChristianMatchWorldwide-PT | ChristianMatchWorldwide · iOS · PT | 2026-08-03 | 2026-10-05 | 5 | 47% | $2.7k |
+| GringoMaleLover-PH | GringoMaleLover · Android · PH · PH | 2026-03-30 | 2026-05-11 | 4 | 65% | $2.7k |
+| GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-04-06 | 2026-05-04 | 2 | 56% | $904 |
+| MatureDating-EN | MatureDating · iOS · EN | 2026-04-20 | 2026-05-04 | 2 | 51% | $396 |
+| MatureDating-ES | MatureDating · iOS · ES · 30to40 | 2026-03-30 | 2026-07-27 | 1 | 61% | $1.2k |
+| ChristianMatchWorldwide-ES | ChristianMatchWorldwide · iOS · ES | 2026-08-03 | 2026-09-28 | 0 | 30% | $4.3k |
+| GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-04-06 | 2026-08-31 | 0 | 7% | $2.7k |
+| GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-04-06 | 2026-05-25 | 0 | 16% | $2.5k |
+| MatureDating-EN | MatureDating · Android · EN · 30to40 | 2026-06-08 | 2026-08-03 | 0 | 13% | $771 |
+| MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-03-30 | 2026-04-27 | 0 | 11% | $648 |
+| GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-04-06 | 2026-05-11 | 0 | 14% | $628 |
+| MatureDating-EN | MatureDating · Android · EN | 2026-03-30 | 2026-06-15 | 0 | 29% | $521 |
+| GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-04-06 | 2026-05-11 | 0 | 24% | $485 |
+| SingleMom-EN | SingleMom · iOS · EN | 2026-03-30 | 2026-04-27 | 0 | 13% | $434 |
+| PassportBro-EN | PassportBro · Android · EN | 2026-03-30 | 2026-04-20 | 0 | 3% | $270 |
+| SingleMom-EN | SingleMom · Android · EN | 2026-04-06 | 2026-05-04 | 0 | 7% | $234 |
+| MatureDating-ES | MatureDating · Android · ES · 30to40 | 2026-03-30 | 2026-07-20 | 0 | 4% | $145 |
+| GringoMaleLover-ID | GringoMaleLover · iOS · ID | 2026-03-30 | 2026-04-27 | 0 | 11% | $140 |
+| GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-04-06 | 2026-04-20 | 0 | 5% | $103 |
+<!-- generated:end facts -->

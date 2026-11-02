@@ -1,0 +1,11 @@
+code,name,role,active,notion_match
+TED,Teddy Dassa,strategist,true,teddy
+JAC,Jacqueline,strategist,true,jacqueline
+CAM,Camile,strategist,true,camile
+OST,Ostap Kukurudza,designer,true,ostap
+HAN,Hanna Dolhikh,designer,true,hanna
+USM,Usman Ishtiaq,designer,true,usman
+KIM,Yuli Nur Hakim,designer,true,yuli|hakim
+MAR,Marvon,designer,true,marvon
+DEY,Deyan Haider,designer,false,deyan
+HUS,Hussein Saleh Cabrera,designer,false,hussein

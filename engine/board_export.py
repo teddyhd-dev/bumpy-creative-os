@@ -29,18 +29,19 @@ OUT = os.path.join(ROOT, "output", "data")
 BOARD = os.path.join(ROOT, "output", "board")
 MAX_TICKETS = 100
 
-ROSTER = [
-    dict(code="TED", name="Teddy", role="strategist", active=True),
-    dict(code="JAC", name="Jacqueline", role="strategist", active=True),
-    dict(code="CAM", name="Camile", role="strategist", active=True),
-    dict(code="OST", name="Ostap", role="designer", active=True, match="ostap"),
-    dict(code="HAN", name="Hanna", role="designer", active=True, match="hanna"),
-    dict(code="USM", name="Usman", role="designer", active=True, match="usman"),
-    dict(code="KIM", name="Yuli Nur Hakim", role="designer", active=True, match="yuli|hakim"),
-    dict(code="MAR", name="Marvon", role="designer", active=True, match="marvon"),
-    dict(code="DEY", name="Deyan Haider", role="designer", active=False, match="deyan"),
-    dict(code="HUS", name="Hussein Saleh Cabrera", role="designer", active=False, match="hussein"),
-]
+def _roster():
+    """The team lives in core/team.csv (one place for every tool)."""
+    T = pd.read_csv(os.path.join(ROOT, "core", "team.csv"), dtype=str).fillna("")
+    out = []
+    for r in T.itertuples():
+        d = dict(code=r.code, name=r.name.split(" ")[0] if r.code != "KIM" else r.name, role=r.role, active=r.active.lower() == "true")
+        if r.role == "designer" and r.notion_match:
+            d["match"] = r.notion_match
+        out.append(d)
+    return out
+
+
+ROSTER = _roster()
 TASKS = ["Image Generation / Creation", "Image to Video / Video Generation", "Voice Generation / Sourcing",
          "Lipsync (Image+Voice to Video) Generation", "Simple Video Generation Non-AI", "Non-AI Video Generation",
          "Core Output Edit", "Complex Core Output Edit", "Replication/Variation", "Complex Replication/Variation"]

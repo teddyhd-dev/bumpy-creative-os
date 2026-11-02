@@ -13,3 +13,5 @@ python3 engine/tickets.py        # tk_*   (ticket queue, at-bat verdicts, strike
 python3 engine/board_export.py   # output/board/*.json (engine documents for the Creative Board)
 python3 engine/report.py         # output/board/report_<week>.json (the Tuesday report, drafts included)
 python3 engine/make_dashboard.py # output/dashboard/index.html (local dashboard)
+python3 engine/brain_sync.py     # brain/ (minds, creatives, experiment results), state/, reports/<week>/
+python3 checks/validate.py       # the sensor: contracts, links, append-only history

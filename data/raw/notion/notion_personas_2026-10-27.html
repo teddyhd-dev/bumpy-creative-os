@@ -1,0 +1,797 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Persona Card Library</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+	/* Paint a complete callout box on every PDF page fragment. */
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="2be0a07c-1d4c-80d4-93cd-c51a617a3ab6" class="page sans"><header><h1 class="page-title" dir="auto">Persona Card Library</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:7.404664938911515%"/><col style="width:9.366901147723066%"/><col style="width:9.181784524250277%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911515%"/><col style="width:7.404664938911523%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Churn</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Persona Name</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Persona Lore</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Top Spender with Status</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Winning Pattern</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Proven Message</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/calendar_gray.svg" style="width:14px;height:14px;display:block"/></span>Last Updated</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/calendar_gray.svg" style="width:14px;height:14px;display:block"/></span>Day Since Last New Winner</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/link_gray.svg" style="width:14px;height:14px;display:block"/></span>Content 1</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/link_gray.svg" style="width:14px;height:14px;display:block"/></span>Content 2</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/link_gray.svg" style="width:14px;height:14px;display:block"/></span>Content 3</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Hook-Word / Headline</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/burst_gray.svg" style="width:14px;height:14px;display:block"/></span>Test Status</th></tr></thead><tbody><tr id="2be0a07c-1d4c-801a-9b48-ef69c08a831c"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Passport-Bro-2be0a07c1d4c801a9b48ef69c08a831c?pvs=21" data-notion-page-id="2be0a07c-1d4c-801a-9b48-ef69c08a831c" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="👨‍🎨"></span>Passport Bro</a></td><td class="cell-BJ~I">Men in the US who feel like dating locally is <strong>expensive, competitive, and judgment-based</strong> (money, height, status), and are drawn to the idea that dating abroad is <strong>easier, cheaper, and more enjoyable</strong>. What pulls them is the contrast: outside the US, they can have <strong>more fun, more attention, and less pressure</strong>. They want a better dating experience where they feel relaxed, wanted, and not constantly evaluated. Bumpy fits because it opens access to countries where dating feels <strong>lighter, more affordable, and more rewarding</strong>.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Passport%20Bro/PassportBro-US-L2vM8Q-ManyHugs2-NewYearSilly-VID-Batch2025Week50_(2).mp4">PassportBro-US-L2vM8Q-ManyHugs2-NewYearSilly-VID-Batch2025Week50 (2).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Passport%20Bro/PassportBro-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05.mp4">PassportBro-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Passport%20Bro/EN-Q8rX2V-Wedding-KRBR-VID-Batch2025Week39_(2).mp4">EN-Q8rX2V-Wedding-KRBR-VID-Batch2025Week39 (2).mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>US vs outside contrastCost + fun framing</strong> “half the price, twice the fun”<br/>• <strong>Status pressure removal</strong> money / height doesn’t matter<br/>• <strong>Foreign women presence<br/>• Lifestyle outcome</strong> travel, better life, happier relationship<br/>• <strong>Progression</strong> chat → travel → meet<br/>• Direct, bold wording</td><td class="cell-s\I{">“Dating outside America is half the price and twice the fun. Give Bumpy a try.”<br/><br/>“Women here don’t care how much you make or how tall you are. Prove it on Bumpy!”<br/><br/>“Girl outside America don’t care how much you make and how tall you are. Prove it on Bumpy”<br/><br/>“Talking to an asian girl is fun, not until…”<br/>→ “You booked a flight and live your best life there…”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://www.tiktok.com/@digital_bromad/video/7239014252210720046?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540digital_bromad%252Fvideo%252F7239014252210720046%253F_r%253D1%2526_t%253DZS-90dQawZ9wpd%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7239014252210720046" class="url-value">https://www.tiktok.com/@digital_bromad/video/7239014252210720046?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540digital_bromad%252Fvideo%252F7239014252210720046%253F_r%253D1%2526_t%253DZS-90dQawZ9wpd%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7239014252210720046</a></td><td class="cell-U]O`"><a href="https://www.tiktok.com/@maxkesik/video/7395874714704547080?_r=1&amp;_t=ZS-9244Gw4oenY" class="url-value">https://www.tiktok.com/@maxkesik/video/7395874714704547080?_r=1&amp;_t=ZS-9244Gw4oenY</a></td><td class="cell-JO;p"><a href="https://www.tiktok.com/@nikolasz_avender/video/7544175141224303902?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540nikolasz_avender%252Fvideo%252F7544175141224303902%253F_t%253DZS-90dY5LZAOCv%2526_r%253D1%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7544175141224303902" class="url-value">https://www.tiktok.com/@nikolasz_avender/video/7544175141224303902?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540nikolasz_avender%252Fvideo%252F7544175141224303902%253F_t%253DZS-90dY5LZAOCv%2526_r%253D1%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7544175141224303902</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-default">Dating outside America. Half the price. Twice the fun.</span><span class="selected-value select-value-color-red">Passport bro is growing because it&#x27;s working!</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="2be0a07c-1d4c-80c3-beb5-f790edd1458d"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Passport-Girl-Relocate-2be0a07c1d4c80c3beb5f790edd1458d?pvs=21" data-notion-page-id="2be0a07c-1d4c-80c3-beb5-f790edd1458d" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="👸"></span>Passport Girl (Relocate)</a></td><td class="cell-BJ~I">Women who are drawn to the idea of <strong>falling in love with a specific type of foreign man</strong> (British, Swedish, Italian) and see it as a way to <strong>upgrade their life and environment</strong>. What pulls them is not just the man, but the outcome — moving to another country, starting a new life, and experiencing something better and more exciting. They want a relationship that leads to <strong>real change</strong>: new country, new lifestyle, new chapter. Bumpy fits because it shows this is already happening — meet → fall in love → relocate → live a better life.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Passport%20Girl%20(Relocate)/US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46_(1).mp4">US-v4E59z-londonboy-passportgirl-asian-VID-Batch2025Week46 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Passport%20Girl%20(Relocate)/PassportGirl-US-v8Gn7M-Pulseblack-MirrorSelfie-VID-Batch2026Week05.mp4">PassportGirl-US-v8Gn7M-Pulseblack-MirrorSelfie-VID-Batch2026Week05.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Passport%20Girl%20(Relocate)/passportgirl-US-v4E59z-londonboy-italian-IMG-Batch2026Week02.png"><img style="width:20px;max-height:24px" src="Persona%20Card%20Library/Passport%20Girl%20(Relocate)/passportgirl-US-v4E59z-londonboy-italian-IMG-Batch2026Week02.png" alt="passportgirl-US-v4E59z-londonboy-italian-IMG-Batch2026Week02.png"/></a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>Specific nationality callout</strong> (Brit 🇬🇧, Sweden 🇸🇪, Italy 🇮🇹)<br/>• <strong>Life upgrade framing</strong> moving countries<br/>• <strong>Fast progression</strong> “3 months after using bumpy”<br/>• <strong>Couple outcome</strong> real relationship<br/>• <strong>Aspirational lifestyle visuals</strong> city, travel, romance<br/>• <strong>Recommendation tone</strong> “highly recommend”<br/>• Direct, simple wording</td><td class="cell-s\I{">“Maybe life isn’t so bad (I’m moving to my bf country 🇨🇭) 3 months after using bumpy”<br/><br/>“Highly recommend falling in love with a brit 🇬🇧 get yours on bumpy 💙”<br/><br/>“Maybe life isn’t so bad. I’m moving to my new bf country 🇸🇪 3 months after using bumpy”<br/><br/>“Highly recommend falling in love with a 🇮🇹 man on bumpy”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://www.tiktok.com/@monicagartner/video/7363003717085383968?_r=1&amp;_t=ZS-9244L27TzyC" class="url-value">https://www.tiktok.com/@monicagartner/video/7363003717085383968?_r=1&amp;_t=ZS-9244L27TzyC</a></td><td class="cell-U]O`"><a href="https://vt.tiktok.com/ZSPRK7Tn3/" class="url-value">https://vt.tiktok.com/ZSPRK7Tn3/</a></td><td class="cell-JO;p"><a href="https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145?_r=1&amp;_t=ZS-9244SJlssUK" class="url-value">https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145?_r=1&amp;_t=ZS-9244SJlssUK</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-pink">Highly recommend falling in love with a Brit :gb:</span><span class="selected-value select-value-color-green">Maybe life isn’t so bad. I’m moving to his country :flag-ch: 3 months after using bumpy</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="2be0a07c-1d4c-8052-9923-e54917671abd"><td class="cell-_:oR"><span class="selected-value select-value-color-purple">DateMyAge</span><span class="selected-value select-value-color-red">OurTime</span><span class="selected-value select-value-color-pink">SeniorMatch</span></td><td class="cell-title"><a href="https://app.notion.com/p/40-Singles-Second-Chance-2be0a07c1d4c80529923e54917671abd?pvs=21" data-notion-page-id="2be0a07c-1d4c-8052-9923-e54917671abd" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="🧓"></span>40+ Singles Second Chance</a></td><td class="cell-BJ~I">People in their 40s who feel like they might have missed their chance at love and are drawn to the idea that <strong>it’s still possible to start again</strong>, especially with someone from another country. What pulls them is reassurance seeing people their age still finding love, still being attractive, and even starting a new life abroad. <br/><br/>They want a <strong>second chance</strong> at a real relationship and to feel that they are still desirable. Bumpy fits because it shows people their age matching, being wanted, and building relationships internationally.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/40+%20Singles%20Second%20Chance/304050-US-v8Gn7M-Pulseblack-MirrorSelfie-VID-Batch2026Week05.mp4">304050-US-v8Gn7M-Pulseblack-MirrorSelfie-VID-Batch2026Week05.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/40+%20Singles%20Second%20Chance/US-B9dF4J-Slider-3040-40Female-VID-Batch2025Week44_(1).mp4">US-B9dF4J-Slider-3040-40Female-VID-Batch2025Week44 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/40+%20Singles%20Second%20Chance/304050-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05_(1).mp4">304050-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05 (1).mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>Age clearly shown</strong> (40s)<br/>• <strong>Second chance messaging</strong> “not too late”, “start again”<br/>• <strong>Validation of attractiveness</strong> “aged like fine wine”<br/>• <strong>Serious relationship framing</strong> marriage / long-term<br/>• <strong>Cross-country partnerCalm, mature tone</strong><br/>Direct, reassuring wording</td><td class="cell-s\I{">“You’re not too late for a new beginning. With someone new. In a new country.”<br/><br/>“I married the love of my life at my 40s, with someone from another country.”<br/><br/>“Men on Bumpy aged like fine wine 🥵🥵🥵”<br/><br/>“42 y.o. I never thought love would give me a second chance”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://www.tiktok.com/@hytrecsza5w/video/7518050437304454430?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540hytrecsza5w%252Fvideo%252F7518050437304454430%253F_r%253D1%2526_t%253DZS-90tsZSDQ1No%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121947600%2C121811500%2C121896267%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7518050437304454430" class="url-value">https://www.tiktok.com/@hytrecsza5w/video/7518050437304454430?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540hytrecsza5w%252Fvideo%252F7518050437304454430%253F_r%253D1%2526_t%253DZS-90tsZSDQ1No%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121947600%2C121811500%2C121896267%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7518050437304454430</a></td><td class="cell-U]O`"><a href="https://www.tiktok.com/@madmnc/video/7451744387551317290?_r=1&amp;_t=ZS-9244UPCx5hx" class="url-value">https://www.tiktok.com/@madmnc/video/7451744387551317290?_r=1&amp;_t=ZS-9244UPCx5hx</a></td><td class="cell-JO;p"><a href="https://www.tiktok.com/@timchris46/video/7541947242257599751?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540timchris46%252Fvideo%252F7541947242257599751%253F_r%253D1%2526_t%253DZS-90tsZSDQ1No%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7541947242257599751" class="url-value">https://www.tiktok.com/@timchris46/video/7541947242257599751?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540timchris46%252Fvideo%252F7541947242257599751%253F_r%253D1%2526_t%253DZS-90tsZSDQ1No%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7541947242257599751</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-orange">You&#x27;re never too late for a new beginning. With someone new. In a new country.</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="2bf0a07c-1d4c-803b-b6ab-d1169051e15f"><td class="cell-_:oR"><span class="selected-value select-value-color-gray">BLK</span></td><td class="cell-title"><a href="https://app.notion.com/p/Black-People-Looking-for-Interacial-Dating-2bf0a07c1d4c803bb6abd1169051e15f?pvs=21" data-notion-page-id="2bf0a07c-1d4c-803b-b6ab-d1169051e15f" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="👨🏿"></span>Black People Looking for Interacial Dating</a></td><td class="cell-BJ~I">Black singles who are drawn to the idea that they are <strong>wanted beyond their local dating pool</strong>, especially in <strong>interracial and international dating</strong>. What pulls them is seeing proof that people from other countries and other races are genuinely attracted to them, not just locally but globally. They want to feel desired, chosen, and confident that they have real options in a wider dating world. Bumpy fits because it shows black people connecting with partners across countries and cultures, making that possibility feel real.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Black%20People%20Looking%20for%20Interacial%20Dating/BLK-US-Y2kL9M-Shocked-Female-IMG-Batch2025Week470.jpg"><img style="width:20px;max-height:24px" src="Persona%20Card%20Library/Black%20People%20Looking%20for%20Interacial%20Dating/BLK-US-Y2kL9M-Shocked-Female-IMG-Batch2025Week470.jpg" alt="BLK-US-Y2kL9M-Shocked-Female-IMG-Batch2025Week470.jpg"/></a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Black%20People%20Looking%20for%20Interacial%20Dating/BLK-US-p8C7aO-MirrorSelfie-interracialfemale-VID-Batch2026Week02.mp4">BLK-US-p8C7aO-MirrorSelfie-interracialfemale-VID-Batch2026Week02.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Black%20People%20Looking%20for%20Interacial%20Dating/BLK-US-y9Ri2M-Him-SummerhHelsinki-VID-Batch2025Week47_(1).mp4">BLK-US-y9Ri2M-Him-SummerhHelsinki-VID-Batch2025Week47 (1).mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>Black identity clearly shown<br/>• International desire / global optionsInterracial couple visuals<br/>• Validation message</strong> wanted more than you think<br/>• <strong>Lifestyle / travel outcome<br/>• Social proof through real examples</strong></td><td class="cell-s\I{">“You’re honestly underestimating how many men in the world want to date a black woman. I used Bumpy and ended up talking to guys from France, Ghana, Canada, and Turkey”<br/><br/>“Interracial dating works. Be the next cross-cultural couple on Bumpy”<br/><br/>“MY SUMMER IN HELSINKI AFTER DOWNLOADING BUMPY”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://vt.tiktok.com/ZSPRK9QvQ/" class="url-value">https://vt.tiktok.com/ZSPRK9QvQ/</a></td><td class="cell-U]O`"><a href="https://www.tiktok.com/@joseph_family/video/7410072075899047201?_r=1&amp;_t=ZS-9244BeprakK" class="url-value">https://www.tiktok.com/@joseph_family/video/7410072075899047201?_r=1&amp;_t=ZS-9244BeprakK</a></td><td class="cell-JO;p"><a href="https://www.tiktok.com/@auxiliaryst4tic/video/7559989081686412574?_r=1&amp;_t=ZS-9244Efy1pTN" class="url-value">https://www.tiktok.com/@auxiliaryst4tic/video/7559989081686412574?_r=1&amp;_t=ZS-9244Efy1pTN</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-gray">Be the next cross-culture couple on Bumpy</span><span class="selected-value select-value-color-brown">Interracial dating works. Be the next cross-culture couple on Bumpy</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="2bf0a07c-1d4c-8064-9e4a-dfd4fcd626c1"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Indian-Young-Guys-Hope-2bf0a07c1d4c80649e4adfd4fcd626c1?pvs=21" data-notion-page-id="2bf0a07c-1d4c-8064-9e4a-dfd4fcd626c1" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="👳🏽‍♂️"></span>Indian Young Guys Hope</a></td><td class="cell-BJ~I">Indian men who feel like they don’t get enough opportunities or attention in their local dating environment, and are drawn to the idea that <strong>women from other countries are open to them</strong>. What pulls them is seeing that foreign women are not only willing to talk, but <strong>actually give them a real chance and even travel to meet them</strong>. <br/><br/>They want to feel chosen, validated, and capable of building a real relationship beyond their local limits. Bumpy fits because it shows that this is already happening women abroad are matching, engaging, and taking real action to meet them.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Indian%20Young%20Guys%20Hope/IndianBoyDream-US-w5K8bX-Talkingtoforeigner-Valentine-VID-Batch2026Week05_(1).mp4">IndianBoyDream-US-w5K8bX-Talkingtoforeigner-Valentine-VID-Batch2026Week05 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Indian%20Young%20Guys%20Hope/IndianBoyDream-US-H7kM3N-Airport-USASelfiels-VID-Batch2025Week49_(1).mp4">IndianBoyDream-US-H7kM3N-Airport-USASelfiels-VID-Batch2025Week49 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Indian%20Young%20Guys%20Hope/IndianBoyDream-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05_(1).mp4">IndianBoyDream-US-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05 (1).mp4</a></span></td><td class="cell-W[Hn"><br/>• English language<br/>• <strong>Indian man + foreign woman pairing</strong><br/>• <strong>Chance / opportunity framing</strong> “gave a chance”<br/>• <strong>POV realization</strong> didn’t know this before<br/>• <strong>Progression</strong> match → chat → flight → meeting<br/>• <strong>Effort signal from woman</strong> she books flight<br/>• <strong>Real-life outcome</strong> airport hug / date<br/>• Direct, simple wording<br/><strong><br/></strong></td><td class="cell-s\I{">“Valentine 2025 — Matched with a spanish woman on bumpy” —&gt; “She booked a flight to see me”<br/><br/>“POV: many woman worldwide gave a chance to indian guy in bumpy”<br/><br/>“Talking to a foreigner is fun, not until…” —&gt; “She booked a flight to come to see you”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://www.tiktok.com/@jaclynmichelle/video/7445909238762802462?_r=1&amp;_t=ZS-9244tjMW3IP" class="url-value">https://www.tiktok.com/@jaclynmichelle/video/7445909238762802462?_r=1&amp;_t=ZS-9244tjMW3IP</a></td><td class="cell-U]O`"><a href="https://www.tiktok.com/@jaclynmichelle/video/7489470416910552351?_r=1&amp;_t=ZS-92451WCBPdI" class="url-value">https://www.tiktok.com/@jaclynmichelle/video/7489470416910552351?_r=1&amp;_t=ZS-92451WCBPdI</a></td><td class="cell-JO;p"><a href="https://www.tiktok.com/@lifeofabi/video/7504112779251436807?_r=1&amp;_t=ZS-9245IrxfFOy" class="url-value">https://www.tiktok.com/@lifeofabi/video/7504112779251436807?_r=1&amp;_t=ZS-9245IrxfFOy</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-yellow">POV: You finally flew to india to meet him for the first time</span><span class="selected-value select-value-color-purple">Plan B: leave inida date someone abroad from Bumpy start new life there.</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="2bf0a07c-1d4c-8008-9b97-fa0943b6ab46"><td class="cell-_:oR"><span class="selected-value select-value-color-orange">Minder</span><span class="selected-value select-value-color-default">Muzz</span><span class="selected-value select-value-color-brown">Salams</span></td><td class="cell-title"><a href="https://app.notion.com/p/Muslim-want-to-relocate-2bf0a07c1d4c80089b97fa0943b6ab46?pvs=21" data-notion-page-id="2bf0a07c-1d4c-8008-9b97-fa0943b6ab46" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="🕌"></span>Muslim want to relocate</a></td><td class="cell-BJ~I">Muslim women who want a partner who <strong>shares their religion and values</strong>, but feel limited by their local options. What pulls them is the idea that there are <strong>Muslim men from other countries</strong> who are compatible and serious, and that they can meet across borders while staying aligned in faith. <br/><br/>They want a relationship that feels <strong>halal, intentional, and future-oriented</strong>, not random or mismatched. Bumpy fits because it allows them to <strong>connect with Muslim partners globally</strong> and makes that path feel real and achievable.</td><td class="cell-bh[q"></td><td class="cell-W[Hn">• Clear <strong>Muslim identity</strong> (hijab, labels like “Muslim Indonesia / Turkey / Morocco”)<br/>• <strong>Cross-country Muslim pairing<br/>• Faith-based intention</strong> “praying to meet”<br/>• <strong>Progression story</strong> match → chat → meet<br/>• <strong>Serious relationship framing<br/>• Real-life outcome</strong> meeting in person<br/>• Simple, direct wording</td><td class="cell-s\I{">“Muslim Indonesia 🇮🇩 Single 💔 Praying to meet muslim partner from another country 🙌”<br/><br/>“Muslim Turkey 🇹🇷 Single 💔 Praying to meet muslim partner from another country 🙌”<br/><br/>“Muslim Morocco 🇲🇦 Single 💔 Praying to meet muslim partner from another country 🙌”<br/><br/>“February 2025 — Matched with a british muslim guy on bumpy” —&gt; “February 2026 — are you free this valentine’s?” —&gt; “He came to see me”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://drive.google.com/file/d/1yhrph0kLtYkG_sxKSoR0cwn7gSlHfGOI/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1yhrph0kLtYkG_sxKSoR0cwn7gSlHfGOI/view?usp=drive_link</a></td><td class="cell-U]O`"><a href="https://drive.google.com/file/d/1tc9ynqyMdbcnCQYeg-_1g2svETzrFAzn/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1tc9ynqyMdbcnCQYeg-_1g2svETzrFAzn/view?usp=drive_link</a></td><td class="cell-JO;p"><a href="https://drive.google.com/file/d/1NEu4wACpDBJJq0VYeW44c-5vSLVg_TBr/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1NEu4wACpDBJJq0VYeW44c-5vSLVg_TBr/view?usp=drive_link</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-yellow">Praying to meet a Muslim partner abroad 🤲</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="2bf0a07c-1d4c-8054-8879-ebdccdf0a479"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-Brazil-2bf0a07c1d4c80548879ebdccdf0a479?pvs=21" data-notion-page-id="2bf0a07c-1d4c-8054-8879-ebdccdf0a479" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="🇧🇷"></span>Gringo Lover from Brazil</a></td><td class="cell-BJ~I">Brazilian women who are attracted to <strong>foreign men (gringos)</strong> because they believe they are more intentional, more committed, and offer a better relationship than what they expect locally. What pulls them is the idea that <strong>many foreign men are actively looking for Brazilian women</strong>, meaning they have high demand and more options. <br/><br/>They want to feel <strong>chosen, valued, and prioritized</strong>, and also see the possibility of a more stable or elevated lifestyle through this connection. Bumpy fits because it makes this feel real.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Brazil/GringoLover-BR-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05.mp4">GringoLover-BR-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Brazil/GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01_(1).mp4">GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Brazil/GringoLover-BR-H7kM3N-Airport-Combo-VID-Batch2026Week01.mp4">GringoLover-BR-H7kM3N-Airport-Combo-VID-Batch2026Week01.mp4</a></span></td><td class="cell-W[Hn">• Portuguese language<br/>• <strong>Strong demand signal</strong> “tem mais gringo… do que você imagina”<br/>• <strong>Foreign male presence<br/>• Man driving car</strong> lifestyle / status signal<br/>• <strong>Couple outcome</strong> Brazilian + foreign man (Gringo + brasileira pairing)<br/>• Direct simple wording</td><td class="cell-s\I{">“Tem mais gringo querendo namorar brasileira do que você imagina”<br/>→ “There are more foreign men wanting to date Brazilian women than you think”<br/><br/>“Tem mais gringo querendo namorar brasileira do que você imagina”<br/>→ “There are more foreign men wanting to date Brazilian women than you think”<br/><br/>“Tem mais gringo querendo namorar brasileira do que você imagina”<br/>→ “There are more foreign men wanting to date Brazilian women than you think”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://drive.google.com/file/d/1ptr4-1AgqGA5m5TtEdoD4uATK2Keai69/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1ptr4-1AgqGA5m5TtEdoD4uATK2Keai69/view?usp=drive_link</a></td><td class="cell-U]O`"><a href="https://drive.google.com/file/d/1niE0Q0t_8kKy47Kv1Wo7faI1vv9INFP1/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1niE0Q0t_8kKy47Kv1Wo7faI1vv9INFP1/view?usp=drive_link</a></td><td class="cell-JO;p"><a href="https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view?usp=drive_link</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-purple">POV: gringo no Bumpy disputando uma brasileira</span><span class="selected-value select-value-color-green">pov: ele finalmente voiiu pro Brail pra te conhecer pessoalmente</span><span class="selected-value select-value-color-green">tem mais gringo querendo namorar brasileira doque voccê imagina</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>LIVE</span></td></tr><tr id="2e70a07c-1d4c-8026-96f0-f27de8c911d8"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-Thailand-2e70a07c1d4c802696f0f27de8c911d8?pvs=21" data-notion-page-id="2e70a07c-1d4c-8026-96f0-f27de8c911d8" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>“Gringo” Lover from Thailand</a></td><td class="cell-BJ~I">A Thai woman who dates farangs because she wants a relationship that feels more “serious” and more future-changing than what she’s used to locally. Her pain is low trust in local men’s follow-through (talk, not action) and uncertainty about commitment. Her desire is to be clearly chosen, pursued, and secured, with a believable path to a bigger life. She uses Bumpy because it shows there are many foreigners actively trying to date Thai women and the ones who prove it with action (planning and flying to meet) are the ones worth responding to.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/%E2%80%9CGringo%E2%80%9D%20Lover%20from%20Thailand/GringoLover-TH-H7kM3N-Airport-USASelfie-VID-Batch2026Week01.mp4">GringoLover-TH-H7kM3N-Airport-USASelfie-VID-Batch2026Week01.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/%E2%80%9CGringo%E2%80%9D%20Lover%20from%20Thailand/GringoLover-TH-v07e5T-LoveStory-Airporthug-VID-Batch2026Week01_(1).mp4">GringoLover-TH-v07e5T-LoveStory-Airporthug-VID-Batch2026Week01 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/%E2%80%9CGringo%E2%80%9D%20Lover%20from%20Thailand/GringoLover-TH-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05.mp4">GringoLover-TH-w5K8bX-Talkingtoforeigner-Videocall-VID-Batch2026Week05.mp4</a></span></td><td class="cell-W[Hn">• Thai language targeting Thai women<br/>• ฝรั่ง (foreign man) clearly positioned as the main attraction<br/>• <strong>Effort signal</strong> man flies to Thailand / travels for her<br/>• <strong>Emotional progression</strong> chatting → video call → real life meeting<br/>• <strong>Airport / reunion scenes</strong> showing physical meeting moment<br/>• <strong>Close physical affection</strong> hugging as proof it’s real<br/>• <strong>Direct simple wording</strong> easy to understand instantly</td><td class="cell-s\I{">“ไม่เคยรู้เลยว่าฝรั่งใน Bumpy แย่งกันจีบผู้หญิงไทย 😭”<br/>→ “I didn’t know foreign men on Bumpy are competing for Thai women 😭”<br/><br/>“เขาบินมา ประเทศไทย เพื่อเจอคุณครั้งแรกจริง ๆ ✈️”<br/>→ “He flew to Thailand to meet you for the first time ✈️”<br/><br/>“แชทกับฝรั่งมันก็สนุกนะ… จนกระทั่ง”<br/>→ “Chatting with a foreigner is fun… until”<br/><br/>“เขาจองตั๋วบินมาเจอคุณ ❤️”<br/>→ “He booked a flight to come see you ❤️”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://drive.google.com/file/d/1Zm8ekiCt7h14s3JwqNFikOVAGagwbDp0/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1Zm8ekiCt7h14s3JwqNFikOVAGagwbDp0/view?usp=drive_link</a></td><td class="cell-U]O`"><a href="https://drive.google.com/file/d/1MBsWpwcyUXhc3zD6sW_lX8cqCV000d0C/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1MBsWpwcyUXhc3zD6sW_lX8cqCV000d0C/view?usp=drive_link</a></td><td class="cell-JO;p"><a href="https://drive.google.com/file/d/1Blsx5OPZ5ZtTvdYjbjbDC5uPqtqs6cLu/view?usp=drive_link" class="url-value">https://drive.google.com/file/d/1Blsx5OPZ5ZtTvdYjbjbDC5uPqtqs6cLu/view?usp=drive_link</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-blue">POV: เขาบินมา ประเทศไทย เพื่อเจอคุณครั้งแรกจริง ๆ ✈️</span><span class="selected-value select-value-color-green">POV: ไม่เคยรู้เลยว่าฝรั่งใน Bumpy แย่งกันจีบผู้หญิงไทย 😭</span><span class="selected-value select-value-color-red">ฝรั่งที่อยากเดตผู้หญิงไทยใน Bumpy มีเยอะกว่าที่คิด</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>LIVE</span></td></tr><tr id="2bf0a07c-1d4c-80e3-b4ac-f0b9c0d31b54"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Single-Mom-2bf0a07c1d4c80e3b4acf0b9c0d31b54?pvs=21" data-notion-page-id="2bf0a07c-1d4c-80e3-b4ac-f0b9c0d31b54" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><span class="icon" data-emoji="👳🏽‍♂️"></span>Single Mom</a></td><td class="cell-BJ~I">Single moms, who feel like their situation makes dating harder locally and worry they might not be chosen. What pulls them is the idea that <strong>there are good men in other countries who are open to loving both them and their child</strong>, not seeing them as a limitation. They want reassurance that they can still find a real relationship where they are accepted fully. Bumpy fits because it presents foreign men as more open, caring, and willing to build a family with them.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Single%20Mom/SingleMom-US-a2Ef3y-wanted-SingleDadHug-VID-Batch2026Week07_(2).mp4">SingleMom-US-a2Ef3y-wanted-SingleDadHug-VID-Batch2026Week07 (2).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Single%20Mom/SingleMom-US-v07e5T-LoveStory-KidSleepHook-VID-Batch2026Week07_(1).mp4">SingleMom-US-v07e5T-LoveStory-KidSleepHook-VID-Batch2026Week07 (1).mp4</a></span></td><td class="cell-W[Hn">• Single parent identity clearly stated (single mom / single dad)<br/>• Child physically present in visuals<br/>• <strong>Reassurance message</strong> you will still find love<br/>• <strong>Foreign partner openness</strong> men abroad will accept you<br/>• <strong>Family-oriented framing</strong> love includes the child<br/>• <strong>Hope-driven tone</strong> “this is your sign”<br/>• Direct emotional wording</td><td class="cell-s\I{">“34 🇳🇴 Single dad 👨‍👦 Looking for a single mom from another country”<br/><br/>“If you’re a single mom raising your baby alone and thinking you’ll never find love, THIS IS YOUR SIGN, THAT YOU WILL, A LOT OF GOOD MEN ABROAD WILL LOVE YOU UNCONDITIONALLY. Find them on bumpy 🤍”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>LIVE</span></td></tr><tr id="2bf0a07c-1d4c-8021-a2d4-f179393c2876"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Friends-Finder-2bf0a07c1d4c8021a2d4f179393c2876?pvs=21" data-notion-page-id="2bf0a07c-1d4c-8021-a2d4-f179393c2876" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Friends Finder</a></td><td class="cell-BJ~I"></td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="2cb0a07c-1d4c-80c1-b52c-f6c2a89c0543"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Latina-Lover-2cb0a07c1d4c80c1b52cf6c2a89c0543?pvs=21" data-notion-page-id="2cb0a07c-1d4c-80c1-b52c-f6c2a89c0543" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Latina Lover</a></td><td class="cell-BJ~I"></td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="2cb0a07c-1d4c-80a8-a16b-e6842244c6c4"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Wedding-and-Relocate-2cb0a07c1d4c80a8a16be6842244c6c4?pvs=21" data-notion-page-id="2cb0a07c-1d4c-80a8-a16b-e6842244c6c4" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Wedding and Relocate</a></td><td class="cell-BJ~I"></td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="2e70a07c-1d4c-80a2-aa5a-e84fb9213d0c"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/LGBT-repressed-country-2e70a07c1d4c80a2aa5ae84fb9213d0c?pvs=21" data-notion-page-id="2e70a07c-1d4c-80a2-aa5a-e84fb9213d0c" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>LGBT repressed country</a></td><td class="cell-BJ~I">LGBTQ+ people who live in places where <strong>same-sex dating is restricted, unsafe, or not socially accepted</strong>, and feel like they don’t have real options locally. What pulls them is the idea that in other countries, they can <strong>freely date, express themselves, and build a relationship without fear or limitation</strong>. <br/><br/>They want a safe, open, and normal dating experience where they can be themselves. Bumpy fits because it gives them access to people in places where <strong>their identity is accepted and dating is actually possible</strong>.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/LGBT%20repressed%20country/LGBT-US-v8Gn7M-Pulseblack-CarGay-VID-Batch2026Week05_(1).mp4">LGBT-US-v8Gn7M-Pulseblack-CarGay-VID-Batch2026Week05 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/LGBT%20repressed%20country/LGBT-US-v8Gn7M-Pulseblack-MirrorSelfieGay-VID-Batch2026Week05_(2).mp4">LGBT-US-v8Gn7M-Pulseblack-MirrorSelfieGay-VID-Batch2026Week05 (2).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/LGBT%20repressed%20country/LGBT-US-p8C7aO-MirrorSelfie-gay-VID-Batch2026Week02.mp4">LGBT-US-p8C7aO-MirrorSelfie-gay-VID-Batch2026Week02.mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>Clear problem statement</strong> dating not possible in your country<br/>• <strong>Direct solution</strong> date abroad<br/>• <strong>Same-sex couples shown openly<br/>• Affection and normal couple behavior<br/>• Safety and freedom implied</strong><br/>• Very direct wording</td><td class="cell-s\I{">“if gay dating isn’t possible in your country. Try dating abroad with bumpy”<br/><br/>“if LGBTQ+ dating isn’t possible in your country. Try dating abroad with bumpy”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="2e70a07c-1d4c-8087-b8a1-eaa93fc5f307"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/International-Friend-Finder-2e70a07c1d4c8087b8a1eaa93fc5f307?pvs=21" data-notion-page-id="2e70a07c-1d4c-8087-b8a1-eaa93fc5f307" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>International Friend Finder</a></td><td class="cell-BJ~I">People who want to meet <strong>young, real people from other countries</strong> and make <strong>international friends</strong>. They are attracted to the idea of a more global social life (talking to someone from Korea, Italy, or somewhere far from their everyday world.) <br/><br/>What they want is simple: foreign connection that feels <strong>real, young, casual, and easy to start</strong>. Bumpy fits them because it makes international friendship feel immediate and reachable.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/International%20Friend%20Finder/Friends-US-n6f2Wt-banner-carwindow-VID-Batch2026Week03_(1).mp4">Friends-US-n6f2Wt-banner-carwindow-VID-Batch2026Week03 (1).mp4</a></span></td><td class="cell-W[Hn"><strong>• Young foreign girl presented like a real person</strong> with age, country, and flag<br/>• <strong>International friendship language</strong> like “wanna be friends?” and “international friends”<br/>• <strong>Global symbols</strong> like passports<br/>• <strong>Very direct wording</strong> that is easy to understand instantly</td><td class="cell-s\I{">• “If you need friends from other countries Try Bumpy Now &lt;3”<br/>• “Make friends from other countries today”<br/>• “anyone wanna be friends?? 19 from Korea 🇰🇷”<br/>• “Me: I want international friends / Bumpy: say no more”<br/>• “Hii 👋 19 y.o from 🇮🇹 want to have international friends!”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-80ff-91a2-eefcde3ea0f0"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-LatAm-32e0a07c1d4c80ff91a2eefcde3ea0f0?pvs=21" data-notion-page-id="32e0a07c-1d4c-80ff-91a2-eefcde3ea0f0" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from LatAm</a></td><td class="cell-BJ~I">Latina women who are attracted to <strong>foreign men (gringos)</strong> because they represent something different from local men: more attention, better treatment, or a more aspirational lifestyle. <br/><br/>They want to feel <strong>chosen by someone from outside</strong>, and believe foreign men offer a better kind of relationship or lifetyle. Bumpy fits because it shows these men are already there and actively looking for Latinas like them.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20LatAm/GringoLover-ES-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01.mp4">GringoLover-ES-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20LatAm/GringoLover-ES-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05_(2).mp4">GringoLover-ES-v8Gn7M-Pulseblack-Car-VID-Batch2026Week05 (2).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20LatAm/GringoLover-ES-H7kM3N-Airport-Combo-VID-Batch2026Week01.mp4">GringoLover-ES-H7kM3N-Airport-Combo-VID-Batch2026Week01.mp4</a></span></td><td class="cell-W[Hn">• Spanish language targeting Latina women<br/>• <strong>Foreign male lifestyle cues</strong> (man driving car) → different / higher value man<br/>• <strong>Couple outcome</strong> → (Gringo + Latina pairing) this pairing is real and achievable<br/>• Very direct wording</td><td class="cell-s\I{">“Hay más gringos queriendo salir con latinas de lo que imaginas”<br/><br/>“Muchos gringos en Bumpy buscando una latina.”<br/><br/>“Muchos gringos en Bumpy buscando una latina.”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-8044-be77-e6ac0eaf35e6"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-Indonesia-32e0a07c1d4c8044be77e6ac0eaf35e6?pvs=21" data-notion-page-id="32e0a07c-1d4c-8044-be77-e6ac0eaf35e6" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from Indonesia</a></td><td class="cell-BJ~I">Indonesian women who didn’t realize that <strong>foreign men (bule) are actively looking for them</strong>, and get surprised by that idea. What pulls them is the shift from “I didn’t know this existed” to “there are actually many of them, and they even want something serious.” <br/><br/>The appeal is not just foreign attention, but the <strong>unexpected discovery</strong> that these men are available, interested, and willing to commit. They want to explore this new option and see if it’s real for themselves. Bumpy fits because it turns that curiosity into proof</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Indonesia/GringoLover-ID-d5Y6mG-View-manygringos-VID-Batch2026Week08.mp4">GringoLover-ID-d5Y6mG-View-manygringos-VID-Batch2026Week08.mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Indonesia/GringoLover-ID-Mw4ucH-Fly-IndoWoman-VID-Batch2026Week08_(1).mp4">GringoLover-ID-Mw4ucH-Fly-IndoWoman-VID-Batch2026Week08 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Indonesia/GringoLover-ID-4g89om-IconicPlaces-Waterfall-VID-Batch2026Week08_(1).mp4">GringoLover-ID-4g89om-IconicPlaces-Waterfall-VID-Batch2026Week08 (1).mp4</a></span></td><td class="cell-W[Hn">• Indonesian language<br/>• Bule + cewe indo pairing<br/>• <strong>Surprise framing</strong> “ga nyangka”, “sebanyak itu”<br/>• <strong>Volume signal</strong> “banyak bule”<br/>• <strong>Commitment wording</strong> “mau komit”<br/>• <strong>Discovery → confirmation feeling<br/>• Exotic / travel visuals</strong> plane, beach, waterfall</td><td class="cell-s\I{">“Banyak bule yang pingin macarin orang indo di bumpy. buktiin sendiri,”<br/>→ “Many foreign men want to date Indonesian women on Bumpy. see it for yourself”<br/><br/>“sebanyak itu bule di bumpy yang pengen pacarin cewe indo!!!”<br/>→ “There are that many foreign men on Bumpy who want to date Indonesian girls!!!”<br/><br/>“ga nyangka banyak BULE di bumpy yang mau komit sama CEWE INDO”<br/>→ “Didn’t expect so many foreign men on Bumpy want to commit to Indonesian girls”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-8010-937e-e465f79e3bf4"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-India-32e0a07c1d4c8010937ee465f79e3bf4?pvs=21" data-notion-page-id="32e0a07c-1d4c-8010-937e-e465f79e3bf4" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from India</a></td><td class="cell-BJ~I"></td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-8023-ba55-c23cd36f884d"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-Turkey-32e0a07c1d4c8023ba55c23cd36f884d?pvs=21" data-notion-page-id="32e0a07c-1d4c-8023-ba55-c23cd36f884d" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from Turkey</a></td><td class="cell-BJ~I"></td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-80cc-873b-cf45d0ad147d"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Christian-Looking-for-Christian-Abroad-32e0a07c1d4c80cc873bcf45d0ad147d?pvs=21" data-notion-page-id="32e0a07c-1d4c-80cc-873b-cf45d0ad147d" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Christian Looking for Christian Abroad</a></td><td class="cell-BJ~I">Christians who want to date someone who <strong>shares the same faith</strong>, and feel that it’s hard to find the right partner within their local circle. What pulls them is the idea of meeting <strong>other Christians around the world</strong>, increasing their chances of finding someone aligned in values, lifestyle, and beliefs. <br/><br/>They want a relationship that feels <strong>faith-centered and intentional</strong>, not random or misaligned. Bumpy fits because it allows them to <strong>filter by religion</strong> and connect directly with Christian singles globally.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Christian%20Looking%20for%20Christian%20Abroad/Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06_(2).mp4">Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06 (2).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Christian%20Looking%20for%20Christian%20Abroad/Christian-US-n6f2Wt-Banner-Firework-VID-Batch2026Week06_(1).mp4">Christian-US-n6f2Wt-Banner-Firework-VID-Batch2026Week06 (1).mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>Clear identity callout</strong> “Christian singles”<br/>• <strong>Faith visuals</strong> church, Bible reading, worship<br/>• <strong>Calm, wholesome lifestyle scenes<br/>• Global framing</strong> “around the world”<br/>• <strong>Soft, sincere tone</strong><br/>Simple, clear wording</td><td class="cell-s\I{">“Meet Christian singles around the world on Bumpy 💙🤍”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-804f-9b78-ca713c05f643"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Latina-Lover-32e0a07c1d4c804f9b78ca713c05f643?pvs=21" data-notion-page-id="32e0a07c-1d4c-804f-9b78-ca713c05f643" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Latina Lover</a></td><td class="cell-BJ~I">Men who are attracted to <strong>Latina women</strong> and already have that preference, but feel like they don’t have access to them in their current environment. What pulls them is the idea that <strong>dating Latinas is actually possible and more attainable than they thought</strong>, not something distant or unrealistic. <br/><br/>They want a clear path to meet this type of woman and the feeling that they have a real chance. Bumpy fits because it makes Latina women feel <strong>accessible, available, and within reach</strong>.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Latina%20Lover/LatinaLover-US-n6f2Wt-banner-wall-IMG-Batch2026Week08.jpeg"><img style="width:20px;max-height:24px" src="Persona%20Card%20Library/Latina%20Lover/LatinaLover-US-n6f2Wt-banner-wall-IMG-Batch2026Week08.jpeg" alt="LatinaLover-US-n6f2Wt-banner-wall-IMG-Batch2026Week08.jpeg"/></a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Latina%20Lover/LatinaLover-US-n6f2Wt-banner-bigticket-IMG-Batch2026Week08.jpeg"><img style="width:20px;max-height:24px" src="Persona%20Card%20Library/Latina%20Lover/LatinaLover-US-n6f2Wt-banner-bigticket-IMG-Batch2026Week08.jpeg" alt="LatinaLover-US-n6f2Wt-banner-bigticket-IMG-Batch2026Week08.jpeg"/></a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Latina%20Lover/LatinaLover-US-H7kM3N-Airport-ShotfromBehind-VID-Batch2026Week08.mp4">LatinaLover-US-H7kM3N-Airport-ShotfromBehind-VID-Batch2026Week08.mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>Latina women visually highlighted</strong> (curly hair, brown eyes, feminine features)<br/>• <strong>Direct callout</strong> “date Latinas”<br/>• <strong>Possibility framing</strong> “better chance than you think”<br/>• <strong>Aspirational female presence</strong> confident, attractive<br/>• <strong>Simple, bold instruction</strong> try now<br/>• Clear, straightforward wording</td><td class="cell-s\I{">“DATE LATINAS ON BUMPY”<br/>“Let a girl with big brown eyes and curly hair change your life. Try Bumpy Now”<br/>“You have a better chance of dating a Latina than you think.”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-8061-8af2-ce6b785294cc"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Asian-Dating-32e0a07c1d4c80618af2ce6b785294cc?pvs=21" data-notion-page-id="32e0a07c-1d4c-8061-8af2-ce6b785294cc" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Asian Dating</a></td><td class="cell-BJ~I">People who are specifically attracted to <strong>Asian partners</strong> (not just men → also women), but don’t have easy access to them in their daily life. What pulls them is seeing <strong>real Asian people presenting themselves as available</strong>, which makes the idea feel immediate and real instead of distant. They want a clear, direct way to meet Asian partners without guessing where to find them. Bumpy fits because it positions itself as the place where <strong>Asian people are already active and open to connecting</strong>.</td><td class="cell-bh[q"></td><td class="cell-W[Hn">•English language<br/>• <strong>Direct identity callout</strong> “Asian” / “Chinese girls”<br/>• <strong>Selfie / POV style</strong> feels like real people<br/>• <strong>Direct instruction</strong> “it’s time for you to…” / “pro tip”<br/>•˜<strong>Availability signal</strong> “we’re all active on bumpy”<br/>• Simple, clear wording</td><td class="cell-s\I{">“It’s time for you to date an Asian on bumpy”<br/><br/>“pro tip if you’re into chinese girls:” —&gt; “we’re all active on bumpy :)”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-80e9-afd4-fb121f305a92"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/304050-Spanish-speaker-32e0a07c1d4c80e9afd4fb121f305a92?pvs=21" data-notion-page-id="32e0a07c-1d4c-80e9-afd4-fb121f305a92" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>304050 Spanish speaker</a></td><td class="cell-BJ~I">Men and women in their late 30s to late 40s who are <strong>starting over after a long relationship</strong> and feel like time is running out. What pulls them is the belief that it’s <strong>not too late to find real love again</strong>, especially with someone from another country who doesn’t carry their past or judge their age the same way. <br/><br/>They want a second chance at a meaningful relationship and proof that people like them are still finding love. Bumpy fits because it shows real examples of people their age finding love abroad and rebuilding their life.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/304050%20Spanish%20speaker/3040-ES-P8c7ao-Mirrorselfie-Female-Vid-Batch2025week50_(1).mp4">3040-ES-P8c7ao-Mirrorselfie-Female-Vid-Batch2025week50 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/304050%20Spanish%20speaker/3040-ES-j4yV4l-jayval-toolatefemale-VID-Batch2025Week50.mp4">3040-ES-j4yV4l-jayval-toolatefemale-VID-Batch2025Week50.mp4</a></span></td><td class="cell-W[Hn">• Age clearly stated (30s–40s)<br/>• <strong>“starting over” / “empezar de nuevo”</strong> messaging<br/>• <strong>Long relationship past</strong> (e.g. 10 years)<br/>• <strong>Success story progression</strong> meet → move → marriage → baby<br/>• <strong>“never too late” reassurance<br/>• Cross-country relationship</strong><br/>• Emotional, personal storytelling</td><td class="cell-s\I{">“1978, 47 años, Soltero 💔 Quiero empezar de nuevo. Buscando amor en Sudamérica 🌎❤️”<br/>→ “1978, 47 years old, single 💔 I want to start again. Looking for love in South America 🌎❤️”<br/><br/>“Salí de una relación de 10 años a los 31. Conocí a mi esposo 🇺🇸 en Bumpy a los 34, me mudé a su país y me casé a los 35. Hoy, a los 37, estoy embarazada de nuestro primer bebé. 🤍 Nunca me voy a arrepentir de haber descargado Bumpy y mudarme a otro país para encontrar mi felicidad.”<br/>→ “I left a 10-year relationship at 31. I met my husband 🇺🇸 on Bumpy at 34, moved to his country and married at 35. Now at 37, I’m pregnant with our first baby. 🤍 I will never regret downloading Bumpy and moving to another country to find my happiness.”<br/><br/>“Se casó con el amor de su vida a los 36, con alguien de otro país 🇺🇸 y cambió su vida por completo. Nunca es demasiado tarde.”<br/>→ “She married the love of her life at 36, with someone from another country 🇺🇸 and completely changed her life. It’s never too late.”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-8055-82fc-d8b143d126bd"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-Philippines-32e0a07c1d4c805582fcd8b143d126bd?pvs=21" data-notion-page-id="32e0a07c-1d4c-8055-82fc-d8b143d126bd" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from Philippines</a></td><td class="cell-BJ~I">Filipina women who are tired of <strong>dry, low-effort conversations locally</strong> and are drawn to the idea that <strong>men abroad (AFAMs)</strong> are more caring, more intentional, and looking for real relationships. What pulls them is the contrast: instead of being ignored or getting shallow chats, they can have <strong>long, meaningful conversations and serious intent</strong> from foreign men. <br/><br/>They want to feel valued, pursued, and in a relationship that actually goes somewhere. Bumpy fits because it shows that these men are already there, actively engaging, and looking for Filipinas.</td><td class="cell-bh[q"></td><td class="cell-W[Hn">• English language<br/>• <strong>Filipina + AFAM pairing<br/>• Clear contrast</strong> dry convo vs long meaningful chats<br/>• <strong>Caring / serious men abroad</strong> positioning<br/>• <strong>Long-term relationship angle<br/>• Real couple scenes</strong> affection / bonding<br/>• <strong>POV framing</strong> discovery moment</td><td class="cell-s\I{">“dry convo in other dating apps” / “long chats with AFAMs who are caring 💙💙”<br/><br/>“No one talks about guys abroad in Bumpy want long-term relationship with Filipinas”<br/><br/>“POV: you didn’t realize guys abroad are lining up for Filipinas on Bumpy”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-8074-856c-e5ae5d5c114a"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-Turkish-32e0a07c1d4c8074856ce5ae5d5c114a?pvs=21" data-notion-page-id="32e0a07c-1d4c-8074-856c-e5ae5d5c114a" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from Turkish</a></td><td class="cell-BJ~I">Turkish women who are drawn to the idea of dating <strong>foreign men</strong> because it feels more romantic, more effort-driven, and more exciting than what they expect locally. What pulls them is seeing that <strong>many foreign men are already interested in Turkish women</strong>, and that these men show affection through actions: flying to meet, giving flowers, planning dates. <br/><br/>They want a relationship where they feel <strong>pursued, appreciated, and treated specially</strong>, not something casual or low effort. Bumpy fits because it makes this feel real — foreign men are already there and actively pursuing Turkish women.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Turkish/GringoLover-TR-H7kM3N-Airport-Combo-VID-Batch2026Week04_(1).mp4">GringoLover-TR-H7kM3N-Airport-Combo-VID-Batch2026Week04 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Turkish/GringoLover-TR-H7kM3N-Airport-AirportHug-IMG-Batch2026Week04.jpg"><img style="width:20px;max-height:24px" src="Persona%20Card%20Library/Gringo%20Lover%20from%20Turkish/GringoLover-TR-H7kM3N-Airport-AirportHug-IMG-Batch2026Week04.jpg" alt="GringoLover-TR-H7kM3N-Airport-AirportHug-IMG-Batch2026Week04.jpg"/></a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20Turkish/GringoLover-TR-H7kM3N-Airport-CoupleUkrainian-IMG-Batch2026Week04.jpg"><img style="width:20px;max-height:24px" src="Persona%20Card%20Library/Gringo%20Lover%20from%20Turkish/GringoLover-TR-H7kM3N-Airport-CoupleUkrainian-IMG-Batch2026Week04.jpg" alt="GringoLover-TR-H7kM3N-Airport-CoupleUkrainian-IMG-Batch2026Week04.jpg"/></a></span></td><td class="cell-W[Hn">• Turkish language<br/>• Türk kızları + yabancı erkek pairing<br/>• <strong>Strong demand signal</strong> “çok daha fazla / fazlaymış”<br/>• <strong>Effort and romance signals</strong> flowers, dates, travel<br/>• <strong>Foreign male lifestyle cues</strong> driving, spending, gifting<br/>• <strong>Airport / meeting scenes</strong><br/>• Direct simple wording</td><td class="cell-s\I{">“Meğer yurt dışında sevgili yapan Türk kızları çok fazlaymış ✈️”<br/>→ “Turns out there are a lot of Turkish girls dating abroad ✈️”<br/><br/>“Türk kızlarıyla tanışmak isteyen yabancılar sandığından çok daha fazla”<br/>→ “There are far more foreigners wanting to meet Turkish girls than you think”<br/><br/>“Rare estetik: Yalnızca yabancı erkeklerle flört etmeye başlamak, Bumpy yüzünden”<br/>→ “Rare aesthetic: Starting to flirt only with foreign men, because of Bumpy”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="32e0a07c-1d4c-80b9-90f6-ee3a94ec3b8f"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/Gringo-Lover-from-India-Turned-to-Asian-Man-Lover-from-India-32e0a07c1d4c80b990f6ee3a94ec3b8f?pvs=21" data-notion-page-id="32e0a07c-1d4c-80b9-90f6-ee3a94ec3b8f" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Gringo Lover from India —&gt; Turned to Asian Man Lover from India</a></td><td class="cell-BJ~I">Indian women who are attracted to <strong>East Asian men (Korean / Chinese–looking)</strong> and get pulled in when they see these men showing clear interest in Indian women. What attracts them is the feeling that the exact type of men they like are <strong>real, available, and into them</strong>, which makes the connection feel exciting and possible. They want access to these men and confidence that the attraction goes both ways. Bumpy fits because it shows these men are already there and actively interested in Indian women.</td><td class="cell-bh[q"><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20India%20%E2%80%94%20Turned%20to%20Asian%20Man%20Love/GringoLover-IN-H7kM3N-Airport-ChineseSelfie-VID-Batch2026Week11_(1).mp4">GringoLover-IN-H7kM3N-Airport-ChineseSelfie-VID-Batch2026Week11 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20India%20%E2%80%94%20Turned%20to%20Asian%20Man%20Love/GringoLover-IN-H7kM3N-Airport-KoreanSelfie-VID-Batch2026Week11_(1).mp4">GringoLover-IN-H7kM3N-Airport-KoreanSelfie-VID-Batch2026Week11 (1).mp4</a></span><span style="margin-inline-end:6px"><a href="Persona%20Card%20Library/Gringo%20Lover%20from%20India%20%E2%80%94%20Turned%20to%20Asian%20Man%20Love/GringoLover-IN-H7kM3N-Airport-CoupleChina-VID-Batch2026Week11_(1).mp4">GringoLover-IN-H7kM3N-Airport-CoupleChina-VID-Batch2026Week11 (1).mp4</a></span></td><td class="cell-W[Hn">• English language<br/>• <strong>East Asian male faces (Korean / Chinese look) Indian woman + East Asian man pairing<br/>• Strong attraction wording</strong> “obsessed”, “more than you think”<br/>• <strong>POV realization<br/>• Clean, well-presented men</strong><br/>Direct, bold statements</td><td class="cell-s\I{">“POV: men abroad are obsessed with Indian women on Bumpy 😭”<br/><br/>“Men abroad want to date Indian women more than you think”<br/><br/>“POV: you didn’t realize men abroad are obsessed with Indian women on Bumpy 😭”</td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr><tr id="2bf0a07c-1d4c-80fa-a9be-dc2b1eb97e26"><td class="cell-_:oR"><span class="selected-value select-value-color-blue">League</span></td><td class="cell-title"><a href="https://app.notion.com/p/30-YOLO-Never-too-late-2bf0a07c1d4c80faa9bedc2b1eb97e26?pvs=21" data-notion-page-id="2bf0a07c-1d4c-80fa-a9be-dc2b1eb97e26" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>30+ YOLO Never too late</a></td><td class="cell-BJ~I">A 30-something who feels “late” while friends are already married or having kids; they don’t want casual dating, they want to make up for lost time by finding serious love that lets them jump into a new life fast. They use Bumpy to turn “I’m behind” into “I caught up and restarted my whole life abroad.”</td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"><a href="https://www.tiktok.com/@tiffwang_/video/7510458085190749482?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540tiffwang_%252Fvideo%252F7510458085190749482%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7510458085190749482" class="url-value">https://www.tiktok.com/@tiffwang_/video/7510458085190749482?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540tiffwang_%252Fvideo%252F7510458085190749482%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7510458085190749482</a></td><td class="cell-U]O`"><a href="https://www.tiktok.com/@tiffwang_/video/7248348373693009195?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540tiffwang_%252Fvideo%252F7248348373693009195%253F_r%253D1%2526_t%253DZS-90tsimQcsul%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7248348373693009195" class="url-value">https://www.tiktok.com/@tiffwang_/video/7248348373693009195?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540tiffwang_%252Fvideo%252F7248348373693009195%253F_r%253D1%2526_t%253DZS-90tsimQcsul%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7248348373693009195</a></td><td class="cell-JO;p"><a href="https://www.tiktok.com/@rubyyydoobyy/video/7520052559134985479?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540rubyyydoobyy%252Fvideo%252F7520052559134985479%253F_r%253D1%2526_t%253DZS-917duRhNrbV%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7520052559134985479" class="url-value">https://www.tiktok.com/@rubyyydoobyy/video/7520052559134985479?referer_url=embed.notion.co%2Fapi%2Fiframe%3Fapp%3D1%26url%3Dhttps%253A%252F%252Fwww.tiktok.com%252F%2540rubyyydoobyy%252Fvideo%252F7520052559134985479%253F_r%253D1%2526_t%253DZS-917duRhNrbV%26key%3D656ac74fac4fff346b811dca7919d483&amp;refer=embed&amp;embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404358%2C121497414%2C121477481%2C121351166%2C121811500%2C121960941%2C121860360%2C121487028%2C121331973%2C120811592%2C120810756%2C121885509%3Bnull%3Bembed_share&amp;referer_video_id=7520052559134985479</a></td><td class="cell-BO]n"><span class="selected-value select-value-color-orange">You&#x27;re never too late for a new beginning. With someone new. In a new country.</span></td><td class="cell-sFF?"><span class="status-value select-value-color-green"><div class="status-dot status-dot-color-green"></div>Successs</span></td></tr><tr id="3720a07c-1d4c-8047-bc4f-d7574c33de3f"><td class="cell-_:oR"></td><td class="cell-title"><a href="https://app.notion.com/p/3720a07c1d4c8047bc4fd7574c33de3f?pvs=21" data-notion-page-id="3720a07c-1d4c-8047-bc4f-d7574c33de3f" data-notion-space-id="09ed3c8d-a6c4-40ea-a5df-372b9da3ad31"><img class="icon notion-static-icon" src="https://app.notion.com/icons/photo-landscape_green.svg"/>Untitled</a></td><td class="cell-BJ~I"></td><td class="cell-bh[q"></td><td class="cell-W[Hn"></td><td class="cell-s\I{"></td><td class="cell-Rz~a"></td><td class="cell-`Y&gt;|"></td><td class="cell-PeYA"></td><td class="cell-U]O`"></td><td class="cell-JO;p"></td><td class="cell-BO]n"></td><td class="cell-sFF?"><span class="status-value"><div class="status-dot"></div>Draft</span></td></tr></tbody></table></div><br/><br/></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,4028 @@
+{
+ "week": "2026-10-12",
+ "ad_week": "2026-10-05",
+ "generated": "2026-11-02",
+ "tickets": [
+  {
+   "id": "T-691223",
+   "rank": 1,
+   "type": "Due",
+   "mind": "SlavicFemaleLover-EN",
+   "adset": "SlavicFemaleLover · iOS · EN",
+   "adset_id": "120246656912230469",
+   "os": "iOS",
+   "why": "ROAS 0.47",
+   "spend": 8545.0,
+   "roas": 0.469,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 0.676,
+   "reign": 22,
+   "reign_since": "2026-05-11",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-628890",
+   "rank": 2,
+   "type": "Decaying",
+   "mind": "InterracialDatingSeekers-EN",
+   "adset": "InterracialDatingSeekers · Android · EN",
+   "adset_id": "120246686288900469",
+   "os": "Android",
+   "why": "ROAS 0.317 (prev 0.31), under 0.32",
+   "spend": 4222.0,
+   "roas": 0.317,
+   "top_code": "w5K8bX",
+   "top_name": "talkingtoforeigner",
+   "top_share": 0.467,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-21",
+   "strikes": 2,
+   "weeks_under": 3,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 7,
+     "start": "2026-05-11"
+    },
+    {
+     "code": "w5K8bX",
+     "name": "talkingtoforeigner",
+     "weeks": 10,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "v07e5T",
+     "name": "lovestory",
+     "weeks": 1,
+     "start": "2026-09-07"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-903549",
+   "rank": 3,
+   "type": "Due",
+   "mind": "SlavicFemaleLover-EN",
+   "adset": "SlavicFemaleLover · Android · EN",
+   "adset_id": "120248289035490469",
+   "os": "Android",
+   "why": "ROAS 0.48",
+   "spend": 7863.0,
+   "roas": 0.476,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 0.802,
+   "reign": 18,
+   "reign_since": "2026-06-08",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-324425",
+   "rank": 4,
+   "type": "Decaying",
+   "mind": "LatinaFemaleLover-ES",
+   "adset": "LatinaFemaleLover · Android · ES · Casual",
+   "adset_id": "120250103244250469",
+   "os": "Android",
+   "why": "ROAS 0.26 (prev 0.24), under 0.32",
+   "spend": 3497.0,
+   "roas": 0.259,
+   "top_code": "n62Wt",
+   "top_name": "banner",
+   "top_share": 0.53,
+   "reign": 13,
+   "reign_since": "2026-07-13",
+   "last_refresh": "2026-09-21",
+   "strikes": 2,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7654.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder, SlavicFemaleLover",
+     "spend_as_1": 2773.0,
+     "last_as_1": "2026-08-24"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-910899",
+   "rank": 5,
+   "type": "Decaying",
+   "mind": "IntlFriendFinder-EN",
+   "adset": "IntlFriendFinder · Android · EN · Friend",
+   "adset_id": "120241069108990469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.37 from 0.40",
+   "spend": 4268.0,
+   "roas": 0.368,
+   "top_code": "q4Xr9m",
+   "top_name": "tweetoverlay",
+   "top_share": 0.804,
+   "reign": 8,
+   "reign_since": "2026-08-17",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 5,
+     "start": "2026-06-01"
+    },
+    {
+     "code": "m3dtCp",
+     "name": "beatsyncedtext",
+     "weeks": 5,
+     "start": "2026-07-06"
+    },
+    {
+     "code": "L2a9Md",
+     "name": "created",
+     "weeks": 1,
+     "start": "2026-08-10"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-329059",
+   "rank": 6,
+   "type": "Decaying",
+   "mind": "LocalDatingFatigue-EN",
+   "adset": "LocalDatingFatigue · Android · EN",
+   "adset_id": "120249813290590469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.38 from 0.57",
+   "spend": 4011.0,
+   "roas": 0.384,
+   "top_code": "k4Rm9p",
+   "top_name": "datingcontest",
+   "top_share": 0.976,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 7,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "Ap4rT7",
+     "name": "airplaneselfie",
+     "weeks": 2,
+     "start": "2026-08-17"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 3,
+     "start": "2026-08-31"
+    }
+   ],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-359282",
+   "rank": 7,
+   "type": "Decaying",
+   "mind": "General-TR",
+   "adset": "General · iOS · TR",
+   "adset_id": "120248273592820469",
+   "os": "iOS",
+   "why": "ROAS 0.31 (prev 0.34), under 0.32",
+   "spend": 2959.0,
+   "roas": 0.315,
+   "top_code": "k9R4mP",
+   "top_name": "parkingselfie",
+   "top_share": 0.421,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-09-21",
+   "strikes": 1,
+   "weeks_under": 11,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 15,
+     "start": "2026-06-08"
+    }
+   ],
+   "j1": [],
+   "brief": null
+  },
+  {
+   "id": "T-319999",
+   "rank": 8,
+   "type": "Due",
+   "mind": "LatinaFemaleLover-ES",
+   "adset": "LatinaFemaleLover · iOS · ES",
+   "adset_id": "120250103199990469",
+   "os": "iOS",
+   "why": "ROAS 0.44, spend +110% vs 2 weeks ago",
+   "spend": 4618.0,
+   "roas": 0.444,
+   "top_code": "n62Wt",
+   "top_name": "banner",
+   "top_share": 0.795,
+   "reign": 13,
+   "reign_since": "2026-07-13",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7654.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder, SlavicFemaleLover",
+     "spend_as_1": 2773.0,
+     "last_as_1": "2026-08-24"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-557432",
+   "rank": 9,
+   "type": "Decaying",
+   "mind": "ChatOnly-EN",
+   "adset": "ChatOnly · Android · EN · Talk",
+   "adset_id": "120251395574320469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.40 from 0.42",
+   "spend": 3399.0,
+   "roas": 0.395,
+   "top_code": "v13uln",
+   "top_name": "melancholicview",
+   "top_share": 0.501,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-602912",
+   "rank": 10,
+   "type": "Due",
+   "mind": "InterracialDatingSeekers-EN",
+   "adset": "InterracialDatingSeekers · iOS · EN",
+   "adset_id": "120245476029120469",
+   "os": "iOS",
+   "why": "ROAS 0.47",
+   "spend": 5305.0,
+   "roas": 0.47,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.437,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "v07e5T",
+     "name": "lovestory",
+     "weeks": 2,
+     "start": "2026-05-04"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 15,
+     "start": "2026-05-18"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 2,
+     "start": "2026-08-31"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-633463",
+   "rank": 11,
+   "type": "Decaying",
+   "mind": "NewLanguageLearner-EN",
+   "adset": "NewLanguageLearner · Android · EN",
+   "adset_id": "120250366334630469",
+   "os": "Android",
+   "why": "ROAS 0.315 (prev 0.41), under 0.32",
+   "spend": 2582.0,
+   "roas": 0.315,
+   "top_code": "b8H3s1",
+   "top_name": "fidgeting",
+   "top_share": 0.925,
+   "reign": 11,
+   "reign_since": "2026-07-27",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-333147",
+   "rank": 12,
+   "type": "Decaying",
+   "mind": "KoreanMaleCultureLover-EN",
+   "adset": "KoreanMaleCultureLover · Android · EN",
+   "adset_id": "120249813331470469",
+   "os": "Android",
+   "why": "ROAS 0.27 (prev 0.34), under 0.32",
+   "spend": 2494.0,
+   "roas": 0.271,
+   "top_code": "B9dF4J",
+   "top_name": "slider",
+   "top_share": 0.375,
+   "reign": 1,
+   "reign_since": "2026-10-05",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 3,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "B9dF4J",
+     "name": "slider",
+     "weeks": 6,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 8,
+     "start": "2026-08-10"
+    }
+   ],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-239865",
+   "rank": 13,
+   "type": "Decaying",
+   "mind": "SlavicFemaleLover-ES",
+   "adset": "SlavicFemaleLover · Android · ES",
+   "adset_id": "120251012398650469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.36 from 0.40",
+   "spend": 2862.0,
+   "roas": 0.356,
+   "top_code": "h7km3n",
+   "top_name": "wanted",
+   "top_share": 0.919,
+   "reign": 8,
+   "reign_since": "2026-08-17",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "General, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 30401.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 62538.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-902208",
+   "rank": 14,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-EN",
+   "adset": "GringoMaleLover · iOS · EN",
+   "adset_id": "120244259022080469",
+   "os": "iOS",
+   "why": "ROAS 0.40, under 0.40, not falling",
+   "spend": 4245.0,
+   "roas": 0.397,
+   "top_code": "C0kM3N",
+   "top_name": "combo",
+   "top_share": 0.718,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 2,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 6,
+     "start": "2026-07-13"
+    },
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "weeks": 5,
+     "start": "2026-08-24"
+    }
+   ],
+   "j1": [
+    {
+     "code": "7nf3oE",
+     "name": "slideshow",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 1311.0,
+     "last_as_1": "2026-08-24"
+    },
+    {
+     "code": "84n6r9",
+     "name": "facemask",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 368.0,
+     "last_as_1": "2026-08-17"
+    },
+    {
+     "code": "j4g89om",
+     "name": "iconicplaces",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 333.0,
+     "last_as_1": "2026-08-17"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-423742",
+   "rank": 15,
+   "type": "Decaying",
+   "mind": "AsianMaleLover-EN",
+   "adset": "AsianMaleLover · Android · EN",
+   "adset_id": "120251554237420469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.34 from 0.47",
+   "spend": 2249.0,
+   "roas": 0.339,
+   "top_code": "dR1elf",
+   "top_name": "dreamlife",
+   "top_share": 0.876,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-492461",
+   "rank": 16,
+   "type": "Due",
+   "mind": "General-EN",
+   "adset": "General · iOS · EN",
+   "adset_id": "120249174924610469",
+   "os": "iOS",
+   "why": "ROAS 0.55, spend +62% vs 2 weeks ago",
+   "spend": 3543.0,
+   "roas": 0.547,
+   "top_code": "EP - Instagram Apr 3",
+   "top_name": "",
+   "top_share": 0.487,
+   "reign": 15,
+   "reign_since": "2026-06-29",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "EP - Instagram Apr 9",
+     "name": "",
+     "weeks": 1,
+     "start": "2026-06-22"
+    }
+   ],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona + language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, General",
+     "spend_as_1": 47972.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "L2vM8Q",
+     "name": "manyhugs2",
+     "fit": "same persona",
+     "won_in": "ChristianMatchWorldwide, General",
+     "spend_as_1": 17936.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-118034",
+   "rank": 17,
+   "type": "Decaying",
+   "mind": "MatureDating-JA",
+   "adset": "MatureDating · iOS · JP · 30to40",
+   "adset_id": "120250691180340469",
+   "os": "iOS",
+   "why": "ROAS 0.28 (prev 0.44), under 0.32",
+   "spend": 1766.0,
+   "roas": 0.285,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.783,
+   "reign": 10,
+   "reign_since": "2026-08-03",
+   "last_refresh": "2026-08-03",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same persona",
+     "won_in": "MatureDating",
+     "spend_as_1": 11063.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover, MatureDating",
+     "spend_as_1": 4985.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona",
+     "won_in": "MatureDating",
+     "spend_as_1": 1323.0,
+     "last_as_1": "2026-09-21"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-160708",
+   "rank": 18,
+   "type": "Decaying",
+   "mind": "MatureDating-EN",
+   "adset": "MatureDating · Android · EN · 30to40",
+   "adset_id": "120248291607080469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.33 from 0.36",
+   "spend": 2128.0,
+   "roas": 0.333,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.523,
+   "reign": 6,
+   "reign_since": "2026-08-31",
+   "last_refresh": "2026-08-17",
+   "strikes": 1,
+   "weeks_under": 3,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "u7Wf9i",
+     "name": "wakeup",
+     "weeks": 2,
+     "start": "2026-07-27"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 1,
+     "start": "2026-08-10"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 2,
+     "start": "2026-08-17"
+    }
+   ],
+   "j1": [
+    {
+     "code": "7i40dX",
+     "name": "walking",
+     "fit": "same persona + language",
+     "won_in": "MatureDating",
+     "spend_as_1": 412.0,
+     "last_as_1": "2026-09-07"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-345011",
+   "rank": 19,
+   "type": "Due",
+   "mind": "LocalDatingFatigue-EN",
+   "adset": "LocalDatingFatigue · iOS · EN",
+   "adset_id": "120248273450110469",
+   "os": "iOS",
+   "why": "ROAS 0.49",
+   "spend": 2699.0,
+   "roas": 0.493,
+   "top_code": "k4Rm9p",
+   "top_name": "datingcontest",
+   "top_share": 0.975,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "Lx9mK2",
+     "name": "luggage",
+     "weeks": 1,
+     "start": "2026-07-13"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 2,
+     "start": "2026-07-20"
+    },
+    {
+     "code": "Ap4rT7",
+     "name": "airplaneselfie",
+     "weeks": 1,
+     "start": "2026-08-03"
+    }
+   ],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-825527",
+   "rank": 20,
+   "type": "Decaying",
+   "mind": "MuslimMatchWorldwide-EN",
+   "adset": "MuslimMatchWorldwide · iOS · EN",
+   "adset_id": "120243978255270469",
+   "os": "iOS",
+   "why": "Green, but hook rate -33% vs 4-wk avg",
+   "spend": 2563.0,
+   "roas": 0.549,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 0.531,
+   "reign": 10,
+   "reign_since": "2026-08-03",
+   "last_refresh": "2026-07-27",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "vh1kle",
+     "name": "motorbikerideinbali",
+     "weeks": 1,
+     "start": "2026-06-22"
+    },
+    {
+     "code": "h4ywx8",
+     "name": "banner",
+     "weeks": 4,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "j7G5d2",
+     "name": "wanted",
+     "weeks": 1,
+     "start": "2026-07-27"
+    }
+   ],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-769202",
+   "rank": 21,
+   "type": "Decaying",
+   "mind": "SlavicFemaleLover-EN",
+   "adset": "SlavicFemaleLover · iOS · EN",
+   "adset_id": "120251307692020469",
+   "os": "iOS",
+   "why": "Under 0.40 and falling: ROAS 0.34 from 0.43",
+   "spend": 1902.0,
+   "roas": 0.345,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.588,
+   "reign": 1,
+   "reign_since": "2026-10-05",
+   "last_refresh": "2026-09-07",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 4,
+     "start": "2026-09-07"
+    }
+   ],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-766870",
+   "rank": 22,
+   "type": "Due",
+   "mind": "ChristianMatchWorldwide-EN",
+   "adset": "ChristianMatchWorldwide · iOS · EN · US",
+   "adset_id": "120242347668700469",
+   "os": "iOS",
+   "why": "ROAS 0.49",
+   "spend": 2977.0,
+   "roas": 0.489,
+   "top_code": "L2vM8Q",
+   "top_name": "manyhugs2",
+   "top_share": 0.536,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "L2vM8Q",
+     "name": "manyhugs2",
+     "weeks": 27,
+     "start": "2026-02-23"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 4,
+     "start": "2026-08-31"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same persona + language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 13847.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "F4z7K2",
+     "name": "fastcarousel",
+     "fit": "same persona",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 2239.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-700177",
+   "rank": 23,
+   "type": "Due",
+   "mind": "IntlFriendFinder-EN",
+   "adset": "IntlFriendFinder · iOS · EN · Friend",
+   "adset_id": "120241067001770469",
+   "os": "iOS",
+   "why": "ROAS 0.47",
+   "spend": 2886.0,
+   "roas": 0.47,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.674,
+   "reign": 13,
+   "reign_since": "2026-07-13",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 12,
+     "start": "2026-01-26"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 11,
+     "start": "2026-04-20"
+    },
+    {
+     "code": "m3dtCp",
+     "name": "beatsyncedtext",
+     "weeks": 1,
+     "start": "2026-07-06"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "k4Rm9p",
+     "name": "datingcontest",
+     "fit": "same language",
+     "won_in": "LocalDatingFatigue, PassportBro",
+     "spend_as_1": 17376.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-455544",
+   "rank": 24,
+   "type": "Decaying",
+   "mind": "GirlWantsToRelocate-EN",
+   "adset": "GirlWantsToRelocate · iOS · EN",
+   "adset_id": "120248274555440469",
+   "os": "iOS",
+   "why": "Under 0.40 and falling: ROAS 0.40 from 0.43",
+   "spend": 1797.0,
+   "roas": 0.395,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.592,
+   "reign": 7,
+   "reign_since": "2026-08-24",
+   "last_refresh": "2026-07-27",
+   "strikes": 1,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "Kj4Rp7",
+     "name": "firstdate",
+     "weeks": 11,
+     "start": "2026-06-08"
+    }
+   ],
+   "j1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GirlWantsToRelocate",
+     "spend_as_1": 43650.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-038097",
+   "rank": 25,
+   "type": "Decaying",
+   "mind": "IntlFriendFinder-ES",
+   "adset": "IntlFriendFinder · Android · ES · Friend",
+   "adset_id": "120244260380970469",
+   "os": "Android",
+   "why": "ROAS 0.36, under 0.40, not falling",
+   "spend": 2732.0,
+   "roas": 0.359,
+   "top_code": "q4Xr9m",
+   "top_name": "tweetoverlay",
+   "top_share": 0.717,
+   "reign": 8,
+   "reign_since": "2026-08-17",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 3,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 19,
+     "start": "2026-04-06"
+    }
+   ],
+   "j1": [
+    {
+     "code": "L2a9Md",
+     "name": "created",
+     "fit": "same persona",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 932.0,
+     "last_as_1": "2026-08-10"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, LatinoMaleLover, LocalDatingFatigue",
+     "spend_as_1": 18022.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7654.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-721949",
+   "rank": 26,
+   "type": "Decaying",
+   "mind": "LatinaFemaleLover-EN",
+   "adset": "LatinaFemaleLover · iOS · EN · Talk",
+   "adset_id": "120250937219490469",
+   "os": "iOS",
+   "why": "Under 0.40 and falling: ROAS 0.34 from 0.53",
+   "spend": 1630.0,
+   "roas": 0.338,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 1.0,
+   "reign": 9,
+   "reign_since": "2026-08-10",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona + language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "C0kM3N",
+     "name": "combo",
+     "fit": "same persona + language",
+     "won_in": "GringoMaleLover, LatinaFemaleLover",
+     "spend_as_1": 8197.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 78762.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-950156",
+   "rank": 27,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-EN",
+   "adset": "GringoMaleLover · Android · EN",
+   "adset_id": "120244259501560469",
+   "os": "Android",
+   "why": "ROAS 0.37, under 0.40, not falling",
+   "spend": 2607.0,
+   "roas": 0.375,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.681,
+   "reign": 24,
+   "reign_since": "2026-04-27",
+   "last_refresh": "2026-09-21",
+   "strikes": 1,
+   "weeks_under": 3,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "v07e5T",
+     "name": "lovestory",
+     "weeks": 3,
+     "start": "2026-04-06"
+    }
+   ],
+   "j1": [
+    {
+     "code": "7nf3oE",
+     "name": "slideshow",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 1311.0,
+     "last_as_1": "2026-08-24"
+    },
+    {
+     "code": "84n6r9",
+     "name": "facemask",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 368.0,
+     "last_as_1": "2026-08-17"
+    },
+    {
+     "code": "j4g89om",
+     "name": "iconicplaces",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 333.0,
+     "last_as_1": "2026-08-17"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-291846",
+   "rank": 28,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-PT",
+   "adset": "GringoMaleLover · iOS · PT · PT",
+   "adset_id": "120240452918460469",
+   "os": "iOS",
+   "why": "Green, but hook rate -22% vs 4-wk avg",
+   "spend": 2114.0,
+   "roas": 0.554,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.454,
+   "reign": 5,
+   "reign_since": "2026-09-07",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "v8Gn7M",
+     "name": "pulseblack",
+     "weeks": 9,
+     "start": "2026-04-27"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 9,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2026-08-31"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 18564.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 5986.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 3818.0,
+     "last_as_1": "2026-09-28"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-014937",
+   "rank": 29,
+   "type": "Due",
+   "mind": "AsianFemaleLover-EN",
+   "adset": "AsianFemaleLover · iOS · EN",
+   "adset_id": "120241620149370469",
+   "os": "iOS",
+   "why": "ROAS 0.46",
+   "spend": 4976.0,
+   "roas": 0.456,
+   "top_code": "Q7mZ2x",
+   "top_name": "povbait",
+   "top_share": 0.547,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 20,
+     "start": "2026-04-13"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "weeks": 3,
+     "start": "2026-08-31"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 1,
+     "start": "2026-09-21"
+    }
+   ],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "k4Rm9p",
+     "name": "datingcontest",
+     "fit": "same language",
+     "won_in": "LocalDatingFatigue, PassportBro",
+     "spend_as_1": 17376.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-843110",
+   "rank": 30,
+   "type": "Decaying",
+   "mind": "SoutheastAsianFemaleLover-EN",
+   "adset": "SoutheastAsianFemaleLover · Android · EN",
+   "adset_id": "120251438431100469",
+   "os": "Android",
+   "why": "Green, but hook rate -20% vs 4-wk avg",
+   "spend": 1857.0,
+   "roas": 0.419,
+   "top_code": "w1Tr7K",
+   "top_name": "carousel",
+   "top_share": 0.478,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-298889",
+   "rank": 31,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-ES",
+   "adset": "GringoMaleLover · Android · ES · ES",
+   "adset_id": "120240452988890469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.38 from 0.47",
+   "spend": 1390.0,
+   "roas": 0.385,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.81,
+   "reign": 7,
+   "reign_since": "2026-08-24",
+   "last_refresh": "2026-09-14",
+   "strikes": 1,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "7nf3oE",
+     "name": "slideshow",
+     "weeks": 2,
+     "start": "2026-07-27"
+    },
+    {
+     "code": "84n6r9",
+     "name": "facemask",
+     "weeks": 1,
+     "start": "2026-08-10"
+    },
+    {
+     "code": "n1wM3B",
+     "name": "omaze",
+     "weeks": 1,
+     "start": "2026-08-17"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 15601.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "C0kM3N",
+     "name": "combo",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 8234.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-801709",
+   "rank": 32,
+   "type": "Decaying",
+   "mind": "PassportBro-EN",
+   "adset": "PassportBro · Android · EN · Serious",
+   "adset_id": "120244138017090469",
+   "os": "Android",
+   "why": "ROAS 0.39, under 0.40, not falling",
+   "spend": 5392.0,
+   "roas": 0.388,
+   "top_code": "k4Rm9p",
+   "top_name": "datingcontest",
+   "top_share": 0.359,
+   "reign": 1,
+   "reign_since": "2026-10-05",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 4,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "p8C7aO",
+     "name": "mirrorselfie",
+     "weeks": 3,
+     "start": "2026-05-11"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 7,
+     "start": "2026-06-01"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 11,
+     "start": "2026-07-20"
+    }
+   ],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-999972",
+   "rank": 33,
+   "type": "Due",
+   "mind": "IntlFriendFinder-ES",
+   "adset": "IntlFriendFinder · iOS · ES · Friend",
+   "adset_id": "120244259999720469",
+   "os": "iOS",
+   "why": "ROAS 0.42",
+   "spend": 2131.0,
+   "roas": 0.424,
+   "top_code": "q4Xr9m",
+   "top_name": "tweetoverlay",
+   "top_share": 0.674,
+   "reign": 8,
+   "reign_since": "2026-08-17",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 16,
+     "start": "2026-04-06"
+    },
+    {
+     "code": "S6j8tG",
+     "name": "excitement",
+     "weeks": 1,
+     "start": "2026-07-27"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "weeks": 2,
+     "start": "2026-08-03"
+    }
+   ],
+   "j1": [
+    {
+     "code": "L2a9Md",
+     "name": "created",
+     "fit": "same persona",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 932.0,
+     "last_as_1": "2026-08-10"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, LatinoMaleLover, LocalDatingFatigue",
+     "spend_as_1": 18022.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7654.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-339740",
+   "rank": 34,
+   "type": "Decaying",
+   "mind": "MatureDating-EN",
+   "adset": "MatureDating · iOS · EN · 30to40",
+   "adset_id": "120240273397400469",
+   "os": "iOS",
+   "why": "Green, but hook rate -57% vs 4-wk avg",
+   "spend": 1767.0,
+   "roas": 0.487,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.491,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 1,
+     "start": "2026-08-10"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 4,
+     "start": "2026-08-17"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 2,
+     "start": "2026-09-14"
+    }
+   ],
+   "j1": [
+    {
+     "code": "7i40dX",
+     "name": "walking",
+     "fit": "same persona + language",
+     "won_in": "MatureDating",
+     "spend_as_1": 412.0,
+     "last_as_1": "2026-09-07"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-844172",
+   "rank": 35,
+   "type": "Decaying",
+   "mind": "IntlFriendFinder-CH",
+   "adset": "IntlFriendFinder · iOS · CH · Friend",
+   "adset_id": "120244558441720469",
+   "os": "iOS",
+   "why": "Green, but hook rate -28% vs 4-wk avg",
+   "spend": 1765.0,
+   "roas": 0.455,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.484,
+   "reign": 6,
+   "reign_since": "2026-08-31",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "S6j8tG",
+     "name": "excitement",
+     "weeks": 1,
+     "start": "2026-07-13"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 5,
+     "start": "2026-07-20"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "weeks": 1,
+     "start": "2026-08-24"
+    }
+   ],
+   "j1": [
+    {
+     "code": "L2a9Md",
+     "name": "created",
+     "fit": "same persona",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 932.0,
+     "last_as_1": "2026-08-10"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-722472",
+   "rank": 36,
+   "type": "Decaying",
+   "mind": "SlavicFemaleLover-TR",
+   "adset": "SlavicFemaleLover · iOS · TR",
+   "adset_id": "120250727224720469",
+   "os": "iOS",
+   "why": "Under 0.40 and falling: ROAS 0.37 from 0.40",
+   "spend": 1318.0,
+   "roas": 0.369,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 1.0,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-08-03",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 3,
+     "start": "2026-08-03"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2026-08-24"
+    }
+   ],
+   "j1": [
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same persona",
+     "won_in": "SlavicFemaleLover",
+     "spend_as_1": 4361.0,
+     "last_as_1": "2026-09-28"
+    },
+    {
+     "code": "k9R4mP",
+     "name": "parkingselfie",
+     "fit": "same language",
+     "won_in": "General",
+     "spend_as_1": 3672.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-983928",
+   "rank": 37,
+   "type": "Decaying",
+   "mind": "MatureDating-EN",
+   "adset": "MatureDating · iOS · EN · 50to60",
+   "adset_id": "120249109839280469",
+   "os": "iOS",
+   "why": "Green, but IPM -55% vs 4-wk avg; hook rate -55% vs 4-wk avg",
+   "spend": 1753.0,
+   "roas": 0.429,
+   "top_code": "X4nR8W",
+   "top_name": "talkinghead",
+   "top_share": 0.731,
+   "reign": 7,
+   "reign_since": "2026-08-24",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-07-13"
+    },
+    {
+     "code": "8k4opR",
+     "name": "manyplaces",
+     "weeks": 2,
+     "start": "2026-07-27"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-08-10"
+    }
+   ],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona + language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same persona + language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 90659.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-296005",
+   "rank": 38,
+   "type": "Decaying",
+   "mind": "AsianFemaleLover-EN",
+   "adset": "AsianFemaleLover · Android · EN",
+   "adset_id": "120247322960050469",
+   "os": "Android",
+   "why": "Under 0.40 and falling: ROAS 0.34 from 0.45",
+   "spend": 2628.0,
+   "roas": 0.342,
+   "top_code": "Q7mZ2x",
+   "top_name": "povbait",
+   "top_share": 0.853,
+   "reign": 5,
+   "reign_since": "2026-09-07",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "7i40dX",
+     "name": "walking",
+     "weeks": 1,
+     "start": "2026-06-22"
+    },
+    {
+     "code": "r04k2B",
+     "name": "pickyourasian",
+     "weeks": 4,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 6,
+     "start": "2026-07-27"
+    }
+   ],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "k4Rm9p",
+     "name": "datingcontest",
+     "fit": "same language",
+     "won_in": "LocalDatingFatigue, PassportBro",
+     "spend_as_1": 17376.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-309916",
+   "rank": 39,
+   "type": "Decaying",
+   "mind": "LatinaFemaleLover-EN",
+   "adset": "LatinaFemaleLover · iOS · EN · Casual",
+   "adset_id": "120245363099160469",
+   "os": "iOS",
+   "why": "Green, but hook rate -43% vs 4-wk avg",
+   "spend": 1710.0,
+   "roas": 0.596,
+   "top_code": "C0kM3N",
+   "top_name": "combo",
+   "top_share": 0.623,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-06-22"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 11,
+     "start": "2026-07-06"
+    },
+    {
+     "code": "h7km3n",
+     "name": "wanted",
+     "weeks": 1,
+     "start": "2026-09-21"
+    }
+   ],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "k4Rm9p",
+     "name": "datingcontest",
+     "fit": "same language",
+     "won_in": "LocalDatingFatigue, PassportBro",
+     "spend_as_1": 17376.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-666702",
+   "rank": 40,
+   "type": "Due",
+   "mind": "ChristianMatchWorldwide-PT",
+   "adset": "ChristianMatchWorldwide · iOS · PT",
+   "adset_id": "120250726667020469",
+   "os": "iOS",
+   "why": "ROAS 0.42, spend +82% vs 2 weeks ago",
+   "spend": 1567.0,
+   "roas": 0.422,
+   "top_code": "F4z7K2",
+   "top_name": "fastcarousel",
+   "top_share": 0.473,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "F4z7K2",
+     "name": "fastcarousel",
+     "weeks": 3,
+     "start": "2026-08-03"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "weeks": 5,
+     "start": "2026-08-24"
+    }
+   ],
+   "j1": [
+    {
+     "code": "L2vM8Q",
+     "name": "manyhugs2",
+     "fit": "same persona",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7460.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder, SlavicFemaleLover",
+     "spend_as_1": 7544.0,
+     "last_as_1": "2026-09-28"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 3818.0,
+     "last_as_1": "2026-09-28"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-509491",
+   "rank": 41,
+   "type": "Due",
+   "mind": "SoutheastAsianFemaleLover-EN",
+   "adset": "SoutheastAsianFemaleLover · iOS · EN",
+   "adset_id": "120251435094910469",
+   "os": "iOS",
+   "why": "ROAS 0.53, spend +63% vs 2 weeks ago",
+   "spend": 1793.0,
+   "roas": 0.532,
+   "top_code": "w1Tr7K",
+   "top_name": "carousel",
+   "top_share": 0.778,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-295013",
+   "rank": 42,
+   "type": "Decaying",
+   "mind": "SlavicFemaleLover-EN",
+   "adset": "SlavicFemaleLover · Android · EN",
+   "adset_id": "120251892950130469",
+   "os": "Android",
+   "why": "ROAS 0.33, under 0.40, not falling",
+   "spend": 2040.0,
+   "roas": 0.333,
+   "top_code": "",
+   "top_name": "",
+   "top_share": null,
+   "reign": 0,
+   "reign_since": "",
+   "last_refresh": "",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [],
+   "brief": null
+  },
+  {
+   "id": "T-294559",
+   "rank": 43,
+   "type": "Due",
+   "mind": "GringoMaleLover-TH",
+   "adset": "GringoMaleLover · iOS · TH · TH",
+   "adset_id": "120240452945590469",
+   "os": "iOS",
+   "why": "ROAS 0.43",
+   "spend": 1223.0,
+   "roas": 0.428,
+   "top_code": "C0kM3N",
+   "top_name": "combo",
+   "top_share": 0.527,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 2,
+     "start": "2026-07-27"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 3,
+     "start": "2026-08-10"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 4,
+     "start": "2026-08-31"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 15601.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "8k4opR",
+     "name": "manyplaces",
+     "fit": "same language",
+     "won_in": "MatureDating",
+     "spend_as_1": 2275.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "S6j8tG",
+     "name": "excitement",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 2214.0,
+     "last_as_1": "2026-09-21"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-802966",
+   "rank": 44,
+   "type": "Due",
+   "mind": "AsianMaleLover-EN",
+   "adset": "AsianMaleLover · iOS · EN",
+   "adset_id": "120251738029660469",
+   "os": "iOS",
+   "why": "ROAS 0.41",
+   "spend": 1064.0,
+   "roas": 0.408,
+   "top_code": "dR1elf",
+   "top_name": "dreamlife",
+   "top_share": 0.921,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-552375",
+   "rank": 45,
+   "type": "Due",
+   "mind": "LocalDatingFatigue-ES",
+   "adset": "LocalDatingFatigue · Android · ES",
+   "adset_id": "120251395523750469",
+   "os": "Android",
+   "why": "ROAS 0.43, spend +53% vs 2 weeks ago",
+   "spend": 1260.0,
+   "roas": 0.432,
+   "top_code": "X4nR8W",
+   "top_name": "talkinghead",
+   "top_share": 0.995,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "Ap4rT7",
+     "name": "airplaneselfie",
+     "fit": "same persona",
+     "won_in": "LocalDatingFatigue",
+     "spend_as_1": 2317.0,
+     "last_as_1": "2026-08-24"
+    },
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 62538.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "General, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 29458.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-465558",
+   "rank": 46,
+   "type": "Due",
+   "mind": "General-RU",
+   "adset": "General · iOS · RU · Serious",
+   "adset_id": "120239734655580469",
+   "os": "iOS",
+   "why": "ROAS 0.77",
+   "spend": 1230.0,
+   "roas": 0.773,
+   "top_code": "L2vM8Q",
+   "top_name": "manyhugs2",
+   "top_share": 0.52,
+   "reign": 14,
+   "reign_since": "2025-12-22",
+   "last_refresh": "2025-12-22",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona",
+     "won_in": "General, MuslimMatchWorldwide",
+     "spend_as_1": 4934.0,
+     "last_as_1": "2026-08-31"
+    },
+    {
+     "code": "k9R4mP",
+     "name": "parkingselfie",
+     "fit": "same persona",
+     "won_in": "General",
+     "spend_as_1": 3672.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-401992",
+   "rank": 47,
+   "type": "Decaying",
+   "mind": "SlavicFemaleLover-ES",
+   "adset": "SlavicFemaleLover · iOS · ES",
+   "adset_id": "120250884019920469",
+   "os": "iOS",
+   "why": "Green, but hook rate -40% vs 4-wk avg",
+   "spend": 939.0,
+   "roas": 0.48,
+   "top_code": "h7km3n",
+   "top_name": "wanted",
+   "top_share": 0.858,
+   "reign": 6,
+   "reign_since": "2026-08-31",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "weeks": 3,
+     "start": "2026-08-10"
+    }
+   ],
+   "j1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "General, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 30401.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 62538.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-311248",
+   "rank": 48,
+   "type": "Decaying",
+   "mind": "GirlWantsToRelocate-ES",
+   "adset": "GirlWantsToRelocate · iOS · ES",
+   "adset_id": "120250283112480469",
+   "os": "iOS",
+   "why": "ROAS 0.36, under 0.40, not falling",
+   "spend": 1067.0,
+   "roas": 0.359,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.912,
+   "reign": 12,
+   "reign_since": "2026-07-20",
+   "last_refresh": "2026-07-27",
+   "strikes": 0,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "Kj4Rp7",
+     "name": "firstdate",
+     "fit": "same persona",
+     "won_in": "GirlWantsToRelocate",
+     "spend_as_1": 1092.0,
+     "last_as_1": "2026-08-17"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, LatinoMaleLover, LocalDatingFatigue",
+     "spend_as_1": 18022.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-161832",
+   "rank": 49,
+   "type": "Due",
+   "mind": "KoreanMaleCultureLover-EN",
+   "adset": "KoreanMaleCultureLover · iOS · EN",
+   "adset_id": "120247171618320469",
+   "os": "iOS",
+   "why": "ROAS 0.44",
+   "spend": 1064.0,
+   "roas": 0.441,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 0.408,
+   "reign": 10,
+   "reign_since": "2026-08-03",
+   "last_refresh": "2026-09-21",
+   "strikes": 1,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "B9dF4J",
+     "name": "slider",
+     "weeks": 2,
+     "start": "2026-05-18"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 1,
+     "start": "2026-06-01"
+    },
+    {
+     "code": "B9dF4J",
+     "name": "slider",
+     "weeks": 8,
+     "start": "2026-06-08"
+    }
+   ],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-302837",
+   "rank": 50,
+   "type": "Decaying",
+   "mind": "CelebrityCrushLookalikeLover-EN",
+   "adset": "CelebrityCrushLookalikeLover · iOS · EN",
+   "adset_id": "120249883028370469",
+   "os": "iOS",
+   "why": "ROAS 0.38, under 0.40, not falling",
+   "spend": 1053.0,
+   "roas": 0.377,
+   "top_code": "p0nPrF",
+   "top_name": "phoneprofile",
+   "top_share": 0.972,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "p0nPrF",
+     "name": "phoneprofile",
+     "weeks": 2,
+     "start": "2026-08-17"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "weeks": 1,
+     "start": "2026-08-31"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-09-07"
+    }
+   ],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-407803",
+   "rank": 51,
+   "type": "Decaying",
+   "mind": "SexyBeachGuy-EN",
+   "adset": "SexyBeachGuy · iOS · EN · Casual",
+   "adset_id": "120250364078030469",
+   "os": "iOS",
+   "why": "ROAS 0.35, under 0.40, not falling",
+   "spend": 1049.0,
+   "roas": 0.351,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.604,
+   "reign": 11,
+   "reign_since": "2026-07-27",
+   "last_refresh": "2026-09-21",
+   "strikes": 1,
+   "weeks_under": 3,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-893733",
+   "rank": 52,
+   "type": "Decaying",
+   "mind": "InstagramPost-PT",
+   "adset": "InstagramPost · iOS · PT",
+   "adset_id": "120250418937330469",
+   "os": "iOS",
+   "why": "ROAS 0.39, under 0.40, not falling",
+   "spend": 1990.0,
+   "roas": 0.389,
+   "top_code": "EP - Instagram June 14 - PT",
+   "top_name": "",
+   "top_share": 0.632,
+   "reign": 11,
+   "reign_since": "2026-07-27",
+   "last_refresh": "2026-07-27",
+   "strikes": 0,
+   "weeks_under": 4,
+   "fading": true,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 16224.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 9507.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder, SlavicFemaleLover",
+     "spend_as_1": 7544.0,
+     "last_as_1": "2026-09-28"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-662610",
+   "rank": 53,
+   "type": "Decaying",
+   "mind": "ChristianMatchWorldwide-ES",
+   "adset": "ChristianMatchWorldwide · iOS · ES",
+   "adset_id": "120250726626100469",
+   "os": "iOS",
+   "why": "ROAS 0.28 (prev 0.32), under 0.32",
+   "spend": 1653.0,
+   "roas": 0.283,
+   "top_code": "Q3fN8Z",
+   "top_name": "airportfirst",
+   "top_share": 0.67,
+   "reign": 6,
+   "reign_since": "2026-08-31",
+   "last_refresh": "2026-08-03",
+   "strikes": 0,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 4,
+     "start": "2026-08-03"
+    }
+   ],
+   "j1": [
+    {
+     "code": "L2vM8Q",
+     "name": "manyhugs2",
+     "fit": "same persona",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7460.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same language",
+     "won_in": "KoreanMaleCultureLover",
+     "spend_as_1": 5833.0,
+     "last_as_1": "2026-09-07"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-094451",
+   "rank": 54,
+   "type": "Decaying",
+   "mind": "LocalDatingFatigue-ES",
+   "adset": "LocalDatingFatigue · iOS · ES",
+   "adset_id": "120251270944510469",
+   "os": "iOS",
+   "why": "ROAS 0.35, under 0.40, not falling",
+   "spend": 906.0,
+   "roas": 0.35,
+   "top_code": "X4nR8W",
+   "top_name": "talkinghead",
+   "top_share": 0.997,
+   "reign": 6,
+   "reign_since": "2026-08-31",
+   "last_refresh": "2026-08-31",
+   "strikes": 0,
+   "weeks_under": 3,
+   "fading": true,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "Ap4rT7",
+     "name": "airplaneselfie",
+     "fit": "same persona",
+     "won_in": "LocalDatingFatigue",
+     "spend_as_1": 2317.0,
+     "last_as_1": "2026-08-24"
+    },
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 62538.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "General, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 29458.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-140322",
+   "rank": 55,
+   "type": "Decaying",
+   "mind": "LatinaFemaleLover-EN",
+   "adset": "LatinaFemaleLover · Android · EN · Casual",
+   "adset_id": "120247251403220469",
+   "os": "Android",
+   "why": "ROAS 0.31 (prev 0.28), under 0.32",
+   "spend": 1447.0,
+   "roas": 0.314,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.76,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-09-21",
+   "strikes": 1,
+   "weeks_under": 8,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2026-06-22"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 11,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "h7km3n",
+     "name": "wanted",
+     "weeks": 1,
+     "start": "2026-09-14"
+    }
+   ],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "b8H3s1",
+     "name": "fidgeting",
+     "fit": "same language",
+     "won_in": "NewLanguageLearner",
+     "spend_as_1": 18826.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "k4Rm9p",
+     "name": "datingcontest",
+     "fit": "same language",
+     "won_in": "LocalDatingFatigue, PassportBro",
+     "spend_as_1": 17376.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-344410",
+   "rank": 56,
+   "type": "Decaying",
+   "mind": "SexyFemaleLover-EN",
+   "adset": "SexyFemaleLover · iOS · EN · Casual",
+   "adset_id": "120249633444100469",
+   "os": "iOS",
+   "why": "ROAS 0.26 (prev 0.50), under 0.32",
+   "spend": 1421.0,
+   "roas": 0.256,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 0.972,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-08-10",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 8,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "weeks": 4,
+     "start": "2026-08-24"
+    }
+   ],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "CelebrityCrushLookalikeLover, EgoBoostForIndianBoy, GringoMaleLover",
+     "spend_as_1": 33480.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 23299.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-889773",
+   "rank": 57,
+   "type": "Decaying",
+   "mind": "InstagramPost-ES",
+   "adset": "InstagramPost · iOS · ES",
+   "adset_id": "120250418897730469",
+   "os": "iOS",
+   "why": "ROAS 0.33, under 0.40, not falling",
+   "spend": 1410.0,
+   "roas": 0.327,
+   "top_code": "EP - Instagram Apr 9 - ES",
+   "top_name": "",
+   "top_share": 0.52,
+   "reign": 10,
+   "reign_since": "2026-08-03",
+   "last_refresh": "2026-07-27",
+   "strikes": 0,
+   "weeks_under": 3,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "EP - Instagram June 2 - ",
+     "name": "",
+     "weeks": 1,
+     "start": "2026-07-27"
+    }
+   ],
+   "j1": [
+    {
+     "code": "n62Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "LatinaFemaleLover",
+     "spend_as_1": 62538.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same language",
+     "won_in": "General, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 29458.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-465557",
+   "rank": 58,
+   "type": "Decaying",
+   "mind": "General-UA",
+   "adset": "General · iOS · UA · Serious",
+   "adset_id": "120239734655570469",
+   "os": "iOS",
+   "why": "ROAS 0.37, under 0.40, not falling",
+   "spend": 693.0,
+   "roas": 0.371,
+   "top_code": "L2vM8Q",
+   "top_name": "manyhugs2",
+   "top_share": 0.647,
+   "reign": 11,
+   "reign_since": "2026-07-27",
+   "last_refresh": "2025-12-22",
+   "strikes": 0,
+   "weeks_under": 5,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "i7P5Th",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2025-12-22"
+    },
+    {
+     "code": "L2vM8Q",
+     "name": "manyhugs2",
+     "weeks": 9,
+     "start": "2025-12-29"
+    },
+    {
+     "code": "i7P5Th",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-07-13"
+    }
+   ],
+   "j1": [
+    {
+     "code": "k9R4mP",
+     "name": "parkingselfie",
+     "fit": "same persona",
+     "won_in": "General",
+     "spend_as_1": 3672.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona",
+     "won_in": "General",
+     "spend_as_1": 1288.0,
+     "last_as_1": "2026-08-31"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-095695",
+   "rank": 59,
+   "type": "Due",
+   "mind": "LocalDatingFatigue-PT",
+   "adset": "LocalDatingFatigue · iOS · PT",
+   "adset_id": "120251270956950469",
+   "os": "iOS",
+   "why": "ROAS 0.63",
+   "spend": 675.0,
+   "roas": 0.634,
+   "top_code": "X4nR8W",
+   "top_name": "talkinghead",
+   "top_share": 0.616,
+   "reign": 6,
+   "reign_since": "2026-08-31",
+   "last_refresh": "2026-09-28",
+   "strikes": 0,
+   "weeks_under": 0,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "k4Rm9p",
+     "name": "datingcontest",
+     "fit": "same persona",
+     "won_in": "LocalDatingFatigue",
+     "spend_as_1": 12341.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Ap4rT7",
+     "name": "airplaneselfie",
+     "fit": "same persona",
+     "won_in": "LocalDatingFatigue",
+     "spend_as_1": 2317.0,
+     "last_as_1": "2026-08-24"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 9507.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-293353",
+   "rank": 60,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-ES",
+   "adset": "GringoMaleLover · iOS · ES · ES",
+   "adset_id": "120240452933530469",
+   "os": "iOS",
+   "why": "ROAS 0.24 (prev 0.25), under 0.32",
+   "spend": 1068.0,
+   "roas": 0.243,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.564,
+   "reign": 7,
+   "reign_since": "2026-08-24",
+   "last_refresh": "2026-09-14",
+   "strikes": 1,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "4Bm9of",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-06-29"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 5,
+     "start": "2026-07-13"
+    },
+    {
+     "code": "4Bm9of",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2026-08-17"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 15601.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "C0kM3N",
+     "name": "combo",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 8234.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-317444",
+   "rank": 61,
+   "type": "Decaying",
+   "mind": "GirlWantsToRelocate-PT",
+   "adset": "GirlWantsToRelocate · iOS · PT",
+   "adset_id": "120250283174440469",
+   "os": "iOS",
+   "why": "ROAS 0.27 (prev 0.19), under 0.32",
+   "spend": 1067.0,
+   "roas": 0.271,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.455,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-07-27",
+   "strikes": 0,
+   "weeks_under": 2,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2026-07-20"
+    },
+    {
+     "code": "v8Gn7M",
+     "name": "pulseblack",
+     "weeks": 2,
+     "start": "2026-07-27"
+    },
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "weeks": 7,
+     "start": "2026-08-10"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Kj4Rp7",
+     "name": "firstdate",
+     "fit": "same persona",
+     "won_in": "GirlWantsToRelocate",
+     "spend_as_1": 1092.0,
+     "last_as_1": "2026-08-17"
+    },
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder, SlavicFemaleLover",
+     "spend_as_1": 7544.0,
+     "last_as_1": "2026-09-28"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 5986.0,
+     "last_as_1": "2026-09-21"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-917060",
+   "rank": 62,
+   "type": "Decaying",
+   "mind": "AttractiveBlackFemale-EN",
+   "adset": "AttractiveBlackFemale · iOS · EN · Casual",
+   "adset_id": "120251129170600469",
+   "os": "iOS",
+   "why": "ROAS 0.30 (prev 0.40), under 0.32",
+   "spend": 1052.0,
+   "roas": 0.295,
+   "top_code": "a2Ef3y",
+   "top_name": "wanted",
+   "top_share": 0.993,
+   "reign": 7,
+   "reign_since": "2026-08-24",
+   "last_refresh": "2026-08-24",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 75864.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, InterlocalDating, InterracialDatingSeekers",
+     "spend_as_1": 27256.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-298888",
+   "rank": 63,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-ID",
+   "adset": "GringoMaleLover · Android · ID · ID",
+   "adset_id": "120240452988880469",
+   "os": "Android",
+   "why": "ROAS 0.31 (prev 0.42), under 0.32",
+   "spend": 1045.0,
+   "roas": 0.309,
+   "top_code": "C0kM3N",
+   "top_name": "combo",
+   "top_share": 0.395,
+   "reign": 1,
+   "reign_since": "2026-10-05",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "weeks": 2,
+     "start": "2026-08-31"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 1,
+     "start": "2026-09-14"
+    },
+    {
+     "code": "t3Wq8n",
+     "name": "bigtext",
+     "weeks": 2,
+     "start": "2026-09-21"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 15601.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "8k4opR",
+     "name": "manyplaces",
+     "fit": "same language",
+     "won_in": "MatureDating",
+     "spend_as_1": 2077.0,
+     "last_as_1": "2026-09-14"
+    },
+    {
+     "code": "B9dF4J",
+     "name": "slider",
+     "fit": "same language",
+     "won_in": "KoreanMaleCultureLover",
+     "spend_as_1": 1016.0,
+     "last_as_1": "2026-08-24"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-321500",
+   "rank": 64,
+   "type": "Decaying",
+   "mind": "LatinaFemaleLover-PT",
+   "adset": "LatinaFemaleLover · iOS · PT",
+   "adset_id": "120250103215000469",
+   "os": "iOS",
+   "why": "ROAS 0.34, under 0.40, not falling",
+   "spend": 1059.0,
+   "roas": 0.339,
+   "top_code": "n62Wt",
+   "top_name": "banner",
+   "top_share": 0.763,
+   "reign": 13,
+   "reign_since": "2026-07-13",
+   "last_refresh": "2026-09-28",
+   "strikes": 2,
+   "weeks_under": 5,
+   "fading": false,
+   "past_no1": [],
+   "j1": [
+    {
+     "code": "w1Tr7K",
+     "name": "carousel",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder, SlavicFemaleLover",
+     "spend_as_1": 7544.0,
+     "last_as_1": "2026-09-28"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 5986.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 3818.0,
+     "last_as_1": "2026-09-28"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-118607",
+   "rank": 65,
+   "type": "Decaying",
+   "mind": "MatureDating-KO",
+   "adset": "MatureDating · iOS · KR · 30to40",
+   "adset_id": "120250691186070469",
+   "os": "iOS",
+   "why": "ROAS 0.20 (prev 0.16), under 0.32",
+   "spend": 715.0,
+   "roas": 0.199,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.731,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-08-03",
+   "strikes": 0,
+   "weeks_under": 6,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 5,
+     "start": "2026-08-03"
+    },
+    {
+     "code": "8k4opR",
+     "name": "manyplaces",
+     "weeks": 2,
+     "start": "2026-09-07"
+    }
+   ],
+   "j1": [
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same persona",
+     "won_in": "MatureDating",
+     "spend_as_1": 11063.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover, MatureDating",
+     "spend_as_1": 3079.0,
+     "last_as_1": "2026-09-07"
+    },
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona",
+     "won_in": "MatureDating",
+     "spend_as_1": 1323.0,
+     "last_as_1": "2026-09-21"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-564005",
+   "rank": 66,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-JA",
+   "adset": "GringoMaleLover · Android · JP · JP",
+   "adset_id": "120251395640050469",
+   "os": "Android",
+   "why": "ROAS 0.316 (prev 0.27), under 0.32",
+   "spend": 706.0,
+   "roas": 0.316,
+   "top_code": "H7kM3N",
+   "top_name": "airport",
+   "top_share": 0.38,
+   "reign": 2,
+   "reign_since": "2026-09-28",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 4,
+   "fading": true,
+   "past_no1": [
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-09-14"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 15601.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "C0kM3N",
+     "name": "combo",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 8234.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "7nf3oE",
+     "name": "slideshow",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 1311.0,
+     "last_as_1": "2026-08-24"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-039425",
+   "rank": 67,
+   "type": "Decaying",
+   "mind": "KoreanMaleCultureLover-ES",
+   "adset": "KoreanMaleCultureLover · Android · ES",
+   "adset_id": "120250520394250469",
+   "os": "Android",
+   "why": "ROAS 0.29 (prev 0.49), under 0.32",
+   "spend": 1402.0,
+   "roas": 0.289,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.669,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-09-21",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "weeks": 7,
+     "start": "2026-07-27"
+    }
+   ],
+   "j1": [
+    {
+     "code": "q4Xr9m",
+     "name": "tweetoverlay",
+     "fit": "same language",
+     "won_in": "IntlFriendFinder",
+     "spend_as_1": 25785.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide, LatinoMaleLover, LocalDatingFatigue",
+     "spend_as_1": 18022.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q3fN8Z",
+     "name": "airportfirst",
+     "fit": "same language",
+     "won_in": "ChristianMatchWorldwide",
+     "spend_as_1": 7654.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-319678",
+   "rank": 68,
+   "type": "Decaying",
+   "mind": "GringoMaleLover-JA",
+   "adset": "GringoMaleLover · iOS · JP · JP",
+   "adset_id": "120250283196780469",
+   "os": "iOS",
+   "why": "ROAS 0.20 (prev 0.91), under 0.32",
+   "spend": 697.0,
+   "roas": 0.202,
+   "top_code": "n6f2Wt",
+   "top_name": "banner",
+   "top_share": 0.438,
+   "reign": 3,
+   "reign_since": "2026-09-21",
+   "last_refresh": "2026-09-14",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 2,
+     "start": "2026-08-10"
+    },
+    {
+     "code": "n6f2Wt",
+     "name": "banner",
+     "weeks": 2,
+     "start": "2026-08-24"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "weeks": 2,
+     "start": "2026-09-07"
+    }
+   ],
+   "j1": [
+    {
+     "code": "Co3Mb0",
+     "name": "coupleproof",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 15601.0,
+     "last_as_1": "2026-09-21"
+    },
+    {
+     "code": "C0kM3N",
+     "name": "combo",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 8234.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "7nf3oE",
+     "name": "slideshow",
+     "fit": "same persona",
+     "won_in": "GringoMaleLover",
+     "spend_as_1": 1311.0,
+     "last_as_1": "2026-08-24"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-338070",
+   "rank": 69,
+   "type": "Decaying",
+   "mind": "MatureDating-EN",
+   "adset": "MatureDating · Android · EN · 50to60",
+   "adset_id": "120249813380700469",
+   "os": "Android",
+   "why": "ROAS 0.29 (prev 0.28), under 0.32",
+   "spend": 1079.0,
+   "roas": 0.288,
+   "top_code": "8k4opR",
+   "top_name": "manyplaces",
+   "top_share": 0.617,
+   "reign": 4,
+   "reign_since": "2026-09-14",
+   "last_refresh": "2026-08-17",
+   "strikes": 0,
+   "weeks_under": 10,
+   "fading": false,
+   "past_no1": [
+    {
+     "code": "8k4opR",
+     "name": "manyplaces",
+     "weeks": 4,
+     "start": "2026-08-03"
+    },
+    {
+     "code": "X4nR8W",
+     "name": "talkinghead",
+     "weeks": 1,
+     "start": "2026-08-31"
+    },
+    {
+     "code": "7i40dX",
+     "name": "walking",
+     "weeks": 1,
+     "start": "2026-09-07"
+    }
+   ],
+   "j1": [
+    {
+     "code": "a2Ef3y",
+     "name": "wanted",
+     "fit": "same persona + language",
+     "won_in": "AsianFemaleLover, AttractiveBlackFemale, General",
+     "spend_as_1": 312262.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "H7kM3N",
+     "name": "airport",
+     "fit": "same persona + language",
+     "won_in": "AsianFemaleLover, GirlWantsToRelocate, GringoMaleLover",
+     "spend_as_1": 90659.0,
+     "last_as_1": "2026-10-05"
+    },
+    {
+     "code": "Q7mZ2x",
+     "name": "povbait",
+     "fit": "same language",
+     "won_in": "AsianFemaleLover",
+     "spend_as_1": 27416.0,
+     "last_as_1": "2026-10-05"
+    }
+   ],
+   "brief": null
+  },
+  {
+   "id": "T-551780",
+   "rank": 70,
+   "type": "Decaying",
+   "mind": "Translation-ES",
+   "adset": "Translation · iOS · ES",
+   "adset_id": "120251975517800469",
+   "os": "iOS",
+   "why": "ROAS 0.29, under 0.32",
+   "spend": 307.0,
+   "roas": 0.288,
+   "top_code": "",
+   "top_name": "",
+   "top_share": null,
+   "reign": 0,
+   "reign_since": "",
+   "last_refresh": "",
+   "strikes": 0,
+   "weeks_under": 1,
+   "fading": false,
+   "past_no1": [],
+   "j1": [],
+   "brief": null
+  }
+ ]
+}
