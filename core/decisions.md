@@ -5,6 +5,11 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-03 · Launch review: persona slides, row order, owner-first actions
+- **Decided by:** creative lead, reviewing the Batch 40 deck.
+- **Rule:** section 1 covers the refresh only (no creator content). One slide per persona refresh (upload-wave slides dropped: they repeated the same adsets), each followed by its action slide. Rows: new creative in the top 3 first, ROAS best → worst; then the rest, worst → best. Action rows sorted by owner, creative first, one creative row per persona × language (no OS split: one creative set goes to both OS). Research rows before a brief when the cause is unclear (e.g. why CH wants international friends; why Gringo EN iOS lags Android).
+- **Where:** `tools/report/REFRESH-REVIEW.md` 1.2.0, `tools/report/refresh_review.py`.
+
 ### 2026-11-02 · Refresh read: Worked / Almost / Flat / Worse / Miss, and what each does to strikes and tickets
 - **Decided by:** creative lead, reviewing the first launch review (Batch 40).
 - **Rule:** did the new creative reach the adset's top 3 spenders? If yes: ROAS up and 0.40+ = Worked; up but under 0.40 = Almost; no move = Flat; down = Worse. If no: Miss; Miss (left) when the adset is 0.40+ on old creatives.

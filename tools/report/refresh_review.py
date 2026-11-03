@@ -14,7 +14,7 @@ For every adset the batch landed in:
   read     = Worked / Almost / Flat / Worse / Miss / Miss (left), same rule as engine/tickets.py (spec §6.2b)
   #1       = top concept before vs since upload; NEW = the batch is #1, NEW-OLD = an older concept just became #1
   reign    = weeks the current #1 has led the adset (weekly #1s, counted back from the latest week)
-Action items: priority = read weight × the adset's weekly spend (Worse first, then misses under the bar,
+Action items (owner-first on the slides, one creative row per persona × language): priority = read weight × the adset's weekly spend (Worse first, then misses under the bar,
 then Almost / Flat); Miss (left) and Worked are left alone. Account news: every other adset with $1k+ a week
 whose #1 changed, or where a concept jumped into the top 3 with 15%+ share (+10 points), week on week.
 """
@@ -130,9 +130,11 @@ def main():
             spend_week=round(float(wk_spend.get(aid, 0))), priority=round(WEIGHT[read] * float(wk_spend.get(aid, 0))),
             action=ACTION[read]))
     R = pd.DataFrame(rows)
-    # slide order (REFRESH-REVIEW.md): per wave, the batch in the top 3 first, then ROAS after high → low
+    # slide order (REFRESH-REVIEW.md): per persona; batch in the top 3 first, ROAS after best → worst,
+    # then the rest worst → best, so the bad rows of both groups meet in the middle
     R["_in"] = R["rank"] <= READ["top_n"]
-    R = R.sort_values(["upload", "_in", "after"], ascending=[True, False, False]).drop(columns="_in")
+    R["_k"] = np.where(R._in, -R.after.fillna(-1), R.after.fillna(-1))
+    R = R.sort_values(["persona", "_in", "_k"], ascending=[True, False, True]).drop(columns=["_in", "_k"])
     # ---- account news: every other adset with $1k+ a week whose top spenders moved ----
     news = []
     w = d[d.week.isin([prev_week, last_week])].groupby(["adset_id", "week", "grp"]).spend.sum().reset_index()

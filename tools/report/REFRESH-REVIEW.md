@@ -1,6 +1,6 @@
 # Launch review deck ("what we launched last week, and how it's going")
 
-version: 1.1.0 (3 Nov 2026: row sorting, an action slide after every results slide; first run: Batch 40, `reports/2026-10-26/`)
+version: 1.2.0 (3 Nov 2026: persona slides replace wave slides; Yes best → worst, No worst → best; actions owner-first, per persona × language; first run: Batch 40, `reports/2026-10-26/`)
 Presented at the Tuesday UA meeting. Built as a Claude Slides artifact; the creative lead adds verdicts and
 action items on top. Rules behind it: `core/spec.md` §6.2b (refresh read), §15 (bar).
 
@@ -16,28 +16,33 @@ action items on top. Rules behind it: `core/spec.md` §6.2b (refresh read), §15
    `reports/2026-10-26/deck/` to copy the look). Check every number on the slides against the JSON.
 
 ## Structure: one talking point per slide, the headline is the sentence you say
-Every results slide is followed by its own **action slide**, so the actions stay in context.
+Section 1 is **the refresh only**: no creator / pass-through content anywhere in it (not on the tables, not in the
+actions, not in footers). Section 2 is Account news. Every results slide is followed by its own action slide.
 | # | Slide | Content |
 |---|---|---|
 | 1 | Cover | "What we launched last week, and how it's going" · week · batch |
-| 2 | What we made | Big count ("69 new files, 4 concepts, 17 adsets"); one tile per concept: videos / images → persona × languages (adset count), upload day; sky tile = new concept, orange = new variants of a running concept. Footer: who briefed / designed; pass-through batches named, not counted |
+| 2 | What we made | Big count ("69 new files, 4 concepts, 17 adsets"); one tile per concept: videos / images → persona × languages (adset count), upload day; sky tile = new concept, orange = new variants of a running concept. Footer: who briefed / designed |
 | 3 | How to read | The two rules: ROAS colours and the refresh verdict (below), the NEW / NEW-OLD tags, yellow "#1 under 2 weeks" |
-| 4 | Wave 1 results (one slide per upload day group) | One row per adset: ad set · 8-week ROAS sparkline (shaded under 0.40, dot on the upload week coloured by zone) · Before · After (+ ▲/▼) · "New creative in top 3?" (Yes · #rank, or No · #rank (old <name>)) · Verdict. Headline counts the verdicts |
-| 5 | Wave 1 actions | Per-adset actions for that wave (creative briefs and media-buyer moves) |
-| 6–7 | Wave 2 results + actions | same |
-| next pairs | "<Persona> Refresh: <Concept>" + its actions | Results: Before · After · New top spender? · Batch share · Current #1 spender (NEW / NEW-OLD pill) · #1 for (yellow pill under 2 weeks); NEW rows tinted blue, NEW-OLD peach. Actions: what to do with the concept: keep / iterate where it won spend, stop variants where it didn't, a draft hypothesis, code fixes |
+| 4 | Scoreboard | One row per refresh (persona · concept): live day · days of data · adsets · count of Worked / Almost / Flat / Worse / Miss as coloured pills; a total row. Headline = the totals ("1 worked, 3 almost, 4 got worse, 8 missed") |
+| then, per refresh | "<Persona> Refresh: <Concept>" | Subtitle: "Live: <day> · N days of data · concept · files"; a grey line "Result: …". One row per adset: ad set (OS · language) · 8-week ROAS sparkline (shaded under 0.40, dot on the upload week coloured by zone) · Before · After (+ ▲/▼) · New in top 3? · rank · share · Current #1 spender (NEW / NEW-OLD pill; row tinted blue / peach) · #1 for (yellow pill under 2 weeks) · Verdict |
+| after each refresh | Action items · <Persona> | Below |
 | next | Section 2 divider: Account news | |
-| next | Account news + its actions | Adsets **outside** the refresh with $1.5k+ a week whose #1 changed or got a top-3 riser (+10 pts, 15%+ share), top 10 by spend: ad set · Before · After · change · previous winner (weeks) · new winner (NEW #1 / TOP 3 pill, share before → after). Actions: budgets to hold, winners to decode |
+| next | Account news + its actions | Adsets **outside** the refresh with $1.5k+ a week whose #1 changed or got a top-3 riser (+10 pts, 15%+ share), top 10 by spend: ad set · Before · After · change · previous winner (weeks) · new winner (NEW #1 / TOP 3 pill, share before → after) |
 
-**Row order.** Results slides (waves and refreshes): first the adsets where the new creative made it (top 3 on wave
-slides, new #1 on refresh slides), then the rest; inside each group, ROAS after from high to low. Account news:
-ROAS after from high to low, ties by the biggest improvement (use the change between the rounded numbers shown).
+Why persona slides and not upload-wave slides (decided 3 Nov): the waves showed the same adsets twice; each refresh
+goes live on one day, so its days of data sit in the subtitle instead.
 
-**Action slides** all use one table: Priority pill · Ad sets · Owner (Creative / Media buyer / Creative lead pill) ·
-Spend/wk · Action (one sentence, the number that justifies it inside). Priority numbers run across the whole deck
-(1 · Urgent, 2 · High …) so the ranking survives being split; other pills: Watch (yellow), Leave / Stop (grey),
-Opportunity (blue), Learn (light blue), Next batch / Check (sand). 4–6 rows per slide. Wave action slides are about
-adsets; refresh action slides are about the concept, so the same adset can appear on both with different actions.
+**Row order.** Refresh slides: first the adsets where the new creative reached the top 3, ROAS after **best → worst**;
+then the rest, ROAS after **worst → best**. The bad rows of both groups meet in the middle, so they're easy to
+highlight. Account news: ROAS after best → worst, ties by the biggest improvement (on the rounded numbers shown).
+
+**Action slides** all use one table: Owner (Creative / Media buyer / Creative lead pill) · Priority pill · Ad sets ·
+Spend/wk · Action (one sentence, the number that justifies it inside). Rows sorted by owner, **Creative first**, then
+Media buyer, then Leave. Creative rows are per **persona × language** with no iOS / Android split (one creative set
+goes to both OS); only media-buyer rows name the OS. Priority numbers run across the whole deck (1 · Urgent,
+2 · High …) so the ranking survives being split; other pills: Research (sand: investigate before the brief, e.g. why
+a market wants this persona, why one OS lags the other), Watch (yellow), Leave / Stop (grey), Opportunity (blue),
+Learn (light blue), Next batch (sand). Every Worse / Almost / Flat / Miss-under-0.40 language gets a refresh row.
 
 ## Rules on the slides
 **ROAS colour (pill):** 0.40+ blue `#53AFD4` "OK" · 0.32–0.39 peach `#FDD3C2` "needs refresh" · under 0.32 red
