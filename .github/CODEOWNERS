@@ -1,4 +1,6 @@
-# Changes to the shared foundation affect every tool, so the creative lead reviews them.
+# The creative lead reviews every pull request (brainstorm submissions included) before it reaches main.
+# The foundation lines below are kept explicit: changes there affect every tool.
+*            @teddyhd-dev
 
 /core/       @teddyhd-dev
 /contracts/  @teddyhd-dev

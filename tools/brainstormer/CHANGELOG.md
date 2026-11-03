@@ -2,6 +2,16 @@
 
 Bump `version` in SKILL.md with every change. Experiment records carry `made_with: brainstorm/<version>`.
 
+## 0.4.0 · 2026-11-03
+Merged the strategists' own skills into this tool, so every strategist's session uses the same, latest version:
+`craft/` holds decode (signal decoder v2 + flow and tempo from v1), persona audit, options (A/B/C per signal, scene
+library), headlines (copywriter, now Bumpy-native), brief writer v6, casting (a suggestion, not a rule), localisation
+and humanizer. Past-winner formulas, Meta headline findings and the learnings file went into `playbook.md`; brand
+rules into `core/brand.md`. The brief writer no longer keeps its own persona list, roster or angles: it reads
+`core/`. The Notion brief carries no rationale; the hypothesis lives in the experiment record. Sessions work on a
+branch and submit one pull request (also when there is no brief yet). Originals in
+`archive/strategist-files-2026-11-03/`.
+
 ## 0.3.1 · 2026-11-02
 Incident weeks (⚠ in the story, `core/incidents.csv`) are not read as the audience's reaction; Void refreshes are untested.
 

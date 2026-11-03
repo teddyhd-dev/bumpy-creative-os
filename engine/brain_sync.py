@@ -161,15 +161,16 @@ def card_for(cards, persona):
 
 def seed_mind(mid, persona, lang, card):
     fm = dict(contract="mind/1", mind=mid, persona=persona, language=lang, status="live", updated=TODAY)
-    who, beliefs, thumb, insp = "", "", "", ""
+    who, beliefs, thumb, insp, land = "", "", "", "", ""
     if card:
         src = f'Notion persona card "{card["card"]}" (written for the persona across languages; confirm for {lang})'
         who = f"{card['lore'] or '–'}\n\n_Source: {src}._"
         rows = []
         if card["pattern"]:
             rows.append(f"| Winning pattern (Notion): {card['pattern'].replace(chr(10), ' ')} | low (not tested in {lang} yet) | Notion card | {TODAY} |")
-        if card["message"]:
-            rows.append(f"| Proven message (Notion): {card['message'].replace(chr(10), ' ')} | low (not tested in {lang} yet) | Notion card | {TODAY} |")
+        if card["message"]:                    # headlines are past winners (examples), not beliefs: creative lead, 3 Nov 2026
+            land = ("### Past winners (headlines that ran: examples to learn from, not formulas)\n"
+                    f"- {card['message'].replace(chr(10), ' ')} — Notion persona card \"{card['card']}\" (not tested in {lang} yet)")
         beliefs = "\n".join(rows)
         if card["hook"]:
             thumb = f"- Hook words from the Notion card: {card['hook'].replace(chr(10), ' · ')}"
@@ -190,6 +191,7 @@ def seed_mind(mid, persona, lang, card):
 {thumb}
 
 ## Messages that land and messages that tire
+{land}
 
 ## Open questions
 

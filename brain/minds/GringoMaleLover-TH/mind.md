@@ -4,11 +4,15 @@ mind: GringoMaleLover-TH
 persona: GringoMaleLover
 language: TH
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # GringoMaleLover · TH
 
 ## Who they are
+**This mind:** Thai women interested in foreign men. (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026))
+
+_The text below is the Notion card for Brazilian women, copied here because cards are per persona. Keep it as background, not as a description of this audience._
+
 Brazilian women who are attracted to foreign men (gringos) because they believe they are more intentional, more committed, and offer a better relationship than what they expect locally. What pulls them is the idea that many foreign men are actively looking for Brazilian women , meaning they have high demand and more options.
 They want to feel chosen, valued, and prioritized , and also see the possibility of a more stable or elevated lifestyle through this connection. Bumpy fits because it makes this feel real.
 
@@ -18,7 +22,8 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • Portuguese language • Strong demand signal “tem mais gringo… do que você imagina” • Foreign male presence • Man driving car lifestyle / status signal •  Couple outcome Brazilian + foreign man (Gringo + brasileira pairing) • Direct simple wording | low (not tested in TH yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” | low (not tested in TH yet) | Notion card | 2026-11-02 |
+| Desire: A foreign boyfriend who takes them seriously | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "Foreign men just want fun, not commitment" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -26,6 +31,10 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - Hook words from the Notion card: POV: gringo no Bumpy disputando uma brasileira pov: ele finalmente voiiu pro Brail pra te conhecer pessoalmente tem mais gringo querendo namorar brasileira doque voccê imagina
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Tem mais gringo querendo namorar brasileira do que você imagina (There are more foreign men wanting to date Brazilian women than you think) — Notion card for Brazilian women (Portuguese), not this market
+- ไม่เคยรู้เลยว่าฝรั่งใน Bumpy แย่งกันจีบผู้หญิงไทย 😭 (I didn't know foreign men on Bumpy are competing for Thai women) — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- เขาบินมา ประเทศไทย เพื่อเจอคุณครั้งแรกจริง ๆ ✈️ (He flew to Thailand to meet you for the first time) — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
 
 ## Open questions
 

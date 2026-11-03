@@ -13,3 +13,9 @@ Created from the exports and the Notion persona card "Gringo Lover from Brazil".
 ## 2026-10-26 · new-1 · data
 n6f2Wt banner became #1 in GringoMaleLover · iOS · KR · KR with 34% of spend (it entered on 2026-07-20 with 75% in its first week), replacing k9Rd4m surprise after 3 weeks as #1.
 <!-- event:new1:120250283213930469:2026-10-26 -->
+
+## 2026-11-03 · belief · TED + Claude
+Moved "Proven message (Notion)" out of the beliefs table into "Messages that land" → Past winners: headlines are examples of what worked, not beliefs or formulas (creative lead, 3 Nov 2026).
+1 past winning headline(s) listed under Messages that land.
+"Who they are": flagged that the Notion text is the Brazil card and added this market's own description (none yet: open question).
+Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).

@@ -4,7 +4,7 @@ mind: AsianFemaleLover-EN
 persona: AsianFemaleLover
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # AsianFemaleLover · EN
 
@@ -17,7 +17,8 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): •English language •  Direct identity callout “Asian” / “Chinese girls” • Selfie / POV style feels like real people • Direct instruction “it’s time for you to…” / “pro tip” •˜ Availability signal “we’re all active on bumpy” • Simple, clear wording | low (not tested in EN yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “It’s time for you to date an Asian on bumpy” “pro tip if you’re into chinese girls:” —> “we’re all active on bumpy :)” | low (not tested in EN yet) | Notion card | 2026-11-02 |
+| Desire: Date an Asian woman | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "I don't know how to find Asian women interested in me" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -25,6 +26,10 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- It’s time for you to date an Asian on bumpy — Notion persona card
+- pro tip if you’re into chinese girls: — Notion persona card
+- we’re all active on bumpy :) — Notion persona card
 
 ## Open questions
 

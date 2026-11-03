@@ -62,7 +62,7 @@ def norm_lang(x):
 def main():
     canon = taxonomy()
     tests = test_labels()
-    team = set(pd.read_csv(os.path.join(ROOT, "core", "team.csv")).code)
+    team = set(pd.read_csv(os.path.join(ROOT, "core", "team.csv"), dtype=str).code)
     d = load_ads()
     d = d[d.spend.fillna(0) > 0].copy()
     G = pd.read_csv(os.path.join(OUT, "grid.csv"), dtype={"adset_id": str}, low_memory=False)

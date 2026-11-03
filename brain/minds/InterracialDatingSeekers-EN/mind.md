@@ -4,7 +4,7 @@ mind: InterracialDatingSeekers-EN
 persona: InterracialDatingSeekers
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # InterracialDatingSeekers · EN
 
@@ -17,7 +17,8 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language •  Black identity clearly shown • International desire / global optionsInterracial couple visuals • Validation message wanted more than you think • Lifestyle / travel outcome • Social proof through real examples | low (not tested in EN yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “You’re honestly underestimating how many men in the world want to date a black woman. I used Bumpy and ended up talking to guys from France, Ghana, Canada, and Turkey” “Interracial dating works. Be the next cross-cultural couple on Bumpy” “MY SUMMER IN HELSINKI AFTER DOWNLOADING BUMPY” | low (not tested in EN yet) | Notion card | 2026-11-02 |
+| Desire: To be desired: men who actively want them | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "Men abroad don't want Black women" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -25,6 +26,10 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 - Hook words from the Notion card: Be the next cross-culture couple on Bumpy Interracial dating works. Be the next cross-culture couple on Bumpy
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- You’re honestly underestimating how many men in the world want to date a black woman. I used Bumpy and ended up talking to guys from France, Ghana, Canada, and Turkey — Notion persona card
+- Interracial dating works. Be the next cross-cultural couple on Bumpy — Notion persona card
+- MY SUMMER IN HELSINKI AFTER DOWNLOADING BUMPY — Notion persona card
 
 ## Open questions
 

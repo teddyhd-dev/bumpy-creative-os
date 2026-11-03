@@ -6,20 +6,35 @@ from build import parse_name as parse_adset, PERSONA_ALIAS
 AWARE = {'unaware':'Unaware','completelyunaware':'Unaware','problemaware':'ProblemAware','solutionaware':'SolutionAware',
          'productaware':'ProductAware','mostaware':'MostAware'}
 LANGS = {'US','EN','ES','PT','BR','TH','ID','RU','UA','TR','PL','JP','KR','CH','PH','FR','DE','IT','IN','AR','VN','ENG','MX','NL'}
-# ad persona token -> canonical persona (by judgment; spec §18)
+def _canon_personas():
+    """Canonical and past persona names from core/naming-adset-v8.md, keyed by lowercase spelling."""
+    import os
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'core', 'naming-adset-v8.md')
+    txt = open(p, encoding='utf-8').read() if os.path.exists(p) else ''
+    names = set()
+    for head in ('### Canonical Persona List', '### Past personas'):
+        if head in txt:
+            names |= set(re.findall(r'^\| `(\w+)`', txt.split(head, 1)[1].split('\n### ', 1)[0], flags=re.M))
+    return {n.lower(): n for n in names}
+
+
+CANON = _canon_personas()
+ALIAS_LOW = {k.lower(): v for k, v in PERSONA_ALIAS.items()}
+# ad persona token -> canonical persona when it isn't spelled canonically (by judgment; spec §18)
 PMAP = [
- (r'^passportgirl', 'GirlWantsToRelocate'), (r'^passportbro', 'PassportBro'),
- (r'^gringolover', 'GringoMaleLover'), (r'^slavic', 'SlavicFemaleLover'),
+ (r'^passportgirl|^girlwants', 'GirlWantsToRelocate'), (r'^passportbro', 'PassportBro'),
+ (r'^gringo', 'GringoMaleLover'), (r'^slavic', 'SlavicFemaleLover'),
  (r'^latina', 'LatinaFemaleLover'), (r'^tiktoksafelatino|^latino', 'LatinoMaleLover'),
  (r'^friends|^internationalfriend|^intlfriend', 'InternationalFriendFinder'),
  (r'^chinese|^asianfemale|^asianlover|^asiandating|^koreanfemale', 'AsianFemaleLover'),
  (r'^southeastasian', 'SoutheastAsianFemaleLover'), (r'^asianmale', 'AsianMaleLover'),
  (r'^indianboy|^egoboost', 'EgoBoostForIndianBoy'), (r'^christian', 'ChristianMatchWorldwide'),
  (r'^muslim', 'MuslimMatchWorldwide'), (r'^blk|^blackafrican|^blackdating|^interracial', 'InterracialDatingSeekers'),
- (r'^attractiveblack', 'AttractiveBlackFemale'), (r'^koreaboo', 'KoreanMaleCultureLover'),
+ (r'^attractiveblack', 'AttractiveBlackFemale'), (r'^koreaboo|^koreanmale', 'KoreanMaleCultureLover'),
+ (r'^indianfemale', 'IndianFemaleDreamingForAsianMale'), (r'^indianmale', 'EgoBoostForIndianBoy'),
  (r'^matur|^304050|^3040|^5060|^3060', 'MatureDating'), (r'^lgbt', 'LGBTQ'), (r'^singlemom', 'SingleMom'),
- (r'^churnlocal|^angrywithlocal|^localdating', 'LocalDatingFatigue'), (r'^churnraya|^celebrity', 'CelebrityCrushLookalikeLover'),
- (r'^learnlanguage|^newlanguage', 'NewLanguageLearner'), (r'^chat', 'ChatOnly'), (r'^plussize', 'PlusSizeWomen'), (r'^translat', 'Translation'), (r'^interlocal', 'InterlocalDating'), (r'^shortking', 'ShortKings'),
+ (r'^churnlocal|^angrywithlocal|^localdating|^datingfatigue', 'LocalDatingFatigue'), (r'^churnraya|^celebrity', 'CelebrityCrushLookalikeLover'),
+ (r'^learnlanguage|^newlanguage|^languagelearner', 'NewLanguageLearner'), (r'^chat', 'ChatOnly'), (r'^plussize', 'PlusSizeWomen'), (r'^translat', 'Translation'), (r'^interlocal', 'InterlocalDating'), (r'^shortking', 'ShortKings'),
  (r'^beachgirl', 'BeachGirl'), (r'^beachboy|^sexybeach', 'SexyBeachGuy'), (r'^womanmarriage|^richhusband', 'RichHusbandFinder'),
  (r'^divorcee', 'Divorcee'), (r'^middleeast', 'MiddleEastern'), (r'^sexyfemale', 'SexyFemaleLover'),
  (r'^general', 'General'),
@@ -72,9 +87,14 @@ def parse_ad(name):
         if len(toks) > 1 and toks[1].upper() in LANGS:
             out['lang'] = toks[1].upper()
     low = first.lower()
-    for pat, p in PMAP:
-        if re.search(pat, low):
-            out['ad_persona'] = PERSONA_ALIAS.get(p, p); break
+    if low in CANON:                       # written canonically (v5 names)
+        out['ad_persona'] = CANON[low]
+    elif low in ALIAS_LOW:                 # a confirmed old spelling (core/persona_aliases.csv)
+        out['ad_persona'] = ALIAS_LOW[low]
+    else:
+        for pat, p in PMAP:
+            if re.search(pat, low):
+                out['ad_persona'] = PERSONA_ALIAS.get(p, p); break
     if out['lang'] in ('US', 'ENG'): out['lang'] = 'EN'
     if out['lang'] == 'BR': out['lang'] = 'PT'
     # fields after concept

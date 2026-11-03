@@ -4,7 +4,7 @@ mind: InternationalFriendFinder-EN
 persona: InternationalFriendFinder
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # InternationalFriendFinder · EN
 
@@ -13,10 +13,13 @@ updated: '2026-11-02'
 
 _Source: Notion persona card "Friends Finder" (written for the persona across languages; confirm for EN)._
 
+Team knowledge base: Young people (18–25) who want connection abroad with low-commitment framing. Wolf in sheepskin: the stated desire is friends, the real one is dating.
+
 ## What they want, fear and believe
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
-
+| Desire: Meet interesting people from other countries (stated); actually date (real) | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "I don't want to seem like I'm on a dating app" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -24,6 +27,12 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- If you need friends from other countries Try Bumpy Now <3 — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Make friends from other countries today — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- anyone wanna be friends?? 19 from Korea 🇰🇷 — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- I want international friends / Bumpy: say no more — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- 👋 19 y.o from 🇮🇹 want to have international friends! — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
 
 ## Open questions
 

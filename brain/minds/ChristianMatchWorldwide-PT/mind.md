@@ -4,7 +4,7 @@ mind: ChristianMatchWorldwide-PT
 persona: ChristianMatchWorldwide
 language: PT
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # ChristianMatchWorldwide · PT
 
@@ -18,7 +18,6 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language • Clear identity callout “Christian singles” • Faith visuals church, Bible reading, worship • Calm, wholesome lifestyle scenes • Global framing “around the world” • Soft, sincere tone Simple, clear wording | low (not tested in PT yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Meet Christian singles around the world on Bumpy 💙🤍” | low (not tested in PT yet) | Notion card | 2026-11-02 |
 
 ## Their words
 
@@ -26,6 +25,8 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Meet Christian singles around the world on Bumpy 💙🤍 — Notion persona card
 
 ## Open questions
 

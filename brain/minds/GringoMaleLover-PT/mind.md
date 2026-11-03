@@ -4,7 +4,7 @@ mind: GringoMaleLover-PT
 persona: GringoMaleLover
 language: PT
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # GringoMaleLover · PT
 
@@ -14,11 +14,14 @@ They want to feel chosen, valued, and prioritized , and also see the possibility
 
 _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona across languages; confirm for PT)._
 
+Team knowledge base: Brazilian women who want to date foreign men.
+
 ## What they want, fear and believe
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • Portuguese language • Strong demand signal “tem mais gringo… do que você imagina” • Foreign male presence • Man driving car lifestyle / status signal •  Couple outcome Brazilian + foreign man (Gringo + brasileira pairing) • Direct simple wording | low (not tested in PT yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” | low (not tested in PT yet) | Notion card | 2026-11-02 |
+| Desire: A gringo boyfriend | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "Foreign men don't know about Brazilian women, or don't come here" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -26,6 +29,8 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - Hook words from the Notion card: POV: gringo no Bumpy disputando uma brasileira pov: ele finalmente voiiu pro Brail pra te conhecer pessoalmente tem mais gringo querendo namorar brasileira doque voccê imagina
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Tem mais gringo querendo namorar brasileira do que você imagina (There are more foreign men wanting to date Brazilian women than you think) — Notion persona card
 
 ## Open questions
 

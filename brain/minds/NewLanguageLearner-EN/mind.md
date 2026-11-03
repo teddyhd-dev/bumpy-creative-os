@@ -4,17 +4,21 @@ mind: NewLanguageLearner-EN
 persona: NewLanguageLearner
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # NewLanguageLearner · EN
 
 ## Who they are
+People learning a language (Spanish, French, Korean, Japanese, Mandarin, Portuguese) who hit a wall with apps and classes. Wolf in sheepskin: the real desire is dating someone attractive from that country.
 
+_Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 ## What they want, fear and believe
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
-
+| Desire: Get fluent fast and enjoy learning (stated); date a native (real) | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "I can't find a native speaker who actually wants to talk to me" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Organic content already says it: "the best strategy apart from dating a native is dating a native". The angle borrows credibility from internet culture | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -22,6 +26,15 @@ updated: '2026-11-02'
 
 
 ## Messages that land and messages that tire
+### Ideas from the team (drafts and directions; check the facts block for what ran)
+- LEARN SPANISH BY DATING A NATIVE (swap: Korean / French / Japanese / Mandarin / Portuguese / Arabic / Italian) — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- BEST WAY TO LEARN A LANGUAGE IS BY DATING A NATIVE 😏 — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- POV: you flirted too hard on Bumpy and now you have to learn a whole new language — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- POV: flirted too hard, now he's learning my language to impress me — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Two-slide: LEARNING SPANISH WITH DUOLINGO ISN'T WORKING → DATE A NATIVE SPEAKER ON BUMPY INSTEAD 😏 — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Two-slide: THE BEST STRATEGY APART FROM DATING A NATIVE… → IS DATING A NATIVE. FIND YOURS ON BUMPY 😏 — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Default structure HOOK → PROFILES `BEST WAY TO LEARN A LANGUAGE? DATING A NATIVE 😏` → VIDEO CALL `VIDEO CALL FOR FREE` → TRAVEL `BEST DECISION EVER!` → ENDSCREEN `Date A Native Speaker` — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Viral phrase: Language Date / Language Boyfriend / Language Girlfriend — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
 
 ## Open questions
 

@@ -21,3 +21,9 @@ k4Rm9p datingcontest became #1 in PassportBro · Android · EN · Serious with 3
 ## 2026-10-26 · new-1 · data
 C0kM3N combo became #1 in PassportBro · Android · EN · Serious with 34% of spend (it entered on 2026-10-19 with 14% in its first week), replacing b7Kq4n boysvmen after 2 weeks as #1.
 <!-- event:new1:120244138017090469:2026-10-26 -->
+
+## 2026-11-03 · belief · TED + Claude
+Moved "Proven message (Notion)" out of the beliefs table into "Messages that land" → Past winners: headlines are examples of what worked, not beliefs or formulas (creative lead, 3 Nov 2026).
+Added (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)): Desire: Date someone who likes them for them, a cheaper lifestyle, more options; Main objection: "International dating is complicated, or not real".
+4 past winning headline(s) listed under Messages that land.
+Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).

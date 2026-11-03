@@ -1,0 +1,5 @@
+# Files that only ever grow: when two branches both add lines, keep both (used by local merges and rebases).
+brain/minds/*/history.md merge=union
+core/concepts.csv merge=union
+# Exports are stored compressed and never edited.
+*.csv.gz binary

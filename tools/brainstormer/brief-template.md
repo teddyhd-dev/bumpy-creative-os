@@ -1,59 +1,63 @@
-# Brief template (copy-paste into Notion)
+# Brief template (paste into Notion)
 
-The brainstormer fills this in; the strategist pastes it into Notion and adds references (models, moods,
-images) there. The same text goes into the experiment record under "Brief".
+The designer brief, per `craft/brief-writer.md`. Cast, on-screen text and file names only: the hypothesis,
+prediction and evidence go into the experiment record (`brain/experiments/EXP-<date>-<code>.md`), never here. The
+same text goes into the record under "Brief". The strategist adds reference images in Notion.
 
 ```markdown
-# Batch<YYYY>Week<WW>-<code>-<ConceptName>
-**Tickets:** <T-id · adset label> · …
-**Minds:** <Persona-LANG> · …    **Strategist:** <TED>    **Designer:** <OST>    **Needed by:** <date>
-**Move:** <playbook move>
+**NOTION TASK NAME:** `Batch<YYYY>Week<WW>-<code>-<ConceptName>-<Persona>`
 
-## Hypothesis
-Because <what we believe about this audience, with evidence>, <this change> will <effect>.
+---
 
-## What we predict (how we'll know)
-<e.g. takes 20%+ of spend in week 1 in at least 2 of the 3 adsets; SlavicFemaleLover · iOS · EN back at
-0.40+ by week 4>
+# Creative Brief — <headline or angle name>
+**App:** Bumpy | **Persona:** <canonical persona> | **Format:** <Video Ad / Static>
+**Batch:** Batch<YYYY>Week<WW> | **Concept:** <ConceptName> | **Concept Code:** <code>
+**Tickets:** <T-id · adset> · …   **Strategist:** <STR>   **Designer:** <DES>
 
-## The idea in one line
+---
 
-## Hook: the first 1–2 seconds
-- Visual:
-- On-screen text (in each language):
-- Voice / sound:
+## Benchmark
+<URL or 1–2 sentence visual description> — match the vibe, composition and energy, but change at least one element
+(pose, outfit colour or detail, background prop, angle) so it looks similar side by side, not identical.
 
-## Story beats
-1.
-2.
-3.
+---
 
-## Format
-<VID / IMG · length · 9:16 / 4:5 / 1:1 · spokesperson · style (UGC, talking head, carousel…)>
+## Structure
 
-## Mood, music, pacing
+| Scene | Name | What it is |
+|---|---|---|
+| 1 | HOOK | <hook concept> |
+| 2 | … | … |
 
-## Variants (3+ per adset, in its language)
-| # | Language | Hook variant | On-screen headline | Angle | Modifier | VID/IMG |
-|---|---|---|---|---|---|---|
+---
 
-## Milk it (more outputs from the same generations)
-- Re-cut:
-- Re-sequence:
-- Text swaps:
-- Image from the strongest frame:
+## File naming
+`<Persona>-<audiencecode>-<code>-<ConceptName>-<Hook>-<headline>-<angle>-<Modifier>-<VID|IMG>-<STR>-<DES>-Batch<YYYY>Week<WW>`
 
-## Do / don't
+---
 
-## References
-<the strategist adds images and models in Notion>
+## <Nationality or identity> — <Language>
 
-## Ad names (v5, use exactly)
-<persona>-<audiencecode>-<code>-<ConceptName>-<Hook>-<headline>-<angle>-<Modifier>-<VID|IMG>-<STR>-<DES>-Batch<YYYY>Week<WW>
+**Cast:** <details; reused-asset note if any>
+**File name (VID):** `<full name>`
+**File name (IMG):** `<full name>`   ← only if IMG confirmed
+
+[HOOK — <visual detail> | also shoot as standalone IMG] `<approved headline, exactly>`
+[PROFILES — 4 cards: <Name> (su_id …) 🇧🇷 | …] `<slider text>`
+[ITS A BUMP] `[no text]`
+[CHAT — AE template] `<message 1>` / `<message 2>`
+[ENDSCREEN — endscreen visual (existing template asset, not app UI)] `<CTA confirmed for this persona>`
+
+---
+
+<!-- repeat one block per variant, ordered by casting identity (ES → PT of the same cast back to back) -->
+<!-- multi-language sets: Mega-Brief layout from craft/brief-writer.md (Step 1 Generation, Step 2 Assembly) -->
+<!-- V2: same file, under "# Version 2" -->
+
+## Task Weight
+Image generation: <n>
+Image to video generation: <n>
+Voice generation: <n>
+Video output: <n>
+Image output: <n>
 ```
-
-Notes for the brainstormer:
-- `audiencecode` is the language code, except English = `US` (core/naming-ad-v5.md).
-- One line per variant per format: a VID and an IMG of the same variant differ only in `VID`/`IMG`.
-- No hyphens inside a field; `headline` and `angle` lowercase; `Modifier` one of Unaware, ProblemAware,
-  SolutionAware, ProductAware, MostAware.

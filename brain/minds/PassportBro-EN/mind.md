@@ -4,7 +4,7 @@ mind: PassportBro-EN
 persona: PassportBro
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # PassportBro · EN
 
@@ -17,7 +17,8 @@ _Source: Notion persona card "Passport Bro" (written for the persona across lang
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language • US vs outside contrastCost + fun framing “half the price, twice the fun” •  Status pressure removal money / height doesn’t matter •  Foreign women presence • Lifestyle outcome travel, better life, happier relationship •  Progression chat → travel → meet • Direct, bold wording | low (not tested in EN yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Dating outside America is half the price and twice the fun. Give Bumpy a try.” “Women here don’t care how much you make or how tall you are. Prove it on Bumpy!” “Girl outside America don’t care how much you make and how tall you are. Prove it on Bumpy” “Talking to an asian girl is fun, not until…” → “You booked a flight and live your best life there…” | low (not tested in EN yet) | Notion card | 2026-11-02 |
+| Desire: Date someone who likes them for them, a cheaper lifestyle, more options | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "International dating is complicated, or not real" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -25,6 +26,11 @@ _Source: Notion persona card "Passport Bro" (written for the persona across lang
 - Hook words from the Notion card: Dating outside America. Half the price. Twice the fun. Passport bro is growing because it's working!
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Dating outside America is half the price and twice the fun. Give Bumpy a try. — Notion persona card
+- Women here don’t care how much you make or how tall you are. Prove it on Bumpy! — Notion persona card
+- Girl outside America don’t care how much you make and how tall you are. Prove it on Bumpy — Notion persona card
+- Talking to an asian girl is fun, not until… (You booked a flight and live your best life there…) — Notion persona card
 
 ## Open questions
 

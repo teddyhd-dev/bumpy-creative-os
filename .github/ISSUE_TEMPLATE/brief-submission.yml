@@ -1,0 +1,37 @@
+name: Brief submission (no repo access)
+description: Fallback for a brainstorm done without this repo attached. Paste the submission block the brainstormer gave you; the next weekly update files it into brain/.
+title: "submission: <mind> · <tickets> · <your code>"
+labels: [submission]
+body:
+  - type: input
+    id: strategist
+    attributes:
+      label: Your team code (core/team.csv)
+      placeholder: JAC
+    validations:
+      required: true
+  - type: input
+    id: tickets
+    attributes:
+      label: Ticket(s) and mind(s)
+      placeholder: T-691223 · SlavicFemaleLover-EN
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis and prediction
+      description: One line each. The prediction must be checkable from the exports (e.g. 20%+ of the adset's spend in week 1).
+    validations:
+      required: true
+  - type: textarea
+    id: brief
+    attributes:
+      label: The brief (exact Notion text, with the v5 ad names)
+    validations:
+      required: true
+  - type: textarea
+    id: learned
+    attributes:
+      label: What we learned (decodes, beliefs, their words, inspiration links, rules learned)
+      description: Anything that should reach the persona's mind or the playbook.

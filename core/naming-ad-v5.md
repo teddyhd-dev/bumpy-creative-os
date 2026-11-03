@@ -1,6 +1,15 @@
 # Bumpy — Ad Naming Convention
-version: 5.0.0
+version: 5.1.0
 
+> **Changelog 5.0.0 → 5.1.0 (3 Nov 2026, merged with the strategists' brief writer v5):**
+> - Inside every field: letters A–Z and digits 0–9 only (no accents, emoji, apostrophes or other scripts).
+> - Audience codes listed below (language of the on-screen text; country-style codes for now).
+> - Angles have one list: `core/angles.csv` (the brief writer's list + the ones in use on the board).
+> - Team codes: creator-program codes (`001`…) and TikTok One codes (`TT1`–`TT4`, `TTO`) are valid; all in `core/team.csv`.
+> - Concept code rule spelled out: a different opening scene is a new code; V1/V2 reorder scenes after the same opening.
+> - The brief writer no longer keeps its own persona list, roster or angle list: it reads this file, `core/team.csv`,
+>   `core/angles.csv` and `core/naming-adset-v8.md`.
+>
 > **Changelog from v4.0.0**
 > - Added **strategist** and **designer** 3-letter codes, placed right before `batch`. Every ad now says who briefed it and who made it, so refresh results can be credited automatically (see `core/spec.md` §5).
 > - `persona` must now use the **canonical persona name** from the adset convention (`core/naming-adset-v8.md`, Persona Taxonomy), e.g. `LatinaFemaleLover`, not `LatinaLover`. Ad data and adset data then join on persona directly.
@@ -14,7 +23,8 @@ version: 5.0.0
 [persona]-[audiencecode]-[conceptcode]-[conceptname]-[hook]-[headline]-[angle]-[modifier]-[VID/IMG]-[strategist]-[designer]-[batch]
 ```
 
-**Exactly 12 fields, separated by `-`.** No hyphens inside any field, or the name can't be read.
+**Exactly 12 fields, separated by `-`.** Inside every field: letters A–Z and digits 0–9 only. No hyphens,
+spaces, accents, apostrophes, emoji or non-Latin script, or the name can't be read.
 
 **Real-world example:**
 ```
@@ -33,7 +43,7 @@ AsianFemaleLover-US-b7Kq4n-BoysVMen-ChineseChampagnePop-mendateasiangirlsbumpy-r
 | 4 | `conceptname` | Generic visual hook family. Stays the same across sub-hook-types that share a code | PascalCase | `Banner` |
 | 5 | `hook` | Compact descriptor: who + which hook variant. Sub-hook-types are differentiated here | PascalCase | `ColombianaBigTicket` |
 | 6 | `headline` | Short slug of the on-screen copy | lowercase | `noviacolombiana` |
-| 7 | `angle` | Ad angle type | lowercase | `recommendation` |
+| 7 | `angle` | Ad angle type, from `core/angles.csv` | lowercase | `recommendation` |
 | 8 | `modifier` | Awareness stage | PascalCase | `ProductAware` |
 | 9 | `VID/IMG` | Output format | UPPERCASE | `VID` |
 | 10 | `strategist` | 3-letter code of the strategist who wrote the brief (roster below) | UPPERCASE | `TED` |
@@ -42,13 +52,37 @@ AsianFemaleLover-US-b7Kq4n-BoysVMen-ChineseChampagnePop-mendateasiangirlsbumpy-r
 
 **Modifier values:** `Unaware` · `ProblemAware` · `SolutionAware` · `ProductAware` · `MostAware`
 
-Keep `hook` and `headline` short.
+Keep `hook` and `headline` short: two long descriptive fields make names far longer than production uses.
+
+### Audience codes (field 2)
+The code follows the **language of the on-screen text**, not the country. For now we use country-style codes:
+
+| Language | Code | Language | Code |
+|---|---|---|---|
+| English | `US` | Japanese | `JP` |
+| Spanish | `ES` | Korean | `KR` |
+| Portuguese | `PT` | Ukrainian | `UA` |
+| Indonesian | `ID` | Chinese | `CH` |
+| Thai | `TH` | Vietnamese | `VN` |
+| German | `DE` | Turkish | `TR` |
+
+Any other language: ask the creative lead and add it here first. Example: an Uzbek Muslim audience with
+Russian-language copy is `RU` (Russian casting stays banned, `core/brand.md`). Never invent regional codes like `LATAM`.
+
+### Angles (field 7)
+One list for every tool: `core/angles.csv` (angle + what it means). If none fits, use a short lowercase word and
+tell the creative lead, who adds it to the list.
 
 ---
 
 ## Team Roster
 
-The roster lives in `core/team.csv` (one place for every tool). New team member → add a row there **before** their first ad goes live. Codes are exactly 3 uppercase letters and never reused for a different person.
+The roster lives in `core/team.csv` (one place for every tool). New team member → add a row there **before** their
+first ad goes live. Codes are 3 characters and never reused for a different person:
+- staff: 3 uppercase letters (`TED`, `OST`);
+- creator program: the strategist is `TIN`; the designer field holds the creator's code `001`, `002`… assigned by the
+  program, never invented;
+- TikTok One: `TT1`–`TT4` (brief project) as strategist, `TTO` as designer.
 
 ---
 
@@ -86,6 +120,13 @@ results then stay together, and each audience gets its own credit.
 
 A concept = hook + video structure. New hook (different first 2 seconds) = new concept code, even if every other scene is reused footage. Never reuse a code across different concepts.
 
+- **Re-sequenced openings are new concepts.** The same scenes cut so each version opens on a different scene
+  (1-2-3-4, 2-4-1-3, 3-4-1-2…) = one code per opening scene. Shared footage, so no extra generation; only the
+  code count and video output go up.
+- **Versions (V1/V2) keep the code:** same opening 2 seconds, scenes reordered after it.
+- **Variants keep the code:** new `hook` sub-type (same kind of opening, e.g. another actor or prop), new text,
+  re-cut, another language.
+
 Every code and its concept name are listed in `core/concepts.csv` (the engine adds new codes from the ad names every Monday; the creative lead confirms them). Check it before picking a new code: it must be unique ignoring letter case. Known typos of old codes are in `core/code_aliases.csv`.
 
 Sub-hook-types that open the same way (e.g. Big Ticket and Fence Banner) may share one code. Confirm with whoever owns Meta reporting first.
@@ -120,7 +161,7 @@ LatinaFemaleLover-ES-n6f2Wt-Banner-ColombianaFenceWhiteboard-noviacolombiana-rec
 
 ## Checklist
 
-- [ ] Exactly 12 fields, no blanks, no hyphens inside a field
+- [ ] Exactly 12 fields, no blanks, only A–Z and 0–9 inside a field
 - [ ] `persona` is on the canonical Persona Taxonomy list
 - [ ] `audiencecode` is a real code, not `LATAM`
 - [ ] `conceptcode` is exactly 6 characters
@@ -128,4 +169,6 @@ LatinaFemaleLover-ES-n6f2Wt-Banner-ColombianaFenceWhiteboard-noviacolombiana-rec
 - [ ] `conceptname` is generic; sub-hook detail lives in `hook`
 - [ ] `headline` and `angle` lowercase, `modifier` PascalCase
 - [ ] `VID` / `IMG` uppercase
-- [ ] `strategist` and `designer` are 3-letter codes from the roster
+- [ ] `angle` is in `core/angles.csv` (or flagged to the creative lead)
+- [ ] `strategist` and `designer` are codes from `core/team.csv`
+- [ ] Checked with `python3 checks/new_concept.py names -`

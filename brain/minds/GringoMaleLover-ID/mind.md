@@ -4,11 +4,15 @@ mind: GringoMaleLover-ID
 persona: GringoMaleLover
 language: ID
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # GringoMaleLover · ID
 
 ## Who they are
+**This mind:** Indonesian women who want to date foreign (bule) men. (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026))
+
+_The text below is the Notion card for Brazilian women, copied here because cards are per persona. Keep it as background, not as a description of this audience._
+
 Brazilian women who are attracted to foreign men (gringos) because they believe they are more intentional, more committed, and offer a better relationship than what they expect locally. What pulls them is the idea that many foreign men are actively looking for Brazilian women , meaning they have high demand and more options.
 They want to feel chosen, valued, and prioritized , and also see the possibility of a more stable or elevated lifestyle through this connection. Bumpy fits because it makes this feel real.
 
@@ -18,7 +22,8 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • Portuguese language • Strong demand signal “tem mais gringo… do que você imagina” • Foreign male presence • Man driving car lifestyle / status signal •  Couple outcome Brazilian + foreign man (Gringo + brasileira pairing) • Direct simple wording | low (not tested in ID yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” “Tem mais gringo querendo namorar brasileira do que você imagina” → “There are more foreign men wanting to date Brazilian women than you think” | low (not tested in ID yet) | Notion card | 2026-11-02 |
+| Desire: A bule boyfriend who commits | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "Foreign men don't want to commit to Indonesian girls" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -26,6 +31,11 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - Hook words from the Notion card: POV: gringo no Bumpy disputando uma brasileira pov: ele finalmente voiiu pro Brail pra te conhecer pessoalmente tem mais gringo querendo namorar brasileira doque voccê imagina
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Tem mais gringo querendo namorar brasileira do que você imagina (There are more foreign men wanting to date Brazilian women than you think) — Notion card for Brazilian women (Portuguese), not this market
+- Banyak bule yang pingin macarin orang indo di bumpy. buktiin sendiri. — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- sebanyak itu bule di bumpy yang pengen pacarin cewe indo!!! — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- ga nyangka banyak BULE di bumpy yang mau komit sama CEWE INDO — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
 
 ## Open questions
 

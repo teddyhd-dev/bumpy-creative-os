@@ -4,7 +4,7 @@ mind: MatureDating-JP
 persona: MatureDating
 language: JP
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # MatureDating · JP
 
@@ -18,7 +18,6 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language •  Age clearly shown (40s) •  Second chance messaging “not too late”, “start again” •  Validation of attractiveness “aged like fine wine” •  Serious relationship framing marriage / long-term • Cross-country partnerCalm, mature tone Direct, reassuring wording | low (not tested in JP yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “You’re not too late for a new beginning. With someone new. In a new country.” “I married the love of my life at my 40s, with someone from another country.” “Men on Bumpy aged like fine wine 🥵🥵🥵” “42 y.o. I never thought love would give me a second chance” | low (not tested in JP yet) | Notion card | 2026-11-02 |
 
 ## Their words
 
@@ -26,6 +25,11 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 - Hook words from the Notion card: You're never too late for a new beginning. With someone new. In a new country.
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- You’re not too late for a new beginning. With someone new. In a new country. — Notion persona card
+- I married the love of my life at my 40s, with someone from another country. — Notion persona card
+- Men on Bumpy aged like fine wine 🥵🥵🥵 — Notion persona card
+- 42 y.o. I never thought love would give me a second chance — Notion persona card
 
 ## Open questions
 

@@ -4,7 +4,7 @@ mind: LatinaFemaleLover-EN
 persona: LatinaFemaleLover
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # LatinaFemaleLover · EN
 
@@ -18,7 +18,8 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language •  Latina women visually highlighted (curly hair, brown eyes, feminine features) •  Direct callout “date Latinas” • Possibility framing “better chance than you think” • Aspirational female presence confident, attractive •  Simple, bold instruction try now • Clear, straightforward wording | low (not tested in EN yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “DATE LATINAS ON BUMPY” “Let a girl with big brown eyes and curly hair change your life. Try Bumpy Now” “You have a better chance of dating a Latina than you think.” | low (not tested in EN yet) | Notion card | 2026-11-02 |
+| Desire: Date a Latina | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "I'm not Latino, or she's out of my league" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -26,6 +27,10 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- DATE LATINAS ON BUMPY — Notion persona card
+- Let a girl with big brown eyes and curly hair change your life. Try Bumpy Now — Notion persona card
+- You have a better chance of dating a Latina than you think. — Notion persona card
 
 ## Open questions
 

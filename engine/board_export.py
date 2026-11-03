@@ -34,7 +34,8 @@ def _roster():
     T = pd.read_csv(os.path.join(ROOT, "core", "team.csv"), dtype=str).fillna("")
     out = []
     for r in T.itertuples():
-        d = dict(code=r.code, name=r.name.split(" ")[0] if r.code != "KIM" else r.name, role=r.role, active=r.active.lower() == "true")
+        full = r.code == "KIM" or not r.code.isalpha() or r.code.startswith("TT")   # creators, TikTok One: keep the full label
+        d = dict(code=r.code, name=r.name if full else r.name.split(" ")[0], role=r.role, active=r.active.lower() == "true")
         if r.role == "designer" and r.notion_match:
             d["match"] = r.notion_match
         out.append(d)
@@ -191,7 +192,10 @@ def codes_doc():
     if files:
         T = pd.read_csv(files[-1])
         codes |= set(T["Concept (BRIEF)"].astype(str).str.extract(r"[-_ ]([A-Za-z0-9]{6})[-_ ]")[0].dropna().str.lower())
-    return dict(generated=date.today().isoformat(), codes=sorted(c for c in codes if re.fullmatch(r"[a-z0-9]{5,7}", c)))
+    ap = os.path.join(ROOT, "core", "angles.csv")      # one home for the angle list (core/naming-ad-v5.md)
+    angles = pd.read_csv(ap, dtype=str).angle.tolist() if os.path.exists(ap) else []
+    return dict(generated=date.today().isoformat(), codes=sorted(c for c in codes if re.fullmatch(r"[a-z0-9]{5,7}", c)),
+                angles=angles)
 
 
 def log_doc():

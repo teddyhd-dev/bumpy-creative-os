@@ -94,13 +94,21 @@ def new_code(codes=None):
     raise SystemExit("no free code found")
 
 
+def angles():
+    p = os.path.join(ROOT, "core", "angles.csv")
+    return {r["angle"] for r in csv.DictReader(open(p))} if os.path.exists(p) else set()
+
+
 def check_names(names, codes=None):
-    """v5 ad names (core/naming-ad-v5.md). Returns {name: [errors]}."""
+    """v5 ad names (core/naming-ad-v5.md). Returns {name: [problems]}; a problem starting with "note:" doesn't block."""
     from naming_audit import taxonomy, test_labels
     current, tests = taxonomy(include_past=False), test_labels()
     past = taxonomy() - current
     team = {r["code"]: r for r in csv.DictReader(open(os.path.join(ROOT, "core", "team.csv")))}
     codes = codes if codes is not None else existing()
+    known_angles = angles()
+    ap = os.path.join(ROOT, "core", "persona_aliases.csv")
+    persona_alias = {r["spelling"]: r["persona"] for r in csv.DictReader(open(ap))} if os.path.exists(ap) else {}
     out = {}
     for n in names:
         n = n.strip()
@@ -109,6 +117,8 @@ def check_names(names, codes=None):
         e = []
         if " " in n or re.search(r"\.(mp4|png|jpg|jpeg|mov)$", n, re.I) or "Copy" in n:
             e.append("no spaces, file extensions or '- Copy' in the name")
+        if not re.fullmatch(r"[A-Za-z0-9-]+", n):
+            e.append("only letters A–Z and digits 0–9 inside fields (no accents, emoji, apostrophes or other scripts)")
         f = n.split("-")
         if len(f) != 12:
             e.append(f"{len(f)} fields instead of 12 (a hyphen inside a field, or a field missing)")
@@ -119,6 +129,8 @@ def check_names(names, codes=None):
             e.append(f"'{persona}' is a test label, not a persona")
         elif persona in past:
             e.append(f"'{persona}' is a past persona: use a current one")
+        elif persona not in current and persona in persona_alias:
+            e.append(f"'{persona}' is an old spelling: write {persona_alias[persona]}")
         elif persona not in current:
             e.append(f"persona '{persona}' is not on the canonical list (core/naming-adset-v8.md, spellings in core/persona_aliases.csv)")
         if not re.fullmatch(r"[A-Z]{2}", aud):
@@ -141,6 +153,9 @@ def check_names(names, codes=None):
             e.append(f"headline '{headline}' should be lowercase")
         if angle != angle.lower() or not angle:
             e.append(f"angle '{angle}' should be lowercase")
+        elif known_angles and angle not in known_angles:
+            e.append(f"note: angle '{angle}' isn't in core/angles.csv yet: fine if none fits, but tell the creative lead "
+                     "so it can be added")
         if mod not in AWARE:
             e.append(f"modifier '{mod}' must be one of {', '.join(sorted(AWARE))}")
         if fmt not in ("VID", "IMG"):
@@ -182,9 +197,12 @@ def main():
     res = check_names(lines)
     bad = 0
     for n, e in res.items():
-        if e:
+        fix = [x for x in e if not x.startswith("note:")]
+        if fix:
             bad += 1
             print(f"FIX {n}\n    " + "\n    ".join(e))
+        elif e:
+            print(f"OK  {n}\n    " + "\n    ".join(e))
     print(f"{len(res) - bad} of {len(res)} names OK")
     sys.exit(1 if bad else 0)
 

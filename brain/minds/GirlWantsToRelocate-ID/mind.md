@@ -4,7 +4,7 @@ mind: GirlWantsToRelocate-ID
 persona: GirlWantsToRelocate
 language: ID
 status: dormant
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # GirlWantsToRelocate · ID
 
@@ -17,7 +17,6 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language • Specific nationality callout (Brit 🇬🇧, Sweden 🇸🇪, Italy 🇮🇹) • Life upgrade framing moving countries • Fast progression “3 months after using bumpy” • Couple outcome real relationship • Aspirational lifestyle visuals city, travel, romance • Recommendation tone “highly recommend” • Direct, simple wording | low (not tested in ID yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Maybe life isn’t so bad (I’m moving to my bf country 🇨🇭) 3 months after using bumpy” “Highly recommend falling in love with a brit 🇬🇧 get yours on bumpy 💙” “Maybe life isn’t so bad. I’m moving to my new bf country 🇸🇪 3 months after using bumpy” “Highly recommend falling in love with a 🇮🇹 man on bumpy” | low (not tested in ID yet) | Notion card | 2026-11-02 |
 
 ## Their words
 
@@ -25,6 +24,11 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - Hook words from the Notion card: Highly recommend falling in love with a Brit :gb: Maybe life isn’t so bad. I’m moving to his country :flag-ch: 3 months after using bumpy
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Maybe life isn’t so bad (I’m moving to my bf country 🇨🇭) 3 months after using bumpy — Notion persona card
+- Highly recommend falling in love with a brit 🇬🇧 get yours on bumpy 💙 — Notion persona card
+- Maybe life isn’t so bad. I’m moving to my new bf country 🇸🇪 3 months after using bumpy — Notion persona card
+- Highly recommend falling in love with a 🇮🇹 man on bumpy — Notion persona card
 
 ## Open questions
 

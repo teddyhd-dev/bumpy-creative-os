@@ -34,7 +34,7 @@ NEED REFRESH → BRIEF CREATED → IN PRODUCTION → READY TO UPLOAD → TESTING
 - 0.40+ is acceptable, under 0.40 needs a refresh, under 0.32 is critical.
 - A concept that takes 20%+ of its adset's spend in week 1 becomes #1 about 8 times in 10. Final call at week 4.
 - Keep quiet ads on: a third of winners start under 5% of spend.
-- 3+ variants per adset: about 47% vs 27% with 1–2. Re-cuts, new text and re-sequenced openings count.
+- 3+ variants per adset: about 47% vs 27% with 1–2. Re-cuts, new text and V2 re-orders count; a version that opens on a different scene is a new concept code.
 - Spread wide, judge per adset: concepts land in a median 3 adsets; each keeps about a 20% chance; a concept in 5+ adsets wins somewhere 71% of the time. Languages often disagree; iOS and Android usually agree.
 - About 8 adset refreshes land a week. Grouping tickets into one brief is how we cover more.
 

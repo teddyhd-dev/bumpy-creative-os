@@ -199,7 +199,7 @@ def main():
         names = re.findall(r"\b[A-Za-z]+-[A-Z]{2}-[A-Za-z0-9]{6}-[^\s`|]+-Batch20\d\dWeek\d\d\b", brief)
         for n, problems in check_names(names).items():
             for x in problems:
-                err(p, f"ad name {n}: {x}")
+                (warn if x.startswith("note:") else err)(p, f"ad name {n}: {x}")
         if not re.search(r"^## Prediction\s*\n+\s*\S", body, flags=re.M):
             err(p, "Prediction is empty: say how the exports will show it worked")
 

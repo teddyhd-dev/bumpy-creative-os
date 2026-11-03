@@ -13,3 +13,8 @@ Created from the exports and the Notion persona card "Christian Looking for Chri
 ## 2026-10-26 · new-1 · data
 Q3fN8Z airportfirst became #1 in ChristianMatchWorldwide · iOS · PT with 34% of spend (it entered on 2026-08-03 with 33% in its first week), replacing F4z7K2 fastcarousel after 4 weeks as #1.
 <!-- event:new1:120250726667020469:2026-10-26 -->
+
+## 2026-11-03 · belief · TED + Claude
+Moved "Proven message (Notion)" out of the beliefs table into "Messages that land" → Past winners: headlines are examples of what worked, not beliefs or formulas (creative lead, 3 Nov 2026).
+1 past winning headline(s) listed under Messages that land.
+Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).

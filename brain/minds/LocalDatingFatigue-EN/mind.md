@@ -4,17 +4,21 @@ mind: LocalDatingFatigue-EN
 persona: LocalDatingFatigue
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # LocalDatingFatigue · EN
 
 ## Who they are
+Active or recently churned users of Tinder, Hinge, Bumble and other local apps. The only persona defined against competitor apps: the radius-limited app is the villain, Bumpy is the international way out. Two pains, by gender, never merged: men get zero matches; women are numbed by volume without intent.
 
+_Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 ## What they want, fear and believe
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
-
+| Men: want to actually get matched and feel wanted; the objection is "I'm just not attractive enough", taken as a personal verdict, not a market problem | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Women: want attention that reflects real effort and intent, not noise; the objection is "men don't have game anymore" (learned helplessness, not a lack of matches) | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Mechanism that lands in body copy: local apps cap you by radius and push a tiny top slice of profiles; desirability is cultural, so "mid" here is someone's type elsewhere; Bumpy shows the other 99.999% | medium | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -22,6 +26,14 @@ updated: '2026-11-02'
 
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- CTE broken-grammar scripts (men), concept Q3xLm8 cte, Batch2026Week34: "You handsome. Zero match? Something wrong." · "Swipe all day, get nothing? Bad." · "You lonely long time, dating app no help? Time know why." Full scripts and decode: brain/creatives/q3xlm8-cte.md — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+
+### Ideas from the team (drafts and directions; check the facts block for what ran)
+- Female sub-angle, paradox-authority hooks (current direction, pending a CTE-style port): "How to stop expecting nothing. From a girl with 400 unread 'hey's." · "How to not get defeated by the algorithm. From a girl three dating apps deep." · "Why I deleted every dating app. From a girl who had 400 unread 'hey's." · "Dating apps are rigged. From a girl who read the fine print so you don't have to." Full scripts: archive/strategist-files-2026-11-03/bumpy-knowledge.md — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Headline options (women): TIRED OF "HEY"? WATCH THIS · STOP EXPECTING NOTHING · WHY I DELETED EVERY DATING APP · I DIDN'T QUIT DATING, I QUIT THE POOL — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Headline options (men): SICK OF ZERO MATCHES? WATCH · YOUR TYPE EXISTS, JUST NOT HERE · Viral phrase: Different Country, Different Standard — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
+- Open next step (Aug 2026): port the CTE skeleton (celebrity like / small pool / big pool / percentage payoff) to the women's numbed-by-volume pain — team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)
 
 ## Open questions
 

@@ -17,3 +17,9 @@ Q7mZ2x povbait became #1 in AsianFemaleLover · iOS · EN with 53% of spend (it 
 ## 2026-10-26 · new-1 · data
 a2Ef3y wanted became #1 in AsianFemaleLover · Android · EN with 27% of spend (it entered on 2026-05-18 with 46% in its first week), replacing b7Kq4n boysvmen after 1 week as #1.
 <!-- event:new1:120247322960050469:2026-10-26 -->
+
+## 2026-11-03 · belief · TED + Claude
+Moved "Proven message (Notion)" out of the beliefs table into "Messages that land" → Past winners: headlines are examples of what worked, not beliefs or formulas (creative lead, 3 Nov 2026).
+Added (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)): Desire: Date an Asian woman; Main objection: "I don't know how to find Asian women interested in me".
+3 past winning headline(s) listed under Messages that land.
+Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).

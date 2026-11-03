@@ -61,6 +61,20 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 ### 2026-10-27 · Board, scorecards, roster
 - Board = shared Claude page (team gets access). Scorecards visible to everyone. Yuli Nur Hakim = KIM, Hanna Dolhikh = HAN; Deyan Haider and Hussein Saleh Cabrera have left.
 
+### 2026-11-03 · Many strategists, one memory; the strategists' files merged
+- **Decided by:** creative lead. Each strategist works in their own Claude or Codex account on this repo; every
+  brainstorm ends with one pull request (also without a brief); the creative lead approves every merge. How-to:
+  `tools/brainstormer/SOP.md`. Not Google Drive or NotebookLM: neither can check what goes in nor be written back.
+- The strategists' 12 files are merged into `tools/brainstormer/craft/`, `playbook.md`, `core/brand.md` and the minds
+  (originals kept in `archive/strategist-files-2026-11-03/`). Shared lists keep one home in `core/`: the brief
+  writer points to them instead of copying them.
+- Working headlines are **past winners**: examples in each mind's "Messages that land", not beliefs or formulas.
+  Casting data is a suggestion; only the RU/IN exclusions are rules.
+- Team list gains `TIN`, `TT1`–`TT4`, `TTO` and creator codes `001`–`007` (all seen in real ad names). The brief
+  writer's old persona spellings are mapped (`core/persona_aliases.csv`); the system's persona list stands.
+- Clarified: a version that opens on a different scene is a new concept code (the naming rule); variants are hook
+  sub-types, text, re-cuts, V2 re-orders and languages (spec 1.3.4).
+
 ## Proposed, waiting for the creative lead
 
 ### ~~2026-10-23 · Singular-era bar: green ≥ 0.35, critical < 0.28~~ (superseded 27 Oct by 0.40)
@@ -78,6 +92,11 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 - Priority = weight × last week's spend: review 1.0 · critical 1.0 · amber and falling 0.8 · leading signal 0.6 · due 0.5 (+0.1 if falling) · amber 0.4 · critical under the alert floor 0.3; × 0.5 with a challenger in test or 🧱. `TICKET_WEIGHTS` in `engine/settings.py`.
 
 ## Open
+- Angles (`core/angles.csv`): keep the merged list of 21? Merge `personalrecommendation` into `recommendation`? The
+  meanings of the board's 11 angles are inferred from use: confirm.
+- Meta headline findings (`tools/brainstormer/playbook.md`) rank headlines by their own ROAS and IPM, which the spec
+  (§6.2) treats as weak evidence for creatives. Keep that order (Spend → ROAS → IPM) for headlines, or read them by
+  spend and installs only?
 - TikTok: hold at today's budget and run a geo test (pause TikTok iOS 4 weeks in 3–4 countries where it's a big share; compare App Store proceeds with similar countries). Spec §19 Q13. TikTok's own ROAS can't decide this: half its Android value sits on ad groups that weren't spending.
 - Profit bar: what a subscriber is worth after the first weeks (spec §19 Q1, Q6). Needs Singular D30 revenue or finance cohorts.
 - US-only iOS test: budget, dates, success measure (spec §19 Q7).

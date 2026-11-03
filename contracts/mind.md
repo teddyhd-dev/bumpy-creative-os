@@ -35,6 +35,8 @@ version of both files as well.
   high) · evidence (EXP ids, creative codes, quotes) · since (date). Change a row only together with a
   `belief` entry in history.md.
 - "Their words" holds verbatim quotes with source and date, in the original language plus an English gloss.
+- "Messages that land and messages that tire" may hold `### Past winners` (headlines that ran, each with its
+  source: examples to learn from, never formulas or beliefs) and `### Ideas from the team` (drafts and directions).
 - The facts block sits between `<!-- generated:start facts -->` and `<!-- generated:end facts -->`.
   Nobody edits inside it: the Monday run rewrites it.
 - The Monday run creates a mind when it has a live adset (language as written in the adset names: for now

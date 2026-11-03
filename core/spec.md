@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.3
+version: 1.3.4
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,20 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.4 (2026-11-03): many strategists, one memory; the strategists' files merged.**
+- **Collaboration:** each strategist brainstorms in their own Claude or Codex account on this repo; a brainstorm never
+  writes to `main` and ends with one pull request (also when there's no brief yet); the creative lead merges. How-to:
+  `tools/brainstormer/SOP.md`.
+- **One home per list:** angles in `core/angles.csv` (the brief writer's list + those in use); brand rules in
+  `core/brand.md`; creator-program (`TIN`, `001`…) and TikTok One (`TT1`–`TT4`, `TTO`) codes in `core/team.csv`; old
+  brief-writer persona spellings mapped in `core/persona_aliases.csv`. Ad names v5.1.0 (`core/naming-ad-v5.md`).
+- **Variants vs concepts (clarified, §6.3 and §15):** a version that opens on a different scene is a new concept code
+  (the naming rule); variants of a concept are new hook sub-types, text, re-cuts, V2 re-orders after the same opening
+  and other languages.
+- **Persona parsing fix:** v5 ad names written with the canonical persona (GringoMaleLover, KoreanMaleCultureLover,
+  GirlWantsToRelocate, SexyMaleLover, IndianFemaleDreamingForAsianMale) were read as Unknown; the ad parser now reads
+  canonical names first.
 
 **1.3.3 (2026-11-02): the refresh read and the launch review (decided by the creative lead).**
 - **Refresh read (§6.2b):** first question, did the new creative reach the adset's top 3 spenders? Yes → the adset's ROAS decides: **Worked** (up and 0.40+), **Almost** (up, still under 0.40), **Flat** (moved under 0.02), **Worse** (down). No → **Miss**, or **Miss (left)** when old creatives keep the adset at 0.40+.
@@ -59,7 +73,7 @@ owner: Creative lead (ads creative) · maintained with Claude
 
 **1.2.1 (2026-10-27): the creative lead's decisions.**
 - **Bar set:** on today's (Singular) numbers, **0.40 and up is acceptable; under 0.40 needs a refresh**. Critical under 0.32 and deep red under 0.28 keep the old proportions. In pre-switch units 0.40 ≈ 0.57, so it is stricter than the old 0.50 in real money: 56% of Singular-era spend clears it, where 79% cleared 0.50 before the switch.
-- **Variants, not a second concept.** One concept per refresh is fine; what matters is how many variants of it land in each adset (hooks, text, re-cuts, re-sequenced openings). A brand-new concept with 3+ spending variants in the adset became its #1 40% of the time, vs 15% with 1–2 (30 vs 154 entries); proven concepts 40% vs 25%. Most concepts reach an adset with only 1–2 spending variants (median 2 ads per at-bat). Adding a proven concept from the queue's J1 list costs no production. Replaces the 1.2.0 "2+ distinct concepts" rule (the 2-concept effect appears only once an at-bat has 4+ ads: 1–3 ads 24% vs 26%).
+- **Variants, not a second concept.** One concept per refresh is fine; what matters is how many variants of it land in each adset (hook sub-types, text, re-cuts, V2 re-orders after the same opening, languages; a different opening scene is a new concept code). A brand-new concept with 3+ spending variants in the adset became its #1 40% of the time, vs 15% with 1–2 (30 vs 154 entries); proven concepts 40% vs 25%. Most concepts reach an adset with only 1–2 spending variants (median 2 ads per at-bat). Adding a proven concept from the queue's J1 list costs no production. Replaces the 1.2.0 "2+ distinct concepts" rule (the 2-concept effect appears only once an at-bat has 4+ ads: 1–3 ads 24% vs 26%).
 - **Cycle:** about 1 week to make and 1 week to read, so Due tickets open at reign week 2 (spec §6.7: lifespan − 1).
 - **Re-computed on the 0.40 bar:** turnaround at-bats 125, hit rate 43%; 29 of them came after a missed one. 70 tickets open, 66 need a brief (45 persona × language groups); capacity still about 8 at-bats a week.
 - **Board:** a shared Claude page; designers and strategists get access. **Scorecards:** everyone sees everyone's. **Roster:** Yuli Nur Hakim = KIM, Hanna Dolhikh = HAN; Deyan Haider and Hussein Saleh Cabrera have left (kept in history only). **Exports:** a Drive folder or the creative lead's folder.
@@ -403,7 +417,7 @@ Future jurus (J4…) and non-creative moves (store page, settings, offer) get ad
 
 ### 6.1 At-bat
 New concepts entering an adset in the same week (their first week with spend there), once the adset is 3+ weeks old: launch weeks are not refreshes. Variants of one concept count as one concept.
-- **3+ variants per adset** (since 1.2.1): every at-bat lands in each adset with at least 3 variants of its concept (hooks, text, re-cuts, re-sequenced openings). A new concept with 3+ spending variants became the adset's #1 40% of the time, vs 15% with 1–2. Where the queue shows a proven concept from a sibling adset (J1), add it: no production cost, and proven concepts win more often (28% vs 19%).
+- **3+ variants per adset** (since 1.2.1): every at-bat lands in each adset with at least 3 variants of its concept (hook sub-types, text, re-cuts, V2 re-orders; a different opening scene is a new code). A new concept with 3+ spending variants became the adset's #1 40% of the time, vs 15% with 1–2. Where the queue shows a proven concept from a sibling adset (J1), add it: no production cost, and proven concepts win more often (28% vs 19%).
 - **Context:** *turnaround* if the adset was under the green bar of its ruler the week before; *challenger* if it was on green.
 - One concept in many adsets = many at-bats, which builds the concept × persona fit matrix.
 - Counted by the engine when the adset spent $1k+ that week and the concept $20+ (`ATBAT` in `engine/settings.py`).

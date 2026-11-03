@@ -56,7 +56,8 @@ mind per persona × language, both OS together, and the adset history is rebuilt
   entries in the minds' histories; `reports/<week>/report.json` → the PDF.
 - **Brainstorm (strategist + brainstormer):** ticket → read mind, winners, experiments → ask for missing
   decodes and inspiration → options by playbook move → brief → `EXP-…md`, `experiment` / `decode` /
-  `belief` / `inspiration` entries, decodes in `brain/creatives/` → commit. The ticket shows "Briefed".
+  `belief` / `inspiration` entries, decodes in `brain/creatives/` → pull request → the creative lead merges →
+  the ticket shows "Briefed" after the next board sync.
 - **Result → learning:** next Mondays fill the experiment's results and the mind's history; at the retro the
   strategist and designer write the Lesson; the next brainstorm on that mind starts from it.
 
@@ -93,9 +94,26 @@ written down, versioned and checked; everything else is private to each tool.
 We are at level 1–2 (project guide + tools + structured state + checks). No autonomous agents, budgets or
 retry loops yet; add them only when a task earns it (e.g. a Monday run that executes unattended).
 
-## Where sessions run
+## Where sessions run: many people, one memory
 The memory is files in this repo, so any agent that can open the repo can use it: a Claude session with the
-repo attached (Claude app or Claude Code) or Codex (reads `AGENTS.md`). A chat that can only *read*
-project files can brainstorm but cannot save what it learns; use one that can write and commit.
-If two people push at the same time, pull with rebase and push again; history files only grow, so keep both
-sides' entries.
+repo attached or Codex (reads `AGENTS.md`), in **anyone's own account**. That is how several strategists on
+different Claude accounts share one memory:
+
+| Layer | What | Where | Who changes it |
+|---|---|---|---|
+| Rules | personas, naming, bar, brand, team, angles, concept codes | `core/` | creative lead |
+| Craft | how to decode, brainstorm, write a brief | `tools/<tool>/` | through pull requests |
+| Memory | minds, creatives, experiments, rules learned | `brain/`, `tools/brainstormer/playbook.md` | strategists (submissions), engine (facts) |
+| Data | exports, tickets, verdicts | `data/`, `state/`, `reports/` | the weekly update |
+| Workbench | the conversation | each person's own account | nobody else; temporary |
+
+- **Read:** every session starts from `main`, so everyone reads the same, latest memory. No personal copies of
+  rules or skills.
+- **Write:** a brainstorm works on its own branch and ends with **one pull request** (the submission), also when
+  no brief was agreed. CI runs the validator; the creative lead reviews (`.github/CODEOWNERS`) and merges. The
+  weekly update runs on `main` directly (the creative lead).
+- **No collisions:** one file per brief and per creative; histories only grow (`.gitattributes` keeps both sides
+  on a merge); a session checks for another branch on the same ticket before starting; concept codes are checked
+  against `main` before the PR.
+- **Fallback:** a strategist without repo access files a "Brief submission" issue; the weekly update files it.
+- People's how-to: `tools/brainstormer/SOP.md`.

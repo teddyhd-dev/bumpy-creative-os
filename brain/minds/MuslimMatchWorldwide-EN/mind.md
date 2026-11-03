@@ -4,7 +4,7 @@ mind: MuslimMatchWorldwide-EN
 persona: MuslimMatchWorldwide
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # MuslimMatchWorldwide · EN
 
@@ -18,7 +18,8 @@ _Source: Notion persona card "Muslim want to relocate" (written for the persona 
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • Clear Muslim identity (hijab, labels like “Muslim Indonesia / Turkey / Morocco”) •  Cross-country Muslim pairing • Faith-based intention “praying to meet” • Progression story match → chat → meet • Serious relationship framing • Real-life outcome meeting in person • Simple, direct wording | low (not tested in EN yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “Muslim Indonesia 🇮🇩 Single 💔 Praying to meet muslim partner from another country 🙌” “Muslim Turkey 🇹🇷 Single 💔 Praying to meet muslim partner from another country 🙌” “Muslim Morocco 🇲🇦 Single 💔 Praying to meet muslim partner from another country 🙌” “February 2025 — Matched with a british muslim guy on bumpy” —> “February 2026 — are you free this valentine’s?” —> “He came to see me” | low (not tested in EN yet) | Notion card | 2026-11-02 |
+| Desire: A Muslim partner from another country | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
+| Main objection: "Hard to find a Muslim abroad who is serious" | low | team knowledge base (bumpy-knowledge.md v1.1, Nov 2026) | 2026-11-03 |
 
 ## Their words
 
@@ -26,6 +27,13 @@ _Source: Notion persona card "Muslim want to relocate" (written for the persona 
 - Hook words from the Notion card: Praying to meet a Muslim partner abroad 🤲
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- Muslim Indonesia 🇮🇩 Single 💔 Praying to meet muslim partner from another country 🙌 — Notion persona card
+- Muslim Turkey 🇹🇷 Single 💔 Praying to meet muslim partner from another country 🙌 — Notion persona card
+- Muslim Morocco 🇲🇦 Single 💔 Praying to meet muslim partner from another country 🙌 — Notion persona card
+- February 2025 — Matched with a british muslim guy on bumpy — Notion persona card
+- February 2026 — are you free this valentine’s? — Notion persona card
+- He came to see me — Notion persona card
 
 ## Open questions
 

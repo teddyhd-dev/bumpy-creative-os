@@ -4,7 +4,7 @@ mind: AsianMaleLover-EN
 persona: AsianMaleLover
 language: EN
 status: live
-updated: '2026-11-02'
+updated: '2026-11-03'
 ---
 # AsianMaleLover · EN
 
@@ -17,7 +17,6 @@ _Source: Notion persona card "Gringo Lover from India —> Turned to Asian Man L
 | Belief | Confidence | Evidence | Since |
 |---|---|---|---|
 | Winning pattern (Notion): • English language • East Asian male faces (Korean / Chinese look) Indian woman + East Asian man pairing • Strong attraction wording “obsessed”, “more than you think” • POV realization • Clean, well-presented men Direct, bold statements | low (not tested in EN yet) | Notion card | 2026-11-02 |
-| Proven message (Notion): “POV: men abroad are obsessed with Indian women on Bumpy 😭” “Men abroad want to date Indian women more than you think” “POV: you didn’t realize men abroad are obsessed with Indian women on Bumpy 😭” | low (not tested in EN yet) | Notion card | 2026-11-02 |
 
 ## Their words
 
@@ -25,6 +24,10 @@ _Source: Notion persona card "Gringo Lover from India —> Turned to Asian Man L
 
 
 ## Messages that land and messages that tire
+### Past winners (headlines that ran: examples to learn from, not formulas)
+- POV: men abroad are obsessed with Indian women on Bumpy 😭 — Notion persona card
+- Men abroad want to date Indian women more than you think — Notion persona card
+- POV: you didn’t realize men abroad are obsessed with Indian women on Bumpy 😭 — Notion persona card
 
 ## Open questions
 
