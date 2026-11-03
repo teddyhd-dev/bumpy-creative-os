@@ -129,7 +129,10 @@ def main():
             weekly_roas={w: roas(x) for w, x in d[d.adset_id == aid].groupby("week")},
             spend_week=round(float(wk_spend.get(aid, 0))), priority=round(WEIGHT[read] * float(wk_spend.get(aid, 0))),
             action=ACTION[read]))
-    R = pd.DataFrame(rows).sort_values(["upload", "persona", "os", "lang"])
+    R = pd.DataFrame(rows)
+    # slide order (REFRESH-REVIEW.md): per wave, the batch in the top 3 first, then ROAS after high → low
+    R["_in"] = R["rank"] <= READ["top_n"]
+    R = R.sort_values(["upload", "_in", "after"], ascending=[True, False, False]).drop(columns="_in")
     # ---- account news: every other adset with $1k+ a week whose top spenders moved ----
     news = []
     w = d[d.week.isin([prev_week, last_week])].groupby(["adset_id", "week", "grp"]).spend.sum().reset_index()
@@ -157,7 +160,10 @@ def main():
             prev_share=round(float(t0.iloc[0]), 3), event="new #1" if new_no1 else "new in top 3",
             mover=mover, mover_share=round(float(s1[mover]), 3), mover_before=round(float(s0.get(mover, 0)), 3),
             spend_week=round(float(wk_spend.get(aid, 0)))))
-    N = pd.DataFrame(news).sort_values("spend_week", ascending=False) if news else pd.DataFrame()
+    N = pd.DataFrame(news) if news else pd.DataFrame()
+    if len(N):   # slide order: ROAS after high → low, then the biggest improvement (on the rounded numbers)
+        N["_a"], N["_d"] = N.roas_after.round(2), N.roas_after.round(2) - N.roas_before.round(2)
+        N = N.sort_values(["_a", "_d"], ascending=False).drop(columns=["_a", "_d"])
     out = dict(batch=a.batch, creator=a.creator, end=str(end.date()), week=last_week, read_rule=READ,
                adsets=json.loads(R.to_json(orient="records")), account_news=json.loads(N.to_json(orient="records")))
     od = os.path.join(ROOT, "reports", last_week)
