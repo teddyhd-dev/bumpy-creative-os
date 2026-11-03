@@ -36,7 +36,7 @@ goes live on one day, so its days of data sit in the subtitle instead.
 then the rest, ROAS after **worst → best**. The bad rows of both groups meet in the middle, so they're easy to
 highlight. Account news: ROAS after best → worst, ties by the biggest improvement (on the rounded numbers shown).
 
-**Action slides** sit on a sky background `#D9ECF6` (results slides stay `#F7F6F3`), so the room sees when the talk turns to actions; the table header is white, row lines `#B9D6E5`, and light-blue pills (Media buyer, Learn) turn white with a blue outline. The heading reads "Action items · <Persona>" in Quicksand 48px blue above the 60px headline. They all use one table: Owner (Creative / Media buyer / Creative lead pill) · Priority pill · Ad sets ·
+**Action slides** sit on navy `#1B2A44` (results slides stay `#F7F6F3`), so the room sees when the talk turns to actions: text `#F2F4F8`, the "Action items · <Persona>" heading (Quicksand 48px) light sky `#8FD0EA`, table header `#2A3D5E`, row lines `#33496E`, footer `#A9B4C6`; pills keep their colours (Media buyer / Learn: white with a blue outline). They all use one table: Owner (Creative / Media buyer / Creative lead pill) · Priority pill · Ad sets ·
 Spend/wk · Action (one sentence, the number that justifies it inside). Rows sorted by owner, **Creative first**, then
 Media buyer, then Leave. Creative rows are per **persona × language** with no iOS / Android split (one creative set
 goes to both OS); only media-buyer rows name the OS. Priority numbers run across the whole deck (1 · Urgent,
