@@ -1,14 +1,14 @@
 {
  "adset_week": "2026-10-26",
  "ad_week": "2026-10-26",
- "generated": "2026-11-02",
+ "generated": "2026-11-03",
  "bar": {
   "green": 0.4,
   "amber": 0.32,
   "deep": 0.28
  },
  "capacity": 8.6,
- "tickets_open": 76,
+ "tickets_open": 77,
  "facts": {
   "atbats_final": 248.0,
   "hit_rate": 0.3145,
@@ -36,7 +36,7 @@
   "won_anywhere_1": 0.3333,
   "won_anywhere_5plus": 0.7273,
   "capacity_per_week": 8.625,
-  "tickets_open": 76.0,
+  "tickets_open": 77.0,
   "tickets_need_refresh": 56.0,
   "tickets_fading": 17.0,
   "tickets_review": 1.0,

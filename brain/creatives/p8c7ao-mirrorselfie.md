@@ -19,7 +19,7 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+## Where it ran (updated 2026-11-03; ads to 2026-10-26)
 Includes ads written as P8c7ao (confirmed fixes in core/code_aliases.csv).
 #1 in 12 of 59 adsets it ran in · $18.5k spent as #1 · $89.8k in total.
 

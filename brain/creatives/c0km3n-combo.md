@@ -19,7 +19,7 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+## Where it ran (updated 2026-11-03; ads to 2026-10-26)
 Includes ads written as c0kM3N (confirmed fixes in core/code_aliases.csv).
 #1 in 10 of 42 adsets it ran in · $29.2k spent as #1 · $57.3k in total.
 

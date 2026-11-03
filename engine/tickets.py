@@ -75,16 +75,20 @@ def variant_weeks():
     return d.groupby(["adset_id", "concept_key", "week"]).ad_clean.apply(set)
 
 
-def refresh_read(rank, before, after, b):
-    """The refresh read (spec §6.2b, creative lead 2 Nov 2026). First: did the new creative reach the
+def refresh_read(rank, before, after, b, cum_above=0.0):
+    """The refresh read (spec §6.2b, creative lead 2–3 Nov 2026). First: did the new creative reach the
     adset's top 3 spenders? If not it's a Miss, and the adset's ROAS says whether to leave it (old
-    creatives are carrying it at the bar) or swing again. If it did, the adset's ROAS decides:
+    creatives are carrying it at the bar) or swing again. If it did but sits outside the ads that make
+    80% of the adset's spend (`cum_above` = share of the concepts ranked above it ≥ READ["affect"]), it is
+    too small to have moved the adset either way: Almost. Otherwise the adset's ROAS decides:
     Worked (up and at the bar), Almost (up but under the bar), Flat, or Worse (down)."""
     green = b["green"]
     if pd.isna(rank) or rank > READ["top_n"]:
         if pd.notna(after) and after >= green:
             return "Miss (left)"
         return "Miss"
+    if pd.notna(cum_above) and cum_above >= READ["affect"]:
+        return "Almost"
     if pd.isna(before) or pd.isna(after):
         # no week before (relaunch): judge on where it landed
         if pd.isna(after):
@@ -119,10 +123,15 @@ def at_bats(c, A):
     # refresh read (spec §6.2b): the concept's best rank in the adset in its first 2 weeks there
     RK = c.set_index(["adset_id", "concept_key", "week"])["rank"].to_dict()
     arr["rank12"] = [min(RK.get((a, k, w), 99), RK.get((a, k, nxt(w)), 99)) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
+    # share of the concepts ranked above it (in the same adset-week): "inside the 80%" when under READ["affect"]
+    cs = c.sort_values(["adset_id", "week", "rank"])
+    cs["cum_above"] = cs.groupby(["adset_id", "week"]).share.cumsum() - cs.share
+    CA = cs.set_index(["adset_id", "concept_key", "week"]).cum_above.to_dict()
+    arr["cum12"] = [min(CA.get((a, k, w), 1.0), CA.get((a, k, nxt(w)), 1.0)) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
     D = arr.groupby(["adset_id", "w0"]).agg(
         variants=("variants", "sum"), variants_max=("variants", "max"),
         concepts=("concept_key", "size"), codes=("concept_key", lambda s: " ".join(k.replace("name:", "")[:24] for k in s)),
-        best_s1=("s1", "max"), wk_top=("wk_top", "min"), age=("age", "first"), best_rank=("rank12", "min")).reset_index()
+        best_s1=("s1", "max"), wk_top=("wk_top", "min"), age=("age", "first"), best_rank=("rank12", "min"), cum_above=("cum12", "min")).reset_index()
     D = D.sort_values(["adset_id", "w0"]).reset_index(drop=True)
     # adset ROAS the week before the refresh vs after it (the week after when it exists, else the landing week)
     AR = A.assign(r=A.as_r / A.as_s.replace(0, np.nan)).set_index(["adset_id", "week"]).r.to_dict()
@@ -130,8 +139,8 @@ def at_bats(c, A):
     D["roas_before"] = [AR.get((a, prv(w)), np.nan) for a, w in zip(D.adset_id, D.w0)]
     D["roas_after"] = [AR.get((a, nxt(w)), AR.get((a, w), np.nan)) for a, w in zip(D.adset_id, D.w0)]
     D["after_week"] = [nxt(w) if (a, nxt(w)) in AR else w for a, w in zip(D.adset_id, D.w0)]
-    D["read"] = [refresh_read(rk, b, f, bar(aw, A_os.get(a)))
-                 for rk, b, f, aw, a in zip(D.best_rank, D.roas_before, D.roas_after, D.after_week, D.adset_id)]
+    D["read"] = [refresh_read(rk, b, f, bar(aw, A_os.get(a)), ca)
+                 for rk, b, f, aw, a, ca in zip(D.best_rank, D.roas_before, D.roas_after, D.after_week, D.adset_id, D.cum_above)]
     final = D.age >= ATBAT["final_week"]
     D["verdict"] = np.select(
         [final & (D.wk_top <= ATBAT["final_week"]),

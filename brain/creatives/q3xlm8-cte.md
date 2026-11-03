@@ -60,4 +60,16 @@ middle is the same as version 1.
 (The quoted "near you" is the competitor's promise being killed, the one place it's allowed: `core/brand.md` rule 1.)
 
 <!-- generated:start facts -->
+## Where it ran (updated 2026-11-03; ads to 2026-10-26)
+#1 in 0 of 2 adsets it ran in · $0 spent as #1 · $371 in total.
+
+| Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
+|---|---|---|---|---|---|---|
+| LocalDatingFatigue-EN | LocalDatingFatigue · Android · EN | 2026-08-31 | 2026-10-26 | 0 | 9% | $335 |
+| LocalDatingFatigue-EN | LocalDatingFatigue · Android · EN | 2026-10-26 | 2026-10-26 | 0 | 3% | $36 |
+
+### Variants (full ad names, 3 in total, top 10 by spend)
+- `churnlocal-US-Q3xLm8-CTE-SomethingWrong-somethingwrong-mythbreak-ProblemAware-VID-Batch2026Week34` · $334 · 2 adsets
+- `churnlocal-US-Q3xLm8-CTE-SwipeAllDay-swipealldaybad-mythbreak-ProblemAware-VID-Batch2026Week34` · $35 · 2 adsets
+- `churnlocal-US-Q3xLm8-CTE-LonelyLongTime-timeknowwhy-mythbreak-ProblemAware-VID-Batch2026Week34` · $2 · 2 adsets
 <!-- generated:end facts -->

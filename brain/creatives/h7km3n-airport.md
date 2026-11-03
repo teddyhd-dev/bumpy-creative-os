@@ -19,7 +19,7 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+## Where it ran (updated 2026-11-03; ads to 2026-10-26)
 Includes ads written as H7kM3n (confirmed fixes in core/code_aliases.csv).
 #1 in 52 of 112 adsets it ran in · $435.2k spent as #1 · $683.9k in total.
 

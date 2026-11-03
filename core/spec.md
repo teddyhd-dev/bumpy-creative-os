@@ -25,6 +25,10 @@ owner: Creative lead (ads creative) · maintained with Claude
   GirlWantsToRelocate, SexyMaleLover, IndianFemaleDreamingForAsianMale) were read as Unknown; the ad parser now reads
   canonical names first.
 
+**1.3.4 (2026-11-02→03): the refresh read counts only a creative that really carries spend (decided by the creative lead).**
+- A new creative in the top 3 must also sit **inside the ads that make 80% of the adset's spend** (the ads ranked above it take under 80%). If it's in the top 3 but outside that 80% (e.g. #3 at 2%), the read is **Almost** whatever ROAS did: it is too small to have moved the adset up or down. `READ["affect"] = 0.80` in `engine/settings.py`; `refresh_read(..., cum_above)` in `engine/tickets.py` and `tools/report/refresh_review.py`.
+- Batch 40 effect: Gringo iOS ES Worse → Almost, Local Dating Android EN Worked → Almost, Local Dating iOS EN Flat → Almost; creator ads: Local Dating iOS PT Worked → Almost, Local Dating iOS ES Worse → Almost.
+
 **1.3.3 (2026-11-02): the refresh read and the launch review (decided by the creative lead).**
 - **Refresh read (§6.2b):** first question, did the new creative reach the adset's top 3 spenders? Yes → the adset's ROAS decides: **Worked** (up and 0.40+), **Almost** (up, still under 0.40), **Flat** (moved under 0.02), **Worse** (down). No → **Miss**, or **Miss (left)** when old creatives keep the adset at 0.40+.
 - **Strikes:** Worse is a strike in any context (the batch took spend and the adset lost money: fix first). Miss under the bar in a turnaround is a strike. Almost and Flat are not strikes, but the ticket stays open to swing again. Miss (left) is no strike and no Due ticket: leave it. Worked resets the count.
@@ -439,8 +443,8 @@ New concepts entering an adset in the same week (their first week with spend the
 Measured per adset from the day the batch first spent there (daily ad rows), against the 7 days before.
 | Read | New creative in the adset's top 3? | Adset ROAS after vs before | Strike | Ticket |
 |---|---|---|---|---|
-| **Worked** | yes | up, and at the bar (0.40+) | resets | closes when the read holds; watch week 2 |
-| **Almost** | yes | up, still under the bar | no | stays open: swing again (weight 0.7) |
+| **Worked** | yes, inside the ads making 80% of spend | up, and at the bar (0.40+) | resets | closes when the read holds; watch week 2 |
+| **Almost** | yes | up, still under the bar; **or any ROAS move when the creative sits outside the ads making 80% of spend** | no | stays open: swing again (weight 0.7) |
 | **Flat** | yes | moved less than 0.02 | no | stays open: swing again (weight 0.7) |
 | **Worse** | yes | down | **yes, any context** | fix first (weight 1.0) |
 | **Miss** | no | under the bar | yes in a turnaround, foul otherwise | stays open: a different concept |

@@ -44,7 +44,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+## From the data (updated 2026-11-03; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 2 live adsets · $2.3k last week · ROAS 0.39 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
@@ -52,7 +52,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | GringoMaleLover · Android · ES · ES | 🆘 Critical | $1.3k | 0.30 | X4nR8W talkinghead (since 2026-10-26, 1 wk) |
 | GringoMaleLover · iOS · ES · ES | ✅ Healthy | $1.0k | 0.50 | X4nR8W talkinghead (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-298889 Decaying (Android · ES · ES: ROAS 0.30 (prev 0.28), under 0.32)
+**Open tickets:** T-298889 Decaying (Android · ES · ES: ROAS 0.30 (prev 0.28), under 0.32); T-293353 Decaying (iOS · ES · ES: ROAS 0.50)
 
 ### #1 history (latest first)
 - 2026-10-26 · GringoMaleLover · Android · ES · ES · X4nR8W talkinghead · 1 wk at 52% of spend  

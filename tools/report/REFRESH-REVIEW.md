@@ -54,8 +54,8 @@ Learn (light blue), Next batch (sand). Every Worse / Almost / Flat / Miss-under-
 the change is under 0.02.
 
 **Refresh verdict (spec §6.2b):** first, did the new creative reach the top 3 spenders?
-- ✓ **Worked** (dark blue `#1F7FA8`): yes, ROAS up and now 0.40+
-- ↗ **Almost** (light blue `#D6EEF8`): yes, ROAS up but still under 0.40
+- ✓ **Worked** (dark blue `#1F7FA8`): yes, inside the ads making 80% of spend, ROAS up and now 0.40+
+- ↗ **Almost** (light blue `#D6EEF8`): yes, ROAS up but still under 0.40; or in the top 3 but outside the ads making 80% of spend (too small to have moved ROAS either way), whatever ROAS did
 - = **Flat** (sand `#E9E3D3`): yes, ROAS didn't move
 - ✗ **Worse** (red): yes, ROAS down
 - **Miss** (grey `#E2DFE1`): no; old creatives kept the spend. (Miss at 0.40+ = leave it.)

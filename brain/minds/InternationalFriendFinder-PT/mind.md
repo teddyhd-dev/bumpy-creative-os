@@ -31,7 +31,7 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+## From the data (updated 2026-11-03; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 1 live adset · $1.3k last week · ROAS 0.05 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |

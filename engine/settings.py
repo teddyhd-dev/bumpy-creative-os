@@ -65,8 +65,9 @@ TICKET_WEIGHTS = {
     "refresh_again": 0.7,       # last refresh almost / flat: swing again (2 Nov)
 }
 # Refresh read (spec §6.2b, creative lead 2 Nov 2026): did the new creative reach the top N spenders,
-# then did the adset's ROAS move by more than `flat`?
-READ = {"top_n": 3, "flat": 0.02}
+# was it inside the ads making 80% of the adset's spend (else Almost), then did the adset's ROAS move by more
+# than `flat`?
+READ = {"top_n": 3, "flat": 0.02, "affect": 0.80}   # affect: inside the ads making 80% of spend (3 Nov)
 
 
 def ruler(week: str, os: str | None = None) -> str:

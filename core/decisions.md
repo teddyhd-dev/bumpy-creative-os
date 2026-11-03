@@ -5,6 +5,10 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-03 · Worked needs a real share: outside the top 80% of spend = Almost
+- **Decided by:** creative lead.
+- **Rule:** a new creative in the top 3 counts as affecting the adset only when the ads ranked above it take under 80% of spend. Outside that (e.g. #3 at 2%, #2 at 6% behind a 91% #1) the read is Almost for every ROAS move. Applies to refreshes, creator content and the ticket / strike engine (spec 1.3.4).
+
 ### 2026-11-03 · Launch review: persona slides, row order, owner-first actions
 - **Decided by:** creative lead, reviewing the Batch 40 deck.
 - **Rule:** section 1 covers the refresh only (no creator content). One slide per persona refresh (upload-wave slides dropped: they repeated the same adsets), each followed by its action slide. Rows: new creative in the top 3 first, ROAS best → worst; then the rest, worst → best. Action rows sorted by owner, creative first, one creative row per persona × language (no OS split: one creative set goes to both OS). Research rows before a brief when the cause is unclear (e.g. why CH wants international friends; why Gringo EN iOS lags Android).

@@ -19,7 +19,7 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-02; ads to 2026-10-26)
+## Where it ran (updated 2026-11-03; ads to 2026-10-26)
 Includes ads written as j4g89om (confirmed fixes in core/code_aliases.csv).
 #1 in 4 of 16 adsets it ran in · $3.0k spent as #1 · $9.2k in total.
 

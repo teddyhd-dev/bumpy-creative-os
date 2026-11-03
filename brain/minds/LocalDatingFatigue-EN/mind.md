@@ -41,7 +41,7 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-02; adsets to 2026-10-26, ads to 2026-10-26)
+## From the data (updated 2026-11-03; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 3 live adsets · $7.0k last week · ROAS 0.40 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
@@ -50,7 +50,7 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 | LocalDatingFatigue · iOS · EN | 🔻 Falling | $2.5k | 0.35 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
 | LocalDatingFatigue · Android · EN | 🆘 Critical | $1.1k | 0.32 | k4Rm9p datingcontest (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-345011 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.35 from 0.38); T-329059 Due (Android · EN: ROAS 0.47); T-056458 Decaying (Android · EN: ROAS 0.317, under 0.32)
+**Open tickets:** T-329059 Due (Android · EN: ROAS 0.47); T-345011 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.35 from 0.38); T-056458 Decaying (Android · EN: ROAS 0.317, under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · LocalDatingFatigue · Android · EN · k4Rm9p datingcontest · 1 wk at 69% of spend  
@@ -81,7 +81,7 @@ A #1 here has led a median 2 weeks (7 finished reigns). Longest: X4nR8W talkingh
 5 since Dec: 1 hits of 2 with a final verdict (50%), 1 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | LocalDatingFatigue · iOS · EN | n6f2Wt | 16 | 3% | Strike (provisional) |
+| 2026-10-26 | LocalDatingFatigue · iOS · EN | n6f2Wt | 16 | 3% | Foul (provisional) |
 | 2026-10-26 | LocalDatingFatigue · Android · EN | n6f2Wt | 16 | 2% | Foul (provisional) |
 | 2026-10-05 | LocalDatingFatigue · iOS · EN | k4Rm9p | 5 | 95% | Hit (provisional) |
 | 2026-09-14 | LocalDatingFatigue · Android · EN | k4Rm9p | 5 | 5% | Home run |

@@ -102,15 +102,17 @@ def landings(d, daily, dims, end, last_week, wk_spend, flag, mark):
         g = post.groupby("grp").spend.sum().sort_values(ascending=False)
         mine = [k for k in g.index if k.endswith(mark)]
         rank = min(list(g.index).index(k) + 1 for k in mine)
+        sh = g / g.sum()
+        cum_above = float(sh.cumsum().iloc[rank - 1] - sh.iloc[rank - 1])   # share of the ads ranked above it
         gb = pre.groupby("grp").spend.sum().sort_values(ascending=False)
         n1_before = gb.index[0].rstrip(" ★◆") if len(gb) else None
         n1_after = g.index[0]
         tag = "NEW" if n1_after.endswith(mark) else ("NEW-OLD" if n1_before and n1_after.rstrip(" ★◆") != n1_before else "")
         before, after = roas(pre), roas(post)
         b = bar(last_week, p["os"])
-        read = refresh_read(rank, before if before is not None else np.nan, after if after is not None else np.nan, b)
+        read = refresh_read(rank, before if before is not None else np.nan, after if after is not None else np.nan, b, cum_above)
         n1 = n1_after.rstrip(" ★◆")
-        rows.append(dict(
+        rows.append(dict(cum_above=round(cum_above, 3),
             adset_id=aid, persona=p["persona"], os=p["os"], lang=p["lang"], subangle=p["subangle"], launch=p["launch"],
             upload=str(u.date()), days_after=int((end - u).days) + 1,
             concepts=sorted({k[:-len(mark)] for k in mine}), batch_share=round(float(g[mine].sum() / g.sum()), 3),

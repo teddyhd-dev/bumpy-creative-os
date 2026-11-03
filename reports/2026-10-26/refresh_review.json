@@ -5,10 +5,12 @@
  "week": "2026-10-26",
  "read_rule": {
   "top_n": 3,
-  "flat": 0.02
+  "flat": 0.02,
+  "affect": 0.8
  },
  "adsets": [
   {
+   "cum_above": 0.0,
    "adset_id": "120241361408360469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -76,6 +78,7 @@
    "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
   },
   {
+   "cum_above": 0.475,
    "adset_id": "120244259022080469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -134,6 +137,7 @@
    "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.91,
    "adset_id": "120240452933530469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -149,7 +153,7 @@
    "rank": 2,
    "before": 0.4369614236,
    "after": 0.353974823,
-   "read": "Worse",
+   "read": "Almost",
    "no1_before": "talkinghead",
    "no1_after": "talkinghead",
    "no1_tag": "",
@@ -201,10 +205,11 @@
     "2026-10-26": 0.499128718
    },
    "spend_week": 1033,
-   "priority": 1033,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "priority": 620,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.974,
    "adset_id": "120240452988890469",
    "persona": "GringoMaleLover",
    "os": "Android",
@@ -276,6 +281,7 @@
    "action": "Refresh again with a different concept (this one didn't get spend)"
   },
   {
+   "cum_above": 0.936,
    "adset_id": "120244259501560469",
    "persona": "GringoMaleLover",
    "os": "Android",
@@ -334,6 +340,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.991,
    "adset_id": "120240452918460469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -405,6 +412,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.783,
    "adset_id": "120241067001770469",
    "persona": "InternationalFriendFinder",
    "os": "iOS",
@@ -473,6 +481,7 @@
    "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.497,
    "adset_id": "120241069108990469",
    "persona": "InternationalFriendFinder",
    "os": "Android",
@@ -541,6 +550,7 @@
    "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
   },
   {
+   "cum_above": 0.0,
    "adset_id": "120244260441860469",
    "persona": "InternationalFriendFinder",
    "os": "iOS",
@@ -589,6 +599,7 @@
    "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
   },
   {
+   "cum_above": 0.909,
    "adset_id": "120244558441720469",
    "persona": "InternationalFriendFinder",
    "os": "iOS",
@@ -647,6 +658,7 @@
    "action": "Refresh again with a different concept (this one didn't get spend)"
   },
   {
+   "cum_above": 0.999,
    "adset_id": "120244260380970469",
    "persona": "InternationalFriendFinder",
    "os": "Android",
@@ -705,6 +717,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.998,
    "adset_id": "120244259999720469",
    "persona": "InternationalFriendFinder",
    "os": "iOS",
@@ -763,6 +776,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.911,
    "adset_id": "120249813290590469",
    "persona": "LocalDatingFatigue",
    "os": "Android",
@@ -779,7 +793,7 @@
    "rank": 3,
    "before": 0.4408572652,
    "after": 0.5637228622,
-   "read": "Worked",
+   "read": "Almost",
    "no1_before": "datingcontest",
    "no1_after": "datingcontest",
    "no1_tag": "",
@@ -806,10 +820,11 @@
     "2026-10-26": 0.4723744601
    },
    "spend_week": 3436,
-   "priority": 0,
-   "action": "Leave: watch week 2"
+   "priority": 2061,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.613,
    "adset_id": "120252200564580469",
    "persona": "LocalDatingFatigue",
    "os": "Android",
@@ -840,6 +855,7 @@
    "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.866,
    "adset_id": "120248273450110469",
    "persona": "LocalDatingFatigue",
    "os": "iOS",
@@ -856,7 +872,7 @@
    "rank": 2,
    "before": 0.3400564469,
    "after": 0.3249808147,
-   "read": "Flat",
+   "read": "Almost",
    "no1_before": "datingcontest",
    "no1_after": "datingcontest",
    "no1_tag": "",
@@ -878,9 +894,10 @@
    },
    "spend_week": 2465,
    "priority": 1479,
-   "action": "Refresh again: the batch didn't move ROAS"
+   "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.973,
    "adset_id": "120240273793060469",
    "persona": "PassportBro",
    "os": "iOS",
@@ -952,6 +969,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.963,
    "adset_id": "120244138017090469",
    "persona": "PassportBro",
    "os": "Android",
@@ -1013,6 +1031,7 @@
  ],
  "creator": [
   {
+   "cum_above": 0.955,
    "adset_id": "120251270956950469",
    "persona": "LocalDatingFatigue",
    "os": "iOS",
@@ -1028,7 +1047,7 @@
    "rank": 3,
    "before": 0.4223651648,
    "after": 0.4839881605,
-   "read": "Worked",
+   "read": "Almost",
    "no1_before": "talkinghead",
    "no1_after": "talkinghead",
    "no1_tag": "",
@@ -1045,10 +1064,11 @@
     "2026-10-26": 0.5179948937
    },
    "spend_week": 1480,
-   "priority": 0,
-   "action": "Leave: watch week 2"
+   "priority": 888,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.392,
    "adset_id": "120241361408360469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -1116,6 +1136,7 @@
    "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
   },
   {
+   "cum_above": 0.864,
    "adset_id": "120240452988890469",
    "persona": "GringoMaleLover",
    "os": "Android",
@@ -1187,6 +1208,7 @@
    "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.853,
    "adset_id": "120251270944510469",
    "persona": "LocalDatingFatigue",
    "os": "iOS",
@@ -1202,7 +1224,7 @@
    "rank": 2,
    "before": 0.4379602036,
    "after": 0.2242708392,
-   "read": "Worse",
+   "read": "Almost",
    "no1_before": "datingcontest",
    "no1_after": "datingcontest",
    "no1_tag": "",
@@ -1220,10 +1242,11 @@
     "2026-10-26": 0.3744921663
    },
    "spend_week": 839,
-   "priority": 839,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "priority": 504,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook"
   },
   {
+   "cum_above": 0.0,
    "adset_id": "120240452988880469",
    "persona": "GringoMaleLover",
    "os": "Android",
@@ -1295,6 +1318,7 @@
    "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
   },
   {
+   "cum_above": 0.989,
    "adset_id": "120240452933530469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -1366,6 +1390,7 @@
    "action": "Refresh again with a different concept (this one didn't get spend)"
   },
   {
+   "cum_above": 0.797,
    "adset_id": "120244259022080469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -1425,6 +1450,7 @@
    "action": "Refresh again with a different concept (this one didn't get spend)"
   },
   {
+   "cum_above": 0.961,
    "adset_id": "120251395523750469",
    "persona": "LocalDatingFatigue",
    "os": "Android",
@@ -1460,6 +1486,7 @@
    "action": "Refresh again with a different concept (this one didn't get spend)"
   },
   {
+   "cum_above": 0.845,
    "adset_id": "120244259501560469",
    "persona": "GringoMaleLover",
    "os": "Android",
@@ -1519,6 +1546,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.994,
    "adset_id": "120240452918460469",
    "persona": "GringoMaleLover",
    "os": "iOS",
@@ -1590,6 +1618,7 @@
    "action": "Leave: old creatives carry it above the bar"
   },
   {
+   "cum_above": 0.982,
    "adset_id": "120242347668700469",
    "persona": "ChristianMatchWorldwide",
    "os": "iOS",
@@ -1657,7 +1686,7 @@
   "adsets": 11,
   "top3": 5,
   "no1": 1,
-  "top3_good": 2,
+  "top3_good": 3,
   "works": false,
   "title": "Creator creative still hasn't beaten our past winners"
  },
