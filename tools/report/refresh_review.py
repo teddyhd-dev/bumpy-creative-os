@@ -91,6 +91,48 @@ def reign_weeks(d, aid, name, last_week):
     return n
 
 
+def landings(d, daily, dims, end, last_week, wk_spend, flag, mark):
+    """One row per adset where the ads flagged `flag` (grouped per concept, suffix `mark`) spent."""
+    up = daily[daily[flag]].groupby("adset_id").day.min()
+    rows = []
+    for aid, u in up.items():
+        p = dims[aid]
+        pre = daily[(daily.adset_id == aid) & (daily.day >= u - pd.Timedelta(days=7)) & (daily.day < u)]
+        post = daily[(daily.adset_id == aid) & (daily.day >= u) & (daily.day <= end)]
+        g = post.groupby("grp").spend.sum().sort_values(ascending=False)
+        mine = [k for k in g.index if k.endswith(mark)]
+        rank = min(list(g.index).index(k) + 1 for k in mine)
+        gb = pre.groupby("grp").spend.sum().sort_values(ascending=False)
+        n1_before = gb.index[0].rstrip(" ★◆") if len(gb) else None
+        n1_after = g.index[0]
+        tag = "NEW" if n1_after.endswith(mark) else ("NEW-OLD" if n1_before and n1_after.rstrip(" ★◆") != n1_before else "")
+        before, after = roas(pre), roas(post)
+        b = bar(last_week, p["os"])
+        read = refresh_read(rank, before if before is not None else np.nan, after if after is not None else np.nan, b)
+        n1 = n1_after.rstrip(" ★◆")
+        rows.append(dict(
+            adset_id=aid, persona=p["persona"], os=p["os"], lang=p["lang"], subangle=p["subangle"], launch=p["launch"],
+            upload=str(u.date()), days_after=int((end - u).days) + 1,
+            concepts=sorted({k[:-len(mark)] for k in mine}), batch_share=round(float(g[mine].sum() / g.sum()), 3),
+            rank=int(rank), before=before, after=after, read=read,
+            no1_before=n1_before, no1_after=n1, no1_tag=tag, no1_share=round(float(g.iloc[0] / g.sum()), 3),
+            no1_weeks=0 if tag else reign_weeks(d, aid, n1, last_week),
+            weekly_roas={w: roas(x) for w, x in d[d.adset_id == aid].groupby("week")},
+            spend_week=round(float(wk_spend.get(aid, 0))), priority=round(WEIGHT[read] * float(wk_spend.get(aid, 0))),
+            action=ACTION[read]))
+    return pd.DataFrame(rows), up
+
+
+def slide_order(R, by=()):
+    """Top-3 group first, ROAS after best → worst; then the rest worst → best (bad rows meet in the middle)."""
+    if R.empty:
+        return R
+    R = R.copy()
+    R["_in"] = R["rank"] <= READ["top_n"]
+    R["_k"] = np.where(R._in, -R.after.fillna(-1), R.after.fillna(-1))
+    return R.sort_values([*by, "_in", "_k"], ascending=[True] * len(by) + [False, True]).drop(columns=["_in", "_k"])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--batch", required=True)
@@ -102,39 +144,20 @@ def main():
     last_week = (end - pd.Timedelta(days=end.weekday())).strftime("%Y-%m-%d")
     prev_week = (end - pd.Timedelta(days=end.weekday() + 7)).strftime("%Y-%m-%d")
     wk_spend = d[d.week == last_week].groupby("adset_id").spend.sum()
-    up = daily[daily.is_batch].groupby("adset_id").day.min()
-    rows = []
-    for aid, u in up.items():
-        p = dims[aid]
-        pre = daily[(daily.adset_id == aid) & (daily.day >= u - pd.Timedelta(days=7)) & (daily.day < u)]
-        post = daily[(daily.adset_id == aid) & (daily.day >= u) & (daily.day <= end)]
-        g = post.groupby("grp").spend.sum().sort_values(ascending=False)
-        mine = [k for k in g.index if k.endswith(" ★")]
-        rank = min(list(g.index).index(k) + 1 for k in mine)
-        gb = pre.groupby("grp").spend.sum().sort_values(ascending=False)
-        n1_before = gb.index[0].rstrip(" ★◆") if len(gb) else None
-        n1_after = g.index[0]
-        tag = "NEW" if n1_after.endswith(" ★") else ("NEW-OLD" if n1_before and n1_after.rstrip(" ◆") != n1_before else "")
-        before, after = roas(pre), roas(post)
-        b = bar(last_week, p["os"])
-        read = refresh_read(rank, before if before is not None else np.nan, after if after is not None else np.nan, b)
-        n1 = n1_after.rstrip(" ★◆")
-        rows.append(dict(
-            adset_id=aid, persona=p["persona"], os=p["os"], lang=p["lang"], subangle=p["subangle"], launch=p["launch"],
-            upload=str(u.date()), days_after=int((end - u).days) + 1,
-            concepts=sorted({k.rstrip(" ★") for k in mine}), batch_share=round(float(g[mine].sum() / g.sum()), 3),
-            rank=int(rank), before=before, after=after, read=read,
-            no1_before=n1_before, no1_after=n1, no1_tag=tag, no1_share=round(float(g.iloc[0] / g.sum()), 3),
-            no1_weeks=0 if tag else reign_weeks(d, aid, n1, last_week),
-            weekly_roas={w: roas(x) for w, x in d[d.adset_id == aid].groupby("week")},
-            spend_week=round(float(wk_spend.get(aid, 0))), priority=round(WEIGHT[read] * float(wk_spend.get(aid, 0))),
-            action=ACTION[read]))
-    R = pd.DataFrame(rows)
-    # slide order (REFRESH-REVIEW.md): per persona; batch in the top 3 first, ROAS after best → worst,
-    # then the rest worst → best, so the bad rows of both groups meet in the middle
-    R["_in"] = R["rank"] <= READ["top_n"]
-    R["_k"] = np.where(R._in, -R.after.fillna(-1), R.after.fillna(-1))
-    R = R.sort_values(["persona", "_in", "_k"], ascending=[True, False, True]).drop(columns=["_in", "_k"])
+    R, up = landings(d, daily, dims, end, last_week, wk_spend, "is_batch", " ★")
+    R = slide_order(R, by=("persona",))
+    # creator content (section 2): same read, one slide; "works" when most creator adsets read Worked / Almost
+    C, creator_summary = pd.DataFrame(), {}
+    if a.creator:
+        C, _ = landings(d, daily, dims, end, last_week, wk_spend, "is_creator", " ◆")
+        C = slide_order(C)
+    if len(C):
+        top3 = C[C["rank"] <= READ["top_n"]]
+        good = top3[top3.read.isin(["Worked", "Almost"])]
+        works = bool(len(good) > len(C) / 2)
+        creator_summary = dict(adsets=len(C), top3=len(top3), no1=int((C["rank"] == 1).sum()), top3_good=len(good),
+                               works=works, title="Creator creative works" if works
+                               else "Creator creative still hasn't beaten our past winners")
     # ---- account news: every other adset with $1k+ a week whose top spenders moved ----
     news = []
     w = d[d.week.isin([prev_week, last_week])].groupby(["adset_id", "week", "grp"]).spend.sum().reset_index()
@@ -166,8 +189,10 @@ def main():
     if len(N):   # slide order: ROAS after high → low, then the biggest improvement (on the rounded numbers)
         N["_a"], N["_d"] = N.roas_after.round(2), N.roas_after.round(2) - N.roas_before.round(2)
         N = N.sort_values(["_a", "_d"], ascending=False).drop(columns=["_a", "_d"])
-    out = dict(batch=a.batch, creator=a.creator, end=str(end.date()), week=last_week, read_rule=READ,
-               adsets=json.loads(R.to_json(orient="records")), account_news=json.loads(N.to_json(orient="records")))
+    out = dict(batch=a.batch, creator_batch=a.creator, end=str(end.date()), week=last_week, read_rule=READ,
+               adsets=json.loads(R.to_json(orient="records")),
+               creator=json.loads(C.to_json(orient="records")) if len(C) else [], creator_summary=creator_summary,
+               account_news=json.loads(N.to_json(orient="records")))
     od = os.path.join(ROOT, "reports", last_week)
     os.makedirs(od, exist_ok=True)
     with open(os.path.join(od, "refresh_review.json"), "w") as f:
@@ -177,6 +202,9 @@ def main():
              "no1_weeks", "spend_week", "priority"]].round(3).to_string(index=False))
     print("\naction items (priority = read weight × weekly spend):")
     print(R[R.priority > 0].sort_values("priority", ascending=False)[["persona", "os", "lang", "read", "spend_week", "priority", "action"]].to_string(index=False))
+    if len(C):
+        print("\ncreator content:", creator_summary["title"])
+        print(C[["persona", "os", "lang", "before", "after", "rank", "batch_share", "read", "no1_after", "no1_tag"]].round(3).to_string(index=False))
     if len(N):
         print("\naccount news:")
         print(N.drop(columns=["adset_id"]).round(3).to_string(index=False))

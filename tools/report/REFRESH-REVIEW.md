@@ -17,7 +17,8 @@ action items on top. Rules behind it: `core/spec.md` §6.2b (refresh read), §15
 
 ## Structure: one talking point per slide, the headline is the sentence you say
 Section 1 is **the refresh only**: no creator / pass-through content anywhere in it (not on the tables, not in the
-actions, not in footers). Section 2 is Account news. Every results slide is followed by its own action slide.
+actions, not in footers). Section 2 is **Creator Creative as Ads** (the pass-through batch, judged with the same read).
+Section 3 is Account news. Every results slide is followed by its own action slide.
 | # | Slide | Content |
 |---|---|---|
 | 1 | Cover | "What we launched last week, and how it's going" · week · batch |
@@ -26,7 +27,10 @@ actions, not in footers). Section 2 is Account news. Every results slide is foll
 | 4 | Scoreboard | One row per refresh (persona · concept): live day · days of data · adsets · count of Worked / Almost / Flat / Worse / Miss as coloured pills; a total row. Headline = the totals ("1 worked, 3 almost, 4 got worse, 8 missed") |
 | then, per refresh | "<Persona> Refresh: <Concept>" | Subtitle: "Live: <day> · N days of data · concept · files"; a grey line "Result: …". One row per adset: ad set (OS · language) · 8-week ROAS sparkline (shaded under 0.40, dot on the upload week coloured by zone) · Before · After (+ ▲/▼) · New in top 3? · rank · share · Current #1 spender (NEW / NEW-OLD pill; row tinted blue / peach) · #1 for (yellow pill under 2 weeks) · Verdict |
 | after each refresh | Action items · <Persona> | Below |
-| next | Section 2 divider: Account news | |
+| next | Section 2 divider: Creator Creative as Ads | Plum; "N creator ads went live on <day> in M adsets. Did any become a top spender, and did the adset get better?" |
+| next | Creator results | One slide, every adset a creator ad spent in (ad set = persona · OS · language), same columns as a refresh slide plus "Creator ad" (concept names), same row order with a heavy line between the top-3 group and the rest. **Title rule:** creator ads in the top 3 with Worked / Almost in more than half the adsets → "Creator creative works"; otherwise → "Creator creative still hasn't beaten our past winners". Subtitle: "Top 3 in X of N adsets · #1 in … · Y of those got worse" (`creator_summary` in the JSON) |
+| next | Creator actions | Navy action slide: pause creator ads that took 10%+ while the adset got worse; watch the ones in the top 3 where ROAS went up |
+| next | Section 3 divider: Account news | |
 | next | Account news + its actions | Adsets **outside** the refresh with $1.5k+ a week whose #1 changed or got a top-3 riser (+10 pts, 15%+ share), top 10 by spend: ad set · Before · After · change · previous winner (weeks) · new winner (NEW #1 / TOP 3 pill, share before → after) |
 
 Why persona slides and not upload-wave slides (decided 3 Nov): the waves showed the same adsets twice; each refresh
