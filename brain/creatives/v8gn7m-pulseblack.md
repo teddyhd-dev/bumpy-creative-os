@@ -17,8 +17,8 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
-#1 in 14 of 54 adsets it ran in · $58.5k spent as #1 · $159.4k in total.
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
+#1 in 14 of 54 adsets it ran in · $60.0k spent as #1 · $161.1k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -29,13 +29,13 @@ decoded: false
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-02-02 | 2026-03-16 | 4 | 66% | $6.3k |
 | LGBTQ-EN | LGBTQ · iOS · EN | 2026-03-30 | 2026-04-20 | 3 | 60% | $2.7k |
 | General-ES | General · Android · ES | 2026-02-02 | 2026-07-06 | 3 | 92% | $2.4k |
-| GringoMaleLover-JP | GringoMaleLover · iOS · JP · JP | 2026-07-20 | 2026-10-26 | 3 | 43% | $1.4k |
-| GringoMaleLover-EN | GringoMaleLover · Android · EN | 2026-04-06 | 2026-10-26 | 2 | 39% | $19.1k |
+| GringoMaleLover-JP | GringoMaleLover · iOS · JP · JP | 2026-07-20 | 2026-11-02 | 3 | 43% | $1.6k |
+| GringoMaleLover-EN | GringoMaleLover · Android · EN | 2026-04-06 | 2026-11-02 | 2 | 39% | $19.1k |
 | LGBTQ-EN | LGBTQ · Android · EN | 2026-02-02 | 2026-03-16 | 2 | 43% | $3.4k |
+| GirlWantsToRelocate-ES | GirlWantsToRelocate · iOS · ES | 2026-07-20 | 2026-11-02 | 2 | 97% | $3.1k |
 | GirlWantsToRelocate-PT | GirlWantsToRelocate · iOS · PT | 2026-07-20 | 2026-10-26 | 2 | 49% | $712 |
-| GringoMaleLover-EN | GringoMaleLover · iOS · EN | 2026-04-06 | 2026-10-26 | 1 | 41% | $8.3k |
+| GringoMaleLover-EN | GringoMaleLover · iOS · EN | 2026-04-06 | 2026-11-02 | 1 | 41% | $8.3k |
 | GirlWantsToRelocate-EN | GirlWantsToRelocate · iOS · EN | 2026-02-02 | 2026-04-13 | 1 | 39% | $8.1k |
-| GirlWantsToRelocate-ES | GirlWantsToRelocate · iOS · ES | 2026-07-20 | 2026-10-26 | 1 | 96% | $1.6k |
 | MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-02-02 | 2026-03-30 | 0 | 23% | $5.6k |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-11 | 2026-10-26 | 0 | 10% | $5.1k |
 | General-ES | General · iOS · ES | 2026-02-02 | 2026-03-23 | 0 | 36% | $3.7k |

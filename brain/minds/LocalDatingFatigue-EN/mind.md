@@ -41,23 +41,23 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 3 live adsets · $8.1k last week · ROAS 0.39 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LocalDatingFatigue · Android · EN | 🔻 Falling | $3.9k | 0.33 | k4Rm9p datingcontest (since 2026-09-21, 6 wk) |
-| LocalDatingFatigue · iOS · EN | ✅ Healthy | $2.3k | 0.57 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
-| LocalDatingFatigue · Android · EN | 🆘 Critical | $1.8k | 0.28 | k4Rm9p datingcontest (since 2026-10-26, 1 wk) |
+| LocalDatingFatigue · Android · EN | 🔻 Falling | $3.9k | 0.33 | k4Rm9p datingcontest (since 2026-09-21, 7 wk) |
+| LocalDatingFatigue · iOS · EN | ✅ Healthy | $2.3k | 0.57 | k4Rm9p datingcontest (since 2026-10-05, 5 wk) |
+| LocalDatingFatigue · Android · EN | 🆘 Critical | $1.8k | 0.28 | k4Rm9p datingcontest (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-329059 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.33 from 0.47); T-056458 Decaying (Android · EN: ROAS 0.28 (prev 0.32), under 0.32); T-345011 Due (iOS · EN: ROAS 0.57)
 
 ### #1 history (latest first)
-- 2026-10-26 · LocalDatingFatigue · Android · EN · k4Rm9p datingcontest · 1 wk at 69% of spend  
+- 2026-10-26 · LocalDatingFatigue · Android · EN · k4Rm9p datingcontest · 2 wk at 56% of spend  
   top ad: `AngryWithLocalDating-US-k4Rm9p-DatingContest-AshleyHook-AshleyWaling-skit-Vertical-VID-Batch2026Week36`
-- 2026-10-05 · LocalDatingFatigue · iOS · EN · k4Rm9p datingcontest · 4 wk at 98% of spend  
+- 2026-10-05 · LocalDatingFatigue · iOS · EN · k4Rm9p datingcontest · 5 wk at 91% of spend  
   top ad: `AngryWithLocalDating-US-k4Rm9p-DatingContest-BarHook-Datingappsin2026-skit-Vertical-VID-Batch2026Week36`
-- 2026-09-21 · LocalDatingFatigue · Android · EN · k4Rm9p datingcontest · 6 wk at 92% of spend  
+- 2026-09-21 · LocalDatingFatigue · Android · EN · k4Rm9p datingcontest · 7 wk at 86% of spend  
   top ad: `AngryWithLocalDating-US-k4Rm9p-DatingContest-BarHook-Datingappsin2026-skit-Vertical-VID-Batch2026Week36`
 - 2026-08-31 · LocalDatingFatigue · Android · EN · X4nR8W talkinghead · 3 wk at 79% of spend  
   top ad: `LocalDatingFatigue-US-X4nR8W-TALKINGHEAD-FemaleTalkingHeadCasual-hatedatingapps-testimonial-ProductAware-VID-Batch2026Week33`
@@ -75,17 +75,19 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
   top ad: `ChurnLocal-US-X4nR8W-TalkingHead-PersianFemaleWalking-DeleteYourDatingApps-RawAdvice-ProblemAware-VID-Batch2026Week22`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (7 finished reigns). Longest: X4nR8W talkinghead, 7 weeks from 2026-06-29.
+A #1 here has led a median 2 weeks (7 finished reigns). Longest: k4Rm9p datingcontest, 7 weeks from 2026-09-21.
 
 ### Refreshes read from the exports
-5 since Dec: 1 hits of 2 with a final verdict (50%), 1 strikes, 0 fouls.
+7 since Dec: 3 hits of 3 with a final verdict (100%), 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | LocalDatingFatigue · iOS · EN | n6f2Wt | 16 | 3% | Foul (provisional) |
-| 2026-10-26 | LocalDatingFatigue · Android · EN | n6f2Wt | 16 | 2% | Foul (provisional) |
-| 2026-10-05 | LocalDatingFatigue · iOS · EN | k4Rm9p | 5 | 95% | Hit (provisional) |
+| 2026-11-02 | LocalDatingFatigue · iOS · EN | C07s3M | 5 | 33% | Hit (provisional) |
+| 2026-11-02 | LocalDatingFatigue · Android · EN | C07s3M | 5 | 31% | Strike (provisional, worse) |
+| 2026-10-26 | LocalDatingFatigue · iOS · EN | C0kM3N n6f2Wt | 16 | 3% | Foul (provisional) |
+| 2026-10-26 | LocalDatingFatigue · Android · EN | C0kM3N n6f2Wt | 16 | 2% | Foul (provisional) |
+| 2026-10-05 | LocalDatingFatigue · iOS · EN | k4Rm9p | 5 | 95% | Hit |
 | 2026-09-14 | LocalDatingFatigue · Android · EN | k4Rm9p | 5 | 5% | Home run |
-| 2026-08-17 | LocalDatingFatigue · Android · EN | Q7mZ2x | 1 | 3% | Strike |
+| 2026-08-17 | LocalDatingFatigue · Android · EN | Q7mZ2x X4nR8W | 1 | 7% | Home run |
 
 ### Experiments logged
 - none yet

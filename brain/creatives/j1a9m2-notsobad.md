@@ -17,8 +17,8 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
-#1 in 4 of 35 adsets it ran in · $36.2k spent as #1 · $71.1k in total.
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
+#1 in 4 of 35 adsets it ran in · $36.2k spent as #1 · $71.2k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -28,9 +28,9 @@ decoded: false
 | General-PT | General · Android · PT | 2026-03-02 | 2026-05-18 | 1 | 28% | $394 |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-23 | 0 | 24% | $4.6k |
 | General-ES | General · iOS · ES | 2025-12-01 | 2026-03-23 | 0 | 13% | $4.4k |
-| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-26 | 0 | 19% | $1.8k |
+| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-11-02 | 0 | 19% | $1.9k |
 | General-PT | General · iOS · PT | 2025-12-01 | 2026-02-16 | 0 | 5% | $1.7k |
-| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-10-26 | 0 | 34% | $1.3k |
+| General-UA | General · iOS · UA · Serious | 2025-12-22 | 2026-11-02 | 0 | 34% | $1.3k |
 | General-TH | General · iOS · TH | 2025-12-01 | 2026-02-09 | 0 | 8% | $1.2k |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2025-12-15 | 2026-03-16 | 0 | 5% | $1.0k |
 | General-ES | General · Android · ES · Serious | 2025-12-01 | 2026-03-30 | 0 | 3% | $1.0k |

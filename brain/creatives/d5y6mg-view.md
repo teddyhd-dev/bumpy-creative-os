@@ -17,7 +17,7 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 #1 in 5 of 40 adsets it ran in · $4.6k spent as #1 · $17.8k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
@@ -28,7 +28,7 @@ decoded: false
 | GirlWantsToRelocate-EN | GirlWantsToRelocate · iOS · EN | 2026-02-23 | 2026-06-08 | 1 | 31% | $585 |
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-02-23 | 2026-03-23 | 1 | 20% | $303 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN | 2026-03-09 | 2026-05-18 | 0 | 27% | $3.1k |
-| GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-02-23 | 2026-10-26 | 0 | 6% | $1.2k |
+| GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-02-23 | 2026-11-02 | 0 | 6% | $1.2k |
 | MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-02-23 | 2026-04-06 | 0 | 4% | $707 |
 | PassportBro-FR | PassportBro · iOS · FR | 2026-02-23 | 2026-04-20 | 0 | 28% | $566 |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-02-23 | 2026-10-12 | 0 | 21% | $412 |
@@ -45,7 +45,7 @@ decoded: false
 
 ### Variants (full ad names, 28 in total, top 10 by spend)
 - `LatinaLover-US-d5Y6mG-View-SeaBirdEye-VID-Batch2026Week08` · $8.7k · 4 adsets
-- `GringoLover-TH-d5Y6mG-View-manygringos-VID-Batch2026Week08` · $1.5k · 2 adsets
+- `GringoLover-TH-d5Y6mG-View-manygringos-VID-Batch2026Week08` · $1.6k · 2 adsets
 - `LatinaLover-US-d5Y6mG-View-BeachFar-VID-Batch2026Week08` · $1.1k · 5 adsets
 - `LatinaLover-US-d5Y6mG-View-Yacth-VID-Batch2026Week08` · $1.0k · 3 adsets
 - `304050-US-d5Y6mG-View-nevertoolate-VID-Batch2026Week08` · $804 · 2 adsets

@@ -61,7 +61,9 @@ submission). The creative lead merges it; from then on every session sees it.
 7. `playbook.md`, `core/brand.md`, and `core/spec.md` §6 and §15 (verdicts, the bar), with §6.2b (the refresh
    read). The ticket story gives each refresh's read: **Worse** = the last concept took spend and the adset lost
    money, so propose a different concept, not its variants; **Almost** with a small share = it never really got spend,
-   so a stronger hook or a new concept; **Almost** under 0.40 with a real share = iterate on it. When the launch review
+   so a stronger hook or a new concept; **Almost** under 0.40 with a real share = iterate on it. **Watch** = the new
+   creative took over and the adset is still 0.40+: no new brief for it yet. One refresh = one batch per adset, so
+   put everything for an adset in one batch. When the launch review
    marked the ticket **Research** (e.g. why a market wants this persona, why one OS lags the other), do that research
    with the strategist before ideas (`craft/persona-audit.md`). One brief serves both OS of a language.
 

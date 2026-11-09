@@ -329,8 +329,8 @@ def prebrief(t, n_tickets, G, runs, V, D, aw, acc, last_ad_week, bar, tickets_by
         L.append(f"Last refresh: {fmt_d(lr)} ({ago} wk ago){' (the adset launched then)' if lr == t.get('data_start') else ''}")
     d = D[D.adset_id == aid].sort_values("w0").tail(5).iloc[::-1]
     if len(d):
-        L.append("Recent refreshes (Hit = became #1 · Strike = no new #1 while under the bar · Foul = didn't unseat a healthy #1 · "
-                 "Void = landed in an incident week, not counted; read = spec §6.2b: Worked / Almost / Flat / Worse / Miss):")
+        L.append("Recent refreshes, one per batch (Hit = became #1 · Strike = read Worse, or missed while under the bar · Foul = no strike · "
+                 "Void = landed in an incident week, not counted; read = spec §6.2b: Worked / Almost / Flat / Watch / Worse / Miss):")
         for x in d.itertuples():
             ads = [top_ad(V, aid, k, x.w0, (pd.to_datetime(x.w0) + pd.Timedelta(days=7)).strftime("%Y-%m-%d")) for k in str(x.codes).split()]
             L.append(f"  - {fmt_d(x.w0)}: {x.codes} · {int(x.variants_max)} variant{'s' if x.variants_max != 1 else ''} · "

@@ -39,20 +39,20 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 - https://www.tiktok.com/@timchris46/video/7541947242257599751 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $921 last week · ROAS 0.15 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $671 | 0.11 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
-| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $250 | 0.23 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $671 | 0.11 | a2Ef3y wanted (since 2026-10-26, 2 wk) |
+| MatureDating · iOS · KR · 30to40 | 🆘 Critical | $250 | 0.23 | a2Ef3y wanted (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-118607 Decaying (iOS · KR · 30to40: ROAS 0.11 (prev 0.08), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-26 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 1 wk at 78% of spend  
-  top ad: `MatureDating-KR-H7kM3N-wanted-MatureChineseFemaleInBeachSelfie-SheIsLookingForSomethingSeriousWithKoreanMan-SeriousIntentOnly-CompletelyUnaware-IMG-Batch2026Week30`
-- 2026-10-26 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 1 wk at 65% of spend  
+- 2026-10-26 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 2 wk at 62% of spend  
+  top ad: `MatureDating-KR-H7kM3N-wanted-MatureLatinaInBeachSelfie-SheWantsSeriousRelationshipWithKoreanMan-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
+- 2026-10-26 · MatureDating · iOS · KR · 30to40 · a2Ef3y wanted · 2 wk at 61% of spend  
   top ad: `MatureDating-KR-H7kM3N-wanted-MatureLatinaInBeachSelfie-SheWantsSeriousRelationshipWithKoreanMan-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
 - 2026-10-19 · MatureDating · iOS · KR · 30to40 · 8k4opR manyplaces · 1 wk at – of spend  
   top ad: `MatureDating-KR-8k4opR-manyplaces-airport-hug-WhiteMan-AsianMom-StartFresh-ProductAware-VID-Batch2026Week30`

@@ -31,16 +31,18 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $1.7k last week · ROAS 0.34 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · iOS · CH · Friend | 🟠 Amber | $1.7k | 0.34 | n6f2Wt banner (since 2026-08-31, 9 wk) |
+| InternationalFriendFinder · iOS · CH · Friend | 🟠 Amber | $1.7k | 0.34 | q4Xr9m tweetoverlay (since 2026-11-02, 1 wk) |
 
 **Open tickets:** T-844172 Decaying (iOS · CH · Friend: ROAS 0.34, under 0.40, not falling)
 
 ### #1 history (latest first)
+- 2026-11-02 · InternationalFriendFinder · iOS · CH · Friend · q4Xr9m tweetoverlay · 1 wk at 28% of spend  
+  top ad: `Friends-CH-q4Xr9m-MomentsOverlay-Collageof4WeChat-xiangyaowaiguopengyoubumpy-recommendation-ProductAware-VID-Batch2026Week31`
 - 2026-08-31 · InternationalFriendFinder · iOS · CH · Friend · n6f2Wt banner · 9 wk at 43% of spend  
   top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
 - 2026-08-31 · InternationalFriendFinder · Web · CH · m3dtCp beatsyncedtext · 3 wk at 50% of spend  
@@ -69,18 +71,17 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
   top ad: `Friends-CH-n6f2Wt-banner-carwindow-VID-Batch2026Week13`
 - 2026-04-13 · InternationalFriendFinder · Android · CH · n6f2Wt banner · 2 wk at 45% of spend  
   top ad: `Friends-CH-n6f2Wt-banner-carwindow-IMG-Batch2026Week13`
-- 2026-04-06 · InternationalFriendFinder · iOS · CH · Friend · S6j8tG excitement · 1 wk at 34% of spend  
-  top ad: `Friends-CH-S6j8tG-Excitement-MarkAirplane-VID-Batch2026Week13`
 
 ### Fatigue clock
-A #1 here has led a median 1 weeks (15 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-04-13.
+A #1 here has led a median 1 weeks (16 finished reigns). Longest: n6f2Wt banner, 9 weeks from 2026-04-13.
 
 ### Refreshes read from the exports
-5 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls.
+6 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
+| 2026-11-02 | InternationalFriendFinder · iOS · CH · Friend | e1rLpy | 2 | 4% | Strike (provisional) |
 | 2026-10-26 | InternationalFriendFinder · iOS · CH · Friend | a2Ef3y | 3 | 6% | Foul (provisional) |
-| 2026-08-10 | InternationalFriendFinder · iOS · CH · Friend | k7Lp2Q q4Xr9m | 8 | 5% | Hit |
+| 2026-08-10 | InternationalFriendFinder · iOS · CH · Friend | k7Lp2Q m3Tn8W q4Xr9m | 8 | 8% | Hit |
 | 2026-06-29 | InternationalFriendFinder · iOS · CH · Friend | m3dtCp | 2 | 6% | Foul |
 | 2026-06-22 | InternationalFriendFinder · iOS · CH · Friend | 8k4opR | 2 | 16% | Foul |
 | 2026-06-08 | InternationalFriendFinder · iOS · CH · Friend | H7kM3N | 2 | 35% | Strike |

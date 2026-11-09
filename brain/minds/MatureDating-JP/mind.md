@@ -39,21 +39,27 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 - https://www.tiktok.com/@timchris46/video/7541947242257599751 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $1.9k last week · ROAS 0.23 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · iOS · JP · 30to40 | 🆘 Critical | $1.7k | 0.21 | a2Ef3y wanted (since 2026-08-03, 13 wk) |
-| MatureDating · iOS · JP · 30to40 | 🔻 Falling | $248 | 0.36 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| MatureDating · iOS · JP · 30to40 | 🆘 Critical | $1.7k | 0.21 | a2Ef3y wanted (since 2026-08-03, 14 wk) |
+| MatureDating · iOS · JP · 30to40 | 🔻 Falling | $248 | 0.36 | a2Ef3y wanted (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-118034 Decaying (iOS · JP · 30to40: ROAS 0.21 (prev 0.21), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-26 · MatureDating · iOS · JP · 30to40 · a2Ef3y wanted · 1 wk at 69% of spend  
+- 2026-10-26 · MatureDating · iOS · JP · 30to40 · a2Ef3y wanted · 2 wk at 66% of spend  
   top ad: `MatureDating-JP-H7kM3N-wanted-MatureWhiteFemaleInBeachSelfie-EmmaFromLondon45SingleSeriousRelationshipOnlyLetsTalkOnBumpy-SeriousIntentOnly-ProductAware-VID-Batch2026Week30`
-- 2026-08-03 · MatureDating · iOS · JP · 30to40 · a2Ef3y wanted · 13 wk at 72% of spend  
+- 2026-08-03 · MatureDating · iOS · JP · 30to40 · a2Ef3y wanted · 14 wk at 70% of spend  
   top ad: `MatureDating-JP-H7kM3N-wanted-MatureMidEastFemaleInBeachSelfie-SheHopesToMeetJapaneseManForSomethingSerious-SeriousIntentOnly-CompletelyUnaware-VID-Batch2026Week30`
+
+### Refreshes read from the exports
+1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
+| Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
+|---|---|---|---|---|---|
+| 2026-11-02 | MatureDating · iOS · JP · 30to40 | n6f2Wt | 6 | 14% | Foul (provisional) |
 
 ### Experiments logged
 - none yet

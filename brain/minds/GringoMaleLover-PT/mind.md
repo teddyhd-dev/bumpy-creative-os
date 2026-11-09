@@ -40,17 +40,17 @@ Team knowledge base: Brazilian women who want to date foreign men.
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $2.8k last week · ROAS 0.51 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · PT · PT | 🚀 Scaling | $2.8k | 0.51 | H7kM3N airport (since 2026-09-07, 8 wk) |
+| GringoMaleLover · iOS · PT · PT | 🚀 Scaling | $2.8k | 0.51 | H7kM3N airport (since 2026-09-07, 9 wk) |
 
 **Open tickets:** T-291846 Due (iOS · PT · PT: ROAS 0.51, spend +40% vs 2 weeks ago)
 
 ### #1 history (latest first)
-- 2026-09-07 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 8 wk at 59% of spend  
+- 2026-09-07 · GringoMaleLover · iOS · PT · PT · H7kM3N airport · 9 wk at 59% of spend  
   top ad: `GringoLover-BR-H7kM3N-Airport-ItalianSelfie-VID-Batch2026Week01`
 - 2026-08-31 · GringoMaleLover · iOS · PT · PT · n6f2Wt banner · 1 wk at 48% of spend  
   top ad: `GringoLover-PT-n6f2Wt-Banner-bigticket-DateAGringoOnBumpy-gringodating-ProductAware-VID-Batch2026Week32`
@@ -85,17 +85,17 @@ Team knowledge base: Brazilian women who want to date foreign men.
 A #1 here has led a median 2 weeks (21 finished reigns). Longest: H7kM3N airport, 14 weeks from 2026-01-05.
 
 ### Refreshes read from the exports
-10 since Dec: 3 hits of 10 with a final verdict (30%), 0 strikes, 7 fouls.
+13 since Dec: 5 hits of 12 with a final verdict (42%), 0 strikes, 7 fouls, 1 void (landed in an incident week).
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
+| 2026-10-19 | GringoMaleLover · iOS · PT · PT | X4nR8W w1Tr7K | 2 | 1% | Void (incident, provisional) |
 | 2026-09-21 | GringoMaleLover · iOS · PT · PT | C0kM3N | 1 | 2% | Foul |
-| 2026-09-14 | GringoMaleLover · iOS · PT · PT | k9Rd4m | 2 | 6% | Foul |
+| 2026-09-14 | GringoMaleLover · iOS · PT · PT | k9Rd4m t3Wq8n | 2 | 7% | Foul |
+| 2026-08-17 | GringoMaleLover · iOS · PT · PT | n6f2Wt w1Tr7K | 2 | 5% | Home run |
 | 2026-06-29 | GringoMaleLover · iOS · PT · PT | m3dtCp | 2 | 1% | Foul |
-| 2026-06-15 | GringoMaleLover · iOS · PT · PT | vh1kle | 2 | 5% | Foul |
-| 2026-06-15 | GringoMaleLover · Android · PT · PT | vh1kle | 2 | 5% | Hit |
+| 2026-06-15 | GringoMaleLover · iOS · PT · PT | 82kodp i48opT vh1kle | 2 | 5% | Foul |
+| 2026-06-15 | GringoMaleLover · Android · PT · PT | 82kodp i48opT vh1kle | 2 | 5% | Hit |
 | 2026-06-01 | GringoMaleLover · iOS · PT · PT | 83i0px | 2 | 1% | Foul |
-| 2026-05-18 | GringoMaleLover · iOS · PT · PT | iPohxY | 2 | 3% | Foul |
-| 2026-05-04 | GringoMaleLover · iOS · PT · PT | 4Bm9of | 2 | 5% | Foul |
 
 ### Experiments logged
 - none yet

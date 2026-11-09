@@ -17,30 +17,30 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
-#1 in 4 of 42 adsets it ran in · $3.8k spent as #1 · $17.4k in total.
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
+#1 in 4 of 42 adsets it ran in · $3.8k spent as #1 · $17.5k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-06-15 | 2026-08-17 | 4 | 80% | $2.1k |
-| MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-06-15 | 2026-10-26 | 2 | 43% | $1.2k |
-| MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-06-15 | 2026-10-26 | 1 | 43% | $2.3k |
+| MatureDating-EN | MatureDating · iOS · EN · 30to40 | 2026-06-15 | 2026-11-02 | 2 | 43% | $1.2k |
+| MuslimMatchWorldwide-EN | MuslimMatchWorldwide · iOS · EN | 2026-06-15 | 2026-11-02 | 1 | 43% | $2.3k |
 | MatureDating-ES | MatureDating · iOS · ES · 30to40 | 2026-06-15 | 2026-09-14 | 1 | 28% | $2.1k |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-06-15 | 2026-10-26 | 0 | 10% | $1.6k |
 | GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-06-15 | 2026-08-03 | 0 | 26% | $1.2k |
 | GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-06-15 | 2026-09-21 | 0 | 5% | $810 |
-| MatureDating-EN | MatureDating · Android · EN · 30to40 | 2026-06-15 | 2026-10-26 | 0 | 25% | $773 |
-| GirlWantsToRelocate-EN | GirlWantsToRelocate · iOS · EN | 2026-06-15 | 2026-10-26 | 0 | 10% | $688 |
+| MatureDating-EN | MatureDating · Android · EN · 30to40 | 2026-06-15 | 2026-11-02 | 0 | 25% | $779 |
+| GirlWantsToRelocate-EN | GirlWantsToRelocate · iOS · EN | 2026-06-15 | 2026-11-02 | 0 | 10% | $698 |
 | PassportBro-EN | PassportBro · Android · EN · Serious | 2026-06-15 | 2026-10-26 | 0 | 2% | $684 |
-| LatinaFemaleLover-EN | LatinaFemaleLover · iOS · EN · Casual | 2026-06-15 | 2026-10-26 | 0 | 34% | $586 |
+| LatinaFemaleLover-EN | LatinaFemaleLover · iOS · EN · Casual | 2026-06-15 | 2026-11-02 | 0 | 34% | $591 |
 | GringoMaleLover-PH | GringoMaleLover · Android · PH · PH | 2026-06-15 | 2026-07-20 | 0 | 41% | $520 |
 | General-EN | General · Android · EN | 2026-06-15 | 2026-06-22 | 0 | 28% | $447 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · iOS · EN · Serious | 2026-06-15 | 2026-07-20 | 0 | 8% | $423 |
-| AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-06-15 | 2026-10-26 | 0 | 2% | $345 |
+| AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-06-15 | 2026-11-02 | 0 | 2% | $347 |
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-06-15 | 2026-08-24 | 0 | 17% | $337 |
-| LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-06-15 | 2026-10-26 | 0 | 4% | $228 |
+| LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN · Casual | 2026-06-15 | 2026-11-02 | 0 | 4% | $231 |
 | GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-06-15 | 2026-08-24 | 0 | 11% | $223 |
-| GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-06-15 | 2026-10-26 | 0 | 3% | $206 |
+| GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-06-15 | 2026-11-02 | 0 | 3% | $207 |
 | AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-06-15 | 2026-07-13 | 0 | 2% | $129 |
 
 ### Variants (full ad names, 40 in total, top 10 by spend)
@@ -49,9 +49,9 @@ decoded: false
 - `304050-ES-vh1kle-MatureLatinaWithHotItalianManVibingInTheCar-EstaBienEmpezarDeNuevoSalirConAlguienNuevoDeOtroPaisEnBumpy-startover-rooflesscar-IMG-Batch2026Week23` · $1.7k · 2 adsets
 - `304050-US-vh1kle-VespaRideInBali-StartFreshAndDateSomeoneOutsideYourCountryFromBumpy-startfresh-scenery-VID-Batch2026Week23` · $1.4k · 2 adsets
 - `Muslim-US-vh1kle-MuslimCoupleInDubai-MashaallahHalalLoveFromDatingAppStillExistsGiveBumpyATry-halal-rooflesscar-VID-Batch2026Week23` · $1.4k · 2 adsets
-- `Muslim-US-vh1kle-MuslimCoupleInDubai-MashaallahHalalLoveFromDatingAppStillExistsGiveBumpyATry-halal-rooflesscar-IMG-Batch2026Week23` · $884 · 2 adsets
-- `GringoLover-PH-vh1kle-SEAGirlWhiteGuyInsideCar-DatingAFAMSMeansReceing247PrincessTreatmentGetYoursOnBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $718 · 4 adsets
+- `Muslim-US-vh1kle-MuslimCoupleInDubai-MashaallahHalalLoveFromDatingAppStillExistsGiveBumpyATry-halal-rooflesscar-IMG-Batch2026Week23` · $912 · 2 adsets
+- `GringoLover-PH-vh1kle-SEAGirlWhiteGuyInsideCar-DatingAFAMSMeansReceing247PrincessTreatmentGetYoursOnBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $724 · 4 adsets
 - `PassportBro-US-vh1kle-MotorbikeRideinBali-HowItFeelsDatingGirlsOutsideAmericaWhoDontCareAboutHowMuchYouMake-money-riderPOV-VID-Batch2026Week23` · $715 · 4 adsets
-- `LatinaLover-US-vh1kle-LatinaWomanBlondeGuyVibingInTheCar-HowItFeelsDatingLatinaFromBumpyFindYours-vibingtogether-POVcarrearview-IMG-Batch2026Week23` · $697 · 3 adsets
-- `PassportGirl-US-vh1kle-SEAWomanBlondeGuyInsideCar-BeingPassengerPrincessBecauseYouDateManAbroadFromBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $597 · 1 adset
+- `LatinaLover-US-vh1kle-LatinaWomanBlondeGuyVibingInTheCar-HowItFeelsDatingLatinaFromBumpyFindYours-vibingtogether-POVcarrearview-IMG-Batch2026Week23` · $700 · 3 adsets
+- `PassportGirl-US-vh1kle-SEAWomanBlondeGuyInsideCar-BeingPassengerPrincessBecauseYouDateManAbroadFromBumpy-princesstreatment-rooflesscar-VID-Batch2026Week23` · $599 · 1 adset
 <!-- generated:end facts -->

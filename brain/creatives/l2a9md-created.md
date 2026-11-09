@@ -17,21 +17,21 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 #1 in 1 of 2 adsets it ran in · $932 spent as #1 · $7.7k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
-| InternationalFriendFinder-EN | InternationalFriendFinder · Android · EN · Friend | 2026-01-26 | 2026-10-26 | 1 | 44% | $4.5k |
-| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-01-26 | 2026-10-26 | 0 | 6% | $3.2k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · Android · EN · Friend | 2026-01-26 | 2026-11-02 | 1 | 44% | $4.5k |
+| InternationalFriendFinder-EN | InternationalFriendFinder · iOS · EN · Friend | 2026-01-26 | 2026-11-02 | 0 | 6% | $3.2k |
 
 ### Variants (full ad names, 8 in total, top 10 by spend)
 - `Friends-US-L2a9Md-created-founder-IMG-Batch2026Week03` · $4.4k · 2 adsets
 - `Friends-US-L2a9Md-created-mark-VID-Batch2026Week03` · $1.6k · 2 adsets
-- `Friends-US-L2a9Md-created-mark-IMG-Batch2026Week03` · $637 · 2 adsets
+- `Friends-US-L2a9Md-created-mark-IMG-Batch2026Week03` · $641 · 2 adsets
 - `Friends-US-L2a9Md-created-beach-VID-Batch2026Week03` · $344 · 2 adsets
 - `Friends-US-L2a9Md-created-airplane-VID-Batch2026Week03` · $308 · 2 adsets
-- `Friends-US-L2a9Md-created-airplane-IMG-Batch2026Week03` · $167 · 2 adsets
-- `Friends-US-L2a9Md-created-beach-IMG-Batch2026Week03` · $125 · 2 adsets
-- `Friends-US-L2a9Md-created-founder-VID-Batch2026Week03` · $89 · 2 adsets
+- `Friends-US-L2a9Md-created-airplane-IMG-Batch2026Week03` · $172 · 2 adsets
+- `Friends-US-L2a9Md-created-beach-IMG-Batch2026Week03` · $129 · 2 adsets
+- `Friends-US-L2a9Md-created-founder-VID-Batch2026Week03` · $90 · 2 adsets
 <!-- generated:end facts -->

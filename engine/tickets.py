@@ -9,7 +9,8 @@ A ticket answers the two questions Notion couldn't: what to refresh next, and us
     elsewhere in the same persona or language but never ran here (J1 cross-pollination).
 Dark adsets that were switched off while beating their OS average become Resurrection candidates.
 
-At-bat = new concepts entering an adset in the same week, once the adset is 3+ weeks old (spec §6.1).
+At-bat = one refresh try: one batch (BatchYYYYWeekWW) landing in an adset 3+ weeks old, all its concepts and
+variants together; creator-program ads don't count (spec §6.1, creative lead 9 Nov 2026).
 Rule (creative lead, 27 Oct): one concept per refresh, landing in each adset with 3+ variants (hooks, text,
 re-cuts); add a proven J1 concept when there is one. `variants` = distinct ads with spend in the adset in the
 concept's first 2 weeks there (zero-spend variants aren't in the export).
@@ -81,7 +82,9 @@ def refresh_read(rank, before, after, b, cum_above=0.0):
     creatives are carrying it at the bar) or swing again. If it did but sits outside the ads that make
     80% of the adset's spend (`cum_above` = share of the concepts ranked above it ≥ READ["affect"]), it is
     too small to have moved the adset either way: Almost. Otherwise the adset's ROAS decides:
-    Worked (up and at the bar), Almost (up but under the bar), Flat, or Worse (down)."""
+    Worked (up and at the bar), Almost (up but under the bar), Flat, Watch (down but still at the bar:
+    the new creative took over and the adset stays healthy; creative lead 9 Nov 2026), or Worse (down
+    and under the bar)."""
     green = b["green"]
     if pd.isna(rank) or rank > READ["top_n"]:
         if pd.notna(after) and after >= green:
@@ -98,12 +101,75 @@ def refresh_read(rank, before, after, b, cum_above=0.0):
     if abs(d) < READ["flat"]:
         return "Flat"
     if d < 0:
-        return "Worse"
+        return "Watch" if after >= green else "Worse"
     return "Worked" if after >= green else "Almost"
 
 
+def tries(A, born, last):
+    """One row per refresh try (spec §6.1; creative lead, 9 Nov 2026). A batch (the BatchYYYYWeekWW tag in the
+    ad name) landing in an adset is ONE try, whatever it holds: two new concepts, or new variants of a concept
+    already running there; batches landing in the same adset in the same week are one try (one ROAS reading). Ads without a batch tag (old names): the new concepts entering the adset in the same
+    week are one try. Creator-program ads (strategist TIN) are content passed through, not a refresh: they
+    compete for spend but never make a try. New variants of a running concept are ranked as their own group
+    (concept + batch), so they don't inherit the rank of the concept's older ads (same as the launch review)."""
+    nxt = lambda w: (pd.to_datetime(w) + pd.Timedelta(weeks=1)).strftime("%Y-%m-%d")
+    B = cr.load_batches()
+    B = B[B.spend > 0].copy()
+    B = B.join(B.groupby(["adset_id", "concept_key"]).week.min().rename("cfirst"), on=["adset_id", "concept_key"])
+    T = B[B.batch != ""]
+    B = B.join(T.groupby(["adset_id", "batch"]).week.min().rename("bfirst"), on=["adset_id", "batch"])
+    ext = (B.batch != "") & (B.bfirst > B.cfirst)
+    B["grp"] = np.where(ext, B.concept_key + "*" + B.batch, B.concept_key)
+    # rank every group in its adset-week
+    Gw = B.groupby(["adset_id", "week", "grp"]).spend.sum().reset_index()
+    Gw["share"] = Gw.spend / Gw.groupby(["adset_id", "week"]).spend.transform("sum")
+    Gw = Gw.sort_values(["adset_id", "week", "spend"], ascending=[True, True, False])
+    Gw["rank"] = Gw.groupby(["adset_id", "week"]).cumcount() + 1
+    Gw["cum_above"] = Gw.groupby(["adset_id", "week"]).share.cumsum() - Gw.share
+    K = Gw.set_index(["adset_id", "grp", "week"])
+    RK, CA, SH = K["rank"].to_dict(), K.cum_above.to_dict(), K.share.to_dict()
+    tops = Gw[Gw["rank"] == 1].groupby(["adset_id", "grp"]).week.apply(sorted).to_dict()
+    # who belongs to which try
+    B["try"], B["w0"] = "", ""
+    tg = B.batch != ""
+    B.loc[tg, "try"], B.loc[tg, "w0"] = B.loc[tg, "batch"], B.loc[tg, "bfirst"]
+    arrived_tagged = set(map(tuple, B[tg & (B.week == B.cfirst)][["adset_id", "concept_key"]].drop_duplicates().values))
+    un = ~tg & np.array([(a, k) not in arrived_tagged for a, k in zip(B.adset_id, B.concept_key)])
+    B.loc[un, "try"], B.loc[un, "w0"] = "wk:" + B.loc[un, "cfirst"], B.loc[un, "cfirst"]
+    M = B[(B["try"] != "") & ((B.week == B.w0) | (B.week == B.w0.map(lambda w: nxt(w) if w else "")))]
+    AS = A.set_index(["adset_id", "week"]).as_s.to_dict()
+    # creator content is not a refresh: drop tries whose spend is mostly creator-program ads
+    cr_share = M.assign(cs=M.spend * M.creator).groupby(["adset_id", "try"]).agg(cs=("cs", "sum"), s=("spend", "sum"))
+    own = cr_share[cr_share.cs <= 0.5 * cr_share.s].index
+    M = M[pd.MultiIndex.from_arrays([M.adset_id, M["try"]]).isin(own)]
+    rows = []
+    # batches landing in the same adset in the same week share one before/after ROAS: one try, not two
+    for (aid, w0), g in M.groupby(["adset_id", "w0"], sort=False):
+        tr = " ".join(sorted(set(t for t in g["try"] if not t.startswith("wk:"))))
+        s0 = g.loc[g.week == w0, "spend"].sum()
+        if s0 < ATBAT["concept_min"] or AS.get((aid, w0), 0) < ATBAT["adset_min"]:
+            continue
+        if aid not in born.index or (pd.to_datetime(w0) - pd.to_datetime(born[aid])).days // 7 < ATBAT["adset_age"]:
+            continue
+        grps = sorted(set(g.grp))
+        wks = (w0, nxt(w0))
+        rk = min(RK.get((aid, x, w), 99) for x in grps for w in wks)
+        ca = min(CA.get((aid, x, w), 1.0) for x in grps for w in wks)
+        t1 = [w for x in grps for w in tops.get((aid, x), []) if w >= w0]
+        rows.append(dict(adset_id=aid, w0=w0, batch=tr,
+                         variants=g.ad_clean.nunique(), variants_max=int(g.groupby("grp").ad_clean.nunique().max()),
+                         concepts=len(grps),
+                         codes=" ".join(dict.fromkeys(x.split("*")[0].replace("name:", "")[:24] for x in grps)),
+                         best_s1=sum(SH.get((aid, x, w0), 0.0) for x in grps),
+                         wk_top=(pd.to_datetime(min(t1)) - pd.to_datetime(w0)).days // 7 if t1 else np.nan,
+                         age=(pd.to_datetime(last) - pd.to_datetime(w0)).days // 7, best_rank=rk, cum_above=ca))
+    cols = ["adset_id", "w0", "batch", "variants", "variants_max", "concepts", "codes", "best_s1", "wk_top", "age",
+            "best_rank", "cum_above"]
+    return pd.DataFrame(rows, columns=cols)
+
+
 def at_bats(c, A):
-    """One row per at-bat (concepts entering an adset in the same week, adset 3+ weeks old)."""
+    """One row per at-bat = refresh try (see `tries`: one batch landing in an adset 3+ weeks old)."""
     weeks = sorted(c.week.unique())
     last = weeks[-1]
     A_os = A.drop_duplicates("adset_id").set_index("adset_id").os.to_dict()
@@ -117,21 +183,8 @@ def at_bats(c, A):
     m = m[m.week.isna() | (m.week >= m.w0)]
     arr = arr.join(m.groupby(["adset_id", "concept_key"]).wk.min().rename("wk_top"), on=["adset_id", "concept_key"])
     arr["age"] = (pd.to_datetime(last) - pd.to_datetime(arr.w0)).dt.days // 7
-    V = variant_weeks()
     nxt = lambda w: (pd.to_datetime(w) + pd.Timedelta(weeks=1)).strftime("%Y-%m-%d")
-    arr["variants"] = [len(V.get((a, k, w), set()) | V.get((a, k, nxt(w)), set())) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
-    # refresh read (spec §6.2b): the concept's best rank in the adset in its first 2 weeks there
-    RK = c.set_index(["adset_id", "concept_key", "week"])["rank"].to_dict()
-    arr["rank12"] = [min(RK.get((a, k, w), 99), RK.get((a, k, nxt(w)), 99)) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
-    # share of the concepts ranked above it (in the same adset-week): "inside the 80%" when under READ["affect"]
-    cs = c.sort_values(["adset_id", "week", "rank"])
-    cs["cum_above"] = cs.groupby(["adset_id", "week"]).share.cumsum() - cs.share
-    CA = cs.set_index(["adset_id", "concept_key", "week"]).cum_above.to_dict()
-    arr["cum12"] = [min(CA.get((a, k, w), 1.0), CA.get((a, k, nxt(w)), 1.0)) for a, k, w in zip(arr.adset_id, arr.concept_key, arr.w0)]
-    D = arr.groupby(["adset_id", "w0"]).agg(
-        variants=("variants", "sum"), variants_max=("variants", "max"),
-        concepts=("concept_key", "size"), codes=("concept_key", lambda s: " ".join(k.replace("name:", "")[:24] for k in s)),
-        best_s1=("s1", "max"), wk_top=("wk_top", "min"), age=("age", "first"), best_rank=("rank12", "min"), cum_above=("cum12", "min")).reset_index()
+    D = tries(A, born, last)
     D = D.sort_values(["adset_id", "w0"]).reset_index(drop=True)
     # adset ROAS the week before the refresh vs after it (the week after when it exists, else the landing week)
     AR = A.assign(r=A.as_r / A.as_s.replace(0, np.nan)).set_index(["adset_id", "week"]).r.to_dict()
@@ -212,8 +265,8 @@ def count_strikes(D, G):
                 strike = True                      # the new creative took spend and the adset got worse: fix first
             elif provisional and r.read == "Worked":
                 k = 0
-            elif provisional and r.read in ("Almost", "Flat", "Miss (left)"):
-                pass                               # almost / flat: swing again, no strike; miss but at the bar: leave
+            elif provisional and r.read in ("Almost", "Flat", "Watch", "Miss (left)"):
+                pass                               # almost / flat: swing again, no strike; watch / miss at the bar: leave
             elif r.counts_as_hit:
                 k = 0
             elif turnaround and not void and r.read != "Miss (left)":
@@ -349,6 +402,8 @@ def main():
             notes.append("last refresh took spend and ROAS got worse: fix first")
         elif read in ("Almost", "Flat"):
             notes.append(f"last refresh {read.lower()}: refresh again")
+        elif read == "Watch":
+            notes.append("last refresh took over and ROAS dipped but stays at the bar: watch, no strike")
         if in_test and typ != "3 strikes" and read not in ("Worse", "Almost", "Flat"):
             score *= W["in_test_factor"]
             notes.append("challenger already in test")

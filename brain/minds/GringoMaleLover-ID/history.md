@@ -24,3 +24,7 @@ Added (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)): Desire: A bule 
 4 past winning headline(s) listed under Messages that land.
 "Who they are": flagged that the Notion text is the Brazil card and added this market's own description from the team knowledge base.
 Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).
+
+## 2026-11-02 · new-1 · data
+Hd5mX9 couple became #1 in GringoMaleLover · Android · ID · ID with 38% of spend (it entered on 2026-10-26 with 12% in its first week), replacing C0kM3N combo after 1 week as #1.
+<!-- event:new1:120240452988880469:2026-11-02 -->

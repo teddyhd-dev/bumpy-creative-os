@@ -41,18 +41,20 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $939 last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · KR · KR | 🆘 Critical | $688 | 0.24 | n6f2Wt banner (since 2026-10-26, 1 wk) |
-| GringoMaleLover · iOS · KR · KR | ✅ Healthy | $251 | 0.58 | Co3Mb0 coupleproof (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · KR · KR | 🆘 Critical | $688 | 0.24 | n6f2Wt banner (since 2026-10-26, 2 wk) |
+| GringoMaleLover · iOS · KR · KR | ✅ Healthy | $251 | 0.58 | w1Tr7K carousel (since 2026-11-02, 1 wk) |
 
 **Open tickets:** T-321393 Decaying (iOS · KR · KR: ROAS 0.24 (prev 0.25), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-26 · GringoMaleLover · iOS · KR · KR · n6f2Wt banner · 1 wk at 34% of spend  
+- 2026-11-02 · GringoMaleLover · iOS · KR · KR · w1Tr7K carousel · 1 wk at 64% of spend  
+  top ad: `GringoLover-KR-w1Tr7K-Carousel-KoreanCloseup-oegugin-sagyin-recommendation-ProblemAware-IMG-Batch2026Week32`
+- 2026-10-26 · GringoMaleLover · iOS · KR · KR · n6f2Wt banner · 2 wk at 34% of spend  
   top ad: `Gringolover-KR-n6f2Wt-Banner-NotSoBad-KoreanGirlWhiteTanktopKpopStyle-LifeIsNotSoBadAfterIMoveToAnotherCountryBecauseOfBumpy-IronicUnderstatement-ProductAware-IMG-Batch2026Week280`
 - 2026-10-26 · GringoMaleLover · iOS · KR · KR · Co3Mb0 coupleproof · 1 wk at 39% of spend  
   top ad: `Gringolover-KR-Co3Mb0-CoupleProof-MixedCouplesCombo-YeonaehagoHaeoeRoTteonaja-dateMoveAbroad-CompletelyUnaware-IMG-Batch2026Week28`
@@ -66,13 +68,13 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `GringoLover-KR-n6f2Wt-Banner-Envelope-HighlyRecommendDatingForeignGuyOnBumpy-PersonalRecommendation-ProductAware-VID-Batch2026Week28`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (4 finished reigns). Longest: n6f2Wt banner, 5 weeks from 2026-07-20.
+A #1 here has led a median 2 weeks (5 finished reigns). Longest: n6f2Wt banner, 5 weeks from 2026-07-20.
 
 ### Refreshes read from the exports
 2 since Dec: 1 hits of 2 with a final verdict (50%), 0 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-14 | GringoMaleLover · iOS · KR · KR | k9Rd4m | 2 | 32% | Hit |
+| 2026-09-14 | GringoMaleLover · iOS · KR · KR | k9Rd4m t3Wq8n | 2 | 34% | Hit |
 | 2026-08-17 | GringoMaleLover · iOS · KR · KR | w1Tr7K | 1 | 4% | Foul |
 
 ### Experiments logged

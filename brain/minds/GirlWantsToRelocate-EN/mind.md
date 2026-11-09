@@ -40,17 +40,17 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $1.9k last week · ROAS 0.44 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.9k | 0.44 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
+| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.9k | 0.44 | a2Ef3y wanted (since 2026-10-19, 3 wk) |
 
 **Open tickets:** T-455544 Decaying (iOS · EN: Green, but hook rate -86% vs 4-wk avg)
 
 ### #1 history (latest first)
-- 2026-10-19 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 2 wk at 53% of spend  
+- 2026-10-19 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 3 wk at 68% of spend  
   top ad: `PassportGirl-US-H7kM3N-Wanted-ItalianGuyInCar-29fromUKLonelyLookingForGirlfriendFromAnotherCountryLetsChat-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
 - 2026-10-12 · GirlWantsToRelocate · iOS · EN · Kj4Rp7 firstdate · 1 wk at 51% of spend  
   top ad: `PassportGirl-US-Kj4Rp7-FirstDate-CoupleOutfitCheckonStreet-GirlDateTheForeignOne-PassportGirl-TikTokTrendComedic-VID-Batch2026Week22`
@@ -85,14 +85,15 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 A #1 here has led a median 1 weeks (23 finished reigns). Longest: Kj4Rp7 firstdate, 11 weeks from 2026-06-08.
 
 ### Refreshes read from the exports
-5 since Dec: 2 hits of 5 with a final verdict (40%), 2 strikes, 1 fouls.
+6 since Dec: 4 hits of 6 with a final verdict (67%), 1 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-07-20 | GirlWantsToRelocate · iOS · EN | v8Gn7M | 3 | 3% | Strike |
+| 2026-07-20 | GirlWantsToRelocate · iOS · EN | Co3Mb0 H7kM3N a2Ef3y v8Gn7M | 24 | 3% | Late hit |
+| 2026-05-18 | GirlWantsToRelocate · iOS · EN | n6f2Wt | 2 | 3% | Hit |
 | 2026-05-11 | GirlWantsToRelocate · iOS · EN | 7nf3oE | 2 | 9% | Strike |
-| 2026-04-13 | GirlWantsToRelocate · iOS · EN | 4xoEL0 bRk4t3 | 8 | 41% | Hit |
-| 2026-02-02 | GirlWantsToRelocate · iOS · EN | v8Gn7M | 2 | 3% | Hit |
-| 2025-12-22 | GirlWantsToRelocate · iOS · EN | L2vM8Q t7R4iN | 2 | 31% | Foul |
+| 2026-04-13 | GirlWantsToRelocate · iOS · EN | 4xoEL0 bRk4t3 | 8 | 43% | Hit |
+| 2026-02-02 | GirlWantsToRelocate · iOS · EN | X4nR8W Y4nR8W a2Ef3y n6f2Wt v8Gn7M w5K8bX | 3 | 3% | Hit |
+| 2025-12-22 | GirlWantsToRelocate · iOS · EN | L2vM8Q t7R4iN | 2 | 33% | Foul |
 
 ### Experiments logged
 - none yet

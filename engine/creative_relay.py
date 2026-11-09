@@ -57,6 +57,19 @@ def load_variants():
     return rep.groupby(["adset_id", "week", "concept_key", "ad_clean"]).agg(spend=("spend", "sum")).reset_index()
 
 
+CREATOR_RE = r"(?i)-TIN-[^-]+-Batch\d{4}Week\d+"   # creator program: strategist TIN (core/naming-ad-v5.md)
+
+
+def load_batches():
+    """adset × week × concept × batch × ad → spend, for the refresh tries (spec §6.1). `batch` is the
+    BatchYYYYWeekWW tag of the ad name ('' when the name has none); `creator` marks creator-program ads."""
+    d, rep, _ = _weekly_rows()
+    rep = rep.copy()
+    rep["batch"] = rep["ad_clean"].str.extract(r"(?i)(batch\d{4}week\d+)")[0].str.lower().fillna("")
+    rep["creator"] = rep["ad_clean"].str.contains(CREATOR_RE, regex=True, na=False)
+    return rep.groupby(["adset_id", "week", "concept_key", "batch", "creator", "ad_clean"]).agg(spend=("spend", "sum")).reset_index()
+
+
 def load():
     d, rep, last_day = _weekly_rows()
     c = rep.groupby(["adset_id", "week", "concept_key"]).agg(

@@ -17,14 +17,14 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 #1 in 6 of 29 adsets it ran in · $3.5k spent as #1 · $12.4k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-03-23 | 2026-05-11 | 4 | 46% | $2.2k |
 | GringoMaleLover-ID | GringoMaleLover · Android · ID · ID | 2026-03-23 | 2026-04-20 | 3 | 48% | $942 |
-| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-03-23 | 2026-10-26 | 1 | 29% | $685 |
+| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-03-23 | 2026-11-02 | 1 | 29% | $716 |
 | General-PT | General · Android · PT | 2026-03-23 | 2026-05-18 | 1 | 29% | $500 |
 | GringoMaleLover-ID | GringoMaleLover · iOS · ID | 2026-03-23 | 2026-04-13 | 1 | 28% | $368 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-06-15 | 2026-07-20 | 1 | 16% | $283 |
@@ -50,7 +50,7 @@ decoded: false
 - `PassportGirl-US-n1wM3B-Omaze-Map-VID-Batch2026Week11` · $1.2k · 1 adset
 - `PassportBro-US-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $1.2k · 6 adsets
 - `PassportBro-US-n1wM3B-Omaze-Map-VID-Batch2026Week11` · $1.1k · 6 adsets
-- `GringoLover-ES-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $688 · 2 adsets
+- `GringoLover-ES-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $718 · 2 adsets
 - `General-BR-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $626 · 3 adsets
 - `Muslim-US-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $515 · 3 adsets
 - `General-ES-n1wM3B-Omaze-Earth-VID-Batch2026Week11` · $496 · 5 adsets

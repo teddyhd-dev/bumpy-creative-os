@@ -36,7 +36,8 @@ BAR_STATUS = "Singular bar set 27 Oct 2026 by the creative lead: acceptable from
 
 
 # ---- At-bats and tickets (spec §6 and §20). Proposed 27 Oct 2026, waiting for the creative lead. ----
-# At-bat = new concepts entering an adset in the same week, once the adset is 3+ weeks old.
+# At-bat = one refresh try: a batch (BatchYYYYWeekWW) landing in an adset 3+ weeks old (creative lead, 9 Nov 2026).
+# Batches landing in the same adset-week are one try; creator-program ads (strategist TIN) never make one.
 ATBAT = {
     "adset_min": 1000,      # adset spend that week ($) for the at-bat to count
     "concept_min": 20,      # concept spend in its first adset week ($)

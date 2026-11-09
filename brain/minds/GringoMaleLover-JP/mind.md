@@ -41,22 +41,24 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
-**Now:** 2 live adsets · $931 last week · ROAS 0.30 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
+**Now:** 2 live adsets · $932 last week · ROAS 0.30 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $681 | 0.14 | n6f2Wt banner (since 2026-10-26, 1 wk) |
-| GringoMaleLover · iOS · JP · JP | ✅ Healthy | $251 | 0.72 | H7kM3N airport (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $681 | 0.14 | n6f2Wt banner (since 2026-10-26, 2 wk) |
+| GringoMaleLover · iOS · JP · JP | ✅ Healthy | $251 | 0.72 | H7kM3N airport (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-319678 Decaying (iOS · JP · JP: ROAS 0.14 (prev 0.04), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-26 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 1 wk at 31% of spend  
+- 2026-11-02 · GringoMaleLover · Android · JP · JP · n6f2Wt banner · 1 wk at – of spend  
+  top ad: `Gringolover-JP-n6f2Wt-Banner-NotSoBad-KoreanGirlTanktopKpopStyle-LifeIsNotSoBadAfterIMoveToAnotherCountryBecauseOfBumpy-IronicUnderstatement-ProductAware-VID-Batch2026Week28`
+- 2026-10-26 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 2 wk at 39% of spend  
   top ad: `Gringolover-JP-n6f2Wt-Banner-Car-BlondeGuyRooflessCar-ForeignGuysAreAlreadyDatingJapaneseGirlsOnBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
 - 2026-10-26 · GringoMaleLover · Android · JP · JP · t3Wq8n bigtext · 1 wk at 36% of spend  
   top ad: `GringoLover-JP-t3Wq8n-BigText-EastAsianSelfie-easierbutfaraway-confession-ProductAware-IMG-Batch2026Week35`
-- 2026-10-26 · GringoMaleLover · iOS · JP · JP · H7kM3N airport · 1 wk at 53% of spend  
+- 2026-10-26 · GringoMaleLover · iOS · JP · JP · H7kM3N airport · 2 wk at 64% of spend  
   top ad: `Gringolover-JP-H7kM3N-AirportHook-CoupleAirportHug-KoishiteKaigaiEIjuShiyo-dateMoveAbroad-CompletelyUnaware-VID-Batch2026Week28`
 - 2026-10-19 · GringoMaleLover · iOS · JP · JP · a2Ef3y wanted · 1 wk at 36% of spend  
   top ad: `Gringolover-JP-H7kM3N-Wanted-ItalianGuyInCar-KaigaiNoKoibitoGaHoshii-someoneWantsYou-CompletelyUnaware-IMG-Batch2026Week28`
@@ -80,13 +82,13 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `GringoLover-JP-n6f2Wt-Banner-Envelope-HighlyRecommendDatingForeignGuyOnBumpy-PersonalRecommendation-ProductAware-VID-Batch2026Week28`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (10 finished reigns). Longest: n6f2Wt banner, 3 weeks from 2026-09-14.
+A #1 here has led a median 2 weeks (11 finished reigns). Longest: n6f2Wt banner, 3 weeks from 2026-09-14.
 
 ### Refreshes read from the exports
 1 since Dec: 0 hits of 1 with a final verdict (0%), 0 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-14 | GringoMaleLover · iOS · JP · JP | k9Rd4m t3Wq8n | 2 | 11% | Foul |
+| 2026-09-14 | GringoMaleLover · iOS · JP · JP | k9Rd4m t3Wq8n | 2 | 13% | Foul |
 
 ### Experiments logged
 - none yet

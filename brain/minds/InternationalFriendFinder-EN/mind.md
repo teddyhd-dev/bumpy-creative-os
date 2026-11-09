@@ -40,24 +40,24 @@ Team knowledge base: Young people (18–25) who want connection abroad with low-
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $7.2k last week · ROAS 0.40 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · Android · EN · Friend | 🔻 Falling | $3.8k | 0.32 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
-| InternationalFriendFinder · iOS · EN · Friend | ✅ Healthy | $3.3k | 0.50 | n6f2Wt banner (since 2026-07-13, 16 wk) |
+| InternationalFriendFinder · Android · EN · Friend | 🔻 Falling | $3.8k | 0.32 | q4Xr9m tweetoverlay (since 2026-08-17, 12 wk) |
+| InternationalFriendFinder · iOS · EN · Friend | ✅ Healthy | $3.3k | 0.50 | n6f2Wt banner (since 2026-07-13, 17 wk) |
 
 **Open tickets:** T-910899 Decaying (Android · EN · Friend: Under 0.40 and falling: ROAS 0.32 from 0.33); T-700177 Due (iOS · EN · Friend: ROAS 0.50)
 
 ### #1 history (latest first)
-- 2026-08-17 · InternationalFriendFinder · Android · EN · Friend · q4Xr9m tweetoverlay · 11 wk at 71% of spend  
+- 2026-08-17 · InternationalFriendFinder · Android · EN · Friend · q4Xr9m tweetoverlay · 12 wk at 72% of spend  
   top ad: `Friends-US-q4Xr9m-TweetOverlay-FlagWalk-brazilitalykoreafriends-recommendation-ProductAware-IMG-Batch2026Week31`
 - 2026-08-10 · InternationalFriendFinder · Android · EN · Friend · L2a9Md created · 1 wk at 44% of spend  
   top ad: `Friends-US-L2a9Md-created-founder-IMG-Batch2026Week03`
 - 2026-07-20 · InternationalFriendFinder · Web · EN · m3dtCp beatsyncedtext · 9 wk at 100% of spend  
   top ad: `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-IMG-Batch2026Week25`
-- 2026-07-13 · InternationalFriendFinder · iOS · EN · Friend · n6f2Wt banner · 16 wk at 52% of spend  
+- 2026-07-13 · InternationalFriendFinder · iOS · EN · Friend · n6f2Wt banner · 17 wk at 54% of spend  
   top ad: `Friends-US-n6f2Wt-banner-carwindow-IMG-Batch2026Week03`
 - 2026-07-06 · InternationalFriendFinder · iOS · EN · Friend · m3dtCp beatsyncedtext · 1 wk at 44% of spend  
   top ad: `InternationalFriends-US-m3dtCp-beatsyncedtext-aerialBeachGroupSwim-MakeFriendsFromDifferentCountries-makeintlfriends-IMG-Batch2026Week25`
@@ -83,20 +83,20 @@ Team knowledge base: Young people (18–25) who want connection abroad with low-
   top ad: `Friends-US-w1Tr7K-carousel-NYC-VID-Batch2026Week03`
 
 ### Fatigue clock
-A #1 here has led a median 4 weeks (15 finished reigns). Longest: n6f2Wt banner, 16 weeks from 2026-07-13.
+A #1 here has led a median 4 weeks (15 finished reigns). Longest: n6f2Wt banner, 17 weeks from 2026-07-13.
 
 ### Refreshes read from the exports
-9 since Dec: 3 hits of 9 with a final verdict (33%), 1 strikes, 5 fouls.
+13 since Dec: 3 hits of 11 with a final verdict (27%), 2 strikes, 6 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
+| 2026-10-26 | InternationalFriendFinder · iOS · EN · Friend | a2Ef3y | 6 | 9% | Foul (provisional) |
+| 2026-10-26 | InternationalFriendFinder · Android · EN · Friend | a2Ef3y | 5 | 17% | Strike (provisional) |
 | 2026-09-14 | InternationalFriendFinder · iOS · EN · Friend | X4nR8W | 2 | 4% | Strike |
-| 2026-08-10 | InternationalFriendFinder · iOS · EN · Friend | k7Lp2Q q4Xr9m | 10 | 3% | Foul |
-| 2026-08-10 | InternationalFriendFinder · Android · EN · Friend | k7Lp2Q q4Xr9m | 10 | 13% | Home run |
+| 2026-08-10 | InternationalFriendFinder · iOS · EN · Friend | k7Lp2Q q4Xr9m | 10 | 5% | Foul |
+| 2026-08-10 | InternationalFriendFinder · Android · EN · Friend | k7Lp2Q q4Xr9m | 10 | 15% | Home run |
 | 2026-06-29 | InternationalFriendFinder · iOS · EN · Friend | m3dtCp | 2 | 22% | Home run |
 | 2026-06-29 | InternationalFriendFinder · Android · EN · Friend | m3dtCp | 2 | 33% | Hit |
 | 2026-06-22 | InternationalFriendFinder · iOS · EN · Friend | 8k4opR | 2 | 4% | Foul |
-| 2026-06-22 | InternationalFriendFinder · Android · EN · Friend | 8k4opR | 2 | 5% | Foul |
-| 2026-04-06 | InternationalFriendFinder · iOS · EN · Friend | m9Gh2d | 2 | 1% | Foul |
 
 ### Experiments logged
 - none yet

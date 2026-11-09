@@ -45,20 +45,22 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $1.1k last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.0k | 0.28 | C0kM3N combo (since 2026-10-26, 1 wk) |
-| GringoMaleLover · Android · ID · ID | 🔻 Falling | $25 | 2.35 | t3Wq8n bigtext (since 2026-10-19, 2 wk) |
+| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.0k | 0.28 | Hd5mX9 couple (since 2026-11-02, 1 wk) |
+| GringoMaleLover · Android · ID · ID | 🔻 Falling | $25 | 2.35 | t3Wq8n bigtext (since 2026-10-19, 3 wk) |
 
 **Open tickets:** T-298888 Decaying (Android · ID · ID: ROAS 0.28 (prev 0.20), under 0.32)
 
 ### #1 history (latest first)
+- 2026-11-02 · GringoMaleLover · Android · ID · ID · Hd5mX9 couple · 1 wk at 38% of spend  
+  top ad: `GringoMaleLover-ID-Hd5mX9-Couple-CouplePhotoBoothStrip-kisahiniberawal-testimonial-Unaware-VID-TIN-007-Batch2026Week44`
 - 2026-10-26 · GringoMaleLover · Android · ID · ID · C0kM3N combo · 1 wk at 31% of spend  
   top ad: `Gringolover-ID-C0kM3N-Combo-ComboBuleToIndonesian-BanyakCowokBuleDiBumpyYangPengenNikahinCewekIndo-FOMO-ProductAware-VID-Batch2026Week36`
-- 2026-10-19 · GringoMaleLover · Android · ID · ID · t3Wq8n bigtext · 2 wk at 61% of spend  
+- 2026-10-19 · GringoMaleLover · Android · ID · ID · t3Wq8n bigtext · 3 wk at 59% of spend  
   top ad: `GringoLover-ID-t3Wq8n-BigText-SeaGirlSelfie-easierbutfaraway-confession-ProductAware-IMG-Batch2026Week35`
 - 2026-09-21 · GringoMaleLover · Android · ID · ID · t3Wq8n bigtext · 5 wk at 47% of spend  
   top ad: `GringoLover-ID-t3Wq8n-BigText-SeaGirlSelfie-easierbutfaraway-confession-ProductAware-IMG-Batch2026Week35`
@@ -78,26 +80,24 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
   top ad: `Gringolover-ID-i48opT-fastcarouselartsy-SelfieAtWashingtonSquarePark-POVDipacarinCowoBuleDariBumpy-dateabroad-princesstreatment-VID-Batch2026Week23`
 - 2026-06-08 · GringoMaleLover · Android · ID · ID · 7nf3oE slideshow · 2 wk at 50% of spend  
   top ad: `Gringolover-ID-7nf3oE-slideshow-GakNyangkaBanyakBuleDiBumpyYangMauKomitSamaCeweIndo-komit-cowobule-VID-Batch2026Week17`
-- 2026-05-11 · GringoMaleLover · Android · ID · ID · 4Bm9of banner · 4 wk at 54% of spend  
-  top ad: `Gringolover-ID-4Bm9of-banner-envelope-money-GakNyangkaBanyakBulediBumpyKomitSamaCewekIndo-status-combopic-VID-Batch2026Week17`
 - 2026-05-11 · GringoMaleLover · iOS · ID · 7bn40k passenger · 1 wk at – of spend  
   top ad: `GringoLover-ID-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07GringoLover-ID-7bn40k-Passenger-BackseatPOV-IMG-Batch2026Week07`
-- 2026-04-20 · GringoMaleLover · iOS · ID · 4g89om iconicplaces · 3 wk at 25% of spend  
-  top ad: `GringoLover-ID-4g89om-IconicPlaces-Waterfall-IMG-Batch2026Week08`
+- 2026-05-11 · GringoMaleLover · Android · ID · ID · 4Bm9of banner · 4 wk at 54% of spend  
+  top ad: `Gringolover-ID-4Bm9of-banner-envelope-money-GakNyangkaBanyakBulediBumpyKomitSamaCewekIndo-status-combopic-VID-Batch2026Week17`
 - 2026-04-20 · GringoMaleLover · Android · ID · ID · 4g89om iconicplaces · 3 wk at 28% of spend  
   top ad: `GringoLover-ID-4g89om-IconicPlaces-Waterfall-VID-Batch2026Week08`
 
 ### Fatigue clock
-A #1 here has led a median 1 weeks (29 finished reigns). Longest: t3Wq8n bigtext, 5 weeks from 2026-09-21.
+A #1 here has led a median 1 weeks (30 finished reigns). Longest: t3Wq8n bigtext, 5 weeks from 2026-09-21.
 
 ### Refreshes read from the exports
 4 since Dec: 3 hits of 3 with a final verdict (100%), 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | GringoMaleLover · Android · ID · ID | Hd5mX9 Wb7cR2 | 1 | 13% | Strike (provisional) |
-| 2026-02-23 | GringoMaleLover · iOS · ID | 7bn40k | 2 | 1% | Late hit |
-| 2026-02-02 | GringoMaleLover · iOS · ID | n6f2Wt | 3 | 2% | Hit |
-| 2026-02-02 | GringoMaleLover · Android · ID · ID | n6f2Wt | 5 | 3% | Hit |
+| 2026-11-02 | GringoMaleLover · Android · ID · ID | e1rLpy | 1 | 5% | Strike (provisional) |
+| 2026-02-23 | GringoMaleLover · iOS · ID | 0u48ny 4g89om 7bn40k 84n6r9 90sbuw Mw4ucH d5Y6mG | 4 | 2% | Home run |
+| 2026-02-02 | GringoMaleLover · iOS · ID | Y4nR8W a2Ef3y n6f2Wt w5K8bX | 3 | 3% | Hit |
+| 2026-02-02 | GringoMaleLover · Android · ID · ID | Y4nR8W a2Ef3y n6f2Wt v8Gn7M w5K8bX | 5 | 4% | Hit |
 
 ### Experiments logged
 - none yet

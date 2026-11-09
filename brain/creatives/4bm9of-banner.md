@@ -17,7 +17,7 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 #1 in 15 of 18 adsets it ran in · $33.6k spent as #1 · $52.4k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
@@ -37,11 +37,11 @@ decoded: false
 | RichHusbandFinder-EN | RichHusbandFinder · iOS · EN · Marriage | 2026-06-15 | 2026-07-27 | 1 | 34% | $187 |
 | GringoMaleLover-TH | GringoMaleLover · Web · TH | 2026-08-17 | 2026-09-14 | 1 | 39% | $174 |
 | General-ES | General · iOS · ES | 2026-06-29 | 2026-07-13 | 1 | 53% | $98 |
-| GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-05-04 | 2026-10-19 | 0 | 17% | $1.7k |
+| GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-05-04 | 2026-11-02 | 0 | 17% | $1.7k |
 | PlusSizeWomen-EN | PlusSizeWomen · iOS · EN | 2026-05-04 | 2026-05-18 | 0 | 25% | $459 |
 | InterracialDatingSeekers-EN | InterracialDatingSeekers · Android · EN | 2026-05-04 | 2026-05-25 | 0 | 8% | $386 |
 
-### Variants (full ad names, 20 in total, top 10 by spend)
+### Variants (full ad names, 21 in total, top 10 by spend)
 - `Gringolover-ES-4Bm9of-banner-envelope-money-MuchosGringosEnBumpyBuscandoUnaLatina-status-combopic-VID-Batch2026Week17` · $24.7k · 4 adsets
 - `Gringolover-PH-4Bm9of-banner-envelope-money-AFAMsAreObsessedWithFilipinaOnBumpy-status-combopic-VID-Batch2026Week17` · $6.5k · 2 adsets
 - `Gringolover-TH-4Bm9of-banner-WomanFeetInsideSportsCar-FarangBoysOnBumpyWantingToDateAndTreatYouLikePrincess-status-combopic-VID-Batch2026Week17` · $5.2k · 3 adsets

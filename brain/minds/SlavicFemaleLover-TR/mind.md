@@ -29,17 +29,17 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $1.4k last week · ROAS 0.52 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SlavicFemaleLover · iOS · TR | ✅ Healthy | $1.4k | 0.52 | a2Ef3y wanted (since 2026-09-14, 7 wk) |
+| SlavicFemaleLover · iOS · TR | ✅ Healthy | $1.4k | 0.52 | a2Ef3y wanted (since 2026-09-14, 8 wk) |
 
 **Open tickets:** T-722472 Due (iOS · TR: ROAS 0.52)
 
 ### #1 history (latest first)
-- 2026-09-14 · SlavicFemaleLover · iOS · TR · a2Ef3y wanted · 7 wk at 87% of spend  
+- 2026-09-14 · SlavicFemaleLover · iOS · TR · a2Ef3y wanted · 8 wk at 85% of spend  
   top ad: `SlavicLover-TR-a2Ef3y-wanted-slavic-WantsToTalkToSomeoneMaybeYou-flirty-VID-Batch2026Week36`
 - 2026-08-24 · SlavicFemaleLover · iOS · TR · n6f2Wt banner · 1 wk at – of spend  
   top ad: `SlavicLover-US-n6f2Wt-banner-CoupleHuggingByStandee-YourTurnToDateSlavicGirlsFromBumpy-YourTurnAspiration-weddingstandee-VID-Batch2026Week18`
@@ -47,14 +47,13 @@ updated: '2026-11-02'
   top ad: `SlavicLover-a2Ef3y-wanted-DarkHairedSlavicGirlWearingPashmina-AnastasiaSingleLookingForAsianMan-moslemmentarget-value-VID-Batch2026Week18`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (2 finished reigns). Longest: a2Ef3y wanted, 7 weeks from 2026-09-14.
+A #1 here has led a median 2 weeks (2 finished reigns). Longest: a2Ef3y wanted, 8 weeks from 2026-09-14.
 
 ### Refreshes read from the exports
-2 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
+1 since Dec: 0 hits of 0 with a final verdict, 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | SlavicFemaleLover · iOS · TR | B9dF4J MpL2Xe | 3 | 23% | Hit (provisional) |
-| 2026-10-19 | SlavicFemaleLover · iOS · TR | C0kM3N u7Wf9i | 2 | 35% | Hit (provisional) |
+| 2026-10-19 | SlavicFemaleLover · iOS · TR | B9dF4J C0kM3N MpL2Xe u7Wf9i | 3 | 43% | Hit (provisional) |
 
 ### Experiments logged
 - none yet

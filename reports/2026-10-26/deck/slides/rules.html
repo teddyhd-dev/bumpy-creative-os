@@ -1,28 +1,65 @@
-<section id="rules" data-transition="fade" style="background:#F7F6F3;color:#2B2428;font-family:'Open Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-family:'Quicksand', Arial, sans-serif;font-size:28px;font-weight:700;color:#1F7FA8;letter-spacing:3px;text-transform:uppercase">How to read the next slides</p>
-<h2 style="font-family:'Quicksand', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#2B2428">Two rules: the ROAS bar, and the refresh verdict</h2>
-</div>
-<div style="display:flex;gap:48px">
-<div style="flex:1;display:flex;flex-direction:column;gap:24px">
-<h3 style="font-family:'Quicksand', Arial, sans-serif;font-size:40px;font-weight:700">ROAS colour</h3>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:32px;font-weight:700;background:#53AFD4;color:#1B2A33;padding:4px 0;border-radius:999px;text-align:center">0.45</p><p style="font-size:32px">0.40 and up · <b>OK</b></p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:32px;font-weight:700;background:#FDD3C2;color:#6B2A12;padding:4px 0;border-radius:999px;text-align:center">0.36</p><p style="font-size:32px">0.32–0.39 · <b>needs refresh</b></p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:32px;font-weight:700;background:#D9442B;color:#FFFFFF;padding:4px 0;border-radius:999px;text-align:center">0.28</p><p style="font-size:32px">under 0.32 · <b>critical</b></p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:32px;font-weight:700;text-align:center"><span style="color:#1F6F94">▲</span> <span style="color:#D9442B">▼</span></p><p style="font-size:32px">ROAS after vs before the upload</p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:28px;font-weight:700;background:#FFE9A8;color:#5A4500;padding:4px 0;border-radius:999px;text-align:center">1 week</p><p style="font-size:32px">#1 for under 2 weeks · <b>not proven yet</b></p></div>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:24px">
-<h3 style="font-family:'Quicksand', Arial, sans-serif;font-size:40px;font-weight:700">Refresh verdict</h3>
-<p style="font-size:30px;color:#5E5C60">First: did the new creative reach the top 3 spenders?</p>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:30px;font-weight:700;background:#1F7FA8;color:#FFFFFF;padding:4px 0;border-radius:999px;text-align:center">✓ Worked</p><p style="font-size:30px">yes, a real share, ROAS up and now 0.40+</p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:30px;font-weight:700;background:#D6EEF8;color:#1F5F7A;padding:4px 0;border-radius:999px;text-align:center">↗ Almost</p><p style="font-size:30px">yes, but under 0.40, or its share is too small</p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:30px;font-weight:700;background:#D9442B;color:#FFFFFF;padding:4px 0;border-radius:999px;text-align:center">✗ Worse</p><p style="font-size:32px">yes, but ROAS went down</p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:30px;font-weight:700;background:#E9E3D3;color:#5A4A1E;padding:4px 0;border-radius:999px;text-align:center">= Flat</p><p style="font-size:32px">yes, ROAS didn’t move</p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:30px;font-weight:700;background:#E2DFE1;color:#4F4D51;padding:4px 0;border-radius:999px;text-align:center">Miss</p><p style="font-size:32px">no: old creatives kept the spend</p></div>
-<div style="display:flex;align-items:center;gap:24px"><p style="width:170px;font-size:26px;font-weight:700;background:#53AFD4;color:#1B2A33;padding:4px 0;border-radius:999px;text-align:center">NEW</p><p style="font-size:30px">our new creative is #1 · <b style="color:#6B2A12">NEW-OLD</b>: an older one just became #1</p></div>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5E5C60">Too small = the ads ranked above it already take 80%+ of the adset’s spend, so it can’t have moved ROAS either way. Early reads (2–5 days); final call at week 4.</p>
-<aside>Before we look at results, two rules. Blue is at or above 0.40, peach needs a refresh, red is critical. For the verdict, the first question is whether our new creative got into the top 3. If it did, did ROAS go up or down? If it didn’t, it’s a miss.</aside>
+<section id="rules" data-transition="fade" style="display:flex; flex-direction:column; gap:56px; padding:128px 128px 160px; background:#f7f6f3">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:Quicksand, Arial, sans-serif; font-size:28px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#1f7fa8">How to read the next slides</p>
+    <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:72px; font-weight:700; line-height:1.1; color:#2b2428">Two rules: the ROAS bar, and the refresh verdict</h2>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:48px">
+    <div style="display:flex; flex-direction:column; gap:24px; flex:1">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:40px; font-weight:700; color:#2b2428">ROAS colour</h3>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:32px; font-weight:700; text-align:center; color:#1b2a33; background:#53afd4; border-radius:256px">0.45</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">0.40 and up · <b>OK</b></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:32px; font-weight:700; text-align:center; color:#6b2a12; background:#fdd3c2; border-radius:256px">0.4</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">0.32–0.39 · <b>needs refresh</b></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:32px; font-weight:700; text-align:center; color:#ffffff; background:#d9442b; border-radius:256px">&lt;0.4</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">under 0.32 · <b>critical</b></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; font-family:'Open Sans', Arial, sans-serif; font-size:32px; font-weight:700; text-align:center; color:#2b2428"><span style="color:#1f6f94">▲</span> <span style="color:#d9442b">▼</span></p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">ROAS after vs before the upload</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:28px; font-weight:700; text-align:center; color:#5a4500; background:#ffe9a8; border-radius:256px">1 week</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">#1 for under 2 weeks · <b>not proven yet</b></p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:16px; flex:1">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:40px; font-weight:700; color:#2b2428">Refresh verdict</h3>
+      <p style="font-family:'Open Sans', Arial, sans-serif; font-size:30px; color:#5e5c60">First: did the new creative reach the top 3 spenders?</p>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#ffffff; background:#1f7fa8; border-radius:256px">✓ Worked</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:30px; color:#2b2428">yes, a real share, ROAS up and now 0.40+</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1f5f7a; background:#d6eef8; border-radius:256px">↗ Almost</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:30px; color:#2b2428">yes, but under 0.40, or its share is too small</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#ffffff; background:#d9442b; border-radius:256px">✗ Worse</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:30px; color:#2b2428">yes, ROAS went down and is under 0.40</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#5a4500; background:#ffe9a8; border-radius:256px">◎ Watch</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:30px; color:#2b2428">yes, ROAS dipped but is still 0.40+</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#5a4a1e; background:#e9e3d3; border-radius:256px">= Flat</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">yes, ROAS didn’t move</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#4f4d51; background:#e2dfe1; border-radius:256px">Miss</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:32px; color:#2b2428">no: old creatives kept the spend</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+        <p style="width:170px; padding:4px 0; font-family:'Open Sans', Arial, sans-serif; font-size:26px; font-weight:700; text-align:center; color:#1b2a33; background:#53afd4; border-radius:256px">NEW</p>
+        <p style="font-family:'Open Sans', Arial, sans-serif; font-size:30px; color:#2b2428">our new creative is #1 · <span style="color:#6b2a12"><b>NEW-OLD</b></span>: an older one just became #1</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:64px; left:128px; width:1664px; font-family:'Open Sans', Arial, sans-serif; font-size:24px; color:#5e5c60">Too small = the ads ranked above it already take 80%+ of the adset’s spend, so it can’t have moved ROAS either way. Early reads (2–5 days); final call at week 4.</p>
+  <aside>Before we look at results, two rules. Blue is at or above 0.40, peach needs a refresh, red is critical. For the verdict, the first question is whether our new creative got into the top 3. If it did, did ROAS go up or down? If it went down but stayed above 0.40, we watch it. If it didn’t get in, it’s a miss.</aside>
 </section>

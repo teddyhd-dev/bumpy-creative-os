@@ -15,3 +15,7 @@ Moved "Proven message (Notion)" out of the beliefs table into "Messages that lan
 Added (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)): Desire: A Christian partner from another country; Main objection: "Hard to find a committed Christian abroad".
 1 past winning headline(s) listed under Messages that land.
 Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).
+
+## 2026-11-02 · new-1 · data
+m3dtCp beatsyncedtext became #1 in ChristianMatchWorldwide · iOS · EN · US with 38% of spend (it entered on 2026-06-29 with 34% in its first week), replacing L2vM8Q manyhugs after 5 weeks as #1.
+<!-- event:new1:120242347668700469:2026-11-02 -->

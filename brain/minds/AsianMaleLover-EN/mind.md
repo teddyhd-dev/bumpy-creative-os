@@ -35,26 +35,26 @@ _Source: Notion persona card "Gringo Lover from India —> Turned to Asian Man L
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $2.9k last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AsianMaleLover · Android · EN | 🆘 Critical | $1.7k | 0.25 | dR1elf dreamlife (since 2026-09-21, 6 wk) |
-| AsianMaleLover · iOS · EN | ✅ Healthy | $1.2k | 0.45 | B9dF4J slider (since 2026-10-19, 2 wk) |
+| AsianMaleLover · Android · EN | 🆘 Critical | $1.7k | 0.25 | dR1elf dreamlife (since 2026-09-21, 7 wk) |
+| AsianMaleLover · iOS · EN | ✅ Healthy | $1.2k | 0.45 | B9dF4J slider (since 2026-10-19, 3 wk) |
 
 **Open tickets:** T-802966 Due (iOS · EN: ROAS 0.45); T-423742 Decaying (Android · EN: ROAS 0.25 (prev 0.36), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-19 · AsianMaleLover · iOS · EN · B9dF4J slider · 2 wk at 61% of spend  
-  top ad: `AsianMaleLover-US-B9dF4J-Sliders-AsianMaleInFormalSuitPeaceHand-ManySingleAsianManWantToDateSomeoneOutsideTheirCountry-OpenToForeigners-CompletelyUnaware-VID-Batc`
+- 2026-10-19 · AsianMaleLover · iOS · EN · B9dF4J slider · 3 wk at 58% of spend  
+  top ad: `AsianMaleLover-US-B9dF4J-Sliders-AsianMaleInFormalSuitPeaceHand-ManySingleAsianManWantToDateSomeoneOutsideTheirCountry-OpenToForeigners-CompletelyUnaware-VID-JAC-ANN-Batc`
 - 2026-10-05 · AsianMaleLover · iOS · EN · dR1elf dreamlife · 2 wk at 90% of spend  
   top ad: `AsianMaleLover-US-dR1elf-DreamLife-AsianMaleSmellingTruffleRestaurant-ItsYourTimeToTryDatingAnAsianManFromBumpy-YourTimeUrgency-MostAware-VID-Batch2026Week36`
-- 2026-09-21 · AsianMaleLover · Android · EN · dR1elf dreamlife · 6 wk at 81% of spend  
+- 2026-09-21 · AsianMaleLover · Android · EN · dR1elf dreamlife · 7 wk at 79% of spend  
   top ad: `AsianMaleLover-US-dR1elf-DreamLife-AsianMaleSmellingTruffleRestaurant-ItsYourTimeToTryDatingAnAsianManFromBumpy-YourTimeUrgency-MostAware-VID-Batch2026Week36`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (1 finished reigns). Longest: dR1elf dreamlife, 6 weeks from 2026-09-21.
+A #1 here has led a median 2 weeks (1 finished reigns). Longest: dR1elf dreamlife, 7 weeks from 2026-09-21.
 
 ### Experiments logged
 - none yet

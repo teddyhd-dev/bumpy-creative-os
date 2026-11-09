@@ -21,3 +21,7 @@ v13uln melancholicview became #1 in ChatOnly · iOS · EN · Talk with 61% of sp
 ## 2026-10-26 · new-1 · data
 v13uln melancholicview became #1 in ChatOnly · Android · EN · Talk with 53% of spend (it entered on 2026-09-14 with 70% in its first week), replacing 53Lfye highangleselfie after 2 weeks as #1.
 <!-- event:new1:120251395574320469:2026-10-26 -->
+
+## 2026-11-02 · new-1 · data
+53Lfye highangleselfie became #1 in ChatOnly · Android · EN · Talk with 64% of spend (it entered on 2026-09-14 with 30% in its first week), replacing v13uln melancholicview after 1 week as #1.
+<!-- event:new1:120251395574320469:2026-11-02 -->

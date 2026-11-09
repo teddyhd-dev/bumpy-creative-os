@@ -34,16 +34,18 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $1.4k last week · ROAS 0.38 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · PT | 🟠 Amber | $1.4k | 0.38 | Q3fN8Z airportfirst (since 2026-10-26, 1 wk) |
+| ChristianMatchWorldwide · iOS · PT | 🟠 Amber | $1.4k | 0.38 | F4z7K2 fastcarousel (since 2026-11-02, 1 wk) |
 
 **Open tickets:** T-666702 Decaying (iOS · PT: ROAS 0.38, under 0.40, not falling)
 
 ### #1 history (latest first)
+- 2026-11-02 · ChristianMatchWorldwide · iOS · PT · F4z7K2 fastcarousel · 1 wk at 38% of spend  
+  top ad: `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-JAC-ANN-Batch2026Week06`
 - 2026-10-26 · ChristianMatchWorldwide · iOS · PT · Q3fN8Z airportfirst · 1 wk at 34% of spend  
   top ad: `Christian-PT-Q3fN8Z-AirportFirst-NigerianMaleLatinaFemaleAirportHug-conhecemuitoscristaos-recommendation-SolutionAware-VID-Batch2026Week30`
 - 2026-09-28 · ChristianMatchWorldwide · iOS · PT · F4z7K2 fastcarousel · 4 wk at 44% of spend  
@@ -54,7 +56,7 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
   top ad: `Christian-PT-F4z7K2-FastCarousel-PraiseHook-conhecesolteiroscristaos-recommendation-SolutionAware-VID-Batch2026Week06`
 
 ### Fatigue clock
-A #1 here has led a median 4 weeks (3 finished reigns). Longest: Q3fN8Z airportfirst, 5 weeks from 2026-08-24.
+A #1 here has led a median 4 weeks (4 finished reigns). Longest: Q3fN8Z airportfirst, 5 weeks from 2026-08-24.
 
 ### Experiments logged
 - none yet

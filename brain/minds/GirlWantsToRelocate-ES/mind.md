@@ -38,18 +38,18 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $1.5k last week · ROAS 0.31 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · ES | 🆘 Critical | $1.5k | 0.31 | v8Gn7M pulseblack (since 2026-10-26, 1 wk) |
+| GirlWantsToRelocate · iOS · ES | 🆘 Critical | $1.5k | 0.31 | v8Gn7M pulseblack (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-311248 Decaying (iOS · ES: ROAS 0.31 (prev 0.44), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-26 · GirlWantsToRelocate · iOS · ES · v8Gn7M pulseblack · 1 wk at 96% of spend  
-  top ad: `PassportGirl-ES-v8Gn7M-PulseBlack-GirlWalking-HighlyRecommendDatingUSGringoFromBumpy-SocialProof-ProductAware-VID-Batch2026Week28`
+- 2026-10-26 · GirlWantsToRelocate · iOS · ES · v8Gn7M pulseblack · 2 wk at 96% of spend  
+  top ad: `PassportGirl-ES-v8Gn7M-PulseBlack-MirrorSelfie-HighlyRecommendDatingUSGringoFromBumpy-SocialProof-ProductAware-IMG-Batch2026Week28`
 - 2026-07-20 · GirlWantsToRelocate · iOS · ES · n6f2Wt banner · 14 wk at 81% of spend  
   top ad: `PassportGirl-ES-n6f2Wt-Banner-Envelope-RecomiendoMuchisimoSalirConUnGringoEnBumpy-PersonalRecommendation-ProductAware-IMG-Batch2026Week280`
 

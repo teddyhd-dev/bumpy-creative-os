@@ -40,22 +40,22 @@ _Source: Notion persona card "Passport Bro" (written for the persona across lang
 - https://www.tiktok.com/@nikolasz_avender/video/7544175141224303902 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $10.2k last week · ROAS 0.37 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| PassportBro · Android · EN · Serious | 🔻 Falling | $5.3k | 0.40 | C0kM3N combo (since 2026-10-26, 1 wk) |
-| PassportBro · iOS · EN · Serious | 🔻 Falling | $4.9k | 0.34 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
+| PassportBro · Android · EN · Serious | 🔻 Falling | $5.3k | 0.40 | C0kM3N combo (since 2026-10-26, 2 wk) |
+| PassportBro · iOS · EN · Serious | 🔻 Falling | $4.9k | 0.34 | k4Rm9p datingcontest (since 2026-10-05, 5 wk) |
 
-**Open tickets:** T-379306 Decaying (iOS · EN · Serious: Under 0.40 and falling: ROAS 0.34 from 0.43); T-801709 Decaying (Android · EN · Serious: Under 0.40 and falling: ROAS 0.40 from 0.45)
+**Open tickets:** T-801709 Decaying (Android · EN · Serious: Under 0.40 and falling: ROAS 0.40 from 0.45); T-379306 Decaying (iOS · EN · Serious: Under 0.40 and falling: ROAS 0.34 from 0.43)
 
 ### #1 history (latest first)
-- 2026-10-26 · PassportBro · Android · EN · Serious · C0kM3N combo · 1 wk at 34% of spend  
+- 2026-10-26 · PassportBro · Android · EN · Serious · C0kM3N combo · 2 wk at 32% of spend  
   top ad: `PassportBro-US-c0kM3N-Combo-ThreeFilipinasWhiteMenCouples-FlagPairing-Proof-CompletelyUnaware-VID-JAC-USM-Batch2026Week39`
 - 2026-10-12 · PassportBro · Android · EN · Serious · b7Kq4n boysvmen · 2 wk at 35% of spend  
   top ad: `PassportBro-US-b7Kq4n-BoysVMen-ChineseChampagnePop-menusebumpydateabroad-recommendation-ProductAware-IMG-Batch2026Week37`
-- 2026-10-05 · PassportBro · iOS · EN · Serious · k4Rm9p datingcontest · 4 wk at 71% of spend  
+- 2026-10-05 · PassportBro · iOS · EN · Serious · k4Rm9p datingcontest · 5 wk at 68% of spend  
   top ad: `AngryWithLocalDating-US-k4Rm9p-DatingContest-BarHook-Datingappsin2026-skit-Vertical-VID-Batch2026Week36`
 - 2026-10-05 · PassportBro · Android · EN · Serious · k4Rm9p datingcontest · 1 wk at 46% of spend  
   top ad: `AngryWithLocalDating-US-k4Rm9p-DatingContest-QueueHook-IwannaDateYou-skit-Vertical-VID-Batch2026Week36`
@@ -86,17 +86,17 @@ _Source: Notion persona card "Passport Bro" (written for the persona across lang
 A #1 here has led a median 2 weeks (47 finished reigns). Longest: a2Ef3y wanted, 11 weeks from 2026-07-20.
 
 ### Refreshes read from the exports
-23 since Dec: 5 hits of 18 with a final verdict (28%), 4 strikes, 9 fouls.
+29 since Dec: 7 hits of 21 with a final verdict (33%), 4 strikes, 10 fouls, 1 void (landed in an incident week).
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | PassportBro · Android · EN · Serious | C0kM3N | 2 | 14% | Hit (provisional) |
-| 2026-10-12 | PassportBro · Android · EN · Serious | ac0N7i w1Tr7K | 8 | 1% | Foul (provisional) |
-| 2026-10-12 | PassportBro · iOS · EN · Serious | ac0N7i w1Tr7K | 8 | 1% | Foul (provisional) |
-| 2026-10-05 | PassportBro · iOS · EN · Serious | k4Rm9p | 5 | 70% | Hit (provisional) |
-| 2026-10-05 | PassportBro · Android · EN · Serious | b7Kq4n k4Rm9p | 8 | 46% | Hit (provisional) |
-| 2026-09-21 | PassportBro · Android · EN · Serious | e34spy | 2 | 1% | Foul |
-| 2026-08-17 | PassportBro · iOS · EN · Serious | Q7mZ2x | 1 | 1% | Foul |
-| 2026-08-17 | PassportBro · Android · EN · Serious | Q7mZ2x | 1 | 2% | Foul |
+| 2026-11-02 | PassportBro · Android · EN · Serious | dR1elf | 8 | 3% | Foul (provisional) |
+| 2026-11-02 | PassportBro · iOS · EN · Serious | dR1elf | 8 | 7% | Foul (provisional) |
+| 2026-10-26 | PassportBro · Android · EN · Serious | n6f2Wt | 10 | 1% | Foul (provisional) |
+| 2026-10-26 | PassportBro · iOS · EN · Serious | n6f2Wt | 10 | 1% | Strike (provisional) |
+| 2026-10-19 | PassportBro · Android · EN · Serious | C0kM3N u7Wf9i | 2 | 14% | Hit (provisional) |
+| 2026-10-19 | PassportBro · iOS · EN · Serious | C0kM3N u7Wf9i | 2 | 0% | Void (incident, provisional) |
+| 2026-10-12 | PassportBro · iOS · EN · Serious | ac0N7i w1Tr7K | 8 | 2% | Foul (provisional) |
+| 2026-10-12 | PassportBro · Android · EN · Serious | ac0N7i w1Tr7K | 8 | 2% | Foul (provisional) |
 
 ### Experiments logged
 - none yet

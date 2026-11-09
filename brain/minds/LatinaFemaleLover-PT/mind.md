@@ -36,17 +36,17 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $1.0k last week · ROAS 0.31 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · PT | 🆘 Critical | $1.0k | 0.31 | n6f2Wt banner (since 2026-10-26, 1 wk) |
+| LatinaFemaleLover · iOS · PT | 🆘 Critical | $1.0k | 0.31 | n6f2Wt banner (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.31 (prev 0.25), under 0.32)
 
 ### #1 history (latest first)
-- 2026-10-26 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 1 wk at 92% of spend  
+- 2026-10-26 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 2 wk at 76% of spend  
   top ad: `LatinaLover-PT-n62Wt-Banner-ArgentinaBigTicket-namoradaargentina-recommendation-ProductAware-VID-Batch2026Week27`
 - 2026-10-19 · LatinaFemaleLover · iOS · PT · a2Ef3y wanted · 1 wk at 36% of spend  
   top ad: `LatinaLover-PT-a2Ef3y-Wanted-ArgentinaWantedSelfie-precisodeolatinoargentina-recommendation-ProductAware-VID-Batch2026Week27`
@@ -61,9 +61,10 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 A #1 here has led a median 5 weeks (4 finished reigns). Longest: n6f2Wt banner, 14 weeks from 2026-07-13.
 
 ### Refreshes read from the exports
-2 since Dec: 0 hits of 1 with a final verdict (0%), 1 strikes, 0 fouls.
+3 since Dec: 0 hits of 1 with a final verdict (0%), 1 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
+| 2026-11-02 | LatinaFemaleLover · iOS · PT | d5ns2k | 11 | 36% | Hit (provisional) |
 | 2026-10-12 | LatinaFemaleLover · iOS · PT | w1Tr7K | 6 | 2% | Strike (provisional) |
 | 2026-09-21 | LatinaFemaleLover · iOS · PT | C0kM3N | 1 | 3% | Strike |
 

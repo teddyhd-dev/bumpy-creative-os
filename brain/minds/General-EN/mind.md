@@ -29,17 +29,15 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $4.1k last week · ROAS 0.46 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · EN | 🚀 Scaling | $4.1k | 0.46 | EP - Instagram Jul 22  (since 2026-10-26, 1 wk) |
-
-**Open tickets:** T-492461 Decaying (iOS · EN: ROAS 0.46, spend +19% vs 2 weeks ago)
+| General · iOS · EN | 🚀 Scaling | $4.1k | 0.46 | EP - Instagram Jul 22  (since 2026-10-26, 2 wk) |
 
 ### #1 history (latest first)
-- 2026-10-26 · General · iOS · EN · EP - Instagram Jul 22  · 1 wk at 37% of spend  
+- 2026-10-26 · General · iOS · EN · EP - Instagram Jul 22  · 2 wk at 41% of spend  
   top ad: `EP - Instagram Jul 22`
 - 2026-10-19 · General · iOS · EN · EP - Instagram Oct 12  · 1 wk at 28% of spend  
   top ad: `EP - Instagram Oct 12`
@@ -74,17 +72,17 @@ updated: '2026-11-02'
 A #1 here has led a median 2 weeks (87 finished reigns). Longest: Q8rX2V wedding, 21 weeks from 2025-12-22.
 
 ### Refreshes read from the exports
-11 since Dec: 7 hits of 9 with a final verdict (78%), 0 strikes, 2 fouls.
+12 since Dec: 10 hits of 11 with a final verdict (91%), 0 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | General · iOS · EN | EP - Instagram Oct 11 EP - Instagram Oct 12 EP - Instagram Oct 13 | 1 | 28% | Strike (provisional, worse) |
-| 2026-10-05 | General · iOS · EN | EP - Instagram Aug 12 EP - Instagram Jul 22 EP - Instagram Oct 6 EP - Instagram Oct 6 NY | 1 | 15% | Hit (provisional) |
-| 2026-04-27 | General · Android · EN | 5trdiM | 14 | 6% | Late hit |
-| 2026-04-27 | General · Android · EN | 5trdiM | 14 | 22% | Hit |
-| 2026-03-30 | General · iOS · EN | a2Ef3y w1Tr7K | 2 | 2% | Home run |
-| 2026-03-09 | General · iOS · EN | a2Ef3y | 5 | 3% | Hit |
-| 2026-03-09 | General · Android · EN | n6f2Wt | 1 | 2% | Foul |
-| 2025-12-29 | General · Android · EN | H7kM3N v07e5T | 6 | 58% | Hit |
+| 2026-10-19 | General · iOS · EN | EP - Instagram Oct 11 EP - Instagram Oct 12 EP - Instagram Oct 13 EP - Instagram Oct 16 EP - Instagram Oct 19 | 1 | 41% | Hit (provisional) |
+| 2026-10-05 | General · iOS · EN | EP - Instagram Aug 12 EP - Instagram Aug 18 EP - Instagram Aug 25 EP - Instagram Jul 13 EP - Instagram Jul 22 EP - Instagram Jul 8 EP - Instagram June 19 EP - Instagram Oct 6 EP - Instagram Oct 6 NY EP - Instagram Sept 3 | 1 | 21% | Hit |
+| 2026-04-27 | General · Android · EN | 3mr0px 5trdiM | 14 | 6% | Late hit |
+| 2026-04-27 | General · Android · EN | 3mr0px 5trdiM Z6e3Dh | 14 | 22% | Hit |
+| 2026-03-30 | General · iOS · EN | S6j8tG a2Ef3y n6f2Wt w1Tr7K | 2 | 4% | Home run |
+| 2026-03-09 | General · iOS · EN | a2Ef3y n6f2Wt w1Tr7K | 5 | 4% | Hit |
+| 2026-03-09 | General · Android · EN | a2Ef3y n6f2Wt w1Tr7K | 4 | 4% | Foul |
+| 2025-12-29 | General · Android · EN | H7kM3N i7P5Th v07e5T | 6 | 86% | Hit |
 
 ### Experiments logged
 - none yet

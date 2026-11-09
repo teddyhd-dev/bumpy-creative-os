@@ -31,12 +31,12 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 0 live adsets · $0 last week · ROAS – (bar 0.40)
 
 
 ### #1 history (latest first)
-- 2026-10-26 · InternationalFriendFinder · iOS · PT · Friend · a2Ef3y wanted · 1 wk at 67% of spend  
+- 2026-10-26 · InternationalFriendFinder · iOS · PT · Friend · a2Ef3y wanted · 2 wk at 67% of spend  
   top ad: `IntlFriendFinder-PT-h7km3n-InternationalFriends-KoreaGirlLeadSlider-aos23tenhoamigosdefalacomelesnobumpy-IdentityFlex-ProductAware-VID-JAC-USM-Batch2026Week40`
 - 2026-10-05 · InternationalFriendFinder · iOS · PT · Friend · S6j8tG excitement · 1 wk at – of spend  
   top ad: `Friends-PT-S6j8tG-Excitement-MarkSnowboard-VID-Batch2026Week13`
@@ -74,8 +74,8 @@ A #1 here has led a median 2 weeks (16 finished reigns). Longest: n6f2Wt banner,
 7 since Dec: 1 hits of 6 with a final verdict (17%), 2 strikes, 3 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | InternationalFriendFinder · iOS · PT · Friend | a2Ef3y | 3 | 67% | Strike (provisional, worse) |
-| 2026-08-10 | InternationalFriendFinder · iOS · PT · Friend | k7Lp2Q q4Xr9m | 10 | 12% | Home run |
+| 2026-10-26 | InternationalFriendFinder · iOS · PT · Friend | a2Ef3y | 3 | 67% | Hit (provisional) |
+| 2026-08-10 | InternationalFriendFinder · iOS · PT · Friend | k7Lp2Q m3Tn8W q4Xr9m | 10 | 14% | Home run |
 | 2026-06-22 | InternationalFriendFinder · iOS · PT · Friend | 8k4opR | 2 | 10% | Foul |
 | 2026-06-22 | InternationalFriendFinder · Android · PT · Friend | 8k4opR | 2 | 18% | Strike |
 | 2026-06-15 | InternationalFriendFinder · iOS · PT · Friend | i48opT | 1 | 2% | Foul |

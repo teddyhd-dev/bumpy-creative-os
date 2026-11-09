@@ -5,6 +5,12 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-09 · One strike per batch; creator ads aren't refreshes; Watch
+- **One refresh = one batch** landing in an adset (`BatchYYYYWeekWW`): two concepts in one batch count once; new variants of a running concept count too; same-week batches in one adset are one refresh (one before/after ROAS). Strikes, hits and the "3 strikes" ticket all count this way. Spec 1.3.6 §6.1.
+- **Creator content** (strategist `TIN`) never makes a refresh, so it can't add or clear a strike; the launch review judges it in its own section.
+- **Watch:** new creative in the top 3 inside the 80%, ROAS down but the adset still 0.40+: no strike, re-read next week. Worse = down and under 0.40. First case Gringo iOS PH (Batch 40). Spec §6.2b.
+- Still open: `h7km3n` (internationalfriends) own code vs the "wanted" alias, to discuss.
+
 ### 2026-11-03 · Worked needs a real share: outside the top 80% of spend = Almost
 - **Decided by:** creative lead.
 - **Rule:** a new creative in the top 3 counts as affecting the adset only when the ads ranked above it take under 80% of spend. Outside that (e.g. #3 at 2%, #2 at 6% behind a 91% #1) the read is Almost for every ROAS move. Applies to refreshes, creator content and the ticket / strike engine (spec 1.3.5).

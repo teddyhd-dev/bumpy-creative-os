@@ -43,17 +43,17 @@ _Source: Notion persona card "Muslim want to relocate" (written for the persona 
 - https://drive.google.com/file/d/1NEu4wACpDBJJq0VYeW44c-5vSLVg_TBr/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $2.9k last week · ROAS 0.43 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MuslimMatchWorldwide · iOS · EN | ✅ Healthy | $2.9k | 0.43 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
+| MuslimMatchWorldwide · iOS · EN | ✅ Healthy | $2.9k | 0.43 | a2Ef3y wanted (since 2026-10-19, 3 wk) |
 
 **Open tickets:** T-825527 Due (iOS · EN: ROAS 0.43)
 
 ### #1 history (latest first)
-- 2026-10-19 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 2 wk at 42% of spend  
+- 2026-10-19 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 3 wk at 42% of spend  
   top ad: `MuslimMatch-EN-a2Ef3y-Wanted-WhiteBedroomPrayerFemale-marryMuslimAnotherCountry-Recommendation-ProblemAware-VID-Batch2026Week33`
 - 2026-10-12 · MuslimMatchWorldwide · iOS · EN · n6f2Wt banner · 1 wk at 31% of spend  
   top ad: `Muslim-US-n6f2Wt-Banner-bigticket-DateAMuslimAbroadOnBumpy-christiandating-ProductAware-IMG-Batch2026Week32`
@@ -88,16 +88,17 @@ _Source: Notion persona card "Muslim want to relocate" (written for the persona 
 A #1 here has led a median 2 weeks (25 finished reigns). Longest: a2Ef3y wanted, 14 weeks from 2026-01-19.
 
 ### Refreshes read from the exports
-7 since Dec: 3 hits of 7 with a final verdict (43%), 0 strikes, 4 fouls.
+8 since Dec: 6 hits of 8 with a final verdict (75%), 0 strikes, 2 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-07-27 | MuslimMatchWorldwide · iOS · EN | C0kM3N | 6 | 2% | Foul |
+| 2026-08-17 | MuslimMatchWorldwide · iOS · EN | C0kM3N a2Ef3y n6f2Wt | 2 | 9% | Hit |
+| 2026-07-27 | MuslimMatchWorldwide · iOS · EN | C0kM3N a2Ef3y m8j4Pbt | 8 | 12% | Home run |
 | 2026-06-15 | MuslimMatchWorldwide · iOS · EN | vh1kle | 2 | 24% | Hit |
 | 2026-06-08 | MuslimMatchWorldwide · iOS · EN | a2Ef3y | 1 | 44% | Hit |
-| 2026-04-06 | MuslimMatchWorldwide · Android · EN | h4ywx8 | 8 | 5% | Foul |
-| 2026-02-02 | MuslimMatchWorldwide · Android · EN | w5K8bX | 2 | 1% | Foul |
-| 2026-02-02 | MuslimMatchWorldwide · iOS · EN | a2Ef3y n6f2Wt w5K8bX | 8 | 2% | Foul |
-| 2026-01-19 | MuslimMatchWorldwide · Android · EN | a2Ef3y p8C7aO z5i0Eg | 15 | 26% | Home run |
+| 2026-04-06 | MuslimMatchWorldwide · Android · EN | 8u3iKh h4ywx8 | 8 | 5% | Foul |
+| 2026-02-02 | MuslimMatchWorldwide · Android · EN | X4nR8W Y4nR8W a2Ef3y n6f2Wt w5K8bX | 8 | 2% | Home run |
+| 2026-02-02 | MuslimMatchWorldwide · iOS · EN | X4nR8W Y4nR8W a2Ef3y n6f2Wt w5K8bX | 8 | 5% | Foul |
+| 2026-01-19 | MuslimMatchWorldwide · Android · EN | a2Ef3y i7P5Th p8C7aO z5i0Eg | 15 | 38% | Home run |
 
 ### Experiments logged
 - none yet

@@ -19,9 +19,9 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 Includes ads written as P8c7ao (confirmed fixes in core/code_aliases.csv).
-#1 in 12 of 59 adsets it ran in · $18.5k spent as #1 · $89.8k in total.
+#1 in 12 of 59 adsets it ran in · $18.5k spent as #1 · $89.9k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
 |---|---|---|---|---|---|---|
@@ -43,7 +43,7 @@ Includes ads written as P8c7ao (confirmed fixes in core/code_aliases.csv).
 | PassportBro-EN | PassportBro · Android · EN | 2026-01-19 | 2026-04-27 | 0 | 14% | $2.8k |
 | General-ES | General · iOS · ES | 2025-12-22 | 2026-01-05 | 0 | 16% | $2.3k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2026-01-19 | 2026-05-25 | 0 | 14% | $1.9k |
-| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-10-26 | 0 | 13% | $1.4k |
+| General-RU | General · iOS · RU · Serious | 2025-12-22 | 2026-11-02 | 0 | 13% | $1.5k |
 | General-PT | General · ? · PT | 2026-03-16 | 2026-05-11 | 0 | 32% | $1.3k |
 
 ### Variants (full ad names, 52 in total, top 10 by spend)

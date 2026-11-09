@@ -18,3 +18,7 @@ Q3fN8Z airportfirst became #1 in ChristianMatchWorldwide · iOS · PT with 34% o
 Moved "Proven message (Notion)" out of the beliefs table into "Messages that land" → Past winners: headlines are examples of what worked, not beliefs or formulas (creative lead, 3 Nov 2026).
 1 past winning headline(s) listed under Messages that land.
 Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).
+
+## 2026-11-02 · new-1 · data
+F4z7K2 fastcarousel became #1 in ChristianMatchWorldwide · iOS · PT with 38% of spend (it entered on 2026-08-03 with 36% in its first week), replacing Q3fN8Z airportfirst after 1 week as #1.
+<!-- event:new1:120250726667020469:2026-11-02 -->

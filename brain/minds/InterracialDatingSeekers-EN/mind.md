@@ -39,20 +39,20 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 - https://www.tiktok.com/@auxiliaryst4tic/video/7559989081686412574 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $8.9k last week · ROAS 0.41 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.2k | 0.47 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
-| InterracialDatingSeekers · Android · EN | 🔻 Falling | $3.6k | 0.34 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
+| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.2k | 0.47 | u7Wf91 wakeup (since 2026-10-26, 2 wk) |
+| InterracialDatingSeekers · Android · EN | 🔻 Falling | $3.6k | 0.34 | u7Wf91 wakeup (since 2026-10-26, 2 wk) |
 
-**Open tickets:** T-602912 Decaying (iOS · EN: ROAS 0.47); T-628890 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.39)
+**Open tickets:** T-628890 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.39)
 
 ### #1 history (latest first)
-- 2026-10-26 · InterracialDatingSeekers · Android · EN · u7Wf91 wakeup · 1 wk at 43% of spend  
-  top ad: `InterracialDating-US-u7Wf91-WakeUp-WhiteGuySneakyGlanceSleepingWithBlackGirl-thankyoubumpy-BecauseOfBumpy-ProductAware-VID-JAC-OST-Batch2026Week39`
-- 2026-10-26 · InterracialDatingSeekers · iOS · EN · u7Wf91 wakeup · 1 wk at 32% of spend  
+- 2026-10-26 · InterracialDatingSeekers · Android · EN · u7Wf91 wakeup · 2 wk at 53% of spend  
+  top ad: `InterracialDating-US-u7Wf91-WakeUp-BlackGuySleepingWithAsianWoman-itsasignforyoutostartdatingabroad-SignToDateAbroad-SolutionAware-VID-JAC-OST-Batch2026Week39`
+- 2026-10-26 · InterracialDatingSeekers · iOS · EN · u7Wf91 wakeup · 2 wk at 35% of spend  
   top ad: `InterracialDating-US-u7Wf91-WakeUp-WhiteGuySneakyGlanceSleepingWithBlackGirl-thankyoubumpy-BecauseOfBumpy-ProductAware-VID-JAC-OST-Batch2026Week39`
 - 2026-10-19 · InterracialDatingSeekers · Android · EN · n6f2Wt banner · 1 wk at 36% of spend  
   top ad: `InterracialDating-US-n6f2Wt-Banner-bigticket-DateBlackSinglesOnBumpy-interracialdating-ProductAware-VID-Batch2026Week32`
@@ -85,17 +85,17 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 A #1 here has led a median 2 weeks (38 finished reigns). Longest: H7kM3N airport, 15 weeks from 2026-05-18.
 
 ### Refreshes read from the exports
-10 since Dec: 2 hits of 8 with a final verdict (25%), 2 strikes, 4 fouls.
+12 since Dec: 4 hits of 10 with a final verdict (40%), 2 strikes, 4 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-19 | InterracialDatingSeekers · iOS · EN | C0kM3N u7Wf91 | 4 | 5% | Strike (provisional, worse) |
-| 2026-10-19 | InterracialDatingSeekers · Android · EN | C0kM3N u7Wf91 | 4 | 6% | Hit (provisional) |
-| 2026-09-21 | InterracialDatingSeekers · iOS · EN | B9dF4J | 5 | 4% | Foul |
-| 2026-09-21 | InterracialDatingSeekers · Android · EN | B9dF4J e34spy | 5 | 3% | Foul |
+| 2026-10-19 | InterracialDatingSeekers · iOS · EN | C0kM3N u7Wf91 | 4 | 8% | Hit (provisional) |
+| 2026-10-19 | InterracialDatingSeekers · Android · EN | C0kM3N u7Wf91 | 4 | 7% | Hit (provisional) |
+| 2026-09-21 | InterracialDatingSeekers · iOS · EN | B9dF4J e34spy | 4 | 4% | Foul |
+| 2026-09-21 | InterracialDatingSeekers · Android · EN | B9dF4J e34spy | 4 | 4% | Foul |
 | 2026-09-07 | InterracialDatingSeekers · Android · EN | m4pw0r | 2 | 1% | Strike |
-| 2026-06-15 | InterracialDatingSeekers · iOS · EN | 82kodp | 1 | 1% | Foul |
-| 2026-05-04 | InterracialDatingSeekers · Android · EN | 4Bm9of u7Wf9i | 2 | 4% | Strike |
-| 2026-04-06 | InterracialDatingSeekers · Android · EN | b3pl9x gl3p0b | 9 | 30% | Hit |
+| 2026-08-17 | InterracialDatingSeekers · iOS · EN | X4nR8W a2Ef3y gr3xKsh n6f2Wt | 20 | 8% | Hit |
+| 2026-08-17 | InterracialDatingSeekers · Android · EN | X4nR8W a2Ef3y gr3xKsh n6f2Wt | 20 | 8% | Late hit |
+| 2026-06-15 | InterracialDatingSeekers · iOS · EN | 82kodp vh1kle | 2 | 1% | Foul |
 
 ### Experiments logged
 - none yet

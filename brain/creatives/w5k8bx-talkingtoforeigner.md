@@ -17,7 +17,7 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 #1 in 11 of 32 adsets it ran in · $51.6k spent as #1 · $120.6k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
@@ -38,8 +38,8 @@ decoded: false
 | PassportBro-EN | PassportBro · iOS · EN · Serious | 2026-02-02 | 2026-04-20 | 0 | 15% | $4.3k |
 | MuslimMatchWorldwide-EN | MuslimMatchWorldwide · Android · EN | 2026-02-02 | 2026-05-25 | 0 | 15% | $3.2k |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-02-02 | 2026-09-07 | 0 | 6% | $2.4k |
-| GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-02-02 | 2026-10-26 | 0 | 15% | $2.0k |
-| GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-02-02 | 2026-10-26 | 0 | 6% | $1.3k |
+| GringoMaleLover-TH | GringoMaleLover · iOS · TH · TH | 2026-02-02 | 2026-11-02 | 0 | 15% | $2.0k |
+| GringoMaleLover-PT | GringoMaleLover · iOS · PT · PT | 2026-02-02 | 2026-11-02 | 0 | 6% | $1.3k |
 | PassportBro-EN | PassportBro · iOS · EN | 2026-02-02 | 2026-03-09 | 0 | 8% | $900 |
 | PassportBro-EN | PassportBro · Android · EN | 2026-02-09 | 2026-03-16 | 0 | 14% | $884 |
 

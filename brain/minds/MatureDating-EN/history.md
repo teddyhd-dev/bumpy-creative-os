@@ -23,3 +23,7 @@ Moved "Proven message (Notion)" out of the beliefs table into "Messages that lan
 Added (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)): Desire: Real love again, a new beginning; Main objection: "Too old; no one wants me at this age".
 4 past winning headline(s) listed under Messages that land.
 Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).
+
+## 2026-11-02 · new-1 · data
+8k4opR manyplaces became #1 in MatureDating · iOS · EN · 50to60 with 65% of spend (it entered on 2026-06-22 with 78% in its first week), replacing 7i40dX walking after 1 week as #1.
+<!-- event:new1:120249109839280469:2026-11-02 -->

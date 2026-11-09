@@ -3,6 +3,9 @@
 First run of the weekly update on the 1 Nov exports (2 Nov 2026). Refresh = Batch2026Week40 ads.
 Batch2026Week44 ads are creator content passed through, listed separately and not judged.
 
+> Superseded by the Tuesday deck (`deck/`) and `refresh_review.json`, which use the refresh read (spec §6.2b).
+> 9 Nov: Gringo PH iOS reads **Watch** (new creative #1, ROAS dipped 0.45 → 0.41 but stays 0.40+: no strike).
+
 **How to read it**
 - ROAS = adset's Meta ROAS (Singular ruler). (×1.19) = relative to its OS that week (≥1.00 beats the OS average).
 - Bar: 0.40 acceptable, under 0.40 refresh, under 0.32 critical.

@@ -24,3 +24,7 @@ Added (team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)): Desire: A gring
 3 past winning headline(s) listed under Messages that land.
 "Who they are": flagged that the Notion text is the Brazil card and added this market's own description from the team knowledge base.
 Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).
+
+## 2026-11-02 · new-1 · data
+n6f2Wt banner became #1 in GringoMaleLover · Android · ES · ES with 47% of spend (it entered on 2026-02-02 with 0% in its first week), replacing X4nR8W talkinghead after 1 week as #1.
+<!-- event:new1:120240452988890469:2026-11-02 -->

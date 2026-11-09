@@ -1,6 +1,6 @@
 # Launch review deck ("what we launched last week, and how it's going")
 
-version: 1.2.0 (3 Nov 2026: persona slides replace wave slides; Yes best → worst, No worst → best; actions owner-first, per persona × language; first run: Batch 40, `reports/2026-10-26/`)
+version: 1.3.0 (9 Nov 2026: Watch read; one refresh = one batch per adset, creator ads never a refresh. 1.2.0, 3 Nov 2026: persona slides replace wave slides; Yes best → worst, No worst → best; actions owner-first, per persona × language; first run: Batch 40, `reports/2026-10-26/`)
 Presented at the Tuesday UA meeting. Built as a Claude Slides artifact; the creative lead adds verdicts and
 action items on top. Rules behind it: `core/spec.md` §6.2b (refresh read), §15 (bar).
 
@@ -24,7 +24,7 @@ Section 3 is Account news. Every results slide is followed by its own action sli
 | 1 | Cover | "What we launched last week, and how it's going" · week · batch |
 | 2 | What we made | Big count ("69 new files, 4 concepts, 17 adsets"); one tile per concept: videos / images → persona × languages (adset count), upload day; sky tile = new concept, orange = new variants of a running concept. Footer: who briefed / designed |
 | 3 | How to read | The two rules: ROAS colours and the refresh verdict (below), the NEW / NEW-OLD tags, yellow "#1 under 2 weeks" |
-| 4 | Scoreboard | One row per refresh (persona · concept): live day · days of data · adsets · count of Worked / Almost / Flat / Worse / Miss as coloured pills; a total row. Headline = the totals ("1 worked, 3 almost, 4 got worse, 8 missed") |
+| 4 | Scoreboard | One row per refresh (persona · concept): live day · days of data · adsets · count of Worked / Almost / Flat / Watch / Worse / Miss as coloured pills; a total row. Headline = the totals ("1 worked, 3 almost, 4 got worse, 8 missed") |
 | then, per refresh | "<Persona> Refresh: <Concept>" | Subtitle: "Live: <day> · N days of data · concept · files"; a grey line "Result: …". One row per adset: ad set (OS · language) · 8-week ROAS sparkline (shaded under 0.40, dot on the upload week coloured by zone) · Before · After (+ ▲/▼) · New in top 3? · rank · share · Current #1 spender (NEW / NEW-OLD pill; row tinted blue / peach) · #1 for (yellow pill under 2 weeks) · Verdict |
 | after each refresh | Action items · <Persona> | Below |
 | next | Section 2 divider: Creator Creative as Ads | Plum; "N creator ads went live on <day> in M adsets. Did any become a top spender, and did the adset get better?" |
@@ -57,14 +57,15 @@ the change is under 0.02.
 - ✓ **Worked** (dark blue `#1F7FA8`): yes, inside the ads making 80% of spend, ROAS up and now 0.40+
 - ↗ **Almost** (light blue `#D6EEF8`): yes, ROAS up but still under 0.40; or in the top 3 but outside the ads making 80% of spend (too small to have moved ROAS either way), whatever ROAS did
 - = **Flat** (sand `#E9E3D3`): yes, ROAS didn't move
-- ✗ **Worse** (red): yes, ROAS down
+- ✗ **Worse** (red): yes, ROAS down and under 0.40
+- ◎ **Watch** (yellow `#FFE9A8`, text `#5A4500`): yes, ROAS dipped but still 0.40+ (no strike; re-read next week). Scoreboard gets a Watch column between Flat and Worse.
 - **Miss** (grey `#E2DFE1`): no; old creatives kept the spend. (Miss at 0.40+ = leave it.)
 
 **Tags:** NEW = the batch's creative is now #1 (blue pill) · NEW-OLD = an older creative just became #1 (peach
 pill) · `#1 for` under 2 weeks = yellow `#FFE9A8` pill (not proven yet).
 
 **Action priority:** weekly spend × read weight: Worse 1.0 · Miss under 0.40 0.8 · Almost / Flat 0.6 ·
-Worked and Miss (left) = leave. Pair same persona × language across OS into one brief. Media-buyer items:
+Worked, Watch and Miss (left) = leave. Pair same persona × language across OS into one brief. Media-buyer items:
 critical adsets the batch is carrying (pause / check setup), creator or test ads that took spend while ROAS
 crashed, falling adsets to hold, 0.50+ adsets with a stable #1 for a small budget test.
 

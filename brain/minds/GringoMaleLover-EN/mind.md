@@ -41,21 +41,21 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 3 live adsets · $6.0k last week · ROAS 0.48 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · EN | 🚀 Scaling | $3.3k | 0.42 | H7kM3N airport (since 2026-09-14, 7 wk) |
-| GringoMaleLover · iOS · EN | ✅ Healthy | $2.6k | 0.56 | C0kM3N combo (since 2026-09-28, 5 wk) |
+| GringoMaleLover · Android · EN | 🚀 Scaling | $3.3k | 0.42 | H7kM3N airport (since 2026-09-14, 8 wk) |
+| GringoMaleLover · iOS · EN | ✅ Healthy | $2.6k | 0.56 | C0kM3N combo (since 2026-09-28, 6 wk) |
 | GringoMaleLover · Web · EN · PH | ▫️ Not judged | $68 | 0.00 | – |
 
-**Open tickets:** T-902208 Due (iOS · EN: ROAS 0.57)
+**Open tickets:** T-902208 Due (iOS · EN: ROAS 0.56)
 
 ### #1 history (latest first)
-- 2026-09-28 · GringoMaleLover · iOS · EN · C0kM3N combo · 5 wk at 71% of spend  
+- 2026-09-28 · GringoMaleLover · iOS · EN · C0kM3N combo · 6 wk at 69% of spend  
   top ad: `Gringolover-US-C0kM3N-Combo-ComboGringoToBrazilian-ManyForeignMenWantASeriousRelationshipWithAGirlFromDifferentCountry-FOMO-ProductAware-VID-Batch2026Week36`
-- 2026-09-14 · GringoMaleLover · Android · EN · H7kM3N airport · 7 wk at 48% of spend  
+- 2026-09-14 · GringoMaleLover · Android · EN · H7kM3N airport · 8 wk at 47% of spend  
   top ad: `GringoLover-US-H7kM3N-Airport-NigerianCombo-VID-Batch2026Week13`
 - 2026-08-31 · GringoMaleLover · Android · EN · v8Gn7M pulseblack · 2 wk at 32% of spend  
   top ad: `GringoLover-US-v8Gn7M-PulseBlack-MirrorSelfie-HighlyRecommendDatingUKGuyOnBumpy-DatingAbroad-Pro`
@@ -88,17 +88,17 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 A #1 here has led a median 5 weeks (13 finished reigns). Longest: H7kM3N airport, 18 weeks from 2026-04-27.
 
 ### Refreshes read from the exports
-9 since Dec: 2 hits of 5 with a final verdict (40%), 1 strikes, 2 fouls, 1 void (landed in an incident week).
+8 since Dec: 1 hits of 4 with a final verdict (25%), 1 strikes, 2 fouls, 1 void (landed in an incident week).
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-26 | GringoMaleLover · iOS · EN | Nc6tP3 dR1elf | 6 | 7% | Foul (provisional) |
-| 2026-10-26 | GringoMaleLover · Android · EN | Nc6tP3 dR1elf | 6 | 4% | Foul (provisional) |
-| 2026-10-19 | GringoMaleLover · iOS · EN | X4nR8W | 2 | 3% | Void (incident, provisional) |
-| 2026-10-19 | GringoMaleLover · Android · EN | X4nR8W | 2 | 3% | Foul (provisional) |
-| 2026-09-21 | GringoMaleLover · iOS · EN | B9dF4J C0kM3N e34spy k9Rd4m | 5 | 10% | Home run |
-| 2026-09-14 | GringoMaleLover · Android · EN | k9Rd4m | 2 | 1% | Strike |
+| 2026-10-26 | GringoMaleLover · iOS · EN | dR1elf | 6 | 7% | Foul (provisional) |
+| 2026-10-26 | GringoMaleLover · Android · EN | dR1elf | 6 | 2% | Foul (provisional) |
+| 2026-10-19 | GringoMaleLover · iOS · EN | X4nR8W w1Tr7K | 2 | 5% | Void (incident, provisional) |
+| 2026-10-19 | GringoMaleLover · Android · EN | X4nR8W w1Tr7K | 2 | 4% | Foul (provisional) |
+| 2026-09-21 | GringoMaleLover · iOS · EN | B9dF4J C0kM3N e34spy k9Rd4m t3Wq8n | 5 | 15% | Home run |
+| 2026-09-14 | GringoMaleLover · Android · EN | k9Rd4m t3Wq8n | 2 | 1% | Strike |
 | 2026-08-17 | GringoMaleLover · iOS · EN | w1Tr7K | 1 | 1% | Foul |
-| 2026-07-27 | GringoMaleLover · iOS · EN | Co3Mb0 a2Ef3y | 12 | 15% | Home run |
+| 2026-07-20 | GringoMaleLover · Android · EN | Co3Mb0 a2Ef3y v8Gn7M | 12 | 1% | Foul |
 
 ### Experiments logged
 - none yet

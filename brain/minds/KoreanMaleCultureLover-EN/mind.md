@@ -29,20 +29,20 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $2.9k last week · ROAS 0.35 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| KoreanMaleCultureLover · Android · EN | 🔻 Falling | $1.9k | 0.33 | B9dF4J slider (since 2026-10-26, 1 wk) |
-| KoreanMaleCultureLover · iOS · EN | 🟠 Amber | $1.0k | 0.39 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
+| KoreanMaleCultureLover · Android · EN | 🔻 Falling | $1.9k | 0.33 | B9dF4J slider (since 2026-10-26, 2 wk) |
+| KoreanMaleCultureLover · iOS · EN | 🟠 Amber | $1.0k | 0.39 | a2Ef3y wanted (since 2026-10-19, 3 wk) |
 
 **Open tickets:** T-333147 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.33 from 0.36); T-161832 Decaying (iOS · EN: ROAS 0.39, under 0.40, not falling)
 
 ### #1 history (latest first)
-- 2026-10-26 · KoreanMaleCultureLover · Android · EN · B9dF4J slider · 1 wk at 49% of spend  
-  top ad: `Koreaboo-US-B9dF4J-slider-PinkHairedOppa-KoreanMenOnBumpy-choices-oppas-VID-Batch2026Week20`
-- 2026-10-19 · KoreanMaleCultureLover · iOS · EN · a2Ef3y wanted · 2 wk at 77% of spend  
+- 2026-10-26 · KoreanMaleCultureLover · Android · EN · B9dF4J slider · 2 wk at 49% of spend  
+  top ad: `Koreaboo-US-B9dF4J-slider-PinkHairedOppa-KoreanMenOnBumpy-choices-oppas-VID-JAC-KIM-Batch2026Week20`
+- 2026-10-19 · KoreanMaleCultureLover · iOS · EN · a2Ef3y wanted · 3 wk at 84% of spend  
   top ad: `Koreaboo-US-a2Ef3y-WANTED-KoreanMaleWetHairNightSelfie-25FromSeoul-NewInTownNeedsGuide-SolutionAware-VID-Batch2026Week29`
 - 2026-10-19 · KoreanMaleCultureLover · Android · EN · a2Ef3y wanted · 1 wk at 41% of spend  
   top ad: `Koreaboo-US-a2Ef3y-wanted-KoreanBoyInABeach-YourLifeIsntBoringYouJustNeedAFunKoreanBoyOnBumpy-koreanmen-dateoppas-IMG-Batch2026Week20`
@@ -70,8 +70,8 @@ A #1 here has led a median 2 weeks (9 finished reigns). Longest: a2Ef3y wanted, 
 3 since Dec: 2 hits of 3 with a final verdict (67%), 0 strikes, 1 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-07-27 | KoreanMaleCultureLover · iOS · EN | n6f2Wt | 5 | 2% | Late hit |
-| 2026-07-27 | KoreanMaleCultureLover · Android · EN | n6f2Wt | 5 | 1% | Hit |
+| 2026-07-27 | KoreanMaleCultureLover · iOS · EN | a2Ef3y n6f2Wt | 16 | 5% | Hit |
+| 2026-07-27 | KoreanMaleCultureLover · Android · EN | a2Ef3y n6f2Wt | 16 | 4% | Hit |
 | 2026-06-15 | KoreanMaleCultureLover · iOS · EN | 82kodp | 1 | 5% | Foul |
 
 ### Experiments logged

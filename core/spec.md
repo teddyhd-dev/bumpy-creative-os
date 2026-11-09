@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.5
+version: 1.3.6
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,12 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.6 (2026-11-09): one strike per batch, and the Watch read (decided by the creative lead).**
+- **One refresh = one batch (§6.1):** a batch (the `BatchYYYYWeekWW` tag in the ad name) landing in an adset is one at-bat, whatever it holds: two concepts in one batch count once, and new variants of a concept already running there count too (ranked apart from that concept's older ads, as in the launch review). Batches landing in the same adset in the same week share one before/after ROAS, so they are one at-bat. Ads without a batch tag (old names): the new concepts entering the adset in the same week, as before. `tries()` in `engine/tickets.py`.
+- **Creator content is not a refresh:** creator-program ads (strategist `TIN`) compete for spend but never make an at-bat, so they can't add or clear a strike. They are judged in the launch review's creator section.
+- **Watch (§6.2b):** the new creative is in the top 3 inside the 80%, ROAS went down but the adset is still at the bar (0.40+). Not a strike; leave it and re-read next week. **Worse** is now "down and under the bar". First case: Gringo iOS PH, Batch 40 (dreamlife #1, 0.45 → 0.41).
+- Effect on the board (same data, old rule → new): 305 → 350 at-bats since December (variant batches now count); Latina Android EN Casual 4 → 2 strikes (no longer 3 strikes), International Friend Android EN 0 → 1 (its internationalfriends batch read Worse), Gringo iOS TH Worse → Watch.
 
 **1.3.4 (2026-11-03): many strategists, one memory; the strategists' files merged.**
 - **Collaboration:** each strategist brainstorms in their own Claude or Codex account on this repo; a brainstorm never
@@ -60,7 +66,7 @@ owner: Creative lead (ads creative) · maintained with Claude
 
 **1.2.3 (2026-10-27): history that is never lost; strikes, fading and personas on the board.**
 - **Where everything lives (§20.10):** the board's database keeps the work (briefs, hypotheses, people, status history, handoffs, per-adset results, retros, signals, team tickets) and the history (a copy of each week's queue, every refresh since December with its verdict, a week-by-week table, the Notion tracker's 420 briefs, the persona cards). The weekly update replaces only the current week's queue and numbers. Raw exports and the engine need a permanent folder (§19 Q23); everything else is rebuilt from them.
-- **Turnaround strikes on every ticket:** 0–3 dots plus the last five refreshes as H / S / F (hit, strike, foul), in the queue, the persona groups, the board cards and the ticket.
+- **Strikes on every ticket (one per batch):** 0–3 dots plus the last five refreshes as H / S / F (hit, strike, foul), in the queue, the persona groups, the board cards and the ticket.
 - **Fading alarm:** a ticket under the bar 2+ weeks in a row with no new concept since is marked "Fading"; 16 have no brief today. A header count tracks them (the silent-death pattern: 16 of 20 v8 adsets switched off had no new concept in their last 6 weeks).
 - **Types tightened:** any adset under the bar is Decaying; Due is only for healthy adsets whose #1 has led 2+ weeks (now 52 Decaying, 18 Due). The dashboard status "⏳ Refresh due" is renamed "🔻 Falling".
 - **Personas tab:** the living persona file (live state, tickets, winners of the last 26 weeks, the Notion card, retro learnings, signals). The 26 Notion cards are mapped to v8 personas: 10 from their top-spender ads, 15 by name (to confirm), 1 unmapped ("Wedding and Relocate"). Their 27 reference links are in the signal bank.
@@ -420,11 +426,11 @@ Future jurus (J4…) and non-creative moves (store page, settings, offer) get ad
 ## 6. Verdicts, clocks, and safeguards
 
 ### 6.1 At-bat
-New concepts entering an adset in the same week (their first week with spend there), once the adset is 3+ weeks old: launch weeks are not refreshes. Variants of one concept count as one concept.
+**One batch landing in an adset = one at-bat** (since 1.3.6), once the adset is 3+ weeks old: launch weeks are not refreshes. The batch is the `BatchYYYYWeekWW` tag in the ad names; everything it holds counts once (two concepts, or new variants of a concept already running there, ranked apart from that concept's older ads). Batches landing in the same adset in the same week are one at-bat (one before/after ROAS). Ads without a batch tag: the new concepts entering the adset in the same week. Creator-program ads (strategist `TIN`) are content passed through, never an at-bat.
 - **3+ variants per adset** (since 1.2.1): every at-bat lands in each adset with at least 3 variants of its concept (hook sub-types, text, re-cuts, V2 re-orders; a different opening scene is a new code). A new concept with 3+ spending variants became the adset's #1 40% of the time, vs 15% with 1–2. Where the queue shows a proven concept from a sibling adset (J1), add it: no production cost, and proven concepts win more often (28% vs 19%).
 - **Context:** *turnaround* if the adset was under the green bar of its ruler the week before; *challenger* if it was on green.
 - One concept in many adsets = many at-bats, which builds the concept × persona fit matrix.
-- Counted by the engine when the adset spent $1k+ that week and the concept $20+ (`ATBAT` in `engine/settings.py`).
+- Counted by the engine when the adset spent $1k+ that week and the batch $20+ (`ATBAT` in `engine/settings.py`).
 
 ### 6.2 Verdicts: provisional at week 1, final at week 4 (since 1.2)
 | Verdict | Rule | Adset strike | Next move |
@@ -446,14 +452,15 @@ Measured per adset from the day the batch first spent there (daily ad rows), aga
 | **Worked** | yes, inside the ads making 80% of spend | up, and at the bar (0.40+) | resets | closes when the read holds; watch week 2 |
 | **Almost** | yes | up, still under the bar; **or any ROAS move when the creative sits outside the ads making 80% of spend** | no | stays open: swing again (weight 0.7) |
 | **Flat** | yes | moved less than 0.02 | no | stays open: swing again (weight 0.7) |
-| **Worse** | yes | down | **yes, any context** | fix first (weight 1.0) |
+| **Worse** | yes | down, and under the bar | **yes, any context** | fix first (weight 1.0) |
+| **Watch** (1.3.6) | yes, inside the 80% | down, but still at the bar (0.40+) | no | leave it; re-read next week |
 | **Miss** | no | under the bar | yes in a turnaround, foul otherwise | stays open: a different concept |
 | **Miss (left)** | no | at the bar | no | leave it: no Due ticket while old creatives carry it |
 "Top 3" counts the batch's ads per concept, apart from older ads of the same concept, so new variants of a running concept count as new. A relaunched adset with no week before is Worse when it lands under the critical line. The week-4 verdict (§6.2) still decides hit / late hit for records; the read decides strikes and tickets while the at-bat is provisional.
 
 ### 6.3 Turnaround and three strikes (since 1.2)
 - The turnaround starts when an adset goes under green (a Decaying ticket). At-bat 1 within a week; each next at-bat follows the previous one's week-1 read.
-- **Strike 3 = 3 turnaround strikes in a row** (provisional strikes count; a late hit removes one; 2 weeks back on green resets the count). At the turnaround hit rate (43%) three misses in a row happen about 1 time in 5 by luck alone, so Review is a check, not a verdict on anyone. Raising the hit rate (3+ variants, J1 additions) is what makes three strikes mean more.
+- **Strike 3 = 3 strikes in a row, one per batch** (Worse in any context, or a miss in a turnaround; Almost, Flat, Watch and Miss (left) are not strikes) (provisional strikes count; a late hit removes one; 2 weeks back on green resets the count). At the turnaround hit rate (43%) three misses in a row happen about 1 time in 5 by luck alone, so Review is a check, not a verdict on anyone. Raising the hit rate (3+ variants, J1 additions) is what makes three strikes mean more.
 - **Review protocol (§20.6):** the ticket goes to REVIEW, pinned on top. The failure signature of the three at-bats shows which link broke: execution, message, the ticket call itself, or something beyond creative (§6.4). No blind fourth refresh. Then decide: new jurus, budget hold, structure change, or retire.
 - **The first job is the second swing.** Only 29 of 125 turnaround at-bats came after a miss, and 16 of 20 v8 adsets switched off got no new concept in their last 6 live weeks. An open ticket stays in the queue until it gets its swings.
 - **Retire only with an obituary.** The row stays greyed with that note.
@@ -620,7 +627,7 @@ bumpy-creative-os/
 | Zones, Meta's own attribution (to 22 Feb iOS, 8 Mar Android) | green ≥ 0.50 · amber 0.40–0.49 · critical < 0.40 · deep red < 0.35 |
 | Zones, Singular (from 23 Feb iOS, 9 Mar Android) | **acceptable ≥ 0.40 · refresh warning 0.32–0.39 · critical < 0.32 · deep red < 0.28** (set 27 Oct by the creative lead) |
 | Relative zones (toggle) | vs own OS that week: green ≥ 1.00 · amber 0.85–0.99 · critical 0.75–0.84 · deep red < 0.75 |
-| At-bat | new concepts entering an adset in one week; adset 3+ weeks old, $1k+ that week; concept $20+; **3+ variants per adset**, plus a J1 concept when the queue has one |
+| At-bat | one batch landing in an adset (same-week batches together; creator ads excluded); adset 3+ weeks old, $1k+ that week; batch $20+; **3+ variants per adset**, plus a J1 concept when the queue has one |
 | Week-1 read | ≥ 20% of adset spend = provisional hit; under = provisional strike (turnaround) or foul (challenger) |
 | Hit (final) | one concept became the adset's #1 within 4 weeks; home run if the adset's relative ROAS at weeks 3–4 ≥ the 2 weeks before |
 | Late hit | #1 in weeks 5–12 (removes the strike) |

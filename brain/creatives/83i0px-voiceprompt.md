@@ -17,7 +17,7 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-09; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-11-02)
 #1 in 4 of 35 adsets it ran in · $1.7k spent as #1 · $15.0k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |
@@ -33,8 +33,8 @@ decoded: false
 | GringoMaleLover-TH | GringoMaleLover · Android · TH · TH | 2026-06-01 | 2026-08-24 | 0 | 20% | $803 |
 | AsianFemaleLover-EN | AsianFemaleLover · Android · EN | 2026-06-01 | 2026-07-13 | 0 | 3% | $634 |
 | EgoBoostForIndianBoy-EN | EgoBoostForIndianBoy · Android · EN · Serious | 2026-06-01 | 2026-07-27 | 0 | 8% | $591 |
-| GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-06-01 | 2026-10-26 | 0 | 8% | $531 |
-| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-06-01 | 2026-10-26 | 0 | 18% | $490 |
+| GringoMaleLover-PH | GringoMaleLover · iOS · PH · PH | 2026-06-01 | 2026-11-02 | 0 | 8% | $531 |
+| GringoMaleLover-ES | GringoMaleLover · Android · ES · ES | 2026-06-01 | 2026-11-02 | 0 | 18% | $491 |
 | AsianFemaleLover-EN | AsianFemaleLover · iOS · EN | 2026-06-01 | 2026-07-13 | 0 | 3% | $460 |
 | LatinaFemaleLover-EN | LatinaFemaleLover · Android · EN | 2026-06-01 | 2026-06-22 | 0 | 5% | $442 |
 | PassportBro-EN | PassportBro · Android · EN · Serious | 2026-06-01 | 2026-06-08 | 0 | 13% | $320 |
@@ -43,7 +43,7 @@ decoded: false
 | GringoMaleLover-PT | GringoMaleLover · Android · PT · PT | 2026-06-01 | 2026-08-17 | 0 | 14% | $260 |
 | GringoMaleLover-ES | GringoMaleLover · iOS · ES · ES | 2026-06-01 | 2026-10-12 | 0 | 6% | $247 |
 
-### Variants (full ad names, 18 in total, top 10 by spend)
+### Variants (full ad names, 22 in total, top 10 by spend)
 - `LatinaLover-US-83i0px-voiceprompt-SayingILoveYouInMyLanguageIs-guysabroad-V2-VID-Batch2026Week21` · $3.9k · 4 adsets
 - `AsianLover-US-83i0px-voiceprompt-WhatIsYourDreamCountry-asiangirls-v1-VID-Batch2026Week21` · $1.8k · 12 adsets
 - `AsianLover-US-83i0px-voiceprompt-SayingILoveYouInMyLanguageIs-asiangirls-iloveyou-VID-Batch2026Week21` · $1.6k · 6 adsets
@@ -53,5 +53,5 @@ decoded: false
 - `IndianBoyDream-US-83i0px-voiceprompt-WhatIsYourDreamCountry-interracial-v1-VID-Batch2026Week21` · $861 · 3 adsets
 - `Gringolover-ES-83i0px-voiceprompt-SayingILoveYouInMyLanguageIs-guysabroad-iloveyou-V2-VID-Batch2026Week21` · $730 · 2 adsets
 - `Gringolover-TH-83i0px-voiceprompt-WhatIsYourDreamCountry-thailand-v1-VID-Batch2026Week21` · $703 · 2 adsets
-- `Gringolover-PH-83i0px-voiceprompt-WhatIsYourDreamCountry-philippines-v1-VID-Batch2026Week21` · $634 · 4 adsets
+- `Gringolover-PH-83i0px-voiceprompt-WhatIsYourDreamCountry-philippines-v1-VID-Batch2026Week21` · $645 · 4 adsets
 <!-- generated:end facts -->

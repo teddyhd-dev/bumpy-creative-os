@@ -29,19 +29,19 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $691 last week · ROAS 0.21 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · UA · Serious | 🆘 Critical | $691 | 0.21 | L2vM8Q manyhugs (since 2026-07-27, 14 wk) |
+| General · iOS · UA · Serious | 🆘 Critical | $691 | 0.21 | L2vM8Q manyhugs (since 2026-07-27, 15 wk) |
 
 **Open tickets:** T-465557 Decaying (iOS · UA · Serious: ROAS 0.21 (prev 0.22), under 0.32)
 
 ### #1 history (latest first)
 - 2026-08-17 · General · Web · UA · L2vM8Q manyhugs · 5 wk at 76% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-intentionally-VID-Batch2025Week50`
-- 2026-07-27 · General · iOS · UA · Serious · L2vM8Q manyhugs · 14 wk at 63% of spend  
+- 2026-07-27 · General · iOS · UA · Serious · L2vM8Q manyhugs · 15 wk at 63% of spend  
   top ad: `UA-L2vM8Q-Slavic-Manyhugs-movecountry-VID-Batch2025Week50`
 - 2026-07-13 · General · iOS · UA · Serious · i7P5Th banner · 2 wk at 48% of spend  
   top ad: `Slavic-UA-i7P5Th-Banner-Ashpalt-Female-VID-Batch2025Week50`
@@ -65,7 +65,7 @@ updated: '2026-11-02'
   top ad: `Slavic-UA-i7P5Th-Banner-ThornFemale-VID-Batch2025Week50`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (11 finished reigns). Longest: L2vM8Q manyhugs, 14 weeks from 2026-07-27.
+A #1 here has led a median 2 weeks (11 finished reigns). Longest: L2vM8Q manyhugs, 15 weeks from 2026-07-27.
 
 ### Experiments logged
 - none yet

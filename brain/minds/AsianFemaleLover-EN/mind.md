@@ -37,18 +37,18 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 2 live adsets · $4.8k last week · ROAS 0.45 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AsianFemaleLover · iOS · EN | ✅ Healthy | $2.8k | 0.47 | Q7mZ2x povbait (since 2026-10-26, 1 wk) |
-| AsianFemaleLover · Android · EN | ✅ Healthy | $2.1k | 0.42 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| AsianFemaleLover · iOS · EN | ✅ Healthy | $2.8k | 0.47 | Q7mZ2x povbait (since 2026-10-26, 2 wk) |
+| AsianFemaleLover · Android · EN | ✅ Healthy | $2.1k | 0.42 | a2Ef3y wanted (since 2026-10-26, 2 wk) |
 
 ### #1 history (latest first)
-- 2026-10-26 · AsianFemaleLover · Android · EN · a2Ef3y wanted · 1 wk at 27% of spend  
+- 2026-10-26 · AsianFemaleLover · Android · EN · a2Ef3y wanted · 2 wk at 46% of spend  
   top ad: `Chinese-US-a2Ef3y-wanted-chinesefemaleparking-VID-Batch2026Week04`
-- 2026-10-26 · AsianFemaleLover · iOS · EN · Q7mZ2x povbait · 1 wk at 53% of spend  
+- 2026-10-26 · AsianFemaleLover · iOS · EN · Q7mZ2x povbait · 2 wk at 64% of spend  
   top ad: `AsianFemaleLover-US-Q7mZ2x-POVBAIT-KoreanFemaleCloseup-lonely23korea-recommendation-ProblemAware-IMG-Batch2026Week33`
 - 2026-10-19 · AsianFemaleLover · Android · EN · b7Kq4n boysvmen · 1 wk at 38% of spend  
   top ad: `AsianFemaleLover-US-b7Kq4n-BoysVMen-PhotoshootJapaneseBikiniModel-mendateasiangirlsbumpy-recommendation-ProductAware-VID-Batch2026Week37`
@@ -81,17 +81,17 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 A #1 here has led a median 2 weeks (35 finished reigns). Longest: a2Ef3y wanted, 20 weeks from 2026-04-13.
 
 ### Refreshes read from the exports
-26 since Dec: 5 hits of 24 with a final verdict (21%), 5 strikes, 14 fouls.
+26 since Dec: 7 hits of 26 with a final verdict (27%), 5 strikes, 14 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-10-05 | AsianFemaleLover · Android · EN | b7Kq4n | 8 | 8% | Strike (provisional, worse) |
-| 2026-10-05 | AsianFemaleLover · iOS · EN | b7Kq4n | 8 | 36% | Hit (provisional) |
-| 2026-08-17 | AsianFemaleLover · iOS · EN | Q7mZ2x | 1 | 3% | Home run |
-| 2026-08-17 | AsianFemaleLover · Android · EN | Q7mZ2x | 1 | 3% | Home run |
+| 2026-10-05 | AsianFemaleLover · Android · EN | b7Kq4n | 8 | 8% | Hit |
+| 2026-10-05 | AsianFemaleLover · iOS · EN | b7Kq4n | 8 | 36% | Hit |
+| 2026-08-17 | AsianFemaleLover · iOS · EN | Q7mZ2x X4nR8W gr3xKsh | 2 | 4% | Home run |
+| 2026-08-17 | AsianFemaleLover · Android · EN | Q7mZ2x X4nR8W gr3xKsh | 2 | 3% | Home run |
 | 2026-06-29 | AsianFemaleLover · iOS · EN | m3dtCp | 2 | 1% | Foul |
 | 2026-06-29 | AsianFemaleLover · Android · EN | m3dtCp | 2 | 4% | Foul |
-| 2026-06-22 | AsianFemaleLover · Android · EN | 7i40dX | 1 | 51% | Home run |
-| 2026-06-22 | AsianFemaleLover · iOS · EN | 7i40dX 8k4opR | 2 | 7% | Foul |
+| 2026-06-22 | AsianFemaleLover · Android · EN | 7i40dX 8k4opR | 2 | 51% | Home run |
+| 2026-06-22 | AsianFemaleLover · iOS · EN | 7i40dX 8k4opR | 2 | 9% | Foul |
 
 ### Experiments logged
 - none yet

@@ -36,16 +36,18 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $3.2k last week · ROAS 0.40 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · EN · US | 🔻 Falling | $3.2k | 0.40 | L2vM8Q manyhugs (since 2026-09-28, 5 wk) |
+| ChristianMatchWorldwide · iOS · EN · US | 🔻 Falling | $3.2k | 0.40 | m3dtCp beatsyncedtext (since 2026-11-02, 1 wk) |
 
 **Open tickets:** T-766870 Decaying (iOS · EN · US: Under 0.40 and falling: ROAS 0.40 from 0.52)
 
 ### #1 history (latest first)
+- 2026-11-02 · ChristianMatchWorldwide · iOS · EN · US · m3dtCp beatsyncedtext · 1 wk at 38% of spend  
+  top ad: `Christian-US-m3dtCp-beatsyncedtext-droneCandleEvent-MeetChristianSinglesAbroad-faithdating-VID-Batch2026Week25`
 - 2026-09-28 · ChristianMatchWorldwide · iOS · EN · US · L2vM8Q manyhugs · 5 wk at 52% of spend  
   top ad: `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06`
 - 2026-08-31 · ChristianMatchWorldwide · iOS · EN · US · X4nR8W talkinghead · 4 wk at 53% of spend  
@@ -64,15 +66,16 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
   top ad: `Christian-US-L2vM8Q-ManyHugs2-PraiseHook-VID-Batch2026Week06`
 
 ### Fatigue clock
-A #1 here has led a median 2 weeks (7 finished reigns). Longest: L2vM8Q manyhugs, 27 weeks from 2026-02-23.
+A #1 here has led a median 2 weeks (8 finished reigns). Longest: L2vM8Q manyhugs, 27 weeks from 2026-02-23.
 
 ### Refreshes read from the exports
-4 since Dec: 1 hits of 4 with a final verdict (25%), 0 strikes, 3 fouls.
+5 since Dec: 0 hits of 5 with a final verdict (0%), 0 strikes, 5 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-08-03 | ChristianMatchWorldwide · iOS · EN · US | X4nR8W | 2 | 7% | Hit |
+| 2026-08-17 | ChristianMatchWorldwide · iOS · EN · US | Q7mZ2x X4nR8W n6f2Wt | 2 | 1% | Foul |
+| 2026-08-03 | ChristianMatchWorldwide · iOS · EN · US | X4nR8W | 2 | 7% | Foul |
 | 2026-06-29 | ChristianMatchWorldwide · iOS · EN · US | m3dtCp | 2 | 34% | Foul |
-| 2026-06-22 | ChristianMatchWorldwide · iOS · EN · US | 7i40dX 8k4opR | 2 | 16% | Foul |
+| 2026-06-22 | ChristianMatchWorldwide · iOS · EN · US | 7i40dX 8k4opR | 2 | 19% | Foul |
 | 2026-06-15 | ChristianMatchWorldwide · iOS · EN · US | vh1kle | 2 | 1% | Foul |
 
 ### Experiments logged

@@ -29,17 +29,17 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-11-02)
 **Now:** 1 live adset · $2.1k last week · ROAS 0.38 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · TR | 🟠 Amber | $2.1k | 0.38 | k9R4mP parkingselfie (since 2026-10-26, 1 wk) |
+| General · iOS · TR | 🟠 Amber | $2.1k | 0.38 | k9R4mP parkingselfie (since 2026-10-26, 2 wk) |
 
 **Open tickets:** T-359282 Decaying (iOS · TR: ROAS 0.38, under 0.40, not falling)
 
 ### #1 history (latest first)
-- 2026-10-26 · General · iOS · TR · k9R4mP parkingselfie · 1 wk at 46% of spend  
+- 2026-10-26 · General · iOS · TR · k9R4mP parkingselfie · 2 wk at 42% of spend  
   top ad: `AsianFemaleLover-TR-k9R4mP-ParkingSelfie-ChineseFemaleParking-TimeToDateAnAsian-recommendation-ProductAware-VID-Batch2026Week36`
 - 2026-10-12 · General · iOS · TR · n6f2Wt banner · 2 wk at 47% of spend  
   top ad: `AsianDating-TR-n6f2Wt-banner-Whiteboard-CinliBirSevgiliIstiyorsanBumpydeBiriyleCikmayaBasla-cuteasiangirl-asianlover-VID-Batch2026Week21`
@@ -74,16 +74,15 @@ updated: '2026-11-02'
 A #1 here has led a median 2 weeks (15 finished reigns). Longest: n6f2Wt banner, 15 weeks from 2026-06-08.
 
 ### Refreshes read from the exports
-7 since Dec: 5 hits of 7 with a final verdict (71%), 2 strikes, 0 fouls.
+6 since Dec: 5 hits of 6 with a final verdict (83%), 1 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-09-21 | General · iOS · TR | C0kM3N | 1 | 2% | Strike |
-| 2026-09-14 | General · iOS · TR | k9R4mP | 2 | 34% | Hit |
-| 2026-08-17 | General · iOS · TR | Q7mZ2x | 1 | 1% | Strike |
-| 2025-12-29 | General · iOS · TR | B9dF4J a2Ef3y i9D7eK j7G5d2 n6f2Wt p8C7aO | 9 | 22% | Hit |
-| 2025-12-29 | General · Android · TR | B9dF4J a2Ef3y j7G5d2 | 6 | 9% | Late hit |
-| 2025-12-22 | General · iOS · TR | i7P5Th t7R4iN | 1 | 32% | Hit |
-| 2025-12-22 | General · Android · TR | i7P5Th t7R4iN | 1 | 56% | Home run |
+| 2026-09-14 | General · iOS · TR | C0kM3N Q7mZ2x k9R4mP | 2 | 42% | Hit |
+| 2026-08-17 | General · iOS · TR | Q7mZ2x X4nR8W n6f2Wt w1Tr7K | 2 | 3% | Strike |
+| 2025-12-29 | General · iOS · TR | B9dF4J a2Ef3y i9D7eK j7G5d2 n6f2Wt p8C7aO | 9 | 50% | Hit |
+| 2025-12-29 | General · Android · TR | B9dF4J a2Ef3y d0E4h j7G5d2 n6f2Wt p8C7aO | 6 | 20% | Late hit |
+| 2025-12-22 | General · iOS · TR | L2vM8Q i7P5Th t7R4iN | 4 | 64% | Hit |
+| 2025-12-22 | General · Android · TR | L2vM8Q i7P5Th t7R4iN | 4 | 72% | Home run |
 
 ### Experiments logged
 - none yet

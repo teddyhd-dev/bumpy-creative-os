@@ -93,7 +93,7 @@ def queue_doc():
                      last_as_1=s(x.last_as_1)) for x in j1.itertuples()],
             atbats=[dict(w0=s(x.w0), codes=s(x.codes), concepts=int(x.concepts), variants=int(x.variants_max),
                          s1=num(x.best_s1, 3), verdict=s(x.verdict), context=s(x.context),
-                         read=s(getattr(x, "read", ""))) for x in ab.itertuples()],
+                         read=s(getattr(x, "read", "")), batch=s(getattr(x, "batch", ""))) for x in ab.itertuples()],
             hist=hist))
     fv = F["value"]
     facts = {k: num(fv[k]) for k in fv.index if k != "last_ad_week"}
@@ -208,7 +208,7 @@ def log_doc():
     lab = lambda a: (f"{G.persona.get(a, '')} · {G.os.get(a, '')} · {G.lang.get(a, '')}" if a in G.index else a)
     atbats = [dict(adset_id=r.adset_id, adset=lab(r.adset_id), persona=s(G.persona.get(r.adset_id, "")), w0=s(r.w0), codes=s(r.codes),
                    concepts=int(r.concepts), variants=int(r.variants_max), s1=num(r.best_s1, 3), verdict=s(r.verdict),
-                   context=s(r.context), lift=num(r.adset_lift, 3)) for r in D.itertuples()]
+                   context=s(r.context), lift=num(r.adset_lift, 3), batch=s(getattr(r, "batch", ""))) for r in D.itertuples()]
     O = pd.read_csv(os.path.join(OUT, "ov_weekly.csv"))
     from settings import bar
     wk = sorted(c[2:] for c in G.columns if c.startswith("s_"))

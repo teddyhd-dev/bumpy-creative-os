@@ -11,7 +11,7 @@ For every adset the batch landed in:
   before   = adset ROAS in the 7 days before the upload; after = upload day → --end
   rank     = the batch's best concept rank by spend in the adset since upload (batch ads grouped per concept,
              apart from older ads of the same concept, so new variants of an old concept count as new)
-  read     = Worked / Almost / Flat / Worse / Miss / Miss (left), same rule as engine/tickets.py (spec §6.2b)
+  read     = Worked / Almost / Flat / Watch / Worse / Miss / Miss (left), same rule as engine/tickets.py (spec §6.2b)
   #1       = top concept before vs since upload; NEW = the batch is #1, NEW-OLD = an older concept just became #1
   reign    = weeks the current #1 has led the adset (weekly #1s, counted back from the latest week)
 Action items (owner-first on the slides, one creative row per persona × language): priority = read weight × the adset's weekly spend (Worse first, then misses under the bar,
@@ -37,13 +37,14 @@ from codes import concept_keys, concept_names  # noqa: E402
 from settings import READ, bar  # noqa: E402
 from tickets import refresh_read  # noqa: E402
 
-WEIGHT = {"Worse": 1.0, "Miss": 0.8, "Almost": 0.6, "Flat": 0.6, "Worked": 0.0, "Miss (left)": 0.0}
+WEIGHT = {"Worse": 1.0, "Miss": 0.8, "Almost": 0.6, "Flat": 0.6, "Worked": 0.0, "Watch": 0.0, "Miss (left)": 0.0}
 ACTION = {
     "Worse": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
     "Miss": "Refresh again with a different concept (this one didn't get spend)",
     "Almost": "Refresh again: keep the batch ads on, add a stronger hook",
     "Flat": "Refresh again: the batch didn't move ROAS",
     "Worked": "Leave: watch week 2",
+    "Watch": "Leave: the new creative took over and ROAS dipped but stays at the bar; re-read next week (no strike)",
     "Miss (left)": "Leave: old creatives carry it above the bar",
 }
 
@@ -96,6 +97,8 @@ def landings(d, daily, dims, end, last_week, wk_spend, flag, mark):
     up = daily[daily[flag]].groupby("adset_id").day.min()
     rows = []
     for aid, u in up.items():
+        if u > end:
+            continue                    # first spent after the review window: next week's review
         p = dims[aid]
         pre = daily[(daily.adset_id == aid) & (daily.day >= u - pd.Timedelta(days=7)) & (daily.day < u)]
         post = daily[(daily.adset_id == aid) & (daily.day >= u) & (daily.day <= end)]
