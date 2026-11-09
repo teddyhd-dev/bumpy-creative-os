@@ -41,15 +41,15 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $1.3k last week · ROAS 0.34 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $939 last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · KR · KR | 🆘 Critical | $810 | 0.25 | n6f2Wt banner (since 2026-10-26, 1 wk) |
-| GringoMaleLover · iOS · KR · KR | ✅ Healthy | $537 | 0.46 | Co3Mb0 coupleproof (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · KR · KR | 🆘 Critical | $688 | 0.24 | n6f2Wt banner (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · KR · KR | ✅ Healthy | $251 | 0.58 | Co3Mb0 coupleproof (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-321393 Decaying (iOS · KR · KR: ROAS 0.25, under 0.32)
+**Open tickets:** T-321393 Decaying (iOS · KR · KR: ROAS 0.24 (prev 0.25), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · GringoMaleLover · iOS · KR · KR · n6f2Wt banner · 1 wk at 34% of spend  

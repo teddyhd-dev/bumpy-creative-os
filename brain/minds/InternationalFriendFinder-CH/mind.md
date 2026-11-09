@@ -31,14 +31,14 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.8k last week · ROAS 0.32 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.7k last week · ROAS 0.34 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · iOS · CH · Friend | 🔻 Falling | $1.8k | 0.32 | n6f2Wt banner (since 2026-08-31, 9 wk) |
+| InternationalFriendFinder · iOS · CH · Friend | 🟠 Amber | $1.7k | 0.34 | n6f2Wt banner (since 2026-08-31, 9 wk) |
 
-**Open tickets:** T-844172 Decaying (iOS · CH · Friend: Under 0.40 and falling: ROAS 0.32 from 0.40)
+**Open tickets:** T-844172 Decaying (iOS · CH · Friend: ROAS 0.34, under 0.40, not falling)
 
 ### #1 history (latest first)
 - 2026-08-31 · InternationalFriendFinder · iOS · CH · Friend · n6f2Wt banner · 9 wk at 43% of spend  

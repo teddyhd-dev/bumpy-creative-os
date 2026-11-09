@@ -36,15 +36,15 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $5.8k last week · ROAS 0.46 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $6.2k last week · ROAS 0.42 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · ES | ✅ Healthy | $4.2k | 0.53 | n6f2Wt banner (since 2026-07-13, 16 wk) |
-| LatinaFemaleLover · Android · ES · Casual | 🆘 Critical | $1.7k | 0.29 | C0kM3N combo (since 2026-10-19, 2 wk) |
+| LatinaFemaleLover · iOS · ES | ✅ Healthy | $4.5k | 0.47 | n6f2Wt banner (since 2026-07-13, 16 wk) |
+| LatinaFemaleLover · Android · ES · Casual | 🆘 Critical | $1.7k | 0.30 | C0kM3N combo (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-319999 Due (iOS · ES: ROAS 0.53); T-324425 Decaying (Android · ES · Casual: ROAS 0.29 (prev 0.22), under 0.32)
+**Open tickets:** T-319999 Due (iOS · ES: ROAS 0.47); T-324425 Decaying (Android · ES · Casual: ROAS 0.30 (prev 0.29), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-19 · LatinaFemaleLover · Android · ES · Casual · C0kM3N combo · 2 wk at 33% of spend  

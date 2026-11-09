@@ -29,15 +29,15 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $6.9k last week · ROAS 0.43 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $7.2k last week · ROAS 0.39 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChatOnly · iOS · EN · Talk | 🚀 Scaling | $3.8k | 0.45 | v13uln melancholicview (since 2026-10-26, 1 wk) |
-| ChatOnly · Android · EN · Talk | ✅ Healthy | $3.1k | 0.41 | v13uln melancholicview (since 2026-10-26, 1 wk) |
+| ChatOnly · iOS · EN · Talk | 🚀 Scaling | $4.3k | 0.41 | v13uln melancholicview (since 2026-10-26, 1 wk) |
+| ChatOnly · Android · EN · Talk | 🔻 Falling | $2.9k | 0.36 | v13uln melancholicview (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-225022 Due (iOS · EN · Talk: ROAS 0.45, spend +17% vs 2 weeks ago)
+**Open tickets:** T-557432 Decaying (Android · EN · Talk: Under 0.40 and falling: ROAS 0.36 from 0.41)
 
 ### #1 history (latest first)
 - 2026-10-26 · ChatOnly · iOS · EN · Talk · v13uln melancholicview · 1 wk at 61% of spend  

@@ -40,15 +40,15 @@ _Source: Notion persona card "Passport Bro" (written for the persona across lang
 - https://www.tiktok.com/@nikolasz_avender/video/7544175141224303902 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $10.3k last week · ROAS 0.43 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $10.2k last week · ROAS 0.37 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| PassportBro · Android · EN · Serious | 🔻 Falling | $5.3k | 0.45 | C0kM3N combo (since 2026-10-26, 1 wk) |
-| PassportBro · iOS · EN · Serious | ✅ Healthy | $5.0k | 0.42 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
+| PassportBro · Android · EN · Serious | 🔻 Falling | $5.3k | 0.40 | C0kM3N combo (since 2026-10-26, 1 wk) |
+| PassportBro · iOS · EN · Serious | 🔻 Falling | $4.9k | 0.34 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
 
-**Open tickets:** T-379306 Due (iOS · EN · Serious: ROAS 0.42); T-801709 Decaying (Android · EN · Serious: Green, but hook rate -34% vs 4-wk avg)
+**Open tickets:** T-379306 Decaying (iOS · EN · Serious: Under 0.40 and falling: ROAS 0.34 from 0.43); T-801709 Decaying (Android · EN · Serious: Under 0.40 and falling: ROAS 0.40 from 0.45)
 
 ### #1 history (latest first)
 - 2026-10-26 · PassportBro · Android · EN · Serious · C0kM3N combo · 1 wk at 34% of spend  

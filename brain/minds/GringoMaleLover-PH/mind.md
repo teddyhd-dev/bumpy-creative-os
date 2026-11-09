@@ -45,16 +45,16 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 3 live adsets · $1.8k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 3 live adsets · $2.8k last week · ROAS 0.36 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · PH · PH | ✅ Healthy | $1.2k | 0.43 | C0kM3N combo (since 2026-09-28, 5 wk) |
-| GringoMaleLover · Android · PH · PH | ✅ Healthy | $308 | 0.54 | C0kM3N combo (since 2026-10-26, 1 wk) |
-| GringoMaleLover · Android · PH · PH | 🆘 Critical | $307 | 0.14 | n6f2Wt banner (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · PH · PH | 🔻 Falling | $1.4k | 0.40 | C0kM3N combo (since 2026-09-28, 5 wk) |
+| GringoMaleLover · Android · PH · PH | 🔻 Falling | $705 | 0.34 | C0kM3N combo (since 2026-10-26, 1 wk) |
+| GringoMaleLover · Android · PH · PH | 🆘 Critical | $698 | 0.30 | n6f2Wt banner (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-140836 Due (iOS · PH · PH: ROAS 0.43); T-566175 Decaying (Android · PH · PH: ROAS 0.14, under 0.32)
+**Open tickets:** T-561015 Decaying (Android · PH · PH: Under 0.40 and falling: ROAS 0.34 from 0.54); T-140836 Decaying (iOS · PH · PH: Under 0.40 and falling: ROAS 0.40 from 0.43); T-566175 Decaying (Android · PH · PH: ROAS 0.30 (prev 0.14), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · GringoMaleLover · Android · PH · PH · n6f2Wt banner · 1 wk at 38% of spend  

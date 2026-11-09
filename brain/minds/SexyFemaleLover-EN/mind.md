@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.4k last week · ROAS 0.26 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.3k last week · ROAS 0.41 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SexyFemaleLover · iOS · EN · Casual | 🆘 Critical | $1.4k | 0.26 | a2Ef3y wanted (since 2026-09-21, 6 wk) |
+| SexyFemaleLover · iOS · EN · Casual | ✅ Healthy | $1.3k | 0.41 | a2Ef3y wanted (since 2026-09-21, 6 wk) |
 
-**Open tickets:** T-344410 Decaying (iOS · EN · Casual: ROAS 0.26 (prev 0.32), under 0.32)
+**Open tickets:** T-344410 Due (iOS · EN · Casual: ROAS 0.41)
 
 ### #1 history (latest first)
 - 2026-09-21 · SexyFemaleLover · iOS · EN · Casual · a2Ef3y wanted · 6 wk at 91% of spend  

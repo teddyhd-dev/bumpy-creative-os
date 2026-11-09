@@ -41,16 +41,16 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 3 live adsets · $7.0k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 3 live adsets · $8.1k last week · ROAS 0.39 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LocalDatingFatigue · Android · EN | ✅ Healthy | $3.4k | 0.47 | k4Rm9p datingcontest (since 2026-09-21, 6 wk) |
-| LocalDatingFatigue · iOS · EN | 🔻 Falling | $2.5k | 0.35 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
-| LocalDatingFatigue · Android · EN | 🆘 Critical | $1.1k | 0.32 | k4Rm9p datingcontest (since 2026-10-26, 1 wk) |
+| LocalDatingFatigue · Android · EN | 🔻 Falling | $3.9k | 0.33 | k4Rm9p datingcontest (since 2026-09-21, 6 wk) |
+| LocalDatingFatigue · iOS · EN | ✅ Healthy | $2.3k | 0.57 | k4Rm9p datingcontest (since 2026-10-05, 4 wk) |
+| LocalDatingFatigue · Android · EN | 🆘 Critical | $1.8k | 0.28 | k4Rm9p datingcontest (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-329059 Due (Android · EN: ROAS 0.47); T-345011 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.35 from 0.38); T-056458 Decaying (Android · EN: ROAS 0.317, under 0.32)
+**Open tickets:** T-329059 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.33 from 0.47); T-056458 Decaying (Android · EN: ROAS 0.28 (prev 0.32), under 0.32); T-345011 Due (iOS · EN: ROAS 0.57)
 
 ### #1 history (latest first)
 - 2026-10-26 · LocalDatingFatigue · Android · EN · k4Rm9p datingcontest · 1 wk at 69% of spend  

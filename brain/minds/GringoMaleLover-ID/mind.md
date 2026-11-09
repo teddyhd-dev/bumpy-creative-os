@@ -45,15 +45,15 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $2.2k last week · ROAS 0.20 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $1.1k last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.1k | 0.21 | t3Wq8n bigtext (since 2026-10-19, 2 wk) |
-| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.1k | 0.19 | C0kM3N combo (since 2026-10-26, 1 wk) |
+| GringoMaleLover · Android · ID · ID | 🆘 Critical | $1.0k | 0.28 | C0kM3N combo (since 2026-10-26, 1 wk) |
+| GringoMaleLover · Android · ID · ID | 🔻 Falling | $25 | 2.35 | t3Wq8n bigtext (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-298888 Decaying (Android · ID · ID: ROAS 0.19 (prev 0.44), under 0.32); T-420311 Decaying (Android · ID · ID: ROAS 0.21 (prev 0.18), under 0.32)
+**Open tickets:** T-298888 Decaying (Android · ID · ID: ROAS 0.28 (prev 0.20), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · GringoMaleLover · Android · ID · ID · C0kM3N combo · 1 wk at 31% of spend  

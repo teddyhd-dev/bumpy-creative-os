@@ -29,20 +29,18 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 7 live adsets · $22.2k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 5 live adsets · $20.5k last week · ROAS 0.45 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SlavicFemaleLover · iOS · EN | 🚀 Scaling | $10.0k | 0.47 | a2Ef3y wanted (since 2026-05-11, 25 wk) |
-| SlavicFemaleLover · Android · EN | 🔻 Falling | $6.7k | 0.36 | a2Ef3y wanted (since 2026-06-08, 21 wk) |
-| SlavicFemaleLover · Android · EN | 🔻 Falling | $2.9k | 0.34 | a2Ef3y wanted (since 2026-10-12, 3 wk) |
-| SlavicFemaleLover · iOS · EN | 🔻 Falling | $1.6k | 0.42 | n6f2Wt banner (since 2026-10-05, 4 wk) |
-| SlavicFemaleLover · Android · EN | 🆘 Critical | $528 | 0.24 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
-| SlavicFemaleLover · Android · EN | ▫️ Not judged | $198 | 0.08 | – |
-| SlavicFemaleLover · Android · EN | ▫️ Not judged | $197 | 0.00 | – |
+| SlavicFemaleLover · iOS · EN | 🚀 Scaling | $10.5k | 0.50 | a2Ef3y wanted (since 2026-05-11, 25 wk) |
+| SlavicFemaleLover · Android · EN | ✅ Healthy | $3.4k | 0.48 | a2Ef3y wanted (since 2026-06-08, 21 wk) |
+| SlavicFemaleLover · Android · EN | 🆘 Critical | $2.8k | 0.26 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| SlavicFemaleLover · Android · EN | 🟠 Amber | $2.4k | 0.35 | a2Ef3y wanted (since 2026-10-12, 3 wk) |
+| SlavicFemaleLover · iOS · EN | 🔻 Falling | $1.4k | 0.54 | n6f2Wt banner (since 2026-10-05, 4 wk) |
 
-**Open tickets:** T-691223 Due (iOS · EN: ROAS 0.47, spend +17% vs 2 weeks ago); T-903549 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.36 from 0.45); T-295013 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.39); T-769202 Decaying (iOS · EN: Green, but hook rate -25% vs 4-wk avg); T-083468 Decaying (Android · EN: ROAS 0.24, under 0.32)
+**Open tickets:** T-691223 Due (iOS · EN: ROAS 0.50, spend +29% vs 2 weeks ago); T-903549 Decaying (Android · EN: ROAS 0.48); T-083468 Decaying (Android · EN: ROAS 0.26 (prev 0.24), under 0.32); T-295013 Decaying (Android · EN: ROAS 0.35, under 0.40, not falling); T-769202 Decaying (iOS · EN: Green, but hook rate -24% vs 4-wk avg)
 
 ### #1 history (latest first)
 - 2026-10-26 · SlavicFemaleLover · Android · EN · a2Ef3y wanted · 1 wk at 66% of spend  

@@ -1,5 +1,5 @@
 {
- "adset_week": "2026-10-26",
+ "adset_week": "2026-11-02",
  "ad_week": "2026-10-26",
  "generated": "2026-11-09",
  "bar": {
@@ -8,7 +8,7 @@
   "deep": 0.28
  },
  "capacity": 8.6,
- "tickets_open": 77,
+ "tickets_open": 79,
  "facts": {
   "atbats_final": 248.0,
   "hit_rate": 0.3145,
@@ -24,8 +24,8 @@
   "n_2plus": 64.0,
   "chance_3_misses_1concept": 0.4219,
   "chance_3_misses_2plus": 0.125,
-  "v8_adsets_off": 23.0,
-  "v8_adsets_off_no_new_concept": 19.0,
+  "v8_adsets_off": 24.0,
+  "v8_adsets_off_no_new_concept": 20.0,
   "turnaround_second_swing": 31.0,
   "turnaround_atbats": 142.0,
   "turnaround_hit_1concept": 0.3333,
@@ -36,11 +36,11 @@
   "won_anywhere_1": 0.3333,
   "won_anywhere_5plus": 0.7273,
   "capacity_per_week": 8.625,
-  "tickets_open": 77.0,
-  "tickets_need_refresh": 56.0,
-  "tickets_fading": 17.0,
+  "tickets_open": 79.0,
+  "tickets_need_refresh": 57.0,
+  "tickets_fading": 18.0,
   "tickets_review": 1.0,
-  "brief_groups_need_refresh": 42.0,
+  "brief_groups_need_refresh": 43.0,
   "turnaround_hit_rate": 0.4359,
   "challenger_hit_rate": 0.2061
  }

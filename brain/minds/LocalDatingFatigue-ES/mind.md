@@ -29,15 +29,16 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $2.0k last week · ROAS 0.38 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 3 live adsets · $1.9k last week · ROAS 0.31 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LocalDatingFatigue · Android · ES | 🟠 Amber | $1.1k | 0.38 | k4Rm9p datingcontest (since 2026-10-12, 3 wk) |
-| LocalDatingFatigue · iOS · ES | 🔻 Falling | $839 | 0.37 | k4Rm9p datingcontest (since 2026-10-12, 3 wk) |
+| LocalDatingFatigue · iOS · ES | ✅ Healthy | $972 | 0.45 | k4Rm9p datingcontest (since 2026-10-12, 3 wk) |
+| LocalDatingFatigue · Android · ES | 🆘 Critical | $506 | 0.13 | k4Rm9p datingcontest (since 2026-10-12, 3 wk) |
+| LocalDatingFatigue · Android · ES | 🆘 Critical | $424 | 0.21 | – |
 
-**Open tickets:** T-094451 Decaying (iOS · ES: Under 0.40 and falling: ROAS 0.37 from 0.40); T-552375 Decaying (Android · ES: ROAS 0.38, under 0.40, not falling)
+**Open tickets:** T-094451 Due (iOS · ES: ROAS 0.45); T-552375 Decaying (Android · ES: ROAS 0.13 (prev 0.38), under 0.32); T-26d07b Decaying (Android · ES: ROAS 0.21, under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-12 · LocalDatingFatigue · iOS · ES · k4Rm9p datingcontest · 3 wk at 88% of spend  

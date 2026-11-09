@@ -29,15 +29,15 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $3.0k last week · ROAS 0.35 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $2.9k last week · ROAS 0.35 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| KoreanMaleCultureLover · Android · EN | 🟠 Amber | $1.9k | 0.35 | B9dF4J slider (since 2026-10-26, 1 wk) |
-| KoreanMaleCultureLover · iOS · EN | 🟠 Amber | $1.1k | 0.35 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
+| KoreanMaleCultureLover · Android · EN | 🔻 Falling | $1.9k | 0.33 | B9dF4J slider (since 2026-10-26, 1 wk) |
+| KoreanMaleCultureLover · iOS · EN | 🟠 Amber | $1.0k | 0.39 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-333147 Decaying (Android · EN: ROAS 0.35, under 0.40, not falling); T-161832 Decaying (iOS · EN: ROAS 0.35, under 0.40, not falling)
+**Open tickets:** T-333147 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.33 from 0.36); T-161832 Decaying (iOS · EN: ROAS 0.39, under 0.40, not falling)
 
 ### #1 history (latest first)
 - 2026-10-26 · KoreanMaleCultureLover · Android · EN · B9dF4J slider · 1 wk at 49% of spend  

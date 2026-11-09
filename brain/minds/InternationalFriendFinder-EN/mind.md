@@ -40,15 +40,15 @@ Team knowledge base: Young people (18–25) who want connection abroad with low-
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $7.2k last week · ROAS 0.34 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $7.2k last week · ROAS 0.40 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · Android · EN · Friend | 🆘 Critical | $3.8k | 0.30 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
-| InternationalFriendFinder · iOS · EN · Friend | 🟠 Amber | $3.4k | 0.38 | n6f2Wt banner (since 2026-07-13, 16 wk) |
+| InternationalFriendFinder · Android · EN · Friend | 🔻 Falling | $3.8k | 0.32 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
+| InternationalFriendFinder · iOS · EN · Friend | ✅ Healthy | $3.3k | 0.50 | n6f2Wt banner (since 2026-07-13, 16 wk) |
 
-**Open tickets:** T-910899 Decaying (Android · EN · Friend: ROAS 0.30 (prev 0.31), under 0.32); T-700177 Decaying (iOS · EN · Friend: ROAS 0.38, under 0.40, not falling)
+**Open tickets:** T-910899 Decaying (Android · EN · Friend: Under 0.40 and falling: ROAS 0.32 from 0.33); T-700177 Due (iOS · EN · Friend: ROAS 0.50)
 
 ### #1 history (latest first)
 - 2026-08-17 · InternationalFriendFinder · Android · EN · Friend · q4Xr9m tweetoverlay · 11 wk at 71% of spend  

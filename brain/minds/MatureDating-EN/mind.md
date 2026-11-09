@@ -41,17 +41,17 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 - https://www.tiktok.com/@timchris46/video/7541947242257599751 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 4 live adsets · $6.6k last week · ROAS 0.32 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 4 live adsets · $6.6k last week · ROAS 0.40 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · Android · EN · 30to40 | 🟠 Amber | $2.1k | 0.33 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
-| MatureDating · iOS · EN · 50to60 | 🆘 Critical | $1.8k | 0.25 | 7i40dX walking (since 2026-10-26, 1 wk) |
-| MatureDating · iOS · EN · 30to40 | 🆘 Critical | $1.8k | 0.31 | a2Ef3y wanted (since 2026-08-10, 12 wk) |
-| MatureDating · Android · EN · 50to60 | ✅ Healthy | $1.0k | 0.42 | 8k4opR manyplaces (since 2026-09-14, 7 wk) |
+| MatureDating · Android · EN · 30to40 | 🆘 Critical | $2.1k | 0.28 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| MatureDating · iOS · EN · 30to40 | ✅ Healthy | $1.7k | 0.43 | a2Ef3y wanted (since 2026-08-10, 12 wk) |
+| MatureDating · iOS · EN · 50to60 | ✅ Healthy | $1.7k | 0.53 | 7i40dX walking (since 2026-10-26, 1 wk) |
+| MatureDating · Android · EN · 50to60 | 🔻 Falling | $1.0k | 0.38 | 8k4opR manyplaces (since 2026-09-14, 7 wk) |
 
-**Open tickets:** T-160708 Decaying (Android · EN · 30to40: ROAS 0.33, under 0.40, not falling); T-983928 Decaying (iOS · EN · 50to60: ROAS 0.25 (prev 0.27), under 0.32); T-339740 Decaying (iOS · EN · 30to40: ROAS 0.31 (prev 0.26), under 0.32); T-338070 Due (Android · EN · 50to60: ROAS 0.42)
+**Open tickets:** T-160708 Decaying (Android · EN · 30to40: ROAS 0.28 (prev 0.37), under 0.32); T-339740 Due (iOS · EN · 30to40: ROAS 0.43); T-338070 Decaying (Android · EN · 50to60: Under 0.40 and falling: ROAS 0.38 from 0.43)
 
 ### #1 history (latest first)
 - 2026-10-26 · MatureDating · Android · EN · 30to40 · a2Ef3y wanted · 1 wk at 45% of spend  

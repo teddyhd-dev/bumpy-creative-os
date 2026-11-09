@@ -39,15 +39,15 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 - https://www.tiktok.com/@timchris46/video/7541947242257599751 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $2.3k last week · ROAS 0.32 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $1.9k last week · ROAS 0.23 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MatureDating · iOS · JP · 30to40 | 🆘 Critical | $1.8k | 0.21 | a2Ef3y wanted (since 2026-08-03, 13 wk) |
-| MatureDating · iOS · JP · 30to40 | ✅ Healthy | $521 | 0.71 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
+| MatureDating · iOS · JP · 30to40 | 🆘 Critical | $1.7k | 0.21 | a2Ef3y wanted (since 2026-08-03, 13 wk) |
+| MatureDating · iOS · JP · 30to40 | 🔻 Falling | $248 | 0.36 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-118034 Decaying (iOS · JP · 30to40: ROAS 0.21 (prev 0.29), under 0.32)
+**Open tickets:** T-118034 Decaying (iOS · JP · 30to40: ROAS 0.21 (prev 0.21), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · MatureDating · iOS · JP · 30to40 · a2Ef3y wanted · 1 wk at 69% of spend  

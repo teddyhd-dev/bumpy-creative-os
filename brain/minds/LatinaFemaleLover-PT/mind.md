@@ -36,14 +36,14 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.1k last week · ROAS 0.25 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.0k last week · ROAS 0.31 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · PT | 🆘 Critical | $1.1k | 0.25 | n6f2Wt banner (since 2026-10-26, 1 wk) |
+| LatinaFemaleLover · iOS · PT | 🆘 Critical | $1.0k | 0.31 | n6f2Wt banner (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.25 (prev 0.28), under 0.32)
+**Open tickets:** T-321500 Decaying (iOS · PT: ROAS 0.31 (prev 0.25), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · LatinaFemaleLover · iOS · PT · n6f2Wt banner · 1 wk at 92% of spend  

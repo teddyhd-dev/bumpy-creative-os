@@ -41,16 +41,16 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 3 live adsets · $7.3k last week · ROAS 0.37 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 3 live adsets · $6.0k last week · ROAS 0.48 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · EN | 🟠 Amber | $3.5k | 0.33 | C0kM3N combo (since 2026-09-28, 5 wk) |
-| GringoMaleLover · Android · EN | 🚀 Scaling | $3.0k | 0.50 | H7kM3N airport (since 2026-09-14, 7 wk) |
-| GringoMaleLover · Web · EN · PH | ▫️ Not judged | $724 | 0.02 | – |
+| GringoMaleLover · Android · EN | 🚀 Scaling | $3.3k | 0.42 | H7kM3N airport (since 2026-09-14, 7 wk) |
+| GringoMaleLover · iOS · EN | ✅ Healthy | $2.6k | 0.56 | C0kM3N combo (since 2026-09-28, 5 wk) |
+| GringoMaleLover · Web · EN · PH | ▫️ Not judged | $68 | 0.00 | – |
 
-**Open tickets:** T-902208 Decaying (iOS · EN: ROAS 0.33, under 0.40, not falling)
+**Open tickets:** T-902208 Due (iOS · EN: ROAS 0.57)
 
 ### #1 history (latest first)
 - 2026-09-28 · GringoMaleLover · iOS · EN · C0kM3N combo · 5 wk at 71% of spend  

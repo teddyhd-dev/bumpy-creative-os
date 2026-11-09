@@ -35,15 +35,15 @@ _Source: Notion persona card "Gringo Lover from India —> Turned to Asian Man L
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $2.8k last week · ROAS 0.36 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $2.9k last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AsianMaleLover · Android · EN | 🆘 Critical | $1.8k | 0.31 | dR1elf dreamlife (since 2026-09-21, 6 wk) |
-| AsianMaleLover · iOS · EN | 🔻 Falling | $1.0k | 0.44 | B9dF4J slider (since 2026-10-19, 2 wk) |
+| AsianMaleLover · Android · EN | 🆘 Critical | $1.7k | 0.25 | dR1elf dreamlife (since 2026-09-21, 6 wk) |
+| AsianMaleLover · iOS · EN | ✅ Healthy | $1.2k | 0.45 | B9dF4J slider (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-802966 Decaying (iOS · EN: Green, but hook rate -20% vs 4-wk avg); T-423742 Decaying (Android · EN: ROAS 0.31 (prev 0.28), under 0.32)
+**Open tickets:** T-802966 Due (iOS · EN: ROAS 0.45); T-423742 Decaying (Android · EN: ROAS 0.25 (prev 0.36), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-19 · AsianMaleLover · iOS · EN · B9dF4J slider · 2 wk at 61% of spend  

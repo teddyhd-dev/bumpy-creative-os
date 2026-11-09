@@ -37,15 +37,13 @@ _Source: Notion persona card "Asian Dating" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $5.0k last week · ROAS 0.37 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $4.8k last week · ROAS 0.45 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AsianFemaleLover · iOS · EN | ✅ Healthy | $2.8k | 0.44 | Q7mZ2x povbait (since 2026-10-26, 1 wk) |
-| AsianFemaleLover · Android · EN | 🆘 Critical | $2.1k | 0.28 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
-
-**Open tickets:** T-296005 Decaying (Android · EN: ROAS 0.28 (prev 0.19), under 0.32)
+| AsianFemaleLover · iOS · EN | ✅ Healthy | $2.8k | 0.47 | Q7mZ2x povbait (since 2026-10-26, 1 wk) |
+| AsianFemaleLover · Android · EN | ✅ Healthy | $2.1k | 0.42 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
 
 ### #1 history (latest first)
 - 2026-10-26 · AsianFemaleLover · Android · EN · a2Ef3y wanted · 1 wk at 27% of spend  

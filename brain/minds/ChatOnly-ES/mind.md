@@ -29,13 +29,15 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $2.1k last week · ROAS 0.55 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $2.6k last week · ROAS 0.56 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChatOnly · iOS · ES · Talk | ✅ Healthy | $1.1k | 0.41 | 53Lfye highangleselfie (since 2026-10-19, 2 wk) |
-| ChatOnly · Android · ES · Talk | ✅ Healthy | $1.0k | 0.68 | 53Lfye highangleselfie (since 2026-10-19, 2 wk) |
+| ChatOnly · Android · ES · Talk | 🚀 Scaling | $1.3k | 0.50 | 53Lfye highangleselfie (since 2026-10-19, 2 wk) |
+| ChatOnly · iOS · ES · Talk | 🚀 Scaling | $1.3k | 0.61 | 53Lfye highangleselfie (since 2026-10-19, 2 wk) |
+
+**Open tickets:** T-492728 Due (Android · ES · Talk: ROAS 0.50, spend +89% vs 2 weeks ago); T-494722 Due (iOS · ES · Talk: ROAS 0.61, spend +190% vs 2 weeks ago)
 
 ### #1 history (latest first)
 - 2026-10-19 · ChatOnly · Android · ES · Talk · 53Lfye highangleselfie · 2 wk at 71% of spend  

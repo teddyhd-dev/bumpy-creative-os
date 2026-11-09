@@ -29,15 +29,15 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $4.3k last week · ROAS 0.52 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $4.9k last week · ROAS 0.51 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SoutheastAsianFemaleLover · iOS · EN | 🚀 Scaling | $2.3k | 0.57 | w1Tr7K carousel (since 2026-09-14, 7 wk) |
-| SoutheastAsianFemaleLover · Android · EN | ✅ Healthy | $2.0k | 0.46 | w1Tr7K carousel (since 2026-10-12, 3 wk) |
+| SoutheastAsianFemaleLover · iOS · EN | 🚀 Scaling | $2.7k | 0.53 | w1Tr7K carousel (since 2026-09-14, 7 wk) |
+| SoutheastAsianFemaleLover · Android · EN | 🔻 Falling | $2.2k | 0.48 | w1Tr7K carousel (since 2026-10-12, 3 wk) |
 
-**Open tickets:** T-509491 Due (iOS · EN: ROAS 0.57, spend +31% vs 2 weeks ago)
+**Open tickets:** T-509491 Due (iOS · EN: ROAS 0.53, spend +18% vs 2 weeks ago); T-843110 Decaying (Android · EN: Green, but IPM -31% vs 4-wk avg; hook rate -45% vs 4-wk avg)
 
 ### #1 history (latest first)
 - 2026-10-12 · SoutheastAsianFemaleLover · Android · EN · w1Tr7K carousel · 3 wk at 49% of spend  

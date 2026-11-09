@@ -31,15 +31,15 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $4.6k last week · ROAS 0.45 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $4.7k last week · ROAS 0.42 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InternationalFriendFinder · Android · ES · Friend | ✅ Healthy | $2.5k | 0.43 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
-| InternationalFriendFinder · iOS · ES · Friend | ✅ Healthy | $2.1k | 0.48 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
+| InternationalFriendFinder · Android · ES · Friend | 🔻 Falling | $2.6k | 0.39 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
+| InternationalFriendFinder · iOS · ES · Friend | 🔻 Falling | $2.1k | 0.46 | q4Xr9m tweetoverlay (since 2026-08-17, 11 wk) |
 
-**Open tickets:** T-038097 Due (Android · ES · Friend: ROAS 0.43); T-999972 Due (iOS · ES · Friend: ROAS 0.48)
+**Open tickets:** T-038097 Decaying (Android · ES · Friend: Under 0.40 and falling: ROAS 0.39 from 0.43); T-999972 Decaying (iOS · ES · Friend: Green, but hook rate -32% vs 4-wk avg)
 
 ### #1 history (latest first)
 - 2026-08-17 · InternationalFriendFinder · iOS · ES · Friend · q4Xr9m tweetoverlay · 11 wk at 67% of spend  

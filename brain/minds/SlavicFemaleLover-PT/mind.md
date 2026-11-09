@@ -29,15 +29,15 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $2.7k last week · ROAS 0.52 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $2.8k last week · ROAS 0.33 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| SlavicFemaleLover · iOS · PT | 🚀 Scaling | $1.4k | 0.58 | X4nR8W talkinghead (since 2026-10-12, 3 wk) |
-| SlavicFemaleLover · Android · PT | ✅ Healthy | $1.3k | 0.45 | n6f2Wt banner (since 2026-10-05, 4 wk) |
+| SlavicFemaleLover · iOS · PT | 🆘 Critical | $1.6k | 0.31 | X4nR8W talkinghead (since 2026-10-12, 3 wk) |
+| SlavicFemaleLover · Android · PT | 🔻 Falling | $1.2k | 0.36 | n6f2Wt banner (since 2026-10-05, 4 wk) |
 
-**Open tickets:** T-403592 Decaying (iOS · PT: ROAS 0.58, spend +75% vs 2 weeks ago)
+**Open tickets:** T-403592 Decaying (iOS · PT: ROAS 0.31 (prev 0.58), under 0.32); T-239874 Decaying (Android · PT: Under 0.40 and falling: ROAS 0.36 from 0.47)
 
 ### #1 history (latest first)
 - 2026-10-12 · SlavicFemaleLover · iOS · PT · X4nR8W talkinghead · 3 wk at 52% of spend  

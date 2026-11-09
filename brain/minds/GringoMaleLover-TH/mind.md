@@ -44,14 +44,14 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.3k last week · ROAS 0.68 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.2k last week · ROAS 0.51 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · TH · TH | ✅ Healthy | $1.3k | 0.68 | C0kM3N combo (since 2026-09-28, 5 wk) |
+| GringoMaleLover · iOS · TH · TH | ✅ Healthy | $1.2k | 0.51 | C0kM3N combo (since 2026-09-28, 5 wk) |
 
-**Open tickets:** T-294559 Due (iOS · TH · TH: ROAS 0.68)
+**Open tickets:** T-294559 Due (iOS · TH · TH: ROAS 0.51)
 
 ### #1 history (latest first)
 - 2026-09-28 · GringoMaleLover · iOS · TH · TH · C0kM3N combo · 5 wk at 48% of spend  

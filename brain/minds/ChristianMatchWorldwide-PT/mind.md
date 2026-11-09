@@ -34,14 +34,14 @@ _Source: Notion persona card "Christian Looking for Christian Abroad" (written f
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.6k last week · ROAS 0.38 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.4k last week · ROAS 0.38 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| ChristianMatchWorldwide · iOS · PT | 🔻 Falling | $1.6k | 0.38 | Q3fN8Z airportfirst (since 2026-10-26, 1 wk) |
+| ChristianMatchWorldwide · iOS · PT | 🟠 Amber | $1.4k | 0.38 | Q3fN8Z airportfirst (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-666702 Decaying (iOS · PT: Under 0.40 and falling: ROAS 0.38 from 0.44)
+**Open tickets:** T-666702 Decaying (iOS · PT: ROAS 0.38, under 0.40, not falling)
 
 ### #1 history (latest first)
 - 2026-10-26 · ChristianMatchWorldwide · iOS · PT · Q3fN8Z airportfirst · 1 wk at 34% of spend  

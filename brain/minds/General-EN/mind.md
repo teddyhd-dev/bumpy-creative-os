@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $3.8k last week · ROAS 0.48 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $4.1k last week · ROAS 0.46 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · EN | ✅ Healthy | $3.8k | 0.48 | EP - Instagram Jul 22  (since 2026-10-26, 1 wk) |
+| General · iOS · EN | 🚀 Scaling | $4.1k | 0.46 | EP - Instagram Jul 22  (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-492461 Decaying (iOS · EN: ROAS 0.48)
+**Open tickets:** T-492461 Decaying (iOS · EN: ROAS 0.46, spend +19% vs 2 weeks ago)
 
 ### #1 history (latest first)
 - 2026-10-26 · General · iOS · EN · EP - Instagram Jul 22  · 1 wk at 37% of spend  

@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $688 last week · ROAS 0.22 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $691 last week · ROAS 0.21 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| General · iOS · UA · Serious | 🆘 Critical | $688 | 0.22 | L2vM8Q manyhugs (since 2026-07-27, 14 wk) |
+| General · iOS · UA · Serious | 🆘 Critical | $691 | 0.21 | L2vM8Q manyhugs (since 2026-07-27, 14 wk) |
 
-**Open tickets:** T-465557 Decaying (iOS · UA · Serious: ROAS 0.22 (prev 0.33), under 0.32)
+**Open tickets:** T-465557 Decaying (iOS · UA · Serious: ROAS 0.21 (prev 0.22), under 0.32)
 
 ### #1 history (latest first)
 - 2026-08-17 · General · Web · UA · L2vM8Q manyhugs · 5 wk at 76% of spend  

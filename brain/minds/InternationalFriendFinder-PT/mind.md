@@ -3,7 +3,7 @@ contract: mind/1
 mind: InternationalFriendFinder-PT
 persona: InternationalFriendFinder
 language: PT
-status: live
+status: dormant
 updated: '2026-11-02'
 ---
 # InternationalFriendFinder · PT
@@ -31,14 +31,9 @@ _Source: Notion persona card "Friends Finder" (written for the persona across la
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.3k last week · ROAS 0.05 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 0 live adsets · $0 last week · ROAS – (bar 0.40)
 
-| Adset | Status | Spend | ROAS | #1 now (since) |
-|---|---|---|---|---|
-| InternationalFriendFinder · iOS · PT · Friend | 🆘 Critical | $1.3k | 0.05 | a2Ef3y wanted (since 2026-10-26, 1 wk) |
-
-**Open tickets:** T-044186 Decaying (iOS · PT · Friend: ROAS 0.05, under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · InternationalFriendFinder · iOS · PT · Friend · a2Ef3y wanted · 1 wk at 67% of spend  

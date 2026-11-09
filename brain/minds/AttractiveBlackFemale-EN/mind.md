@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $901 last week · ROAS 0.20 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $685 last week · ROAS 0.15 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| AttractiveBlackFemale · iOS · EN · Casual | 🆘 Critical | $901 | 0.20 | a2Ef3y wanted (since 2026-08-24, 10 wk) |
+| AttractiveBlackFemale · iOS · EN · Casual | 🆘 Critical | $685 | 0.15 | a2Ef3y wanted (since 2026-08-24, 10 wk) |
 
-**Open tickets:** T-917060 Decaying (iOS · EN · Casual: ROAS 0.20 (prev 0.13), under 0.32)
+**Open tickets:** T-917060 Decaying (iOS · EN · Casual: ROAS 0.15 (prev 0.21), under 0.32)
 
 ### #1 history (latest first)
 - 2026-08-24 · AttractiveBlackFemale · iOS · EN · Casual · a2Ef3y wanted · 10 wk at 98% of spend  

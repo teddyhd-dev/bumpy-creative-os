@@ -8,6 +8,7 @@ Run:  python3 engine/build.py
 from __future__ import annotations
 
 import glob
+import hashlib
 import os
 import re
 
@@ -135,8 +136,8 @@ def load_raw() -> pd.DataFrame:
     frames = []
     from files import raw_files
     for path in raw_files("adset", "adset"):
-        f = pd.read_csv(path, encoding="utf-8-sig")
-        f["_file"] = os.path.basename(path)
+        f = pd.read_csv(path, encoding="utf-8-sig", dtype={"Ad set ID": str})   # ids as text: a file without the
+        f["_file"] = os.path.basename(path)                                     # column would turn them into floats
         frames.append(f)
     df = pd.concat(frames, ignore_index=True)
     df = df.rename(columns={
@@ -146,6 +147,20 @@ def load_raw() -> pd.DataFrame:
         "Link clicks": "clicks", "Purchases": "purchases", "Impressions": "impressions",
         "Frequency": "frequency", "Hook Rate": "hook_rate", "Reporting starts": "week",
     })
+    # some adset exports come without the Ad set ID column (Nov 2026): fill it from the name, using every other
+    # adset / ad export that has both; a name never seen gets a stable stand-in id until an export carries the real one
+    if df["adset_id"].isna().any():
+        ids = {}
+        for path in raw_files("ad", "ad"):
+            a = pd.read_csv(path, usecols=lambda c: c in ("Ad set name", "Ad set ID"), dtype=str, encoding="utf-8-sig")
+            if "Ad set ID" in a:
+                ids.update(dict(a.dropna().values))
+        known = df.dropna(subset=["adset_id"])
+        ids.update(dict(zip(known["name"], known["adset_id"].astype(str).str.replace(r"\.0$", "", regex=True))))
+        miss = df["adset_id"].isna()
+        df.loc[miss, "adset_id"] = df.loc[miss, "name"].map(ids)
+        left = df["adset_id"].isna()
+        df.loc[left, "adset_id"] = "name-" + df.loc[left, "name"].map(lambda n: hashlib.md5(n.encode()).hexdigest()[:12])
     # newer uploads overwrite older ones for the same adset-week
     df = df.sort_values("_file").drop_duplicates(["adset_id", "week"], keep="last")
     for c in ["spend", "roas_meta", "value_inapp", "installs", "clicks", "purchases",

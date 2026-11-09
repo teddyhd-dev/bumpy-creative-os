@@ -40,14 +40,14 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.8k last week · ROAS 0.36 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.9k last week · ROAS 0.44 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GirlWantsToRelocate · iOS · EN | 🟠 Amber | $1.8k | 0.36 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
+| GirlWantsToRelocate · iOS · EN | 🔻 Falling | $1.9k | 0.44 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-455544 Decaying (iOS · EN: ROAS 0.36, under 0.40, not falling)
+**Open tickets:** T-455544 Decaying (iOS · EN: Green, but hook rate -86% vs 4-wk avg)
 
 ### #1 history (latest first)
 - 2026-10-19 · GirlWantsToRelocate · iOS · EN · a2Ef3y wanted · 2 wk at 53% of spend  

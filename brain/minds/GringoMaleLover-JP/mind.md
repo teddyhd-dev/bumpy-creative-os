@@ -41,16 +41,15 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 - https://drive.google.com/file/d/1BMGo2Ywo-8ROt9rHpBKXgtSDjUPJ1Ajg/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 3 live adsets · $2.0k last week · ROAS 0.10 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $931 last week · ROAS 0.30 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $804 | 0.04 | n6f2Wt banner (since 2026-10-26, 1 wk) |
-| GringoMaleLover · Android · JP · JP | 🆘 Critical | $685 | 0.14 | t3Wq8n bigtext (since 2026-10-26, 1 wk) |
-| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $531 | 0.16 | H7kM3N airport (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · JP · JP | 🆘 Critical | $681 | 0.14 | n6f2Wt banner (since 2026-10-26, 1 wk) |
+| GringoMaleLover · iOS · JP · JP | ✅ Healthy | $251 | 0.72 | H7kM3N airport (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-319678 Decaying (iOS · JP · JP: ROAS 0.04 (prev 0.12), under 0.32); T-564005 Decaying (Android · JP · JP: ROAS 0.14 (prev 0.11), under 0.32); T-997635 Decaying (iOS · JP · JP: ROAS 0.16, under 0.32)
+**Open tickets:** T-319678 Decaying (iOS · JP · JP: ROAS 0.14 (prev 0.04), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-26 · GringoMaleLover · iOS · JP · JP · n6f2Wt banner · 1 wk at 31% of spend  

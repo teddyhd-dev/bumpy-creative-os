@@ -42,14 +42,14 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $2.0k last week · ROAS 0.39 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $2.0k last week · ROAS 0.44 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| NewLanguageLearner · Android · EN | 🟠 Amber | $2.0k | 0.39 | b8H3s1 fidgeting (since 2026-07-27, 14 wk) |
+| NewLanguageLearner · Android · EN | 🔻 Falling | $2.0k | 0.44 | b8H3s1 fidgeting (since 2026-07-27, 14 wk) |
 
-**Open tickets:** T-633463 Decaying (Android · EN: ROAS 0.39, under 0.40, not falling)
+**Open tickets:** T-633463 Decaying (Android · EN: Green, but hook rate -100% vs 4-wk avg)
 
 ### #1 history (latest first)
 - 2026-08-03 · NewLanguageLearner · iOS · EN · Japanese · V5h7w8 videocall · 1 wk at – of spend  

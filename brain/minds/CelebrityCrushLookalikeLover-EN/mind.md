@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.0k last week · ROAS 0.21 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.1k last week · ROAS 0.31 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| CelebrityCrushLookalikeLover · iOS · EN | 🆘 Critical | $1.0k | 0.21 | p0nPrF phoneprofile (since 2026-10-19, 2 wk) |
+| CelebrityCrushLookalikeLover · iOS · EN | 🆘 Critical | $1.1k | 0.31 | p0nPrF phoneprofile (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-488772 Decaying (iOS · EN: ROAS 0.21 (prev 0.61), under 0.32)
+**Open tickets:** T-488772 Decaying (iOS · EN: ROAS 0.31 (prev 0.21), under 0.32)
 
 ### #1 history (latest first)
 - 2026-10-19 · CelebrityCrushLookalikeLover · iOS · EN · p0nPrF phoneprofile · 2 wk at 90% of spend  

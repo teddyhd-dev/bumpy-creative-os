@@ -29,14 +29,14 @@ updated: '2026-11-02'
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $1.1k last week · ROAS 0.43 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $1.0k last week · ROAS 0.35 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| KoreanMaleCultureLover · Android · ES | ✅ Healthy | $1.1k | 0.43 | n6f2Wt banner (since 2026-09-14, 7 wk) |
+| KoreanMaleCultureLover · Android · ES | 🔻 Falling | $1.0k | 0.35 | n6f2Wt banner (since 2026-09-14, 7 wk) |
 
-**Open tickets:** T-039425 Due (Android · ES: ROAS 0.43)
+**Open tickets:** T-039425 Decaying (Android · ES: Under 0.40 and falling: ROAS 0.35 from 0.44)
 
 ### #1 history (latest first)
 - 2026-09-14 · KoreanMaleCultureLover · Android · ES · n6f2Wt banner · 7 wk at 66% of spend  

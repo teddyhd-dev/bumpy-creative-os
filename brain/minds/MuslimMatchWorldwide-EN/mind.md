@@ -43,14 +43,14 @@ _Source: Notion persona card "Muslim want to relocate" (written for the persona 
 - https://drive.google.com/file/d/1NEu4wACpDBJJq0VYeW44c-5vSLVg_TBr/view — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 1 live adset · $3.0k last week · ROAS 0.38 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 1 live adset · $2.9k last week · ROAS 0.43 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| MuslimMatchWorldwide · iOS · EN | 🔻 Falling | $3.0k | 0.38 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
+| MuslimMatchWorldwide · iOS · EN | ✅ Healthy | $2.9k | 0.43 | a2Ef3y wanted (since 2026-10-19, 2 wk) |
 
-**Open tickets:** T-825527 Decaying (iOS · EN: Under 0.40 and falling: ROAS 0.38 from 0.41)
+**Open tickets:** T-825527 Due (iOS · EN: ROAS 0.43)
 
 ### #1 history (latest first)
 - 2026-10-19 · MuslimMatchWorldwide · iOS · EN · a2Ef3y wanted · 2 wk at 42% of spend  

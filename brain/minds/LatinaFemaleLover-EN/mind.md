@@ -38,16 +38,16 @@ _Source: Notion persona card "Latina Lover" (written for the persona across lang
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 3 live adsets · $4.9k last week · ROAS 0.44 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 3 live adsets · $5.2k last week · ROAS 0.32 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| LatinaFemaleLover · iOS · EN · Talk | 🚀 Scaling | $1.9k | 0.65 | a2Ef3y wanted (since 2026-08-10, 12 wk) |
-| LatinaFemaleLover · iOS · EN · Casual | 🆘 Critical | $1.9k | 0.29 | C0kM3N combo (since 2026-09-28, 5 wk) |
-| LatinaFemaleLover · Android · EN · Casual | 🟠 Amber | $1.1k | 0.33 | n6f2Wt banner (since 2026-09-21, 6 wk) |
+| LatinaFemaleLover · iOS · EN · Casual | 🆘 Critical | $2.1k | 0.28 | C0kM3N combo (since 2026-09-28, 5 wk) |
+| LatinaFemaleLover · iOS · EN · Talk | 🔻 Falling | $2.0k | 0.35 | a2Ef3y wanted (since 2026-08-10, 12 wk) |
+| LatinaFemaleLover · Android · EN · Casual | 🔻 Falling | $1.0k | 0.35 | n6f2Wt banner (since 2026-09-21, 6 wk) |
 
-**Open tickets:** T-140322 3 strikes (Android · EN · Casual: ROAS 0.33, under 0.40, not falling); T-309916 Decaying (iOS · EN · Casual: ROAS 0.29 (prev 0.39), under 0.32); T-721949 Due (iOS · EN · Talk: ROAS 0.65, spend +17% vs 2 weeks ago)
+**Open tickets:** T-140322 3 strikes (Android · EN · Casual: Under 0.40 and falling: ROAS 0.35 from 0.41); T-309916 Decaying (iOS · EN · Casual: ROAS 0.28 (prev 0.29), under 0.32); T-721949 Decaying (iOS · EN · Talk: Under 0.40 and falling: ROAS 0.35 from 0.65)
 
 ### #1 history (latest first)
 - 2026-09-28 · LatinaFemaleLover · iOS · EN · Casual · C0kM3N combo · 5 wk at 59% of spend  

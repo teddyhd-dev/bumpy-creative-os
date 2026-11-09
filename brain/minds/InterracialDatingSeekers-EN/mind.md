@@ -39,15 +39,15 @@ _Source: Notion persona card "Black People Looking for Interacial Dating" (writt
 - https://www.tiktok.com/@auxiliaryst4tic/video/7559989081686412574 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
-**Now:** 2 live adsets · $9.4k last week · ROAS 0.40 (bar 0.40)
+## From the data (updated 2026-11-09; adsets to 2026-11-02, ads to 2026-10-26)
+**Now:** 2 live adsets · $8.9k last week · ROAS 0.41 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |
 |---|---|---|---|---|
-| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.3k | 0.41 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
-| InterracialDatingSeekers · Android · EN | 🟠 Amber | $4.1k | 0.39 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
+| InterracialDatingSeekers · iOS · EN | ✅ Healthy | $5.2k | 0.47 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
+| InterracialDatingSeekers · Android · EN | 🔻 Falling | $3.6k | 0.34 | u7Wf91 wakeup (since 2026-10-26, 1 wk) |
 
-**Open tickets:** T-602912 Decaying (iOS · EN: ROAS 0.41); T-628890 Decaying (Android · EN: ROAS 0.39, under 0.40, not falling)
+**Open tickets:** T-602912 Decaying (iOS · EN: ROAS 0.47); T-628890 Decaying (Android · EN: Under 0.40 and falling: ROAS 0.34 from 0.39)
 
 ### #1 history (latest first)
 - 2026-10-26 · InterracialDatingSeekers · Android · EN · u7Wf91 wakeup · 1 wk at 43% of spend  
