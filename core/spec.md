@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.4
+version: 1.3.5
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -25,7 +25,7 @@ owner: Creative lead (ads creative) · maintained with Claude
   GirlWantsToRelocate, SexyMaleLover, IndianFemaleDreamingForAsianMale) were read as Unknown; the ad parser now reads
   canonical names first.
 
-**1.3.4 (2026-11-02→03): the refresh read counts only a creative that really carries spend (decided by the creative lead).**
+**1.3.5 (2026-11-03): the refresh read counts only a creative that really carries spend (decided by the creative lead).**
 - A new creative in the top 3 must also sit **inside the ads that make 80% of the adset's spend** (the ads ranked above it take under 80%). If it's in the top 3 but outside that 80% (e.g. #3 at 2%), the read is **Almost** whatever ROAS did: it is too small to have moved the adset up or down. `READ["affect"] = 0.80` in `engine/settings.py`; `refresh_read(..., cum_above)` in `engine/tickets.py` and `tools/report/refresh_review.py`.
 - Batch 40 effect: Gringo iOS ES Worse → Almost, Local Dating Android EN Worked → Almost, Local Dating iOS EN Flat → Almost; creator ads: Local Dating iOS PT Worked → Almost, Local Dating iOS ES Worse → Almost.
 
