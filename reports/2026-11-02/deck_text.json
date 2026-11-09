@@ -1,17 +1,49 @@
 {
  "title": "Week 45 Launch Review",
- "cover": {"eyebrow": "Week 45 · 2026 · Creative Reporting", "title": "What we launched last week, and how it’s going",
-           "foot": "Batch 41 · 2–8 Nov 2026 · Teddy Dassa © 2026"},
+ "cover": {
+  "eyebrow": "Week 45 · 2026 · Creative Reporting",
+  "title": "What we launched last week, and how it’s going",
+  "foot": "Batch 41 · 2–8 Nov 2026 · Teddy Dassa © 2026"
+ },
  "made": {
-  "eyebrow": "01 · What we made", "title": "94 new files, 9 concepts, 29 adsets",
+  "eyebrow": "01 · What we made",
+  "title": "94 new files, 9 concepts, 29 adsets",
   "cards": [
-   {"kind": "New concepts · Fri 6 Nov", "title": "Gringo Lover", "text": "<b>flirtedtoohard + lipsync</b> (new), dreamlife and talkinghead variants · 15 files → EN · ES · PT · PH · TH · ID (9 adsets)"},
-   {"kind": "New + variants · Wed 4 Nov", "title": "Latina Lover", "text": "<b>sliders</b> (new) + dancing variants · 32 files → EN · ES · PT (5 adsets)"},
-   {"kind": "New concept · Wed 4 Nov", "title": "Local Dating Fatigue", "text": "<b>colosseum 50/50</b> (new, TED/KIM) · 5 videos → EN (3 adsets) + talkinghead variants → ES (2)"},
-   {"kind": "New concept · Thu 5 Nov", "title": "International Friend", "text": "<b>lipsync</b> (new here) · 4 files → EN · CH (3 adsets), + 2 files in ES"},
-   {"kind": "New concept · Fri 6 Nov", "title": "Passport Bro", "text": "<b>dreamlife</b> (new here, from Gringo) · 8 files → EN (2 adsets)"},
-   {"kind": "New variants · Wed 4 Nov", "title": "Mature Dating", "text": "<b>banner</b> variants · 18 files → EN · JP · KR (4 adsets)"},
-   {"kind": "New variants · Fri 6 Nov", "title": "Sexy Female Lover", "text": "<b>wanted</b> variants · 8 files → EN (1 adset)"}
+   {
+    "kind": "New concepts · Fri 6 Nov",
+    "title": "Gringo Lover",
+    "text": "<b>flirtedtoohard + lipsync</b> (new), dreamlife and talkinghead variants · 15 files → EN · ES · PT · PH · TH · ID (9 adsets)"
+   },
+   {
+    "kind": "New + variants · Wed 4 Nov",
+    "title": "Latina Lover",
+    "text": "<b>sliders</b> (new) + dancing variants · 32 files → EN · ES · PT (5 adsets)"
+   },
+   {
+    "kind": "New concept · Wed 4 Nov",
+    "title": "Local Dating Fatigue",
+    "text": "<b>colosseum 50/50</b> (new, TED/KIM) · 5 videos → EN (3 adsets) + talkinghead variants → ES (2)"
+   },
+   {
+    "kind": "New concept · Thu 5 Nov",
+    "title": "International Friend",
+    "text": "<b>lipsync</b> (new here) · 4 files → EN · CH (3 adsets), + 2 files in ES"
+   },
+   {
+    "kind": "New concept · Fri 6 Nov",
+    "title": "Passport Bro",
+    "text": "<b>dreamlife</b> (new here, from Gringo) · 8 files → EN (2 adsets)"
+   },
+   {
+    "kind": "New variants · Wed 4 Nov",
+    "title": "Mature Dating",
+    "text": "<b>banner</b> variants · 18 files → EN · JP · KR (4 adsets)"
+   },
+   {
+    "kind": "New variants · Fri 6 Nov",
+    "title": "Sexy Female Lover",
+    "text": "<b>wanted</b> variants · 8 files → EN (1 adset)"
+   }
   ],
   "foot": "Brief: JAC (colosseum: TED) · Design: USM, OST, KIM · 6 files carry a Batch 45 or 42 label: counted here. The Mature banner files have no team codes.",
   "note": "Batch 41 is bigger than last week: 94 files, nine concepts, 29 adsets, in three upload days. Wednesday for Latina, Local Dating English and Mature; Thursday for International Friend; Friday for Gringo, Passport Bro and the rest. So some adsets have five days of data, some only three."
@@ -24,146 +56,459 @@
   "note": "Nothing is final after three to five days. Four worked, eight almost, one to watch, six got worse and nine missed. We go in priority order, spend times how bad the read is: Passport Bro first, then Local Dating, International Friend, Latina, Gringo, Mature."
  },
  "personas": [
-  {"persona": "PassportBro", "id": "pbro", "concept": "dreamlife",
-   "title": "Passport Bro Refresh: Dreamlife", "sub": "Result: 1 almost, 1 missed · dreamlife is #3 on iOS with 15%",
+  {
+   "persona": "PassportBro",
+   "id": "pbro",
+   "concept": "dreamlife",
+   "title": "Passport Bro Refresh: Dreamlife",
+   "sub": "Result: 1 almost, 1 missed · dreamlife is #3 on iOS with 15%",
    "foot": "Before = 30 Oct – 5 Nov · After = 6–8 Nov (3 days: an early read) · rows: in top 3 first (best → worst), then the rest (worst → best)",
    "note": "Dreamlife, the Gringo winner, went into Passport Bro on Friday. After three days it is third on iOS with 15 percent and ROAS went up to 0.37, still under the bar. On Android it got 6 percent and the adset slipped under 0.40.",
-   "actions": {"title": "A new concept for Passport Bro EN, one set for both OS",
+   "actions": {
+    "title": "Passport Bro: learn what keeps datingcontest #1, then bring back wanted in a new form",
     "rows": [
-     {"owner": "Creative", "level": "High", "n": 1, "adsets": "<b>Passport Bro EN</b>", "spend": "$10.2k", "action": "Brief a new concept, one set for both OS. Dreamlife got 6–15% in 3 days; datingcontest has led iOS for 5 weeks."},
-     {"owner": "Creative", "level": "Keep", "adsets": "<b>Dreamlife</b>", "spend": "—", "action": "Keep the dreamlife ads on through week 2: #3 on iOS and ROAS up 0.31 → 0.37."},
-     {"owner": "Media buyer", "level": "Watch", "adsets": "<b>Passport Bro EN</b> · Android", "spend": "$5.3k", "action": "Slipped under the bar (0.42 → 0.39) with combo #1 for only 2 weeks: hold budget, no increase."}
+     {
+      "owner": "Creative",
+      "level": "Learn",
+      "adsets": "<b>Passport Bro EN</b>",
+      "spend": "—",
+      "action": "Decode datingcontest before the brief: #1 on iOS for 5 weeks (70%). From its ad names: a skit mocking dating apps, “Dating apps in 2026” at a bar, “One premium please”. What emotion carries it?"
+     },
+     {
+      "owner": "Creative",
+      "level": "High",
+      "n": 1,
+      "adsets": "<b>Passport Bro EN</b>",
+      "spend": "$10.2k",
+      "action": "J2, past winner in a new form: wanted led Passport Bro for 11 weeks (“How life feels after matched and married…”, kitchen). Same message, new visual, one set for both OS."
+     },
+     {
+      "owner": "Creative",
+      "level": "Keep",
+      "adsets": "<b>Dreamlife</b>",
+      "spend": "—",
+      "action": "Keep it on through week 2: #3 on iOS, ROAS up 0.31 → 0.37."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "Watch",
+      "adsets": "<b>Passport Bro EN</b> · Android",
+      "spend": "$5.3k",
+      "action": "Slipped under the bar (0.42 → 0.39) with combo #1 for only 2 weeks: hold budget."
+     }
     ],
-    "foot": "Read on 3 days (6–8 Nov). Priority numbers run across the deck.",
-    "note": "Passport Bro is our biggest open ticket by spend. Dreamlife is a start on iOS but not enough, so the next batch brings a new concept for both OS. The media buyer holds Android while it sits just under 0.40."}},
-  {"persona": "LocalDatingFatigue", "id": "locdating", "concept": "colosseum + talkinghead",
-   "title": "Local Dating: Colosseum (EN), Talkinghead (ES)", "sub": "Result: 1 worked, 1 almost, 2 got worse, 1 missed · colosseum lifts iOS EN, sinks Android EN",
+    "foot": "Read on 3 days (6–8 Nov). Ad-name read of datingcontest and wanted: to confirm with screenshots. Priority numbers run across the deck.",
+    "note": "Datingcontest has carried Passport Bro iOS for five weeks, so first we learn what it does right. Then the next batch brings back wanted, Passport Bro's #1 for eleven weeks, in a new visual. Dreamlife stays on for its second week."
+   }
+  },
+  {
+   "persona": "LocalDatingFatigue",
+   "id": "locdating",
+   "concept": "colosseum + talkinghead",
+   "title": "Local Dating: Colosseum (EN), Talkinghead (ES)",
+   "sub": "Result: 1 worked, 1 almost, 2 got worse, 1 missed · colosseum lifts iOS EN, sinks Android EN",
    "foot": "Before = 7 days before upload · After = upload – 8 Nov (EN from Wed 4 Nov, 5 days; ES from Fri 6 Nov, 3 days) · Android ES is a new adset (6 Nov)",
    "note": "Colosseum 50/50 is the new concept from Teddy and Kim. On iOS it is second with 43 percent and the adset went up to 0.52. On both Android adsets it took 28 to 41 percent and ROAS dropped to 0.30 and 0.22. Same ads, opposite results by OS. Spanish got talkinghead variants, too small to count yet.",
-   "actions": {"title": "Pull colosseum from Android, and find out why it splits by OS",
+   "actions": {
+    "title": "Copy colosseum into Spanish, pull it from Android, find out why it splits",
     "rows": [
-     {"owner": "Creative", "level": "Urgent", "n": 2, "adsets": "<b>Loc. Dating EN</b>", "spend": "$8.1k", "action": "New concept, 3+ variants, one set for both OS: datingcontest still leads all three adsets (2–7 weeks)."},
-     {"owner": "Creative", "level": "Research", "adsets": "<b>Loc. Dating EN</b>", "spend": "—", "action": "Before the brief: why does colosseum lift iOS (0.44 → 0.52) and sink Android? Compare countries, hook rate and who installs."},
-     {"owner": "Creative", "level": "Medium", "n": 15, "adsets": "<b>Loc. Dating ES</b>", "spend": "$1.4k", "action": "A different concept for Spanish: the talkinghead variants got 3–7%."},
-     {"owner": "Media buyer", "level": "Urgent", "adsets": "<b>Loc. Dating EN</b> · Android", "spend": "$5.7k", "action": "Pause the colosseum ads in both Android adsets: 28–41% of spend while ROAS fell 0.48 → 0.30 and 0.35 → 0.22."},
-     {"owner": "Leave", "action": "<b>Loc. Dating EN · iOS</b>: keep colosseum on (0.52). <b>Android ES</b> is a 3-day-old adset at 0.21: give it the week."}
+     {
+      "owner": "Creative",
+      "level": "Urgent",
+      "adsets": "<b>Loc. Dating EN</b>",
+      "spend": "$8.1k",
+      "action": "Both EN winners say dating apps are a fight men lose (datingcontest’s contest skit; colosseum’s 80 men vs 20 women). Brief the successor on that message with a new visual, both OS.",
+      "n": 2
+     },
+     {
+      "owner": "Creative",
+      "level": "Research",
+      "adsets": "<b>Loc. Dating EN</b>",
+      "spend": "—",
+      "action": "Why does colosseum lift iOS and sink Android? Compare countries, hook rate and who installs before the next EN brief."
+     },
+     {
+      "owner": "Creative",
+      "level": "Medium",
+      "n": 15,
+      "adsets": "<b>Loc. Dating ES</b>",
+      "spend": "$1.4k",
+      "action": "J1: make a Spanish colosseum. It worked on iOS EN (🥈 43%, 0.44 → 0.52). Datingcontest made the same EN → ES move and became #1 in both ES adsets."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "Urgent",
+      "adsets": "<b>Loc. Dating EN</b> · Android",
+      "spend": "$5.7k",
+      "action": "Pause the colosseum ads in both Android adsets: 28–41% of spend while ROAS fell."
+     },
+     {
+      "owner": "Leave",
+      "action": "<b>Loc. Dating EN · iOS</b>: keep colosseum on (0.52). <b>Android ES</b> is a 3-day-old adset at 0.21: give it the week."
+     }
     ],
-    "foot": "Read on 3–5 days (4–8 Nov). Priority numbers run across the deck.",
-    "note": "Colosseum works on iPhone and hurts on Android. The media buyer pulls it from Android now. Creative briefs a new English concept for both OS, but first we find out why the same ads split this way."}},
-  {"persona": "InternationalFriendFinder", "id": "friends", "concept": "lipsync",
-   "title": "International Friend Refresh: Lipsync", "sub": "Result: 3 missed · lipsync got under 1% in English",
+    "foot": "Read on 3–5 days (4–8 Nov). Messages read from the ad names: to confirm with screenshots. Priority numbers run across the deck.",
+    "note": "Colosseum is a real winner on iPhone English, so we copy it into Spanish, the same move that made datingcontest number one there. On Android it hurts, so the media buyer pulls it while we find out why."
+   }
+  },
+  {
+   "persona": "InternationalFriendFinder",
+   "id": "friends",
+   "concept": "lipsync",
+   "title": "International Friend Refresh: Lipsync",
+   "sub": "Result: 3 missed · lipsync got under 1% in English",
    "foot": "Before = 29 Oct – 4 Nov · After = 5–8 Nov (4 days) · 2 more lipsync files went to Friends ES under a Batch 45 label ($42): not counted",
    "note": "Lipsync is new for International Friend, live since Thursday in English and Chinese. It barely got spend: under 1 percent in English, 6 percent in Chinese. Android English is still the problem at 0.31. iOS English is fine at 0.48 on banner.",
-   "actions": {"title": "Friends EN needs a different concept; CH still needs its research",
+   "actions": {
+    "title": "Friends: tweetoverlay’s message still leads after 12 weeks; give it a new visual",
     "rows": [
-     {"owner": "Creative", "level": "High", "n": 3, "adsets": "<b>Friends EN</b>", "spend": "$7.2k", "action": "A different concept, not more lipsync (under 1% on both OS). Android EN is at 0.31."},
-     {"owner": "Creative", "level": "Research", "n": 5, "adsets": "<b>Friends CH</b>", "spend": "$1.7k", "action": "Still open from last week: why Chinese speakers want international friends. Lipsync got 6%; banner is #1 again."},
-     {"owner": "Creative", "level": "Next batch", "adsets": "<b>Friends PT</b>", "spend": "—", "action": "Paused since last week (no spend): brief a new concept before switching it back on."},
-     {"owner": "Media buyer", "level": "High", "adsets": "<b>Friends EN</b> · Android", "spend": "$3.9k", "action": "Last week’s pause isn’t done: the internationalfriends ads still spent $380 this week. Pause them."},
-     {"owner": "Leave", "action": "<b>Friends EN · iOS</b>: banner keeps it at 0.48; internationalfriends sits #2 there."}
+     {
+      "owner": "Creative",
+      "level": "High",
+      "n": 3,
+      "adsets": "<b>Friends EN</b>",
+      "spend": "$7.2k",
+      "action": "Same message, new visual: tweetoverlay has led Android EN and ES for 12 weeks (a tweet over a collage of friends from other countries: “Brazil, Italy, Korea friends”). Lipsync got under 1%."
+     },
+     {
+      "owner": "Creative",
+      "level": "Research",
+      "n": 5,
+      "adsets": "<b>Friends CH</b>",
+      "spend": "$1.7k",
+      "action": "Tweetoverlay worked in CH as a WeChat Moments post; banner leads now. Why do Chinese speakers want foreign friends? Read reviews and comments."
+     },
+     {
+      "owner": "Creative",
+      "level": "Next batch",
+      "adsets": "<b>Friends PT</b>",
+      "spend": "—",
+      "action": "J2: tweetoverlay led PT for 4 weeks before it faded. Bring it back in Portuguese with a new visual, then switch PT back on."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "High",
+      "adsets": "<b>Friends EN</b> · Android",
+      "spend": "$3.9k",
+      "action": "Last week’s pause isn’t done: the internationalfriends ads still spent $380. Pause them."
+     },
+     {
+      "owner": "Leave",
+      "action": "<b>Friends EN · iOS</b>: banner (car window) has led 16 weeks at 0.48."
+     }
     ],
-    "foot": "Read on 4 days (5–8 Nov). Priority numbers run across the deck.",
-    "note": "Two misses in a row for English, so the next brief needs a different idea, not more variants. Chinese still needs the research we asked for last week. And one thing from last week didn't happen: the internationalfriends ads on Android English are still running."}},
-  {"persona": "LatinaFemaleLover", "id": "latina", "concept": "dancing + sliders",
-   "title": "Latina Lover Refresh: Dancing + Sliders", "sub": "Result: 2 almost, 2 got worse, 1 missed · dancing took #1 in EN, ROAS stays under 0.32",
+    "foot": "Read on 4 days (5–8 Nov). Ad-name read of tweetoverlay: to confirm with screenshots. Priority numbers run across the deck.",
+    "note": "Tweetoverlay has led International Friend for twelve weeks, so its message works; the visual is what's tired. The next English brief keeps the message and changes the visual. Portuguese gets tweetoverlay back. Chinese still needs its research."
+   }
+  },
+  {
+   "persona": "LatinaFemaleLover",
+   "id": "latina",
+   "concept": "dancing + sliders",
+   "title": "Latina Lover Refresh: Dancing + Sliders",
+   "sub": "Result: 2 almost, 2 got worse, 1 missed · dancing took #1 in EN, ROAS stays under 0.32",
    "foot": "Before = 28 Oct – 3 Nov · After = 4–8 Nov (5 days) · share = dancing + sliders",
    "note": "Dancing variants and the new sliders went live on Wednesday. Dancing took #1 in both English adsets within five days, about three quarters of spend, but ROAS stayed low: 0.31 on Android, 0.27 on iOS. In Portuguese it took 46 percent and ROAS fell. Spanish iOS is healthy on banner.",
-   "actions": {"title": "Dancing wins spend, not money: new concepts for Latina EN and PT",
+   "actions": {
+    "title": "Dancing wins spend, not money: new concepts for Latina EN and PT",
     "rows": [
-     {"owner": "Creative", "level": "High", "n": 6, "adsets": "<b>Latina EN</b>", "spend": "$3.1k", "action": "New concept, one set for both OS. Dancing is #1 at 76–78% but ROAS sits at 0.27–0.31."},
-     {"owner": "Creative", "level": "Research", "adsets": "<b>Latina EN</b>", "spend": "—", "action": "Why does dancing win the auction but not the payers? Check installs vs purchases and countries before the brief."},
-     {"owner": "Creative", "level": "High", "n": 8, "adsets": "<b>Latina PT</b>", "spend": "$1.0k", "action": "A different concept: dancing took 46% and ROAS fell 0.27 → 0.23."},
-     {"owner": "Creative", "level": "Medium", "n": 9, "adsets": "<b>Latina ES</b>", "spend": "$1.7k", "action": "Refresh Spanish again: #3 at 28% on Android, 0.27 → 0.31. iOS ES stays on banner (0.49)."},
-     {"owner": "Media buyer", "level": "High", "adsets": "<b>Latina PT</b> · iOS", "spend": "$1.0k", "action": "Pause the dancing ads: 46% of spend while ROAS fell."},
-     {"owner": "Media buyer", "level": "Watch", "adsets": "<b>Latina EN</b> · Android", "spend": "$1.0k", "action": "Dancing is #1 at 76% and ROAS slipped 0.35 → 0.31: pause it if it is still down after 7 days."}
+     {
+      "owner": "Creative",
+      "level": "High",
+      "n": 6,
+      "adsets": "<b>Latina EN</b>",
+      "spend": "$3.1k",
+      "action": "New concept, one set for both OS. Dancing is #1 at 76–78% but ROAS sits at 0.27–0.31."
+     },
+     {
+      "owner": "Creative",
+      "level": "Research",
+      "adsets": "<b>Latina EN</b>",
+      "spend": "—",
+      "action": "Why does dancing win the auction but not the payers? Check installs vs purchases and countries before the brief."
+     },
+     {
+      "owner": "Creative",
+      "level": "High",
+      "n": 8,
+      "adsets": "<b>Latina PT</b>",
+      "spend": "$1.0k",
+      "action": "A different concept: dancing took 46% and ROAS fell 0.27 → 0.23."
+     },
+     {
+      "owner": "Creative",
+      "level": "Medium",
+      "n": 9,
+      "adsets": "<b>Latina ES</b>",
+      "spend": "$1.7k",
+      "action": "Refresh Spanish again: #3 at 28% on Android, 0.27 → 0.31. iOS ES stays on banner (0.49)."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "High",
+      "adsets": "<b>Latina PT</b> · iOS",
+      "spend": "$1.0k",
+      "action": "Pause the dancing ads: 46% of spend while ROAS fell."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "Watch",
+      "adsets": "<b>Latina EN</b> · Android",
+      "spend": "$1.0k",
+      "action": "Dancing is #1 at 76% and ROAS slipped 0.35 → 0.31: pause it if it is still down after 7 days."
+     }
     ],
     "foot": "Read on 5 days (4–8 Nov). Priority numbers run across the deck.",
-    "note": "Dancing is the clearest lesson this week: Meta loves it, it takes most of the spend, but it doesn't bring paying users. English and Portuguese get a new concept. Before the English brief, we check what kind of users dancing brings in."}},
-  {"persona": "GringoMaleLover", "id": "gringo", "concept": "flirted + lipsync",
-   "title": "Gringo Lover Refresh: Flirted Too Hard + Lipsync", "sub": "Result: 2 worked, 2 almost, 1 watch, 1 got worse, 3 missed · dreamlife took #1 in TH",
+    "note": "Dancing is the clearest lesson this week: Meta loves it, it takes most of the spend, but it doesn't bring paying users. English and Portuguese get a new concept. Before the English brief, we check what kind of users dancing brings in."
+   }
+  },
+  {
+   "persona": "GringoMaleLover",
+   "id": "gringo",
+   "concept": "flirted + lipsync",
+   "title": "Gringo Lover Refresh: Flirted Too Hard + Lipsync",
+   "sub": "Result: 2 worked, 2 almost, 1 watch, 1 got worse, 3 missed · dreamlife took #1 in TH",
    "foot": "Before = 30 Oct – 5 Nov · After = 6–8 Nov (3 days: an early read) · rows: in top 3 first (best → worst), then the rest (worst → best)",
    "note": "Two new concepts for Gringo went live on Friday, flirtedtoohard and lipsync, plus dreamlife for Thailand. After three days, Philippines iOS and Spanish iOS worked, both up to about 0.53. Philippines Android got worse with the same ads. In Thailand dreamlife is already #1; ROAS came down from 0.72 but stays above 0.40, so we watch it. English barely took the new ads, and iOS English fell to 0.38.",
-   "actions": {"title": "Gringo EN needs a new concept; the rest stays on",
+   "actions": {
+    "title": "Gringo EN needs a new concept; the rest stays on",
     "rows": [
-     {"owner": "Creative", "level": "High", "n": 4, "adsets": "<b>Gringo EN</b>", "spend": "$5.9k", "action": "New concept, one set for both OS: flirtedtoohard got 0.5–1.4%. iOS EN fell 0.54 → 0.38 on combo (#1 for 6 weeks)."},
-     {"owner": "Creative", "level": "Medium", "n": 14, "adsets": "<b>Gringo ID</b>", "spend": "$1.0k", "action": "Refresh again: lipsync is #3 at 10%, ROAS 0.25 → 0.28."},
-     {"owner": "Creative", "level": "Keep", "adsets": "<b>Gringo ES · PH · TH</b>", "spend": "—", "action": "Keep flirtedtoohard, lipsync and dreamlife on: worked in iOS ES and PH (0.53–0.55); watch TH (0.72 → 0.46)."},
-     {"owner": "Media buyer", "level": "High", "adsets": "<b>Gringo PH</b> · Android", "spend": "$0.7k", "action": "Pause the batch ads: 32% of spend while ROAS fell 0.42 → 0.36 (iOS PH went up with the same ads)."},
-     {"owner": "Media buyer", "level": "High", "adsets": "<b>Gringo ID</b> · Android", "spend": "$1.0k", "action": "Last week’s pause isn’t done: the creator couple ads are still #1 (56%), about $90 a day."},
-     {"owner": "Leave", "action": "<b>Gringo EN · Android</b> (0.40) and <b>PT</b> (0.60): airport carries them."}
+     {
+      "owner": "Creative",
+      "level": "High",
+      "n": 4,
+      "adsets": "<b>Gringo EN</b>",
+      "spend": "$5.9k",
+      "action": "New concept, one set for both OS: flirtedtoohard got 0.5–1.4%. iOS EN fell 0.54 → 0.38 on combo (#1 for 6 weeks)."
+     },
+     {
+      "owner": "Creative",
+      "level": "Medium",
+      "n": 14,
+      "adsets": "<b>Gringo ID</b>",
+      "spend": "$1.0k",
+      "action": "Refresh again: lipsync is #3 at 10%, ROAS 0.25 → 0.28."
+     },
+     {
+      "owner": "Creative",
+      "level": "Keep",
+      "adsets": "<b>Gringo ES · PH · TH</b>",
+      "spend": "—",
+      "action": "Keep flirtedtoohard, lipsync and dreamlife on: worked in iOS ES and PH (0.53–0.55); watch TH (0.72 → 0.46)."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "High",
+      "adsets": "<b>Gringo PH</b> · Android",
+      "spend": "$0.7k",
+      "action": "Pause the batch ads: 32% of spend while ROAS fell 0.42 → 0.36 (iOS PH went up with the same ads)."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "High",
+      "adsets": "<b>Gringo ID</b> · Android",
+      "spend": "$1.0k",
+      "action": "Last week’s pause isn’t done: the creator couple ads are still #1 (56%), about $90 a day."
+     },
+     {
+      "owner": "Leave",
+      "action": "<b>Gringo EN · Android</b> (0.40) and <b>PT</b> (0.60): airport carries them."
+     }
     ],
     "foot": "Read on 3 days (6–8 Nov). Priority numbers run across the deck.",
-    "note": "Gringo had the most wins this week, in Spanish and Philippines iOS, so those ads stay on. English is the gap: the new ads didn't get spend and iOS English dropped, so English gets a new concept. Two media-buyer items, one of them still open from last week."}},
-  {"persona": "MatureDating", "id": "mature", "concept": "banner",
-   "title": "Mature Dating Refresh: Banner", "sub": "Result: 2 almost, 1 flat, 1 got worse · wanted still holds 94% of iOS EN",
+    "note": "Gringo had the most wins this week, in Spanish and Philippines iOS, so those ads stay on. English is the gap: the new ads didn't get spend and iOS English dropped, so English gets a new concept. Two media-buyer items, one of them still open from last week."
+   }
+  },
+  {
+   "persona": "MatureDating",
+   "id": "mature",
+   "concept": "banner",
+   "title": "Mature Dating Refresh: Banner",
+   "sub": "Result: 2 almost, 1 flat, 1 got worse · wanted still holds 94% of iOS EN",
    "foot": "Before = 28 Oct – 3 Nov · After = 4–8 Nov (5 days) · all four are Mature 30to40 adsets",
    "note": "Mature got 18 banner files on Wednesday, in English, Japanese and Korean. Wanted still owns iOS English with 94 percent, so banner can't move it. Android is flat at 0.30. Japan and Korea are far under the bar with or without banner: 0.19 and 0.07.",
-   "actions": {"title": "A new concept for Mature EN; decide on JP and KR",
+   "actions": {
+    "title": "A new concept for Mature EN; decide on JP and KR",
     "rows": [
-     {"owner": "Creative", "level": "High", "n": 7, "adsets": "<b>Mature EN</b>", "spend": "$3.8k", "action": "New concept, one set for both OS: banner variants got 5–13%; wanted has led iOS for 14 weeks. Look at manyplaces (account news) first."},
-     {"owner": "Creative lead", "level": "Decide", "adsets": "<b>Mature JP · KR</b>", "spend": "$2.3k", "action": "Both sit far under the bar (0.19 and 0.07): more creative, or less budget?"},
-     {"owner": "Media buyer", "level": "High", "adsets": "<b>Mature KR</b> · iOS", "spend": "$0.7k", "action": "Cut or pause: 0.07 this week; banner took #1 and ROAS fell further."}
+     {
+      "owner": "Creative",
+      "level": "High",
+      "n": 7,
+      "adsets": "<b>Mature EN</b>",
+      "spend": "$3.8k",
+      "action": "New concept, one set for both OS: banner variants got 5–13%; wanted has led iOS for 14 weeks. Look at manyplaces (account news) first."
+     },
+     {
+      "owner": "Creative lead",
+      "level": "Decide",
+      "adsets": "<b>Mature JP · KR</b>",
+      "spend": "$2.3k",
+      "action": "Both sit far under the bar (0.19 and 0.07): more creative, or less budget?"
+     },
+     {
+      "owner": "Media buyer",
+      "level": "High",
+      "adsets": "<b>Mature KR</b> · iOS",
+      "spend": "$0.7k",
+      "action": "Cut or pause: 0.07 this week; banner took #1 and ROAS fell further."
+     }
     ],
     "foot": "Read on 5 days (4–8 Nov). Priority numbers run across the deck.",
-    "note": "Banner variants can't break wanted in Mature English, so English gets a new concept. The manyplaces creative in another Mature adset is a good place to start. Japan and Korea are a budget question more than a creative one."}},
-  {"persona": "SexyFemaleLover", "id": "sexy", "concept": "wanted",
-   "title": "Sexy Female Lover Refresh: Wanted", "sub": "Result: 1 worked · ROAS up to 0.73 in 3 days",
+    "note": "Banner variants can't break wanted in Mature English, so English gets a new concept. The manyplaces creative in another Mature adset is a good place to start. Japan and Korea are a budget question more than a creative one."
+   }
+  },
+  {
+   "persona": "SexyFemaleLover",
+   "id": "sexy",
+   "concept": "wanted",
+   "title": "Sexy Female Lover Refresh: Wanted",
+   "sub": "Result: 1 worked · ROAS up to 0.73 in 3 days",
    "foot": "Before = 30 Oct – 5 Nov · After = 6–8 Nov (3 days) · 4 of the files carry a Batch 42 label · Leave: keep the wanted variants on, re-read next week",
-   "note": "One adset, one result: new wanted variants took 38 percent in three days and ROAS jumped from 0.19 to 0.73. Three days is early, so we leave it and re-read next week."}
+   "note": "One adset, one result: new wanted variants took 38 percent in three days and ROAS jumped from 0.19 to 0.73. Three days is early, so we leave it and re-read next week."
+  }
  ],
  "followup": {
-  "then": "2026-10-26/refresh_review.json", "now": "followup_batch40.json",
-  "order": ["InternationalFriendFinder", "GringoMaleLover", "LocalDatingFatigue", "PassportBro"],
-  "names": {"InternationalFriendFinder": "<b>International Friend</b> · internationalfriends", "GringoMaleLover": "<b>Gringo Lover</b> · dreamlife",
-            "LocalDatingFatigue": "<b>Local Dating Fatigue</b> · banner + combo", "PassportBro": "<b>Passport Bro</b> · banner"},
-  "divider": {"eyebrow": "Section 2", "title": "Last week’s refresh, one week on",
-              "text": "Batch 40 went live 28–31 Oct. Here is its read last Tuesday next to its read now, with 8 to 11 days of data.",
-              "note": "Before the creator content, a quick look back at last week's refresh, now that it has more data."},
-  "eyebrow": "Batch 40 · read on 1 Nov vs 8 Nov", "title": "Batch 40 one week on: one more worked, most of it faded",
-  "points": ["<b>Friends iOS EN</b> moved from almost to worked: 0.44, with internationalfriends at 15%.",
-             "<b>Gringo PH</b>: dreamlife is still #1 (32%) at 0.40, so it stays on watch.",
-             "Everywhere else the Batch 40 ads fell to 0–14% of spend: Gringo and Local Dating moved on without them."],
+  "then": "2026-10-26/refresh_review.json",
+  "now": "followup_batch40.json",
+  "order": [
+   "InternationalFriendFinder",
+   "GringoMaleLover",
+   "LocalDatingFatigue",
+   "PassportBro"
+  ],
+  "names": {
+   "InternationalFriendFinder": "<b>International Friend</b> · internationalfriends",
+   "GringoMaleLover": "<b>Gringo Lover</b> · dreamlife",
+   "LocalDatingFatigue": "<b>Local Dating Fatigue</b> · banner + combo",
+   "PassportBro": "<b>Passport Bro</b> · banner"
+  },
+  "divider": {
+   "eyebrow": "Section 2",
+   "title": "Last week’s refresh, one week on",
+   "text": "Batch 40 went live 28–31 Oct. Here is its read last Tuesday next to its read now, with 8 to 11 days of data.",
+   "note": "Before the creator content, a quick look back at last week's refresh, now that it has more data."
+  },
+  "eyebrow": "Batch 40 · read on 1 Nov vs 8 Nov",
+  "title": "Batch 40 one week on: one more worked, most of it faded",
+  "points": [
+   "<b>Friends iOS EN</b> moved from almost to worked: 0.44, with internationalfriends at 15%.",
+   "<b>Gringo PH</b>: dreamlife is still #1 (32%) at 0.40, so it stays on watch.",
+   "Everywhere else the Batch 40 ads fell to 0–14% of spend: Gringo and Local Dating moved on without them."
+  ],
   "foot": "Now = from upload to 8 Nov, so it includes the days after Batch 41 landed in the same adsets. Friends PT is paused.",
   "note": "One week later, Batch 40 has one more worked, Friends iOS English, and dreamlife still leads Gringo Philippines. The rest faded: the ads lost their share and old winners took the adsets back. That is why most of this week's actions are new concepts, not more variants."
  },
  "creator": {
-  "divider": {"eyebrow": "Section 3", "title": "Creator Creative as Ads",
-              "text": "No new creator batch this week. The 16 creator ads from Batch 44 (live Fri 30 Oct), read again after 10 days.",
-              "note": "No new creator content went live this week, so this section re-reads last week's creator ads with ten days of data."},
+  "divider": {
+   "eyebrow": "Section 3",
+   "title": "Creator Creative as Ads",
+   "text": "No new creator batch this week. The 16 creator ads from Batch 44 (live Fri 30 Oct), read again after 10 days.",
+   "note": "No new creator content went live this week, so this section re-reads last week's creator ads with ten days of data."
+  },
   "eyebrow": "Live: Fri 30 Oct · 10 days of data",
   "sub": "Top 3 in 6 of 12 adsets · #1 in Gringo ID and Loc. Dating Android ES · 1 worked, 2 got worse, 1 to watch",
   "foot": "Before = 23–29 Oct · After = 30 Oct – 8 Nov · rows: creator in top 3 first (best → worst), then the rest (worst → best)",
   "note": "Ten days in, creator ads are in the top 3 of six adsets and lead two of them. Only one is a clear win: Gringo Spanish Android, up from 0.22 to 0.46. Local Dating Spanish got worse on both OS, and in Gringo Indonesia the couple ads still lead at 0.26. Our own past winners still hold everything else.",
-  "actions": {"title": "Pause the couple ads in Gringo ID and talkinghead in Loc. Dating ES",
+  "actions": {
+   "title": "Pause the couple ads in Gringo ID and talkinghead in Loc. Dating ES",
    "rows": [
-    {"owner": "Creative lead", "level": "Learn", "adsets": "<b>Gringo ES</b> · Android", "spend": "$1.5k", "action": "The one creator win: #2 at 33%, ROAS 0.22 → 0.46. Keep it on and decode it for the next Gringo ES brief."},
-    {"owner": "Media buyer", "level": "Urgent", "adsets": "<b>Gringo ID</b> · Android", "spend": "$1.0k", "action": "Pause the creator couple ads: #1 at 61% since 30 Oct, ROAS 0.25 → 0.26. Asked last week."},
-    {"owner": "Media buyer", "level": "High", "adsets": "<b>Loc. Dating ES</b> · iOS", "spend": "$1.0k", "action": "Pause the creator talkinghead: #2 at 26% while ROAS fell 0.44 → 0.39."},
-    {"owner": "Media buyer", "level": "Watch", "adsets": "<b>Loc. Dating ES</b> · Android", "spend": "$0.4k", "action": "The new adset is led by the creator talkinghead (36%) at 0.21: re-read next week."},
-    {"owner": "Leave", "action": "<b>Gringo EN · Android</b>: creator ad #3 at 12%, ROAS 0.50 → 0.45, still above 0.40: watch."}
+    {
+     "owner": "Creative lead",
+     "level": "Learn",
+     "adsets": "<b>Gringo ES</b> · Android",
+     "spend": "$1.5k",
+     "action": "The one creator win: #2 at 33%, ROAS 0.22 → 0.46. Keep it on and decode it for the next Gringo ES brief."
+    },
+    {
+     "owner": "Media buyer",
+     "level": "Urgent",
+     "adsets": "<b>Gringo ID</b> · Android",
+     "spend": "$1.0k",
+     "action": "Pause the creator couple ads: #1 at 61% since 30 Oct, ROAS 0.25 → 0.26. Asked last week."
+    },
+    {
+     "owner": "Media buyer",
+     "level": "High",
+     "adsets": "<b>Loc. Dating ES</b> · iOS",
+     "spend": "$1.0k",
+     "action": "Pause the creator talkinghead: #2 at 26% while ROAS fell 0.44 → 0.39."
+    },
+    {
+     "owner": "Media buyer",
+     "level": "Watch",
+     "adsets": "<b>Loc. Dating ES</b> · Android",
+     "spend": "$0.4k",
+     "action": "The new adset is led by the creator talkinghead (36%) at 0.21: re-read next week."
+    },
+    {
+     "owner": "Leave",
+     "action": "<b>Gringo EN · Android</b>: creator ad #3 at 12%, ROAS 0.50 → 0.45, still above 0.40: watch."
+    }
    ],
    "foot": "Read on 10 days (30 Oct – 8 Nov). The other six creator ads stayed outside the top 3: no action.",
-   "note": "One creator ad earned its place, in Gringo Spanish Android, so we keep it and learn from it. Two need pausing, and one of those was already on last week's list."}
+   "note": "One creator ad earned its place, in Gringo Spanish Android, so we keep it and learn from it. Two need pausing, and one of those was already on last week's list."
+  }
  },
  "news": {
-  "divider": {"eyebrow": "Section 4", "title": "Account news",
-              "text": "Outside our refresh: which adsets got a new #1 spender, or a creative jumping into the top 3",
-              "note": "Now the rest of the account: adsets we didn't refresh, where the top spenders moved on their own."},
-  "news": {"eyebrow": "Account news · week 2 Nov vs 26 Oct", "title": "7 new #1s; manyplaces lifts Mature iOS EN to 0.53",
-           "foot": "Sorted by ROAS after, then by biggest improvement · Before = week of 26 Oct · After = week of 2 Nov",
-           "note": "Seven adsets got a new top spender. The best news is Mature iOS English, where manyplaces took 65 percent and ROAS doubled to 0.53. Slavic iOS English moved up on combo. Christian iOS English went the other way: a new #1 and ROAS down to 0.39."},
-  "news2": {"eyebrow": "Account news · week 2 Nov vs 26 Oct", "title": "9 creatives jumped into the top 3; Slavic PT and ES fell hard",
-            "foot": "Sorted by ROAS after, then by biggest improvement · Before = week of 26 Oct · After = week of 2 Nov",
-            "note": "Nine creatives jumped into a top 3. Pickyourasian helped Asian Lover Android up to 0.42. On the other end, Slavic Portuguese and Spanish both dropped hard as combo and slider moved in, and Sexy Male fell to 0.13."},
-  "actions": {"title": "Learn from manyplaces and combo; check the Slavic and Sexy Male drops",
+  "divider": {
+   "eyebrow": "Section 4",
+   "title": "Account news",
+   "text": "Outside our refresh: which adsets got a new #1 spender, or a creative jumping into the top 3",
+   "note": "Now the rest of the account: adsets we didn't refresh, where the top spenders moved on their own."
+  },
+  "news": {
+   "eyebrow": "Account news · week 2 Nov vs 26 Oct",
+   "title": "7 new #1s; manyplaces lifts Mature iOS EN to 0.53",
+   "foot": "Sorted by ROAS after, then by biggest improvement · Before = week of 26 Oct · After = week of 2 Nov",
+   "note": "Seven adsets got a new top spender. The best news is Mature iOS English, where manyplaces took 65 percent and ROAS doubled to 0.53. Slavic iOS English moved up on combo. Christian iOS English went the other way: a new #1 and ROAS down to 0.39."
+  },
+  "news2": {
+   "eyebrow": "Account news · week 2 Nov vs 26 Oct",
+   "title": "9 creatives jumped into the top 3; Slavic PT and ES fell hard",
+   "foot": "Sorted by ROAS after, then by biggest improvement · Before = week of 26 Oct · After = week of 2 Nov",
+   "note": "Nine creatives jumped into a top 3. Pickyourasian helped Asian Lover Android up to 0.42. On the other end, Slavic Portuguese and Spanish both dropped hard as combo and slider moved in, and Sexy Male fell to 0.13."
+  },
+  "actions": {
+   "title": "Learn from manyplaces and combo; check the Slavic and Sexy Male drops",
    "rows": [
-    {"owner": "Creative", "level": "Learn", "adsets": "<b>Mature</b> iOS EN", "spend": "$1.7k", "action": "Decode manyplaces: new #1 at 65%, ROAS 0.25 → 0.53. A candidate for the Mature EN brief."},
-    {"owner": "Creative", "level": "Learn", "adsets": "<b>Slavic</b> iOS EN", "spend": "$1.4k", "action": "Combo took #1 (36%), ROAS 0.42 → 0.52."},
-    {"owner": "Media buyer", "level": "High", "adsets": "<b>Slavic</b> · iOS PT + ES", "spend": "$2.9k", "action": "Both fell hard (0.58 → 0.30, 0.35 → 0.21) as combo and slider moved in: check them before more spend."},
-    {"owner": "Media buyer", "level": "High", "adsets": "<b>Sexy Male</b> · iOS EN", "spend": "$1.0k", "action": "0.29 → 0.13 with wanted at 70%: cut budget."},
-    {"owner": "Media buyer", "level": "Watch", "adsets": "<b>Christian</b> · iOS EN", "spend": "$3.2k", "action": "New #1 beatsyncedtext and ROAS 0.52 → 0.39: no budget change until next week."}
+    {
+     "owner": "Creative",
+     "level": "Learn",
+     "adsets": "<b>Mature</b> iOS EN",
+     "spend": "$1.7k",
+     "action": "Decode manyplaces: new #1 at 65%, ROAS 0.25 → 0.53. A candidate for the Mature EN brief."
+    },
+    {
+     "owner": "Creative",
+     "level": "Learn",
+     "adsets": "<b>Slavic</b> iOS EN",
+     "spend": "$1.4k",
+     "action": "Combo took #1 (36%), ROAS 0.42 → 0.52."
+    },
+    {
+     "owner": "Media buyer",
+     "level": "High",
+     "adsets": "<b>Slavic</b> · iOS PT + ES",
+     "spend": "$2.9k",
+     "action": "Both fell hard (0.58 → 0.30, 0.35 → 0.21) as combo and slider moved in: check them before more spend."
+    },
+    {
+     "owner": "Media buyer",
+     "level": "High",
+     "adsets": "<b>Sexy Male</b> · iOS EN",
+     "spend": "$1.0k",
+     "action": "0.29 → 0.13 with wanted at 70%: cut budget."
+    },
+    {
+     "owner": "Media buyer",
+     "level": "Watch",
+     "adsets": "<b>Christian</b> · iOS EN",
+     "spend": "$3.2k",
+     "action": "New #1 beatsyncedtext and ROAS 0.52 → 0.39: no budget change until next week."
+    }
    ],
    "foot": "New #1s are 1 week old: no budget increases on them yet.",
-   "note": "Two creatives to learn from, manyplaces and combo. Three adsets for the media buyer to check, where ROAS dropped hard."}
+   "note": "Two creatives to learn from, manyplaces and combo. Three adsets for the media buyer to check, where ROAS dropped hard."
+  }
  }
 }

@@ -255,7 +255,19 @@ def persona_slide(sid, persona, rows, end, T):
     return section(sid, "\n".join(body))
 
 
+MOVE_WORDS = ("J1", "J2", "same message", "new visual", "new form", "decode", "learn", "new angle", "copy")
+
+
+def check_actions(sid, T):
+    """core/mistakes.md rules 7-8: a creative row names a move or what we learn from the incumbent."""
+    for a in T.get("rows", []):
+        if a.get("owner", "").startswith("Creative") and a.get("level") not in ("Keep", "Research", "Decide"):
+            if not any(w.lower() in a.get("action", "").lower() for w in MOVE_WORDS):
+                print(f"  ! {sid}: creative row with no incumbent lesson or jurus move: {a.get('adsets', '')}")
+
+
 def action_slide(sid, T):
+    check_actions(sid, T)
     cols = [("Owner", 210), ("Priority", 190), ("Ad sets", 320), ("Spend/wk", 140), ("Action", 772)]
     hdr = "".join(txt(w, l, fs=24, color=NAVY_TXT, weight="700", align="right" if l == "Spend/wk" else "")
                   .replace("width:140px;", "width:140px; padding:0 24px 0 0;") for l, w in cols)
@@ -289,9 +301,9 @@ def action_slide(sid, T):
 
 
 def scoreboard(sid, groups, end, T):
-    cols = [("Refresh", 452), ("Live · data", 230), ("Adsets", 110)] + [(k, 140) for k in ("Worked", "Almost", "Flat", "Watch", "Worse", "Miss")]
+    cols = [("Refresh", 452), ("Live", 230), ("Adsets", 110)] + [(k, 140) for k in ("Worked", "Almost", "Flat", "Watch", "Worse", "Miss")]
     hdr = "".join(txt(w, l, fs=26, weight="700", align="" if l in ("Refresh", "Live · data") else "center") for l, w in cols)
-    pad = "16px" if len(groups) <= 5 else "8px 16px"
+    pad = "16px" if len(groups) <= 5 else "12px 16px"
     body = [head(None, T["title"], None, size=72 if len(groups) <= 5 else 60), '<div style="display:flex; flex-direction:column">',
             f'<div style="display:flex; flex-direction:row; align-items:center; padding:10px 16px; background:{HEAD_BG}; border-radius:12px">{hdr}</div>']
     tot = {k: 0 for k in ("Worked", "Almost", "Flat", "Watch", "Worse", "Miss")}
@@ -308,10 +320,10 @@ def scoreboard(sid, groups, end, T):
             cells += (cell(140, pill(str(c[k]), *colours[k], fs=28, pad="2px 22px"), align="center") if c[k]
                       else txt(140, "–", fs=30, color="#9a969b", align="center"))
         body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:{pad}; border-bottom:1px solid {LINE}">'
-                    + txt(452, f"<b>{e(PERSONA_TITLE.get(persona, persona))}</b> · {e(concept)}", fs=28)
-                    + txt(230, f"{dlabel(up)} · {days} days", fs=26) + txt(110, str(len(rows)), fs=28, align="center") + cells + "</div>")
+                    + txt(452, f"<b>{e(PERSONA_TITLE.get(persona, persona))}</b>", fs=28)
+                    + txt(230, f"{days} days", fs=28, align="center") + txt(110, str(len(rows)), fs=28, align="center") + cells + "</div>")
     body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:{pad}; background:{INK}; border-radius:0 0 12px 12px">'
-                + txt(452, "Total", fs=28, color=PAPER, weight="700") + txt(230, T.get("days", ""), fs=26, color="#d9d4d7")
+                + txt(452, "Total", fs=28, color=PAPER, weight="700") + txt(230, T.get("days", ""), fs=26, color="#d9d4d7", align="center")
                 + txt(110, str(n), fs=28, color=PAPER, weight="700", align="center")
                 + "".join(txt(140, str(v), fs=28, color=PAPER, weight="700", align="center") for v in tot.values()) + "</div>")
     body.append("</div>")

@@ -20,8 +20,31 @@ below before calling a task done. Adding an entry is part of fixing the mistake;
 5. **Check before numbering or naming anything shared** (spec versions, concept codes): read the latest file first.
 6. **Before saying done, re-read the user's message and tick each ask.** Then check the slide against the data
    behind it (each row's concept, rank, share, before/after) and render it.
+7. **Action items are contextual or they are not done.** Each creative row says: who leads the adset and for how
+   long, what that creative shows and says and why it stops the thumb (from its decode in `brain/creatives/`), what
+   we learn from it, and which jurus we use (J1 copy a winner from a sibling adset or language, J2 a past winner in a new
+   form, same message with a new visual, new angle…). If the winner isn't decoded, **ask the creative lead for
+   screenshots or the video before writing the action, and where the idea came from** (a reference ad, a competitor,
+   a trend, a creator, our own brief), so patterns in what inspires winners show up. Store both in
+   `brain/creatives/<code>-<name>.md`.
+8. **The headline is a summary of the rows.** Every action named in an action slide's headline is a row on it.
 
 ## Entries
+
+### 2026-11-09 · Action items were generic: no lesson from the incumbent, no jurus, headline not in the rows
+- **What happened:** the Week 45 action slides said "new concept, 3+ variants" almost everywhere. They didn't say what
+  the long-running #1s (datingcontest 5–7 weeks, tweetoverlay 12 weeks, banner 16 weeks) teach us, or what emotion
+  or visual carries them. They missed the obvious jurus: copy colosseum (worked on Loc. Dating iOS EN) into Spanish,
+  the same move that made datingcontest #1 in ES. On the Local Dating slide, the headline ("pull colosseum from
+  Android, find out why it splits") didn't match the order of the rows, so the creative lead didn't find it.
+- **Why (root cause):**
+  1. I wrote actions from numbers only. Only 1 of our 100 creative files is decoded, so I had no idea what any winner
+     looks like or says, and I didn't ask. I wrote around the gap instead of naming it.
+  2. I didn't use the jurus playbook (`tools/brainstormer/playbook.md`) or the J1 and past-#1 lists the engine already
+     puts on every ticket. That knowledge was in the repo and I skipped it.
+  3. I wrote the headline and the rows separately and never checked one against the other.
+- **Rules:** 7 and 8. **Check:** `tools/report/REFRESH-REVIEW.md` → "Action items" lists what every creative row must
+  hold; `build_deck.py` warns when a creative row names no incumbent or move.
 
 ### 2026-11-09 · The Local Dating slide implied iOS ES got colosseum
 - **What happened:** the slide was titled "Local Dating Fatigue Refresh: Colosseum 50/50" and its rows did not say

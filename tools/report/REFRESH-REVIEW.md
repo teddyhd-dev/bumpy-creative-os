@@ -74,6 +74,20 @@ the change is under 0.02.
 **Tags:** NEW = the batch's creative is now #1 (blue pill) · NEW-OLD = an older creative just became #1 (peach
 pill) · `#1 for` under 2 weeks = yellow `#FFE9A8` pill (not proven yet).
 
+**Action items must be contextual** (`core/mistakes.md` rules 7–8). Every creative row holds:
+1. **The incumbent:** who is #1 in the adset, for how long, at what share.
+2. **Its decode:** what it shows in the first second, what it says, the emotion, and why it stops the thumb. This
+   comes from `brain/creatives/<code>-<name>.md`. Not decoded yet? Ask the creative lead for screenshots (first
+   second, middle, end card) or the video of its top ad before writing the action, **and where the idea came from**
+   (reference ad, competitor, trend, creator, brief), and store both there: over time it shows which sources of
+   inspiration produce winners.
+3. **The move (jurus, `tools/brainstormer/playbook.md`):** J1 = copy a winner from a sibling adset or language (the
+   ticket's `j1` list; e.g. colosseum Loc. Dating EN → ES); J2 = a past #1 of this adset in a new form (the ticket's
+   past #1s); same message with a new visual (incumbent still leads but is ageing); new angle only when nothing
+   proven fits.
+4. **The evidence** for the move (e.g. "datingcontest made the same EN → ES move and became #1 in both ES adsets").
+The headline summarises the rows: every action it names is a row on the slide.
+
 **Action priority:** weekly spend × read weight: Worse 1.0 · Miss under 0.40 0.8 · Almost / Flat 0.6 ·
 Worked, Watch and Miss (left) = leave. Pair same persona × language across OS into one brief. Media-buyer items:
 critical adsets the batch is carrying (pause / check setup), creator or test ads that took spend while ROAS
