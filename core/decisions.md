@@ -86,6 +86,35 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Proposed, waiting for the creative lead
 
+### 2026-11-09 · Singular's own numbers vs Meta's (Apr–Oct): what to do with them
+- **Data:** the Singular exports (adset × country and ad level, Mar–Oct 2026) in `data/raw/singular/`; rebuild with
+  `bash engine/singular/run.sh` (outputs in `output/data/singular/`). Page: https://claude.ai/artifact/EWy659FEtxDn2ZXUTzeWg6
+- **Findings** (30 full weeks, 30 Mar – 25 Oct; spend, impressions and clicks tie 100%):
+  - Singular D7 revenue = **1.15× Meta's on iOS, 1.30× on Android**, for the same spend. Steady week to week (iOS
+    1.05–1.22, Android 1.21–1.39), Android widening (1.26 → 1.33). ROAS Meta 0.43 iOS / 0.40 Android; Singular 0.50 / 0.51.
+  - The 0.40 bar on Meta equals **0.46 (iOS) / 0.52 (Android)** in Singular money.
+  - Installs nearly agree (Singular 0.93× iOS, 1.03× Android). Purchase counts don't: Meta reports 4.2× Singular's D7
+    purchases at a fifth of the value each, and Singular's count has bug days (Q3 workbook). Use revenue only.
+  - Countries: Meta under-reads US and CA iOS (1.27× the OS average on Singular), GB (1.18×), AU (1.15×); over-reads
+    MX iOS (0.76×) and PH iOS (0.79×).
+  - Personas keep mostly the same order (rank correlation 0.80 iOS, 0.86 Android). Singular reads LatinaFemaleLover,
+    InterracialDatingSeekers iOS and PassportBro iOS higher; InterracialDatingSeekers Android and
+    KoreanMaleCultureLover iOS lower.
+  - Adsets: same order within a week 0.75 (median rank correlation); same side of the bar in 77% of adset-weeks;
+    week-to-week moves of 5%+ go the same way 74% of the time. Creative verdicts (by delivery) don't change.
+  - App Store check (iOS): both follow proceeds about equally (level 0.83 Meta / 0.85 Singular; weekly change 0.74 / 0.68).
+  - Singular does report adsets (as "Sub Campaign Name"), but keeps the name from install time: March–June names were
+    matched to today's by identical weekly spend (94.5% of spend).
+- **Proposed:**
+  1. Keep Meta's numbers as the weekly ticket ruler for now (complete on Monday; a D7 cohort needs another week), and
+     add Singular D7 as the monthly check by persona, OS and country.
+  2. Stop treating Android as the weaker OS on Meta's numbers alone: on Singular it pays as well as iOS. Review the OS
+     budget split with Singular and, once it arrives, Google Play money.
+  3. Don't cut US, CA, GB or AU on Meta's country ROAS; the US test (spec §19 Q7) settles it with store money.
+  4. Ask for the Singular export weekly (Monday weeks), with TikTok in the same export (one ruler for both channels),
+     the Ad set ID and D30 revenue; and confirm with Singular whether revenue is before or after the store's commission
+     and which value it sends to Meta with each purchase.
+
 ### ~~2026-10-23 · Singular-era bar: green ≥ 0.35, critical < 0.28~~ (superseded 27 Oct by 0.40)
 - **Why:** old bar 0.50 / 0.40 × 0.70 (measured ruler change). Keeps the same real-money standard: 79% of spend was green on the old bar before the switch; 74% is green on 0.35 since.
 - **Applied provisionally** in the engine and dashboard so statuses mean something again. To change it, edit `BARS` in `engine/settings.py` and note it here.
