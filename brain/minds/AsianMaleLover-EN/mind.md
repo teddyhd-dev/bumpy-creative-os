@@ -35,7 +35,7 @@ _Source: Notion persona card "Gringo Lover from India —> Turned to Asian Man L
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-03; adsets to 2026-10-26, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 2 live adsets · $2.8k last week · ROAS 0.36 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |

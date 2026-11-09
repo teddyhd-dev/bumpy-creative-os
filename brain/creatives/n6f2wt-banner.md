@@ -19,7 +19,7 @@ aliases:
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-03; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-10-26)
 Includes ads written as n62Wt (confirmed fixes in core/code_aliases.csv).
 #1 in 93 of 176 adsets it ran in · $566.5k spent as #1 · $921.7k in total.
 

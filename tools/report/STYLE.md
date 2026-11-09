@@ -44,6 +44,19 @@ the strategist can still edit the drafted words before it goes out.
    C>I"), supporting screenshots, a "Hypothesis:" block.
 8. **Closing:** "Thank You:)".
 
+## How the creative lead wants decks presented (Nov 2026, any deck)
+- **One talking point per slide.** The headline is the sentence you say out loud; no paragraphs. Tables are fine.
+- **General first, then detail:** a scoreboard, then one slide per persona, each followed by its action slide.
+- **Colour carries the judgement:** ROAS pills (blue 0.40+, peach 0.32–0.39, red under 0.32), ▲/▼ for the move,
+  verdict pills, NEW / NEW-OLD tags, a yellow pill for a #1 younger than 2 weeks. Never colour alone: the word is on the pill.
+- **Action slides look different:** navy background, so the room knows the talk turned to actions. Owner first
+  (Creative before Media buyer), priority pill, one sentence per action with the number that justifies it.
+  Creative actions are per persona × language (one creative set goes to both OS); only media-buyer rows name the OS.
+- **Audience words, not codes:** Friends, Gringo, Loc. Dating, Passport Bro; concepts by name (dreamlife, banner).
+- **Sorting:** rows where the new creative made it first (best → worst), then the rest (worst → best), so the bad rows meet in the middle.
+- Leave room for the creative lead's own verdicts: don't pre-fill a "your verdict" column.
+- The launch review deck (Tuesday) follows `REFRESH-REVIEW.md` in full; the last one is in `reports/2026-10-26/deck/`.
+
 ## Voice
 - Few words, big claim, then evidence. Annotations are short and casual (lowercase is fine, ":)" allowed).
 - Every result ends in an action item.

@@ -17,7 +17,7 @@ decoded: false
 - Decoded by:
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-03; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-10-26)
 #1 in 5 of 8 adsets it ran in · $16.5k spent as #1 · $24.3k in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |

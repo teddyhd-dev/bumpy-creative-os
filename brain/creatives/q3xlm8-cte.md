@@ -60,7 +60,7 @@ middle is the same as version 1.
 (The quoted "near you" is the competitor's promise being killed, the one place it's allowed: `core/brand.md` rule 1.)
 
 <!-- generated:start facts -->
-## Where it ran (updated 2026-11-03; ads to 2026-10-26)
+## Where it ran (updated 2026-11-09; ads to 2026-10-26)
 #1 in 0 of 2 adsets it ran in · $0 spent as #1 · $371 in total.
 
 | Mind | Adset | First week | Last week | Weeks as #1 | Peak share | Spend |

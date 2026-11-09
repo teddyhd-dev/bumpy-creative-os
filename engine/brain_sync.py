@@ -330,13 +330,15 @@ def prebrief(t, n_tickets, G, runs, V, D, aw, acc, last_ad_week, bar, tickets_by
     d = D[D.adset_id == aid].sort_values("w0").tail(5).iloc[::-1]
     if len(d):
         L.append("Recent refreshes (Hit = became #1 · Strike = no new #1 while under the bar · Foul = didn't unseat a healthy #1 · "
-                 "Void = landed in an incident week, not counted):")
+                 "Void = landed in an incident week, not counted; read = spec §6.2b: Worked / Almost / Flat / Worse / Miss):")
         for x in d.itertuples():
             ads = [top_ad(V, aid, k, x.w0, (pd.to_datetime(x.w0) + pd.Timedelta(days=7)).strftime("%Y-%m-%d")) for k in str(x.codes).split()]
             L.append(f"  - {fmt_d(x.w0)}: {x.codes} · {int(x.variants_max)} variant{'s' if x.variants_max != 1 else ''} · "
-                     f"{pct(x.best_s1)} of spend in week 1 → {x.verdict}" + (f" · top ad {', '.join(a for a in ads if a)}" if any(ads) else ""))
+                     f"{pct(x.best_s1)} of spend in week 1 → {x.verdict}"
+                     + (f" · read {x.read}" if isinstance(getattr(x, "read", None), str) and x.read else "") + (f" · top ad {', '.join(a for a in ads if a)}" if any(ads) else ""))
     if t.get("in_test"):
-        L.append(f"In test now: {t['in_test']} ({t.get('test_verdict', '')}, {pct(t.get('test_s1'))} of spend in week 1)")
+        L.append(f"In test now: {t['in_test']} ({t.get('test_verdict', '')}, {pct(t.get('test_s1'))} of spend in week 1"
+                 + (f", read {t['test_read']}" if t.get("test_read") else "") + ")")
     if t.get("j1"):
         L.append("Proven nearby, never run here: " + "; ".join(
             f"{j['code']} {j['name']} (#1 in {j['won_in']}, {money(j.get('spend_as_1'))} as #1)" for j in t["j1"][:3]))

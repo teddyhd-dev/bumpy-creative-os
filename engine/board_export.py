@@ -85,13 +85,15 @@ def queue_doc():
             weeks_under=int(r.weeks_under), fading=bool(r.fading),
             reign_since=s(r.reign_since), last_refresh=s(r.last_refresh), data_start=s(r.data_start),
             in_test=s(r.in_test), test_verdict=s(r.test_verdict), test_s1=num(r.test_week1_share, 3),
+            test_read=s(getattr(r, "test_read", "")),
             low_ceiling=bool(r.low_ceiling), notes=s(r.notes),
             brief_with=[x.strip() for x in s(r.brief_with).split(",") if x.strip()],
             past=json.loads(r.past_json or "[]"),
             j1=[dict(code=s(x.code), name=s(x.name), fit=s(x.fit), won_in=s(x.won_in), spend_as_1=num(x.spend_as_1, 0),
                      last_as_1=s(x.last_as_1)) for x in j1.itertuples()],
             atbats=[dict(w0=s(x.w0), codes=s(x.codes), concepts=int(x.concepts), variants=int(x.variants_max),
-                         s1=num(x.best_s1, 3), verdict=s(x.verdict), context=s(x.context)) for x in ab.itertuples()],
+                         s1=num(x.best_s1, 3), verdict=s(x.verdict), context=s(x.context),
+                         read=s(getattr(x, "read", ""))) for x in ab.itertuples()],
             hist=hist))
     fv = F["value"]
     facts = {k: num(fv[k]) for k in fv.index if k != "last_ad_week"}

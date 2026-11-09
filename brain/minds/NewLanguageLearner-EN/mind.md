@@ -42,7 +42,7 @@ _Source: team knowledge base (bumpy-knowledge.md v1.1, Nov 2026)._
 
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-03; adsets to 2026-10-26, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 1 live adset · $2.0k last week · ROAS 0.39 (bar 0.40)
 
 | Adset | Status | Spend | ROAS | #1 now (since) |

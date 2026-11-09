@@ -38,7 +38,7 @@ _Source: Notion persona card "Passport Girl (Relocate)" (written for the persona
 - https://www.tiktok.com/@coquettec0k3head/video/7517701631878778145 — reference on the Notion card (added 2026-11-02)
 
 <!-- generated:start facts -->
-## From the data (updated 2026-11-03; adsets to 2026-10-26, ads to 2026-10-26)
+## From the data (updated 2026-11-09; adsets to 2026-10-26, ads to 2026-10-26)
 **Now:** 0 live adsets · $0 last week · ROAS – (bar 0.40)
 
 
