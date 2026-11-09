@@ -208,7 +208,9 @@ def log_doc():
     lab = lambda a: (f"{G.persona.get(a, '')} · {G.os.get(a, '')} · {G.lang.get(a, '')}" if a in G.index else a)
     atbats = [dict(adset_id=r.adset_id, adset=lab(r.adset_id), persona=s(G.persona.get(r.adset_id, "")), w0=s(r.w0), codes=s(r.codes),
                    concepts=int(r.concepts), variants=int(r.variants_max), s1=num(r.best_s1, 3), verdict=s(r.verdict),
-                   context=s(r.context), lift=num(r.adset_lift, 3), batch=s(getattr(r, "batch", ""))) for r in D.itertuples()]
+                   context=s(r.context), lift=num(r.adset_lift, 3), batch=s(getattr(r, "batch", "")), read=s(getattr(r, "read", "")),
+                   before=num(getattr(r, "roas_before", None), 3), after=num(getattr(r, "roas_after", None), 3),
+                   strike=bool(getattr(r, "counts_as_strike", False))) for r in D.itertuples()]
     O = pd.read_csv(os.path.join(OUT, "ov_weekly.csv"))
     from settings import bar
     wk = sorted(c[2:] for c in G.columns if c.startswith("s_"))
@@ -230,7 +232,33 @@ def log_doc():
             atbats=int(len(ab)), hits=int(ab.verdict.str.contains("Hit|Home run").sum()), home_runs=int((ab.verdict == "Home run").sum()),
             strikes=int(ab.verdict.str.startswith("Strike").sum()), fouls=int(ab.verdict.str.startswith("Foul").sum()),
             late=int((ab.verdict == "Late hit").sum())))
-    return dict(generated=date.today().isoformat(), atbats=atbats, weeks=weeks)
+    return dict(generated=date.today().isoformat(), atbats=atbats, weeks=weeks, launches=launch_reads(lab))
+
+
+def launch_reads(lab):
+    """The launch reviews' reads (tools/report/refresh_review.py, the Tuesday deck), per batch × adset, the latest
+    read kept when a batch was re-read (a followup file). These are the reads the board's launch log shows; the
+    engine's whole-week reads fill in for batches that never had a review."""
+    out = {}
+    for f in sorted(glob.glob(os.path.join(ROOT, "reports", "*", "*.json"))):
+        try:
+            R = json.load(open(f))
+        except Exception:
+            continue
+        if not isinstance(R, dict) or "adsets" not in R or "batch" not in R:
+            continue
+        for kind, key, rows in (("refresh", R["batch"], R.get("adsets") or []), ("creator", R.get("creator_batch") or "", R.get("creator") or [])):
+            if not key:
+                continue
+            for r in rows:
+                k = (key.lower(), str(r["adset_id"]))
+                if k in out and out[k]["end"] > R["end"]:
+                    continue
+                out[k] = dict(batch=key.lower(), kind=kind, end=R["end"], adset_id=str(r["adset_id"]), adset=lab(str(r["adset_id"])),
+                              upload=s(r.get("upload")), read=s(r.get("read")), rank=int(r.get("rank") or 0),
+                              share=num(r.get("batch_share"), 3), before=num(r.get("before"), 3), after=num(r.get("after"), 3),
+                              no1=s(r.get("no1_after")), concepts=" ".join(r.get("concepts") or []))
+    return sorted(out.values(), key=lambda x: (x["batch"], x["adset"]))
 
 
 def archive_doc():

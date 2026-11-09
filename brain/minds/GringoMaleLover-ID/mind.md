@@ -94,7 +94,7 @@ A #1 here has led a median 1 weeks (30 finished reigns). Longest: t3Wq8n bigtext
 4 since Dec: 3 hits of 3 with a final verdict (100%), 0 strikes, 0 fouls.
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
-| 2026-11-02 | GringoMaleLover · Android · ID · ID | e1rLpy | 1 | 5% | Strike (provisional) |
+| 2026-11-02 | GringoMaleLover · Android · ID · ID | e1rLpy | 1 | 5% | Foul (provisional) |
 | 2026-02-23 | GringoMaleLover · iOS · ID | 0u48ny 4g89om 7bn40k 84n6r9 90sbuw Mw4ucH d5Y6mG | 4 | 2% | Home run |
 | 2026-02-02 | GringoMaleLover · iOS · ID | Y4nR8W a2Ef3y n6f2Wt w5K8bX | 3 | 3% | Hit |
 | 2026-02-02 | GringoMaleLover · Android · ID · ID | Y4nR8W a2Ef3y n6f2Wt v8Gn7M w5K8bX | 5 | 4% | Hit |

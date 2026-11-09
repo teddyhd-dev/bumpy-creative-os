@@ -50,8 +50,6 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | GringoMaleLover · iOS · EN | ✅ Healthy | $2.6k | 0.56 | C0kM3N combo (since 2026-09-28, 6 wk) |
 | GringoMaleLover · Web · EN · PH | ▫️ Not judged | $68 | 0.00 | – |
 
-**Open tickets:** T-902208 Due (iOS · EN: ROAS 0.56)
-
 ### #1 history (latest first)
 - 2026-09-28 · GringoMaleLover · iOS · EN · C0kM3N combo · 6 wk at 69% of spend  
   top ad: `Gringolover-US-C0kM3N-Combo-ComboGringoToBrazilian-ManyForeignMenWantASeriousRelationshipWithAGirlFromDifferentCountry-FOMO-ProductAware-VID-Batch2026Week36`

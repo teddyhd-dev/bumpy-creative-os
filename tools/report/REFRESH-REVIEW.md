@@ -12,8 +12,15 @@ action items on top. Rules behind it: `core/spec.md` §6.2b (refresh read), §15
 3. `python3 tools/report/refresh_review.py --batch Batch2026WeekNN --creator Batch2026WeekMM --end <Sunday>`
    → `reports/<week>/refresh_review.json`: every adset the batch landed in, the read, the #1 before and after
    and its reign, action priorities, and Account news.
-4. Build the deck from that file (Slides artifact type; the last deck's slide HTML is in
-   `reports/2026-10-26/deck/` to copy the look). Check every number on the slides against the JSON.
+   The review is about **last week's batch** (the one that went live Mon–Sun before the meeting), never a
+   re-edit of a deck already presented.
+4. Re-read last week's batch to this Sunday: `... --batch <last week's batch> --end <Sunday> --out followup_batchNN.json`
+   (the "one week on" slide) and pass the same creator batch again while its ads still spend.
+5. Write `reports/<week>/deck_text.json` (titles, subtitles, speaker notes, action rows, the "what we made" cards;
+   `reports/2026-11-02/deck_text.json` is the model) and run `python3 tools/report/build_deck.py reports/<week>`
+   → `reports/<week>/deck/project/`. Publish it to a new Slides artifact (root = `reports/<week>/deck`, deck.json
+   and the cover first, then the rest). Check every number in the text against the JSON.
+6. The review's reads are THE reads: the engine uses them for strikes and the board's launch log (spec 1.3.6).
 
 ## Structure: one talking point per slide, the headline is the sentence you say
 Section 1 is **the refresh only**: no creator / pass-through content anywhere in it (not on the tables, not in the

@@ -105,6 +105,26 @@ def refresh_read(rank, before, after, b, cum_above=0.0):
     return "Worked" if after >= green else "Almost"
 
 
+def review_reads():
+    """(batch, adset_id) → read from every launch review in reports/*/ (refresh_review.py output; a re-read of the
+    same batch with a later end date wins). Creator sections are not refreshes and are left out."""
+    import glob
+    import json
+    out, ends = {}, {}
+    for f in sorted(glob.glob(os.path.join(ROOT, "reports", "*", "*.json"))):
+        try:
+            R = json.load(open(f))
+        except Exception:
+            continue
+        if not isinstance(R, dict) or "adsets" not in R or "batch" not in R:
+            continue
+        for r in R["adsets"]:
+            k = (str(R["batch"]).lower(), str(r["adset_id"]))
+            if k not in ends or R["end"] >= ends[k]:
+                out[k], ends[k] = r["read"], R["end"]
+    return out
+
+
 def tries(A, born, last):
     """One row per refresh try (spec §6.1; creative lead, 9 Nov 2026). A batch (the BatchYYYYWeekWW tag in the
     ad name) landing in an adset is ONE try, whatever it holds: two new concepts, or new variants of a concept
@@ -194,6 +214,15 @@ def at_bats(c, A):
     D["after_week"] = [nxt(w) if (a, nxt(w)) in AR else w for a, w in zip(D.adset_id, D.w0)]
     D["read"] = [refresh_read(rk, b, f, bar(aw, A_os.get(a)), ca)
                  for rk, b, f, aw, a, ca in zip(D.best_rank, D.roas_before, D.roas_after, D.after_week, D.adset_id, D.cum_above)]
+    # the Tuesday launch review reads a batch from its upload day (daily rows); where one exists it is THE read,
+    # so the board, the strikes and the deck agree (creative lead, 9 Nov 2026)
+    REV = review_reads()
+    D["read_src"] = "engine"
+    for i, r in D.iterrows():
+        for bt in str(r.get("batch") or "").split():
+            if (bt, str(r.adset_id)) in REV:
+                D.at[i, "read"], D.at[i, "read_src"] = REV[(bt, str(r.adset_id))], "review"
+                break
     final = D.age >= ATBAT["final_week"]
     D["verdict"] = np.select(
         [final & (D.wk_top <= ATBAT["final_week"]),

@@ -48,7 +48,7 @@ _Source: Notion persona card "Passport Bro" (written for the persona across lang
 | PassportBro · Android · EN · Serious | 🔻 Falling | $5.3k | 0.40 | C0kM3N combo (since 2026-10-26, 2 wk) |
 | PassportBro · iOS · EN · Serious | 🔻 Falling | $4.9k | 0.34 | k4Rm9p datingcontest (since 2026-10-05, 5 wk) |
 
-**Open tickets:** T-801709 Decaying (Android · EN · Serious: Under 0.40 and falling: ROAS 0.40 from 0.45); T-379306 Decaying (iOS · EN · Serious: Under 0.40 and falling: ROAS 0.34 from 0.43)
+**Open tickets:** T-379306 Decaying (iOS · EN · Serious: Under 0.40 and falling: ROAS 0.34 from 0.43); T-801709 Decaying (Android · EN · Serious: Under 0.40 and falling: ROAS 0.40 from 0.45)
 
 ### #1 history (latest first)
 - 2026-10-26 · PassportBro · Android · EN · Serious · C0kM3N combo · 2 wk at 32% of spend  

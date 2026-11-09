@@ -8,7 +8,7 @@
   "deep": 0.28
  },
  "capacity": 12.0,
- "tickets_open": 77,
+ "tickets_open": 75,
  "facts": {
   "atbats_final": 291.0,
   "hit_rate": 0.4433,
@@ -36,10 +36,10 @@
   "won_anywhere_1": 0.3103,
   "won_anywhere_5plus": 0.7273,
   "capacity_per_week": 12.0,
-  "tickets_open": 77.0,
+  "tickets_open": 75.0,
   "tickets_need_refresh": 55.0,
   "tickets_fading": 17.0,
-  "tickets_review": 0.0,
+  "tickets_review": 2.0,
   "brief_groups_need_refresh": 41.0,
   "turnaround_hit_rate": 0.6,
   "challenger_hit_rate": 0.298

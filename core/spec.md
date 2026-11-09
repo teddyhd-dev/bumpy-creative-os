@@ -15,6 +15,10 @@ owner: Creative lead (ads creative) · maintained with Claude
 - **One refresh = one batch (§6.1):** a batch (the `BatchYYYYWeekWW` tag in the ad name) landing in an adset is one at-bat, whatever it holds: two concepts in one batch count once, and new variants of a concept already running there count too (ranked apart from that concept's older ads, as in the launch review). Batches landing in the same adset in the same week share one before/after ROAS, so they are one at-bat. Ads without a batch tag (old names): the new concepts entering the adset in the same week, as before. `tries()` in `engine/tickets.py`.
 - **Creator content is not a refresh:** creator-program ads (strategist `TIN`) compete for spend but never make an at-bat, so they can't add or clear a strike. They are judged in the launch review's creator section.
 - **Watch (§6.2b):** the new creative is in the top 3 inside the 80%, ROAS went down but the adset is still at the bar (0.40+). Not a strike; leave it and re-read next week. **Worse** is now "down and under the bar". First case: Gringo iOS PH, Batch 40 (dreamlife #1, 0.45 → 0.41).
+- **The launch review's read is the read:** where a Tuesday launch review read a batch (from its upload day,
+  daily rows), the engine uses that read for strikes and tickets instead of its own whole-week read, so the deck,
+  the board and the strikes agree; a re-read of the same batch replaces it. `review_reads()` in `engine/tickets.py`.
+- **Launch log on the board:** one row per batch with reads and week-4 outcomes (Guide → Launch log).
 - Effect on the board (same data, old rule → new): 305 → 350 at-bats since December (variant batches now count); Latina Android EN Casual 4 → 2 strikes (no longer 3 strikes), International Friend Android EN 0 → 1 (its internationalfriends batch read Worse), Gringo iOS TH Worse → Watch.
 
 **1.3.4 (2026-11-03): many strategists, one memory; the strategists' files merged.**

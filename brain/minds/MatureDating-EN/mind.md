@@ -51,7 +51,7 @@ _Source: Notion persona card "40+ Singles Second Chance" (written for the person
 | MatureDating · iOS · EN · 50to60 | ✅ Healthy | $1.7k | 0.53 | 8k4opR manyplaces (since 2026-11-02, 1 wk) |
 | MatureDating · Android · EN · 50to60 | 🔻 Falling | $1.0k | 0.38 | 8k4opR manyplaces (since 2026-09-14, 8 wk) |
 
-**Open tickets:** T-339740 Due (iOS · EN · 30to40: ROAS 0.43); T-160708 Decaying (Android · EN · 30to40: ROAS 0.28 (prev 0.37), under 0.32); T-338070 Decaying (Android · EN · 50to60: Under 0.40 and falling: ROAS 0.38 from 0.43)
+**Open tickets:** T-160708 Decaying (Android · EN · 30to40: ROAS 0.28 (prev 0.37), under 0.32); T-339740 Due (iOS · EN · 30to40: ROAS 0.43); T-338070 Decaying (Android · EN · 50to60: Under 0.40 and falling: ROAS 0.38 from 0.43)
 
 ### #1 history (latest first)
 - 2026-11-02 · MatureDating · iOS · EN · 50to60 · 8k4opR manyplaces · 1 wk at 65% of spend  
@@ -93,7 +93,7 @@ A #1 here has led a median 2 weeks (47 finished reigns). Longest: a2Ef3y wanted,
 | Landed | Adset | Concepts | Variants | Week-1 share | Verdict |
 |---|---|---|---|---|---|
 | 2026-11-02 | MatureDating · iOS · EN · 30to40 | n6f2Wt | 6 | 4% | Foul (provisional) |
-| 2026-11-02 | MatureDating · Android · EN · 30to40 | n6f2Wt | 6 | 9% | Strike (provisional) |
+| 2026-11-02 | MatureDating · Android · EN · 30to40 | n6f2Wt | 6 | 9% | Foul (provisional) |
 | 2026-08-17 | MatureDating · iOS · EN · 50to60 | X4nR8W | 1 | 9% | Home run |
 | 2026-08-17 | MatureDating · Android · EN · 50to60 | X4nR8W | 1 | 6% | Home run |
 | 2026-08-03 | MatureDating · iOS · EN · 30to40 | 8k4opR X4nR8W a2Ef3y | 18 | 8% | Home run |

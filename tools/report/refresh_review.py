@@ -1,7 +1,7 @@
 """Refresh review: the data behind the weekly launch-review deck (tools/report/REFRESH-REVIEW.md).
 
 Usage (from the repo root, after `bash engine/run_all.sh`):
-    python3 tools/report/refresh_review.py --batch Batch2026Week40 [--creator Batch2026Week44] [--end 2026-11-01]
+    python3 tools/report/refresh_review.py --batch Batch2026Week40 [--creator Batch2026Week44] [--end 2026-11-01] [--out followup.json]
 
 Needs daily ad rows (an `ad_` export with one row per ad per day) for the review weeks: upload days and
 before/after windows are measured in days. Writes reports/<week>/refresh_review.json and prints a summary.
@@ -143,6 +143,7 @@ def main():
     ap.add_argument("--batch", required=True)
     ap.add_argument("--creator", default="")
     ap.add_argument("--end", default=None)
+    ap.add_argument("--out", default="refresh_review.json", help="file name in reports/<week>/ (e.g. a follow-up read)")
     a = ap.parse_args()
     d, daily, dims = load(a.batch, a.creator)
     end = pd.Timestamp(a.end) if a.end else daily.day.max()
@@ -200,7 +201,7 @@ def main():
                account_news=json.loads(N.to_json(orient="records")))
     od = os.path.join(ROOT, "reports", last_week)
     os.makedirs(od, exist_ok=True)
-    with open(os.path.join(od, "refresh_review.json"), "w") as f:
+    with open(os.path.join(od, a.out), "w") as f:
         json.dump(out, f, indent=1)
     pd.set_option("display.width", 220)
     print(R[["upload", "persona", "os", "lang", "before", "after", "rank", "batch_share", "read", "no1_after", "no1_tag",

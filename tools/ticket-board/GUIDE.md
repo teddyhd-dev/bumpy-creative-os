@@ -71,6 +71,13 @@ What moves the needle: 20%+ of the adset's spend in week 1, strong hook and hold
 - Header: open tickets, no brief yet, in flight, fading with no brief, refreshes a week, the ROAS bar.
 - Queue top 10: where money is at risk (how bad × how much it spends). The dashed line shows what fits this week.
 
+## Launch log
+One row per batch, newest first: how many adsets it landed in, the read now (worked / almost / flat / watch /
+worse / miss) and the final at week 4 (won = became the adset's #1, lost = a strike, no strike, or still running,
+with the strikes so far). Click a batch to see every adset. For batches in a Tuesday launch review the read is
+that review's read, updated when the batch is re-read; older batches use the engine's whole-week read. Creator
+batches show their read but never count as refreshes.
+
 ## Personas and Log
 - **Personas** is the living persona file: live state, open tickets, what wins (last 26 weeks), the Notion card, retro learnings and signals. Updated every Monday and with every retro.
 - **Log** keeps everything permanently: briefs and experiments (board + Notion history), every refresh since December with its verdict, and week by week (plus a copy of each week's queue from 27 Oct).

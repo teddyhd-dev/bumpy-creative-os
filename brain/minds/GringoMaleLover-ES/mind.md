@@ -52,7 +52,7 @@ _Source: Notion persona card "Gringo Lover from Brazil" (written for the persona
 | GringoMaleLover · iOS · ES · ES | 🚀 Scaling | $1.6k | 0.44 | X4nR8W talkinghead (since 2026-10-26, 2 wk) |
 | GringoMaleLover · Android · ES · ES | ✅ Healthy | $1.5k | 0.48 | n6f2Wt banner (since 2026-11-02, 1 wk) |
 
-**Open tickets:** T-293353 Decaying (iOS · ES · ES: ROAS 0.44, spend +53% vs 2 weeks ago); T-298889 Decaying (Android · ES · ES: ROAS 0.48)
+**Open tickets:** T-298889 Decaying (Android · ES · ES: ROAS 0.48)
 
 ### #1 history (latest first)
 - 2026-11-02 · GringoMaleLover · Android · ES · ES · n6f2Wt banner · 1 wk at 47% of spend  
