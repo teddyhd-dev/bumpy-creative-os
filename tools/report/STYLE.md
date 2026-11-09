@@ -54,6 +54,13 @@ the strategist can still edit the drafted words before it goes out.
   Creative actions are per persona × language (one creative set goes to both OS); only media-buyer rows name the OS.
 - **Audience words, not codes:** Friends, Gringo, Loc. Dating, Passport Bro; concepts by name (dreamlife, banner).
 - **Sorting:** rows where the new creative made it first (best → worst), then the rest (worst → best), so the bad rows meet in the middle.
+- **Every row names the creative that landed there** ("New creative" column): a persona can get different concepts
+  per language, and a title never stands in for the rows. Titles name every concept, with the language when they
+  differ ("Local Dating: Colosseum (EN), Talkinghead (ES)").
+- **Place in the adset:** 🥇 🥈 🥉 for #1–#3, then #4, #5…, as in "Yes · 🥈 · 27%".
+- **Before / after:** before = the adset's ROAS over the 7 days before the upload day (spend-weighted, so one bad
+  day can't decide it; daily ROAS swings about 0.4 within a week); after = upload day to the Sunday. Both are
+  averages; the 8-week line shows the weekly points.
 - Leave room for the creative lead's own verdicts: don't pre-fill a "your verdict" column.
 - The launch review deck (Tuesday) follows `REFRESH-REVIEW.md` in full; the last one is in `reports/2026-10-26/deck/`.
 

@@ -18,6 +18,7 @@ owner: Creative lead (ads creative) · maintained with Claude
 - **The launch review's read is the read:** where a Tuesday launch review read a batch (from its upload day,
   daily rows), the engine uses that read for strikes and tickets instead of its own whole-week read, so the deck,
   the board and the strikes agree; a re-read of the same batch replaces it. `review_reads()` in `engine/tickets.py`.
+- **Mistakes log:** `core/mistakes.md`, read at the start of every session (AGENTS.md).
 - **Launch log on the board:** one row per batch with reads and week-4 outcomes (Guide → Launch log).
 - Effect on the board (same data, old rule → new): 305 → 350 at-bats since December (variant batches now count); Latina Android EN Casual 4 → 2 strikes (no longer 3 strikes), International Friend Android EN 0 → 1 (its internationalfriends batch read Worse), Gringo iOS TH Worse → Watch.
 

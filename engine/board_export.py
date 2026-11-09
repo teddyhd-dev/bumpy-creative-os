@@ -206,7 +206,11 @@ def log_doc():
     G = pd.read_csv(os.path.join(OUT, "grid.csv"), dtype={"adset_id": str}, low_memory=False)
     G = G[G.level == "adset"].set_index("adset_id")
     lab = lambda a: (f"{G.persona.get(a, '')} · {G.os.get(a, '')} · {G.lang.get(a, '')}" if a in G.index else a)
+    cn = pd.read_csv(os.path.join(ROOT, "core", "concepts.csv"), dtype=str)
+    cname = {str(c).lower(): str(n) for c, n in zip(cn.iloc[:, 0], cn.iloc[:, 1]) if isinstance(n, str)}
+    names = lambda codes: ", ".join(dict.fromkeys(cname.get(str(c).lower(), str(c)) for c in str(codes).split()))
     atbats = [dict(adset_id=r.adset_id, adset=lab(r.adset_id), persona=s(G.persona.get(r.adset_id, "")), w0=s(r.w0), codes=s(r.codes),
+                   names=names(r.codes), rank=int(r.best_rank) if pd.notna(r.best_rank) and r.best_rank < 99 else None,
                    concepts=int(r.concepts), variants=int(r.variants_max), s1=num(r.best_s1, 3), verdict=s(r.verdict),
                    context=s(r.context), lift=num(r.adset_lift, 3), batch=s(getattr(r, "batch", "")), read=s(getattr(r, "read", "")),
                    before=num(getattr(r, "roas_before", None), 3), after=num(getattr(r, "roas_after", None), 3),
@@ -257,7 +261,8 @@ def launch_reads(lab):
                 out[k] = dict(batch=key.lower(), kind=kind, end=R["end"], adset_id=str(r["adset_id"]), adset=lab(str(r["adset_id"])),
                               upload=s(r.get("upload")), read=s(r.get("read")), rank=int(r.get("rank") or 0),
                               share=num(r.get("batch_share"), 3), before=num(r.get("before"), 3), after=num(r.get("after"), 3),
-                              no1=s(r.get("no1_after")), concepts=" ".join(r.get("concepts") or []))
+                              no1=s(r.get("no1_after")), concepts=", ".join(r.get("concepts") or []),
+                              spend=num(r.get("spend_week"), 0), priority=num(r.get("priority"), 0))
     return sorted(out.values(), key=lambda x: (x["batch"], x["adset"]))
 
 

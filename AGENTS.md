@@ -4,6 +4,10 @@ Bumpy is an international dating app. This repo turns weekly ad and store export
 memory of every audience ("minds") and every experiment, and the tools the team uses on top. Keep this
 file short: it points to where things are. Read only what your task needs.
 
+**Before any task, read `core/mistakes.md`** (Claude's mistakes log: what went wrong before, why, and the rules
+that stop it) and check your work against its rules before saying it's done. When you get something wrong,
+apologise, or are corrected, add an entry there (what happened, why, the rule, how it's checked) in the same session.
+
 ## Where things are
 | Folder | What | Who writes |
 |---|---|---|

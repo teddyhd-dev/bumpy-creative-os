@@ -76,7 +76,7 @@ def arrow(b, a, fs=26, delta=False):
 
 def pill(text, fg, bg, fs=24, pad="2px 14px", extra=""):
     return (f'<p style="padding:{pad}; font-family:{OS_FONT}; font-size:{fs}px; font-weight:700; color:{fg}; '
-            f'background:{bg}; {extra}border-radius:256px">{e(text)}</p>')
+            f'background:{bg}; {extra}border-radius:256px; white-space:nowrap">{e(text)}</p>')
 
 
 def spark(weekly, label, w=210, h=42):
@@ -105,6 +105,19 @@ def spark(weekly, label, w=210, h=42):
             f'<circle cx="{x:.0f}" cy="{y:.0f}" r="8" fill="{dot}"/></svg>')
 
 
+MEDAL = {1: "🥇", 2: "🥈", 3: "🥉"}
+SHORT = {"colosseum5050": "colosseum 50/50"}
+
+
+def place(rank):
+    """Rank in the adset: medals for the top 3 (easier to scan), #N below."""
+    return MEDAL.get(int(rank), f"#{int(rank)}")
+
+
+def creative(r):
+    return ", ".join(SHORT.get(c, c) for c in (r.get("concepts") or []))
+
+
 def share(s):
     return f"{s * 100:.1f}%" if s < 0.01 else f"{round(s * 100)}%"
 
@@ -116,7 +129,7 @@ def reign(r, days):
     w = int(r.get("no1_weeks") or 0)
     if w < 2:
         return pill(f"{max(w, 1)} week", "#5a4500", "#ffe9a8")
-    return f'<p style="font-family:{OS_FONT}; font-size:26px; color:{INK}">{w} weeks</p>'
+    return f'<p style="font-family:{OS_FONT}; font-size:24px; color:{INK}">{w} weeks</p>'
 
 
 def no1(r):
@@ -125,7 +138,7 @@ def no1(r):
         return pill(f"NEW · {name}", "#1b2a33", "#53afd4", fs=22, pad="2px 12px")
     if tag == "NEW-OLD":
         return pill(f"NEW-OLD · {name}", "#6b2a12", "#fdd3c2", fs=22, pad="2px 12px")
-    return f'<p style="font-family:{OS_FONT}; font-size:26px; color:{INK}">{e(name)}{f" ({round(s * 100)}%)" if s >= 0.6 else ""}</p>'
+    return f'<p style="font-family:{OS_FONT}; font-size:24px; color:{INK}">{e(name)}{f" ({round(s * 100)}%)" if s >= 0.6 else ""}</p>'
 
 
 def cell(width, inner, flex=True, align="", gap=""):
@@ -214,8 +227,8 @@ def persona_slide(sid, persona, rows, end, T):
     labels = adset_labels(rows)
     up = min(r["upload"] for r in rows)
     days = (date.fromisoformat(end) - date.fromisoformat(up)).days + 1
-    cols = [("Ad set", 250), ("ROAS, 8 weeks", 230), ("Before", 130), ("After", 180), ("New in top 3? · share", 250),
-            ("Current #1 spender", 290), ("#1 for", 150), ("Verdict", 152)]
+    cols = [("Ad set", 210), ("ROAS, 8 weeks", 190), ("Before", 120), ("After", 170), ("New creative", 220),
+            ("In top 3? · share", 190), ("Current #1 spender", 250), ("#1 for", 120), ("Verdict", 162)]
     pad = "8px 16px" if len(rows) <= 7 else "4px 16px"
     body = [head(f"Live: {dlabel(up)} · {days} days of data", e(T["title"]), e(T.get("sub") or "Result: " + result_line(counts(rows)))),
             '<div style="display:flex; flex-direction:column">', header_row(cols)]
@@ -224,17 +237,18 @@ def persona_slide(sid, persona, rows, end, T):
         bd = "" if i == len(rows) - 1 else f" border-bottom:1px solid {LINE};"
         d = (date.fromisoformat(end) - date.fromisoformat(r["upload"])).days + 1
         top = r["rank"] <= 3
-        intop = (f'<b>Yes</b> · #{r["rank"]} · {share(r["batch_share"])}' if top else f'No · #{r["rank"]} · {share(r["batch_share"])}')
+        intop = (f'<b>Yes</b> · {place(r["rank"])} · {share(r["batch_share"])}' if top else f'No · {place(r["rank"])} · {share(r["batch_share"])}')
         fg, bg, word = READ_PILL[r["read"]]
         body.append(
             f'<div style="display:flex; flex-direction:row; align-items:center; padding:{pad};{hl}{bd}">'
-            + txt(250, e(labels[r["adset_id"]]))
-            + f'<div style="width:230px; display:flex; flex-direction:column">{spark(r["weekly_roas"], AUD.get(persona, persona) + " " + labels[r["adset_id"]])}</div>'
-            + cell(130, roas_pill(r["before"]))
-            + cell(180, roas_pill(r["after"]) + arrow(r["before"], r["after"]), gap="10px")
-            + txt(250, intop, color=INK if top else MUTED)
-            + cell(290, no1(r)) + cell(150, reign(r, d))
-            + cell(152, pill(word, fg, bg), align="end") + "</div>")
+            + txt(210, e(labels[r["adset_id"]]))
+            + f'<div style="width:190px; display:flex; flex-direction:column">{spark(r["weekly_roas"], AUD.get(persona, persona) + " " + labels[r["adset_id"]], w=170, h=40)}</div>'
+            + cell(120, roas_pill(r["before"]))
+            + cell(170, roas_pill(r["after"]) + arrow(r["before"], r["after"]), gap="10px")
+            + txt(220, e(creative(r)), fs=22)
+            + txt(190, intop, color=INK if top else MUTED)
+            + cell(250, no1(r)) + cell(120, reign(r, d))
+            + cell(162, pill(word, fg, bg), align="end") + "</div>")
     body.append("</div>")
     body.append(foot(T["foot"]))
     body.append(aside(T["note"]))
@@ -355,8 +369,8 @@ def creator_slide(sid, rows, end, T):
                     + f'<div style="width:210px; display:flex; flex-direction:column">{spark(r["weekly_roas"], lab, w=190, h=38)}</div>'
                     + cell(120, roas_pill(r["before"], fs=22, pad="2px 12px"))
                     + cell(170, roas_pill(r["after"], fs=22, pad="2px 12px") + arrow(r["before"], r["after"], fs=24), gap="8px")
-                    + txt(220, (f'<b>Yes</b> · #{r["rank"]} · {share(r["batch_share"])}' if top else f'No · #{r["rank"]} · {share(r["batch_share"])}'), fs=24, color=INK if top else MUTED)
-                    + txt(190, e(", ".join(r.get("concepts") or [])), fs=24)
+                    + txt(220, (f'<b>Yes</b> · {place(r["rank"])} · {share(r["batch_share"])}' if top else f'No · {place(r["rank"])} · {share(r["batch_share"])}'), fs=24, color=INK if top else MUTED)
+                    + txt(190, e(creative(r)), fs=24)
                     + cell(240, cur) + cell(152, pill(word, fg, bg, fs=22, pad="2px 12px"), align="end") + "</div>")
     body.append("</div>")
     body.append(foot(T["foot"], bottom=56))

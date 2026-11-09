@@ -1025,34 +1025,48 @@ function renderLog(){
 
 /* ---------- launch log: every batch, how it went ---------- */
 const RD_KEYS=["Worked","Almost","Flat","Watch","Worse","Miss"];
+const MEDAL={1:"🥇",2:"🥈",3:"🥉"}; const place=r=>r?(MEDAL[r]||"#"+r):"–";
 function launchBatches(){
   const byB={}; const get=(b,kind)=>byB[b]||(byB[b]={batch:b, kind:kind||"refresh", rows:{}, end:""});
   ((S.log&&S.log.atbats)||[]).forEach(a=>{ String(a.batch||"").split(/\s+/).filter(Boolean).forEach(b=>{ const B=get(b);
     const r=B.rows[a.adset_id]||(B.rows[a.adset_id]={adset_id:a.adset_id, adset:a.adset, persona:a.persona});
-    Object.assign(r,{w0:a.w0, eread:a.read, verdict:a.verdict, strike:a.strike, ebefore:a.before, eafter:a.after, codes:a.codes}); }); });
+    Object.assign(r,{w0:a.w0, eread:a.read, verdict:a.verdict, strike:a.strike, ebefore:a.before, eafter:a.after, codes:a.codes, names:a.names, erank:a.rank, es1:a.s1}); }); });
   ((S.log&&S.log.launches)||[]).forEach(l=>{ const B=get(l.batch,l.kind); B.kind=l.kind; if(l.end>B.end) B.end=l.end;
     const r=B.rows[l.adset_id]||(B.rows[l.adset_id]={adset_id:l.adset_id, adset:l.adset, persona:String(l.adset||"").split(" · ")[0]});
-    Object.assign(r,{read:l.read, upload:l.upload, rank:l.rank, share:l.share, before:l.before, after:l.after, no1:l.no1, concepts:l.concepts, reviewed:true}); });
-  return Object.values(byB).map(B=>{ const rows=Object.values(B.rows); rows.forEach(r=>{ r.r=r.read||r.eread||""; });
+    Object.assign(r,{read:l.read, upload:l.upload, rank:l.rank, share:l.share, before:l.before, after:l.after, no1:l.no1, concepts:l.concepts, spend:l.spend, priority:l.priority, reviewed:true}); });
+  return Object.values(byB).map(B=>{ const rows=Object.values(B.rows); rows.forEach(r=>{ r.r=r.read||r.eread||""; r.cr=r.concepts||r.names||r.codes||""; r.rk=r.rank||r.erank||null; r.sh=r.share??r.es1; r.b=r.before??r.ebefore; r.a=r.after??r.eafter; });
     const start=rows.map(r=>r.upload||r.w0).filter(Boolean).sort()[0]||""; return {...B, rows, start}; }).sort((a,b)=>b.start.localeCompare(a.start)); }
 function outcome(v){ v=v||""; if(!v) return "none"; if(/Void/.test(v)) return "void"; if(/provisional/.test(v)) return "running"; if(/Hit|Home run/.test(v)) return "won"; if(/^Strike/.test(v)) return "lost"; return "nostrike"; }
 function rdCount(rows){ const c={}; RD_KEYS.forEach(k=>c[k]=0); rows.forEach(r=>{ const k=String(r.r).startsWith("Miss")?"Miss":r.r; if(k in c) c[k]++; }); return c; }
 function rdPills(c){ return RD_KEYS.filter(k=>c[k]).map(k=>`<span class="rd rd-${k}" title="${esc(READ_TIP[k]||k)}">${c[k]} ${esc(k.toLowerCase())}</span>`).join(" ")||`<small style="color:var(--faint)">no read</small>`; }
 function bLabel(b){ const m=String(b).match(/batch(\d{4})week(\d+)/i); return m?`Batch ${+m[2]}${m[1]!=="2026"?" ("+m[1]+")":""}`:b; }
+function shortAdset(a){ const p=String(a||"").split(" · "); return [p[0].replace(/(Female|Male)?Lover$|Seekers$|Finder$|Worldwide$|Fatigue$/,""),p[1],p[2]].filter(Boolean).join(" "); }
+function whatWorked(B){ const m={}; B.rows.filter(r=>r.r==="Worked"||outcome(r.verdict)==="won").forEach(r=>{ const k=r.cr||"?"; (m[k]=m[k]||[]).push(shortAdset(r.adset)); });
+  const xs=Object.entries(m).sort((a,b)=>b[1].length-a[1].length); if(!xs.length) return `<small style="color:var(--faint)">nothing yet</small>`;
+  return xs.slice(0,3).map(([c,a])=>`<b>${esc(c)}</b> <small style="color:var(--muted)">${esc(a.slice(0,3).join(", "))}${a.length>3?` +${a.length-3}`:""}</small>`).join("<br>")+(xs.length>3?`<br><small style="color:var(--muted)">+${xs.length-3} more</small>`:""); }
+function deckOrder(rows){ // the deck's order: personas by priority (spend × how bad), then in each: top 3 best → worst, the rest worst → best
+  const g={}; rows.forEach(r=>{ (g[r.persona]=g[r.persona]||[]).push(r); });
+  const pri=xs=>xs.reduce((a,r)=>a+(+r.priority||0),0), sp=xs=>xs.reduce((a,r)=>a+(+r.spend||0),0);
+  return Object.entries(g).sort((a,b)=>(pri(b[1])-pri(a[1]))||(sp(b[1])-sp(a[1]))||a[0].localeCompare(b[0])).map(([p,xs])=>{
+    const top=xs.filter(r=>r.rk&&r.rk<=3).sort((a,b)=>(b.a??-1)-(a.a??-1)), rest=xs.filter(r=>!(r.rk&&r.rk<=3)).sort((a,b)=>(a.a??9)-(b.a??9));
+    return [p,[...top,...rest]]; }); }
 function renderLaunches(out, f, needle){
-  let bs=launchBatches().map(B=>({...B, rows:B.rows.filter(r=>(!f.persona||r.persona===f.persona) && (!needle||[B.batch,r.adset,r.codes,r.concepts].join(" ").toLowerCase().includes(needle)))})).filter(B=>B.rows.length);
+  let bs=launchBatches().map(B=>({...B, rows:B.rows.filter(r=>(!f.persona||r.persona===f.persona) && (!needle||[B.batch,r.adset,r.cr].join(" ").toLowerCase().includes(needle)))})).filter(B=>B.rows.length);
   const all=bs.flatMap(B=>B.kind==="creator"?[]:B.rows); const oc={}; all.forEach(r=>{ const o=outcome(r.verdict); oc[o]=(oc[o]||0)+1; });
   const fin=(oc.won||0)+(oc.lost||0)+(oc.nostrike||0);
-  let h=`<p class="note" style="margin-top:0">Every batch that landed in an adset, newest first. <b>Read</b> = the early call (spec §6.2b): for batches in a Tuesday launch review it is that review's read, updated when the batch is re-read; older batches use the engine's whole-week read. <b>Final</b> = the week-4 verdict: won = became the adset's #1, lost = a strike, no strike = a challenger that didn't take over a healthy #1. Click a batch for its adsets.</p>
+  let h=`<p class="note" style="margin-top:0">Every batch that landed in an adset, newest first. <b>Read</b> = the early call (spec §6.2b): for batches in a Tuesday launch review it is that review's read, updated when the batch is re-read; older batches use the engine's whole-week read. <b>Final</b> = the week-4 verdict: won = became the adset's #1, lost = a strike, no strike = a challenger that didn't take over a healthy #1. <b>What worked</b> = the creatives that read Worked or won, and where. Click a batch for its adsets, in the same order as the Tuesday deck.</p>
   <div class="facts" style="margin-bottom:12px"><div><b class="num">${bs.filter(B=>B.kind!=="creator").length}</b><span>Batches</span></div><div><b class="num">${all.length}</b><span>Adset landings</span></div><div><b class="num">${oc.won||0}${fin?` <small style="font-size:12px;color:var(--muted)">${pct((oc.won||0)/fin)}</small>`:""}</b><span>Won (final)</span></div><div><b class="num">${oc.lost||0}</b><span>Lost (final strikes)</span></div><div><b class="num">${oc.nostrike||0}</b><span>No strike (final)</span></div><div><b class="num">${oc.running||0}</b><span>Still running</span></div></div>
-  <div class="tablewrap scroll"><table class="ltable"><thead><tr><th>Batch</th><th>Live from</th><th class="r">Adsets</th><th>Read now</th><th>Final at week 4</th><th>Concepts</th></tr></thead><tbody>`;
+  <div class="tablewrap scroll"><table class="ltable"><thead><tr><th>Batch</th><th>Live from</th><th class="r">Adsets</th><th>Read now</th><th>Final at week 4</th><th>What worked</th></tr></thead><tbody>`;
   bs.forEach(B=>{ const c=rdCount(B.rows); const o={}; B.rows.forEach(r=>{ const k=outcome(r.verdict); o[k]=(o[k]||0)+1; });
-    const fo=B.kind==="creator"?`<small style="color:var(--muted)">creator content: not a refresh, no strikes</small>`:([["won","won"],["lost","lost"],["nostrike","no strike"],["running","running"],["void","void"]].filter(([k])=>o[k]).map(([k,w])=>`<span class="pill ${k==="won"?"v-hit":k==="lost"?"v-strike":"v-foul"}${k==="running"?" v-prov":""}">${o[k]} ${w}</span>`).join(" ")||"–")+(o.running?` <small style="color:var(--muted)">${B.rows.filter(r=>outcome(r.verdict)==="running"&&r.strike).length} strike${B.rows.filter(r=>outcome(r.verdict)==="running"&&r.strike).length===1?"":"s"} so far</small>`:"");
-    const concepts=[...new Set(B.rows.flatMap(r=>String(r.concepts||r.codes||"").split(/[\s,]+/)).filter(Boolean))].slice(0,6).join(", ");
+    const ns=B.rows.filter(r=>outcome(r.verdict)==="running"&&r.strike).length;
+    const fo=B.kind==="creator"?`<small style="color:var(--muted)">creator content: not a refresh, no strikes</small>`:([["won","won"],["lost","lost"],["nostrike","no strike"],["running","running"],["void","void"]].filter(([k])=>o[k]).map(([k,w])=>`<span class="pill ${k==="won"?"v-hit":k==="lost"?"v-strike":"v-foul"}${k==="running"?" v-prov":""}">${o[k]} ${w}</span>`).join(" ")||"–")+(o.running?` <small style="color:var(--muted)">${ns} strike${ns===1?"":"s"} so far</small>`:"");
     const open=!!S.logf.open[B.batch];
-    h+=`<tr class="click" data-lbatch="${esc(B.batch)}"><td><b>${open?"▾":"▸"} ${esc(bLabel(B.batch))}</b>${B.kind==="creator"?` <span class="chip t-Manual">Creator</span>`:""}${B.end?`<div style="font-size:11px;color:var(--muted)">read to ${esc(fmtDate(B.end))}</div>`:""}</td><td class="num">${esc(fmtDate(B.start))}</td><td class="r num">${B.rows.length}</td><td>${rdPills(c)}</td><td>${fo}</td><td class="clip">${esc(concepts)}</td></tr>`;
-    if(open) B.rows.slice().sort((a,b)=>String(a.adset).localeCompare(String(b.adset))).forEach(r=>{ const k=outcome(r.verdict);
-      h+=`<tr style="background:var(--sunk)"><td style="padding-left:26px">${esc(r.adset||r.adset_id)}</td><td class="num">${esc(fmtDate(r.upload||r.w0))}</td><td class="r num">${r.rank?`#${r.rank} · ${pct(r.share)}`:"–"}</td><td>${r.r?readHTML(r.r):"–"} <small class="num" style="color:var(--muted)">${r2(r.before??r.ebefore)} → ${r2(r.after??r.eafter)}</small></td><td>${!r.verdict?`<small style="color:var(--faint)">${B.kind==="creator"?"not a refresh":"not counted (too small or adset too young)"}</small>`:k==="running"?`<span class="pill ${r.strike?"v-strike":"v-foul"} v-prov">${r.strike?"strike so far":"no strike so far"}</span> <small style="color:var(--muted)">final wk of ${esc(fmtDate(new Date(Date.parse(r.w0+"T00:00:00Z")+28*864e5).toISOString().slice(0,10)))}</small>`:verdictPill(r.verdict)}</td><td class="clip">${r.no1?`#1 now: ${esc(r.no1)}`:esc(r.codes||"")}</td></tr>`; });
+    h+=`<tr class="click" data-lbatch="${esc(B.batch)}"><td><b>${open?"▾":"▸"} ${esc(bLabel(B.batch))}</b>${B.kind==="creator"?` <span class="chip t-Manual">Creator</span>`:""}${B.end?`<div style="font-size:11px;color:var(--muted)">read to ${esc(fmtDate(B.end))}</div>`:""}</td><td class="num">${esc(fmtDate(B.start))}</td><td class="r num">${B.rows.length}</td><td>${rdPills(c)}</td><td>${fo}</td><td class="clip">${whatWorked(B)}</td></tr>`;
+    if(open){ h+=`<tr style="background:var(--sunk)"><td colspan="6" style="padding:0"><table class="ltable" style="min-width:0"><thead><tr><th>Ad set</th><th>Creative</th><th>Live from</th><th class="r">Place · share</th><th>Read · ROAS before → after</th><th>Final at week 4</th><th>#1 now</th></tr></thead><tbody>`;
+      deckOrder(B.rows).forEach(([p,xs])=>{ h+=`<tr><td colspan="7" style="font-weight:700;font-family:var(--display);padding-top:10px">${esc(p)}</td></tr>`;
+        xs.forEach(r=>{ const k=outcome(r.verdict);
+          h+=`<tr><td style="padding-left:18px">${esc(String(r.adset||r.adset_id).split(" · ").slice(1).join(" · ")||r.adset)}</td><td><b>${esc(r.cr||"–")}</b></td><td class="num">${esc(fmtDate(r.upload||r.w0))}</td><td class="r num">${r.rk?`${place(r.rk)} · ${pct(r.sh)}`:"–"}</td><td>${r.r?readHTML(r.r):"–"} <small class="num" style="color:var(--muted)">${r2(r.b)} → ${r2(r.a)}</small></td><td>${!r.verdict?`<small style="color:var(--faint)">${B.kind==="creator"?"not a refresh":"not counted (too small or adset too young)"}</small>`:k==="running"?`<span class="pill ${r.strike?"v-strike":"v-foul"} v-prov">${r.strike?"strike so far":"no strike so far"}</span> <small style="color:var(--muted)">final wk of ${esc(fmtDate(new Date(Date.parse(r.w0+"T00:00:00Z")+28*864e5).toISOString().slice(0,10)))}</small>`:verdictPill(r.verdict)}</td><td>${esc(r.no1||"")}</td></tr>`; }); });
+      h+=`</tbody></table></td></tr>`; }
   });
   out.innerHTML = h+`</tbody></table></div>`;
 }

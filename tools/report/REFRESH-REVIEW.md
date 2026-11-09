@@ -5,6 +5,9 @@ Presented at the Tuesday UA meeting. Built as a Claude Slides artifact; the crea
 action items on top. Rules behind it: `core/spec.md` §6.2b (refresh read), §15 (bar).
 
 ## How to make it
+0. Write one line before anything else: **"Tuesday <date> · reviewing <Batch> · live <first day> – <Sunday>"**,
+   read from the ad names (the newest batch that went live Mon–Sun before the meeting). A deck already presented
+   is a record: never edit it; new rules apply from now on (`core/mistakes.md`, rules 1 and 3).
 1. Weekly update first (`engine/README.md`). The ad export must include **daily** rows (Day breakdown) for
    the review weeks: upload days and before / after are measured in days.
 2. Ask (or read from the ad names) which batch is the refresh and which batches are pass-through (creator
