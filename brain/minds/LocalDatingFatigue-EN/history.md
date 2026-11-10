@@ -26,3 +26,7 @@ Q3xLm8 cte (Batch2026Week34, three openers): the men's zero-match pain told in b
 works because it moves the blame from his face to the app ("Your fault? Not really") and then hands him something to
 do (leave the small pool), without asking him to trust a claim: every line is the app's own promise killed in one
 word, a plain mechanism, or a number. Scripts and decode: brain/creatives/q3xlm8-cte.md.
+
+## 2026-11-10 · decode · TED + Claude
+Why colosseum lifts iOS and sinks Android: it hooks on both (hook rate 0.49–0.50, the best in the adsets), but who installs differs. Purchases per 100 installs: iOS colosseum 12 (datingcontest 17), main Android adset colosseum 6 (datingcontest 14). Not the countries. Android budget also rose 25% the same week ($469 → $592/day).
+Lesson: a hook that wins the auction is not a message that brings payers; on Android colosseum brings viewers. Next: Spanish colosseum on iOS only; off Android.

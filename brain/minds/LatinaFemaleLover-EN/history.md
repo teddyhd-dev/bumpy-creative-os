@@ -28,3 +28,6 @@ d5ns2k dancing became #1 in LatinaFemaleLover · Android · EN · Casual with 55
 Why dancing wins the auction but not the payers: it hooks best (hook rate 0.33 vs wanted 0.18–0.23), so Meta buys it, but its installers buy about half as often. Buyers per 100 installs: Android dancing 6.3 vs banner 11.6; iOS dancing 8.7 vs wanted 15.6; wanted "InAMoodToTalk" 20.
 Not the countries: on Android the country mix helped (+0.015); ROAS fell inside the same countries (−0.034).
 Lesson: the dance stops the thumb, the message decides who pays. Next: new angle, dancing's opening with wanted's "in a mood to talk".
+
+## 2026-11-10 · research · TED + Claude
+Latina Lover over time (all languages, Meta ROAS): launched 27 Apr in English; July and August it beat the account by 13–16% (0.50 vs 0.43–0.45) and grew to 11% of spend; every month since September it has been under the account (0.37–0.39). Last 8 weeks it still works where one woman speaks to him: Spanish iOS on the big-ticket banner (0.46, #1 17 weeks) and English iOS Talk on wanted "in a mood to talk" (0.44, #1 13 weeks). English Casual (0.28–0.34) and Portuguese (0.26) don't. Open for the call: move Casual's budget to Talk; keep or pause PT; rewrite the card ("men who feel they have no shot") from who actually pays.

@@ -36,7 +36,10 @@ from build import parse_name  # noqa: E402
 from codes import concept_keys, concept_names  # noqa: E402
 from settings import READ, bar  # noqa: E402
 from tickets import refresh_read  # noqa: E402
+from why import country_why, explain, load_country  # noqa: E402
 
+# Refresh order (creative lead, 10 Nov 2026): Worse first, then Miss, then Flat, then Almost; spend inside a tier.
+TIER = {"Worse": 1, "Miss": 2, "Flat": 3, "Almost": 4}
 WEIGHT = {"Worse": 1.0, "Miss": 0.8, "Almost": 0.6, "Flat": 0.6, "Worked": 0.0, "Watch": 0.0, "Miss (left)": 0.0}
 ACTION = {
     "Worse": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
@@ -74,6 +77,24 @@ def load(batch, creator):
     if daily.empty:
         sys.exit("No daily ad rows: export the ad level with a Day breakdown for the review weeks.")
     return d, daily, dims
+
+
+CW, WEEKS = None, None   # weekly country rows and the two weeks, set in main()
+
+
+def short_why(w, aid=None, weeks=None):
+    """engine/why.py result, trimmed for the JSON: the line, the causes, the concepts that carried 3%+, and the
+    audience part (country mix vs inside the same countries, week on week) when a country export covers it."""
+    keep = [c for c in w["concepts"] if max(c["share_before"], c["share_after"]) >= 0.03]
+    out = dict(text=w["text"], causes=w["causes"], media=w["media"], concepts=keep[:6])
+    if CW is not None and aid and weeks:
+        cty = country_why(CW, aid, *weeks)
+        if cty:
+            out["country"] = cty
+            if abs(cty["mix"]) > abs(cty["within"]):
+                out["causes"] = out["causes"] + ["audience"]
+                out["text"] += f' Audience: the country mix moved ROAS {cty["mix"]:+.2f} week on week, more than inside the same countries ({cty["within"]:+.2f}).'
+    return out
 
 
 def roas(x):
@@ -124,7 +145,7 @@ def landings(d, daily, dims, end, last_week, wk_spend, flag, mark):
             no1_weeks=0 if tag else reign_weeks(d, aid, n1, last_week),
             weekly_roas={w: roas(x) for w, x in d[d.adset_id == aid].groupby("week")},
             spend_week=round(float(wk_spend.get(aid, 0))), priority=round(WEIGHT[read] * float(wk_spend.get(aid, 0))),
-            action=ACTION[read]))
+            tier=TIER.get(read), action=ACTION[read], why=short_why(explain(pre, post), aid, WEEKS)))
     return pd.DataFrame(rows), up
 
 
@@ -149,6 +170,9 @@ def main():
     end = pd.Timestamp(a.end) if a.end else daily.day.max()
     last_week = (end - pd.Timedelta(days=end.weekday())).strftime("%Y-%m-%d")
     prev_week = (end - pd.Timedelta(days=end.weekday() + 7)).strftime("%Y-%m-%d")
+    global CW, WEEKS
+    WEEKS = (prev_week, last_week)
+    CW = load_country(list(WEEKS))
     wk_spend = d[d.week == last_week].groupby("adset_id").spend.sum()
     R, up = landings(d, daily, dims, end, last_week, wk_spend, "is_batch", " ★")
     R = slide_order(R, by=("persona",))
@@ -190,7 +214,9 @@ def main():
             prev_winner=t0.index[0], prev_winner_weeks=reign_weeks(d, aid, t0.index[0].rstrip(" ★◆"), prev_week),
             prev_share=round(float(t0.iloc[0]), 3), event="new #1" if new_no1 else "new in top 3",
             mover=mover, mover_share=round(float(s1[mover]), 3), mover_before=round(float(s0.get(mover, 0)), 3),
-            spend_week=round(float(wk_spend.get(aid, 0)))))
+            spend_week=round(float(wk_spend.get(aid, 0))),
+            why=short_why(explain(daily[(daily.adset_id == aid) & (daily.week == prev_week)],
+                                  daily[(daily.adset_id == aid) & (daily.week == last_week)]), aid, WEEKS)))
     N = pd.DataFrame(news) if news else pd.DataFrame()
     if len(N):   # slide order: ROAS after high → low, then the biggest improvement (on the rounded numbers)
         N["_a"], N["_d"] = N.roas_after.round(2), N.roas_after.round(2) - N.roas_before.round(2)

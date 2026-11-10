@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.6
+version: 1.3.7
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,11 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.7 (2026-11-10): refresh order, and the why behind every ROAS move (decided by the creative lead).**
+- **Refresh order:** per persona × language, its worst read this week decides: **Worse first, then Miss, then Flat, then Almost**; spend orders each tier. A set where an OS Worked or is on Watch and nothing got worse is left alone. The launch review's priority numbers follow this order (`refresh_plan()` in `tools/report/build_deck.py`; `TIER` in `tools/report/refresh_review.py`).
+- **The why (§6.2c, new):** every adset the launch review reads, and every account-news adset, gets a why from the exports (`engine/why.py`): **media buying** (daily spend moved 20%+, or ads that carried 15%+ of the spend were switched off: spending $20+/day, then 0 impressions the next day), **creative** (per concept: spend moved to a weaker or stronger creative, or the creative itself got worse or better; with hook rate, installs per 1k impressions and purchases per 100 installs), **audience** (country mix vs ROAS inside the same countries, from the weekly country export). It is in `refresh_review.json`, the board's launch log and the deck.
+- A read whose adset lost its #1 ad to a switch-off the day before the batch landed (Latina iOS PT, Batch 41) is flagged; whether such a read can make a strike is open (`core/decisions.md`).
 
 **1.3.6 (2026-11-09): one strike per batch, and the Watch read (decided by the creative lead).**
 - **One refresh = one batch (§6.1):** a batch (the `BatchYYYYWeekWW` tag in the ad name) landing in an adset is one at-bat, whatever it holds: two concepts in one batch count once, and new variants of a concept already running there count too (ranked apart from that concept's older ads, as in the launch review). Batches landing in the same adset in the same week share one before/after ROAS, so they are one at-bat. Ads without a batch tag (old names): the new concepts entering the adset in the same week, as before. `tries()` in `engine/tickets.py`.
@@ -462,6 +467,19 @@ Measured per adset from the day the batch first spent there (daily ad rows), aga
 | **Miss** | no | under the bar | yes in a turnaround, foul otherwise | stays open: a different concept |
 | **Miss (left)** | no | at the bar | no | leave it: no Due ticket while old creatives carry it |
 "Top 3" counts the batch's ads per concept, apart from older ads of the same concept, so new variants of a running concept count as new. A relaunched adset with no week before is Worse when it lands under the critical line. The week-4 verdict (§6.2) still decides hit / late hit for records; the read decides strikes and tickets while the at-bat is provisional.
+
+### 6.2c Why the adset moved (since 1.3.7)
+Every read comes with its why, so an action never treats a switch-off as a creative fading. `engine/why.py`, from the
+ad export (daily rows) and the weekly country export:
+
+| Cause | How it's read | Example (Batch 41) |
+|---|---|---|
+| Media buying | daily spend moved 20%+; or ads that carried 15%+ of the spend were switched off (spent $20+/day, then 0 impressions from one day to the next) | Latina iOS PT: its #1 video (77% of spend) went off on 2 Nov |
+| Creative | per concept: mix = (share after − share before) × (its ROAS before − the adset's); perf = share after × (its ROAS after − before); with hook rate, installs per 1k impressions, purchases per 100 installs | Loc. Dating Android EN: colosseum hooks (0.50) but its installers buy 6 per 100 vs datingcontest's 14 |
+| Audience | country mix vs ROAS inside the same countries, week on week | rare: 4 adsets of 45 this week |
+
+A fade looks different from a switch-off: Meta lowers a tired ad's delivery over days; a switch-off goes from full
+spend to zero overnight. Until the media buyer logs switch-offs, the overnight drop is the sign.
 
 ### 6.3 Turnaround and three strikes (since 1.2)
 - The turnaround starts when an adset goes under green (a Decaying ticket). At-bat 1 within a week; each next at-bat follows the previous one's week-1 read.

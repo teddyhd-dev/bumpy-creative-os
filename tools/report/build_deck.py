@@ -255,15 +255,19 @@ def persona_slide(sid, persona, rows, end, T):
     return section(sid, "\n".join(body))
 
 
-MOVE_WORDS = ("J1", "J2", "same message", "new visual", "new form", "decode", "learn", "new angle", "copy")
+MOVE_WORDS = ("J1", "J2", "same message", "new visual", "new form", "new angle", "new format", "copy")
+HOMEWORK = ("decode", "research", "find out", "check ", "look at", "learn what", "investigate", "new concept, 3")
 
 
 def check_actions(sid, T):
-    """core/mistakes.md rules 7-8: a creative row names a move or what we learn from the incumbent."""
+    """core/mistakes.md rules 7-9: a creative row names a jurus move (what to make); no row hands homework back."""
     for a in T.get("rows", []):
-        if a.get("owner", "").startswith("Creative") and a.get("level") not in ("Keep", "Research", "Decide"):
-            if not any(w.lower() in a.get("action", "").lower() for w in MOVE_WORDS):
-                print(f"  ! {sid}: creative row with no incumbent lesson or jurus move: {a.get('adsets', '')}")
+        act = a.get("action", "").lower()
+        if a.get("owner", "") == "Creative" and a.get("level") not in ("Keep", "Decide", "Learn", "Next batch"):
+            if not any(w.lower() in act for w in MOVE_WORDS):
+                print(f"  ! {sid}: creative row says no jurus move (what to make): {a.get('adsets', '')}")
+        if any(w in act for w in HOMEWORK):
+            print(f"  ! {sid}: homework in a row (do it before the deck): {a.get('adsets', '')}")
 
 
 def action_slide(sid, T):
@@ -437,6 +441,29 @@ def cover(T):
             f'<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#5E5C60">{e(T["foot"])}</p>\n</section>\n')
 
 
+def rpad(html, w, align):
+    """Right-aligned numbers keep a gap before the next column."""
+    return html.replace(f"width:{w}px;", f"width:{w}px; padding:0 32px 0 0;", 1) if align == "right" else html
+
+
+def table_slide(sid, T):
+    """A plain table slide: eyebrow, title, columns [[label, width, align]], rows of cell html, foot, note."""
+    cols = [(c[0], c[1]) for c in T["cols"]]
+    al = {c[0]: (c[2] if len(c) > 2 else "") for c in T["cols"]}
+    hdr = "".join(rpad(txt(w, l, fs=24, weight="700", align=al[l]), w, al[l]) for l, w in cols)
+    body = [head(T.get("eyebrow"), e(T["title"]), T.get("sub"), size=60), '<div style="display:flex; flex-direction:column">',
+            f'<div style="display:flex; flex-direction:row; align-items:center; padding:8px 16px; background:{HEAD_BG}; border-radius:12px">{hdr}</div>']
+    for i, row in enumerate(T["rows"]):
+        bd = "" if i == len(T["rows"]) - 1 else f" border-bottom:1px solid {LINE};"
+        hl = " background:#eef6fa;" if i in T.get("highlight", []) else ""
+        body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:10px 16px;{bd}{hl}">'
+                    + "".join(rpad(txt(w, v, fs=26, align=al[l]), w, al[l]) for (l, w), v in zip(cols, row)) + "</div>")
+    body.append("</div>")
+    body.append(foot(T["foot"]))
+    body.append(aside(T["note"]))
+    return section(sid, "\n".join(body), gap=36)
+
+
 def divider(sid, T):
     return (f'<section id="{sid}" data-transition="fade" style="background:#443A40;color:#F7F6F3;font-family:{OS_FONT};padding:128px;display:flex;flex-direction:column;justify-content:center;gap:32px">\n'
             f'<p style="font-family:Quicksand, Arial, sans-serif;font-size:36px;font-weight:700;color:#8FD0EA;letter-spacing:4px;text-transform:uppercase">{e(T["eyebrow"])}</p>\n'
@@ -444,37 +471,83 @@ def divider(sid, T):
             f'<p style="font-size:40px;color:#E6E1E4;width:1300px">{e(T["text"])}</p>\n<aside>{e(T["note"])}</aside>\n</section>\n')
 
 
-def refresh_slide(sid, R, T, queue_path):
-    """The whole refresh list on one slide: per persona x language, each OS's read and strikes (from the board's
-    queue, one source of truth), and what to make next (core/mistakes.md rules 9-11)."""
+TIER_OF = {"Worse": 1, "Miss": 2, "Flat": 3, "Almost": 4}
+TIER_LABEL = {1: "Got worse: refresh first", 2: "Missed: next", 3: "Flat: after", 4: "Almost: after"}
+
+
+def refresh_plan(R):
+    """The refresh order (creative lead, 10 Nov 2026): per persona x language, its worst read decides the tier:
+    Worse, then Miss, then Flat, then Almost; spend inside a tier. A set where one OS Worked or is on Watch and
+    nothing got worse is left alone (the batch is working there)."""
+    g = {}
+    for r in R["adsets"]:
+        g.setdefault((r["persona"], r["lang"]), []).append(r)
+    plan = []
+    for (p, l), rs in g.items():
+        tiers = [TIER_OF[r["read"]] for r in rs if r["read"] in TIER_OF]
+        if not tiers:
+            continue
+        t = min(tiers)
+        if t > 1 and any(r["read"] in ("Worked", "Watch") for r in rs):
+            continue
+        plan.append(dict(persona=p, lang=l, tier=t, spend=sum(r.get("spend_week") or 0 for r in rs),
+                         reads=sorted(rs, key=lambda r: r["os"])))
+    plan.sort(key=lambda x: (x["tier"], -x["spend"]))
+    for i, x in enumerate(plan, 1):
+        x["n"] = i
+    return plan
+
+
+def number_actions(T, plan):
+    """Priority numbers on the action slides come from the refresh order (one source of truth)."""
+    n = {f'{x["persona"]}-{x["lang"]}': x["n"] for x in plan}
+    for P in T["personas"]:
+        for a in (P.get("actions") or {}).get("rows", []):
+            if a.get("key"):
+                a["n"] = n.get(a["key"])
+            elif "n" in a:
+                a.pop("n")
+    for sec in ("creator", "news"):
+        for a in (T.get(sec, {}).get("actions") or {}).get("rows", []):
+            if a.get("key"):
+                a["n"] = n.get(a["key"])
+
+
+def refresh_slide(sid, R, T, queue_path, plan):
+    """The whole refresh list on one slide, in the refresh order: per persona x language, each OS's read, strikes
+    (from the board's queue, one source of truth) and what to make next (core/mistakes.md rules 9-11)."""
     Q = json.load(open(queue_path))
     strikes = {}
     for t in Q["tickets"]:           # several adsets can share persona x language x OS: keep the worst
         k = (t["persona"], t["lang"], t["os"])
         strikes[k] = max(strikes.get(k, 0), int(t.get("strikes") or 0))
-    reads = {}
-    for r in R["adsets"]:
-        reads.setdefault((r["persona"], r["lang"]), []).append(r)
-    cols = [("#", 70), ("Persona · language", 300), ("This week", 480), ("Strikes", 150), ("Next refresh", 632)]
+    cols = [("#", 70), ("Persona · language", 300), ("This week", 480), ("Strikes", 150), ("Next", 632)]
     body = [head(None, e(T["title"]), None, size=60), '<div style="display:flex; flex-direction:column">', header_row(cols, pad="8px 16px")]
-    for i, a in enumerate(T["rows"]):
-        bd = "" if i == len(T["rows"]) - 1 else f" border-bottom:1px solid {LINE};"
-        rs = sorted(reads.get((a["persona"], a["lang"]), []), key=lambda r: r["os"])
+    last = None
+    for x in plan:
+        key = f'{x["persona"]}-{x["lang"]}'
+        if key not in T["what"]:
+            print(f"  ! {sid}: no 'what' for {key}")
+        if x["tier"] != last:
+            body.append(f'<p style="padding:6px 16px 0; font-family:{OS_FONT}; font-size:18px; font-weight:700; '
+                        f'letter-spacing:0.04em; text-transform:uppercase; color:{MUTED}">{TIER_LABEL[x["tier"]]}</p>')
+            last = x["tier"]
+        rs = x["reads"]
         rd = " ".join(pill(f'{r["os"]} {READ_PILL[r["read"]][2].split(" ")[-1]}', READ_PILL[r["read"]][0],
-                           READ_PILL[r["read"]][1], fs=20, pad="1px 10px") for r in rs) if rs else txt(480, "–", fs=24, color=MUTED)
-        k = max([strikes.get((a["persona"], a["lang"], r["os"]), 0) for r in rs] or [0])
+                           READ_PILL[r["read"]][1], fs=20, pad="1px 10px") for r in rs)
+        k = max([strikes.get((x["persona"], x["lang"], r["os"]), 0) for r in rs] or [0])
         sk = {0: ("0", "#4f4d51", "#e2dfe1"), 1: ("1 of 3", "#6b2a12", "#fdd3c2"), 2: ("2 of 3", "#ffffff", "#e8743b"),
               3: ("3 strikes", "#ffffff", "#d9442b")}[min(k, 3)]
-        body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:8px 16px;{bd}">'
-                    + txt(70, str(a.get("n") or "·"), fs=26, weight="700")
-                    + txt(300, f'<b>{e(AUD.get(a["persona"], a["persona"]))}</b> {e(a["lang"])}', fs=26)
+        body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:5px 16px; border-bottom:1px solid {LINE};">'
+                    + txt(70, str(x["n"]), fs=26, weight="700")
+                    + txt(300, f'<b>{e(AUD.get(x["persona"], x["persona"]))}</b> {e(x["lang"])}', fs=26)
                     + f'<div style="width:480px; display:flex; flex-direction:row; flex-wrap:wrap; gap:6px">{rd}</div>'
                     + cell(150, pill(sk[0], sk[1], sk[2], fs=22, pad="2px 12px"))
-                    + txt(632, a["what"], fs=24) + "</div>")
+                    + txt(632, T["what"].get(key, "–"), fs=24) + "</div>")
     body.append("</div>")
     body.append(foot(T["foot"]))
     body.append(aside(T["note"]))
-    return section(sid, "\n".join(body), gap=36)
+    return section(sid, "\n".join(body), gap=20, pad="96px 128px 128px")
 
 
 def main(folder):
@@ -492,8 +565,10 @@ def main(folder):
     order_p = [p["persona"] for p in T["personas"]]
     slides["scoreboard"] = scoreboard("scoreboard", [(p, by[p], next(x["concept"] for x in T["personas"] if x["persona"] == p)) for p in order_p], end, T["scoreboard"])
     seq = ["cover", "made", "rules", "scoreboard"] if "rules" in slides else ["cover", "made", "scoreboard"]
+    plan = refresh_plan(R)
+    number_actions(T, plan)
     if T.get("refresh"):
-        slides["refresh"] = refresh_slide("refresh", R, T["refresh"], os.path.join(os.path.dirname(os.path.dirname(folder.rstrip("/"))), "output", "board", "queue.json"))
+        slides["refresh"] = refresh_slide("refresh", R, T["refresh"], os.path.join(os.path.dirname(os.path.dirname(folder.rstrip("/"))), "output", "board", "queue.json"), plan)
         seq.append("refresh")
     for P in T["personas"]:
         sid = P["id"]
@@ -502,8 +577,20 @@ def main(folder):
         if P.get("actions"):
             slides["act" + sid] = action_slide("act" + sid, {**P["actions"], "persona": PERSONA_TITLE.get(P["persona"], P["persona"])})
             seq.append("act" + sid)
+        D = P.get("deepdive")             # a persona's own section (e.g. why it exists, for a call), after its actions
+        if D:
+            slides[sid + "div"] = divider(sid + "div", D["divider"])
+            seq.append(sid + "div")
+            for j, t in enumerate(D["slides"], 1):
+                k = f"{sid}{j}"
+                slides[k] = action_slide(k, {**t, "persona": t.get("persona", PERSONA_TITLE.get(P["persona"], P["persona"]))}) \
+                    if t.get("kind") == "actions" else table_slide(k, t)
+                seq.append(k)
     sections = {"s1": {"description": "What we made and where it went", "start": "cover"},
                 "s2": {"description": "How it went: the scoreboard, then one slide per persona refresh, each followed by its action items", "start": "scoreboard"}}
+    for P in T["personas"]:
+        if P.get("deepdive"):
+            sections["s6"] = {"description": P["deepdive"]["divider"]["title"], "start": P["id"] + "div"}
     if T.get("followup"):
         F = T["followup"]
         a = json.load(open(os.path.join(os.path.dirname(folder.rstrip("/")), F["then"])))["adsets"]
@@ -544,7 +631,11 @@ def main(folder):
         with open(os.path.join(out, sid + ".html"), "w") as f:
             f.write(h)
     from datetime import datetime, timezone
-    deck = {"v": 4, "createdOnFiles": {"v": 1, "at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")},
+    dpath = os.path.join(folder, "deck", "project", "deck.json")
+    stamp = {"v": 1, "at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+    if os.path.exists(dpath):                 # the Slides artifact keeps its first stamp: never change it
+        stamp = json.load(open(dpath)).get("createdOnFiles", stamp)
+    deck = {"v": 4, "createdOnFiles": stamp,
             "lists": "css", "title": T["title"], "order": seq, "sections": sections,
             "faces": {"quicksand": {"family": "Quicksand", "href": "https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"},
                       "open-sans": {"family": "Open Sans", "href": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"}},

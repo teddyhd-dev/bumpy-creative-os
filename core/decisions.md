@@ -5,6 +5,10 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-10 · Refresh order: worse first, then missed, then flat
+- The creative lead: "the refresh next should be from the one that got worse; miss later, flat later." Per persona × language, the worst read decides the tier (Worse, Miss, Flat, Almost), spend inside each. The deck's priority numbers follow it. Spec 1.3.7.
+- Every ROAS move gets its why (creative, audience or media buying), on the deck, the launch log and in `refresh_review.json`. Spec 1.3.7 §6.2c.
+
 ### 2026-11-09 · One strike per batch; creator ads aren't refreshes; Watch
 - **One refresh = one batch** landing in an adset (`BatchYYYYWeekWW`): two concepts in one batch count once; new variants of a running concept count too; same-week batches in one adset are one refresh (one before/after ROAS). Strikes, hits and the "3 strikes" ticket all count this way. Spec 1.3.6 §6.1.
 - **Creator content** (strategist `TIN`) never makes a refresh, so it can't add or clear a strike; the launch review judges it in its own section.
@@ -136,6 +140,7 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 - Priority = weight × last week's spend: review 1.0 · critical 1.0 · amber and falling 0.8 · leading signal 0.6 · due 0.5 (+0.1 if falling) · amber 0.4 · critical under the alert floor 0.3; × 0.5 with a challenger in test or 🧱. `TICKET_WEIGHTS` in `engine/settings.py`.
 
 ## Open
+- A switch-off before a batch lands (Latina iOS PT, Batch 41: its #1 ad went off on 2 Nov, the batch landed 4 Nov): does that read still make a strike, or is it void? And: can the media buyer log switch-offs (date, ad, why), so the engine stops guessing them from zero impressions?
 - Angles (`core/angles.csv`): keep the merged list of 21? Merge `personalrecommendation` into `recommendation`? The
   meanings of the board's 11 angles are inferred from use: confirm.
 - Meta headline findings (`tools/brainstormer/playbook.md`) rank headlines by their own ROAS and IPM, which the spec

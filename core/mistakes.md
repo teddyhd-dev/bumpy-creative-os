@@ -37,8 +37,38 @@ below before calling a task done. Adding an entry is part of fixing the mistake;
    the ticket, the launch log and the deck, not only the slide.
 11. **Every word on a slide must earn its place.** A row that repeats the table before it, a number that doesn't
    change the decision, a label the room already knows: cut it.
+12. **Fix the class, not the instance.** When a correction lands on one slide, sweep every slide (and the tools behind
+   them) for the same flaw before replying, and say what else changed.
+13. **"Took spend while ROAS fell" is not a cause.** Before blaming, pausing or keeping a creative, read its why
+   (`why` in `refresh_review.json`): did its own ROAS fall, was the old #1 switched off, did the budget move?
+14. **Lists that order work are computed, never typed.** The refresh order comes from the reads (worse → missed →
+   flat → almost, spend inside), and every list says what it left out and why.
+15. **A persona that keeps failing gets asked why it exists.** 3 strikes, or under the account for 2+ months: the
+   deck shows its history, where it still works and the decisions for the creative lead.
 
 ## Entries
+
+### 2026-11-10 (2) · Fixed three slides, not the deck; two "pause" actions blamed the wrong creative
+- **What happened:** after the creative lead's questions on Passport Bro, dancing and Mature, I fixed those three
+  slides and stopped. The creative lead asked whether the fixes were logged and applied to the rest. They weren't:
+  Loc. Dating still had a "Research: why does colosseum split by OS" row, Friends CH a "research" row, Gringo EN
+  "new concept", the creator slide "decode it", account news "decode manyplaces" and "check them". Running the why on
+  every row then showed two actions were wrong: **Latina PT "pause dancing"** (its #1 banner video had been switched
+  off on 2 Nov, the day before dancing landed, and dancing did as well as that ad) and **Loc. Dating ES iOS "pause the
+  creator talkinghead"** (the creator ad was the best thing there, 0.62; datingcontest fell). The refresh list was
+  typed by hand in spend order, missed Gringo EN, and wasn't ordered by how bad. For Passport Bro Android I answered
+  with week-on-week numbers while the slide used the review window (two numbers for one move). The Latina footer said
+  "Android EN and PT" (PT is iOS); I caught that one. And nobody had asked why Latina exists until the creative lead did.
+- **Why (root cause):**
+  1. I treat a correction as a ticket about that slide, not as a symptom of how I built all of them.
+  2. "Took spend while ROAS fell" read like a cause, so I blamed the creative that took spend. I never asked whether
+     its own ROAS fell or whether someone switched something off. The exports show both; I had no step that looked.
+  3. Ordered lists were written by hand, so they followed whatever order I happened to think in.
+  4. The deck reviews batches, never a persona's health over months, so a persona can fail for weeks without the
+     question "should it be here?".
+- **Rules:** 12, 13, 14, 15. **Check:** `engine/why.py` puts a why on every launch-review and account-news row
+  (spec §6.2c), and the board's launch log shows it; `build_deck.py` warns on homework words in any row and numbers the
+  refresh list itself (`refresh_plan()`); `REFRESH-REVIEW.md` → "Refresh order".
 
 ### 2026-11-10 · Action items still weren't actions; the deck shows what happened but not why
 - **What happened:** after the first rework, the creative lead still found the action slides weak and cluttered.

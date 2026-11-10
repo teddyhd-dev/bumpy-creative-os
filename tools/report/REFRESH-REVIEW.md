@@ -88,7 +88,14 @@ pill) · `#1 for` under 2 weeks = yellow `#FFE9A8` pill (not proven yet).
 4. **The evidence** for the move (e.g. "datingcontest made the same EN → ES move and became #1 in both ES adsets").
 The headline summarises the rows: every action it names is a row on the slide.
 
-**Action priority:** weekly spend × read weight: Worse 1.0 · Miss under 0.40 0.8 · Almost / Flat 0.6 ·
+**Refresh order (spec 1.3.7):** per persona × language, the worst read decides: Worse first, then Miss, then Flat,
+then Almost; spend inside each. The "Refresh next" slide (after the scoreboard) lists them all with strikes and what to
+make; `refresh_plan()` numbers them and the action slides take the same numbers (give each creative row a `key`,
+`Persona-LANG`). **Every ROAS move gets its why** before any action is written: read `why` on each row of
+`refresh_review.json` (engine/why.py: media buying, creative with its funnel, audience). A switch-off is a media-buying
+action, not a creative one.
+
+**Action priority (inside a tier):** weekly spend × read weight: Worse 1.0 · Miss under 0.40 0.8 · Almost / Flat 0.6 ·
 Worked, Watch and Miss (left) = leave. Pair same persona × language across OS into one brief. Media-buyer items:
 critical adsets the batch is carrying (pause / check setup), creator or test ads that took spend while ROAS
 crashed, falling adsets to hold, 0.50+ adsets with a stable #1 for a small budget test.

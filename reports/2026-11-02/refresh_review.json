@@ -78,7 +78,125 @@
    },
    "spend_week": 1352,
    "priority": 0,
-   "action": "Leave: watch week 2"
+   "tier": null,
+   "action": "Leave: watch week 2",
+   "why": {
+    "text": "0.34 \u2192 0.55: combo rose 0.39 \u2192 0.60 (31% of spend); text rose 0.21 \u2192 0.99 (7% of spend); against it: carousel fell 0.39 \u2192 0.14 (3% of spend). Not media buying: $199 \u2192 $208/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 199,
+     "spend_day_after": 208,
+     "budget_move": 0.049,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "dreamlife",
+      "share_before": 0.366,
+      "share_after": 0.466,
+      "roas_before": 0.39,
+      "roas_after": 0.453,
+      "mix": 0.0054,
+      "perf": 0.0294,
+      "funnel": {
+       "spend": 291.21,
+       "roas": 0.4531437803,
+       "hook": 0.3206874248,
+       "ipm": 1.1020605686,
+       "pur_per_100": 5.9040590406
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.253,
+      "share_after": 0.311,
+      "roas_before": 0.388,
+      "roas_after": 0.603,
+      "mix": 0.0031,
+      "perf": 0.0668,
+      "funnel": {
+       "spend": 194.39,
+       "roas": 0.603117443,
+       "hook": 0.1157507393,
+       "ipm": 1.2395694764,
+       "pur_per_100": 10.1045296167
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.153,
+      "share_after": 0.073,
+      "roas_before": 0.26,
+      "roas_after": 0.735,
+      "mix": 0.0062,
+      "perf": 0.0345,
+      "funnel": {
+       "spend": 45.37,
+       "roas": 0.7350672251,
+       "hook": 0.3799876637,
+       "ipm": 0.9623689081,
+       "pur_per_100": 17.9487179487
+      }
+     },
+     {
+      "name": "text",
+      "share_before": 0.155,
+      "share_after": 0.068,
+      "roas_before": 0.213,
+      "roas_after": 0.993,
+      "mix": 0.0107,
+      "perf": 0.0531,
+      "funnel": {
+       "spend": 42.51,
+       "roas": 0.9929428364,
+       "hook": 0.4160293771,
+       "ipm": 1.4870114105,
+       "pur_per_100": 14.2857142857
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.04,
+      "share_after": 0.033,
+      "roas_before": 0.392,
+      "roas_after": 0.137,
+      "mix": -0.0004,
+      "perf": -0.0084,
+      "funnel": {
+       "spend": 20.62,
+       "roas": 0.1372453902,
+       "hook": 0.1596872774,
+       "ipm": 1.662473041,
+       "pur_per_100": 2.7027027027
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.03,
+      "share_after": 0.017,
+      "roas_before": 0.202,
+      "roas_after": 0.628,
+      "mix": 0.0018,
+      "perf": 0.0071,
+      "funnel": {
+       "spend": 10.41,
+       "roas": 0.6282420748,
+       "hook": 0.111205275,
+       "ipm": 1.5065913371,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0,
+     "within": -0.0361,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.79,
@@ -152,7 +270,93 @@
    },
    "spend_week": 1559,
    "priority": 0,
-   "action": "Leave: watch week 2"
+   "tier": null,
+   "action": "Leave: watch week 2",
+   "why": {
+    "text": "0.37 \u2192 0.53: talkinghead rose 0.36 \u2192 0.46 (82% of spend); flirtedtoohard took spend (0% \u2192 10%) at 1.02; against it: paragraphresponse fell 0.85 \u2192 0.50 (5% of spend). Not media buying: $191 \u2192 $228/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 191,
+     "spend_day_after": 228,
+     "budget_move": 0.192,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.918,
+      "share_after": 0.817,
+      "roas_before": 0.358,
+      "roas_after": 0.459,
+      "mix": 0.001,
+      "perf": 0.0825,
+      "funnel": {
+       "spend": 558.49,
+       "roas": 0.4592562062,
+       "hook": 0.4055967924,
+       "ipm": 2.1193888928,
+       "pur_per_100": 15.1658767773
+      }
+     },
+     {
+      "name": "flirtedtoohard",
+      "share_before": 0.0,
+      "share_after": 0.103,
+      "roas_before": null,
+      "roas_after": 1.019,
+      "mix": 0.0668,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 70.09,
+       "roas": 1.0189756014,
+       "hook": 0.1997178985,
+       "ipm": 2.2479834266,
+       "pur_per_100": 17.6470588235
+      }
+     },
+     {
+      "name": "paragraphresponse",
+      "share_before": 0.041,
+      "share_after": 0.049,
+      "roas_before": 0.846,
+      "roas_after": 0.504,
+      "mix": 0.0039,
+      "perf": -0.0167,
+      "funnel": {
+       "spend": 33.36,
+       "roas": 0.5038968829,
+       "hook": 0.0,
+       "ipm": 2.0018016215,
+       "pur_per_100": 20.0
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.038,
+      "share_after": 0.028,
+      "roas_before": 0.117,
+      "roas_after": 0.851,
+      "mix": 0.0025,
+      "perf": 0.0204,
+      "funnel": {
+       "spend": 18.97,
+       "roas": 0.8513442281,
+       "hook": 0.0787826084,
+       "ipm": 0.8695652174,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0437,
+     "within": -0.1004,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.856,
@@ -226,7 +430,80 @@
    },
    "spend_week": 1511,
    "priority": 907,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.42 \u2192 0.51: banner rose 0.28 \u2192 0.50 (48% of spend); flirtedtoohard took spend (0% \u2192 9%) at 0.61. Media buying: spend $183 \u2192 $252/day; switched off: ads with 19% of the spend (talkinghead (last day 1 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 183,
+     "spend_day_after": 252,
+     "budget_move": 0.376,
+     "stopped_share": 0.193,
+     "stopped": [
+      "talkinghead (last day 1 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "banner",
+      "share_before": 0.436,
+      "share_after": 0.475,
+      "roas_before": 0.278,
+      "roas_after": 0.499,
+      "mix": -0.0057,
+      "perf": 0.1048,
+      "funnel": {
+       "spend": 359.67,
+       "roas": 0.4990407865,
+       "hook": 0.0844645452,
+       "ipm": 3.7415586786,
+       "pur_per_100": 4.4207317073
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.495,
+      "share_after": 0.382,
+      "roas_before": 0.531,
+      "roas_after": 0.56,
+      "mix": -0.012,
+      "perf": 0.011,
+      "funnel": {
+       "spend": 289.19,
+       "roas": 0.5598049694,
+       "hook": 0.3952121577,
+       "ipm": 2.938646789,
+       "pur_per_100": 9.756097561
+      }
+     },
+     {
+      "name": "flirtedtoohard",
+      "share_before": 0.0,
+      "share_after": 0.087,
+      "roas_before": null,
+      "roas_after": 0.615,
+      "mix": 0.0165,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 65.52,
+       "roas": 0.6153846183,
+       "hook": 0.361214938,
+       "ipm": 2.8667852088,
+       "pur_per_100": 7.5949367089
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0147,
+     "within": 0.1619,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.0,
@@ -299,7 +576,112 @@
    },
    "spend_week": 1244,
    "priority": 0,
-   "action": "Leave: the new creative took over and ROAS dipped but stays at the bar; re-read next week (no strike)"
+   "tier": null,
+   "action": "Leave: the new creative took over and ROAS dipped but stays at the bar; re-read next week (no strike)",
+   "why": {
+    "text": "0.72 \u2192 0.46: dreamlife took spend (0% \u2192 42%) at 0.30; combo fell 0.94 \u2192 0.70 (36% of spend); against it: banner lost spend (20% \u2192 0%) at 0.26. Media buying: switched off: ads with 20% of the spend (banner (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 182,
+     "spend_day_after": 184,
+     "budget_move": 0.011,
+     "stopped_share": 0.196,
+     "stopped": [
+      "banner (last day 5 Nov)"
+     ],
+     "faded_share": 0.005
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.432,
+      "share_after": 0.358,
+      "roas_before": 0.943,
+      "roas_after": 0.698,
+      "mix": -0.0166,
+      "perf": -0.088,
+      "funnel": {
+       "spend": 197.8,
+       "roas": 0.6975227512,
+       "hook": 0.1344639379,
+       "ipm": 1.3113401454,
+       "pur_per_100": 10.6741573034
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.0,
+      "share_after": 0.421,
+      "roas_before": null,
+      "roas_after": 0.301,
+      "mix": -0.177,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 232.81,
+       "roas": 0.3006314193,
+       "hook": 0.4097878204,
+       "ipm": 2.146226112,
+       "pur_per_100": 5.3892215569
+      }
+     },
+     {
+      "name": "airport",
+      "share_before": 0.216,
+      "share_after": 0.137,
+      "roas_before": 0.447,
+      "roas_after": 0.334,
+      "mix": 0.0217,
+      "perf": -0.0155,
+      "funnel": {
+       "spend": 75.62,
+       "roas": 0.3336418951,
+       "hook": 0.2629772826,
+       "ipm": 1.0633156114,
+       "pur_per_100": 13.6363636364
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.2,
+      "share_after": 0.002,
+      "roas_before": 0.257,
+      "roas_after": null,
+      "mix": 0.0921,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 1.03,
+       "roas": 0.0,
+       "hook": 0.3747368422,
+       "ipm": 0.0,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.063,
+      "share_after": 0.034,
+      "roas_before": 2.081,
+      "roas_after": 1.251,
+      "mix": -0.0397,
+      "perf": -0.028,
+      "funnel": {
+       "spend": 18.68,
+       "roas": 1.2510706639,
+       "hook": 0.2218579237,
+       "ipm": 1.7486338798,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0134,
+     "within": -0.1564,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.383,
@@ -332,7 +714,93 @@
    },
    "spend_week": 704,
    "priority": 704,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.42 \u2192 0.36: carousel fell 0.69 \u2192 0.49 (14% of spend); dreamlife took spend (0% \u2192 29%) at 0.31; against it: banner lost spend (33% \u2192 16%) at 0.38. Not media buying: $99 \u2192 $106/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 99,
+     "spend_day_after": 106,
+     "budget_move": 0.072,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.464,
+      "share_after": 0.383,
+      "roas_before": 0.394,
+      "roas_after": 0.319,
+      "mix": 0.002,
+      "perf": -0.0286,
+      "funnel": {
+       "spend": 122.17,
+       "roas": 0.3188998928,
+       "hook": 0.1413407858,
+       "ipm": 2.8199945097,
+       "pur_per_100": 2.6548672566
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.332,
+      "share_after": 0.16,
+      "roas_before": 0.314,
+      "roas_after": 0.382,
+      "mix": 0.0181,
+      "perf": 0.0109,
+      "funnel": {
+       "spend": 51.01,
+       "roas": 0.3818859051,
+       "hook": 0.1040896735,
+       "ipm": 3.1816735603,
+       "pur_per_100": 3.8461538462
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.172,
+      "share_after": 0.136,
+      "roas_before": 0.692,
+      "roas_after": 0.488,
+      "mix": -0.0098,
+      "perf": -0.0277,
+      "funnel": {
+       "spend": 43.31,
+       "roas": 0.488339875,
+       "hook": 0.1671048921,
+       "ipm": 2.7314732086,
+       "pur_per_100": 3.738317757
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.0,
+      "share_after": 0.294,
+      "roas_before": null,
+      "roas_after": 0.313,
+      "mix": -0.0311,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 93.81,
+       "roas": 0.3128664323,
+       "hook": 0.3640902857,
+       "ipm": 3.495219773,
+       "pur_per_100": 2.9411764706
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0,
+     "within": -0.2052,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.778,
@@ -405,7 +873,109 @@
    },
    "spend_week": 1031,
    "priority": 618,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.25 \u2192 0.28: princesstreatment rose 0.25 \u2192 1.88 (2% of spend); facemask rose 0.08 \u2192 0.26 (7% of spend); against it: combo fell 0.26 \u2192 0.19 (22% of spend). Not media buying: $148 \u2192 $159/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 148,
+     "spend_day_after": 159,
+     "budget_move": 0.071,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "couple",
+      "share_before": 0.629,
+      "share_after": 0.557,
+      "roas_before": 0.277,
+      "roas_after": 0.283,
+      "mix": -0.0022,
+      "perf": 0.0033,
+      "funnel": {
+       "spend": 265.55,
+       "roas": 0.283110525,
+       "hook": 0.2039966684,
+       "ipm": 1.3230614186,
+       "pur_per_100": 4.0733197556
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.212,
+      "share_after": 0.221,
+      "roas_before": 0.262,
+      "roas_after": 0.188,
+      "mix": 0.0001,
+      "perf": -0.0164,
+      "funnel": {
+       "spend": 105.11,
+       "roas": 0.1879935294,
+       "hook": 0.1353046138,
+       "ipm": 2.8281399929,
+       "pur_per_100": 1.7857142857
+      }
+     },
+     {
+      "name": "facemask",
+      "share_before": 0.084,
+      "share_after": 0.068,
+      "roas_before": 0.081,
+      "roas_after": 0.255,
+      "mix": 0.0027,
+      "perf": 0.0118,
+      "funnel": {
+       "spend": 32.52,
+       "roas": 0.2546125472,
+       "hook": 0.0,
+       "ipm": 2.7565084227,
+       "pur_per_100": 2.7777777778
+      }
+     },
+     {
+      "name": "lipsync",
+      "share_before": 0.0,
+      "share_after": 0.103,
+      "roas_before": null,
+      "roas_after": 0.197,
+      "mix": -0.0051,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 49.02,
+       "roas": 0.196858422,
+       "hook": 0.2119813393,
+       "ipm": 1.0889174211,
+       "pur_per_100": 7.4626865672
+      }
+     },
+     {
+      "name": "princesstreatment",
+      "share_before": 0.031,
+      "share_after": 0.018,
+      "roas_before": 0.25,
+      "roas_after": 1.884,
+      "mix": 0.0,
+      "perf": 0.0298,
+      "funnel": {
+       "spend": 8.7,
+       "roas": 1.8839080452,
+       "hook": 0.0,
+       "ipm": 2.533394749,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0059,
+     "within": 0.0743,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.981,
@@ -465,7 +1035,125 @@
    },
    "spend_week": 2608,
    "priority": 2086,
-   "action": "Refresh again with a different concept (this one didn't get spend)"
+   "tier": 2.0,
+   "action": "Refresh again with a different concept (this one didn't get spend)",
+   "why": {
+    "text": "0.54 \u2192 0.38: combo fell 0.51 \u2192 0.30 (54% of spend); airport fell 2.38 \u2192 0.21 (9% of spend); against it: dreamlife lost spend (11% \u2192 3%) at 0.55. Not media buying: $419 \u2192 $423/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 419,
+     "spend_day_after": 423,
+     "budget_move": 0.009,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.057
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.529,
+      "share_after": 0.542,
+      "roas_before": 0.507,
+      "roas_after": 0.299,
+      "mix": -0.0004,
+      "perf": -0.1124,
+      "funnel": {
+       "spend": 687.72,
+       "roas": 0.2991042869,
+       "hook": 0.0741050857,
+       "ipm": 1.4830584492,
+       "pur_per_100": 9.2741935484
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.093,
+      "share_after": 0.132,
+      "roas_before": 0.491,
+      "roas_after": 0.48,
+      "mix": -0.002,
+      "perf": -0.0015,
+      "funnel": {
+       "spend": 167.61,
+       "roas": 0.4798639709,
+       "hook": 0.0575667585,
+       "ipm": 1.6027526173,
+       "pur_per_100": 5.504587156
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.116,
+      "share_after": 0.103,
+      "roas_before": 0.281,
+      "roas_after": 0.231,
+      "mix": 0.0035,
+      "perf": -0.0051,
+      "funnel": {
+       "spend": 130.57,
+       "roas": 0.2308340349,
+       "hook": 0.3741377612,
+       "ipm": 1.3716330385,
+       "pur_per_100": 8.6956521739
+      }
+     },
+     {
+      "name": "text",
+      "share_before": 0.107,
+      "share_after": 0.088,
+      "roas_before": 0.61,
+      "roas_after": 0.758,
+      "mix": -0.0013,
+      "perf": 0.0131,
+      "funnel": {
+       "spend": 111.71,
+       "roas": 0.7581237111,
+       "hook": 0.4002781322,
+       "ipm": 1.9701008228,
+       "pur_per_100": 27.4509803922
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.109,
+      "share_after": 0.029,
+      "roas_before": 0.279,
+      "roas_after": 0.547,
+      "mix": 0.021,
+      "perf": 0.0078,
+      "funnel": {
+       "spend": 36.91,
+       "roas": 0.5470062321,
+       "hook": 0.0283544957,
+       "ipm": 0.2144818119,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "airport",
+      "share_before": 0.042,
+      "share_after": 0.087,
+      "roas_before": 2.379,
+      "roas_after": 0.206,
+      "mix": 0.0825,
+      "perf": -0.1888,
+      "funnel": {
+       "spend": 110.28,
+       "roas": 0.205749003,
+       "hook": 0.3055555565,
+       "ipm": 2.4928774929,
+       "pur_per_100": 8.5714285714
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.014,
+     "within": 0.2503,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.986,
@@ -525,7 +1213,125 @@
    },
    "spend_week": 3307,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.48 \u2192 0.40: airport fell 0.57 \u2192 0.45 (36% of spend); talkinghead fell 0.41 \u2192 0.28 (14% of spend); against it: banner rose 0.19 \u2192 0.57 (7% of spend). Not media buying: $450 \u2192 $521/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 450,
+     "spend_day_after": 521,
+     "budget_move": 0.159,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "airport",
+      "share_before": 0.433,
+      "share_after": 0.355,
+      "roas_before": 0.57,
+      "roas_after": 0.454,
+      "mix": -0.0072,
+      "perf": -0.0412,
+      "funnel": {
+       "spend": 555.97,
+       "roas": 0.4535496528,
+       "hook": 0.1611059448,
+       "ipm": 4.3616304801,
+       "pur_per_100": 3.2679738562
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.116,
+      "share_after": 0.136,
+      "roas_before": 0.413,
+      "roas_after": 0.279,
+      "mix": -0.0013,
+      "perf": -0.0182,
+      "funnel": {
+       "spend": 212.6,
+       "roas": 0.2785512713,
+       "hook": 0.3854855865,
+       "ipm": 2.0911178911,
+       "pur_per_100": 5.3278688525
+      }
+     },
+     {
+      "name": "text",
+      "share_before": 0.109,
+      "share_after": 0.138,
+      "roas_before": 0.284,
+      "roas_after": 0.266,
+      "mix": -0.0056,
+      "perf": -0.0025,
+      "funnel": {
+       "spend": 215.13,
+       "roas": 0.265746295,
+       "hook": 0.3290895008,
+       "ipm": 1.7679653306,
+       "pur_per_100": 3.6585365854
+      }
+     },
+     {
+      "name": "lovestory",
+      "share_before": 0.108,
+      "share_after": 0.094,
+      "roas_before": 0.512,
+      "roas_after": 0.438,
+      "mix": -0.0005,
+      "perf": -0.007,
+      "funnel": {
+       "spend": 147.2,
+       "roas": 0.437703803,
+       "hook": 0.0017184682,
+       "ipm": 5.1432053626,
+       "pur_per_100": 3.317535545
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.094,
+      "share_after": 0.093,
+      "roas_before": 0.455,
+      "roas_after": 0.355,
+      "mix": 0.0,
+      "perf": -0.0093,
+      "funnel": {
+       "spend": 145.3,
+       "roas": 0.3549208536,
+       "hook": 0.0006286547,
+       "ipm": 4.0812660906,
+       "pur_per_100": 2.2004889976
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.089,
+      "share_after": 0.09,
+      "roas_before": 0.38,
+      "roas_after": 0.27,
+      "mix": -0.0001,
+      "perf": -0.0098,
+      "funnel": {
+       "spend": 140.44,
+       "roas": 0.2698661349,
+       "hook": 0.0931276339,
+       "ipm": 2.098432005,
+       "pur_per_100": 4.6296296296
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.007,
+     "within": -0.0789,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.97,
@@ -600,7 +1406,78 @@
    },
    "spend_week": 2816,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.49 \u2192 0.60: airport rose 0.48 \u2192 0.64 (56% of spend); combo rose 0.60 \u2192 0.79 (12% of spend). Media buying: spend $330 \u2192 $434/day.",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 330,
+     "spend_day_after": 434,
+     "budget_move": 0.314,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.001
+    },
+    "concepts": [
+     {
+      "name": "airport",
+      "share_before": 0.737,
+      "share_after": 0.562,
+      "roas_before": 0.478,
+      "roas_after": 0.639,
+      "mix": 0.0021,
+      "perf": 0.0902,
+      "funnel": {
+       "spend": 731.19,
+       "roas": 0.6388626774,
+       "hook": 0.3567553061,
+       "ipm": 3.3188810165,
+       "pur_per_100": 14.4607843137
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.17,
+      "share_after": 0.288,
+      "roas_before": 0.519,
+      "roas_after": 0.508,
+      "mix": 0.0034,
+      "perf": -0.0032,
+      "funnel": {
+       "spend": 375.03,
+       "roas": 0.5077727098,
+       "hook": 0.1374073976,
+       "ipm": 2.0263673878,
+       "pur_per_100": 13.3603238866
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.082,
+      "share_after": 0.12,
+      "roas_before": 0.602,
+      "roas_after": 0.785,
+      "mix": 0.0042,
+      "perf": 0.022,
+      "funnel": {
+       "spend": 156.41,
+       "roas": 0.784796367,
+       "hook": 0.0747823354,
+       "ipm": 1.7099986754,
+       "pur_per_100": 14.0845070423
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0072,
+     "within": -0.1335,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.904,
@@ -660,7 +1537,129 @@
    },
    "spend_week": 1720,
    "priority": 1376,
-   "action": "Refresh again with a different concept (this one didn't get spend)"
+   "tier": 2.0,
+   "action": "Refresh again with a different concept (this one didn't get spend)",
+   "why": {
+    "text": "0.32 \u2192 0.31: carousel fell 0.70 \u2192 0.08 (8% of spend); tweetoverlay fell 0.26 \u2192 0.12 (23% of spend); against it: excitement rose 0.27 \u2192 0.76 (20% of spend). Media buying: switched off: ads with 18% of the spend (tweetoverlay (last day 5 Nov), internationalfriends (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 250,
+     "spend_day_after": 262,
+     "budget_move": 0.051,
+     "stopped_share": 0.184,
+     "stopped": [
+      "tweetoverlay (last day 5 Nov)",
+      "internationalfriends (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "banner",
+      "share_before": 0.262,
+      "share_after": 0.302,
+      "roas_before": 0.369,
+      "roas_after": 0.358,
+      "mix": 0.0021,
+      "perf": -0.0033,
+      "funnel": {
+       "spend": 316.52,
+       "roas": 0.3580816382,
+       "hook": 0.0106424746,
+       "ipm": 2.8623142653,
+       "pur_per_100": 4.4117647059
+      }
+     },
+     {
+      "name": "tweetoverlay",
+      "share_before": 0.304,
+      "share_after": 0.229,
+      "roas_before": 0.258,
+      "roas_after": 0.117,
+      "mix": 0.0044,
+      "perf": -0.0325,
+      "funnel": {
+       "spend": 240.89,
+       "roas": 0.1165262143,
+       "hook": 0.0940927636,
+       "ipm": 0.9815842136,
+       "pur_per_100": 3.2258064516
+      }
+     },
+     {
+      "name": "excitement",
+      "share_before": 0.223,
+      "share_after": 0.201,
+      "roas_before": 0.272,
+      "roas_after": 0.756,
+      "mix": 0.001,
+      "perf": 0.0972,
+      "funnel": {
+       "spend": 210.94,
+       "roas": 0.7557125253,
+       "hook": 0.2391902494,
+       "ipm": 4.4528331982,
+       "pur_per_100": 5.3731343284
+      }
+     },
+     {
+      "name": "internationalfriends",
+      "share_before": 0.104,
+      "share_after": 0.09,
+      "roas_before": 0.139,
+      "roas_after": 0.137,
+      "mix": 0.0025,
+      "perf": -0.0002,
+      "funnel": {
+       "spend": 94.94,
+       "roas": 0.1368232565,
+       "hook": 0.2778293294,
+       "ipm": 2.4544284474,
+       "pur_per_100": 1.2195121951
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.089,
+      "share_after": 0.082,
+      "roas_before": 0.702,
+      "roas_after": 0.081,
+      "mix": -0.0028,
+      "perf": -0.0509,
+      "funnel": {
+       "spend": 86.09,
+       "roas": 0.0811941001,
+       "hook": 0.1957611045,
+       "ipm": 2.0991332611,
+       "pur_per_100": 3.2258064516
+      }
+     },
+     {
+      "name": "lipsync",
+      "share_before": 0.0,
+      "share_after": 0.064,
+      "roas_before": null,
+      "roas_after": 0.068,
+      "mix": -0.0159,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 66.92,
+       "roas": 0.0681410642,
+       "hook": 0.0782155581,
+       "ipm": 0.611474451,
+       "pur_per_100": 4.347826087
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.003,
+     "within": 0.0278,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.996,
@@ -730,7 +1729,114 @@
    },
    "spend_week": 3850,
    "priority": 3080,
-   "action": "Refresh again with a different concept (this one didn't get spend)"
+   "tier": 2.0,
+   "action": "Refresh again with a different concept (this one didn't get spend)",
+   "why": {
+    "text": "0.25 \u2192 0.31: tweetoverlay rose 0.30 \u2192 0.34 (66% of spend); internationalfriends rose 0.15 \u2192 0.35 (15% of spend). Media buying: switched off: ads with 69% of the spend (noteslist (last day 1 Nov), tweetoverlay (last day 5 Nov), internationalfriends (last day 1 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 538,
+     "spend_day_after": 576,
+     "budget_move": 0.07,
+     "stopped_share": 0.693,
+     "stopped": [
+      "noteslist (last day 1 Nov)",
+      "tweetoverlay (last day 5 Nov)",
+      "internationalfriends (last day 1 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "tweetoverlay",
+      "share_before": 0.497,
+      "share_after": 0.656,
+      "roas_before": 0.297,
+      "roas_after": 0.338,
+      "mix": 0.008,
+      "perf": 0.0264,
+      "funnel": {
+       "spend": 1510.35,
+       "roas": 0.3376435909,
+       "hook": 0.1406485864,
+       "ipm": 2.2501108397,
+       "pur_per_100": 4.4419134396
+      }
+     },
+     {
+      "name": "internationalfriends",
+      "share_before": 0.175,
+      "share_after": 0.151,
+      "roas_before": 0.154,
+      "roas_after": 0.346,
+      "mix": 0.0023,
+      "perf": 0.029,
+      "funnel": {
+       "spend": 348.02,
+       "roas": 0.3459283967,
+       "hook": 0.2344649687,
+       "ipm": 1.955400233,
+       "pur_per_100": 9.3617021277
+      }
+     },
+     {
+      "name": "noteslist",
+      "share_before": 0.278,
+      "share_after": 0.0,
+      "roas_before": 0.209,
+      "roas_after": null,
+      "mix": 0.0106,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 1047.77,
+       "roas": 0.2088149117,
+       "hook": 0.0049445385,
+       "ipm": 1.7724021042,
+       "pur_per_100": 4.0370058873
+      }
+     },
+     {
+      "name": "beatsyncedtext",
+      "share_before": 0.027,
+      "share_after": 0.107,
+      "roas_before": 0.235,
+      "roas_after": 0.21,
+      "mix": -0.001,
+      "perf": -0.0027,
+      "funnel": {
+       "spend": 246.78,
+       "roas": 0.21018721,
+       "hook": 0.2450605195,
+       "ipm": 1.5241189035,
+       "pur_per_100": 7.299270073
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.014,
+      "share_after": 0.048,
+      "roas_before": 0.088,
+      "roas_after": 0.169,
+      "mix": -0.0055,
+      "perf": 0.0039,
+      "funnel": {
+       "spend": 111.22,
+       "roas": 0.1691242572,
+       "hook": 0.102024894,
+       "ipm": 2.8369800348,
+       "pur_per_100": 2.5
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0089,
+     "within": -0.015,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.985,
@@ -800,7 +1906,77 @@
    },
    "spend_week": 3313,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.42 \u2192 0.48: banner rose 0.42 \u2192 0.48 (77% of spend). Not media buying: $485 \u2192 $497/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 485,
+     "spend_day_after": 497,
+     "budget_move": 0.024,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.002
+    },
+    "concepts": [
+     {
+      "name": "banner",
+      "share_before": 0.747,
+      "share_after": 0.772,
+      "roas_before": 0.423,
+      "roas_after": 0.48,
+      "mix": 0.0,
+      "perf": 0.0438,
+      "funnel": {
+       "spend": 1534.1,
+       "roas": 0.4800208576,
+       "hook": 0.048085149,
+       "ipm": 1.4644843857,
+       "pur_per_100": 6.1862244898
+      }
+     },
+     {
+      "name": "internationalfriends",
+      "share_before": 0.162,
+      "share_after": 0.157,
+      "roas_before": 0.558,
+      "roas_after": 0.553,
+      "mix": -0.0006,
+      "perf": -0.0007,
+      "funnel": {
+       "spend": 312.68,
+       "roas": 0.5534412207,
+       "hook": 0.3071482138,
+       "ipm": 1.1431429286,
+       "pur_per_100": 13.125
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.047,
+      "share_after": 0.034,
+      "roas_before": 0.299,
+      "roas_after": 0.367,
+      "mix": 0.0016,
+      "perf": 0.0023,
+      "funnel": {
+       "spend": 67.23,
+       "roas": 0.3673955075,
+       "hook": 0.2001838506,
+       "ipm": 1.2256779531,
+       "pur_per_100": 10.0
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0069,
+     "within": 0.1239,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.0,
@@ -855,7 +2031,127 @@
    },
    "spend_week": 1042,
    "priority": 1042,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.35 \u2192 0.32: dancing took spend (0% \u2192 76%) at 0.28; grasslay lost spend (14% \u2192 1%) at 0.00; against it: kitchen lost spend (13% \u2192 0%) at 0.08. Not media buying: $153 \u2192 $152/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 153,
+     "spend_day_after": 152,
+     "budget_move": -0.005,
+     "stopped_share": 0.13,
+     "stopped": [
+      "kitchen (last day 30 Oct)"
+     ],
+     "faded_share": 0.067
+    },
+    "concepts": [
+     {
+      "name": "dancing",
+      "share_before": 0.0,
+      "share_after": 0.755,
+      "roas_before": null,
+      "roas_after": 0.276,
+      "mix": -0.0528,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 575.27,
+       "roas": 0.275783545,
+       "hook": 0.3337233226,
+       "ipm": 2.0325707062,
+       "pur_per_100": 6.3414634146
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.446,
+      "share_after": 0.165,
+      "roas_before": 0.349,
+      "roas_after": 0.533,
+      "mix": -0.0009,
+      "perf": 0.0304,
+      "funnel": {
+       "spend": 126.02,
+       "roas": 0.5327725791,
+       "hook": 0.0013386007,
+       "ipm": 3.7546116426,
+       "pur_per_100": 6.9565217391
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.189,
+      "share_after": 0.027,
+      "roas_before": 0.385,
+      "roas_after": 0.477,
+      "mix": -0.0064,
+      "perf": 0.0025,
+      "funnel": {
+       "spend": 20.67,
+       "roas": 0.4770198361,
+       "hook": 0.2885958135,
+       "ipm": 2.5213343677,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "grasslay",
+      "share_before": 0.137,
+      "share_after": 0.011,
+      "roas_before": 0.521,
+      "roas_after": 0.0,
+      "mix": -0.0221,
+      "perf": -0.0057,
+      "funnel": {
+       "spend": 8.39,
+       "roas": 0.0,
+       "hook": 0.0599017984,
+       "ipm": 3.2733224223,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "kitchen",
+      "share_before": 0.13,
+      "share_after": 0.0,
+      "roas_before": 0.083,
+      "roas_after": null,
+      "mix": 0.0341,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 139.24,
+       "roas": 0.083237575,
+       "hook": 0.0018661682,
+       "ipm": 2.0661157025,
+       "pur_per_100": 5.376344086
+      }
+     },
+     {
+      "name": "maptapedonwall",
+      "share_before": 0.076,
+      "share_after": 0.006,
+      "roas_before": 0.346,
+      "roas_after": null,
+      "mix": 0.0,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 4.2,
+       "roas": 1.2571428582,
+       "hook": 0.0601226999,
+       "ipm": 3.0674846626,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0609,
+     "within": -0.1146,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.545,
@@ -902,7 +2198,129 @@
    },
    "spend_week": 1675,
    "priority": 1005,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.27 \u2192 0.31: combo rose 0.28 \u2192 0.50 (30% of spend); wanted rose 0.11 \u2192 0.56 (7% of spend); against it: wakeup fell 0.42 \u2192 0.21 (25% of spend). Media buying: switched off: ads with 18% of the spend (wakeup (last day 5 Nov), banner (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 236,
+     "spend_day_after": 249,
+     "budget_move": 0.052,
+     "stopped_share": 0.176,
+     "stopped": [
+      "wakeup (last day 5 Nov)",
+      "banner (last day 5 Nov)"
+     ],
+     "faded_share": 0.046
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.38,
+      "share_after": 0.297,
+      "roas_before": 0.28,
+      "roas_after": 0.499,
+      "mix": -0.0012,
+      "perf": 0.065,
+      "funnel": {
+       "spend": 368.72,
+       "roas": 0.4990507721,
+       "hook": 0.0838265012,
+       "ipm": 2.0360467419,
+       "pur_per_100": 10.5058365759
+      }
+     },
+     {
+      "name": "wakeup",
+      "share_before": 0.289,
+      "share_after": 0.249,
+      "roas_before": 0.419,
+      "roas_after": 0.21,
+      "mix": -0.0061,
+      "perf": -0.052,
+      "funnel": {
+       "spend": 309.47,
+       "roas": 0.2104889008,
+       "hook": 0.1845147895,
+       "ipm": 3.3627400104,
+       "pur_per_100": 9.8765432099
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.173,
+      "share_after": 0.068,
+      "roas_before": 0.112,
+      "roas_after": 0.556,
+      "mix": 0.0162,
+      "perf": 0.0304,
+      "funnel": {
+       "spend": 85.16,
+       "roas": 0.5558947863,
+       "hook": 0.0621905325,
+       "ipm": 2.4427279329,
+       "pur_per_100": 13.5135135135
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.0,
+      "share_after": 0.228,
+      "roas_before": null,
+      "roas_after": 0.072,
+      "mix": -0.0443,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 283.7,
+       "roas": 0.0718364477,
+       "hook": 0.3160978901,
+       "ipm": 1.4780709212,
+       "pur_per_100": 3.5398230088
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.055,
+      "share_after": 0.034,
+      "roas_before": 0.099,
+      "roas_after": 0.142,
+      "mix": 0.0034,
+      "perf": 0.0015,
+      "funnel": {
+       "spend": 42.86,
+       "roas": 0.1423238445,
+       "hook": 0.0,
+       "ipm": 2.6789541363,
+       "pur_per_100": 8.0
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.047,
+      "share_after": 0.027,
+      "roas_before": 0.131,
+      "roas_after": 0.145,
+      "mix": 0.0027,
+      "perf": 0.0004,
+      "funnel": {
+       "spend": 33.28,
+       "roas": 0.14453125,
+       "hook": 0.1733714294,
+       "ipm": 0.9142857143,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0031,
+     "within": 0.0041,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.0,
@@ -961,7 +2379,131 @@
    },
    "spend_week": 2106,
    "priority": 1263,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.21 \u2192 0.27: dancing took spend (0% \u2192 78%) at 0.33; against it: combo lost spend (65% \u2192 1%) at 0.25. Media buying: switched off: ads with 26% of the spend (wanted (last day 2 Nov), talkinghead (last day 1 Nov), carousel (last day 5 Nov)). Audience: the country mix moved ROAS -0.04 week on week, more than inside the same countries (+0.03).",
+    "causes": [
+     "media buying",
+     "creative",
+     "audience"
+    ],
+    "media": {
+     "spend_day_before": 279,
+     "spend_day_after": 335,
+     "budget_move": 0.199,
+     "stopped_share": 0.255,
+     "stopped": [
+      "wanted (last day 2 Nov)",
+      "talkinghead (last day 1 Nov)",
+      "carousel (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "dancing",
+      "share_before": 0.0,
+      "share_after": 0.778,
+      "roas_before": null,
+      "roas_after": 0.326,
+      "mix": 0.0866,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 1301.44,
+       "roas": 0.3259927452,
+       "hook": 0.303448973,
+       "ipm": 1.5103666072,
+       "pur_per_100": 8.7478559177
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.646,
+      "share_after": 0.008,
+      "roas_before": 0.249,
+      "roas_after": null,
+      "mix": -0.0219,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 12.57,
+       "roas": 0.0,
+       "hook": 0.13154173,
+       "ipm": 1.414427157,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.173,
+      "share_after": 0.014,
+      "roas_before": 0.177,
+      "roas_after": 0.0,
+      "mix": 0.006,
+      "perf": -0.0024,
+      "funnel": {
+       "spend": 22.87,
+       "roas": 0.0,
+       "hook": 0.2080555535,
+       "ipm": 0.2777777778,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.051,
+      "share_after": 0.107,
+      "roas_before": 0.0,
+      "roas_after": 0.132,
+      "mix": -0.0121,
+      "perf": 0.0141,
+      "funnel": {
+       "spend": 179.04,
+       "roas": 0.1318699764,
+       "hook": 0.1841059377,
+       "ipm": 0.5606952621,
+       "pur_per_100": 8.8235294118
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.068,
+      "share_after": 0.0,
+      "roas_before": 0.299,
+      "roas_after": null,
+      "mix": -0.0057,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 132.13,
+       "roas": 0.2987966405,
+       "hook": 0.2799108384,
+       "ipm": 1.4557365117,
+       "pur_per_100": 12.5
+      }
+     },
+     {
+      "name": "kitchen",
+      "share_before": 0.028,
+      "share_after": 0.033,
+      "roas_before": 0.106,
+      "roas_after": 0.0,
+      "mix": -0.0005,
+      "perf": -0.0035,
+      "funnel": {
+       "spend": 54.95,
+       "roas": 0.0,
+       "hook": 0.0440803216,
+       "ipm": 0.223947447,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0384,
+     "within": 0.0315,
+     "text": "the country mix"
+    }
+   }
   },
   {
    "cum_above": 0.508,
@@ -1007,7 +2549,80 @@
    },
    "spend_week": 1029,
    "priority": 1029,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.27 \u2192 0.23: banner fell 0.28 \u2192 0.18 (51% of spend); against it: dancing took spend (0% \u2192 46%) at 0.29. Media buying: switched off: ads with 77% of the spend (banner (last day 2 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 143,
+     "spend_day_after": 161,
+     "budget_move": 0.124,
+     "stopped_share": 0.769,
+     "stopped": [
+      "banner (last day 2 Nov)"
+     ],
+     "faded_share": 0.012
+    },
+    "concepts": [
+     {
+      "name": "banner",
+      "share_before": 0.915,
+      "share_after": 0.508,
+      "roas_before": 0.28,
+      "roas_after": 0.178,
+      "mix": -0.006,
+      "perf": -0.052,
+      "funnel": {
+       "spend": 408.6,
+       "roas": 0.1778756745,
+       "hook": 0.0008301626,
+       "ipm": 2.1186440678,
+       "pur_per_100": 6.5306122449
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.004,
+      "share_after": 0.457,
+      "roas_before": null,
+      "roas_after": 0.295,
+      "mix": 0.0134,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 367.06,
+       "roas": 0.2949381573,
+       "hook": 0.3452358735,
+       "ipm": 1.7951912418,
+       "pur_per_100": 9.2896174863
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.038,
+      "share_after": 0.019,
+      "roas_before": 0.243,
+      "roas_after": 0.0,
+      "mix": 0.0004,
+      "perf": -0.0047,
+      "funnel": {
+       "spend": 15.47,
+       "roas": 0.0,
+       "hook": 0.005091414,
+       "ipm": 1.157139551,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0279,
+     "within": 0.0917,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.886,
@@ -1054,7 +2669,129 @@
    },
    "spend_week": 4485,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.52 \u2192 0.49: banner fell 0.50 \u2192 0.40 (62% of spend); wakeup fell 0.71 \u2192 0.21 (4% of spend); against it: airport rose 0.78 \u2192 1.19 (6% of spend). Media buying: switched off: ads with 20% of the spend (banner (last day 5 Nov), banner (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 618,
+     "spend_day_after": 668,
+     "budget_move": 0.082,
+     "stopped_share": 0.196,
+     "stopped": [
+      "banner (last day 5 Nov)",
+      "banner (last day 5 Nov)"
+     ],
+     "faded_share": 0.003
+    },
+    "concepts": [
+     {
+      "name": "banner",
+      "share_before": 0.706,
+      "share_after": 0.618,
+      "roas_before": 0.496,
+      "roas_after": 0.402,
+      "mix": 0.0017,
+      "perf": -0.0584,
+      "funnel": {
+       "spend": 2066.08,
+       "roas": 0.4017414621,
+       "hook": 0.3124309467,
+       "ipm": 1.789500177,
+       "pur_per_100": 7.389749702
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.105,
+      "share_after": 0.123,
+      "roas_before": 0.552,
+      "roas_after": 0.737,
+      "mix": 0.0007,
+      "perf": 0.0227,
+      "funnel": {
+       "spend": 411.39,
+       "roas": 0.7371107706,
+       "hook": 0.1990459856,
+       "ipm": 2.9185321562,
+       "pur_per_100": 10.752688172
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.07,
+      "share_after": 0.084,
+      "roas_before": 0.255,
+      "roas_after": 0.319,
+      "mix": -0.0035,
+      "perf": 0.0054,
+      "funnel": {
+       "spend": 279.55,
+       "roas": 0.3194777321,
+       "hook": 0.2879239933,
+       "ipm": 2.6391885069,
+       "pur_per_100": 13.0434782609
+      }
+     },
+     {
+      "name": "airport",
+      "share_before": 0.051,
+      "share_after": 0.061,
+      "roas_before": 0.775,
+      "roas_after": 1.189,
+      "mix": 0.0024,
+      "perf": 0.0251,
+      "funnel": {
+       "spend": 202.51,
+       "roas": 1.1893239826,
+       "hook": 0.2789902953,
+       "ipm": 1.4358738728,
+       "pur_per_100": 36.0
+      }
+     },
+     {
+      "name": "wakeup",
+      "share_before": 0.049,
+      "share_after": 0.042,
+      "roas_before": 0.714,
+      "roas_after": 0.209,
+      "mix": -0.0014,
+      "perf": -0.0212,
+      "funnel": {
+       "spend": 140.39,
+       "roas": 0.2094878549,
+       "hook": 0.3583043529,
+       "ipm": 2.1618573174,
+       "pur_per_100": 10.8695652174
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.0,
+      "share_after": 0.054,
+      "roas_before": null,
+      "roas_after": 0.631,
+      "mix": 0.0062,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 180.7,
+       "roas": 0.6313779741,
+       "hook": 0.3564830453,
+       "ipm": 1.2912453565,
+       "pur_per_100": 15.3846153846
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0176,
+     "within": -0.0814,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.545,
@@ -1096,7 +2833,81 @@
    },
    "spend_week": 2343,
    "priority": 0,
-   "action": "Leave: watch week 2"
+   "tier": null,
+   "action": "Leave: watch week 2",
+   "why": {
+    "text": "0.44 \u2192 0.52: datingcontest rose 0.47 \u2192 0.55 (55% of spend); colosseum5050 took spend (0% \u2192 43%) at 0.52. Media buying: spend $303 \u2192 $368/day; switched off: ads with 22% of the spend (datingcontest (last day 3 Nov), datingcontest (last day 29 Oct)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 303,
+     "spend_day_after": 368,
+     "budget_move": 0.213,
+     "stopped_share": 0.222,
+     "stopped": [
+      "datingcontest (last day 3 Nov)",
+      "datingcontest (last day 29 Oct)"
+     ],
+     "faded_share": 0.001
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.95,
+      "share_after": 0.545,
+      "roas_before": 0.465,
+      "roas_after": 0.547,
+      "mix": -0.0095,
+      "perf": 0.0448,
+      "funnel": {
+       "spend": 1001.52,
+       "roas": 0.5473380461,
+       "hook": 0.4122213336,
+       "ipm": 2.0479413314,
+       "pur_per_100": 16.9047619048
+      }
+     },
+     {
+      "name": "colosseum5050",
+      "share_before": 0.0,
+      "share_after": 0.426,
+      "roas_before": null,
+      "roas_after": 0.52,
+      "mix": 0.0334,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 782.76,
+       "roas": 0.5201977593,
+       "hook": 0.4855931878,
+       "ipm": 2.1051565077,
+       "pur_per_100": 12.0320855615
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.042,
+      "share_after": 0.026,
+      "roas_before": 0.0,
+      "roas_after": 0.208,
+      "mix": 0.0071,
+      "perf": 0.0054,
+      "funnel": {
+       "spend": 48.14,
+       "roas": 0.2075197341,
+       "hook": 0.1776260558,
+       "ipm": 0.7275169288,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0078,
+     "within": 0.2203,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.951,
@@ -1135,7 +2946,63 @@
    },
    "spend_week": 972,
    "priority": 583,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.37 \u2192 0.42: talkinghead rose 0.59 \u2192 0.66 (34% of spend). Not media buying: $126 \u2192 $145/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 126,
+     "spend_day_after": 145,
+     "budget_move": 0.152,
+     "stopped_share": 0.08,
+     "stopped": [
+      "datingcontest (last day 1 Nov)"
+     ],
+     "faded_share": 0.002
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.731,
+      "share_after": 0.643,
+      "roas_before": 0.317,
+      "roas_after": 0.302,
+      "mix": 0.005,
+      "perf": -0.0095,
+      "funnel": {
+       "spend": 280.58,
+       "roas": 0.3022667358,
+       "hook": 0.4104112401,
+       "ipm": 2.4576791881,
+       "pur_per_100": 9.4827586207
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.242,
+      "share_after": 0.339,
+      "roas_before": 0.589,
+      "roas_after": 0.661,
+      "mix": 0.021,
+      "perf": 0.0244,
+      "funnel": {
+       "spend": 148.03,
+       "roas": 0.6610822137,
+       "hook": 0.3922989191,
+       "ipm": 1.1406726886,
+       "pur_per_100": 27.027027027
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0411,
+     "within": 0.1059,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.477,
@@ -1183,7 +3050,112 @@
    },
    "spend_week": 3920,
    "priority": 3920,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.48 \u2192 0.30: colosseum5050 took spend (0% \u2192 41%) at 0.19; banner fell 0.80 \u2192 0.10 (5% of spend). Media buying: spend $469 \u2192 $592/day; switched off: ads with 15% of the spend (talkinghead (last day 3 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 469,
+     "spend_day_after": 592,
+     "budget_move": 0.263,
+     "stopped_share": 0.152,
+     "stopped": [
+      "talkinghead (last day 3 Nov)"
+     ],
+     "faded_share": 0.004
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.772,
+      "share_after": 0.477,
+      "roas_before": 0.466,
+      "roas_after": 0.435,
+      "mix": 0.0028,
+      "perf": -0.0145,
+      "funnel": {
+       "spend": 1414.08,
+       "roas": 0.4352582598,
+       "hook": 0.4737488867,
+       "ipm": 3.5021965531,
+       "pur_per_100": 14.0350877193
+      }
+     },
+     {
+      "name": "colosseum5050",
+      "share_before": 0.0,
+      "share_after": 0.413,
+      "roas_before": null,
+      "roas_after": 0.192,
+      "mix": -0.117,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 1223.5,
+       "roas": 0.1919084604,
+       "hook": 0.4951747544,
+       "ipm": 2.5812152641,
+       "pur_per_100": 6.3063063063
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.16,
+      "share_after": 0.003,
+      "roas_before": 0.444,
+      "roas_after": null,
+      "mix": 0.0049,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 7.62,
+       "roas": 0.0,
+       "hook": 0.2716049389,
+       "ipm": 2.4691358025,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.039,
+      "share_after": 0.054,
+      "roas_before": 0.795,
+      "roas_after": 0.099,
+      "mix": 0.0049,
+      "perf": -0.0379,
+      "funnel": {
+       "spend": 161.19,
+       "roas": 0.0985172777,
+       "hook": 0.2044632097,
+       "ipm": 1.5832328106,
+       "pur_per_100": 4.7619047619
+      }
+     },
+     {
+      "name": "cte",
+      "share_before": 0.01,
+      "share_after": 0.042,
+      "roas_before": null,
+      "roas_after": 0.223,
+      "mix": -0.0082,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 124.43,
+       "roas": 0.2225347593,
+       "hook": 0.3042611499,
+       "ipm": 1.9935210566,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0084,
+     "within": -0.1385,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.371,
@@ -1214,7 +3186,128 @@
    },
    "spend_week": 1788,
    "priority": 1788,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.35 \u2192 0.22: datingcontest fell 0.35 \u2192 0.16 (37% of spend); colosseum5050 took spend (0% \u2192 28%) at 0.24; against it: povbait rose 0.27 \u2192 0.71 (6% of spend). Media buying: spend $220 \u2192 $275/day; switched off: ads with 16% of the spend (datingcontest (last day 1 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 220,
+     "spend_day_after": 275,
+     "budget_move": 0.251,
+     "stopped_share": 0.158,
+     "stopped": [
+      "datingcontest (last day 1 Nov)"
+     ],
+     "faded_share": 0.088
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.664,
+      "share_after": 0.371,
+      "roas_before": 0.355,
+      "roas_after": 0.158,
+      "mix": -0.0005,
+      "perf": -0.073,
+      "funnel": {
+       "spend": 510.1,
+       "roas": 0.1578317975,
+       "hook": 0.5138502165,
+       "ipm": 3.0153073738,
+       "pur_per_100": 2.6315789474
+      }
+     },
+     {
+      "name": "colosseum5050",
+      "share_before": 0.0,
+      "share_after": 0.28,
+      "roas_before": null,
+      "roas_after": 0.243,
+      "mix": -0.0308,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 385.48,
+       "roas": 0.2430735716,
+       "hook": 0.3865183488,
+       "ipm": 2.0663750567,
+       "pur_per_100": 5.3738317757
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.133,
+      "share_after": 0.115,
+      "roas_before": 0.388,
+      "roas_after": 0.256,
+      "mix": -0.0006,
+      "perf": -0.0152,
+      "funnel": {
+       "spend": 158.68,
+       "roas": 0.2559868911,
+       "hook": 0.4020961104,
+       "ipm": 3.7016389787,
+       "pur_per_100": 6.6265060241
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.098,
+      "share_after": 0.099,
+      "roas_before": 0.313,
+      "roas_after": 0.083,
+      "mix": -0.0001,
+      "perf": -0.0229,
+      "funnel": {
+       "spend": 136.83,
+       "roas": 0.0825111458,
+       "hook": 0.1505421721,
+       "ipm": 1.2012207,
+       "pur_per_100": 5.4054054054
+      }
+     },
+     {
+      "name": "povbait",
+      "share_before": 0.061,
+      "share_after": 0.056,
+      "roas_before": 0.271,
+      "roas_after": 0.708,
+      "mix": 0.0004,
+      "perf": 0.0244,
+      "funnel": {
+       "spend": 76.81,
+       "roas": 0.7081109201,
+       "hook": 0.1927025048,
+       "ipm": 2.1284359037,
+       "pur_per_100": 8.0
+      }
+     },
+     {
+      "name": "cte",
+      "share_before": 0.032,
+      "share_after": 0.073,
+      "roas_before": 0.467,
+      "roas_after": 0.147,
+      "mix": 0.0046,
+      "perf": -0.0233,
+      "funnel": {
+       "spend": 100.13,
+       "roas": 0.1472086291,
+       "hook": 0.2375700444,
+       "ipm": 2.1643096445,
+       "pur_per_100": 5.4794520548
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0041,
+     "within": -0.038,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.885,
@@ -1244,7 +3337,73 @@
    },
    "spend_week": 424,
    "priority": 339,
-   "action": "Refresh again with a different concept (this one didn't get spend)"
+   "tier": 2.0,
+   "action": "Refresh again with a different concept (this one didn't get spend)",
+   "why": {
+    "text": "0.00 \u2192 0.21: dancing rose 0.00 \u2192 0.35 (35% of spend); talkinghead rose 0.00 \u2192 0.12 (48% of spend). Media buying: spend $4 \u2192 $140/day.",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 4,
+     "spend_day_after": 140,
+     "budget_move": 38.771,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.46,
+      "share_after": 0.478,
+      "roas_before": 0.0,
+      "roas_after": 0.116,
+      "mix": 0.0,
+      "perf": 0.0556,
+      "funnel": {
+       "spend": 200.8,
+       "roas": 0.1163346615,
+       "hook": 0.3221858941,
+       "ipm": 2.1018215787,
+       "pur_per_100": 3.3333333333
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.389,
+      "share_after": 0.347,
+      "roas_before": 0.0,
+      "roas_after": 0.355,
+      "mix": 0.0,
+      "perf": 0.1231,
+      "funnel": {
+       "spend": 145.57,
+       "roas": 0.3551555954,
+       "hook": 0.1305200974,
+       "ipm": 1.4969757045,
+       "pur_per_100": 10.8108108108
+      }
+     },
+     {
+      "name": "datingcontest",
+      "share_before": 0.151,
+      "share_after": 0.175,
+      "roas_before": 0.0,
+      "roas_after": 0.204,
+      "mix": 0.0,
+      "perf": 0.0357,
+      "funnel": {
+       "spend": 73.61,
+       "roas": 0.2035049596,
+       "hook": 0.5960506932,
+       "ipm": 3.5366931919,
+       "pur_per_100": 5.0
+      }
+     }
+    ]
+   }
   },
   {
    "cum_above": 0.94,
@@ -1317,7 +3476,66 @@
    },
    "spend_week": 1731,
    "priority": 1039,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.34 \u2192 0.40: wanted rose 0.35 \u2192 0.40 (94% of spend). Media buying: switched off: ads with 26% of the spend (wanted (last day 5 Nov), wanted (last day 2 Nov), wanted (last day 29 Oct)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 252,
+     "spend_day_after": 256,
+     "budget_move": 0.014,
+     "stopped_share": 0.26,
+     "stopped": [
+      "wanted (last day 5 Nov)",
+      "wanted (last day 2 Nov)",
+      "wanted (last day 29 Oct)"
+     ],
+     "faded_share": 0.041
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.945,
+      "share_after": 0.94,
+      "roas_before": 0.35,
+      "roas_after": 0.404,
+      "mix": 0.0,
+      "perf": 0.0506,
+      "funnel": {
+       "spend": 1203.7,
+       "roas": 0.4040707809,
+       "hook": 0.086905165,
+       "ipm": 1.4335108975,
+       "pur_per_100": 23.6
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.033,
+      "share_after": 0.052,
+      "roas_before": 0.332,
+      "roas_after": 0.359,
+      "mix": -0.0002,
+      "perf": 0.0014,
+      "funnel": {
+       "spend": 66.83,
+       "roas": 0.3586712551,
+       "hook": 0.0096989448,
+       "ipm": 1.5518311608,
+       "pur_per_100": 5.0
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0511,
+     "within": 0.1544,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.708,
@@ -1368,7 +3586,111 @@
    },
    "spend_week": 2098,
    "priority": 1259,
-   "action": "Refresh again: the batch didn't move ROAS"
+   "tier": 3.0,
+   "action": "Refresh again: the batch didn't move ROAS",
+   "why": {
+    "text": "0.31 \u2192 0.30: banner fell 0.37 \u2192 0.19 (17% of spend); talkinghead took spend (15% \u2192 31%) at 0.22. Not media buying: $296 \u2192 $311/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 296,
+     "spend_day_after": 311,
+     "budget_move": 0.05,
+     "stopped_share": 0.075,
+     "stopped": [
+      "wanted (last day 5 Nov)"
+     ],
+     "faded_share": 0.001
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.573,
+      "share_after": 0.401,
+      "roas_before": 0.316,
+      "roas_after": 0.323,
+      "mix": -0.0002,
+      "perf": 0.0029,
+      "funnel": {
+       "spend": 624.45,
+       "roas": 0.3229401874,
+       "hook": 0.1824992632,
+       "ipm": 2.9335107253,
+       "pur_per_100": 9.2936802974
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.148,
+      "share_after": 0.307,
+      "roas_before": 0.234,
+      "roas_after": 0.222,
+      "mix": -0.0128,
+      "perf": -0.0035,
+      "funnel": {
+       "spend": 476.95,
+       "roas": 0.222287452,
+       "hook": 0.3012973006,
+       "ipm": 2.8956530732,
+       "pur_per_100": 5.5555555556
+      }
+     },
+     {
+      "name": "povbait",
+      "share_before": 0.168,
+      "share_after": 0.096,
+      "roas_before": 0.446,
+      "roas_after": 0.495,
+      "mix": -0.0095,
+      "perf": 0.0047,
+      "funnel": {
+       "spend": 149.61,
+       "roas": 0.4952209075,
+       "hook": 0.2568313343,
+       "ipm": 2.5917733539,
+       "pur_per_100": 10.3448275862
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.053,
+      "share_after": 0.168,
+      "roas_before": 0.37,
+      "roas_after": 0.193,
+      "mix": 0.0065,
+      "perf": -0.03,
+      "funnel": {
+       "spend": 262.05,
+       "roas": 0.1926349937,
+       "hook": 0.0011185856,
+       "ipm": 1.5629549042,
+       "pur_per_100": 5.8823529412
+      }
+     },
+     {
+      "name": "manyplaces",
+      "share_before": 0.032,
+      "share_after": 0.015,
+      "roas_before": 0.075,
+      "roas_after": 0.0,
+      "mix": 0.004,
+      "perf": -0.0012,
+      "funnel": {
+       "spend": 23.97,
+       "roas": 0.0,
+       "hook": 0.3493054461,
+       "ipm": 2.0290307476,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0153,
+     "within": -0.1039,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.812,
@@ -1411,7 +3733,81 @@
    },
    "spend_week": 1674,
    "priority": 1004,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.18 \u2192 0.19: banner took spend (0% \u2192 19%) at 0.47; against it: wanted fell 0.17 \u2192 0.11 (53% of spend). Media buying: switched off: ads with 33% of the spend (wanted (last day 5 Nov), wanted (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 261,
+     "spend_day_after": 250,
+     "budget_move": -0.043,
+     "stopped_share": 0.327,
+     "stopped": [
+      "wanted (last day 5 Nov)",
+      "wanted (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.668,
+      "share_after": 0.531,
+      "roas_before": 0.172,
+      "roas_after": 0.108,
+      "mix": 0.0007,
+      "perf": -0.0343,
+      "funnel": {
+       "spend": 663.29,
+       "roas": 0.1076301467,
+       "hook": 0.1308494937,
+       "ipm": 1.4755480607,
+       "pur_per_100": 11.9047619048
+      }
+     },
+     {
+      "name": "manyplaces",
+      "share_before": 0.332,
+      "share_after": 0.281,
+      "roas_before": 0.187,
+      "roas_after": 0.147,
+      "mix": -0.0005,
+      "perf": -0.0113,
+      "funnel": {
+       "spend": 350.4,
+       "roas": 0.1466038817,
+       "hook": 0.3265714664,
+       "ipm": 1.6904666578,
+       "pur_per_100": 15.7894736842
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.0,
+      "share_after": 0.188,
+      "roas_before": null,
+      "roas_after": 0.465,
+      "mix": 0.0543,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 235.38,
+       "roas": 0.4652476835,
+       "hook": 0.0,
+       "ipm": 1.0312661135,
+       "pur_per_100": 27.2727272727
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0072,
+     "within": 0.0079,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.0,
@@ -1453,7 +3849,82 @@
    },
    "spend_week": 671,
    "priority": 671,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.10 \u2192 0.07: wanted fell 0.07 \u2192 0.00 (37% of spend); manyplaces fell 0.17 \u2192 0.09 (20% of spend); against it: banner took spend (0% \u2192 43%) at 0.13. Media buying: spend $141 \u2192 $98/day; switched off: ads with 41% of the spend (wanted (last day 2 Nov), wanted (last day 29 Oct), wanted (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 141,
+     "spend_day_after": 98,
+     "budget_move": -0.307,
+     "stopped_share": 0.407,
+     "stopped": [
+      "wanted (last day 2 Nov)",
+      "wanted (last day 29 Oct)",
+      "wanted (last day 5 Nov)"
+     ],
+     "faded_share": 0.061
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.767,
+      "share_after": 0.37,
+      "roas_before": 0.075,
+      "roas_after": 0.0,
+      "mix": 0.0088,
+      "perf": -0.0278,
+      "funnel": {
+       "spend": 180.14,
+       "roas": 0.0,
+       "hook": 0.1354903936,
+       "ipm": 1.4777941977,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "manyplaces",
+      "share_before": 0.233,
+      "share_after": 0.202,
+      "roas_before": 0.171,
+      "roas_after": 0.094,
+      "mix": -0.0023,
+      "perf": -0.0155,
+      "funnel": {
+       "spend": 98.27,
+       "roas": 0.0938231407,
+       "hook": 0.0652776239,
+       "ipm": 2.5490413388,
+       "pur_per_100": 4.347826087
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.0,
+      "share_after": 0.429,
+      "roas_before": null,
+      "roas_after": 0.129,
+      "mix": 0.0135,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 209.1,
+       "roas": 0.1289335236,
+       "hook": 0.0,
+       "ipm": 1.8893222818,
+       "pur_per_100": 9.6774193548
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0037,
+     "within": 0.0344,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.793,
@@ -1526,7 +3997,112 @@
    },
    "spend_week": 4863,
    "priority": 2918,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.31 \u2192 0.37: dreamlife took spend (0% \u2192 15%) at 0.55; datingcontest rose 0.30 \u2192 0.35 (56% of spend); against it: banner took spend (1% \u2192 4%) at 0.00. Media buying: switched off: ads with 20% of the spend (wanted (last day 3 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 694,
+     "spend_day_after": 732,
+     "budget_move": 0.055,
+     "stopped_share": 0.204,
+     "stopped": [
+      "wanted (last day 3 Nov)"
+     ],
+     "faded_share": 0.009
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.617,
+      "share_after": 0.557,
+      "roas_before": 0.305,
+      "roas_after": 0.349,
+      "mix": 0.0002,
+      "perf": 0.0248,
+      "funnel": {
+       "spend": 1223.0,
+       "roas": 0.3491251035,
+       "hook": 0.4559140855,
+       "ipm": 2.2410749313,
+       "pur_per_100": 9.8468271335
+      }
+     },
+     {
+      "name": "boysvmen",
+      "share_before": 0.137,
+      "share_after": 0.236,
+      "roas_before": 0.487,
+      "roas_after": 0.405,
+      "mix": 0.0176,
+      "perf": -0.0192,
+      "funnel": {
+       "spend": 518.58,
+       "roas": 0.4054340702,
+       "hook": 0.1592428663,
+       "ipm": 1.5712337193,
+       "pur_per_100": 11.914893617
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.204,
+      "share_after": 0.0,
+      "roas_before": 0.252,
+      "roas_after": null,
+      "mix": 0.0115,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 989.08,
+       "roas": 0.2524264974,
+       "hook": 0.3968962369,
+       "ipm": 1.4403083477,
+       "pur_per_100": 14.7887323944
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.0,
+      "share_after": 0.147,
+      "roas_before": null,
+      "roas_after": 0.549,
+      "mix": 0.0352,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 321.95,
+       "roas": 0.5488119265,
+       "hook": 0.0725036127,
+       "ipm": 0.5136029245,
+       "pur_per_100": 28.431372549
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.014,
+      "share_after": 0.04,
+      "roas_before": 0.0,
+      "roas_after": 0.0,
+      "mix": -0.0082,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 88.74,
+       "roas": 0.0,
+       "hook": 0.1094713176,
+       "ipm": 0.4949381327,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0245,
+     "within": -0.1068,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.786,
@@ -1587,7 +4163,125 @@
    },
    "spend_week": 5324,
    "priority": 4259,
-   "action": "Refresh again with a different concept (this one didn't get spend)"
+   "tier": 2.0,
+   "action": "Refresh again with a different concept (this one didn't get spend)",
+   "why": {
+    "text": "0.42 \u2192 0.39: carousel fell 1.11 \u2192 0.12 (4% of spend); dreamlife took spend (0% \u2192 6%) at 0.17; against it: combo rose 0.38 \u2192 0.44 (27% of spend). Not media buying: $754 \u2192 $796/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 754,
+     "spend_day_after": 796,
+     "budget_move": 0.056,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.006
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.326,
+      "share_after": 0.268,
+      "roas_before": 0.377,
+      "roas_after": 0.441,
+      "mix": 0.0028,
+      "perf": 0.0174,
+      "funnel": {
+       "spend": 639.98,
+       "roas": 0.4414356714,
+       "hook": 0.0839874832,
+       "ipm": 2.7946900888,
+       "pur_per_100": 5.2521008403
+      }
+     },
+     {
+      "name": "boysvmen",
+      "share_before": 0.237,
+      "share_after": 0.214,
+      "roas_before": 0.453,
+      "roas_after": 0.449,
+      "mix": -0.0006,
+      "perf": -0.0009,
+      "funnel": {
+       "spend": 511.57,
+       "roas": 0.4485994099,
+       "hook": 0.0997653019,
+       "ipm": 3.3761022307,
+       "pur_per_100": 7.2368421053
+      }
+     },
+     {
+      "name": "datingcontest",
+      "share_before": 0.141,
+      "share_after": 0.083,
+      "roas_before": 0.346,
+      "roas_after": 0.517,
+      "mix": 0.0046,
+      "perf": 0.0141,
+      "funnel": {
+       "spend": 197.28,
+       "roas": 0.5169302518,
+       "hook": 0.493570445,
+       "ipm": 4.4259255567,
+       "pur_per_100": 7.6576576577
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.047,
+      "share_after": 0.157,
+      "roas_before": 0.248,
+      "roas_after": 0.311,
+      "mix": -0.0194,
+      "perf": 0.0098,
+      "funnel": {
+       "spend": 375.6,
+       "roas": 0.310756125,
+       "hook": 0.000519722,
+       "ipm": 2.4860035976,
+       "pur_per_100": 2.9036004646
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.068,
+      "share_after": 0.064,
+      "roas_before": 0.397,
+      "roas_after": 0.283,
+      "mix": 0.0001,
+      "perf": -0.0073,
+      "funnel": {
+       "spend": 153.97,
+       "roas": 0.2833668913,
+       "hook": 0.2143195701,
+       "ipm": 3.9955304236,
+       "pur_per_100": 3.813559322
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.043,
+      "share_after": 0.032,
+      "roas_before": 0.151,
+      "roas_after": 0.571,
+      "mix": 0.003,
+      "perf": 0.0134,
+      "funnel": {
+       "spend": 76.39,
+       "roas": 0.5708862418,
+       "hook": 0.2413168554,
+       "ipm": 4.6878329427,
+       "pur_per_100": 9.0909090909
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0013,
+     "within": -0.0537,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.513,
@@ -1635,7 +4329,96 @@
    },
    "spend_week": 1345,
    "priority": 0,
-   "action": "Leave: watch week 2"
+   "tier": null,
+   "action": "Leave: watch week 2",
+   "why": {
+    "text": "0.19 \u2192 0.73: wanted rose 0.22 \u2192 0.60 (89% of spend); beatsyncedtext rose 0.23 \u2192 2.15 (9% of spend). Media buying: switched off: ads with 20% of the spend (povbait (last day 3 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 197,
+     "spend_day_after": 213,
+     "budget_move": 0.084,
+     "stopped_share": 0.199,
+     "stopped": [
+      "povbait (last day 3 Nov)"
+     ],
+     "faded_share": 0.021
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.713,
+      "share_after": 0.891,
+      "roas_before": 0.22,
+      "roas_after": 0.601,
+      "mix": 0.0061,
+      "perf": 0.3397,
+      "funnel": {
+       "spend": 570.28,
+       "roas": 0.6014063265,
+       "hook": 0.1348656403,
+       "ipm": 1.8394263186,
+       "pur_per_100": 11.3432835821
+      }
+     },
+     {
+      "name": "povbait",
+      "share_before": 0.199,
+      "share_after": 0.0,
+      "roas_before": 0.096,
+      "roas_after": null,
+      "mix": 0.018,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 274.45,
+       "roas": 0.0956458381,
+       "hook": 0.1710474909,
+       "ipm": 0.4906077716,
+       "pur_per_100": 8.4745762712
+      }
+     },
+     {
+      "name": "beatsyncedtext",
+      "share_before": 0.043,
+      "share_after": 0.09,
+      "roas_before": 0.233,
+      "roas_after": 2.151,
+      "mix": 0.0022,
+      "perf": 0.1719,
+      "funnel": {
+       "spend": 57.34,
+       "roas": 2.1513777462,
+       "hook": 0.0005132153,
+       "ipm": 2.2239329399,
+       "pur_per_100": 30.7692307692
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.03,
+      "share_after": 0.015,
+      "roas_before": 0.0,
+      "roas_after": 0.0,
+      "mix": 0.0028,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 9.45,
+       "roas": 0.0,
+       "hook": 0.0,
+       "ipm": 0.569476082,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0039,
+     "within": 0.1497,
+     "text": "inside the same countries"
+    }
+   }
   }
  ],
  "creator": [
@@ -1710,7 +4493,96 @@
    },
    "spend_week": 1511,
    "priority": 0,
-   "action": "Leave: watch week 2"
+   "tier": null,
+   "action": "Leave: watch week 2",
+   "why": {
+    "text": "0.22 \u2192 0.46: talkinghead rose 0.17 \u2192 0.54 (45% of spend); banner rose 0.33 \u2192 0.36 (45% of spend). Media buying: switched off: ads with 55% of the spend (talkinghead (last day 1 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 207,
+     "spend_day_after": 204,
+     "budget_move": -0.014,
+     "stopped_share": 0.554,
+     "stopped": [
+      "talkinghead (last day 1 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.559,
+      "share_after": 0.453,
+      "roas_before": 0.168,
+      "roas_after": 0.54,
+      "mix": 0.0057,
+      "perf": 0.1689,
+      "funnel": {
+       "spend": 925.22,
+       "roas": 0.5400877623,
+       "hook": 0.3976831984,
+       "ipm": 3.0909148475,
+       "pur_per_100": 9.8591549296
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.377,
+      "share_after": 0.451,
+      "roas_before": 0.33,
+      "roas_after": 0.365,
+      "mix": 0.008,
+      "perf": 0.0158,
+      "funnel": {
+       "spend": 919.87,
+       "roas": 0.3647037077,
+       "hook": 0.1129008833,
+       "ipm": 3.7002797595,
+       "pur_per_100": 3.5317200785
+      }
+     },
+     {
+      "name": "bigtext",
+      "share_before": 0.036,
+      "share_after": 0.021,
+      "roas_before": 0.045,
+      "roas_after": 0.257,
+      "mix": 0.0026,
+      "perf": 0.0045,
+      "funnel": {
+       "spend": 43.0,
+       "roas": 0.2572093032,
+       "hook": 0.0,
+       "ipm": 3.5224749215,
+       "pur_per_100": 4.347826087
+      }
+     },
+     {
+      "name": "flirtedtoohard",
+      "share_before": 0.0,
+      "share_after": 0.032,
+      "roas_before": null,
+      "roas_after": 0.615,
+      "mix": 0.0126,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 65.52,
+       "roas": 0.6153846183,
+       "hook": 0.361214938,
+       "ipm": 2.8667852088,
+       "pur_per_100": 7.5949367089
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0147,
+     "within": 0.1619,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.955,
@@ -1748,7 +4620,62 @@
    },
    "spend_week": 1653,
    "priority": 992,
-   "action": "Refresh again: keep the batch ads on, add a stronger hook"
+   "tier": 4.0,
+   "action": "Refresh again: keep the batch ads on, add a stronger hook",
+   "why": {
+    "text": "0.42 \u2192 0.45: talkinghead rose 0.31 \u2192 0.46 (56% of spend); against it: dancing fell 0.88 \u2192 0.47 (41% of spend). Media buying: spend $199 \u2192 $240/day.",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 199,
+     "spend_day_after": 240,
+     "budget_move": 0.207,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.001
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.774,
+      "share_after": 0.565,
+      "roas_before": 0.309,
+      "roas_after": 0.456,
+      "mix": 0.0238,
+      "perf": 0.0832,
+      "funnel": {
+       "spend": 1355.14,
+       "roas": 0.4556872364,
+       "hook": 0.4385879602,
+       "ipm": 2.9178512644,
+       "pur_per_100": 17.5213675214
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.199,
+      "share_after": 0.411,
+      "roas_before": 0.882,
+      "roas_after": 0.472,
+      "mix": 0.0973,
+      "perf": -0.1685,
+      "funnel": {
+       "spend": 984.52,
+       "roas": 0.4720371355,
+       "hook": 0.3818184896,
+       "ipm": 1.7866517638,
+       "pur_per_100": 19.1943127962
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0164,
+     "within": -0.0613,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.53,
@@ -1809,7 +4736,125 @@
    },
    "spend_week": 3307,
    "priority": 0,
-   "action": "Leave: the new creative took over and ROAS dipped but stays at the bar; re-read next week (no strike)"
+   "tier": null,
+   "action": "Leave: the new creative took over and ROAS dipped but stays at the bar; re-read next week (no strike)",
+   "why": {
+    "text": "0.50 \u2192 0.45: slider fell 1.16 \u2192 0.34 (9% of spend); text took spend (0% \u2192 12%) at 0.28; against it: talkinghead rose 0.26 \u2192 0.36 (12% of spend). Not media buying: $393 \u2192 $471/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 393,
+     "spend_day_after": 471,
+     "budget_move": 0.199,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "airport",
+      "share_before": 0.526,
+      "share_after": 0.407,
+      "roas_before": 0.522,
+      "roas_after": 0.536,
+      "mix": -0.0027,
+      "perf": 0.0056,
+      "funnel": {
+       "spend": 1920.53,
+       "roas": 0.5359614289,
+       "hook": 0.1540091903,
+       "ipm": 4.3108781987,
+       "pur_per_100": 4.4651619235
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.165,
+      "share_after": 0.122,
+      "roas_before": 0.261,
+      "roas_after": 0.363,
+      "mix": 0.0101,
+      "perf": 0.0125,
+      "funnel": {
+       "spend": 576.97,
+       "roas": 0.3632424568,
+       "hook": 0.3505861713,
+       "ipm": 2.0849318859,
+       "pur_per_100": 6.334841629
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.134,
+      "share_after": 0.094,
+      "roas_before": 0.528,
+      "roas_after": 0.422,
+      "mix": -0.0012,
+      "perf": -0.0099,
+      "funnel": {
+       "spend": 442.93,
+       "roas": 0.4223918003,
+       "hook": 0.0009814101,
+       "ipm": 4.0596215039,
+       "pur_per_100": 3.3828382838
+      }
+     },
+     {
+      "name": "lovestory",
+      "share_before": 0.105,
+      "share_after": 0.103,
+      "roas_before": 0.498,
+      "roas_after": 0.489,
+      "mix": 0.0,
+      "perf": -0.0009,
+      "funnel": {
+       "spend": 486.35,
+       "roas": 0.4892155851,
+       "hook": 0.0015536586,
+       "ipm": 4.7898446701,
+       "pur_per_100": 3.4379671151
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.037,
+      "share_after": 0.089,
+      "roas_before": 1.163,
+      "roas_after": 0.343,
+      "mix": 0.0344,
+      "perf": -0.073,
+      "funnel": {
+       "spend": 419.45,
+       "roas": 0.3428060553,
+       "hook": 0.0879524174,
+       "ipm": 2.1386990635,
+       "pur_per_100": 8.875739645
+      }
+     },
+     {
+      "name": "text",
+      "share_before": 0.0,
+      "share_after": 0.118,
+      "roas_before": null,
+      "roas_after": 0.277,
+      "mix": -0.0263,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 557.36,
+       "roas": 0.2769125893,
+       "hook": 0.3823229911,
+       "ipm": 1.6701896225,
+       "pur_per_100": 6.2355658199
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.007,
+     "within": -0.0789,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.702,
@@ -1848,7 +4893,64 @@
    },
    "spend_week": 972,
    "priority": 972,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "0.44 \u2192 0.39: datingcontest fell 0.50 \u2192 0.31 (70% of spend); against it: talkinghead rose 0.09 \u2192 0.62 (27% of spend). Media buying: switched off: ads with 26% of the spend (datingcontest (last day 1 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 130,
+     "spend_day_after": 132,
+     "budget_move": 0.012,
+     "stopped_share": 0.256,
+     "stopped": [
+      "datingcontest (last day 1 Nov)"
+     ],
+     "faded_share": 0.154
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.829,
+      "share_after": 0.702,
+      "roas_before": 0.504,
+      "roas_after": 0.313,
+      "mix": -0.0084,
+      "perf": -0.1342,
+      "funnel": {
+       "spend": 926.13,
+       "roas": 0.312580309,
+       "hook": 0.4181085372,
+       "ipm": 1.919263003,
+       "pur_per_100": 9.0909090909
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.159,
+      "share_after": 0.274,
+      "roas_before": 0.087,
+      "roas_after": 0.619,
+      "mix": -0.0403,
+      "perf": 0.1456,
+      "funnel": {
+       "spend": 361.51,
+       "roas": 0.6186274236,
+       "hook": 0.3782392344,
+       "ipm": 1.44989863,
+       "pur_per_100": 19.4915254237
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0411,
+     "within": 0.1059,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.0,
@@ -1921,7 +5023,128 @@
    },
    "spend_week": 1031,
    "priority": 618,
-   "action": "Refresh again: the batch didn't move ROAS"
+   "tier": 3.0,
+   "action": "Refresh again: the batch didn't move ROAS",
+   "why": {
+    "text": "0.25 \u2192 0.26: bigtext lost spend (45% \u2192 0%) at 0.15; couple took spend (0% \u2192 61%) at 0.28; against it: paragraphresponse lost spend (3% \u2192 1%) at 0.14. Media buying: switched off: ads with 45% of the spend (bigtext (last day 29 Oct)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 153,
+     "spend_day_after": 151,
+     "budget_move": -0.011,
+     "stopped_share": 0.448,
+     "stopped": [
+      "bigtext (last day 29 Oct)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "couple",
+      "share_before": 0.0,
+      "share_after": 0.606,
+      "roas_before": null,
+      "roas_after": 0.279,
+      "mix": 0.015,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 917.77,
+       "roas": 0.2788607176,
+       "hook": 0.2210980218,
+       "ipm": 1.3057359232,
+       "pur_per_100": 3.7247474747
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.319,
+      "share_after": 0.214,
+      "roas_before": 0.25,
+      "roas_after": 0.238,
+      "mix": 0.0004,
+      "perf": -0.0026,
+      "funnel": {
+       "spend": 324.69,
+       "roas": 0.2382272314,
+       "hook": 0.1333996715,
+       "ipm": 2.3396177242,
+       "pur_per_100": 2.7848101266
+      }
+     },
+     {
+      "name": "bigtext",
+      "share_before": 0.448,
+      "share_after": 0.0,
+      "roas_before": 0.149,
+      "roas_after": null,
+      "mix": 0.047,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 480.06,
+       "roas": 0.1491896845,
+       "hook": 0.0,
+       "ipm": 2.4966228801,
+       "pur_per_100": 1.2810851545
+      }
+     },
+     {
+      "name": "facemask",
+      "share_before": 0.121,
+      "share_after": 0.079,
+      "roas_before": 0.193,
+      "roas_after": 0.128,
+      "mix": 0.0025,
+      "perf": -0.0052,
+      "funnel": {
+       "spend": 120.03,
+       "roas": 0.1283012587,
+       "hook": 0.0,
+       "ipm": 2.8339745977,
+       "pur_per_100": 1.4598540146
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.041,
+      "share_after": 0.015,
+      "roas_before": 0.408,
+      "roas_after": 0.0,
+      "mix": -0.0039,
+      "perf": -0.0063,
+      "funnel": {
+       "spend": 23.22,
+       "roas": 0.0,
+       "hook": 0.0,
+       "ipm": 1.3697457409,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "paragraphresponse",
+      "share_before": 0.034,
+      "share_after": 0.013,
+      "roas_before": 1.303,
+      "roas_after": 0.137,
+      "mix": -0.0225,
+      "perf": -0.0149,
+      "funnel": {
+       "spend": 19.38,
+       "roas": 0.1367389056,
+       "hook": 0.0,
+       "ipm": 1.0104233142,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0059,
+     "within": 0.0743,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.0,
@@ -1951,7 +5174,72 @@
    },
    "spend_week": 424,
    "priority": 424,
-   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend"
+   "tier": 1.0,
+   "action": "Fix first: new concept, 3+ variants; pause the batch ads that took spend",
+   "why": {
+    "text": "Too little spend in one of the windows to say.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 0,
+     "spend_day_after": 106,
+     "budget_move": null,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.0,
+      "share_after": 0.478,
+      "roas_before": null,
+      "roas_after": 0.115,
+      "mix": 0.0,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 202.42,
+       "roas": 0.1154036164,
+       "hook": 0.322908703,
+       "ipm": 2.1312576737,
+       "pur_per_100": 3.2608695652
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.0,
+      "share_after": 0.347,
+      "roas_before": null,
+      "roas_after": 0.352,
+      "mix": 0.0,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 146.94,
+       "roas": 0.3518442903,
+       "hook": 0.1307704644,
+       "ipm": 1.4839770585,
+       "pur_per_100": 10.8108108108
+      }
+     },
+     {
+      "name": "datingcontest",
+      "share_before": 0.0,
+      "share_after": 0.175,
+      "roas_before": null,
+      "roas_after": 0.202,
+      "mix": 0.0,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 74.14,
+       "roas": 0.2020501764,
+       "hook": 0.5957633571,
+       "ipm": 3.5110304874,
+       "pur_per_100": 5.0
+      }
+     }
+    ]
+   }
   },
   {
    "cum_above": 0.882,
@@ -1988,7 +5276,82 @@
    },
    "spend_week": 506,
    "priority": 404,
-   "action": "Refresh again with a different concept (this one didn't get spend)"
+   "tier": 2.0,
+   "action": "Refresh again with a different concept (this one didn't get spend)",
+   "why": {
+    "text": "0.40 \u2192 0.26: talkinghead fell 0.48 \u2192 0.27 (39% of spend); dancing fell 2.23 \u2192 0.24 (19% of spend); against it: datingcontest lost spend (59% \u2192 42%) at 0.26. Media buying: switched off: ads with 63% of the spend (datingcontest (last day 1 Nov), talkinghead (last day 3 Nov), datingcontest (last day 3 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 148,
+     "spend_day_after": 148,
+     "budget_move": 0.0,
+     "stopped_share": 0.629,
+     "stopped": [
+      "datingcontest (last day 1 Nov)",
+      "talkinghead (last day 3 Nov)",
+      "datingcontest (last day 3 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "datingcontest",
+      "share_before": 0.593,
+      "share_after": 0.417,
+      "roas_before": 0.259,
+      "roas_after": 0.256,
+      "mix": 0.0242,
+      "perf": -0.0013,
+      "funnel": {
+       "spend": 431.06,
+       "roas": 0.2561824351,
+       "hook": 0.487407909,
+       "ipm": 2.8638261592,
+       "pur_per_100": 4.9618320611
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.38,
+      "share_after": 0.389,
+      "roas_before": 0.479,
+      "roas_after": 0.266,
+      "mix": 0.0007,
+      "perf": -0.0826,
+      "funnel": {
+       "spend": 401.56,
+       "roas": 0.2662366768,
+       "hook": 0.2614029027,
+       "ipm": 2.2830486721,
+       "pur_per_100": 6.4864864865
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.028,
+      "share_after": 0.194,
+      "roas_before": 2.225,
+      "roas_after": 0.241,
+      "mix": 0.305,
+      "perf": -0.3857,
+      "funnel": {
+       "spend": 200.93,
+       "roas": 0.2407306028,
+       "hook": 0.1745990213,
+       "ipm": 1.4224285924,
+       "pur_per_100": 8.0459770115
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0091,
+     "within": -0.263,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.723,
@@ -2057,7 +5420,125 @@
    },
    "spend_week": 1352,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.45 \u2192 0.40: banner lost spend (10% \u2192 3%) at 0.29; text took spend (0% \u2192 13%) at 0.34; against it: combo rose 0.40 \u2192 0.47 (27% of spend). Not media buying: $176 \u2192 $202/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 176,
+     "spend_day_after": 202,
+     "budget_move": 0.142,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.651,
+      "share_after": 0.271,
+      "roas_before": 0.404,
+      "roas_after": 0.465,
+      "mix": 0.0156,
+      "perf": 0.0163,
+      "funnel": {
+       "spend": 546.33,
+       "roas": 0.4647191262,
+       "hook": 0.1218213542,
+       "ipm": 1.1275369582,
+       "pur_per_100": 7.3170731707
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.0,
+      "share_after": 0.397,
+      "roas_before": null,
+      "roas_after": 0.413,
+      "mix": -0.0129,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 800.3,
+       "roas": 0.4130201165,
+       "hook": 0.1872036182,
+       "ipm": 0.7499477309,
+       "pur_per_100": 10.7070707071
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.233,
+      "share_after": 0.038,
+      "roas_before": 0.459,
+      "roas_after": 0.323,
+      "mix": -0.0026,
+      "perf": -0.0051,
+      "funnel": {
+       "spend": 76.25,
+       "roas": 0.3234098355,
+       "hook": 0.1571847718,
+       "ipm": 1.2881064835,
+       "pur_per_100": 3.7037037037
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.103,
+      "share_after": 0.026,
+      "roas_before": 0.7,
+      "roas_after": 0.287,
+      "mix": -0.0195,
+      "perf": -0.0107,
+      "funnel": {
+       "spend": 52.42,
+       "roas": 0.2867226249,
+       "hook": 0.1141791196,
+       "ipm": 0.9376932745,
+       "pur_per_100": 10.6382978723
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.0,
+      "share_after": 0.128,
+      "roas_before": null,
+      "roas_after": 0.343,
+      "mix": -0.0132,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 258.73,
+       "roas": 0.3429057312,
+       "hook": 0.379551162,
+       "ipm": 0.8140461521,
+       "pur_per_100": 10.5263157895
+      }
+     },
+     {
+      "name": "text",
+      "share_before": 0.0,
+      "share_after": 0.128,
+      "roas_before": null,
+      "roas_after": 0.341,
+      "mix": -0.0133,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 257.59,
+       "roas": 0.3414340598,
+       "hook": 0.4877182434,
+       "ipm": 1.0768299412,
+       "pur_per_100": 8.4577114428
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0,
+     "within": -0.0361,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.975,
@@ -2130,7 +5611,112 @@
    },
    "spend_week": 1559,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.44 \u2192 0.42: talkinghead fell 0.53 \u2192 0.39 (88% of spend); against it: carousel lost spend (11% \u2192 0%) at 0.06. Media buying: spend $146 \u2192 $202/day.",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 146,
+     "spend_day_after": 202,
+     "budget_move": 0.38,
+     "stopped_share": 0.083,
+     "stopped": [
+      "carousel (last day 26 Oct)"
+     ],
+     "faded_share": 0.002
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.794,
+      "share_after": 0.884,
+      "roas_before": 0.525,
+      "roas_after": 0.39,
+      "mix": 0.0079,
+      "perf": -0.1193,
+      "funnel": {
+       "spend": 1785.97,
+       "roas": 0.3898777684,
+       "hook": 0.3965866879,
+       "ipm": 2.2127600571,
+       "pur_per_100": 12.0104438642
+      }
+     },
+     {
+      "name": "paragraphresponse",
+      "share_before": 0.081,
+      "share_after": 0.043,
+      "roas_before": 0.086,
+      "roas_after": 0.716,
+      "mix": 0.0133,
+      "perf": 0.0274,
+      "funnel": {
+       "spend": 87.81,
+       "roas": 0.7158637977,
+       "hook": 0.0,
+       "ipm": 1.8075011297,
+       "pur_per_100": 27.0833333333
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.112,
+      "share_after": 0.001,
+      "roas_before": 0.057,
+      "roas_after": null,
+      "mix": 0.042,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 2.02,
+       "roas": 0.0,
+       "hook": 0.0,
+       "ipm": 0.0,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "flirtedtoohard",
+      "share_before": 0.0,
+      "share_after": 0.035,
+      "roas_before": null,
+      "roas_after": 1.019,
+      "mix": 0.0202,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 70.09,
+       "roas": 1.0189756014,
+       "hook": 0.1997178985,
+       "ipm": 2.2479834266,
+       "pur_per_100": 17.6470588235
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.0,
+      "share_after": 0.034,
+      "roas_before": null,
+      "roas_after": 0.318,
+      "mix": -0.0041,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 69.33,
+       "roas": 0.3181883748,
+       "hook": 0.1236930857,
+       "ipm": 0.8853288364,
+       "pur_per_100": 23.8095238095
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0437,
+     "within": -0.1004,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.995,
@@ -2195,7 +5781,95 @@
    },
    "spend_week": 3165,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.49 \u2192 0.47: banner fell 0.91 \u2192 0.38 (10% of spend); talkinghead fell 0.51 \u2192 0.47 (25% of spend); against it: manyhugs rose 0.45 \u2192 0.48 (36% of spend). Not media buying: $455 \u2192 $468/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 455,
+     "spend_day_after": 468,
+     "budget_move": 0.029,
+     "stopped_share": 0.045,
+     "stopped": [
+      "banner (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "manyhugs",
+      "share_before": 0.507,
+      "share_after": 0.362,
+      "roas_before": 0.446,
+      "roas_after": 0.482,
+      "mix": 0.0067,
+      "perf": 0.0129,
+      "funnel": {
+       "spend": 1693.1,
+       "roas": 0.4820093318,
+       "hook": 0.1466027615,
+       "ipm": 1.8327427829,
+       "pur_per_100": 9.2929292929
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.434,
+      "share_after": 0.247,
+      "roas_before": 0.511,
+      "roas_after": 0.467,
+      "mix": -0.0035,
+      "perf": -0.0108,
+      "funnel": {
+       "spend": 1155.0,
+       "roas": 0.4671255416,
+       "hook": 0.2309918979,
+       "ipm": 1.9827378256,
+       "pur_per_100": 11.8694362018
+      }
+     },
+     {
+      "name": "beatsyncedtext",
+      "share_before": 0.001,
+      "share_after": 0.283,
+      "roas_before": null,
+      "roas_after": 0.446,
+      "mix": -0.0129,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 1323.94,
+       "roas": 0.4461758081,
+       "hook": 0.1570382403,
+       "ipm": 1.5917230402,
+       "pur_per_100": 14.5161290323
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.046,
+      "share_after": 0.102,
+      "roas_before": 0.91,
+      "roas_after": 0.383,
+      "mix": 0.0233,
+      "perf": -0.0536,
+      "funnel": {
+       "spend": 476.63,
+       "roas": 0.3829805088,
+       "hook": 0.3117371226,
+       "ipm": 2.0509021259,
+       "pur_per_100": 4.845814978
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0458,
+     "within": -0.0799,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.75,
@@ -2256,7 +5930,125 @@
    },
    "spend_week": 2608,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.25 \u2192 0.49: combo rose 0.25 \u2192 0.44 (53% of spend); airport rose 0.21 \u2192 1.35 (6% of spend). Not media buying: $519 \u2192 $420/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 519,
+     "spend_day_after": 420,
+     "budget_move": -0.19,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.076
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.731,
+      "share_after": 0.533,
+      "roas_before": 0.254,
+      "roas_after": 0.443,
+      "mix": -0.0014,
+      "perf": 0.1008,
+      "funnel": {
+       "spend": 2241.14,
+       "roas": 0.4428862091,
+       "hook": 0.0657035824,
+       "ipm": 1.4334309088,
+       "pur_per_100": 12.1274409044
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.148,
+      "share_after": 0.112,
+      "roas_before": 0.168,
+      "roas_after": 0.267,
+      "mix": 0.0029,
+      "perf": 0.0111,
+      "funnel": {
+       "spend": 471.38,
+       "roas": 0.2670032657,
+       "hook": 0.3264388237,
+       "ipm": 1.2291670159,
+       "pur_per_100": 10.0
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.03,
+      "share_after": 0.104,
+      "roas_before": 0.779,
+      "roas_after": 0.487,
+      "mix": 0.0399,
+      "perf": -0.0305,
+      "funnel": {
+       "spend": 439.22,
+       "roas": 0.4867720049,
+       "hook": 0.0562561182,
+       "ipm": 1.4685225386,
+       "pur_per_100": 8.3333333333
+      }
+     },
+     {
+      "name": "airport",
+      "share_before": 0.063,
+      "share_after": 0.056,
+      "roas_before": 0.213,
+      "roas_after": 1.352,
+      "mix": 0.0003,
+      "perf": 0.0632,
+      "funnel": {
+       "spend": 233.44,
+       "roas": 1.3522960934,
+       "hook": 0.2709923675,
+       "ipm": 2.7565733673,
+       "pur_per_100": 12.0879120879
+      }
+     },
+     {
+      "name": "text",
+      "share_before": 0.0,
+      "share_after": 0.101,
+      "roas_before": null,
+      "roas_after": 0.649,
+      "mix": 0.0407,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 425.48,
+       "roas": 0.6486321337,
+       "hook": 0.4741672569,
+       "ipm": 1.3199858257,
+       "pur_per_100": 24.8322147651
+      }
+     },
+     {
+      "name": "dreamlife",
+      "share_before": 0.0,
+      "share_after": 0.085,
+      "roas_before": null,
+      "roas_after": 0.307,
+      "mix": 0.0051,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 356.43,
+       "roas": 0.306539853,
+       "hook": 0.0132641928,
+       "ipm": 0.4413224964,
+       "pur_per_100": 19.4444444444
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.014,
+     "within": 0.2503,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "cum_above": 0.991,
@@ -2329,7 +6121,77 @@
    },
    "spend_week": 2816,
    "priority": 0,
-   "action": "Leave: old creatives carry it above the bar"
+   "tier": null,
+   "action": "Leave: old creatives carry it above the bar",
+   "why": {
+    "text": "0.62 \u2192 0.53: airport fell 0.67 \u2192 0.53 (67% of spend); against it: banner rose 0.43 \u2192 0.51 (21% of spend). Not media buying: $308 \u2192 $361/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 308,
+     "spend_day_after": 361,
+     "budget_move": 0.172,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.003
+    },
+    "concepts": [
+     {
+      "name": "airport",
+      "share_before": 0.707,
+      "share_after": 0.674,
+      "roas_before": 0.672,
+      "roas_after": 0.527,
+      "mix": -0.0018,
+      "perf": -0.0982,
+      "funnel": {
+       "spend": 2434.71,
+       "roas": 0.5265390953,
+       "hook": 0.3740263516,
+       "ipm": 3.2646748852,
+       "pur_per_100": 10.2040816327
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.181,
+      "share_after": 0.213,
+      "roas_before": 0.428,
+      "roas_after": 0.514,
+      "mix": -0.006,
+      "perf": 0.0181,
+      "funnel": {
+       "spend": 767.96,
+       "roas": 0.5135423717,
+       "hook": 0.1501949744,
+       "ipm": 2.136460585,
+       "pur_per_100": 10.9243697479
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.088,
+      "share_after": 0.096,
+      "roas_before": 0.662,
+      "roas_after": 0.684,
+      "mix": 0.0004,
+      "perf": 0.0022,
+      "funnel": {
+       "spend": 346.61,
+       "roas": 0.6844003354,
+       "hook": 0.0774310523,
+       "ipm": 1.6824993008,
+       "pur_per_100": 11.2600536193
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0072,
+     "within": -0.1335,
+     "text": "inside the same countries"
+    }
+   }
   }
  ],
  "creator_summary": {
@@ -2355,7 +6217,92 @@
    "mover": "manyplaces",
    "mover_share": 0.648,
    "mover_before": 0.431,
-   "spend_week": 1719
+   "spend_week": 1719,
+   "why": {
+    "text": "0.25 \u2192 0.53: manyplaces rose 0.32 \u2192 0.54 (65% of spend); talkinghead took spend (0% \u2192 27%) at 0.48. Not media buying: $252 \u2192 $246/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 252,
+     "spend_day_after": 246,
+     "budget_move": -0.027,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.118
+    },
+    "concepts": [
+     {
+      "name": "manyplaces",
+      "share_before": 0.431,
+      "share_after": 0.648,
+      "roas_before": 0.318,
+      "roas_after": 0.543,
+      "mix": 0.0157,
+      "perf": 0.1454,
+      "funnel": {
+       "spend": 1113.1,
+       "roas": 0.5426286943,
+       "hook": 0.4484761102,
+       "ipm": 2.796801367,
+       "pur_per_100": 15.5131264916
+      }
+     },
+     {
+      "name": "walking",
+      "share_before": 0.481,
+      "share_after": 0.074,
+      "roas_before": 0.212,
+      "roas_after": 0.623,
+      "mix": 0.0136,
+      "perf": 0.0305,
+      "funnel": {
+       "spend": 127.41,
+       "roas": 0.6229495364,
+       "hook": 0.235648094,
+       "ipm": 1.8828220179,
+       "pur_per_100": 21.568627451
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.0,
+      "share_after": 0.274,
+      "roas_before": null,
+      "roas_after": 0.482,
+      "mix": 0.0651,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 471.83,
+       "roas": 0.4824619042,
+       "hook": 0.3261048952,
+       "ipm": 3.2157852584,
+       "pur_per_100": 13.2075471698
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.088,
+      "share_after": 0.004,
+      "roas_before": 0.073,
+      "roas_after": null,
+      "mix": 0.0146,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 6.56,
+       "roas": 0.0,
+       "hook": 0.0,
+       "ipm": 0.4368719965,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0497,
+     "within": 0.3342,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120251307692020469",
@@ -2371,7 +6318,113 @@
    "mover": "combo",
    "mover_share": 0.364,
    "mover_before": 0.204,
-   "spend_week": 1417
+   "spend_week": 1417,
+   "why": {
+    "text": "0.42 \u2192 0.52: wanted rose 0.61 \u2192 0.87 (31% of spend); slider rose 0.29 \u2192 0.55 (12% of spend); against it: wakeup fell 1.47 \u2192 0.16 (9% of spend). Media buying: switched off: ads with 68% of the spend (banner (last day 3 Nov), slider (last day 2 Nov), banner (last day 2 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 232,
+     "spend_day_after": 202,
+     "budget_move": -0.127,
+     "stopped_share": 0.678,
+     "stopped": [
+      "banner (last day 3 Nov)",
+      "slider (last day 2 Nov)",
+      "banner (last day 2 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "combo",
+      "share_before": 0.204,
+      "share_after": 0.364,
+      "roas_before": 0.541,
+      "roas_after": 0.438,
+      "mix": 0.0198,
+      "perf": -0.0373,
+      "funnel": {
+       "spend": 515.79,
+       "roas": 0.4384342443,
+       "hook": 0.1144891588,
+       "ipm": 1.9920318725,
+       "pur_per_100": 6.9711538462
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.392,
+      "share_after": 0.1,
+      "roas_before": 0.366,
+      "roas_after": 0.057,
+      "mix": 0.0149,
+      "perf": -0.0309,
+      "funnel": {
+       "spend": 142.02,
+       "roas": 0.0573158715,
+       "hook": 0.2130774227,
+       "ipm": 2.0169160703,
+       "pur_per_100": 6.4516129032
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.302,
+      "share_after": 0.12,
+      "roas_before": 0.292,
+      "roas_after": 0.545,
+      "mix": 0.0228,
+      "perf": 0.0303,
+      "funnel": {
+       "spend": 169.88,
+       "roas": 0.5449140578,
+       "hook": 0.1786510097,
+       "ipm": 1.3440384819,
+       "pur_per_100": 10.5263157895
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.084,
+      "share_after": 0.306,
+      "roas_before": 0.614,
+      "roas_after": 0.873,
+      "mix": 0.0438,
+      "perf": 0.0792,
+      "funnel": {
+       "spend": 434.05,
+       "roas": 0.8727796324,
+       "hook": 0.2663677812,
+       "ipm": 2.875357055,
+       "pur_per_100": 19.0789473684
+      }
+     },
+     {
+      "name": "wakeup",
+      "share_before": 0.016,
+      "share_after": 0.091,
+      "roas_before": 1.471,
+      "roas_after": 0.159,
+      "mix": 0.0786,
+      "perf": -0.1188,
+      "funnel": {
+       "spend": 128.39,
+       "roas": 0.1591245416,
+       "hook": 0.2461612515,
+       "ipm": 2.0183514726,
+       "pur_per_100": 5.3846153846
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0163,
+     "within": 0.1045,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120245476029120469",
@@ -2387,7 +6440,128 @@
    "mover": "combo",
    "mover_share": 0.19,
    "mover_before": 0.074,
-   "spend_week": 5236
+   "spend_week": 5236,
+   "why": {
+    "text": "0.41 \u2192 0.47: banner lost spend (19% \u2192 0%) at 0.20; wakeup rose 0.43 \u2192 0.52 (37% of spend); against it: wanted fell 0.73 \u2192 0.17 (6% of spend). Media buying: switched off: ads with 22% of the spend (banner (last day 1 Nov), wanted (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 751,
+     "spend_day_after": 748,
+     "budget_move": -0.004,
+     "stopped_share": 0.219,
+     "stopped": [
+      "banner (last day 1 Nov)",
+      "wanted (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "wakeup",
+      "share_before": 0.322,
+      "share_after": 0.374,
+      "roas_before": 0.426,
+      "roas_after": 0.521,
+      "mix": 0.0009,
+      "perf": 0.0356,
+      "funnel": {
+       "spend": 1958.73,
+       "roas": 0.5208221652,
+       "hook": 0.2736966456,
+       "ipm": 1.3175824273,
+       "pur_per_100": 8.7732342007
+      }
+     },
+     {
+      "name": "airport",
+      "share_before": 0.307,
+      "share_after": 0.33,
+      "roas_before": 0.522,
+      "roas_after": 0.458,
+      "mix": 0.0027,
+      "perf": -0.0212,
+      "funnel": {
+       "spend": 1730.21,
+       "roas": 0.4577710237,
+       "hook": 0.1348738012,
+       "ipm": 2.7074609992,
+       "pur_per_100": 5.0975177305
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.074,
+      "share_after": 0.19,
+      "roas_before": 0.339,
+      "roas_after": 0.463,
+      "mix": -0.008,
+      "perf": 0.0235,
+      "funnel": {
+       "spend": 993.63,
+       "roas": 0.4627477022,
+       "hook": 0.0080680112,
+       "ipm": 1.3764681191,
+       "pur_per_100": 10.297029703
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.187,
+      "share_after": 0.0,
+      "roas_before": 0.203,
+      "roas_after": null,
+      "mix": 0.0384,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 0.66,
+       "roas": 0.0,
+       "hook": 0.2336956518,
+       "ipm": 0.0,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.055,
+      "share_after": 0.06,
+      "roas_before": 0.726,
+      "roas_after": 0.166,
+      "mix": 0.0016,
+      "perf": -0.0334,
+      "funnel": {
+       "spend": 312.29,
+       "roas": 0.1661276383,
+       "hook": 0.2271667304,
+       "ipm": 1.4707732203,
+       "pur_per_100": 5.2631578947
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.051,
+      "share_after": 0.042,
+      "roas_before": 0.154,
+      "roas_after": 0.515,
+      "mix": 0.0023,
+      "perf": 0.0151,
+      "funnel": {
+       "spend": 218.87,
+       "roas": 0.5145063289,
+       "hook": 0.1157183484,
+       "ipm": 1.802831765,
+       "pur_per_100": 10.5691056911
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0133,
+     "within": 0.0463,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120251438431100469",
@@ -2403,7 +6577,95 @@
    "mover": "banner",
    "mover_share": 0.185,
    "mover_before": 0.042,
-   "spend_week": 2216
+   "spend_week": 2216,
+   "why": {
+    "text": "0.46 \u2192 0.46: wanted rose 0.42 \u2192 0.57 (39% of spend); talkinghead rose 0.35 \u2192 0.79 (2% of spend); against it: banner fell 0.35 \u2192 0.21 (18% of spend). Not media buying: $284 \u2192 $317/day, nothing big switched off. Audience: the country mix moved ROAS +0.07 week on week, more than inside the same countries (-0.05).",
+    "causes": [
+     "creative",
+     "audience"
+    ],
+    "media": {
+     "spend_day_before": 284,
+     "spend_day_after": 317,
+     "budget_move": 0.116,
+     "stopped_share": 0.132,
+     "stopped": [
+      "carousel (last day 5 Nov)"
+     ],
+     "faded_share": 0.03
+    },
+    "concepts": [
+     {
+      "name": "carousel",
+      "share_before": 0.473,
+      "share_after": 0.406,
+      "roas_before": 0.516,
+      "roas_after": 0.455,
+      "mix": -0.0039,
+      "perf": -0.0245,
+      "funnel": {
+       "spend": 900.43,
+       "roas": 0.4551936293,
+       "hook": 0.2037584381,
+       "ipm": 2.5623872367,
+       "pur_per_100": 8.2278481013
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.396,
+      "share_after": 0.391,
+      "roas_before": 0.422,
+      "roas_after": 0.568,
+      "mix": 0.0002,
+      "perf": 0.0567,
+      "funnel": {
+       "spend": 866.15,
+       "roas": 0.5676037629,
+       "hook": 0.1148349441,
+       "ipm": 2.7364814854,
+       "pur_per_100": 8.3462132921
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.042,
+      "share_after": 0.185,
+      "roas_before": 0.351,
+      "roas_after": 0.213,
+      "mix": -0.0152,
+      "perf": -0.0255,
+      "funnel": {
+       "spend": 409.41,
+       "roas": 0.2125986188,
+       "hook": 0.0702507254,
+       "ipm": 1.4629547351,
+       "pur_per_100": 3.4567901235
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.089,
+      "share_after": 0.018,
+      "roas_before": 0.353,
+      "roas_after": 0.79,
+      "mix": 0.0074,
+      "perf": 0.0079,
+      "funnel": {
+       "spend": 39.86,
+       "roas": 0.7895132942,
+       "hook": 0.3681533654,
+       "ipm": 4.303599374,
+       "pur_per_100": 7.2727272727
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0703,
+     "within": -0.0538,
+     "text": "the country mix"
+    }
+   }
   },
   {
    "adset_id": "120250418897730469",
@@ -2419,7 +6681,77 @@
    "mover": "EP - Instagram S",
    "mover_share": 0.404,
    "mover_before": 0.257,
-   "spend_week": 1381
+   "spend_week": 1381,
+   "why": {
+    "text": "0.41 \u2192 0.44: EP - Instagram S rose 0.48 \u2192 0.55 (40% of spend); EP - Instagram J lost spend (8% \u2192 4%) at 0.38; against it: EP - Instagram O fell 0.41 \u2192 0.36 (56% of spend). Not media buying: $201 \u2192 $197/day, nothing big switched off. Audience: the country mix moved ROAS +0.04 week on week, more than inside the same countries (-0.01).",
+    "causes": [
+     "creative",
+     "audience"
+    ],
+    "media": {
+     "spend_day_before": 201,
+     "spend_day_after": 197,
+     "budget_move": -0.02,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "EP - Instagram O",
+      "share_before": 0.665,
+      "share_after": 0.556,
+      "roas_before": 0.407,
+      "roas_after": 0.359,
+      "mix": 0.0004,
+      "perf": -0.0271,
+      "funnel": {
+       "spend": 768.12,
+       "roas": 0.3587590489,
+       "hook": 0.443635242,
+       "ipm": 1.05362929,
+       "pur_per_100": 16.3179916318
+      }
+     },
+     {
+      "name": "EP - Instagram S",
+      "share_before": 0.257,
+      "share_after": 0.404,
+      "roas_before": 0.479,
+      "roas_after": 0.549,
+      "mix": 0.0101,
+      "perf": 0.0279,
+      "funnel": {
+       "spend": 557.52,
+       "roas": 0.5485901866,
+       "hook": 0.50558508,
+       "ipm": 1.0970032539,
+       "pur_per_100": 14.527027027
+      }
+     },
+     {
+      "name": "EP - Instagram J",
+      "share_before": 0.077,
+      "share_after": 0.04,
+      "roas_before": 0.218,
+      "roas_after": 0.375,
+      "mix": 0.0073,
+      "perf": 0.0063,
+      "funnel": {
+       "spend": 54.82,
+       "roas": 0.3752280191,
+       "hook": 0.4652497806,
+       "ipm": 1.314636284,
+       "pur_per_100": 10.0
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0373,
+     "within": -0.0121,
+     "text": "the country mix"
+    }
+   }
   },
   {
    "adset_id": "120252094940600469",
@@ -2435,7 +6767,63 @@
    "mover": "highangleselfie",
    "mover_share": 0.452,
    "mover_before": 0.338,
-   "spend_week": 1041
+   "spend_week": 1041,
+   "why": {
+    "text": "0.46 \u2192 0.43: highangleselfie fell 0.50 \u2192 0.37 (45% of spend); against it: melancholicview rose 0.44 \u2192 0.48 (55% of spend). Media buying: switched off: ads with 20% of the spend (highangleselfie (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 146,
+     "spend_day_after": 149,
+     "budget_move": 0.021,
+     "stopped_share": 0.196,
+     "stopped": [
+      "highangleselfie (last day 5 Nov)"
+     ],
+     "faded_share": 0.052
+    },
+    "concepts": [
+     {
+      "name": "melancholicview",
+      "share_before": 0.662,
+      "share_after": 0.548,
+      "roas_before": 0.443,
+      "roas_after": 0.482,
+      "mix": 0.0022,
+      "perf": 0.0213,
+      "funnel": {
+       "spend": 570.23,
+       "roas": 0.4816828287,
+       "hook": 0.4363061213,
+       "ipm": 3.3329809313,
+       "pur_per_100": 4.590984975
+      }
+     },
+     {
+      "name": "highangleselfie",
+      "share_before": 0.338,
+      "share_after": 0.452,
+      "roas_before": 0.5,
+      "roas_after": 0.371,
+      "mix": 0.0043,
+      "perf": -0.0583,
+      "funnel": {
+       "spend": 470.91,
+       "roas": 0.3709626049,
+       "hook": 0.2686280395,
+       "ipm": 3.1589431685,
+       "pur_per_100": 4.6641791045
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0069,
+     "within": -0.0147,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120247322960050469",
@@ -2451,7 +6839,129 @@
    "mover": "pickyourasian",
    "mover_share": 0.362,
    "mover_before": 0.141,
-   "spend_week": 2085
+   "spend_week": 2085,
+   "why": {
+    "text": "0.28 \u2192 0.42: wanted rose 0.36 \u2192 0.46 (64% of spend); streetinterview lost spend (20% \u2192 0%) at 0.13; against it: boysvmen lost spend (4% \u2192 0%) at 0.89. Media buying: switched off: ads with 38% of the spend (streetinterview (last day 30 Oct), povbait (last day 27 Oct), talkinghead (last day 30 Oct)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 303,
+     "spend_day_after": 298,
+     "budget_move": -0.017,
+     "stopped_share": 0.375,
+     "stopped": [
+      "streetinterview (last day 30 Oct)",
+      "povbait (last day 27 Oct)",
+      "talkinghead (last day 30 Oct)"
+     ],
+     "faded_share": 0.05
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.275,
+      "share_after": 0.635,
+      "roas_before": 0.364,
+      "roas_after": 0.461,
+      "mix": 0.0311,
+      "perf": 0.0612,
+      "funnel": {
+       "spend": 1324.37,
+       "roas": 0.4607247213,
+       "hook": 0.1965264645,
+       "ipm": 3.0996874133,
+       "pur_per_100": 11.8243243243
+      }
+     },
+     {
+      "name": "pickyourasian",
+      "share_before": 0.141,
+      "share_after": 0.362,
+      "roas_before": 0.297,
+      "roas_after": 0.355,
+      "mix": 0.0041,
+      "perf": 0.0212,
+      "funnel": {
+       "spend": 754.44,
+       "roas": 0.3552436248,
+       "hook": 0.3022202145,
+       "ipm": 3.5704197503,
+       "pur_per_100": 5.6962025316
+      }
+     },
+     {
+      "name": "streetinterview",
+      "share_before": 0.196,
+      "share_after": 0.0,
+      "roas_before": 0.131,
+      "roas_after": null,
+      "mix": 0.0288,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 0.01,
+       "roas": 0.0,
+       "hook": 0.5,
+       "ipm": 0.0,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "povbait",
+      "share_before": 0.095,
+      "share_after": 0.0,
+      "roas_before": 0.18,
+      "roas_after": null,
+      "mix": 0.0093,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 200.76,
+       "roas": 0.1799163174,
+       "hook": 0.3037892248,
+       "ipm": 1.8479733892,
+       "pur_per_100": 4.7619047619
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.072,
+      "share_after": 0.0,
+      "roas_before": 0.222,
+      "roas_after": null,
+      "mix": 0.004,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 153.31,
+       "roas": 0.2221642403,
+       "hook": 0.2743784895,
+       "ipm": 1.6295383637,
+       "pur_per_100": 4.8780487805
+      }
+     },
+     {
+      "name": "slideshow",
+      "share_before": 0.052,
+      "share_after": 0.0,
+      "roas_before": 0.279,
+      "roas_after": null,
+      "mix": 0.0,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 0.65,
+       "roas": 0.0,
+       "hook": 0.1741573047,
+       "ipm": 11.2359550562,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0142,
+     "within": 0.116,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120242347668700469",
@@ -2467,7 +6977,94 @@
    "mover": "beatsyncedtext",
    "mover_share": 0.375,
    "mover_before": 0.043,
-   "spend_week": 3165
+   "spend_week": 3165,
+   "why": {
+    "text": "0.52 \u2192 0.39: beatsyncedtext fell 1.04 \u2192 0.38 (38% of spend); banner fell 0.82 \u2192 0.26 (9% of spend); against it: talkinghead lost spend (36% \u2192 21%) at 0.46. Not media buying: $464 \u2192 $452/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 464,
+     "spend_day_after": 452,
+     "budget_move": -0.026,
+     "stopped_share": 0.081,
+     "stopped": [
+      "banner (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "manyhugs",
+      "share_before": 0.5,
+      "share_after": 0.314,
+      "roas_before": 0.467,
+      "roas_after": 0.42,
+      "mix": 0.0099,
+      "perf": -0.0145,
+      "funnel": {
+       "spend": 993.96,
+       "roas": 0.4203489063,
+       "hook": 0.1456187695,
+       "ipm": 1.9484642161,
+       "pur_per_100": 8.507223114
+      }
+     },
+     {
+      "name": "talkinghead",
+      "share_before": 0.364,
+      "share_after": 0.211,
+      "roas_before": 0.43,
+      "roas_after": 0.461,
+      "mix": 0.0137,
+      "perf": 0.0064,
+      "funnel": {
+       "spend": 668.43,
+       "roas": 0.4606615514,
+       "hook": 0.2319635226,
+       "ipm": 2.0645723534,
+       "pur_per_100": 13.567839196
+      }
+     },
+     {
+      "name": "beatsyncedtext",
+      "share_before": 0.043,
+      "share_after": 0.375,
+      "roas_before": 1.038,
+      "roas_after": 0.376,
+      "mix": 0.1725,
+      "perf": -0.2486,
+      "funnel": {
+       "spend": 1188.19,
+       "roas": 0.3760509677,
+       "hook": 0.1574456274,
+       "ipm": 1.4940202661,
+       "pur_per_100": 15.1589242054
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.083,
+      "share_after": 0.094,
+      "roas_before": 0.823,
+      "roas_after": 0.256,
+      "mix": 0.0034,
+      "perf": -0.0535,
+      "funnel": {
+       "spend": 298.42,
+       "roas": 0.2556464037,
+       "hook": 0.3262057944,
+       "ipm": 2.0549877104,
+       "pur_per_100": 2.614379085
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0458,
+     "within": -0.0799,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120250726667020469",
@@ -2483,7 +7080,92 @@
    "mover": "fastcarousel",
    "mover_share": 0.379,
    "mover_before": 0.334,
-   "spend_week": 1373
+   "spend_week": 1373,
+   "why": {
+    "text": "0.38 \u2192 0.38: banner rose 0.32 \u2192 0.52 (24% of spend); airportfirst rose 0.27 \u2192 0.31 (25% of spend); against it: fastcarousel fell 0.58 \u2192 0.33 (38% of spend). Not media buying: $229 \u2192 $196/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 229,
+     "spend_day_after": 196,
+     "budget_move": -0.144,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "fastcarousel",
+      "share_before": 0.334,
+      "share_after": 0.379,
+      "roas_before": 0.579,
+      "roas_after": 0.333,
+      "mix": 0.009,
+      "perf": -0.0934,
+      "funnel": {
+       "spend": 520.14,
+       "roas": 0.3325450833,
+       "hook": 0.1501547625,
+       "ipm": 1.4275420445,
+       "pur_per_100": 10.4761904762
+      }
+     },
+     {
+      "name": "airportfirst",
+      "share_before": 0.342,
+      "share_after": 0.252,
+      "roas_before": 0.274,
+      "roas_after": 0.311,
+      "mix": 0.0094,
+      "perf": 0.0095,
+      "funnel": {
+       "spend": 346.1,
+       "roas": 0.3114128861,
+       "hook": 0.224869383,
+       "ipm": 2.0931880738,
+       "pur_per_100": 7.4803149606
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.155,
+      "share_after": 0.24,
+      "roas_before": 0.315,
+      "roas_after": 0.519,
+      "mix": -0.0054,
+      "perf": 0.0489,
+      "funnel": {
+       "spend": 329.09,
+       "roas": 0.5187638625,
+       "hook": 0.0011741249,
+       "ipm": 1.6504209127,
+       "pur_per_100": 16.7785234899
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.114,
+      "share_after": 0.09,
+      "roas_before": 0.287,
+      "roas_after": 0.373,
+      "mix": 0.0022,
+      "perf": 0.0078,
+      "funnel": {
+       "spend": 123.97,
+       "roas": 0.3725094783,
+       "hook": 0.301856545,
+       "ipm": 2.2237161918,
+       "pur_per_100": 32.5581395349
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0016,
+     "within": 0.006,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120250726626100469",
@@ -2499,7 +7181,78 @@
    "mover": "airportfirst",
    "mover_share": 0.404,
    "mover_before": 0.337,
-   "spend_week": 2214
+   "spend_week": 2214,
+   "why": {
+    "text": "0.39 \u2192 0.38: talkinghead fell 0.51 \u2192 0.41 (37% of spend); fastcarousel fell 0.34 \u2192 0.28 (22% of spend); against it: airportfirst rose 0.29 \u2192 0.42 (40% of spend). Media buying: spend $259 \u2192 $316/day. Audience: the country mix moved ROAS -0.01 week on week, more than inside the same countries (-0.00).",
+    "causes": [
+     "media buying",
+     "creative",
+     "audience"
+    ],
+    "media": {
+     "spend_day_before": 259,
+     "spend_day_after": 316,
+     "budget_move": 0.221,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.383,
+      "share_after": 0.373,
+      "roas_before": 0.514,
+      "roas_after": 0.409,
+      "mix": -0.0012,
+      "perf": -0.0392,
+      "funnel": {
+       "spend": 826.22,
+       "roas": 0.4092977659,
+       "hook": 0.2340324487,
+       "ipm": 2.3177845665,
+       "pur_per_100": 14.6788990826
+      }
+     },
+     {
+      "name": "airportfirst",
+      "share_before": 0.337,
+      "share_after": 0.404,
+      "roas_before": 0.293,
+      "roas_after": 0.416,
+      "mix": -0.0067,
+      "perf": 0.0496,
+      "funnel": {
+       "spend": 894.88,
+       "roas": 0.4160781346,
+       "hook": 0.2176688843,
+       "ipm": 1.7089778895,
+       "pur_per_100": 13.4715025907
+      }
+     },
+     {
+      "name": "fastcarousel",
+      "share_before": 0.28,
+      "share_after": 0.222,
+      "roas_before": 0.345,
+      "roas_after": 0.279,
+      "mix": 0.0027,
+      "perf": -0.0148,
+      "funnel": {
+       "spend": 492.49,
+       "roas": 0.2787061668,
+       "hook": 0.1450606629,
+       "ipm": 1.4176865691,
+       "pur_per_100": 5.9925093633
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0076,
+     "within": -0.0019,
+     "text": "the country mix"
+    }
+   }
   },
   {
    "adset_id": "120249813380700469",
@@ -2515,7 +7268,63 @@
    "mover": "banner",
    "mover_share": 0.321,
    "mover_before": 0.068,
-   "spend_week": 1047
+   "spend_week": 1047,
+   "why": {
+    "text": "0.42 \u2192 0.36: banner fell 0.60 \u2192 0.24 (32% of spend); against it: manyplaces lost spend (92% \u2192 65%) at 0.38. Media buying: switched off: ads with 26% of the spend (manyplaces (last day 30 Oct)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 147,
+     "spend_day_after": 150,
+     "budget_move": 0.015,
+     "stopped_share": 0.264,
+     "stopped": [
+      "manyplaces (last day 30 Oct)"
+     ],
+     "faded_share": 0.014
+    },
+    "concepts": [
+     {
+      "name": "manyplaces",
+      "share_before": 0.917,
+      "share_after": 0.653,
+      "roas_before": 0.366,
+      "roas_after": 0.383,
+      "mix": 0.0134,
+      "perf": 0.0111,
+      "funnel": {
+       "spend": 683.3,
+       "roas": 0.3830674666,
+       "hook": 0.3785177241,
+       "ipm": 4.7261009667,
+       "pur_per_100": 7.3122529644
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.068,
+      "share_after": 0.321,
+      "roas_before": 0.603,
+      "roas_after": 0.243,
+      "mix": 0.0472,
+      "perf": -0.1155,
+      "funnel": {
+       "spend": 336.4,
+       "roas": 0.2431926278,
+       "hook": 0.0005555603,
+       "ipm": 4.1966170651,
+       "pur_per_100": 3.4623217923
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0143,
+     "within": -0.065,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120251395574320469",
@@ -2531,7 +7340,64 @@
    "mover": "highangleselfie",
    "mover_share": 0.64,
    "mover_before": 0.47,
-   "spend_week": 2908
+   "spend_week": 2908,
+   "why": {
+    "text": "0.41 \u2192 0.35: highangleselfie fell 0.45 \u2192 0.36 (64% of spend); melancholicview fell 0.37 \u2192 0.33 (36% of spend). Media buying: switched off: ads with 24% of the spend (highangleselfie (last day 5 Nov), highangleselfie (last day 5 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 442,
+     "spend_day_after": 415,
+     "budget_move": -0.061,
+     "stopped_share": 0.244,
+     "stopped": [
+      "highangleselfie (last day 5 Nov)",
+      "highangleselfie (last day 5 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "highangleselfie",
+      "share_before": 0.47,
+      "share_after": 0.64,
+      "roas_before": 0.446,
+      "roas_after": 0.357,
+      "mix": 0.0067,
+      "perf": -0.057,
+      "funnel": {
+       "spend": 1861.72,
+       "roas": 0.3566164613,
+       "hook": 0.2357735131,
+       "ipm": 2.3528970941,
+       "pur_per_100": 5.0117096019
+      }
+     },
+     {
+      "name": "melancholicview",
+      "share_before": 0.53,
+      "share_after": 0.36,
+      "roas_before": 0.371,
+      "roas_after": 0.331,
+      "mix": 0.006,
+      "perf": -0.0143,
+      "funnel": {
+       "spend": 1046.08,
+       "roas": 0.3311219023,
+       "hook": 0.3708440125,
+       "ipm": 2.2991436394,
+       "pur_per_100": 4.4487427466
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.062,
+     "within": -0.1106,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120250884035920469",
@@ -2547,7 +7413,108 @@
    "mover": "combo",
    "mover_share": 0.385,
    "mover_before": 0.221,
-   "spend_week": 1608
+   "spend_week": 1608,
+   "why": {
+    "text": "0.58 \u2192 0.30: talkinghead fell 0.57 \u2192 0.27 (41% of spend); combo fell 0.76 \u2192 0.39 (38% of spend); against it: wanted rose 0.25 \u2192 0.37 (6% of spend). Not media buying: $198 \u2192 $230/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 198,
+     "spend_day_after": 230,
+     "budget_move": 0.16,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.114
+    },
+    "concepts": [
+     {
+      "name": "talkinghead",
+      "share_before": 0.459,
+      "share_after": 0.407,
+      "roas_before": 0.572,
+      "roas_after": 0.267,
+      "mix": 0.0003,
+      "perf": -0.1239,
+      "funnel": {
+       "spend": 653.78,
+       "roas": 0.2674905941,
+       "hook": 0.3748790025,
+       "ipm": 2.7361546702,
+       "pur_per_100": 12.2641509434
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.221,
+      "share_after": 0.385,
+      "roas_before": 0.761,
+      "roas_after": 0.392,
+      "mix": 0.0302,
+      "perf": -0.1424,
+      "funnel": {
+       "spend": 619.07,
+       "roas": 0.3917166092,
+       "hook": 0.0017769388,
+       "ipm": 1.7453019214,
+       "pur_per_100": 11.7824773414
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.181,
+      "share_after": 0.101,
+      "roas_before": 0.349,
+      "roas_after": 0.218,
+      "mix": 0.0184,
+      "perf": -0.0132,
+      "funnel": {
+       "spend": 162.33,
+       "roas": 0.2178894854,
+       "hook": 0.028156158,
+       "ipm": 1.6149417217,
+       "pur_per_100": 8.6956521739
+      }
+     },
+     {
+      "name": "wanted",
+      "share_before": 0.065,
+      "share_after": 0.06,
+      "roas_before": 0.246,
+      "roas_after": 0.369,
+      "mix": 0.0018,
+      "perf": 0.0074,
+      "funnel": {
+       "spend": 96.37,
+       "roas": 0.3685794339,
+       "hook": 0.2854625555,
+       "ipm": 1.8355359765,
+       "pur_per_100": 28.0
+      }
+     },
+     {
+      "name": "dancing",
+      "share_before": 0.052,
+      "share_after": 0.026,
+      "roas_before": 1.062,
+      "roas_after": 0.0,
+      "mix": -0.0126,
+      "perf": -0.0276,
+      "funnel": {
+       "spend": 41.72,
+       "roas": 0.0,
+       "hook": 0.1735453739,
+       "ipm": 0.6310740881,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0033,
+     "within": -0.2731,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120252094887720469",
@@ -2563,7 +7530,76 @@
    "mover": "carousel",
    "mover_share": 0.436,
    "mover_before": 0.0,
-   "spend_week": 1080
+   "spend_week": 1080,
+   "why": {
+    "text": "0.21 \u2192 0.26: carousel took spend (0% \u2192 44%) at 0.28; phoneprofile rose 0.22 \u2192 0.35 (22% of spend). Not media buying: $144 \u2192 $154/day, nothing big switched off.",
+    "causes": [
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 144,
+     "spend_day_after": 154,
+     "budget_move": 0.069,
+     "stopped_share": 0.0,
+     "stopped": [],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "phoneprofile",
+      "share_before": 0.952,
+      "share_after": 0.224,
+      "roas_before": 0.222,
+      "roas_after": 0.346,
+      "mix": -0.0077,
+      "perf": 0.0279,
+      "funnel": {
+       "spend": 242.04,
+       "roas": 0.3463477106,
+       "hook": 0.0691534385,
+       "ipm": 0.9035313811,
+       "pur_per_100": 10.5263157895
+      }
+     },
+     {
+      "name": "carousel",
+      "share_before": 0.0,
+      "share_after": 0.436,
+      "roas_before": null,
+      "roas_after": 0.279,
+      "mix": 0.0295,
+      "perf": 0.0,
+      "funnel": {
+       "spend": 471.53,
+       "roas": 0.2787733552,
+       "hook": 0.2334146877,
+       "ipm": 1.0469824717,
+       "pur_per_100": 13.2450331126
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.039,
+      "share_after": 0.301,
+      "roas_before": 0.0,
+      "roas_after": 0.174,
+      "mix": -0.0554,
+      "perf": 0.0526,
+      "funnel": {
+       "spend": 325.45,
+       "roas": 0.1744661236,
+       "hook": 0.0242653666,
+       "ipm": 0.4302949427,
+       "pur_per_100": 5.0632911392
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0136,
+     "within": 0.1108,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120250884019920469",
@@ -2579,7 +7615,96 @@
    "mover": "slider",
    "mover_share": 0.218,
    "mover_before": 0.06,
-   "spend_week": 1286
+   "spend_week": 1286,
+   "why": {
+    "text": "0.35 \u2192 0.21: wanted fell 0.33 \u2192 0.17 (68% of spend); combo fell 0.38 \u2192 0.00 (3% of spend); against it: standup lost spend (39% \u2192 6%) at 0.24. Media buying: switched off: ads with 53% of the spend (standup (last day 3 Nov), combo (last day 3 Nov)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 195,
+     "spend_day_after": 184,
+     "budget_move": -0.059,
+     "stopped_share": 0.53,
+     "stopped": [
+      "standup (last day 3 Nov)",
+      "combo (last day 3 Nov)"
+     ],
+     "faded_share": 0.0
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.399,
+      "share_after": 0.684,
+      "roas_before": 0.329,
+      "roas_after": 0.166,
+      "mix": -0.0064,
+      "perf": -0.1111,
+      "funnel": {
+       "spend": 879.82,
+       "roas": 0.1664772341,
+       "hook": 0.0023367479,
+       "ipm": 2.0190321969,
+       "pur_per_100": 6.0913705584
+      }
+     },
+     {
+      "name": "standup",
+      "share_before": 0.387,
+      "share_after": 0.057,
+      "roas_before": 0.312,
+      "roas_after": 0.245,
+      "mix": 0.0131,
+      "perf": -0.0038,
+      "funnel": {
+       "spend": 73.01,
+       "roas": 0.2448979616,
+       "hook": 0.4365083311,
+       "ipm": 2.0521547625,
+       "pur_per_100": 4.8780487805
+      }
+     },
+     {
+      "name": "slider",
+      "share_before": 0.06,
+      "share_after": 0.218,
+      "roas_before": 0.687,
+      "roas_after": 0.387,
+      "mix": 0.0531,
+      "perf": -0.0654,
+      "funnel": {
+       "spend": 280.13,
+       "roas": 0.3870702888,
+       "hook": 0.2103585451,
+       "ipm": 1.5031163749,
+       "pur_per_100": 11.2068965517
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.143,
+      "share_after": 0.027,
+      "roas_before": 0.376,
+      "roas_after": 0.0,
+      "mix": -0.0029,
+      "perf": -0.0103,
+      "funnel": {
+       "spend": 35.05,
+       "roas": 0.0,
+       "hook": 0.0009455858,
+       "ipm": 1.2034728789,
+       "pur_per_100": null
+      }
+     }
+    ],
+    "country": {
+     "mix": 0.0008,
+     "within": -0.1307,
+     "text": "inside the same countries"
+    }
+   }
   },
   {
    "adset_id": "120250364078030469",
@@ -2595,7 +7720,81 @@
    "mover": "banner",
    "mover_share": 0.219,
    "mover_before": 0.013,
-   "spend_week": 1033
+   "spend_week": 1033,
+   "why": {
+    "text": "0.29 \u2192 0.13: wanted fell 0.34 \u2192 0.13 (70% of spend); banner took spend (1% \u2192 22%) at 0.04; against it: combo lost spend (28% \u2192 8%) at 0.37. Media buying: switched off: ads with 69% of the spend (wanted (last day 5 Nov), combo (last day 3 Nov), wanted (last day 29 Oct)).",
+    "causes": [
+     "media buying",
+     "creative"
+    ],
+    "media": {
+     "spend_day_before": 152,
+     "spend_day_after": 148,
+     "budget_move": -0.028,
+     "stopped_share": 0.694,
+     "stopped": [
+      "wanted (last day 5 Nov)",
+      "combo (last day 3 Nov)",
+      "wanted (last day 29 Oct)"
+     ],
+     "faded_share": 0.148
+    },
+    "concepts": [
+     {
+      "name": "wanted",
+      "share_before": 0.704,
+      "share_after": 0.705,
+      "roas_before": 0.345,
+      "roas_after": 0.13,
+      "mix": 0.0001,
+      "perf": -0.1514,
+      "funnel": {
+       "spend": 728.34,
+       "roas": 0.1302688304,
+       "hook": 0.0646928203,
+       "ipm": 0.8279189626,
+       "pur_per_100": 7.9470198675
+      }
+     },
+     {
+      "name": "combo",
+      "share_before": 0.283,
+      "share_after": 0.076,
+      "roas_before": 0.161,
+      "roas_after": 0.368,
+      "mix": 0.0263,
+      "perf": 0.0157,
+      "funnel": {
+       "spend": 78.52,
+       "roas": 0.3675496663,
+       "hook": 0.0649099589,
+       "ipm": 0.7733952049,
+       "pur_per_100": null
+      }
+     },
+     {
+      "name": "banner",
+      "share_before": 0.013,
+      "share_after": 0.219,
+      "roas_before": 0.0,
+      "roas_after": 0.035,
+      "mix": -0.0592,
+      "perf": 0.0077,
+      "funnel": {
+       "spend": 225.65,
+       "roas": 0.0350099699,
+       "hook": 0.2393600599,
+       "ipm": 1.0908099264,
+       "pur_per_100": 1.6666666667
+      }
+     }
+    ],
+    "country": {
+     "mix": -0.0347,
+     "within": -0.1586,
+     "text": "inside the same countries"
+    }
+   }
   }
  ]
 }

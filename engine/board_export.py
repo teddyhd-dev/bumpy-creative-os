@@ -262,7 +262,8 @@ def launch_reads(lab):
                               upload=s(r.get("upload")), read=s(r.get("read")), rank=int(r.get("rank") or 0),
                               share=num(r.get("batch_share"), 3), before=num(r.get("before"), 3), after=num(r.get("after"), 3),
                               no1=s(r.get("no1_after")), concepts=", ".join(r.get("concepts") or []),
-                              spend=num(r.get("spend_week"), 0), priority=num(r.get("priority"), 0))
+                              spend=num(r.get("spend_week"), 0), priority=num(r.get("priority"), 0),
+                              why=s((r.get("why") or {}).get("text")))
     return sorted(out.values(), key=lambda x: (x["batch"], x["adset"]))
 
 

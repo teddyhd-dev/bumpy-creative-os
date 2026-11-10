@@ -18,3 +18,7 @@ n6f2Wt banner became #1 in LatinaFemaleLover · iOS · PT with 92% of spend (it 
 Moved "Proven message (Notion)" out of the beliefs table into "Messages that land" → Past winners: headlines are examples of what worked, not beliefs or formulas (creative lead, 3 Nov 2026).
 3 past winning headline(s) listed under Messages that land.
 Why: the strategists' own knowledge base is merged into the minds, so every strategist reads the same thing (original: archive/strategist-files-2026-11-03/bumpy-knowledge.md).
+
+## 2026-11-10 · decode · TED + Claude
+Why iOS PT fell 0.27 → 0.23 after Batch 41 (dancing): media buying, not the creative. The #1 ad, the Argentina big-ticket banner video (77% of spend, about 0.30), went from $119 to 0 impressions on 2 Nov, the day before dancing landed. Dancing took 46% at 0.29, about what that video earned; the banner image left behind fell to 0.18.
+Lesson: the big-ticket banner carries Portuguese (#1 for 14 weeks). Next: turn it back on; whether this read can make a strike is open (core/decisions.md).
