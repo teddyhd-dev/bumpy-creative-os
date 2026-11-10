@@ -444,6 +444,39 @@ def divider(sid, T):
             f'<p style="font-size:40px;color:#E6E1E4;width:1300px">{e(T["text"])}</p>\n<aside>{e(T["note"])}</aside>\n</section>\n')
 
 
+def refresh_slide(sid, R, T, queue_path):
+    """The whole refresh list on one slide: per persona x language, each OS's read and strikes (from the board's
+    queue, one source of truth), and what to make next (core/mistakes.md rules 9-11)."""
+    Q = json.load(open(queue_path))
+    strikes = {}
+    for t in Q["tickets"]:           # several adsets can share persona x language x OS: keep the worst
+        k = (t["persona"], t["lang"], t["os"])
+        strikes[k] = max(strikes.get(k, 0), int(t.get("strikes") or 0))
+    reads = {}
+    for r in R["adsets"]:
+        reads.setdefault((r["persona"], r["lang"]), []).append(r)
+    cols = [("#", 70), ("Persona · language", 300), ("This week", 480), ("Strikes", 150), ("Next refresh", 632)]
+    body = [head(None, e(T["title"]), None, size=60), '<div style="display:flex; flex-direction:column">', header_row(cols, pad="8px 16px")]
+    for i, a in enumerate(T["rows"]):
+        bd = "" if i == len(T["rows"]) - 1 else f" border-bottom:1px solid {LINE};"
+        rs = sorted(reads.get((a["persona"], a["lang"]), []), key=lambda r: r["os"])
+        rd = " ".join(pill(f'{r["os"]} {READ_PILL[r["read"]][2].split(" ")[-1]}', READ_PILL[r["read"]][0],
+                           READ_PILL[r["read"]][1], fs=20, pad="1px 10px") for r in rs) if rs else txt(480, "–", fs=24, color=MUTED)
+        k = max([strikes.get((a["persona"], a["lang"], r["os"]), 0) for r in rs] or [0])
+        sk = {0: ("0", "#4f4d51", "#e2dfe1"), 1: ("1 of 3", "#6b2a12", "#fdd3c2"), 2: ("2 of 3", "#ffffff", "#e8743b"),
+              3: ("3 strikes", "#ffffff", "#d9442b")}[min(k, 3)]
+        body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:8px 16px;{bd}">'
+                    + txt(70, str(a.get("n") or "·"), fs=26, weight="700")
+                    + txt(300, f'<b>{e(AUD.get(a["persona"], a["persona"]))}</b> {e(a["lang"])}', fs=26)
+                    + f'<div style="width:480px; display:flex; flex-direction:row; flex-wrap:wrap; gap:6px">{rd}</div>'
+                    + cell(150, pill(sk[0], sk[1], sk[2], fs=22, pad="2px 12px"))
+                    + txt(632, a["what"], fs=24) + "</div>")
+    body.append("</div>")
+    body.append(foot(T["foot"]))
+    body.append(aside(T["note"]))
+    return section(sid, "\n".join(body), gap=36)
+
+
 def main(folder):
     R = json.load(open(os.path.join(folder, "refresh_review.json")))
     T = json.load(open(os.path.join(folder, "deck_text.json")))
@@ -459,6 +492,9 @@ def main(folder):
     order_p = [p["persona"] for p in T["personas"]]
     slides["scoreboard"] = scoreboard("scoreboard", [(p, by[p], next(x["concept"] for x in T["personas"] if x["persona"] == p)) for p in order_p], end, T["scoreboard"])
     seq = ["cover", "made", "rules", "scoreboard"] if "rules" in slides else ["cover", "made", "scoreboard"]
+    if T.get("refresh"):
+        slides["refresh"] = refresh_slide("refresh", R, T["refresh"], os.path.join(os.path.dirname(os.path.dirname(folder.rstrip("/"))), "output", "board", "queue.json"))
+        seq.append("refresh")
     for P in T["personas"]:
         sid = P["id"]
         slides[sid] = persona_slide(sid, P["persona"], by[P["persona"]], end, P)

@@ -65,40 +65,33 @@
    "foot": "Before = 30 Oct – 5 Nov · After = 6–8 Nov (3 days: an early read) · rows: in top 3 first (best → worst), then the rest (worst → best)",
    "note": "Dreamlife, the Gringo winner, went into Passport Bro on Friday. After three days it is third on iOS with 15 percent and ROAS went up to 0.37, still under the bar. On Android it got 6 percent and the adset slipped under 0.40.",
    "actions": {
-    "title": "Passport Bro: learn what keeps datingcontest #1, then bring back wanted in a new form",
+    "title": "Passport Bro: the October winners are wearing out; bring back wanted",
     "rows": [
-     {
-      "owner": "Creative",
-      "level": "Learn",
-      "adsets": "<b>Passport Bro EN</b>",
-      "spend": "—",
-      "action": "Decode datingcontest before the brief: #1 on iOS for 5 weeks (70%). From its ad names: a skit mocking dating apps, “Dating apps in 2026” at a bar, “One premium please”. What emotion carries it?"
-     },
      {
       "owner": "Creative",
       "level": "High",
       "n": 1,
       "adsets": "<b>Passport Bro EN</b>",
       "spend": "$10.2k",
-      "action": "J2, past winner in a new form: wanted led Passport Bro for 11 weeks (“How life feels after matched and married…”, kitchen). Same message, new visual, one set for both OS."
+      "action": "<b>J2</b> · wanted’s “how life feels after marrying her”, new couple and kitchen. #1 here for 11 weeks, the longest reign."
      },
      {
       "owner": "Creative",
       "level": "Keep",
       "adsets": "<b>Dreamlife</b>",
       "spend": "—",
-      "action": "Keep it on through week 2: #3 on iOS, ROAS up 0.31 → 0.37."
+      "action": "Week 2: #3 on iOS, ROAS 0.31 → 0.37."
      },
      {
       "owner": "Media buyer",
       "level": "Watch",
       "adsets": "<b>Passport Bro EN</b> · Android",
       "spend": "$5.3k",
-      "action": "Slipped under the bar (0.42 → 0.39) with combo #1 for only 2 weeks: hold budget."
+      "action": "0.45 → 0.40: datingcontest (0.53 → 0.35) and boysvmen (0.48 → 0.41) faded. Combo is fine (0.44). Budget flat: hold."
      }
     ],
-    "foot": "Read on 3 days (6–8 Nov). Ad-name read of datingcontest and wanted: to confirm with screenshots. Priority numbers run across the deck.",
-    "note": "Datingcontest has carried Passport Bro iOS for five weeks, so first we learn what it does right. Then the next batch brings back wanted, Passport Bro's #1 for eleven weeks, in a new visual. Dreamlife stays on for its second week."
+    "foot": "Android, week of 26 Oct vs 2 Nov: budget $769/day both weeks, no ads switched off. Priority numbers run across the deck.",
+    "note": "Android didn't drop because of combo: combo is the best of the big ads at 0.44. It dropped because the two October winners, datingcontest and boysvmen, are wearing out. So the next batch brings back wanted, Passport Bro's longest-running winner, in a new couple and kitchen."
    }
   },
   {
@@ -210,7 +203,7 @@
    "foot": "Before = 28 Oct – 3 Nov · After = 4–8 Nov (5 days) · share = dancing + sliders",
    "note": "Dancing variants and the new sliders went live on Wednesday. Dancing took #1 in both English adsets within five days, about three quarters of spend, but ROAS stayed low: 0.31 on Android, 0.27 on iOS. In Portuguese it took 46 percent and ROAS fell. Spanish iOS is healthy on banner.",
    "actions": {
-    "title": "Dancing wins spend, not money: new concepts for Latina EN and PT",
+    "title": "Dancing hooks viewers, not buyers: keep the dance, change the message",
     "rows": [
      {
       "owner": "Creative",
@@ -218,14 +211,7 @@
       "n": 6,
       "adsets": "<b>Latina EN</b>",
       "spend": "$3.1k",
-      "action": "New concept, one set for both OS. Dancing is #1 at 76–78% but ROAS sits at 0.27–0.31."
-     },
-     {
-      "owner": "Creative",
-      "level": "Research",
-      "adsets": "<b>Latina EN</b>",
-      "spend": "—",
-      "action": "Why does dancing win the auction but not the payers? Check installs vs purchases and countries before the brief."
+      "action": "<b>New angle</b> · keep dancing’s opening (best hook rate, 0.33), say wanted’s “in a mood to talk”: 20 buyers per 100 installs vs dancing’s 6–9."
      },
      {
       "owner": "Creative",
@@ -233,7 +219,7 @@
       "n": 8,
       "adsets": "<b>Latina PT</b>",
       "spend": "$1.0k",
-      "action": "A different concept: dancing took 46% and ROAS fell 0.27 → 0.23."
+      "action": "<b>J2</b> · banner, #1 here for 14 weeks, with a new photo."
      },
      {
       "owner": "Creative",
@@ -241,25 +227,25 @@
       "n": 9,
       "adsets": "<b>Latina ES</b>",
       "spend": "$1.7k",
-      "action": "Refresh Spanish again: #3 at 28% on Android, 0.27 → 0.31. iOS ES stays on banner (0.49)."
+      "action": "<b>New angle</b> · the Latina EN set, in Spanish."
      },
      {
       "owner": "Media buyer",
-      "level": "High",
-      "adsets": "<b>Latina PT</b> · iOS",
-      "spend": "$1.0k",
-      "action": "Pause the dancing ads: 46% of spend while ROAS fell."
-     },
-     {
-      "owner": "Media buyer",
-      "level": "Watch",
+      "level": "Urgent",
       "adsets": "<b>Latina EN</b> · Android",
       "spend": "$1.0k",
-      "action": "Dancing is #1 at 76% and ROAS slipped 0.35 → 0.31: pause it if it is still down after 7 days."
+      "action": "Pause dancing: 75% of spend at 0.28; its installers buy half as often as banner’s (6 vs 12 per 100)."
+     },
+     {
+      "owner": "Media buyer",
+      "level": "Urgent",
+      "adsets": "<b>Latina PT</b> · iOS",
+      "spend": "$1.0k",
+      "action": "Pause dancing: 46% of spend while ROAS fell 0.27 → 0.23."
      }
     ],
-    "foot": "Read on 5 days (4–8 Nov). Priority numbers run across the deck.",
-    "note": "Dancing is the clearest lesson this week: Meta loves it, it takes most of the spend, but it doesn't bring paying users. English and Portuguese get a new concept. Before the English brief, we check what kind of users dancing brings in."
+    "foot": "Not the countries: on Android the country mix helped (+0.02); ROAS fell inside the same countries (−0.03). Latina EN Android and PT iOS are at 3 strikes.",
+    "note": "Meta pushes dancing because people stop and watch it: it has the best hook rate in the adset. But the people it brings in don't pay: half as many buyers per install as banner or wanted. It isn't a country shift; the same countries got worse. So we keep the dance as the opening and change what it says to wanted's message, the one that brings payers. Two adsets are at three strikes, so the media buyer pauses dancing there now."
    }
   },
   {
@@ -328,7 +314,7 @@
    "foot": "Before = 28 Oct – 3 Nov · After = 4–8 Nov (5 days) · all four are Mature 30to40 adsets",
    "note": "Mature got 18 banner files on Wednesday, in English, Japanese and Korean. Wanted still owns iOS English with 94 percent, so banner can't move it. Android is flat at 0.30. Japan and Korea are far under the bar with or without banner: 0.19 and 0.07.",
    "actions": {
-    "title": "A new concept for Mature EN; decide on JP and KR",
+    "title": "Mature EN: refresh wanted, and stay close to Linda",
     "rows": [
      {
       "owner": "Creative",
@@ -336,25 +322,25 @@
       "n": 7,
       "adsets": "<b>Mature EN</b>",
       "spend": "$3.8k",
-      "action": "New concept, one set for both OS: banner variants got 5–13%; wanted has led iOS for 14 weeks. Look at manyplaces (account news) first."
+      "action": "<b>New visual</b> · a Linda twin: a woman in her 30s, beach selfie, name, age and city, “serious relationship only”."
      },
      {
       "owner": "Creative lead",
       "level": "Decide",
       "adsets": "<b>Mature JP · KR</b>",
       "spend": "$2.3k",
-      "action": "Both sit far under the bar (0.19 and 0.07): more creative, or less budget?"
+      "action": "0.21 and 0.11, wanted #1 for 13 weeks: more creative, or less budget?"
      },
      {
       "owner": "Media buyer",
       "level": "High",
       "adsets": "<b>Mature KR</b> · iOS",
       "spend": "$0.7k",
-      "action": "Cut or pause: 0.07 this week; banner took #1 and ROAS fell further."
+      "action": "Cut or pause: 0.11; banner took #1 and ROAS fell further."
      }
     ],
-    "foot": "Read on 5 days (4–8 Nov). Priority numbers run across the deck.",
-    "note": "Banner variants can't break wanted in Mature English, so English gets a new concept. The manyplaces creative in another Mature adset is a good place to start. Japan and Korea are a budget question more than a creative one."
+    "foot": "Linda (“Linda from Barcelona, 33, serious relationship only”) has led iOS since June at 94%. The 8 new wanted faces in August (Mei, Emma, James…) peaked at 4–34%.",
+    "note": "Yes, we refresh wanted, but history says how. Since June one ad, Linda from Barcelona, has carried 94 percent of iOS. In August we tried eight new faces, older women and men from other countries, and none beat her. So the new visual stays close to Linda: a woman in her thirties, a beach selfie, the same serious-relationship line."
    }
   },
   {
@@ -510,5 +496,66 @@
    "foot": "New #1s are 1 week old: no budget increases on them yet.",
    "note": "Two creatives to learn from, manyplaces and combo. Three adsets for the media buyer to check, where ROAS dropped hard."
   }
+ },
+ "refresh": {
+  "title": "Refresh next: 9 sets, two Latina adsets at 3 strikes",
+  "rows": [
+   {
+    "n": 1,
+    "persona": "PassportBro",
+    "lang": "EN",
+    "what": "<b>J2</b> · wanted’s “life after marrying her”, new couple"
+   },
+   {
+    "n": 2,
+    "persona": "LocalDatingFatigue",
+    "lang": "EN",
+    "what": "<b>New visual</b> · “dating apps are a fight men lose”"
+   },
+   {
+    "n": 3,
+    "persona": "InternationalFriendFinder",
+    "lang": "EN",
+    "what": "<b>New visual</b> · tweetoverlay, 3 new scenes"
+   },
+   {
+    "n": 5,
+    "persona": "InternationalFriendFinder",
+    "lang": "CH",
+    "what": "<b>Research</b> (asked last week) · why foreign friends?"
+   },
+   {
+    "n": 6,
+    "persona": "LatinaFemaleLover",
+    "lang": "EN",
+    "what": "<b>New angle</b> · the dance, with wanted’s “in a mood to talk”"
+   },
+   {
+    "n": 7,
+    "persona": "MatureDating",
+    "lang": "EN",
+    "what": "<b>New visual</b> · wanted, a “Linda” twin (30s, beach selfie)"
+   },
+   {
+    "n": 8,
+    "persona": "LatinaFemaleLover",
+    "lang": "PT",
+    "what": "<b>J2</b> · banner (#1 here 14 weeks), new photo"
+   },
+   {
+    "n": 9,
+    "persona": "LatinaFemaleLover",
+    "lang": "ES",
+    "what": "<b>New angle</b> · the Latina EN set, in Spanish"
+   },
+   {
+    "n": 15,
+    "persona": "LocalDatingFatigue",
+    "lang": "ES",
+    "what": "<b>J1</b> · colosseum in Spanish"
+   }
+  ],
+  "foot": "Strikes = the board’s count, worst OS. Keep and re-read next week: Gringo ES · PH · TH · ID, Sexy EN. Decide: Mature JP (0.21), KR (0.11).",
+  "note": "This is the whole list for the team this week: nine creative sets, one per persona and language, both OS. Two Latina adsets are at three strikes, so for Latina we don't just refresh: we change what the ad says. The next slides go persona by persona."
  }
 }
