@@ -96,8 +96,9 @@ make; `refresh_plan()` numbers them and the action slides take the same numbers 
 action, not a creative one.
 
 **Funnel check (spec 1.3.8):** right after "Refresh next", the funnel slide shows every Worse and Miss: CTR, C>I, IPM
-and payers, new creative vs the rest of the adset, and where it breaks. A C>I break means checking the store page
-before briefing a new creative; a CTR break is the message; payers is who the ad brings.
+and payers, new creative vs the rest of the adset, and where it breaks. Videos are read against videos, images against images; then the images slide (account-wide, per OS
+and batch) and the funnel action slide. Before writing "store page", check the account-wide C>I for the same days:
+if it held, the store page held. A CTR break is the message; payers is who the ad brings.
 
 **Action priority (inside a tier):** weekly spend × read weight: Worse 1.0 · Miss under 0.40 0.8 · Almost / Flat 0.6 ·
 Worked, Watch and Miss (left) = leave. Pair same persona × language across OS into one brief. Media-buyer items:

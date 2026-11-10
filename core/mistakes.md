@@ -45,8 +45,33 @@ below before calling a task done. Adding an entry is part of fixing the mistake;
    flat → almost, spend inside), and every list says what it left out and why.
 15. **A persona that keeps failing gets asked why it exists.** 3 strikes, or under the account for 2+ months: the
    deck shows its history, where it still works and the decisions for the creative lead.
+16. **Compare like with like before naming where something breaks.** Video against video, image against image, same
+   OS and days; and check the account-wide rate for the same days first (did everything move, or only this ad?).
+   Then recompute the key numbers from the raw export before they go on a slide.
+17. **After an interrupted turn, look before you touch.** `git status` and read every changed file first: work from
+   the interrupted turn is on disk even when it isn't in the conversation.
 
 ## Entries
+
+### 2026-11-10 (3) · "Five break at the store page" was a blended number; and I overwrote my own interrupted work
+- **What happened:** the first funnel slide said five Worse/Miss sets "got the click but lost the install" and pointed
+  at the store page. The creative lead asked whether the numbers were right. The arithmetic was right (recomputed
+  from the raw export: 9 of 11 rows match to 0.1 point; the other 2 are "not tested" by design), but the comparison
+  was wrong: it set each batch (videos and images together) against all the other ads. Like with like, video
+  against video, no set breaks at the store page, and the account's C>I held at 33–38% on Android every day since
+  1 Oct. What dragged C>I down was the batch's **iOS image** versions: 5% CTR and 1–2 installs per 100 clicks, with
+  normal sales per impression (inflated clicks, not lost installs). The creator section also said "16 creator ads";
+  it is 18 ads, 11 videos, 12 adsets. Separately: the turn was interrupted after much of this had been rebuilt
+  (images check, funnel actions, creator funnel). Restarting, I edited `engine/why.py` without checking what was on
+  disk and deleted those functions; I recovered them from the session log.
+- **Why (root cause):**
+  1. I named a cause ("store page") from one blended rate without splitting by format or checking whether the whole
+     account moved. Images and videos have different funnels by nature (images: more clicks, fewer installs per click).
+  2. I trusted counts carried over from an earlier slide instead of recounting.
+  3. I assumed the files matched my context after an interruption.
+- **Rules:** 16, 17. **Check:** `funnel_check()` compares video with video and image with image, payers against every
+  other ad; `image_check()` puts the account-wide format split in `refresh_review.json`; the funnel slide's footer
+  states the account-wide C>I for the same days.
 
 ### 2026-11-10 (2) · Fixed three slides, not the deck; two "pause" actions blamed the wrong creative
 - **What happened:** after the creative lead's questions on Passport Bro, dancing and Mature, I fixed those three

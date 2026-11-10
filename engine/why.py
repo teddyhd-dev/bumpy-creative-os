@@ -40,7 +40,7 @@ def funnel(x):
     return dict(spend=float(x.spend.sum()), roas=_roas(x), impressions=int(imp),
                 hook=float(hook) if pd.notna(hook) and hook > 0 else None,
                 ctr=float(clk / imp) if imp >= MIN_IMP else None,
-                c2i=float(inst / clk) if clk >= MIN_CLICKS else None,
+                c2i=float(inst / clk) if clk >= MIN_CLICKS and imp >= MIN_IMP else None,
                 ipm=float(inst / imp * 1000) if imp >= MIN_IMP else None,
                 pur_per_100=float(pur / inst * 100) if inst >= 20 else None)
 
@@ -49,14 +49,21 @@ STEPS = [("hook", "hook"), ("ctr", "CTR"), ("c2i", "C>I"), ("ipm", "IPM"), ("pur
 WHERE = {"hook": "the first second: it doesn't stop the thumb, so nobody clicks",
          "ctr": "the message: they watch but don't click",
          "c2i": "the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)",
+         "ipm": "demand: a little lower at both the click and the install",
          "pur_per_100": "who it brings: they install but don't pay"}
 
 
-def funnel_check(new, old, gap=0.20, os_name=""):
-    """The new creative's funnel against the ads it competes with, in the same adset and days. The break is the
-    first of CTR -> C>I -> payers that is 20%+ worse (IPM = CTR x C>I, the demand it creates); a low CTR with a low
-    hook is a first-second problem, with a fine hook a message problem. Too few impressions = Meta never tested it."""
+IMG_RE = r"(?i)-IMG-|\.png|\.jpg|\.jpeg"
+
+
+def is_image(x):
+    return x.ad_name.str.contains(IMG_RE, regex=True) if "ad_name" in x else pd.Series(False, index=x.index)
+
+
+def _check(new, old, gap, os_name, old_all=None):
     a, b = funnel(new), funnel(old)
+    if old_all is not None:                  # who it brings doesn't depend on the format: payers vs every other ad
+        b = dict(b, pur_per_100=funnel(old_all)["pur_per_100"])
     lab = dict(STEPS)
     if a["impressions"] < MIN_IMP:
         return dict(new=a, old=b, breaks=None, worse=[], better=[],
@@ -67,15 +74,68 @@ def funnel_check(new, old, gap=0.20, os_name=""):
             continue
         r = a[k] / b[k] - 1
         (worse if r <= -gap else better if r >= gap else []).append(k)
-    brk = next((k for k in ("ctr", "c2i", "pur_per_100") if k in worse), None)
-    if brk == "ctr" and "hook" in worse:
-        brk = "hook"
+    # IPM = CTR x C>I: only when installs per impression fall does the click or the install step break;
+    # a lower CTR made up by a higher C>I is a different audience, not a break
+    if "ipm" in worse:
+        brk = next((k for k in ("ctr", "c2i") if k in worse), "ipm")
+        if brk == "ctr" and "hook" in worse:
+            brk = "hook"
+    else:
+        brk = "pur_per_100" if "pur_per_100" in worse else None
     txt = f"Breaks at {lab[brk]}: {WHERE[brk]}." if brk else "No step 20%+ worse than the ads it competes with."
     if brk == "c2i" and os_name == "iOS":
-        txt += " (iOS installs per ad are Meta's estimate: a hint, check the store page.)"
+        txt += " (iOS installs per ad are Meta's estimate: a hint.)"
     if better:
         txt += " Better at " + ", ".join(lab[k] for k in better) + "."
     return dict(new=a, old=b, breaks=brk, worse=worse, better=better, text=txt)
+
+
+def funnel_check(new, old, gap=0.20, os_name=""):
+    """The new creative's funnel against the ads it competes with, in the same adset and days, like with like:
+    its videos against the other videos (the main read), its images against the other images (kept apart: on iOS,
+    image clicks are inflated, see image_check). Payers (purchases per 100 installs) against every other ad. The
+    break: if installs per 1k impressions (IPM = CTR x C>I) are 20%+ lower, the first of hook/CTR/C>I that is;
+    otherwise payers, if 20%+ lower. Too few impressions = Meta never tested it."""
+    ni, oi = is_image(new), is_image(old)
+    vid = _check(new[~ni], old[~oi], gap, os_name, old) if (~ni).any() else None
+    img = _check(new[ni], old[oi], gap, os_name, old) if ni.any() else None
+    main = vid or img                     # a new video that wasn't tested stays "not tested": images don't stand in
+    out = dict(main, format="video" if main is vid else "image")
+    if img and main is vid and not img["text"].startswith("Not tested"):
+        out["image"] = img
+    if out["format"] == "image" and os_name == "iOS":
+        out["text"] += " iOS image clicks are inflated (see image_check): read ROAS and payers, not C>I."
+    return out
+
+
+def image_check(d, since):
+    """Account-wide, per OS: images vs videos, ads first live since `since` vs older ads, over the same days.
+    Flags new images that click 1.5x+ the older images but install less than half as often per click:
+    on iOS that has meant inflated clicks (ROAS stays normal); check placements and the link."""
+    x = d[(d.day >= since)].copy()
+    x["img"] = is_image(x)
+    first = d[d.spend > 0].groupby("ad_id").day.min()
+    x["recent"] = x.ad_id.map(first) >= since             # new ads: first spent inside the window
+    x["os"] = x["os"] if "os" in x else ""
+    g = x.groupby(["os", "img", "recent"]).agg(imp=("impressions", "sum"), clk=("clicks", "sum"), inst=("installs", "sum"),
+                                               pur=("purchases", "sum"), spend=("spend", "sum"), rev=("rev", "sum")).reset_index()
+    g["ctr"], g["c2i"], g["ipm"] = g.clk / g.imp, g.inst / g.clk, g.inst / g.imp * 1000
+    g["pur_per_100"], g["roas"] = g.pur / g.inst * 100, g.rev / g.spend
+    base = g[g.img & ~g.recent].set_index("os")
+    g["flag"] = [bool(r.img and r.recent and r.os in base.index and r.ctr >= 1.5 * base.loc[r.os, "ctr"]
+                      and r.c2i <= 0.5 * base.loc[r.os, "c2i"]) for r in g.itertuples()]
+    x["batch"] = x.ad_name.str.extract(r"(?i)batch\d{4}week(\d+)")[0].astype(float)
+    bb = x[x.recent].groupby(["os", "img", "batch"]).agg(imp=("impressions", "sum"), clk=("clicks", "sum"), inst=("installs", "sum"),
+                                                        pur=("purchases", "sum"), spend=("spend", "sum"), rev=("rev", "sum")).reset_index()
+    bb = bb[bb.imp >= 100000]
+    bb["ctr"], bb["c2i"], bb["ipm"] = bb.clk / bb.imp, bb.inst / bb.clk, bb.inst / bb.imp * 1000
+    bb["pur_per_100"], bb["roas"] = bb.pur / bb.inst * 100, bb.rev / bb.spend
+    return dict(since=str(pd.Timestamp(since).date()), rows=json_rows(g), by_batch=json_rows(bb))
+
+
+def json_rows(g):
+    return [{k: (None if pd.isna(v) else (bool(v) if isinstance(v, (bool, np.bool_)) else float(v) if isinstance(v, (int, float, np.number)) else v))
+             for k, v in r.items()} for r in g.to_dict("records")]
 
 
 def concepts(pre, post):

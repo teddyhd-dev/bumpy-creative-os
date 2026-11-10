@@ -496,9 +496,16 @@ For every Worse or Miss, the new creative against the other ads in the same adse
 | IPM | installs per 1k impressions | demand (CTR × C>I) |
 | Payers | purchases per 100 installs | who the ad brings |
 
-The break is the first of CTR → C>I → payers that is 20%+ worse. Under 3,000 impressions = not tested; C>I needs
-30+ clicks, payers 20+ installs. iOS installs per ad are Meta's estimate: an iOS C>I break is a hint to check the
-store page, not proof.
+**Like with like:** the new videos against the other videos, the new images against the other images (images always
+click more and install less per click); payers against every other ad. **The break:** when installs per 1k impressions
+(IPM = CTR × C>I) are 20%+ lower, the first of hook / CTR / C>I that is 20%+ lower (a lower CTR made up by a higher
+C>I is a different audience, not a break); otherwise payers, if 20%+ lower. Under 3,000 impressions = not tested;
+C>I needs 30+ clicks, payers 20+ installs.
+
+**Before calling a store-page or tracking problem,** check the account-wide C>I per OS for the same days
+(`image_check()` in `engine/why.py`, `images` in `refresh_review.json`): if it held, the store page held. iOS image
+ads have shown inflated clicks (Batch 40–41: 5% CTR, 1–2 installs per 100 clicks, normal sales per impression):
+read iOS images on ROAS and payers, not C>I, until the placement split is checked.
 
 ### 6.3 Turnaround and three strikes (since 1.2)
 - The turnaround starts when an adset goes under green (a Decaying ticket). At-bat 1 within a week; each next at-bat follows the previous one's week-1 read.

@@ -36,7 +36,7 @@ from build import parse_name  # noqa: E402
 from codes import concept_keys, concept_names  # noqa: E402
 from settings import READ, bar  # noqa: E402
 from tickets import refresh_read  # noqa: E402
-from why import country_why, explain, funnel_check, load_country  # noqa: E402
+from why import country_why, explain, funnel_check, image_check, load_country  # noqa: E402
 
 # Refresh order (creative lead, 10 Nov 2026): Worse first, then Miss, then Flat, then Almost; spend inside a tier.
 TIER = {"Worse": 1, "Miss": 2, "Flat": 3, "Almost": 4}
@@ -95,6 +95,30 @@ def short_why(w, aid=None, weeks=None):
                 out["causes"] = out["causes"] + ["audience"]
                 out["text"] += f' Audience: the country mix moved ROAS {cty["mix"]:+.2f} week on week, more than inside the same countries ({cty["within"]:+.2f}).'
     return out
+
+
+def creator_ads(daily, end):
+    """Every creator video since it went live, across its adsets: delivery, hook, watch time and the funnel."""
+    from why import funnel
+    x = daily[daily.is_creator & (daily.day <= end)]
+    out = []
+    for n, g in x.groupby("ad_name"):
+        f = funnel(g)
+        imp = g.impressions.sum()
+        play = float((g.avg_play.fillna(0) * g.impressions).sum() / imp) if imp else None
+        out.append(dict(ad_name=n, first=str(g.day.min().date()), adsets=int(g.adset_id.nunique()),
+                        persona=str(g.persona.iloc[0]) if "persona" in g else "", play=play, **f))
+    return sorted(out, key=lambda r: -r["spend"])
+
+
+def creator_benchmark(daily, end):
+    """Our own videos over the same days as the creator videos: the bar each creator video is read against."""
+    from why import funnel, is_image
+    start = daily[daily.is_creator].day.min()
+    x = daily[~daily.is_creator & (daily.day >= start) & (daily.day <= end)]
+    x = x[~is_image(x)]
+    imp = x.impressions.sum()
+    return dict(funnel(x), play=float((x.avg_play.fillna(0) * x.impressions).sum() / imp) if imp else None)
 
 
 def roas(x):
@@ -225,7 +249,10 @@ def main():
     out = dict(batch=a.batch, creator_batch=a.creator, end=str(end.date()), week=last_week, read_rule=READ,
                adsets=json.loads(R.to_json(orient="records")),
                creator=json.loads(C.to_json(orient="records")) if len(C) else [], creator_summary=creator_summary,
-               account_news=json.loads(N.to_json(orient="records")))
+               account_news=json.loads(N.to_json(orient="records")),
+               images=image_check(daily, end - pd.Timedelta(days=20)),
+               creator_ads=creator_ads(daily, end) if a.creator else [],
+               creator_benchmark=creator_benchmark(daily, end) if a.creator else None)
     od = os.path.join(ROOT, "reports", last_week)
     os.makedirs(od, exist_ok=True)
     with open(os.path.join(od, a.out), "w") as f:

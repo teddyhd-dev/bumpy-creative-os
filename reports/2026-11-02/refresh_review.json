@@ -217,32 +217,61 @@
    },
    "funnel": {
     "new": {
-     "spend": 167.16,
-     "roas": 0.6588896878,
-     "impressions": 125341,
-     "hook": 0.3540661067,
-     "ctr": 0.0090313624,
-     "c2i": 0.1351590106,
-     "ipm": 1.2206700122,
-     "pur_per_100": 9.1503267974
+     "spend": 163.75,
+     "roas": 0.6726106884,
+     "impressions": 121363,
+     "hook": 0.3656715793,
+     "ctr": 0.0074734474,
+     "c2i": 0.1653803749,
+     "ipm": 1.2359615369,
+     "pur_per_100": 9.3333333333
     },
     "old": {
-     "spend": 457.63,
-     "roas": 0.5035509029,
-     "impressions": 474624,
-     "hook": 0.2086683359,
-     "ctr": 0.0112678668,
-     "c2i": 0.1047120419,
-     "ipm": 1.1798813376,
+     "spend": 411.88,
+     "roas": 0.5526124108,
+     "impressions": 424736,
+     "hook": 0.2248102356,
+     "ctr": 0.0068654411,
+     "c2i": 0.1718106996,
+     "ipm": 1.179556242,
      "pur_per_100": 8.9285714286
     },
     "breaks": null,
     "worse": [],
     "better": [
-     "hook",
-     "c2i"
+     "hook"
     ],
-    "text": "No step 20%+ worse than the ads it competes with. Better at hook, C>I."
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 3.41,
+      "roas": 0.0,
+      "impressions": 3978,
+      "hook": null,
+      "ctr": 0.056561086,
+      "c2i": 0.0133333333,
+      "ipm": 0.754147813,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 45.75,
+      "roas": 0.0618579223,
+      "impressions": 49888,
+      "hook": 0.0712395776,
+      "ctr": 0.0487491982,
+      "c2i": 0.0242598684,
+      "ipm": 1.1826491341,
+      "pur_per_100": 8.9285714286
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.)"
+    }
    }
   },
   {
@@ -418,31 +447,65 @@
    },
    "funnel": {
     "new": {
-     "spend": 70.83,
-     "roas": 1.0083298024,
-     "impressions": 22876,
-     "hook": 0.1998163999,
-     "ctr": 0.0118464767,
-     "c2i": 0.1881918819,
-     "ipm": 2.2294107361,
-     "pur_per_100": 17.6470588235
+     "spend": 33.32,
+     "roas": 0.4033613412,
+     "impressions": 11003,
+     "hook": 0.4154321516,
+     "ctr": 0.0056348269,
+     "c2i": 0.4193548387,
+     "ipm": 2.3629919113,
+     "pur_per_100": 11.5384615385
     },
     "old": {
-     "spend": 612.48,
-     "roas": 0.4725868577,
-     "impressions": 115972,
-     "hook": 0.3521280987,
-     "ctr": 0.0107094816,
-     "c2i": 0.1900161031,
-     "ipm": 2.0349739592,
+     "spend": 565.99,
+     "roas": 0.4691425619,
+     "impressions": 101008,
+     "hook": 0.4042947079,
+     "ctr": 0.0094447965,
+     "c2i": 0.2243186583,
+     "ipm": 2.1186440678,
      "pur_per_100": 16.5254237288
     },
-    "breaks": null,
+    "breaks": "pur_per_100",
     "worse": [
-     "hook"
+     "ctr",
+     "pur_per_100"
     ],
-    "better": [],
-    "text": "No step 20%+ worse than the ads it competes with."
+    "better": [
+     "c2i"
+    ],
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at C>I.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 37.51,
+      "roas": 1.5457211413,
+      "impressions": 11873,
+      "hook": null,
+      "ctr": 0.0176029647,
+      "c2i": 0.1196172249,
+      "ipm": 2.1056177883,
+      "pur_per_100": 24.0
+     },
+     "old": {
+      "spend": 46.49,
+      "roas": 0.5145192517,
+      "impressions": 14964,
+      "hook": null,
+      "ctr": 0.0192461909,
+      "c2i": 0.0763888889,
+      "ipm": 1.470195135,
+      "pur_per_100": 16.5254237288
+     },
+     "breaks": null,
+     "worse": [],
+     "better": [
+      "c2i",
+      "ipm",
+      "pur_per_100"
+     ],
+     "text": "No step 20%+ worse than the ads it competes with. Better at C>I, IPM, payers."
+    }
    }
   },
   {
@@ -602,23 +665,23 @@
    },
    "funnel": {
     "new": {
-     "spend": 67.33,
-     "roas": 0.5988415296,
-     "impressions": 28274,
-     "hook": 0.3590577933,
-     "ctr": 0.0070382684,
-     "c2i": 0.3969849246,
-     "ipm": 2.7940864398,
-     "pur_per_100": 7.5949367089
+     "spend": 57.51,
+     "roas": 0.5273865446,
+     "impressions": 24509,
+     "hook": 0.4142151882,
+     "ctr": 0.0059161941,
+     "c2i": 0.475862069,
+     "ipm": 2.8152923416,
+     "pur_per_100": 7.2463768116
     },
     "old": {
-     "spend": 689.87,
-     "roas": 0.4981953104,
-     "impressions": 269979,
-     "hook": 0.1825512352,
-     "ctr": 0.0082599017,
-     "c2i": 0.4143497758,
-     "ipm": 3.4224884158,
+     "spend": 464.11,
+     "roas": 0.4425890393,
+     "impressions": 147031,
+     "hook": 0.3352014196,
+     "ctr": 0.0073657936,
+     "c2i": 0.4478301016,
+     "ipm": 3.2986240997,
      "pur_per_100": 5.8441558442
     },
     "breaks": null,
@@ -627,7 +690,39 @@
      "hook",
      "pur_per_100"
     ],
-    "text": "No step 20%+ worse than the ads it competes with. Better at hook, payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook, payers.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 9.82,
+      "roas": 1.01731161,
+      "impressions": 3765,
+      "hook": null,
+      "ctr": 0.0143426295,
+      "c2i": 0.1851851852,
+      "ipm": 2.6560424967,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 225.76,
+      "roas": 0.612508858,
+      "impressions": 122948,
+      "hook": null,
+      "ctr": 0.0093291473,
+      "c2i": 0.3827375763,
+      "ipm": 3.5706152194,
+      "pur_per_100": 5.8441558442
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [
+      "ctr"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at CTR."
+    }
    }
   },
   {
@@ -834,13 +929,13 @@
      "pur_per_100": 5.3892215569
     },
     "old": {
-     "spend": 319.98,
-     "roas": 0.5830676927,
-     "impressions": 169775,
-     "hook": 0.1567604209,
-     "ctr": 0.0067029893,
-     "c2i": 0.1871704745,
-     "ipm": 1.2546016787,
+     "spend": 317.93,
+     "roas": 0.58682729,
+     "impressions": 168830,
+     "hook": 0.1573120918,
+     "ctr": 0.0065865071,
+     "c2i": 0.190647482,
+     "ipm": 1.255701001,
      "pur_per_100": 10.7981220657
     },
     "breaks": "pur_per_100",
@@ -852,7 +947,8 @@
      "ctr",
      "ipm"
     ],
-    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, CTR, IPM."
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, CTR, IPM.",
+    "format": "video"
    }
   },
   {
@@ -987,23 +1083,23 @@
    },
    "funnel": {
     "new": {
-     "spend": 100.22,
-     "roas": 0.3370584715,
-     "impressions": 72750,
-     "hook": 0.3593676953,
-     "ctr": 0.006790378,
-     "c2i": 0.4979757085,
-     "ipm": 3.381443299,
-     "pur_per_100": 3.2520325203
+     "spend": 99.13,
+     "roas": 0.3407646526,
+     "impressions": 71980,
+     "hook": 0.363212001,
+     "ctr": 0.0066824118,
+     "c2i": 0.5093555094,
+     "ipm": 3.4037232565,
+     "pur_per_100": 3.2653061224
     },
     "old": {
-     "spend": 218.42,
-     "roas": 0.3643897075,
-     "impressions": 201370,
-     "hook": 0.1389333058,
-     "ctr": 0.0061826489,
-     "c2i": 0.4634538153,
-     "ipm": 2.8653722004,
+     "spend": 146.33,
+     "roas": 0.2965898989,
+     "impressions": 142987,
+     "hook": 0.1498807573,
+     "ctr": 0.0059376027,
+     "c2i": 0.4840989399,
+     "ipm": 2.8743871821,
      "pur_per_100": 3.1195840555
     },
     "breaks": null,
@@ -1011,7 +1107,8 @@
     "better": [
      "hook"
     ],
-    "text": "No step 20%+ worse than the ads it competes with. Better at hook."
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook.",
+    "format": "video"
    }
   },
   {
@@ -1215,13 +1312,13 @@
      "pur_per_100": 7.4626865672
     },
     "old": {
-     "spend": 427.33,
-     "roas": 0.2897058475,
-     "impressions": 519807,
-     "hook": 0.1770349371,
-     "ctr": 0.0052384827,
-     "c2i": 0.3257436651,
-     "ipm": 1.7064025686,
+     "spend": 373.7,
+     "roas": 0.2652662557,
+     "impressions": 492515,
+     "hook": 0.1868450698,
+     "ctr": 0.0049094951,
+     "c2i": 0.3436724566,
+     "ipm": 1.6872582561,
      "pur_per_100": 3.4949267193
     },
     "breaks": "ctr",
@@ -1233,7 +1330,8 @@
      "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers.",
+    "format": "video"
    }
   },
   {
@@ -1433,34 +1531,61 @@
    },
    "funnel": {
     "new": {
-     "spend": 17.28,
-     "roas": 1.8773148138,
-     "impressions": 8285,
-     "hook": 0.1040434519,
-     "ctr": 0.0381412191,
-     "c2i": 0.0348101266,
-     "ipm": 1.3277006639,
+     "spend": 8.69,
+     "roas": 3.7330264652,
+     "impressions": 2675,
+     "hook": 0.3222429903,
+     "ctr": null,
+     "c2i": null,
+     "ipm": null,
      "pur_per_100": null
     },
     "old": {
-     "spend": 1252.14,
-     "roas": 0.3544651557,
-     "impressions": 352445,
-     "hook": 0.1442806703,
-     "ctr": 0.0112102598,
-     "c2i": 0.1308529486,
-     "ipm": 1.466895544,
+     "spend": 1223.49,
+     "roas": 0.3462635576,
+     "impressions": 329797,
+     "hook": 0.1541887914,
+     "ctr": 0.0072013996,
+     "c2i": 0.216,
+     "ipm": 1.5555023242,
      "pur_per_100": 10.6382978723
     },
-    "breaks": "c2i",
-    "worse": [
-     "hook",
-     "c2i"
-    ],
-    "better": [
-     "ctr"
-    ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR."
+    "breaks": null,
+    "worse": [],
+    "better": [],
+    "text": "Not tested: Meta gave it 2,675 impressions.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 8.59,
+      "roas": 0.0,
+      "impressions": 5610,
+      "hook": null,
+      "ctr": 0.0550802139,
+      "c2i": 0.0161812298,
+      "ipm": 0.8912655971,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 28.65,
+      "roas": 0.7047120428,
+      "impressions": 22648,
+      "hook": null,
+      "ctr": 0.0695867185,
+      "c2i": 0.0025380711,
+      "ipm": 0.1766160367,
+      "pur_per_100": 10.6382978723
+     },
+     "breaks": null,
+     "worse": [
+      "ctr"
+     ],
+     "better": [
+      "c2i",
+      "ipm"
+     ],
+     "text": "No step 20%+ worse than the ads it competes with. Better at C>I, IPM."
+    }
    }
   },
   {
@@ -1660,34 +1785,30 @@
    },
    "funnel": {
     "new": {
-     "spend": 7.33,
-     "roas": 2.1718963188,
-     "impressions": 3212,
-     "hook": 0.2148194281,
-     "ctr": 0.0028019925,
+     "spend": 5.44,
+     "roas": 2.9264705913,
+     "impressions": 2425,
+     "hook": 0.2845360838,
+     "ctr": null,
      "c2i": null,
-     "ipm": 2.1793275218,
+     "ipm": null,
      "pur_per_100": null
     },
     "old": {
-     "spend": 1556.76,
-     "roas": 0.394331818,
-     "impressions": 794444,
-     "hook": 0.1677689063,
-     "ctr": 0.0105948311,
-     "c2i": 0.320066532,
-     "ipm": 3.3910508481,
+     "spend": 1155.14,
+     "roas": 0.3634104967,
+     "impressions": 564054,
+     "hook": 0.2355572349,
+     "ctr": 0.0077740784,
+     "c2i": 0.4057012543,
+     "ipm": 3.1539533449,
      "pur_per_100": 3.7490720119
     },
-    "breaks": "ctr",
-    "worse": [
-     "ctr",
-     "ipm"
-    ],
-    "better": [
-     "hook"
-    ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook."
+    "breaks": null,
+    "worse": [],
+    "better": [],
+    "text": "Not tested: Meta gave it 2,425 impressions.",
+    "format": "video"
    }
   },
   {
@@ -1846,35 +1967,30 @@
    },
    "funnel": {
     "new": {
-     "spend": 15.05,
+     "spend": 13.0,
      "roas": 0.0,
-     "impressions": 3896,
-     "hook": 0.2754106777,
-     "ctr": 0.0174537988,
-     "c2i": 0.0588235294,
-     "ipm": 1.0266940452,
+     "impressions": 2965,
+     "hook": 0.3618887016,
+     "ctr": null,
+     "c2i": null,
+     "ipm": null,
      "pur_per_100": null
     },
     "old": {
-     "spend": 1286.75,
-     "roas": 0.6114707598,
-     "impressions": 334165,
-     "hook": 0.2031960255,
-     "ctr": 0.0078763485,
-     "c2i": 0.3035714286,
-     "ipm": 2.3910343692,
+     "spend": 1203.26,
+     "roas": 0.635822682,
+     "impressions": 309614,
+     "hook": 0.219308558,
+     "ctr": 0.0067729495,
+     "c2i": 0.364806867,
+     "ipm": 2.470818503,
      "pur_per_100": 14.1426783479
     },
-    "breaks": "c2i",
-    "worse": [
-     "c2i",
-     "ipm"
-    ],
-    "better": [
-     "hook",
-     "ctr"
-    ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at hook, CTR."
+    "breaks": null,
+    "worse": [],
+    "better": [],
+    "text": "Not tested: Meta gave it 2,965 impressions.",
+    "format": "video"
    }
   },
   {
@@ -2078,35 +2194,66 @@
    },
    "funnel": {
     "new": {
-     "spend": 66.92,
-     "roas": 0.0681410642,
-     "impressions": 37614,
-     "hook": 0.0782155581,
-     "ctr": 0.0183176477,
-     "c2i": 0.0333817126,
-     "ipm": 0.611474451,
-     "pur_per_100": 4.347826087
+     "spend": 37.91,
+     "roas": 0.1202848857,
+     "impressions": 12826,
+     "hook": 0.2293778266,
+     "ctr": 0.0038203649,
+     "c2i": 0.306122449,
+     "ipm": 1.1694994542,
+     "pur_per_100": null
     },
     "old": {
-     "spend": 982.77,
-     "roas": 0.3264242906,
-     "impressions": 447781,
-     "hook": 0.1054779006,
-     "ctr": 0.0114497935,
-     "c2i": 0.19953189,
-     "ipm": 2.2845989446,
+     "spend": 597.0,
+     "roas": 0.3475041875,
+     "impressions": 247822,
+     "hook": 0.1844630429,
+     "ctr": 0.0067306373,
+     "c2i": 0.3417266187,
+     "ipm": 2.3000379305,
      "pur_per_100": 4.2033235582
     },
-    "breaks": "c2i",
+    "breaks": "ctr",
     "worse": [
-     "hook",
-     "c2i",
+     "ctr",
      "ipm"
     ],
     "better": [
-     "ctr"
+     "hook"
     ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 29.01,
+      "roas": 0.0,
+      "impressions": 24788,
+      "hook": null,
+      "ctr": 0.0258189447,
+      "c2i": 0.0125,
+      "ipm": 0.3227368081,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 385.77,
+      "roas": 0.2938020067,
+      "impressions": 199959,
+      "hook": 0.0075865533,
+      "ctr": 0.0172985462,
+      "c2i": 0.130962706,
+      "ipm": 2.2654644202,
+      "pur_per_100": 4.2033235582
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [
+      "ctr"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.) Better at CTR."
+    }
    }
   },
   {
@@ -2302,32 +2449,33 @@
    },
    "funnel": {
     "new": {
-     "spend": 8.36,
+     "spend": 5.35,
      "roas": 0.0,
-     "impressions": 5731,
-     "hook": 0.1654161592,
-     "ctr": 0.0055836678,
-     "c2i": 0.09375,
-     "ipm": 0.5234688536,
+     "impressions": 3541,
+     "hook": 0.2677209852,
+     "ctr": 0.0019768427,
+     "c2i": null,
+     "ipm": 0.5648121999,
      "pur_per_100": null
     },
     "old": {
-     "spend": 2295.45,
-     "roas": 0.3152235935,
-     "impressions": 1039146,
-     "hook": 0.1586543187,
-     "ctr": 0.0064928316,
-     "c2i": 0.3303690529,
-     "ipm": 2.1450306309,
+     "spend": 722.94,
+     "roas": 0.2640053121,
+     "impressions": 246001,
+     "hook": 0.2314299531,
+     "ctr": 0.0046463226,
+     "c2i": 0.3867016623,
+     "ipm": 1.7967406637,
      "pur_per_100": 5.2041274114
     },
-    "breaks": "c2i",
+    "breaks": "ctr",
     "worse": [
-     "c2i",
+     "ctr",
      "ipm"
     ],
     "better": [],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
+    "text": "Breaks at CTR: the message: they watch but don't click.",
+    "format": "video"
    }
   },
   {
@@ -2480,34 +2628,61 @@
    },
    "funnel": {
     "new": {
-     "spend": 12.28,
+     "spend": 4.27,
      "roas": 0.0,
-     "impressions": 8924,
-     "hook": 0.0720528907,
-     "ctr": 0.0244285074,
-     "c2i": 0.0,
-     "ipm": 0.0,
+     "impressions": 2481,
+     "hook": 0.2591696884,
+     "ctr": null,
+     "c2i": null,
+     "ipm": null,
      "pur_per_100": null
     },
     "old": {
-     "spend": 1974.51,
-     "roas": 0.4826716494,
-     "impressions": 1274253,
-     "hook": 0.0809156419,
-     "ctr": 0.0091944064,
-     "c2i": 0.1515022192,
-     "ipm": 1.392972981,
+     "spend": 659.04,
+     "roas": 0.6333758201,
+     "impressions": 328721,
+     "hook": 0.3136276641,
+     "ctr": 0.0041189945,
+     "c2i": 0.3567208272,
+     "ipm": 1.4693311349,
      "pur_per_100": 7.0422535211
     },
-    "breaks": "c2i",
-    "worse": [
-     "c2i",
-     "ipm"
-    ],
-    "better": [
-     "ctr"
-    ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR."
+    "breaks": null,
+    "worse": [],
+    "better": [],
+    "text": "Not tested: Meta gave it 2,481 impressions.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 8.01,
+      "roas": 0.0,
+      "impressions": 6443,
+      "hook": null,
+      "ctr": 0.0327487195,
+      "c2i": 0.0,
+      "ipm": 0.0,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 1315.47,
+      "roas": 0.4071700594,
+      "impressions": 945532,
+      "hook": 1.16337e-05,
+      "ctr": 0.0109589099,
+      "c2i": 0.124686354,
+      "ipm": 1.3664265197,
+      "pur_per_100": 7.0422535211
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [
+      "ctr"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.) Better at CTR."
+    }
    }
   },
   {
@@ -2690,7 +2865,7 @@
        "impressions": 1630,
        "hook": 0.0601226999,
        "ctr": null,
-       "c2i": 0.0588235294,
+       "c2i": null,
        "ipm": null,
        "pur_per_100": null
       }
@@ -2704,36 +2879,65 @@
    },
    "funnel": {
     "new": {
-     "spend": 601.91,
-     "roas": 0.2635776111,
-     "impressions": 209710,
-     "hook": 0.3210004292,
-     "ctr": 0.0047398789,
-     "c2i": 0.4265593561,
-     "ipm": 2.0218396834,
-     "pur_per_100": 6.1320754717
+     "spend": 553.81,
+     "roas": 0.2864700889,
+     "impressions": 195470,
+     "hook": 0.3443853277,
+     "ctr": 0.0042154806,
+     "c2i": 0.4817961165,
+     "ipm": 2.0310021998,
+     "pur_per_100": 6.5491183879
     },
     "old": {
-     "spend": 159.91,
-     "roas": 0.5145394312,
-     "impressions": 40772,
-     "hook": 0.0453988033,
-     "ctr": 0.019400569,
-     "c2i": 0.1820480405,
-     "ipm": 3.5318355734,
+     "spend": 23.38,
+     "roas": 0.1351582554,
+     "impressions": 6143,
+     "hook": 0.3013185755,
+     "ctr": 0.0198600033,
+     "c2i": 0.1147540984,
+     "ipm": 2.2790167671,
      "pur_per_100": 9.0277777778
     },
-    "breaks": "ctr",
+    "breaks": "pur_per_100",
     "worse": [
      "ctr",
-     "ipm",
      "pur_per_100"
     ],
     "better": [
-     "hook",
      "c2i"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I."
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at C>I.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 48.1,
+      "roas": 0.0,
+      "impressions": 14240,
+      "hook": null,
+      "ctr": 0.0119382022,
+      "c2i": 0.1588235294,
+      "ipm": 1.8960674157,
+      "pur_per_100": 0.0
+     },
+     "old": {
+      "spend": 136.53,
+      "roas": 0.5795063387,
+      "impressions": 34629,
+      "hook": null,
+      "ctr": 0.0193190678,
+      "c2i": 0.1943198804,
+      "ipm": 3.7540789512,
+      "pur_per_100": 9.0277777778
+     },
+     "breaks": "ctr",
+     "worse": [
+      "ctr",
+      "ipm",
+      "pur_per_100"
+     ],
+     "better": [],
+     "text": "Breaks at CTR: the message: they watch but don't click."
+    }
    }
   },
   {
@@ -2924,35 +3128,66 @@
    },
    "funnel": {
     "new": {
-     "spend": 352.99,
-     "roas": 0.1749058053,
-     "impressions": 94906,
-     "hook": 0.2546308958,
-     "ctr": 0.0069858597,
-     "c2i": 0.2156862745,
-     "ipm": 1.5067540514,
-     "pur_per_100": 4.8951048951
+     "spend": 261.89,
+     "roas": 0.0778189324,
+     "impressions": 70470,
+     "hook": 0.342926065,
+     "ctr": 0.0036895133,
+     "c2i": 0.3923076923,
+     "ipm": 1.4474244359,
+     "pur_per_100": 3.9215686275
     },
     "old": {
-     "spend": 890.37,
-     "roas": 0.3598391689,
-     "impressions": 215969,
-     "hook": 0.1055058833,
-     "ctr": 0.0082697054,
-     "c2i": 0.2861142217,
-     "ipm": 2.3660803171,
+     "spend": 685.64,
+     "roas": 0.3909777739,
+     "impressions": 172208,
+     "hook": 0.1323167339,
+     "ctr": 0.0059288767,
+     "c2i": 0.3878550441,
+     "ipm": 2.2995447366,
      "pur_per_100": 10.1761252446
     },
-    "breaks": "c2i",
+    "breaks": "ctr",
     "worse": [
-     "c2i",
+     "ctr",
      "ipm",
      "pur_per_100"
     ],
     "better": [
      "hook"
     ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at hook."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 91.1,
+      "roas": 0.4540065861,
+      "impressions": 24436,
+      "hook": null,
+      "ctr": 0.0164920609,
+      "c2i": 0.1017369727,
+      "ipm": 1.677852349,
+      "pur_per_100": 7.3170731707
+     },
+     "old": {
+      "spend": 204.73,
+      "roas": 0.2555560979,
+      "impressions": 43761,
+      "hook": null,
+      "ctr": 0.017481319,
+      "c2i": 0.1503267974,
+      "ipm": 2.6279106967,
+      "pur_per_100": 10.1761252446
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm",
+      "pur_per_100"
+     ],
+     "better": [],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
+    }
    }
   },
   {
@@ -3157,26 +3392,26 @@
    },
    "funnel": {
     "new": {
-     "spend": 1351.88,
-     "roas": 0.3138296286,
-     "impressions": 408109,
-     "hook": 0.2870091082,
-     "ctr": 0.02008287,
-     "c2i": 0.0714982918,
-     "ipm": 1.4358909017,
-     "pur_per_100": 8.7030716724
+     "spend": 1189.18,
+     "roas": 0.3212633903,
+     "impressions": 321044,
+     "hook": 0.3648440716,
+     "ctr": 0.0070706819,
+     "c2i": 0.2436123348,
+     "ipm": 1.7225053264,
+     "pur_per_100": 8.4990958409
     },
     "old": {
-     "spend": 320.66,
-     "roas": 0.0822678244,
-     "impressions": 119601,
-     "hook": 0.1283935746,
-     "ctr": 0.0345649284,
-     "c2i": 0.0152394775,
-     "ipm": 0.5267514486,
+     "spend": 250.66,
+     "roas": 0.0608393864,
+     "impressions": 71544,
+     "hook": 0.2144554398,
+     "ctr": 0.0167309628,
+     "c2i": 0.037593985,
+     "ipm": 0.6289835626,
      "pur_per_100": 6.3492063492
     },
-    "breaks": "ctr",
+    "breaks": null,
     "worse": [
      "ctr"
     ],
@@ -3186,7 +3421,36 @@
      "ipm",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, IPM, payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook, C>I, IPM, payers.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 162.7,
+      "roas": 0.2594960038,
+      "impressions": 87065,
+      "hook": null,
+      "ctr": 0.06806409,
+      "c2i": 0.0055686804,
+      "ipm": 0.3790271636,
+      "pur_per_100": 12.1212121212
+     },
+     "old": {
+      "spend": 70.0,
+      "roas": 0.159,
+      "impressions": 48057,
+      "hook": 0.0002705108,
+      "ctr": 0.061114926,
+      "c2i": 0.0061287028,
+      "ipm": 0.3745552157,
+      "pur_per_100": 6.3492063492
+     },
+     "breaks": null,
+     "worse": [],
+     "better": [
+      "pur_per_100"
+     ],
+     "text": "No step 20%+ worse than the ads it competes with. Better at payers."
+    }
    }
   },
   {
@@ -3318,35 +3582,63 @@
    },
    "funnel": {
     "new": {
-     "spend": 365.54,
-     "roas": 0.2961645785,
-     "impressions": 101167,
-     "hook": 0.3478703501,
-     "ctr": 0.0071268299,
-     "c2i": 0.253814147,
-     "ipm": 1.8088902508,
-     "pur_per_100": 9.2896174863
+     "spend": 350.64,
+     "roas": 0.3087497149,
+     "impressions": 96368,
+     "hook": 0.3651938373,
+     "ctr": 0.004659223,
+     "c2i": 0.4008908686,
+     "ipm": 1.8678399469,
+     "pur_per_100": 9.4444444444
     },
     "old": {
-     "spend": 438.3,
-     "roas": 0.1658224974,
-     "impressions": 124368,
-     "hook": 0.0052425061,
-     "ctr": 0.0159928599,
-     "c2i": 0.1261940674,
-     "ipm": 2.0182040396,
+     "spend": 7.32,
+     "roas": 0.0,
+     "impressions": 1629,
+     "hook": 0.4002455498,
+     "ctr": null,
+     "c2i": null,
+     "ipm": null,
      "pur_per_100": 6.374501992
     },
-    "breaks": "ctr",
-    "worse": [
-     "ctr"
-    ],
+    "breaks": null,
+    "worse": [],
     "better": [
-     "hook",
-     "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at payers.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 14.9,
+      "roas": 0.0,
+      "impressions": 4799,
+      "hook": null,
+      "ctr": 0.0566784747,
+      "c2i": 0.0110294118,
+      "ipm": 0.6251302355,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 430.98,
+      "roas": 0.1686389173,
+      "impressions": 122739,
+      "hook": null,
+      "ctr": 0.0151378128,
+      "c2i": 0.1350914962,
+      "ipm": 2.0449897751,
+      "pur_per_100": 6.374501992
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [
+      "ctr"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.) Better at CTR."
+    }
    }
   },
   {
@@ -3537,34 +3829,68 @@
    },
    "funnel": {
     "new": {
-     "spend": 191.02,
-     "roas": 0.5972673014,
-     "impressions": 53919,
-     "hook": 0.3328140362,
-     "ctr": 0.013223539,
-     "c2i": 0.0911640954,
-     "ipm": 1.2055119717,
-     "pur_per_100": 15.3846153846
+     "spend": 166.5,
+     "roas": 0.6852252247,
+     "impressions": 43403,
+     "hook": 0.4134506835,
+     "ctr": 0.0041932585,
+     "c2i": 0.3186813187,
+     "ipm": 1.3363131581,
+     "pur_per_100": 17.2413793103
     },
     "old": {
-     "spend": 3149.94,
-     "roas": 0.4862695796,
-     "impressions": 678261,
-     "hook": 0.2945237892,
-     "ctr": 0.0118110875,
-     "c2i": 0.1688927724,
-     "ipm": 1.9948073087,
+     "spend": 2937.65,
+     "roas": 0.4979081918,
+     "impressions": 614901,
+     "hook": 0.3181081179,
+     "ctr": 0.0101902583,
+     "c2i": 0.200446856,
+     "ipm": 2.0426052324,
      "pur_per_100": 9.903917221
     },
-    "breaks": "c2i",
+    "breaks": "ctr",
     "worse": [
-     "c2i",
+     "ctr",
      "ipm"
     ],
     "better": [
+     "hook",
+     "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at payers."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, payers.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 24.52,
+      "roas": 0.0,
+      "impressions": 10516,
+      "hook": null,
+      "ctr": 0.0504944846,
+      "c2i": 0.0131826742,
+      "ipm": 0.6656523393,
+      "pur_per_100": null
+     },
+     "old": {
+      "spend": 212.29,
+      "roas": 0.3252155067,
+      "impressions": 63360,
+      "hook": 0.0656407826,
+      "ctr": 0.0275410354,
+      "c2i": 0.0555873926,
+      "ipm": 1.5309343434,
+      "pur_per_100": 9.903917221
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [
+      "ctr"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.) Better at CTR."
+    }
    }
   },
   {
@@ -3703,13 +4029,13 @@
      "pur_per_100": 12.0320855615
     },
     "old": {
-     "spend": 1056.53,
-     "roas": 0.5282954577,
-     "impressions": 225354,
-     "hook": 0.3904967294,
-     "ctr": 0.0212021974,
-     "c2i": 0.0906236919,
-     "ipm": 1.9214214081,
+     "spend": 1042.03,
+     "roas": 0.5260597103,
+     "impressions": 217501,
+     "hook": 0.4045958408,
+     "ctr": 0.0207539276,
+     "c2i": 0.0957022596,
+     "ipm": 1.9861977646,
      "pur_per_100": 16.6281755196
     },
     "breaks": "pur_per_100",
@@ -3717,10 +4043,10 @@
      "pur_per_100"
     ],
     "better": [
-     "hook",
-     "c2i"
+     "hook"
     ],
-    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, C>I."
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook.",
+    "format": "video"
    }
   },
   {
@@ -3835,19 +4161,20 @@
      "pur_per_100": null
     },
     "old": {
-     "spend": 423.78,
-     "roas": 0.3843031781,
-     "impressions": 78719,
-     "hook": 0.4040447688,
-     "ctr": 0.0101627307,
-     "c2i": 0.18625,
-     "ipm": 1.8928085977,
+     "spend": 423.05,
+     "roas": 0.384966318,
+     "impressions": 78251,
+     "hook": 0.4064612613,
+     "ctr": 0.0098401298,
+     "c2i": 0.1935064935,
+     "ipm": 1.9041290207,
      "pur_per_100": 12.7516778523
     },
     "breaks": null,
     "worse": [],
     "better": [],
-    "text": "Not tested: Meta gave it 2,398 impressions."
+    "text": "Not tested: Meta gave it 2,398 impressions.",
+    "format": "video"
    }
   },
   {
@@ -4029,22 +4356,23 @@
      "pur_per_100": 6.3063063063
     },
     "old": {
-     "spend": 1738.14,
-     "roas": 0.3791754405,
-     "impressions": 122388,
-     "hook": 0.4275255747,
-     "ctr": 0.0097558584,
-     "c2i": 0.3257956449,
-     "ipm": 3.1784161846,
+     "spend": 1627.5,
+     "roas": 0.3951950846,
+     "impressions": 113977,
+     "hook": 0.4526351811,
+     "ctr": 0.0099581495,
+     "c2i": 0.3233480176,
+     "ipm": 3.2199478842,
      "pur_per_100": 13.3676092545
     },
-    "breaks": "c2i",
+    "breaks": "pur_per_100",
     "worse": [
      "c2i",
      "pur_per_100"
     ],
     "better": [],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
+    "text": "Breaks at payers: who it brings: they install but don't pay.",
+    "format": "video"
    }
   },
   {
@@ -4228,23 +4556,24 @@
      "pur_per_100": 5.3738317757
     },
     "old": {
-     "spend": 990.32,
-     "roas": 0.2140318278,
-     "impressions": 504291,
-     "hook": 0.3852200421,
-     "ctr": 0.0077237151,
-     "c2i": 0.3437740693,
-     "ipm": 2.6552129624,
+     "spend": 847.4,
+     "roas": 0.1798560301,
+     "impressions": 398672,
+     "hook": 0.4475333113,
+     "ctr": 0.0083050728,
+     "c2i": 0.3409845968,
+     "ipm": 2.8319019144,
      "pur_per_100": 4.3315907394
     },
-    "breaks": null,
+    "breaks": "ipm",
     "worse": [
      "ipm"
     ],
     "better": [
      "pur_per_100"
     ],
-    "text": "No step 20%+ worse than the ads it competes with. Better at payers."
+    "text": "Breaks at IPM: demand: a little lower at both the click and the install. Better at payers.",
+    "format": "video"
    }
   },
   {
@@ -4363,22 +4692,25 @@
      "pur_per_100": null
     },
     "old": {
-     "spend": 390.64,
-     "roas": 0.2245801764,
-     "impressions": 103048,
-     "hook": 0.279151463,
-     "ctr": 0.0077633724,
-     "c2i": 0.27125,
-     "ipm": 2.1058147659,
+     "spend": 315.67,
+     "roas": 0.2153197967,
+     "impressions": 74237,
+     "hook": 0.387488718,
+     "ctr": 0.0077319935,
+     "c2i": 0.3013937282,
+     "ipm": 2.3303743416,
      "pur_per_100": 5.9907834101
     },
-    "breaks": "ctr",
+    "breaks": "hook",
     "worse": [
+     "hook",
      "ctr",
+     "c2i",
      "ipm"
     ],
     "better": [],
-    "text": "Breaks at CTR: the message: they watch but don't click."
+    "text": "Breaks at hook: the first second: it doesn't stop the thumb, so nobody clicks.",
+    "format": "video"
    }
   },
   {
@@ -4530,13 +4862,13 @@
      "pur_per_100": 5.0
     },
     "old": {
-     "spend": 1217.13,
-     "roas": 0.3996122016,
-     "impressions": 179725,
-     "hook": 0.0859980529,
-     "ctr": 0.0169202949,
-     "c2i": 0.0822097994,
-     "ipm": 1.3910140492,
+     "spend": 682.22,
+     "roas": 0.3019407208,
+     "impressions": 99165,
+     "hook": null,
+     "ctr": 0.0197952907,
+     "c2i": 0.069791136,
+     "ipm": 1.3815358241,
      "pur_per_100": 23.6
     },
     "breaks": "pur_per_100",
@@ -4544,7 +4876,8 @@
      "pur_per_100"
     ],
     "better": [],
-    "text": "Breaks at payers: who it brings: they install but don't pay."
+    "text": "Breaks at payers: who it brings: they install but don't pay. iOS image clicks are inflated (see image_check): read ROAS and payers, not C>I.",
+    "format": "image"
    }
   },
   {
@@ -4728,22 +5061,23 @@
      "pur_per_100": 6.5789473684
     },
     "old": {
-     "spend": 1358.51,
-     "roas": 0.3142855043,
-     "impressions": 245383,
-     "hook": 0.2337081222,
-     "ctr": 0.0123317426,
-     "c2i": 0.2253800397,
-     "ipm": 2.7793286413,
+     "spend": 346.5,
+     "roas": 0.3666378073,
+     "impressions": 82383,
+     "hook": 0.1404173197,
+     "ctr": 0.0220919364,
+     "c2i": 0.1236263736,
+     "ipm": 2.7311459889,
      "pur_per_100": 8.064516129
     },
-    "breaks": "c2i",
+    "breaks": "ctr",
     "worse": [
-     "c2i",
+     "ctr",
      "ipm"
     ],
     "better": [],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
+    "text": "Breaks at CTR: the message: they watch but don't click.",
+    "format": "image"
    }
   },
   {
@@ -4883,24 +5217,25 @@
      "pur_per_100": 27.2727272727
     },
     "old": {
-     "spend": 1013.69,
-     "roas": 0.1211021122,
-     "impressions": 79407,
-     "hook": 0.1862556194,
-     "ctr": 0.0185374085,
-     "c2i": 0.0828804348,
-     "ipm": 1.5363884796,
+     "spend": 252.88,
+     "roas": 0.0377649475,
+     "impressions": 26583,
+     "hook": null,
+     "ctr": 0.0274611594,
+     "c2i": 0.0369863014,
+     "ipm": 1.0156867171,
      "pur_per_100": 13.1147540984
     },
-    "breaks": "c2i",
+    "breaks": null,
     "worse": [
-     "c2i",
-     "ipm"
+     "ctr"
     ],
     "better": [
+     "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at C>I, payers. iOS image clicks are inflated (see image_check): read ROAS and payers, not C>I.",
+    "format": "image"
    }
   },
   {
@@ -5040,13 +5375,13 @@
      "pur_per_100": 9.6774193548
     },
     "old": {
-     "spend": 278.41,
-     "roas": 0.0331166267,
-     "impressions": 21880,
-     "hook": 0.1065356486,
-     "ctr": 0.0153564899,
-     "c2i": 0.125,
-     "ipm": 1.9195612431,
+     "spend": 146.14,
+     "roas": 0.0630901878,
+     "impressions": 12677,
+     "hook": null,
+     "ctr": 0.0188530409,
+     "c2i": 0.1129707113,
+     "ipm": 2.1298414451,
      "pur_per_100": 2.380952381
     },
     "breaks": null,
@@ -5054,7 +5389,8 @@
     "better": [
      "pur_per_100"
     ],
-    "text": "No step 20%+ worse than the ads it competes with. Better at payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at payers. iOS image clicks are inflated (see image_check): read ROAS and payers, not C>I.",
+    "format": "image"
    }
   },
   {
@@ -5251,23 +5587,23 @@
    },
    "funnel": {
     "new": {
-     "spend": 321.95,
-     "roas": 0.5488119265,
-     "impressions": 198597,
-     "hook": 0.0725036127,
-     "ctr": 0.0479866262,
-     "c2i": 0.010703043,
-     "ipm": 0.5136029245,
-     "pur_per_100": 28.431372549
+     "spend": 147.78,
+     "roas": 0.2457030707,
+     "impressions": 48863,
+     "hook": 0.2946810463,
+     "ctr": 0.0086568569,
+     "c2i": 0.0921985816,
+     "ipm": 0.7981499294,
+     "pur_per_100": 10.2564102564
     },
     "old": {
-     "spend": 1873.75,
-     "roas": 0.3400827227,
-     "impressions": 394423,
-     "hook": 0.3089982085,
-     "ctr": 0.0124992711,
-     "c2i": 0.1442190669,
-     "ipm": 1.8026332136,
+     "spend": 1642.66,
+     "roas": 0.3166388675,
+     "impressions": 320591,
+     "hook": 0.3801603926,
+     "ctr": 0.0087931352,
+     "c2i": 0.2241929762,
+     "ipm": 1.9713591461,
      "pur_per_100": 10.2672292546
     },
     "breaks": "c2i",
@@ -5276,11 +5612,41 @@
      "c2i",
      "ipm"
     ],
-    "better": [
-     "ctr",
-     "pur_per_100"
-    ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR, payers."
+    "better": [],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.)",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 174.17,
+      "roas": 0.8059941434,
+      "impressions": 149734,
+      "hook": null,
+      "ctr": 0.0608211896,
+      "c2i": 0.0069177556,
+      "ipm": 0.4207461231,
+      "pur_per_100": 39.6825396825
+     },
+     "old": {
+      "spend": 231.09,
+      "roas": 0.5067289788,
+      "impressions": 73832,
+      "hook": null,
+      "ctr": 0.0285919385,
+      "c2i": 0.0374230223,
+      "ipm": 1.0699967494,
+      "pur_per_100": 10.2672292546
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm"
+     ],
+     "better": [
+      "ctr",
+      "pur_per_100"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.) Better at CTR, payers."
+    }
    }
   },
   {
@@ -5481,36 +5847,67 @@
    },
    "funnel": {
     "new": {
-     "spend": 147.14,
-     "roas": 0.1742558101,
-     "impressions": 79577,
-     "hook": 0.1717330389,
-     "ctr": 0.0121014866,
-     "c2i": 0.1111111111,
-     "ipm": 1.3446096234,
-     "pur_per_100": 3.738317757
+     "spend": 70.85,
+     "roas": 0.1971771341,
+     "impressions": 46471,
+     "hook": 0.2940758761,
+     "ctr": 0.0030987067,
+     "c2i": 0.4236111111,
+     "ipm": 1.3126465968,
+     "pur_per_100": 4.9180327869
     },
     "old": {
-     "spend": 2242.27,
-     "roas": 0.4055399226,
-     "impressions": 1082898,
-     "hook": 0.1211360625,
-     "ctr": 0.0082824052,
-     "c2i": 0.3493143048,
-     "ipm": 2.8931626063,
+     "spend": 1453.38,
+     "roas": 0.3960904934,
+     "impressions": 596125,
+     "hook": 0.2050408888,
+     "ctr": 0.0071646047,
+     "c2i": 0.4251931632,
+     "ipm": 3.046340952,
      "pur_per_100": 4.9473348229
     },
-    "breaks": "c2i",
+    "breaks": "ctr",
     "worse": [
-     "c2i",
-     "ipm",
-     "pur_per_100"
+     "ctr",
+     "ipm"
     ],
     "better": [
-     "hook",
-     "ctr"
+     "hook"
     ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at hook, CTR."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 76.29,
+      "roas": 0.1529689336,
+      "impressions": 33106,
+      "hook": null,
+      "ctr": 0.0247387181,
+      "c2i": 0.0561660562,
+      "ipm": 1.3894762279,
+      "pur_per_100": 2.1739130435
+     },
+     "old": {
+      "spend": 788.89,
+      "roas": 0.4229487013,
+      "impressions": 486773,
+      "hook": 0.0183822849,
+      "ctr": 0.0096513159,
+      "c2i": 0.2803320562,
+      "ipm": 2.7055732343,
+      "pur_per_100": 4.9473348229
+     },
+     "breaks": "c2i",
+     "worse": [
+      "c2i",
+      "ipm",
+      "pur_per_100"
+     ],
+     "better": [
+      "ctr"
+     ],
+     "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at CTR."
+    }
    }
   },
   {
@@ -5649,7 +6046,7 @@
        "impressions": 1756,
        "hook": null,
        "ctr": null,
-       "c2i": 0.0138888889,
+       "c2i": null,
        "ipm": null,
        "pur_per_100": null
       }
@@ -5663,34 +6060,67 @@
    },
    "funnel": {
     "new": {
-     "spend": 242.21,
-     "roas": 0.7107881588,
-     "impressions": 77366,
-     "hook": 0.0853217168,
-     "ctr": 0.0139466949,
-     "c2i": 0.1436515292,
-     "ipm": 2.003464054,
-     "pur_per_100": 10.9677419355
+     "spend": 143.86,
+     "roas": 0.0580425392,
+     "impressions": 46836,
+     "hook": 0.1409385931,
+     "ctr": 0.004163464,
+     "c2i": 0.3692307692,
+     "ipm": 1.5372790161,
+     "pur_per_100": 4.1666666667
     },
     "old": {
-     "spend": 397.59,
-     "roas": 0.7398827936,
-     "impressions": 118976,
-     "hook": 0.1517280812,
-     "ctr": 0.0114897122,
-     "c2i": 0.1514264813,
-     "ipm": 1.7398466918,
+     "spend": 267.09,
+     "roas": 0.2741398028,
+     "impressions": 83491,
+     "hook": 0.2162149237,
+     "ctr": 0.0083362279,
+     "c2i": 0.224137931,
+     "ipm": 1.8684648645,
      "pur_per_100": 14.0096618357
     },
     "breaks": "pur_per_100",
     "worse": [
      "hook",
+     "ctr",
      "pur_per_100"
     ],
     "better": [
-     "ctr"
+     "c2i"
     ],
-    "text": "Breaks at payers: who it brings: they install but don't pay. Better at CTR."
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at C>I.",
+    "format": "video",
+    "image": {
+     "new": {
+      "spend": 98.35,
+      "roas": 1.6655821071,
+      "impressions": 30530,
+      "hook": null,
+      "ctr": 0.0289551261,
+      "c2i": 0.0938914027,
+      "ipm": 2.7186374058,
+      "pur_per_100": 16.8674698795
+     },
+     "old": {
+      "spend": 130.5,
+      "roas": 1.6931034481,
+      "impressions": 35485,
+      "hook": null,
+      "ctr": 0.0189093983,
+      "c2i": 0.0760059613,
+      "ipm": 1.4372269973,
+      "pur_per_100": 14.0096618357
+     },
+     "breaks": null,
+     "worse": [],
+     "better": [
+      "ctr",
+      "c2i",
+      "ipm",
+      "pur_per_100"
+     ],
+     "text": "No step 20%+ worse than the ads it competes with. Better at CTR, C>I, IPM, payers."
+    }
    }
   }
  ],
@@ -5880,25 +6310,25 @@
      "pur_per_100": 11.5009746589
     },
     "old": {
-     "spend": 1368.9,
-     "roas": 0.4053692743,
-     "impressions": 535267,
-     "hook": 0.1636304866,
-     "ctr": 0.0083733912,
-     "c2i": 0.4413208389,
-     "ipm": 3.6953520393,
+     "spend": 882.84,
+     "roas": 0.3703275788,
+     "impressions": 282256,
+     "hook": 0.3103069543,
+     "ctr": 0.0077270279,
+     "c2i": 0.4993122421,
+     "ipm": 3.8581996485,
      "pur_per_100": 4.2972699697
     },
-    "breaks": "ctr",
+    "breaks": "ipm",
     "worse": [
-     "ctr",
      "ipm"
     ],
     "better": [
      "hook",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, payers."
+    "text": "Breaks at IPM: demand: a little lower at both the click and the install. Better at hook, payers.",
+    "format": "video"
    }
   },
   {
@@ -6011,13 +6441,13 @@
      "pur_per_100": null
     },
     "old": {
-     "spend": 2344.07,
-     "roas": 0.4544488869,
-     "impressions": 403778,
-     "hook": 0.3920916942,
-     "ctr": 0.0166205192,
-     "c2i": 0.1327670988,
-     "ipm": 2.2066581141,
+     "spend": 2305.62,
+     "roas": 0.4600671413,
+     "impressions": 393115,
+     "hook": 0.4027269376,
+     "ctr": 0.0148455287,
+     "c2i": 0.1509595613,
+     "ipm": 2.2410744947,
      "pur_per_100": 18.0695847363
     },
     "breaks": "c2i",
@@ -6026,7 +6456,8 @@
      "ipm"
     ],
     "better": [],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.)"
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.)",
+    "format": "video"
    }
   },
   {
@@ -6237,25 +6668,27 @@
      "pur_per_100": 6.5610859729
     },
     "old": {
-     "spend": 4147.28,
-     "roas": 0.4758444096,
-     "impressions": 2164622,
-     "hook": 0.1385659946,
-     "ctr": 0.0112356799,
-     "c2i": 0.3259734386,
-     "ipm": 3.6625332275,
+     "spend": 3033.99,
+     "roas": 0.4771406641,
+     "impressions": 1506276,
+     "hook": 0.198690678,
+     "ctr": 0.008531637,
+     "c2i": 0.4066609602,
+     "ipm": 3.4694836803,
      "pur_per_100": 4.5787083754
     },
     "breaks": "ctr",
     "worse": [
      "ctr",
+     "c2i",
      "ipm"
     ],
     "better": [
      "hook",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, payers."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, payers.",
+    "format": "video"
    }
   },
   {
@@ -6371,13 +6804,13 @@
      "pur_per_100": 18.5840707965
     },
     "old": {
-     "spend": 980.14,
-     "roas": 0.3155671654,
-     "impressions": 183045,
-     "hook": 0.4106858969,
-     "ctr": 0.0145100931,
-     "c2i": 0.1280120482,
-     "ipm": 1.8574667432,
+     "spend": 976.83,
+     "roas": 0.3166364685,
+     "impressions": 180858,
+     "hook": 0.4156520585,
+     "ctr": 0.0139778169,
+     "c2i": 0.1337025316,
+     "ipm": 1.8688694998,
      "pur_per_100": 9.4117647059
     },
     "breaks": "ctr",
@@ -6389,7 +6822,8 @@
      "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers."
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers.",
+    "format": "video"
    }
   },
   {
@@ -6615,24 +7049,25 @@
      "pur_per_100": 3.7247474747
     },
     "old": {
-     "spend": 596.06,
-     "roas": 0.2241888395,
-     "impressions": 517474,
-     "hook": 0.1151323539,
-     "ctr": 0.0058669614,
-     "c2i": 0.3616600791,
-     "ipm": 2.1218457352,
+     "spend": 392.73,
+     "roas": 0.2321951458,
+     "impressions": 413661,
+     "hook": 0.1440261463,
+     "ctr": 0.0047575188,
+     "c2i": 0.4491869919,
+     "ipm": 2.1370155756,
      "pur_per_100": 3.2786885246
     },
-    "breaks": "ctr",
+    "breaks": "c2i",
     "worse": [
-     "ctr",
+     "c2i",
      "ipm"
     ],
     "better": [
      "hook"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook."
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at hook.",
+    "format": "video"
    }
   },
   {
@@ -6750,24 +7185,22 @@
      "pur_per_100": 2.5
     },
     "old": {
-     "spend": 269.59,
-     "roas": 0.2559071187,
-     "impressions": 76047,
-     "hook": 0.2528436361,
-     "ctr": 0.0075216642,
-     "c2i": 0.2552447552,
-     "ipm": 1.9198653464,
+     "spend": 193.77,
+     "roas": 0.2540640978,
+     "impressions": 46983,
+     "hook": 0.409254411,
+     "ctr": 0.0073430815,
+     "c2i": 0.2956521739,
+     "ipm": 2.1709980206,
      "pur_per_100": 8.2191780822
     },
     "breaks": "pur_per_100",
     "worse": [
      "pur_per_100"
     ],
-    "better": [
-     "hook",
-     "ipm"
-    ],
-    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, IPM."
+    "better": [],
+    "text": "Breaks at payers: who it brings: they install but don't pay.",
+    "format": "video"
    }
   },
   {
@@ -6902,16 +7335,16 @@
      "pur_per_100": 10.1694915254
     },
     "old": {
-     "spend": 911.16,
-     "roas": 0.2252732785,
-     "impressions": 206439,
-     "hook": 0.3298310878,
-     "ctr": 0.007270913,
-     "c2i": 0.3164556962,
-     "ipm": 2.3009218219,
+     "spend": 820.54,
+     "roas": 0.2444487782,
+     "impressions": 181502,
+     "hook": 0.3751473809,
+     "ctr": 0.0075315974,
+     "c2i": 0.3262618873,
+     "ipm": 2.4572731981,
      "pur_per_100": 5.4736842105
     },
-    "breaks": "ctr",
+    "breaks": null,
     "worse": [
      "ctr"
     ],
@@ -6919,7 +7352,8 @@
      "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at C>I, payers.",
+    "format": "video"
    }
   },
   {
@@ -7138,24 +7572,25 @@
      "pur_per_100": 8.4577114428
     },
     "old": {
-     "spend": 1757.46,
-     "roas": 0.4092781624,
-     "impressions": 1700912,
-     "hook": 0.1854493353,
-     "ctr": 0.0150836728,
-     "c2i": 0.0620517618,
-     "ipm": 0.9359684687,
+     "spend": 1325.54,
+     "roas": 0.4293118276,
+     "impressions": 1316399,
+     "hook": 0.2296066768,
+     "ctr": 0.0066628735,
+     "c2i": 0.1542583514,
+     "ipm": 1.0278038801,
      "pur_per_100": 8.6683417085
     },
-    "breaks": "ctr",
+    "breaks": null,
     "worse": [
-     "ctr"
+     "c2i"
     ],
     "better": [
      "hook",
-     "c2i"
+     "ctr"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I."
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook, CTR.",
+    "format": "video"
    }
   },
   {
@@ -7300,7 +7735,7 @@
        "impressions": 755,
        "hook": null,
        "ctr": null,
-       "c2i": 0.0,
+       "c2i": null,
        "ipm": null,
        "pur_per_100": null
       }
@@ -7362,13 +7797,13 @@
      "pur_per_100": null
     },
     "old": {
-     "spend": 1977.76,
-     "roas": 0.4311190428,
-     "impressions": 412458,
-     "hook": 0.342359707,
-     "ctr": 0.0120375893,
-     "c2i": 0.1762336354,
-     "ipm": 2.1214281212,
+     "spend": 1811.82,
+     "roas": 0.397407026,
+     "impressions": 356554,
+     "hook": 0.3960381879,
+     "ctr": 0.0097544832,
+     "c2i": 0.2265669925,
+     "ipm": 2.2100439204,
      "pur_per_100": 13.6
     },
     "breaks": "ctr",
@@ -7377,7 +7812,8 @@
      "ipm"
     ],
     "better": [],
-    "text": "Breaks at CTR: the message: they watch but don't click."
+    "text": "Breaks at CTR: the message: they watch but don't click.",
+    "format": "video"
    }
   },
   {
@@ -7556,13 +7992,13 @@
      "pur_per_100": null
     },
     "old": {
-     "spend": 4672.94,
-     "roas": 0.4607570394,
-     "impressions": 1416327,
-     "hook": 0.1944621545,
-     "ctr": 0.0092528067,
-     "c2i": 0.1998473865,
-     "ipm": 1.8491492431,
+     "spend": 4637.89,
+     "roas": 0.4535985113,
+     "impressions": 1402462,
+     "hook": 0.1961393606,
+     "ctr": 0.0086982749,
+     "c2i": 0.2138699893,
+     "ipm": 1.8602999582,
      "pur_per_100": 10.3474608629
     },
     "breaks": "c2i",
@@ -7573,7 +8009,8 @@
     "better": [
      "hook"
     ],
-    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at hook."
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint.) Better at hook.",
+    "format": "video"
    }
   },
   {
@@ -7784,25 +8221,25 @@
      "pur_per_100": 24.8322147651
     },
     "old": {
-     "spend": 3777.22,
-     "roas": 0.4737902473,
-     "impressions": 1259546,
-     "hook": 0.1003972862,
-     "ctr": 0.0133254363,
-     "c2i": 0.0978908484,
-     "ipm": 1.3044382659,
+     "spend": 3434.29,
+     "roas": 0.4892859945,
+     "impressions": 1094217,
+     "hook": 0.1155666566,
+     "ctr": 0.0067143903,
+     "c2i": 0.2142371036,
+     "ipm": 1.438471528,
      "pur_per_100": 11.8076688984
     },
-    "breaks": "ctr",
+    "breaks": null,
     "worse": [
-     "ctr"
+     "c2i"
     ],
     "better": [
      "hook",
-     "c2i",
      "pur_per_100"
     ],
-    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, payers."
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook, payers.",
+    "format": "video"
    }
   },
   {
@@ -7968,19 +8405,20 @@
      "pur_per_100": null
     },
     "old": {
-     "spend": 3606.27,
-     "roas": 0.5324254703,
-     "impressions": 1013003,
-     "hook": 0.2439913798,
-     "ctr": 0.007998002,
-     "c2i": 0.3202912861,
-     "ipm": 2.5616903405,
+     "spend": 3487.0,
+     "roas": 0.5372956699,
+     "impressions": 976349,
+     "hook": 0.2531512806,
+     "ctr": 0.0070364183,
+     "c2i": 0.3698689956,
+     "ipm": 2.6025529805,
      "pur_per_100": 10.5202312139
     },
     "breaks": null,
     "worse": [],
     "better": [],
-    "text": "Not tested: Meta gave it 1,136 impressions."
+    "text": "Not tested: Meta gave it 1,136 impressions.",
+    "format": "video"
    }
   }
  ],
@@ -8093,7 +8531,7 @@
        "impressions": 2289,
        "hook": null,
        "ctr": null,
-       "c2i": 0.0181818182,
+       "c2i": null,
        "ipm": null,
        "pur_per_100": null
       }
@@ -9766,5 +10204,968 @@
     }
    }
   }
- ]
+ ],
+ "images": {
+  "since": "2026-10-19",
+  "rows": [
+   {
+    "os": "Android",
+    "img": false,
+    "recent": false,
+    "imp": 33285767.0,
+    "clk": 259460.0,
+    "inst": 108015.0,
+    "pur": 4867.0,
+    "spend": 94844.84,
+    "rev": 35468.2700088478,
+    "ctr": 0.007794923277567856,
+    "c2i": 0.4163069451938642,
+    "ipm": 3.245080697704818,
+    "pur_per_100": 4.505855668194232,
+    "roas": 0.3739609873225344,
+    "flag": false
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "recent": true,
+    "imp": 20290578.0,
+    "clk": 124881.0,
+    "inst": 53419.0,
+    "pur": 2530.0,
+    "spend": 44250.17,
+    "rev": 16008.3400037699,
+    "ctr": 0.006154629996247519,
+    "c2i": 0.42775922678389827,
+    "ipm": 2.6326997683358258,
+    "pur_per_100": 4.736142570995339,
+    "roas": 0.3617690057183939,
+    "flag": false
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "recent": false,
+    "imp": 23863749.0,
+    "clk": 270776.0,
+    "inst": 74318.0,
+    "pur": 2593.0,
+    "spend": 49389.01,
+    "rev": 17019.2299946143,
+    "ctr": 0.011346750252862615,
+    "c2i": 0.27446302478801665,
+    "ipm": 3.1142633959148665,
+    "pur_per_100": 3.4890605236954713,
+    "roas": 0.3445954878345263,
+    "flag": false
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "recent": true,
+    "imp": 4843020.0,
+    "clk": 47803.0,
+    "inst": 10991.0,
+    "pur": 389.0,
+    "spend": 7420.12,
+    "rev": 2318.7600000465,
+    "ctr": 0.009870494030584221,
+    "c2i": 0.2299228081919545,
+    "ipm": 2.269451705753848,
+    "pur_per_100": 3.5392593940496773,
+    "roas": 0.3124962938667434,
+    "flag": false
+   },
+   {
+    "os": "Web",
+    "img": false,
+    "recent": false,
+    "imp": 1220271.0,
+    "clk": 16685.0,
+    "inst": 0.0,
+    "pur": 3.0,
+    "spend": 583.96,
+    "rev": 12.9700001,
+    "ctr": 0.013673192266308058,
+    "c2i": 0.0,
+    "ipm": 0.0,
+    "pur_per_100": Infinity,
+    "roas": 0.0222104255428454,
+    "flag": false
+   },
+   {
+    "os": "Web",
+    "img": true,
+    "recent": false,
+    "imp": 1568860.0,
+    "clk": 19010.0,
+    "inst": 0.0,
+    "pur": 1.0,
+    "spend": 647.73,
+    "rev": 2.9900001096000004,
+    "ctr": 0.012117078643091162,
+    "c2i": 0.0,
+    "ipm": 0.0,
+    "pur_per_100": Infinity,
+    "roas": 0.004616121083784911,
+    "flag": false
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "recent": false,
+    "imp": 63232765.0,
+    "clk": 533717.0,
+    "inst": 101493.0,
+    "pur": 11121.0,
+    "spend": 205900.85,
+    "rev": 85774.8600124404,
+    "ctr": 0.008440513395231096,
+    "c2i": 0.19016257679631715,
+    "ipm": 1.6050697767209767,
+    "pur_per_100": 10.95740592947297,
+    "roas": 0.41658332159600314,
+    "flag": false
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "recent": true,
+    "imp": 21831520.0,
+    "clk": 155050.0,
+    "inst": 30007.0,
+    "pur": 3142.0,
+    "spend": 56536.32,
+    "rev": 23222.7299983775,
+    "ctr": 0.007102116572735202,
+    "c2i": 0.19353111899387293,
+    "ipm": 1.3744805675463734,
+    "pur_per_100": 10.470890125637352,
+    "roas": 0.4107577217331708,
+    "flag": false
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "recent": false,
+    "imp": 22300777.0,
+    "clk": 383443.0,
+    "inst": 27619.0,
+    "pur": 2543.0,
+    "spend": 55382.45,
+    "rev": 19753.8900030512,
+    "ctr": 0.01719415426646345,
+    "c2i": 0.07202895867182345,
+    "ipm": 1.238477027056053,
+    "pur_per_100": 9.207429667982186,
+    "roas": 0.35668140364052514,
+    "flag": false
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "recent": true,
+    "imp": 3803728.0,
+    "clk": 110057.0,
+    "inst": 3557.0,
+    "pur": 436.0,
+    "spend": 11280.28,
+    "rev": 3435.0599976943,
+    "ctr": 0.02893398266122078,
+    "c2i": 0.03231961619887876,
+    "ipm": 0.9351352147156684,
+    "pur_per_100": 12.257520382344673,
+    "roas": 0.30451903655709783,
+    "flag": true
+   }
+  ],
+  "by_batch": [
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 4.0,
+    "imp": 292949.0,
+    "clk": 1854.0,
+    "inst": 869.0,
+    "pur": 86.0,
+    "spend": 1907.26,
+    "rev": 822.5299986464,
+    "ctr": 0.0063287466419069535,
+    "c2i": 0.46871628910463864,
+    "ipm": 2.96638664067807,
+    "pur_per_100": 9.896432681242807,
+    "roas": 0.43126264832608036
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 15.0,
+    "imp": 146104.0,
+    "clk": 1084.0,
+    "inst": 476.0,
+    "pur": 34.0,
+    "spend": 1053.15,
+    "rev": 356.629999926,
+    "ctr": 0.007419372501779554,
+    "c2i": 0.43911439114391143,
+    "ipm": 3.257953238788808,
+    "pur_per_100": 7.142857142857142,
+    "roas": 0.33863172380572565
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 24.0,
+    "imp": 163323.0,
+    "clk": 1589.0,
+    "inst": 702.0,
+    "pur": 50.0,
+    "spend": 1012.81,
+    "rev": 473.3999996058,
+    "ctr": 0.009729186948562053,
+    "c2i": 0.4417872876022656,
+    "ipm": 4.298231112580592,
+    "pur_per_100": 7.122507122507122,
+    "roas": 0.46741244617035776
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 28.0,
+    "imp": 967946.0,
+    "clk": 15732.0,
+    "inst": 6235.0,
+    "pur": 67.0,
+    "spend": 2539.17,
+    "rev": 632.5999975564,
+    "ctr": 0.01625297278980439,
+    "c2i": 0.396325959827104,
+    "ipm": 6.441475040963029,
+    "pur_per_100": 1.07457898957498,
+    "roas": 0.24913652790337
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 32.0,
+    "imp": 321152.0,
+    "clk": 1810.0,
+    "inst": 909.0,
+    "pur": 22.0,
+    "spend": 322.26,
+    "rev": 95.95000017180001,
+    "ctr": 0.005635960542048625,
+    "c2i": 0.5022099447513813,
+    "ipm": 2.8304354324432044,
+    "pur_per_100": 2.42024202420242,
+    "roas": 0.2977409550418917
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 34.0,
+    "imp": 162143.0,
+    "clk": 1508.0,
+    "inst": 467.0,
+    "pur": 38.0,
+    "spend": 516.9300000000001,
+    "rev": 157.7300000824,
+    "ctr": 0.009300432334420851,
+    "c2i": 0.3096816976127321,
+    "ipm": 2.880173673855794,
+    "pur_per_100": 8.137044967880087,
+    "roas": 0.3051283540951386
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 36.0,
+    "imp": 2796238.0,
+    "clk": 16149.0,
+    "inst": 6657.0,
+    "pur": 188.0,
+    "spend": 2903.84,
+    "rev": 805.0199990595,
+    "ctr": 0.005775259473621344,
+    "c2i": 0.41222366710013003,
+    "ipm": 2.380698638670957,
+    "pur_per_100": 2.8240949376596065,
+    "roas": 0.2772260176385407
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 39.0,
+    "imp": 12110383.0,
+    "clk": 68255.0,
+    "inst": 31448.0,
+    "pur": 1710.0,
+    "spend": 26839.65,
+    "rev": 10670.8700041719,
+    "ctr": 0.0056360727815131855,
+    "c2i": 0.46074280272507506,
+    "ipm": 2.596779969716895,
+    "pur_per_100": 5.437547697786823,
+    "roas": 0.39757858258851736
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 40.0,
+    "imp": 556372.0,
+    "clk": 2116.0,
+    "inst": 832.0,
+    "pur": 68.0,
+    "spend": 1430.39,
+    "rev": 415.1200014752,
+    "ctr": 0.0038032108014062534,
+    "c2i": 0.3931947069943289,
+    "ipm": 1.4954023566965988,
+    "pur_per_100": 8.173076923076923,
+    "roas": 0.2902145579004327
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 41.0,
+    "imp": 818700.0,
+    "clk": 4919.0,
+    "inst": 1717.0,
+    "pur": 98.0,
+    "spend": 2741.32,
+    "rev": 613.4900018869,
+    "ctr": 0.006008305850738976,
+    "c2i": 0.3490546859117707,
+    "ipm": 2.0972273115915474,
+    "pur_per_100": 5.707629586488061,
+    "roas": 0.22379364754457706
+   },
+   {
+    "os": "Android",
+    "img": false,
+    "batch": 44.0,
+    "imp": 1732411.0,
+    "clk": 8453.0,
+    "inst": 2678.0,
+    "pur": 155.0,
+    "spend": 2432.94,
+    "rev": 871.4300013591001,
+    "ctr": 0.004879327134265483,
+    "c2i": 0.31681059978705783,
+    "ipm": 1.5458225559639138,
+    "pur_per_100": 5.78790141896938,
+    "roas": 0.3581798159260401
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 11.0,
+    "imp": 113909.0,
+    "clk": 1089.0,
+    "inst": 157.0,
+    "pur": 7.0,
+    "spend": 66.85,
+    "rev": 26.8400001097,
+    "ctr": 0.009560263016969685,
+    "c2i": 0.14416896235078053,
+    "ipm": 1.3782931989570621,
+    "pur_per_100": 4.45859872611465,
+    "roas": 0.40149588795362756
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 19.0,
+    "imp": 220618.0,
+    "clk": 2183.0,
+    "inst": 446.0,
+    "pur": 19.0,
+    "spend": 277.81,
+    "rev": 103.3199999689,
+    "ctr": 0.00989493151057484,
+    "c2i": 0.2043060009161704,
+    "ipm": 2.021593886264947,
+    "pur_per_100": 4.260089686098654,
+    "roas": 0.3719088584604586
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 24.0,
+    "imp": 132601.0,
+    "clk": 1663.0,
+    "inst": 554.0,
+    "pur": 25.0,
+    "spend": 390.14,
+    "rev": 110.4000001109,
+    "ctr": 0.012541383549143671,
+    "c2i": 0.33313289236319904,
+    "ipm": 4.177947375962474,
+    "pur_per_100": 4.512635379061372,
+    "roas": 0.28297534246911366
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 28.0,
+    "imp": 136767.0,
+    "clk": 2171.0,
+    "inst": 482.0,
+    "pur": 15.0,
+    "spend": 471.87,
+    "rev": 113.8100003763,
+    "ctr": 0.015873712225902448,
+    "c2i": 0.2220175034546292,
+    "ipm": 3.5242419589520866,
+    "pur_per_100": 3.112033195020747,
+    "roas": 0.24118931141267722
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 32.0,
+    "imp": 344314.0,
+    "clk": 1745.0,
+    "inst": 854.0,
+    "pur": 24.0,
+    "spend": 363.08,
+    "rev": 156.53000012080003,
+    "ctr": 0.0050680483512142984,
+    "c2i": 0.48939828080229225,
+    "ipm": 2.48029415010717,
+    "pur_per_100": 2.810304449648712,
+    "roas": 0.43111710950975
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 33.0,
+    "imp": 189091.0,
+    "clk": 781.0,
+    "inst": 389.0,
+    "pur": 20.0,
+    "spend": 170.42000000000002,
+    "rev": 79.7199997545,
+    "ctr": 0.0041302864758238095,
+    "c2i": 0.4980793854033291,
+    "ipm": 2.0572105494180053,
+    "pur_per_100": 5.141388174807198,
+    "roas": 0.4677854697482689
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 35.0,
+    "imp": 1868457.0,
+    "clk": 19528.0,
+    "inst": 4173.0,
+    "pur": 61.0,
+    "spend": 1013.78,
+    "rev": 212.3199990206,
+    "ctr": 0.010451404554667301,
+    "c2i": 0.21369315854158133,
+    "ipm": 2.2333936504827245,
+    "pur_per_100": 1.4617780972921162,
+    "roas": 0.20943399852098088
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 39.0,
+    "imp": 1302416.0,
+    "clk": 11921.0,
+    "inst": 3135.0,
+    "pur": 183.0,
+    "spend": 3316.4,
+    "rev": 1240.1100005251,
+    "ctr": 0.009152989521013255,
+    "c2i": 0.26298129351564464,
+    "ipm": 2.4070650237712066,
+    "pur_per_100": 5.837320574162679,
+    "roas": 0.37393257765200216
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 40.0,
+    "imp": 132169.0,
+    "clk": 1992.0,
+    "inst": 227.0,
+    "pur": 16.0,
+    "spend": 460.74,
+    "rev": 110.7900000102,
+    "ctr": 0.015071612859293784,
+    "c2i": 0.11395582329317269,
+    "ipm": 1.7174980517367915,
+    "pur_per_100": 7.048458149779736,
+    "roas": 0.2404609975478578
+   },
+   {
+    "os": "Android",
+    "img": true,
+    "batch": 41.0,
+    "imp": 131944.0,
+    "clk": 2108.0,
+    "inst": 203.0,
+    "pur": 10.0,
+    "spend": 428.4,
+    "rev": 109.0999999117,
+    "ctr": 0.01597647486812587,
+    "c2i": 0.09629981024667932,
+    "ipm": 1.5385314982113625,
+    "pur_per_100": 4.926108374384237,
+    "roas": 0.25466853387418303
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 6.0,
+    "imp": 478371.0,
+    "clk": 3577.0,
+    "inst": 664.0,
+    "pur": 56.0,
+    "spend": 1271.0,
+    "rev": 414.970000107,
+    "ctr": 0.007477459963083046,
+    "c2i": 0.18563041655018173,
+    "ipm": 1.3880440076844123,
+    "pur_per_100": 8.433734939759036,
+    "roas": 0.3264909520904799
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 21.0,
+    "imp": 319408.0,
+    "clk": 1290.0,
+    "inst": 369.0,
+    "pur": 93.0,
+    "spend": 1250.44,
+    "rev": 455.0499988985,
+    "ctr": 0.004038721635024796,
+    "c2i": 0.28604651162790695,
+    "ipm": 1.1552622351349997,
+    "pur_per_100": 25.203252032520325,
+    "roas": 0.3639119021292505
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 24.0,
+    "imp": 132576.0,
+    "clk": 2012.0,
+    "inst": 386.0,
+    "pur": 59.0,
+    "spend": 984.61,
+    "rev": 551.7400000645,
+    "ctr": 0.015176200820661356,
+    "c2i": 0.1918489065606362,
+    "ipm": 2.9115375331885107,
+    "pur_per_100": 15.284974093264248,
+    "roas": 0.560364002056144
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 26.0,
+    "imp": 634766.0,
+    "clk": 5155.0,
+    "inst": 1087.0,
+    "pur": 71.0,
+    "spend": 1837.35,
+    "rev": 722.4900003159,
+    "ctr": 0.008121102894609981,
+    "c2i": 0.21086323957322986,
+    "ipm": 1.7124420652649952,
+    "pur_per_100": 6.531738730450782,
+    "roas": 0.39322393681982204
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 28.0,
+    "imp": 188524.0,
+    "clk": 1819.0,
+    "inst": 285.0,
+    "pur": 25.0,
+    "spend": 1773.77,
+    "rev": 242.08000027880001,
+    "ctr": 0.009648638900086992,
+    "c2i": 0.15667949422759758,
+    "ipm": 1.5117438628503532,
+    "pur_per_100": 8.771929824561402,
+    "roas": 0.13647767200865954
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 30.0,
+    "imp": 511535.0,
+    "clk": 5701.0,
+    "inst": 1002.0,
+    "pur": 168.0,
+    "spend": 4501.44,
+    "rev": 1774.8599985808,
+    "ctr": 0.011144887446606782,
+    "c2i": 0.17575863883529205,
+    "ipm": 1.9588102475881415,
+    "pur_per_100": 16.766467065868262,
+    "roas": 0.39428716112639517
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 39.0,
+    "imp": 10522747.0,
+    "clk": 58864.0,
+    "inst": 15928.0,
+    "pur": 1583.0,
+    "spend": 26428.51,
+    "rev": 11392.1500014312,
+    "ctr": 0.005593976553840931,
+    "c2i": 0.27058983419407445,
+    "ipm": 1.513673188189358,
+    "pur_per_100": 9.938473129080865,
+    "roas": 0.4310553262908579
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 40.0,
+    "imp": 1063854.0,
+    "clk": 5736.0,
+    "inst": 1119.0,
+    "pur": 93.0,
+    "spend": 2591.65,
+    "rev": 675.5500006965,
+    "ctr": 0.0053917172845146044,
+    "c2i": 0.1950836820083682,
+    "ipm": 1.0518360602112695,
+    "pur_per_100": 8.310991957104557,
+    "roas": 0.2606640559861478
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 41.0,
+    "imp": 967695.0,
+    "clk": 8817.0,
+    "inst": 1646.0,
+    "pur": 161.0,
+    "spend": 3286.9100000000003,
+    "rev": 1306.6199968467,
+    "ctr": 0.009111341900082153,
+    "c2i": 0.18668481342860382,
+    "ipm": 1.7009491627010578,
+    "pur_per_100": 9.781287970838397,
+    "roas": 0.39752229201490147
+   },
+   {
+    "os": "iOS",
+    "img": false,
+    "batch": 44.0,
+    "imp": 401871.0,
+    "clk": 3634.0,
+    "inst": 492.0,
+    "pur": 79.0,
+    "spend": 1135.78,
+    "rev": 614.8699995178999,
+    "ctr": 0.009042702757850156,
+    "c2i": 0.13538800220143093,
+    "ipm": 1.2242734608867023,
+    "pur_per_100": 16.056910569105693,
+    "roas": 0.5413636439432812
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 26.0,
+    "imp": 316074.0,
+    "clk": 9879.0,
+    "inst": 107.0,
+    "pur": 10.0,
+    "spend": 510.31,
+    "rev": 91.119999903,
+    "ctr": 0.03125533893961541,
+    "c2i": 0.010831055774876,
+    "ipm": 0.33852831931762817,
+    "pur_per_100": 9.345794392523365,
+    "roas": 0.17855813114185493
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 28.0,
+    "imp": 197709.0,
+    "clk": 3017.0,
+    "inst": 270.0,
+    "pur": 37.0,
+    "spend": 1032.22,
+    "rev": 354.22999989929997,
+    "ctr": 0.015259801020692028,
+    "c2i": 0.08949287371561153,
+    "ipm": 1.3656434456701516,
+    "pur_per_100": 13.703703703703704,
+    "roas": 0.3431729669056015
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 32.0,
+    "imp": 210438.0,
+    "clk": 1298.0,
+    "inst": 294.0,
+    "pur": 46.0,
+    "spend": 1008.25,
+    "rev": 396.6899995207,
+    "ctr": 0.0061680875127115824,
+    "c2i": 0.22650231124807396,
+    "ipm": 1.3970860776095573,
+    "pur_per_100": 15.646258503401361,
+    "roas": 0.3934440858127448
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 39.0,
+    "imp": 1821802.0,
+    "clk": 41153.0,
+    "inst": 2107.0,
+    "pur": 226.0,
+    "spend": 4827.21,
+    "rev": 1554.7199994117,
+    "ctr": 0.022589172698240532,
+    "c2i": 0.05119918353461473,
+    "ipm": 1.1565471988723253,
+    "pur_per_100": 10.726150925486474,
+    "roas": 0.3220742415208164
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 40.0,
+    "imp": 503091.0,
+    "clk": 27333.0,
+    "inst": 216.0,
+    "pur": 37.0,
+    "spend": 815.26,
+    "rev": 263.0899991229,
+    "ctr": 0.054330131129358306,
+    "c2i": 0.007902535396773132,
+    "ipm": 0.4293457843610798,
+    "pur_per_100": 17.12962962962963,
+    "roas": 0.32270686544525673
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 41.0,
+    "imp": 386327.0,
+    "clk": 19246.0,
+    "inst": 305.0,
+    "pur": 59.0,
+    "spend": 1070.93,
+    "rev": 564.8299995218999,
+    "ctr": 0.04981790037973013,
+    "c2i": 0.015847448820534137,
+    "ipm": 0.7894866266142413,
+    "pur_per_100": 19.34426229508197,
+    "roas": 0.5274200923700895
+   },
+   {
+    "os": "iOS",
+    "img": true,
+    "batch": 280.0,
+    "imp": 117247.0,
+    "clk": 2109.0,
+    "inst": 92.0,
+    "pur": 11.0,
+    "spend": 596.45,
+    "rev": 119.460000148,
+    "ctr": 0.0179876670618438,
+    "c2i": 0.04362256993835941,
+    "ipm": 0.7846682644332051,
+    "pur_per_100": 11.956521739130435,
+    "roas": 0.2002850199480258
+   }
+  ]
+ },
+ "creator_ads": [
+  {
+   "ad_name": "GringoMaleLover-US-Nc6tP3-Text-ChatAskingForPictures-caniseeyourpicturesexceptbumpy-testimonial-ProductAware-VID-TIN-001-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 2,
+   "persona": "",
+   "play": 3.428313071705739,
+   "spend": 982.84,
+   "roas": 0.43783321902395095,
+   "impressions": 372132,
+   "hook": 0.4101824085022519,
+   "ctr": 0.006325712381628024,
+   "c2i": 0.24723874256584538,
+   "ipm": 1.5639611750669118,
+   "pur_per_100": 10.996563573883162
+  },
+  {
+   "ad_name": "GringoMaleLover-ES-Fy3sK8-TalkingHead-WomanHoldingLipProductFlags-elamordetuvidaviveenotropais-mythbreak-SolutionAware-VID-TIN-006-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 2,
+   "persona": "",
+   "play": 4.143528366606619,
+   "spend": 715.1100000000002,
+   "roas": 0.5239473644344225,
+   "impressions": 202615,
+   "hook": 0.38956148354416004,
+   "ctr": 0.006401302963748982,
+   "c2i": 0.40478026214340784,
+   "ipm": 2.5911210917256864,
+   "pur_per_100": 11.238095238095239
+  },
+  {
+   "ad_name": "GringoMaleLover-ID-Hd5mX9-Couple-CouplePhotoBoothStrip-kisahiniberawal-testimonial-Unaware-VID-TIN-007-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 1,
+   "persona": "",
+   "play": 2.0,
+   "spend": 520.4,
+   "roas": 0.2647770958045734,
+   "impressions": 829962,
+   "hook": 0.17840455354590934,
+   "ctr": 0.004426708692687135,
+   "c2i": 0.27980402830702233,
+   "ipm": 1.238610924355573,
+   "pur_per_100": 3.11284046692607
+  },
+  {
+   "ad_name": "LocalDatingFatigue-ES-Fy3sK8-TalkingHead-WomanHoldingLipProductFlags-elamordetuvidaviveenotropais-mythbreak-SolutionAware-VID-TIN-006-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 3,
+   "persona": "",
+   "play": 4.04779630607745,
+   "spend": 518.3899999999999,
+   "roas": 0.4585929510476669,
+   "impressions": 119277,
+   "hook": 0.37206670214827664,
+   "ctr": 0.005382429135541638,
+   "c2i": 0.32710280373831774,
+   "ipm": 1.76060766115848,
+   "pur_per_100": 12.857142857142856
+  },
+  {
+   "ad_name": "GringoMaleLover-ID-Wb7cR2-Couple-CoupleKissingInPool-hasildariswipekanandidatingapps-testimonial-SolutionAware-VID-TIN-007-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 1,
+   "persona": "",
+   "play": 3.140233383009654,
+   "spend": 397.36999999999995,
+   "roas": 0.2973047792186124,
+   "impressions": 383147,
+   "hook": 0.31357938346986924,
+   "ctr": 0.004316880988236891,
+   "c2i": 0.33615477629987905,
+   "ipm": 1.4511401629139729,
+   "pur_per_100": 4.856115107913669
+  },
+  {
+   "ad_name": "GringoMaleLover-PH-Nc6tP3-Text-ChatAskingForPictures-caniseeyourpicturesexceptbumpy-testimonial-ProductAware-VID-TIN-001-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 1,
+   "persona": "",
+   "play": 4.378470901483454,
+   "spend": 257.59000000000003,
+   "roas": 0.34143405980317554,
+   "impressions": 186659,
+   "hook": 0.4877182434420521,
+   "ctr": 0.01132010779014138,
+   "c2i": 0.09512541410317085,
+   "ipm": 1.076829941229729,
+   "pur_per_100": 8.45771144278607
+  },
+  {
+   "ad_name": "LocalDatingFatigue-ES-Lq9eZ4-TalkingHead-WomanHoldingLipProduct-chicosdetupaisnotetratancomomereces-recommendation-SolutionAware-VID-TIN-006-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 3,
+   "persona": "",
+   "play": 3.654306160236201,
+   "spend": 97.22999999999999,
+   "roas": 0.4895608354931606,
+   "impressions": 19983,
+   "hook": 0.24415753470149631,
+   "ctr": 0.007556422959515589,
+   "c2i": 0.2781456953642384,
+   "ipm": 2.10178651854076,
+   "pur_per_100": 4.761904761904762
+  },
+  {
+   "ad_name": "LocalDatingFatigue-PT-Tz8mQ3-TalkingHead-WomanApplyingLipLiner-euachavaqueoproblemaeraeu-testimonial-ProblemAware-VID-TIN-003-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 1,
+   "persona": "",
+   "play": 4.926636437623532,
+   "spend": 52.300000000000004,
+   "roas": 0.42026768523326963,
+   "impressions": 8601,
+   "hook": 0.37983955197651437,
+   "ctr": 0.014533193814672713,
+   "c2i": 0.088,
+   "ipm": 1.2789210556911987,
+   "pur_per_100": null
+  },
+  {
+   "ad_name": "GringoMaleLover-US-Jw5nB8-AppUI-WomanShowingTabletMap-povappfrickenezfindinternationalbf-pov-SolutionAware-VID-TIN-004-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 2,
+   "persona": "",
+   "play": 2.0014409221902016,
+   "spend": 10.700000000000001,
+   "roas": 0.46542056089719624,
+   "impressions": 6246,
+   "hook": 0.19628562217899456,
+   "ctr": 0.003041946845981428,
+   "c2i": null,
+   "ipm": 1.440922190201729,
+   "pur_per_100": null
+  },
+  {
+   "ad_name": "ChristianMatch-US-Rv2kH7-TalkingHead-ShockedWomanGlasses-3yearsswipingdatingappsfoundthisnow-testimonial-ProblemAware-VID-TIN-005-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 1,
+   "persona": "",
+   "play": 3.013925729442971,
+   "spend": 9.92,
+   "roas": 2.533266129375,
+   "impressions": 4524,
+   "hook": 0.2756410282360743,
+   "ctr": 0.010167992926613616,
+   "c2i": 0.13043478260869565,
+   "ipm": 1.3262599469496021,
+   "pur_per_100": null
+  },
+  {
+   "ad_name": "GringoMaleLover-PT-Kd4rW9-TalkingHead-WomanWritingOnTablet-sevocequerumgringopegaessadica-recommendation-Unaware-VID-TIN-003-Batch2026Week44",
+   "first": "2026-10-30",
+   "adsets": 1,
+   "persona": "",
+   "play": 4.213908450704225,
+   "spend": 6.869999999999999,
+   "roas": 0.0,
+   "impressions": 1136,
+   "hook": 0.3309859147359155,
+   "ctr": null,
+   "c2i": null,
+   "ipm": null,
+   "pur_per_100": null
+  }
+ ],
+ "creator_benchmark": {
+  "spend": 196142.84,
+  "roas": 0.40960368477842374,
+  "impressions": 64225515,
+  "hook": 0.2720216722971755,
+  "ctr": 0.007700833539443008,
+  "c2i": 0.26302189692472555,
+  "ipm": 2.025487845445848,
+  "pur_per_100": 8.405848348810038,
+  "play": 2.835985277813654
+ }
 }

@@ -73,3 +73,9 @@ the strategist can still edit the drafted words before it goes out.
 - Numbers and result cards: `reports/<week>/report.json` (engine/report.py).
 - Thumbnails: the first-second snapshots in `brain/creatives/img/` (saved during decodes).
 - Learnings: experiment records (`brain/experiments/`) and the minds' history entries of the week.
+
+
+## Seen in the creative lead's own edits (Week 45 deck, 10 Nov 2026; confirm before making it a rule)
+On the persona slides they removed the "Live: … · N days of data" eyebrow, cut the subtitle to the result counts
+("Result: 2 almost, 2 got worse, 1 missed"), and moved the footnote up under the table. Slides edited on the page
+are listed in `deck_text.json` → `edited_on_page`, and `build_deck.py` never overwrites them.

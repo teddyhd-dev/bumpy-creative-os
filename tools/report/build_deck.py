@@ -24,7 +24,7 @@ NAVY, NAVY_TXT, NAVY_H, NAVY_HEAD, NAVY_LINE, NAVY_FOOT = "#1b2a44", "#f2f4f8", 
 AUD = {"InternationalFriendFinder": "Friends", "GringoMaleLover": "Gringo", "LocalDatingFatigue": "Loc. Dating",
        "PassportBro": "Passport Bro", "LatinaFemaleLover": "Latina", "MatureDating": "Mature", "SexyFemaleLover": "Sexy",
        "SlavicFemaleLover": "Slavic", "InterracialDatingSeekers": "Interracial", "SoutheastAsianFemaleLover": "SEA Lover",
-       "AsianFemaleLover": "Asian Lover", "ChristianMatchWorldwide": "Christian", "ChatOnly": "Chat Only",
+       "AsianFemaleLover": "Asian Lover", "ChristianMatchWorldwide": "Christian", "ChristianMatch": "Christian", "ChatOnly": "Chat Only",
        "CelebrityCrushLookalikeLover": "Celeb Crush", "SexyMaleLover": "Sexy Male", "InstagramPost": "Instagram post",
        "General": "General", "ChatPersona": "Chat Persona"}
 PERSONA_TITLE = {"InternationalFriendFinder": "International Friend", "GringoMaleLover": "Gringo Lover",
@@ -550,7 +550,59 @@ def refresh_slide(sid, R, T, queue_path, plan):
     return section(sid, "\n".join(body), gap=20, pad="96px 128px 128px")
 
 
-BREAK_LABEL = {"hook": "First second", "ctr": "Message", "c2i": "Store page", "pur_per_100": "Who it brings"}
+def pct(v, d=1):
+    return "–" if v is None else f"{v*100:.{d}f}%"
+
+
+def num(v, d=2):
+    return "–" if v is None else f"{v:.{d}f}"
+
+
+def image_slide(sid, R, T):
+    """Account-wide: new image ads vs videos per OS and batch (engine/why.py image_check)."""
+    I = R["images"]
+    keep = [r for r in I["by_batch"] if r["batch"] in T["batches"] and r["os"] in T.get("os", ["iOS", "Android"])]
+    keep.sort(key=lambda r: (r["os"] != "iOS", not r["img"], r["batch"]))
+    cols = [("Ads", 420), ("Spend", 150, "right"), ("CTR", 150, "right"), ("C>I", 150, "right"), ("IPM", 140, "right"),
+            ("Purchases / 1k impr.", 300, "right"), ("ROAS", 140, "right")]
+    rows, hl = [], []
+    for i, r in enumerate(keep):
+        ppm = r["ipm"] * r["pur_per_100"] / 100 if r["ipm"] is not None and r["pur_per_100"] is not None else None
+        bad = r["img"] and r["os"] == "iOS" and r["ctr"] >= 0.04
+        if bad:
+            hl.append(i)
+        red = (lambda v: f'<b style="color:#d9442b">{v}</b>') if bad else (lambda v: v)
+        rows.append([f'<b>{r["os"]}</b> · {"images" if r["img"] else "videos"} · Batch {int(r["batch"])}',
+                     f'${r["spend"]/1000:.1f}k', red(pct(r["ctr"])), red(pct(r["c2i"])), num(r["ipm"]), num(ppm), num(r["roas"])])
+    return table_slide(sid, {**T, "cols": [list(c) for c in cols], "rows": rows, "highlight": hl})
+
+
+def creator_funnel_slide(sid, R, T):
+    """Every creator video: delivery, hook, watch time and the funnel, against our own videos."""
+    import re as _re
+    rows = []
+    small = [c for c in R["creator_ads"] if c["spend"] < T.get("min_spend", 0)]
+    for c in R["creator_ads"]:
+        if c in small:
+            continue
+        n = c["ad_name"]
+        m = _re.match(r"([A-Za-z]+)-([A-Z]{2})-[A-Za-z0-9]{6}-([A-Za-z]+)-[^-]+-([^-]+)-", n)
+        who = _re.search(r"-TIN-(\d{3})-", n)
+        where = f'{AUD.get(m.group(1), m.group(1))} {"EN" if m.group(2) == "US" else m.group(2)}' if m else ""
+        line = T.get("lines", {}).get(m.group(4) if m else "", m.group(4) if m else n[:30])
+        rows.append([f'<b>{e(line)}</b>',
+                     f'{e(where)} <span style="color:{MUTED}; font-size:20px">· {e(m.group(3).lower() if m else "")} {who.group(1) if who else ""}</span>', f'${c["spend"]:,.0f}', num(c["roas"]), num(c["hook"]), num(c.get("play"), 1) + " s",
+                     pct(c["ctr"], 2), pct(c["c2i"], 0), num(c["pur_per_100"], 0)])
+    B = R["creator_benchmark"]
+    rows.append([f'<i>Our own videos, same days</i>', "", "", num(B["roas"]), num(B["hook"]), num(B["play"], 1) + " s",
+                 pct(B["ctr"], 2), pct(B["c2i"], 0), num(B["pur_per_100"], 0)])
+    cols = [["Creator video", 520], ["Where · format", 340], ["Spend", 120, "right"], ["ROAS", 100, "right"], ["Hook", 100, "right"],
+            ["Watch", 110, "right"], ["CTR", 110, "right"], ["C>I", 90, "right"], ["Payers", 110, "right"]]
+    foot = T["foot"] + (f' Under ${T["min_spend"]} and left out: {len(small)} videos (${sum(c["spend"] for c in small):,.0f}).' if small else "")
+    return table_slide(sid, {**T, "cols": cols, "rows": rows, "highlight": T.get("highlight", []), "foot": foot})
+
+
+BREAK_LABEL = {"hook": "First second", "ctr": "Message", "c2i": "Store page", "ipm": "Demand", "pur_per_100": "Who it brings"}
 
 
 def funnel_slide(sid, R, T, plan):
@@ -559,7 +611,7 @@ def funnel_slide(sid, R, T, plan):
     rows = [r for r in R["adsets"] if r["read"] in ("Worse", "Miss") and r.get("funnel")]
     rows.sort(key=lambda r: (n.get((r["persona"], r["lang"]), 99), r["os"]))
     cols = [("#", 60), ("Ad set", 340), ("Read", 120), ("New creative", 240), ("CTR", 180), ("C>I", 180),
-            ("IPM", 150), ("Payers", 140), ("Breaks at", 254)]
+            ("IPM", 150), ("Payers", 140), ("Breaks at", 254)]   # videos vs the other videos; payers vs every other ad
     body = [head(T.get("eyebrow"), e(T["title"]), None, size=60), '<div style="display:flex; flex-direction:column">',
             header_row(cols, pad="8px 16px")]
 
@@ -612,6 +664,12 @@ def main(folder):
     if T.get("funnel"):
         slides["funnel"] = funnel_slide("funnel", R, T["funnel"], plan)
         seq.append("funnel")
+    if T.get("images") and R.get("images"):
+        slides["images"] = image_slide("images", R, T["images"])
+        seq.append("images")
+    if T.get("funnel_actions"):
+        slides["actfunnel"] = action_slide("actfunnel", {**T["funnel_actions"], "persona": "Funnel check"})
+        seq.append("actfunnel")
     for P in T["personas"]:
         sid = P["id"]
         slides[sid] = persona_slide(sid, P["persona"], by[P["persona"]], end, P)
@@ -652,6 +710,9 @@ def main(folder):
         slides["creatordiv"] = divider("creatordiv", C["divider"])
         slides["creator"] = creator_slide("creator", R["creator"], end, {**C, "title": C.get("title") or R["creator_summary"]["title"]})
         seq += ["creatordiv", "creator"]
+        if C.get("funnel") and R.get("creator_ads"):
+            slides["creatorfunnel"] = creator_funnel_slide("creatorfunnel", R, C["funnel"])
+            seq.append("creatorfunnel")
         sections["s4"] = {"description": "Creator creative as ads", "start": "creatordiv"}
         if C.get("actions"):
             slides["actcreator"] = action_slide("actcreator", {**C["actions"], "persona": "Creator Creative as Ads"})
