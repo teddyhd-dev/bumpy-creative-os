@@ -36,7 +36,7 @@ from build import parse_name  # noqa: E402
 from codes import concept_keys, concept_names  # noqa: E402
 from settings import READ, bar  # noqa: E402
 from tickets import refresh_read  # noqa: E402
-from why import country_why, explain, load_country  # noqa: E402
+from why import country_why, explain, funnel_check, load_country  # noqa: E402
 
 # Refresh order (creative lead, 10 Nov 2026): Worse first, then Miss, then Flat, then Almost; spend inside a tier.
 TIER = {"Worse": 1, "Miss": 2, "Flat": 3, "Almost": 4}
@@ -145,7 +145,8 @@ def landings(d, daily, dims, end, last_week, wk_spend, flag, mark):
             no1_weeks=0 if tag else reign_weeks(d, aid, n1, last_week),
             weekly_roas={w: roas(x) for w, x in d[d.adset_id == aid].groupby("week")},
             spend_week=round(float(wk_spend.get(aid, 0))), priority=round(WEIGHT[read] * float(wk_spend.get(aid, 0))),
-            tier=TIER.get(read), action=ACTION[read], why=short_why(explain(pre, post), aid, WEEKS)))
+            tier=TIER.get(read), action=ACTION[read], why=short_why(explain(pre, post), aid, WEEKS),
+            funnel=funnel_check(post[post.grp.str.endswith(mark)], post[~post.grp.str.endswith(mark)], os_name=p["os"])))
     return pd.DataFrame(rows), up
 
 

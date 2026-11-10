@@ -550,6 +550,45 @@ def refresh_slide(sid, R, T, queue_path, plan):
     return section(sid, "\n".join(body), gap=20, pad="96px 128px 128px")
 
 
+BREAK_LABEL = {"hook": "First second", "ctr": "Message", "c2i": "Store page", "pur_per_100": "Who it brings"}
+
+
+def funnel_slide(sid, R, T, plan):
+    """Worse and Miss rows: where the new creative's funnel breaks against the ads it competes with (spec §6.2d)."""
+    n = {(x["persona"], x["lang"]): x["n"] for x in plan}
+    rows = [r for r in R["adsets"] if r["read"] in ("Worse", "Miss") and r.get("funnel")]
+    rows.sort(key=lambda r: (n.get((r["persona"], r["lang"]), 99), r["os"]))
+    cols = [("#", 60), ("Ad set", 340), ("Read", 120), ("New creative", 240), ("CTR", 180), ("C>I", 180),
+            ("IPM", 150), ("Payers", 140), ("Breaks at", 254)]
+    body = [head(T.get("eyebrow"), e(T["title"]), None, size=60), '<div style="display:flex; flex-direction:column">',
+            header_row(cols, pad="8px 16px")]
+
+    def val(F, k):
+        a, b = F["new"].get(k), F["old"].get(k)
+        if a is None or b is None:
+            return f'<span style="color:{MUTED}">–</span>'
+        f = (lambda v: f"{v*100:.1f}%") if k in ("ctr", "c2i") else (lambda v: f"{v:.1f}")
+        col = "#d9442b" if k in F["worse"] else ("#1f7fa8" if k in F["better"] else INK)
+        wt = "700" if col != INK else "400"
+        return f'<span style="color:{col}; font-weight:{wt}">{f(a)}</span> <span style="color:{MUTED}; font-size:20px">· {f(b)}</span>'
+    for i, r in enumerate(rows):
+        F = r["funnel"]
+        bd = "" if i == len(rows) - 1 else f" border-bottom:1px solid {LINE};"
+        brk = BREAK_LABEL.get(F["breaks"]) if F["breaks"] else ("Not tested" if F["text"].startswith("Not tested") else "No single step")
+        bcol = "#d9442b" if F["breaks"] else MUTED
+        body.append(f'<div style="display:flex; flex-direction:row; align-items:center; padding:7px 16px;{bd}">'
+                    + txt(60, str(n.get((r["persona"], r["lang"]), "")), fs=24, weight="700")
+                    + txt(340, f'<b>{e(AUD.get(r["persona"], r["persona"]))}</b> {e(r["lang"])} · {e(r["os"])}', fs=24)
+                    + cell(120, pill(READ_PILL[r["read"]][2].split(" ")[-1], READ_PILL[r["read"]][0], READ_PILL[r["read"]][1], fs=20, pad="1px 10px"))
+                    + txt(240, e(", ".join(SHORT.get(c, c) for c in r.get("concepts") or [])), fs=22)
+                    + "".join(txt(w, val(F, k), fs=24) for k, w in (("ctr", 180), ("c2i", 180), ("ipm", 150), ("pur_per_100", 140)))
+                    + txt(254, f'<b style="color:{bcol}">{brk}</b>', fs=24) + "</div>")
+    body.append("</div>")
+    body.append(foot(T["foot"]))
+    body.append(aside(T["note"]))
+    return section(sid, "\n".join(body), gap=28, pad="112px 128px 128px")
+
+
 def main(folder):
     R = json.load(open(os.path.join(folder, "refresh_review.json")))
     T = json.load(open(os.path.join(folder, "deck_text.json")))
@@ -570,6 +609,9 @@ def main(folder):
     if T.get("refresh"):
         slides["refresh"] = refresh_slide("refresh", R, T["refresh"], os.path.join(os.path.dirname(os.path.dirname(folder.rstrip("/"))), "output", "board", "queue.json"), plan)
         seq.append("refresh")
+    if T.get("funnel"):
+        slides["funnel"] = funnel_slide("funnel", R, T["funnel"], plan)
+        seq.append("funnel")
     for P in T["personas"]:
         sid = P["id"]
         slides[sid] = persona_slide(sid, P["persona"], by[P["persona"]], end, P)
@@ -627,7 +669,10 @@ def main(folder):
             slides["actnews"] = action_slide("actnews", {**N["actions"], "persona": "Account news"})
             seq.append("actnews")
         sections["s3"] = {"description": "Account news: adsets outside the refresh whose top spenders moved, then actions", "start": "newsdiv"}
+    keep = set(T.get("edited_on_page", []))      # slides the creative lead edited on the page: never overwrite
     for sid, h in slides.items():
+        if sid in keep and os.path.exists(os.path.join(out, sid + ".html")):
+            continue
         with open(os.path.join(out, sid + ".html"), "w") as f:
             f.write(h)
     from datetime import datetime, timezone

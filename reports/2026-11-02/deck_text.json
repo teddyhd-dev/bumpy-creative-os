@@ -740,5 +740,14 @@
     },
     "foot": "Order: worse, missed, flat, almost; spend inside each. Strikes = the board’s count, worst OS. Left alone: Gringo ES · TH, Sexy EN.",
     "note": "This is the whole list for the team, in the order we refresh: first the five sets that got worse, then the misses, then flat and almost. Two of the five aren't a creative job: Gringo Philippines worked on iOS with the same ads, and Latina Portuguese lost its number one ad to a switch-off."
-  }
+  },
+  "funnel": {
+    "eyebrow": "Worse and missed · where the new creative breaks",
+    "title": "Five got the click but lost the install; three lost the click",
+    "foot": "New creative · the other ads, same adset and days. CTR = link clicks per impression · C>I = installs per click · IPM = installs per 1k impressions · payers = purchases per 100 installs. Red = 20%+ worse. iOS installs per ad are Meta’s estimate.",
+    "note": "For every set that got worse or missed, this is where the new creative lost. Five got people to click and then lost them before the install: that points at the store page not keeping the ad's promise, so those store pages get checked. Three lost the click itself, dancing among them: people watch, then scroll on. Three aren't a funnel problem at all."
+  },
+  "edited_on_page": [
+    "latina"
+  ]
 }

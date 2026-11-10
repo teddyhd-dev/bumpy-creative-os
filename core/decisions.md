@@ -5,6 +5,9 @@ Log every measurement change (MMP, SDK, attribution setting, conversion mapping,
 
 ## Made
 
+### 2026-11-10 · Misses and failures get a funnel check, not only ROAS
+- The creative lead oversees C>I (store page or landing problems), IPM (demand) and CTR; the Worse and Miss reads now show all three plus purchases per 100 installs, new creative vs the rest of the adset, and name where it breaks. Spec 1.3.8 §6.2d.
+
 ### 2026-11-10 · Refresh order: worse first, then missed, then flat
 - The creative lead: "the refresh next should be from the one that got worse; miss later, flat later." Per persona × language, the worst read decides the tier (Worse, Miss, Flat, Almost), spend inside each. The deck's priority numbers follow it. Spec 1.3.7.
 - Every ROAS move gets its why (creative, audience or media buying), on the deck, the launch log and in `refresh_review.json`. Spec 1.3.7 §6.2c.

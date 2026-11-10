@@ -263,7 +263,8 @@ def launch_reads(lab):
                               share=num(r.get("batch_share"), 3), before=num(r.get("before"), 3), after=num(r.get("after"), 3),
                               no1=s(r.get("no1_after")), concepts=", ".join(r.get("concepts") or []),
                               spend=num(r.get("spend_week"), 0), priority=num(r.get("priority"), 0),
-                              why=s((r.get("why") or {}).get("text")))
+                              why=s(((r.get("why") or {}).get("text") or "") + ((" Funnel: " + r["funnel"]["text"])
+                                    if r.get("read") in ("Worse", "Miss") and r.get("funnel") else "")))
     return sorted(out.values(), key=lambda x: (x["batch"], x["adset"]))
 
 

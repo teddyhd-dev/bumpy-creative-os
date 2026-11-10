@@ -21,6 +21,8 @@ import pandas as pd
 BUDGET_MOVE = 0.20     # daily spend up or down 20%+ = a media-buying move
 STOPPED_SHARE = 0.15   # ads that stopped and had carried 15%+ of the spend
 MIN_SHARE = 0.03       # concepts under 3% in both windows are left out of the text
+MIN_IMP = 3000         # under 3k impressions a rate is noise
+MIN_CLICKS = 30
 NEW_SHARE = 0.01       # under 1% of a window's spend = not really there (its ROAS is noise)
 
 
@@ -30,12 +32,50 @@ def _roas(x):
 
 
 def funnel(x):
-    imp, inst, pur = x.impressions.sum(), x.installs.sum(), x.purchases.sum()
+    """Where an ad wins or loses, step by step: hook (stops the thumb; video only), CTR (link clicks per impression:
+    does the message make them want it), C>I (installs per link click: does the store page keep the promise),
+    IPM (installs per 1k impressions: demand, the three together), purchases per 100 installs (do they pay)."""
+    imp, clk, inst, pur = x.impressions.sum(), x.clicks.sum() if "clicks" in x else 0, x.installs.sum(), x.purchases.sum()
     hook = x.hook_x_imp.sum() / imp if imp > 0 and "hook_x_imp" in x else np.nan
-    return dict(spend=float(x.spend.sum()), roas=_roas(x),
-                hook=float(hook) if pd.notna(hook) else None,
-                ipm=float(inst / imp * 1000) if imp > 0 else None,
+    return dict(spend=float(x.spend.sum()), roas=_roas(x), impressions=int(imp),
+                hook=float(hook) if pd.notna(hook) and hook > 0 else None,
+                ctr=float(clk / imp) if imp >= MIN_IMP else None,
+                c2i=float(inst / clk) if clk >= MIN_CLICKS else None,
+                ipm=float(inst / imp * 1000) if imp >= MIN_IMP else None,
                 pur_per_100=float(pur / inst * 100) if inst >= 20 else None)
+
+
+STEPS = [("hook", "hook"), ("ctr", "CTR"), ("c2i", "C>I"), ("ipm", "IPM"), ("pur_per_100", "payers")]
+WHERE = {"hook": "the first second: it doesn't stop the thumb, so nobody clicks",
+         "ctr": "the message: they watch but don't click",
+         "c2i": "the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)",
+         "pur_per_100": "who it brings: they install but don't pay"}
+
+
+def funnel_check(new, old, gap=0.20, os_name=""):
+    """The new creative's funnel against the ads it competes with, in the same adset and days. The break is the
+    first of CTR -> C>I -> payers that is 20%+ worse (IPM = CTR x C>I, the demand it creates); a low CTR with a low
+    hook is a first-second problem, with a fine hook a message problem. Too few impressions = Meta never tested it."""
+    a, b = funnel(new), funnel(old)
+    lab = dict(STEPS)
+    if a["impressions"] < MIN_IMP:
+        return dict(new=a, old=b, breaks=None, worse=[], better=[],
+                    text=f'Not tested: Meta gave it {a["impressions"]:,} impressions.')
+    worse, better = [], []
+    for k, _ in STEPS:
+        if a.get(k) is None or b.get(k) is None or not b[k]:
+            continue
+        r = a[k] / b[k] - 1
+        (worse if r <= -gap else better if r >= gap else []).append(k)
+    brk = next((k for k in ("ctr", "c2i", "pur_per_100") if k in worse), None)
+    if brk == "ctr" and "hook" in worse:
+        brk = "hook"
+    txt = f"Breaks at {lab[brk]}: {WHERE[brk]}." if brk else "No step 20%+ worse than the ads it competes with."
+    if brk == "c2i" and os_name == "iOS":
+        txt += " (iOS installs per ad are Meta's estimate: a hint, check the store page.)"
+    if better:
+        txt += " Better at " + ", ".join(lab[k] for k in better) + "."
+    return dict(new=a, old=b, breaks=brk, worse=worse, better=better, text=txt)
 
 
 def concepts(pre, post):

@@ -105,7 +105,10 @@
       "funnel": {
        "spend": 291.21,
        "roas": 0.4531437803,
+       "impressions": 245903,
        "hook": 0.3206874248,
+       "ctr": 0.0146277191,
+       "c2i": 0.0753405616,
        "ipm": 1.1020605686,
        "pur_per_100": 5.9040590406
       }
@@ -121,7 +124,10 @@
       "funnel": {
        "spend": 194.39,
        "roas": 0.603117443,
+       "impressions": 231532,
        "hook": 0.1157507393,
+       "ctr": 0.0058220894,
+       "c2i": 0.2129080119,
        "ipm": 1.2395694764,
        "pur_per_100": 10.1045296167
       }
@@ -137,7 +143,10 @@
       "funnel": {
        "spend": 45.37,
        "roas": 0.7350672251,
+       "impressions": 40525,
        "hook": 0.3799876637,
+       "ctr": 0.0131770512,
+       "c2i": 0.0730337079,
        "ipm": 0.9623689081,
        "pur_per_100": 17.9487179487
       }
@@ -153,7 +162,10 @@
       "funnel": {
        "spend": 42.51,
        "roas": 0.9929428364,
+       "impressions": 32952,
        "hook": 0.4160293771,
+       "ctr": 0.0115926196,
+       "c2i": 0.1282722513,
        "ipm": 1.4870114105,
        "pur_per_100": 14.2857142857
       }
@@ -169,7 +181,10 @@
       "funnel": {
        "spend": 20.62,
        "roas": 0.1372453902,
+       "impressions": 22256,
        "hook": 0.1596872774,
+       "ctr": 0.0101096334,
+       "c2i": 0.1644444444,
        "ipm": 1.662473041,
        "pur_per_100": 2.7027027027
       }
@@ -185,7 +200,10 @@
       "funnel": {
        "spend": 10.41,
        "roas": 0.6282420748,
+       "impressions": 10620,
        "hook": 0.111205275,
+       "ctr": 0.0083804143,
+       "c2i": 0.1797752809,
        "ipm": 1.5065913371,
        "pur_per_100": null
       }
@@ -196,6 +214,35 @@
      "within": -0.0361,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 167.16,
+     "roas": 0.6588896878,
+     "impressions": 125341,
+     "hook": 0.3540661067,
+     "ctr": 0.0090313624,
+     "c2i": 0.1351590106,
+     "ipm": 1.2206700122,
+     "pur_per_100": 9.1503267974
+    },
+    "old": {
+     "spend": 457.63,
+     "roas": 0.5035509029,
+     "impressions": 474624,
+     "hook": 0.2086683359,
+     "ctr": 0.0112678668,
+     "c2i": 0.1047120419,
+     "ipm": 1.1798813376,
+     "pur_per_100": 8.9285714286
+    },
+    "breaks": null,
+    "worse": [],
+    "better": [
+     "hook",
+     "c2i"
+    ],
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook, C>I."
    }
   },
   {
@@ -297,7 +344,10 @@
       "funnel": {
        "spend": 558.49,
        "roas": 0.4592562062,
+       "impressions": 99557,
        "hook": 0.4055967924,
+       "ctr": 0.0094820053,
+       "c2i": 0.2235169492,
        "ipm": 2.1193888928,
        "pur_per_100": 15.1658767773
       }
@@ -313,7 +363,10 @@
       "funnel": {
        "spend": 70.09,
        "roas": 1.0189756014,
+       "impressions": 22687,
        "hook": 0.1997178985,
+       "ctr": 0.0119451668,
+       "c2i": 0.1881918819,
        "ipm": 2.2479834266,
        "pur_per_100": 17.6470588235
       }
@@ -329,7 +382,10 @@
       "funnel": {
        "spend": 33.36,
        "roas": 0.5038968829,
-       "hook": 0.0,
+       "impressions": 9991,
+       "hook": null,
+       "ctr": 0.0075067561,
+       "c2i": 0.2666666667,
        "ipm": 2.0018016215,
        "pur_per_100": 20.0
       }
@@ -345,7 +401,10 @@
       "funnel": {
        "spend": 18.97,
        "roas": 0.8513442281,
+       "impressions": 5750,
        "hook": 0.0787826084,
+       "ctr": 0.0335652174,
+       "c2i": 0.0259067358,
        "ipm": 0.8695652174,
        "pur_per_100": null
       }
@@ -356,6 +415,34 @@
      "within": -0.1004,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 70.83,
+     "roas": 1.0083298024,
+     "impressions": 22876,
+     "hook": 0.1998163999,
+     "ctr": 0.0118464767,
+     "c2i": 0.1881918819,
+     "ipm": 2.2294107361,
+     "pur_per_100": 17.6470588235
+    },
+    "old": {
+     "spend": 612.48,
+     "roas": 0.4725868577,
+     "impressions": 115972,
+     "hook": 0.3521280987,
+     "ctr": 0.0107094816,
+     "c2i": 0.1900161031,
+     "ipm": 2.0349739592,
+     "pur_per_100": 16.5254237288
+    },
+    "breaks": null,
+    "worse": [
+     "hook"
+    ],
+    "better": [],
+    "text": "No step 20%+ worse than the ads it competes with."
    }
   },
   {
@@ -460,7 +547,10 @@
       "funnel": {
        "spend": 359.67,
        "roas": 0.4990407865,
+       "impressions": 175328,
        "hook": 0.0844645452,
+       "ctr": 0.0087835371,
+       "c2i": 0.425974026,
        "ipm": 3.7415586786,
        "pur_per_100": 4.4207317073
       }
@@ -476,7 +566,10 @@
       "funnel": {
        "spend": 289.19,
        "roas": 0.5598049694,
+       "impressions": 83712,
        "hook": 0.3952121577,
+       "ctr": 0.0072510512,
+       "c2i": 0.4052718287,
        "ipm": 2.938646789,
        "pur_per_100": 9.756097561
       }
@@ -492,7 +585,10 @@
       "funnel": {
        "spend": 65.52,
        "roas": 0.6153846183,
+       "impressions": 27557,
        "hook": 0.361214938,
+       "ctr": 0.0071488188,
+       "c2i": 0.4010152284,
        "ipm": 2.8667852088,
        "pur_per_100": 7.5949367089
       }
@@ -503,6 +599,35 @@
      "within": 0.1619,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 67.33,
+     "roas": 0.5988415296,
+     "impressions": 28274,
+     "hook": 0.3590577933,
+     "ctr": 0.0070382684,
+     "c2i": 0.3969849246,
+     "ipm": 2.7940864398,
+     "pur_per_100": 7.5949367089
+    },
+    "old": {
+     "spend": 689.87,
+     "roas": 0.4981953104,
+     "impressions": 269979,
+     "hook": 0.1825512352,
+     "ctr": 0.0082599017,
+     "c2i": 0.4143497758,
+     "ipm": 3.4224884158,
+     "pur_per_100": 5.8441558442
+    },
+    "breaks": null,
+    "worse": [],
+    "better": [
+     "hook",
+     "pur_per_100"
+    ],
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook, payers."
    }
   },
   {
@@ -606,7 +731,10 @@
       "funnel": {
        "spend": 197.8,
        "roas": 0.6975227512,
+       "impressions": 135739,
        "hook": 0.1344639379,
+       "ctr": 0.0058936636,
+       "c2i": 0.2225,
        "ipm": 1.3113401454,
        "pur_per_100": 10.6741573034
       }
@@ -622,7 +750,10 @@
       "funnel": {
        "spend": 232.81,
        "roas": 0.3006314193,
+       "impressions": 77811,
        "hook": 0.4097878204,
+       "ctr": 0.011900631,
+       "c2i": 0.1803455724,
        "ipm": 2.146226112,
        "pur_per_100": 5.3892215569
       }
@@ -638,7 +769,10 @@
       "funnel": {
        "spend": 75.62,
        "roas": 0.3336418951,
+       "impressions": 20690,
        "hook": 0.2629772826,
+       "ctr": 0.0085065249,
+       "c2i": 0.125,
        "ipm": 1.0633156114,
        "pur_per_100": 13.6363636364
       }
@@ -654,8 +788,11 @@
       "funnel": {
        "spend": 1.03,
        "roas": 0.0,
+       "impressions": 475,
        "hook": 0.3747368422,
-       "ipm": 0.0,
+       "ctr": null,
+       "c2i": null,
+       "ipm": null,
        "pur_per_100": null
       }
      },
@@ -670,7 +807,10 @@
       "funnel": {
        "spend": 18.68,
        "roas": 1.2510706639,
+       "impressions": 4575,
        "hook": 0.2218579237,
+       "ctr": 0.0093989071,
+       "c2i": 0.1860465116,
        "ipm": 1.7486338798,
        "pur_per_100": null
       }
@@ -681,6 +821,38 @@
      "within": -0.1564,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 232.81,
+     "roas": 0.3006314193,
+     "impressions": 77811,
+     "hook": 0.4097878204,
+     "ctr": 0.011900631,
+     "c2i": 0.1803455724,
+     "ipm": 2.146226112,
+     "pur_per_100": 5.3892215569
+    },
+    "old": {
+     "spend": 319.98,
+     "roas": 0.5830676927,
+     "impressions": 169775,
+     "hook": 0.1567604209,
+     "ctr": 0.0067029893,
+     "c2i": 0.1871704745,
+     "ipm": 1.2546016787,
+     "pur_per_100": 10.7981220657
+    },
+    "breaks": "pur_per_100",
+    "worse": [
+     "pur_per_100"
+    ],
+    "better": [
+     "hook",
+     "ctr",
+     "ipm"
+    ],
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, CTR, IPM."
    }
   },
   {
@@ -741,7 +913,10 @@
       "funnel": {
        "spend": 122.17,
        "roas": 0.3188998928,
+       "impressions": 120213,
        "hook": 0.1413407858,
+       "ctr": 0.0060226431,
+       "c2i": 0.4682320442,
        "ipm": 2.8199945097,
        "pur_per_100": 2.6548672566
       }
@@ -757,7 +932,10 @@
       "funnel": {
        "spend": 51.01,
        "roas": 0.3818859051,
+       "impressions": 40859,
        "hook": 0.1040896735,
+       "ctr": 0.0077583886,
+       "c2i": 0.4100946372,
        "ipm": 3.1816735603,
        "pur_per_100": 3.8461538462
       }
@@ -773,7 +951,10 @@
       "funnel": {
        "spend": 43.31,
        "roas": 0.488339875,
+       "impressions": 39173,
        "hook": 0.1671048921,
+       "ctr": 0.0049523907,
+       "c2i": 0.5515463918,
        "ipm": 2.7314732086,
        "pur_per_100": 3.738317757
       }
@@ -789,7 +970,10 @@
       "funnel": {
        "spend": 93.81,
        "roas": 0.3128664323,
+       "impressions": 68093,
        "hook": 0.3640902857,
+       "ctr": 0.00681421,
+       "c2i": 0.5129310345,
        "ipm": 3.495219773,
        "pur_per_100": 2.9411764706
       }
@@ -800,6 +984,34 @@
      "within": -0.2052,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 100.22,
+     "roas": 0.3370584715,
+     "impressions": 72750,
+     "hook": 0.3593676953,
+     "ctr": 0.006790378,
+     "c2i": 0.4979757085,
+     "ipm": 3.381443299,
+     "pur_per_100": 3.2520325203
+    },
+    "old": {
+     "spend": 218.42,
+     "roas": 0.3643897075,
+     "impressions": 201370,
+     "hook": 0.1389333058,
+     "ctr": 0.0061826489,
+     "c2i": 0.4634538153,
+     "ipm": 2.8653722004,
+     "pur_per_100": 3.1195840555
+    },
+    "breaks": null,
+    "worse": [],
+    "better": [
+     "hook"
+    ],
+    "text": "No step 20%+ worse than the ads it competes with. Better at hook."
    }
   },
   {
@@ -900,7 +1112,10 @@
       "funnel": {
        "spend": 265.55,
        "roas": 0.283110525,
+       "impressions": 371109,
        "hook": 0.2039966684,
+       "ctr": 0.0046590085,
+       "c2i": 0.2839791787,
        "ipm": 1.3230614186,
        "pur_per_100": 4.0733197556
       }
@@ -916,7 +1131,10 @@
       "funnel": {
        "spend": 105.11,
        "roas": 0.1879935294,
+       "impressions": 118806,
        "hook": 0.1353046138,
+       "ctr": 0.0057067825,
+       "c2i": 0.4955752212,
        "ipm": 2.8281399929,
        "pur_per_100": 1.7857142857
       }
@@ -932,7 +1150,10 @@
       "funnel": {
        "spend": 32.52,
        "roas": 0.2546125472,
-       "hook": 0.0,
+       "impressions": 13060,
+       "hook": null,
+       "ctr": 0.0135528331,
+       "c2i": 0.2033898305,
        "ipm": 2.7565084227,
        "pur_per_100": 2.7777777778
       }
@@ -948,7 +1169,10 @@
       "funnel": {
        "spend": 49.02,
        "roas": 0.196858422,
+       "impressions": 61529,
        "hook": 0.2119813393,
+       "ctr": 0.0025678948,
+       "c2i": 0.4240506329,
        "ipm": 1.0889174211,
        "pur_per_100": 7.4626865672
       }
@@ -964,7 +1188,10 @@
       "funnel": {
        "spend": 8.7,
        "roas": 1.8839080452,
-       "hook": 0.0,
+       "impressions": 4342,
+       "hook": null,
+       "ctr": 0.017273146,
+       "c2i": 0.1466666667,
        "ipm": 2.533394749,
        "pur_per_100": null
       }
@@ -975,6 +1202,38 @@
      "within": 0.0743,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 49.02,
+     "roas": 0.196858422,
+     "impressions": 61529,
+     "hook": 0.2119813393,
+     "ctr": 0.0025678948,
+     "c2i": 0.4240506329,
+     "ipm": 1.0889174211,
+     "pur_per_100": 7.4626865672
+    },
+    "old": {
+     "spend": 427.33,
+     "roas": 0.2897058475,
+     "impressions": 519807,
+     "hook": 0.1770349371,
+     "ctr": 0.0052384827,
+     "c2i": 0.3257436651,
+     "ipm": 1.7064025686,
+     "pur_per_100": 3.4949267193
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [
+     "c2i",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers."
    }
   },
   {
@@ -1062,7 +1321,10 @@
       "funnel": {
        "spend": 687.72,
        "roas": 0.2991042869,
+       "impressions": 167222,
        "hook": 0.0741050857,
+       "ctr": 0.0065541615,
+       "c2i": 0.2262773723,
        "ipm": 1.4830584492,
        "pur_per_100": 9.2741935484
       }
@@ -1078,7 +1340,10 @@
       "funnel": {
        "spend": 167.61,
        "roas": 0.4798639709,
+       "impressions": 68008,
        "hook": 0.0575667585,
+       "ctr": 0.0048817786,
+       "c2i": 0.328313253,
        "ipm": 1.6027526173,
        "pur_per_100": 5.504587156
       }
@@ -1094,7 +1359,10 @@
       "funnel": {
        "spend": 130.57,
        "roas": 0.2308340349,
+       "impressions": 50305,
        "hook": 0.3741377612,
+       "ctr": 0.0078322234,
+       "c2i": 0.1751269036,
        "ipm": 1.3716330385,
        "pur_per_100": 8.6956521739
       }
@@ -1110,7 +1378,10 @@
       "funnel": {
        "spend": 111.71,
        "roas": 0.7581237111,
+       "impressions": 25887,
        "hook": 0.4002781322,
+       "ctr": 0.0096187275,
+       "c2i": 0.2048192771,
        "ipm": 1.9701008228,
        "pur_per_100": 27.4509803922
       }
@@ -1126,7 +1397,10 @@
       "funnel": {
        "spend": 36.91,
        "roas": 0.5470062321,
+       "impressions": 23312,
        "hook": 0.0283544957,
+       "ctr": 0.0657172272,
+       "c2i": 0.0032637076,
        "ipm": 0.2144818119,
        "pur_per_100": null
       }
@@ -1142,7 +1416,10 @@
       "funnel": {
        "spend": 110.28,
        "roas": 0.205749003,
+       "impressions": 14040,
        "hook": 0.3055555565,
+       "ctr": 0.0136039886,
+       "c2i": 0.1832460733,
        "ipm": 2.4928774929,
        "pur_per_100": 8.5714285714
       }
@@ -1153,6 +1430,37 @@
      "within": 0.2503,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 17.28,
+     "roas": 1.8773148138,
+     "impressions": 8285,
+     "hook": 0.1040434519,
+     "ctr": 0.0381412191,
+     "c2i": 0.0348101266,
+     "ipm": 1.3277006639,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 1252.14,
+     "roas": 0.3544651557,
+     "impressions": 352445,
+     "hook": 0.1442806703,
+     "ctr": 0.0112102598,
+     "c2i": 0.1308529486,
+     "ipm": 1.466895544,
+     "pur_per_100": 10.6382978723
+    },
+    "breaks": "c2i",
+    "worse": [
+     "hook",
+     "c2i"
+    ],
+    "better": [
+     "ctr"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR."
    }
   },
   {
@@ -1240,7 +1548,10 @@
       "funnel": {
        "spend": 555.97,
        "roas": 0.4535496528,
+       "impressions": 280629,
        "hook": 0.1611059448,
+       "ctr": 0.0101165596,
+       "c2i": 0.4311377246,
        "ipm": 4.3616304801,
        "pur_per_100": 3.2679738562
       }
@@ -1256,7 +1567,10 @@
       "funnel": {
        "spend": 212.6,
        "roas": 0.2785512713,
+       "impressions": 116684,
        "hook": 0.3854855865,
+       "ctr": 0.0052877858,
+       "c2i": 0.3954619125,
        "ipm": 2.0911178911,
        "pur_per_100": 5.3278688525
       }
@@ -1272,7 +1586,10 @@
       "funnel": {
        "spend": 215.13,
        "roas": 0.265746295,
+       "impressions": 92762,
        "hook": 0.3290895008,
+       "ctr": 0.0056380846,
+       "c2i": 0.3135755258,
        "ipm": 1.7679653306,
        "pur_per_100": 3.6585365854
       }
@@ -1288,7 +1605,10 @@
       "funnel": {
        "spend": 147.2,
        "roas": 0.437703803,
+       "impressions": 82050,
        "hook": 0.0017184682,
+       "ctr": 0.0203046923,
+       "c2i": 0.2533013205,
        "ipm": 5.1432053626,
        "pur_per_100": 3.317535545
       }
@@ -1304,7 +1624,10 @@
       "funnel": {
        "spend": 145.3,
        "roas": 0.3549208536,
+       "impressions": 100214,
        "hook": 0.0006286547,
+       "ctr": 0.016644381,
+       "c2i": 0.2452038369,
        "ipm": 4.0812660906,
        "pur_per_100": 2.2004889976
       }
@@ -1320,7 +1643,10 @@
       "funnel": {
        "spend": 140.44,
        "roas": 0.2698661349,
+       "impressions": 51467,
        "hook": 0.0931276339,
+       "ctr": 0.0048380516,
+       "c2i": 0.4337349398,
        "ipm": 2.098432005,
        "pur_per_100": 4.6296296296
       }
@@ -1331,6 +1657,37 @@
      "within": -0.0789,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 7.33,
+     "roas": 2.1718963188,
+     "impressions": 3212,
+     "hook": 0.2148194281,
+     "ctr": 0.0028019925,
+     "c2i": null,
+     "ipm": 2.1793275218,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 1556.76,
+     "roas": 0.394331818,
+     "impressions": 794444,
+     "hook": 0.1677689063,
+     "ctr": 0.0105948311,
+     "c2i": 0.320066532,
+     "ipm": 3.3910508481,
+     "pur_per_100": 3.7490720119
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [
+     "hook"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook."
    }
   },
   {
@@ -1434,7 +1791,10 @@
       "funnel": {
        "spend": 731.19,
        "roas": 0.6388626774,
+       "impressions": 122933,
        "hook": 0.3567553061,
+       "ctr": 0.0094767068,
+       "c2i": 0.3502145923,
        "ipm": 3.3188810165,
        "pur_per_100": 14.4607843137
       }
@@ -1450,7 +1810,10 @@
       "funnel": {
        "spend": 375.03,
        "roas": 0.5077727098,
+       "impressions": 121893,
        "hook": 0.1374073976,
+       "ctr": 0.0061529374,
+       "c2i": 0.3293333333,
        "ipm": 2.0263673878,
        "pur_per_100": 13.3603238866
       }
@@ -1466,7 +1829,10 @@
       "funnel": {
        "spend": 156.41,
        "roas": 0.784796367,
+       "impressions": 83041,
        "hook": 0.0747823354,
+       "ctr": 0.0046242218,
+       "c2i": 0.3697916667,
        "ipm": 1.7099986754,
        "pur_per_100": 14.0845070423
       }
@@ -1477,6 +1843,38 @@
      "within": -0.1335,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 15.05,
+     "roas": 0.0,
+     "impressions": 3896,
+     "hook": 0.2754106777,
+     "ctr": 0.0174537988,
+     "c2i": 0.0588235294,
+     "ipm": 1.0266940452,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 1286.75,
+     "roas": 0.6114707598,
+     "impressions": 334165,
+     "hook": 0.2031960255,
+     "ctr": 0.0078763485,
+     "c2i": 0.3035714286,
+     "ipm": 2.3910343692,
+     "pur_per_100": 14.1426783479
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "hook",
+     "ctr"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at hook, CTR."
    }
   },
   {
@@ -1568,7 +1966,10 @@
       "funnel": {
        "spend": 316.52,
        "roas": 0.3580816382,
+       "impressions": 142542,
        "hook": 0.0106424746,
+       "ctr": 0.0125296404,
+       "c2i": 0.228443449,
        "ipm": 2.8623142653,
        "pur_per_100": 4.4117647059
       }
@@ -1584,7 +1985,10 @@
       "funnel": {
        "spend": 240.89,
        "roas": 0.1165262143,
+       "impressions": 157908,
        "hook": 0.0940927636,
+       "ctr": 0.0102718038,
+       "c2i": 0.0955610358,
        "ipm": 0.9815842136,
        "pur_per_100": 3.2258064516
       }
@@ -1600,7 +2004,10 @@
       "funnel": {
        "spend": 210.94,
        "roas": 0.7557125253,
+       "impressions": 75233,
        "hook": 0.2391902494,
+       "ctr": 0.0058617894,
+       "c2i": 0.7596371882,
        "ipm": 4.4528331982,
        "pur_per_100": 5.3731343284
       }
@@ -1616,7 +2023,10 @@
       "funnel": {
        "spend": 94.94,
        "roas": 0.1368232565,
+       "impressions": 33409,
        "hook": 0.2778293294,
+       "ctr": 0.0073632853,
+       "c2i": 0.3333333333,
        "ipm": 2.4544284474,
        "pur_per_100": 1.2195121951
       }
@@ -1632,7 +2042,10 @@
       "funnel": {
        "spend": 86.09,
        "roas": 0.0811941001,
+       "impressions": 14768,
        "hook": 0.1957611045,
+       "ctr": 0.0073808234,
+       "c2i": 0.2844036697,
        "ipm": 2.0991332611,
        "pur_per_100": 3.2258064516
       }
@@ -1648,7 +2061,10 @@
       "funnel": {
        "spend": 66.92,
        "roas": 0.0681410642,
+       "impressions": 37614,
        "hook": 0.0782155581,
+       "ctr": 0.0183176477,
+       "c2i": 0.0333817126,
        "ipm": 0.611474451,
        "pur_per_100": 4.347826087
       }
@@ -1659,6 +2075,38 @@
      "within": 0.0278,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 66.92,
+     "roas": 0.0681410642,
+     "impressions": 37614,
+     "hook": 0.0782155581,
+     "ctr": 0.0183176477,
+     "c2i": 0.0333817126,
+     "ipm": 0.611474451,
+     "pur_per_100": 4.347826087
+    },
+    "old": {
+     "spend": 982.77,
+     "roas": 0.3264242906,
+     "impressions": 447781,
+     "hook": 0.1054779006,
+     "ctr": 0.0114497935,
+     "c2i": 0.19953189,
+     "ipm": 2.2845989446,
+     "pur_per_100": 4.2033235582
+    },
+    "breaks": "c2i",
+    "worse": [
+     "hook",
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "ctr"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR."
    }
   },
   {
@@ -1761,7 +2209,10 @@
       "funnel": {
        "spend": 1510.35,
        "roas": 0.3376435909,
+       "impressions": 780406,
        "hook": 0.1406485864,
+       "ctr": 0.0069502285,
+       "c2i": 0.3237463127,
        "ipm": 2.2501108397,
        "pur_per_100": 4.4419134396
       }
@@ -1777,7 +2228,10 @@
       "funnel": {
        "spend": 348.02,
        "roas": 0.3459283967,
+       "impressions": 120180,
        "hook": 0.2344649687,
+       "ctr": 0.0043684473,
+       "c2i": 0.4476190476,
        "ipm": 1.955400233,
        "pur_per_100": 9.3617021277
       }
@@ -1793,7 +2247,10 @@
       "funnel": {
        "spend": 1047.77,
        "roas": 0.2088149117,
+       "impressions": 670841,
        "hook": 0.0049445385,
+       "ctr": 0.0071477444,
+       "c2i": 0.2479666319,
        "ipm": 1.7724021042,
        "pur_per_100": 4.0370058873
       }
@@ -1809,7 +2266,10 @@
       "funnel": {
        "spend": 246.78,
        "roas": 0.21018721,
+       "impressions": 89888,
        "hook": 0.2450605195,
+       "ctr": 0.0039604842,
+       "c2i": 0.3848314607,
        "ipm": 1.5241189035,
        "pur_per_100": 7.299270073
       }
@@ -1825,7 +2285,10 @@
       "funnel": {
        "spend": 111.22,
        "roas": 0.1691242572,
+       "impressions": 28199,
        "hook": 0.102024894,
+       "ctr": 0.0125890989,
+       "c2i": 0.2253521127,
        "ipm": 2.8369800348,
        "pur_per_100": 2.5
       }
@@ -1836,6 +2299,35 @@
      "within": -0.015,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 8.36,
+     "roas": 0.0,
+     "impressions": 5731,
+     "hook": 0.1654161592,
+     "ctr": 0.0055836678,
+     "c2i": 0.09375,
+     "ipm": 0.5234688536,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 2295.45,
+     "roas": 0.3152235935,
+     "impressions": 1039146,
+     "hook": 0.1586543187,
+     "ctr": 0.0064928316,
+     "c2i": 0.3303690529,
+     "ipm": 2.1450306309,
+     "pur_per_100": 5.2041274114
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
    }
   },
   {
@@ -1933,7 +2425,10 @@
       "funnel": {
        "spend": 1534.1,
        "roas": 0.4800208576,
+       "impressions": 1070684,
        "hook": 0.048085149,
+       "ctr": 0.009279115,
+       "c2i": 0.1578258681,
        "ipm": 1.4644843857,
        "pur_per_100": 6.1862244898
       }
@@ -1949,7 +2444,10 @@
       "funnel": {
        "spend": 312.68,
        "roas": 0.5534412207,
+       "impressions": 139965,
        "hook": 0.3071482138,
+       "ctr": 0.0035437431,
+       "c2i": 0.3225806452,
        "ipm": 1.1431429286,
        "pur_per_100": 13.125
       }
@@ -1965,7 +2463,10 @@
       "funnel": {
        "spend": 67.23,
        "roas": 0.3673955075,
+       "impressions": 32635,
        "hook": 0.2001838506,
+       "ctr": 0.0076911292,
+       "c2i": 0.1593625498,
        "ipm": 1.2256779531,
        "pur_per_100": 10.0
       }
@@ -1976,6 +2477,37 @@
      "within": 0.1239,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 12.28,
+     "roas": 0.0,
+     "impressions": 8924,
+     "hook": 0.0720528907,
+     "ctr": 0.0244285074,
+     "c2i": 0.0,
+     "ipm": 0.0,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 1974.51,
+     "roas": 0.4826716494,
+     "impressions": 1274253,
+     "hook": 0.0809156419,
+     "ctr": 0.0091944064,
+     "c2i": 0.1515022192,
+     "ipm": 1.392972981,
+     "pur_per_100": 7.0422535211
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "ctr"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR."
    }
   },
   {
@@ -2060,7 +2592,10 @@
       "funnel": {
        "spend": 575.27,
        "roas": 0.275783545,
+       "impressions": 201715,
        "hook": 0.3337233226,
+       "ctr": 0.0044617406,
+       "c2i": 0.4555555556,
        "ipm": 2.0325707062,
        "pur_per_100": 6.3414634146
       }
@@ -2076,7 +2611,10 @@
       "funnel": {
        "spend": 126.02,
        "roas": 0.5327725791,
+       "impressions": 30629,
        "hook": 0.0013386007,
+       "ctr": 0.0133860067,
+       "c2i": 0.2804878049,
        "ipm": 3.7546116426,
        "pur_per_100": 6.9565217391
       }
@@ -2092,7 +2630,10 @@
       "funnel": {
        "spend": 20.67,
        "roas": 0.4770198361,
+       "impressions": 5156,
        "hook": 0.2885958135,
+       "ctr": 0.0302560124,
+       "c2i": 0.0833333333,
        "ipm": 2.5213343677,
        "pur_per_100": null
       }
@@ -2108,7 +2649,10 @@
       "funnel": {
        "spend": 8.39,
        "roas": 0.0,
+       "impressions": 3055,
        "hook": 0.0599017984,
+       "ctr": 0.0402618658,
+       "c2i": 0.081300813,
        "ipm": 3.2733224223,
        "pur_per_100": null
       }
@@ -2124,7 +2668,10 @@
       "funnel": {
        "spend": 139.24,
        "roas": 0.083237575,
+       "impressions": 45012,
        "hook": 0.0018661682,
+       "ctr": 0.0335688261,
+       "c2i": 0.0615486433,
        "ipm": 2.0661157025,
        "pur_per_100": 5.376344086
       }
@@ -2140,8 +2687,11 @@
       "funnel": {
        "spend": 4.2,
        "roas": 1.2571428582,
+       "impressions": 1630,
        "hook": 0.0601226999,
-       "ipm": 3.0674846626,
+       "ctr": null,
+       "c2i": 0.0588235294,
+       "ipm": null,
        "pur_per_100": null
       }
      }
@@ -2151,6 +2701,39 @@
      "within": -0.1146,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 601.91,
+     "roas": 0.2635776111,
+     "impressions": 209710,
+     "hook": 0.3210004292,
+     "ctr": 0.0047398789,
+     "c2i": 0.4265593561,
+     "ipm": 2.0218396834,
+     "pur_per_100": 6.1320754717
+    },
+    "old": {
+     "spend": 159.91,
+     "roas": 0.5145394312,
+     "impressions": 40772,
+     "hook": 0.0453988033,
+     "ctr": 0.019400569,
+     "c2i": 0.1820480405,
+     "ipm": 3.5318355734,
+     "pur_per_100": 9.0277777778
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm",
+     "pur_per_100"
+    ],
+    "better": [
+     "hook",
+     "c2i"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I."
    }
   },
   {
@@ -2229,7 +2812,10 @@
       "funnel": {
        "spend": 368.72,
        "roas": 0.4990507721,
+       "impressions": 126225,
        "hook": 0.0838265012,
+       "ctr": 0.0051336898,
+       "c2i": 0.3966049383,
        "ipm": 2.0360467419,
        "pur_per_100": 10.5058365759
       }
@@ -2245,7 +2831,10 @@
       "funnel": {
        "spend": 309.47,
        "roas": 0.2104889008,
+       "impressions": 48175,
        "hook": 0.1845147895,
+       "ctr": 0.0096938246,
+       "c2i": 0.3468950749,
        "ipm": 3.3627400104,
        "pur_per_100": 9.8765432099
       }
@@ -2261,7 +2850,10 @@
       "funnel": {
        "spend": 85.16,
        "roas": 0.5558947863,
+       "impressions": 15147,
        "hook": 0.0621905325,
+       "ctr": 0.018617548,
+       "c2i": 0.1312056738,
        "ipm": 2.4427279329,
        "pur_per_100": 13.5135135135
       }
@@ -2277,7 +2869,10 @@
       "funnel": {
        "spend": 283.7,
        "roas": 0.0718364477,
+       "impressions": 76451,
        "hook": 0.3160978901,
+       "ctr": 0.0046434971,
+       "c2i": 0.3183098592,
        "ipm": 1.4780709212,
        "pur_per_100": 3.5398230088
       }
@@ -2293,7 +2888,10 @@
       "funnel": {
        "spend": 42.86,
        "roas": 0.1423238445,
-       "hook": 0.0,
+       "impressions": 9332,
+       "hook": null,
+       "ctr": 0.0101800257,
+       "c2i": 0.2631578947,
        "ipm": 2.6789541363,
        "pur_per_100": 8.0
       }
@@ -2309,7 +2907,10 @@
       "funnel": {
        "spend": 33.28,
        "roas": 0.14453125,
+       "impressions": 8750,
        "hook": 0.1733714294,
+       "ctr": 0.0196571429,
+       "c2i": 0.0465116279,
        "ipm": 0.9142857143,
        "pur_per_100": null
       }
@@ -2320,6 +2921,38 @@
      "within": 0.0041,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 352.99,
+     "roas": 0.1749058053,
+     "impressions": 94906,
+     "hook": 0.2546308958,
+     "ctr": 0.0069858597,
+     "c2i": 0.2156862745,
+     "ipm": 1.5067540514,
+     "pur_per_100": 4.8951048951
+    },
+    "old": {
+     "spend": 890.37,
+     "roas": 0.3598391689,
+     "impressions": 215969,
+     "hook": 0.1055058833,
+     "ctr": 0.0082697054,
+     "c2i": 0.2861142217,
+     "ipm": 2.3660803171,
+     "pur_per_100": 10.1761252446
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm",
+     "pur_per_100"
+    ],
+    "better": [
+     "hook"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at hook."
    }
   },
   {
@@ -2412,7 +3045,10 @@
       "funnel": {
        "spend": 1301.44,
        "roas": 0.3259927452,
+       "impressions": 385999,
        "hook": 0.303448973,
+       "ctr": 0.0173782834,
+       "c2i": 0.0869111509,
        "ipm": 1.5103666072,
        "pur_per_100": 8.7478559177
       }
@@ -2428,7 +3064,10 @@
       "funnel": {
        "spend": 12.57,
        "roas": 0.0,
+       "impressions": 3535,
        "hook": 0.13154173,
+       "ctr": 0.0082036775,
+       "c2i": null,
        "ipm": 1.414427157,
        "pur_per_100": null
       }
@@ -2444,7 +3083,10 @@
       "funnel": {
        "spend": 22.87,
        "roas": 0.0,
+       "impressions": 3600,
        "hook": 0.2080555535,
+       "ctr": 0.0122222222,
+       "c2i": 0.0227272727,
        "ipm": 0.2777777778,
        "pur_per_100": null
       }
@@ -2460,7 +3102,10 @@
       "funnel": {
        "spend": 179.04,
        "roas": 0.1318699764,
+       "impressions": 60639,
        "hook": 0.1841059377,
+       "ctr": 0.015996306,
+       "c2i": 0.0350515464,
        "ipm": 0.5606952621,
        "pur_per_100": 8.8235294118
       }
@@ -2476,7 +3121,10 @@
       "funnel": {
        "spend": 132.13,
        "roas": 0.2987966405,
+       "impressions": 21982,
        "hook": 0.2799108384,
+       "ctr": 0.0130561368,
+       "c2i": 0.1114982578,
        "ipm": 1.4557365117,
        "pur_per_100": 12.5
       }
@@ -2492,7 +3140,10 @@
       "funnel": {
        "spend": 54.95,
        "roas": 0.0,
+       "impressions": 26792,
        "hook": 0.0440803216,
+       "ctr": 0.0599432666,
+       "c2i": 0.00373599,
        "ipm": 0.223947447,
        "pur_per_100": null
       }
@@ -2503,6 +3154,39 @@
      "within": 0.0315,
      "text": "the country mix"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 1351.88,
+     "roas": 0.3138296286,
+     "impressions": 408109,
+     "hook": 0.2870091082,
+     "ctr": 0.02008287,
+     "c2i": 0.0714982918,
+     "ipm": 1.4358909017,
+     "pur_per_100": 8.7030716724
+    },
+    "old": {
+     "spend": 320.66,
+     "roas": 0.0822678244,
+     "impressions": 119601,
+     "hook": 0.1283935746,
+     "ctr": 0.0345649284,
+     "c2i": 0.0152394775,
+     "ipm": 0.5267514486,
+     "pur_per_100": 6.3492063492
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr"
+    ],
+    "better": [
+     "hook",
+     "c2i",
+     "ipm",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, IPM, payers."
    }
   },
   {
@@ -2579,7 +3263,10 @@
       "funnel": {
        "spend": 408.6,
        "roas": 0.1778756745,
+       "impressions": 115640,
        "hook": 0.0008301626,
+       "ctr": 0.0120460048,
+       "c2i": 0.175879397,
        "ipm": 2.1186440678,
        "pur_per_100": 6.5306122449
       }
@@ -2595,7 +3282,10 @@
       "funnel": {
        "spend": 367.06,
        "roas": 0.2949381573,
+       "impressions": 101939,
        "hook": 0.3452358735,
+       "ctr": 0.0077104935,
+       "c2i": 0.2328244275,
        "ipm": 1.7951912418,
        "pur_per_100": 9.2896174863
       }
@@ -2611,7 +3301,10 @@
       "funnel": {
        "spend": 15.47,
        "roas": 0.0,
+       "impressions": 4321,
        "hook": 0.005091414,
+       "ctr": 0.0627169637,
+       "c2i": 0.0184501845,
        "ipm": 1.157139551,
        "pur_per_100": null
       }
@@ -2622,6 +3315,38 @@
      "within": 0.0917,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 365.54,
+     "roas": 0.2961645785,
+     "impressions": 101167,
+     "hook": 0.3478703501,
+     "ctr": 0.0071268299,
+     "c2i": 0.253814147,
+     "ipm": 1.8088902508,
+     "pur_per_100": 9.2896174863
+    },
+    "old": {
+     "spend": 438.3,
+     "roas": 0.1658224974,
+     "impressions": 124368,
+     "hook": 0.0052425061,
+     "ctr": 0.0159928599,
+     "c2i": 0.1261940674,
+     "ipm": 2.0182040396,
+     "pur_per_100": 6.374501992
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr"
+    ],
+    "better": [
+     "hook",
+     "c2i",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, payers."
    }
   },
   {
@@ -2700,7 +3425,10 @@
       "funnel": {
        "spend": 2066.08,
        "roas": 0.4017414621,
+       "impressions": 468846,
        "hook": 0.3124309467,
+       "ctr": 0.008595573,
+       "c2i": 0.2081885856,
        "ipm": 1.789500177,
        "pur_per_100": 7.389749702
       }
@@ -2716,7 +3444,10 @@
       "funnel": {
        "spend": 411.39,
        "roas": 0.7371107706,
+       "impressions": 95596,
        "hook": 0.1990459856,
+       "ctr": 0.0303883008,
+       "c2i": 0.0960413081,
        "ipm": 2.9185321562,
        "pur_per_100": 10.752688172
       }
@@ -2732,7 +3463,10 @@
       "funnel": {
        "spend": 279.55,
        "roas": 0.3194777321,
+       "impressions": 43574,
        "hook": 0.2879239933,
+       "ctr": 0.0115206316,
+       "c2i": 0.2290836653,
        "ipm": 2.6391885069,
        "pur_per_100": 13.0434782609
       }
@@ -2748,7 +3482,10 @@
       "funnel": {
        "spend": 202.51,
        "roas": 1.1893239826,
+       "impressions": 34822,
        "hook": 0.2789902953,
+       "ctr": 0.0070644995,
+       "c2i": 0.2032520325,
        "ipm": 1.4358738728,
        "pur_per_100": 36.0
       }
@@ -2764,7 +3501,10 @@
       "funnel": {
        "spend": 140.39,
        "roas": 0.2094878549,
+       "impressions": 21278,
        "hook": 0.3583043529,
+       "ctr": 0.0098223517,
+       "c2i": 0.2200956938,
        "ipm": 2.1618573174,
        "pur_per_100": 10.8695652174
       }
@@ -2780,7 +3520,10 @@
       "funnel": {
        "spend": 180.7,
        "roas": 0.6313779741,
+       "impressions": 50339,
        "hook": 0.3564830453,
+       "ctr": 0.0103299629,
+       "c2i": 0.125,
        "ipm": 1.2912453565,
        "pur_per_100": 15.3846153846
       }
@@ -2791,6 +3534,37 @@
      "within": -0.0814,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 191.02,
+     "roas": 0.5972673014,
+     "impressions": 53919,
+     "hook": 0.3328140362,
+     "ctr": 0.013223539,
+     "c2i": 0.0911640954,
+     "ipm": 1.2055119717,
+     "pur_per_100": 15.3846153846
+    },
+    "old": {
+     "spend": 3149.94,
+     "roas": 0.4862695796,
+     "impressions": 678261,
+     "hook": 0.2945237892,
+     "ctr": 0.0118110875,
+     "c2i": 0.1688927724,
+     "ipm": 1.9948073087,
+     "pur_per_100": 9.903917221
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "pur_per_100"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at payers."
    }
   },
   {
@@ -2864,7 +3638,10 @@
       "funnel": {
        "spend": 1001.52,
        "roas": 0.5473380461,
+       "impressions": 205084,
        "hook": 0.4122213336,
+       "ctr": 0.0216399134,
+       "c2i": 0.094637224,
        "ipm": 2.0479413314,
        "pur_per_100": 16.9047619048
       }
@@ -2880,7 +3657,10 @@
       "funnel": {
        "spend": 782.76,
        "roas": 0.5201977593,
+       "impressions": 177659,
        "hook": 0.4855931878,
+       "ctr": 0.0186199404,
+       "c2i": 0.1130592503,
        "ipm": 2.1051565077,
        "pur_per_100": 12.0320855615
       }
@@ -2896,7 +3676,10 @@
       "funnel": {
        "spend": 48.14,
        "roas": 0.2075197341,
+       "impressions": 17869,
        "hook": 0.1776260558,
+       "ctr": 0.0146063014,
+       "c2i": 0.0498084291,
        "ipm": 0.7275169288,
        "pur_per_100": null
       }
@@ -2907,6 +3690,37 @@
      "within": 0.2203,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 782.76,
+     "roas": 0.5201977593,
+     "impressions": 177659,
+     "hook": 0.4855931878,
+     "ctr": 0.0186199404,
+     "c2i": 0.1130592503,
+     "ipm": 2.1051565077,
+     "pur_per_100": 12.0320855615
+    },
+    "old": {
+     "spend": 1056.53,
+     "roas": 0.5282954577,
+     "impressions": 225354,
+     "hook": 0.3904967294,
+     "ctr": 0.0212021974,
+     "c2i": 0.0906236919,
+     "ipm": 1.9214214081,
+     "pur_per_100": 16.6281755196
+    },
+    "breaks": "pur_per_100",
+    "worse": [
+     "pur_per_100"
+    ],
+    "better": [
+     "hook",
+     "c2i"
+    ],
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, C>I."
    }
   },
   {
@@ -2975,7 +3789,10 @@
       "funnel": {
        "spend": 280.58,
        "roas": 0.3022667358,
+       "impressions": 47199,
        "hook": 0.4104112401,
+       "ctr": 0.0126273862,
+       "c2i": 0.1946308725,
        "ipm": 2.4576791881,
        "pur_per_100": 9.4827586207
       }
@@ -2991,7 +3808,10 @@
       "funnel": {
        "spend": 148.03,
        "roas": 0.6610822137,
+       "impressions": 32437,
        "hook": 0.3922989191,
+       "ctr": 0.0056108765,
+       "c2i": 0.2032967033,
        "ipm": 1.1406726886,
        "pur_per_100": 27.027027027
       }
@@ -3002,6 +3822,32 @@
      "within": 0.1059,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 12.44,
+     "roas": 1.5924437301,
+     "impressions": 2398,
+     "hook": 0.2718932461,
+     "ctr": null,
+     "c2i": null,
+     "ipm": null,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 423.78,
+     "roas": 0.3843031781,
+     "impressions": 78719,
+     "hook": 0.4040447688,
+     "ctr": 0.0101627307,
+     "c2i": 0.18625,
+     "ipm": 1.8928085977,
+     "pur_per_100": 12.7516778523
+    },
+    "breaks": null,
+    "worse": [],
+    "better": [],
+    "text": "Not tested: Meta gave it 2,398 impressions."
    }
   },
   {
@@ -3080,7 +3926,10 @@
       "funnel": {
        "spend": 1414.08,
        "roas": 0.4352582598,
+       "impressions": 97653,
        "hook": 0.4737488867,
+       "ctr": 0.0107523578,
+       "c2i": 0.3257142857,
        "ipm": 3.5021965531,
        "pur_per_100": 14.0350877193
       }
@@ -3096,7 +3945,10 @@
       "funnel": {
        "spend": 1223.5,
        "roas": 0.1919084604,
+       "impressions": 129009,
        "hook": 0.4951747544,
+       "ctr": 0.0114178081,
+       "c2i": 0.2260692464,
        "ipm": 2.5812152641,
        "pur_per_100": 6.3063063063
       }
@@ -3112,8 +3964,11 @@
       "funnel": {
        "spend": 7.62,
        "roas": 0.0,
+       "impressions": 405,
        "hook": 0.2716049389,
-       "ipm": 2.4691358025,
+       "ctr": null,
+       "c2i": null,
+       "ipm": null,
        "pur_per_100": null
       }
      },
@@ -3128,7 +3983,10 @@
       "funnel": {
        "spend": 161.19,
        "roas": 0.0985172777,
+       "impressions": 13264,
        "hook": 0.2044632097,
+       "ctr": 0.0049758745,
+       "c2i": 0.3181818182,
        "ipm": 1.5832328106,
        "pur_per_100": 4.7619047619
       }
@@ -3144,7 +4002,10 @@
       "funnel": {
        "spend": 124.43,
        "roas": 0.2225347593,
+       "impressions": 8026,
        "hook": 0.3042611499,
+       "ctr": 0.0052329928,
+       "c2i": 0.380952381,
        "ipm": 1.9935210566,
        "pur_per_100": null
       }
@@ -3155,6 +4016,35 @@
      "within": -0.1385,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 1223.5,
+     "roas": 0.1919084604,
+     "impressions": 129009,
+     "hook": 0.4951747544,
+     "ctr": 0.0114178081,
+     "c2i": 0.2260692464,
+     "ipm": 2.5812152641,
+     "pur_per_100": 6.3063063063
+    },
+    "old": {
+     "spend": 1738.14,
+     "roas": 0.3791754405,
+     "impressions": 122388,
+     "hook": 0.4275255747,
+     "ctr": 0.0097558584,
+     "c2i": 0.3257956449,
+     "ipm": 3.1784161846,
+     "pur_per_100": 13.3676092545
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "pur_per_100"
+    ],
+    "better": [],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
    }
   },
   {
@@ -3216,7 +4106,10 @@
       "funnel": {
        "spend": 510.1,
        "roas": 0.1578317975,
+       "impressions": 277252,
        "hook": 0.5138502165,
+       "ctr": 0.0086203165,
+       "c2i": 0.349790795,
        "ipm": 3.0153073738,
        "pur_per_100": 2.6315789474
       }
@@ -3232,7 +4125,10 @@
       "funnel": {
        "spend": 385.48,
        "roas": 0.2430735716,
+       "impressions": 207126,
        "hook": 0.3865183488,
+       "ctr": 0.006706063,
+       "c2i": 0.3081353492,
        "ipm": 2.0663750567,
        "pur_per_100": 5.3738317757
       }
@@ -3248,7 +4144,10 @@
       "funnel": {
        "spend": 158.68,
        "roas": 0.2559868911,
+       "impressions": 44845,
        "hook": 0.4020961104,
+       "ctr": 0.0121529713,
+       "c2i": 0.304587156,
        "ipm": 3.7016389787,
        "pur_per_100": 6.6265060241
       }
@@ -3264,7 +4163,10 @@
       "funnel": {
        "spend": 136.83,
        "roas": 0.0825111458,
+       "impressions": 61604,
        "hook": 0.1505421721,
+       "ctr": 0.005697682,
+       "c2i": 0.2108262108,
        "ipm": 1.2012207,
        "pur_per_100": 5.4054054054
       }
@@ -3280,7 +4182,10 @@
       "funnel": {
        "spend": 76.81,
        "roas": 0.7081109201,
+       "impressions": 82220,
        "hook": 0.1927025048,
+       "ctr": 0.0042447093,
+       "c2i": 0.5014326648,
        "ipm": 2.1284359037,
        "pur_per_100": 8.0
       }
@@ -3296,7 +4201,10 @@
       "funnel": {
        "spend": 100.13,
        "roas": 0.1472086291,
+       "impressions": 33729,
        "hook": 0.2375700444,
+       "ctr": 0.0055441905,
+       "c2i": 0.3903743316,
        "ipm": 2.1643096445,
        "pur_per_100": 5.4794520548
       }
@@ -3307,6 +4215,36 @@
      "within": -0.038,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 385.48,
+     "roas": 0.2430735716,
+     "impressions": 207126,
+     "hook": 0.3865183488,
+     "ctr": 0.006706063,
+     "c2i": 0.3081353492,
+     "ipm": 2.0663750567,
+     "pur_per_100": 5.3738317757
+    },
+    "old": {
+     "spend": 990.32,
+     "roas": 0.2140318278,
+     "impressions": 504291,
+     "hook": 0.3852200421,
+     "ctr": 0.0077237151,
+     "c2i": 0.3437740693,
+     "ipm": 2.6552129624,
+     "pur_per_100": 4.3315907394
+    },
+    "breaks": null,
+    "worse": [
+     "ipm"
+    ],
+    "better": [
+     "pur_per_100"
+    ],
+    "text": "No step 20%+ worse than the ads it competes with. Better at payers."
    }
   },
   {
@@ -3365,7 +4303,10 @@
       "funnel": {
        "spend": 200.8,
        "roas": 0.1163346615,
+       "impressions": 42820,
        "hook": 0.3221858941,
+       "ctr": 0.0075899113,
+       "c2i": 0.2769230769,
        "ipm": 2.1018215787,
        "pur_per_100": 3.3333333333
       }
@@ -3381,7 +4322,10 @@
       "funnel": {
        "spend": 145.57,
        "roas": 0.3551555954,
+       "impressions": 49433,
        "hook": 0.1305200974,
+       "ctr": 0.0064734085,
+       "c2i": 0.23125,
        "ipm": 1.4969757045,
        "pur_per_100": 10.8108108108
       }
@@ -3397,12 +4341,44 @@
       "funnel": {
        "spend": 73.61,
        "roas": 0.2035049596,
+       "impressions": 16965,
        "hook": 0.5960506932,
+       "ctr": 0.0109637489,
+       "c2i": 0.3225806452,
        "ipm": 3.5366931919,
        "pur_per_100": 5.0
       }
      }
     ]
+   },
+   "funnel": {
+    "new": {
+     "spend": 29.34,
+     "roas": 0.0787321071,
+     "impressions": 6170,
+     "hook": 0.2583468414,
+     "ctr": 0.0050243112,
+     "c2i": 0.2258064516,
+     "ipm": 1.1345218801,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 390.64,
+     "roas": 0.2245801764,
+     "impressions": 103048,
+     "hook": 0.279151463,
+     "ctr": 0.0077633724,
+     "c2i": 0.27125,
+     "ipm": 2.1058147659,
+     "pur_per_100": 5.9907834101
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [],
+    "text": "Breaks at CTR: the message: they watch but don't click."
    }
   },
   {
@@ -3508,7 +4484,10 @@
       "funnel": {
        "spend": 1203.7,
        "roas": 0.4040707809,
+       "impressions": 174397,
        "hook": 0.086905165,
+       "ctr": 0.0161929391,
+       "c2i": 0.0885269122,
        "ipm": 1.4335108975,
        "pur_per_100": 23.6
       }
@@ -3524,7 +4503,10 @@
       "funnel": {
        "spend": 66.83,
        "roas": 0.3586712551,
+       "impressions": 12888,
        "hook": 0.0096989448,
+       "ctr": 0.020716946,
+       "c2i": 0.074906367,
        "ipm": 1.5518311608,
        "pur_per_100": 5.0
       }
@@ -3535,6 +4517,34 @@
      "within": 0.1544,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 63.23,
+     "roas": 0.3790922027,
+     "impressions": 12319,
+     "hook": null,
+     "ctr": 0.0196444517,
+     "c2i": 0.0826446281,
+     "ipm": 1.6235084017,
+     "pur_per_100": 5.0
+    },
+    "old": {
+     "spend": 1217.13,
+     "roas": 0.3996122016,
+     "impressions": 179725,
+     "hook": 0.0859980529,
+     "ctr": 0.0169202949,
+     "c2i": 0.0822097994,
+     "ipm": 1.3910140492,
+     "pur_per_100": 23.6
+    },
+    "breaks": "pur_per_100",
+    "worse": [
+     "pur_per_100"
+    ],
+    "better": [],
+    "text": "Breaks at payers: who it brings: they install but don't pay."
    }
   },
   {
@@ -3615,7 +4625,10 @@
       "funnel": {
        "spend": 624.45,
        "roas": 0.3229401874,
+       "impressions": 91699,
        "hook": 0.1824992632,
+       "ctr": 0.0187570203,
+       "c2i": 0.1563953488,
        "ipm": 2.9335107253,
        "pur_per_100": 9.2936802974
       }
@@ -3631,7 +4644,10 @@
       "funnel": {
        "spend": 476.95,
        "roas": 0.222287452,
+       "impressions": 87027,
        "hook": 0.3012973006,
+       "ctr": 0.0076872695,
+       "c2i": 0.3766816143,
        "ipm": 2.8956530732,
        "pur_per_100": 5.5555555556
       }
@@ -3647,7 +4663,10 @@
       "funnel": {
        "spend": 149.61,
        "roas": 0.4952209075,
+       "impressions": 44757,
        "hook": 0.2568313343,
+       "ctr": 0.0061442903,
+       "c2i": 0.4218181818,
        "ipm": 2.5917733539,
        "pur_per_100": 10.3448275862
       }
@@ -3663,7 +4682,10 @@
       "funnel": {
        "spend": 262.05,
        "roas": 0.1926349937,
+       "impressions": 65261,
        "hook": 0.0011185856,
+       "ctr": 0.0138520709,
+       "c2i": 0.1128318584,
        "ipm": 1.5629549042,
        "pur_per_100": 5.8823529412
       }
@@ -3679,7 +4701,10 @@
       "funnel": {
        "spend": 23.97,
        "roas": 0.0,
+       "impressions": 6407,
        "hook": 0.3493054461,
+       "ctr": 0.0098329952,
+       "c2i": 0.2063492063,
        "ipm": 2.0290307476,
        "pur_per_100": null
       }
@@ -3690,6 +4715,35 @@
      "within": -0.1039,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 197.1,
+     "roas": 0.2337899541,
+     "impressions": 52650,
+     "hook": null,
+     "ctr": 0.0118138651,
+     "c2i": 0.1221864952,
+     "ipm": 1.4434947768,
+     "pur_per_100": 6.5789473684
+    },
+    "old": {
+     "spend": 1358.51,
+     "roas": 0.3142855043,
+     "impressions": 245383,
+     "hook": 0.2337081222,
+     "ctr": 0.0123317426,
+     "c2i": 0.2253800397,
+     "ipm": 2.7793286413,
+     "pur_per_100": 8.064516129
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?)."
    }
   },
   {
@@ -3764,7 +4818,10 @@
       "funnel": {
        "spend": 663.29,
        "roas": 0.1076301467,
+       "impressions": 56928,
        "hook": 0.1308494937,
+       "ctr": 0.0185673131,
+       "c2i": 0.0794701987,
        "ipm": 1.4755480607,
        "pur_per_100": 11.9047619048
       }
@@ -3780,7 +4837,10 @@
       "funnel": {
        "spend": 350.4,
        "roas": 0.1466038817,
+       "impressions": 22479,
        "hook": 0.3265714664,
+       "ctr": 0.0184616753,
+       "c2i": 0.0915662651,
        "ipm": 1.6904666578,
        "pur_per_100": 15.7894736842
       }
@@ -3796,7 +4856,10 @@
       "funnel": {
        "spend": 235.38,
        "roas": 0.4652476835,
-       "hook": 0.0,
+       "impressions": 21333,
+       "hook": null,
+       "ctr": 0.0158908733,
+       "c2i": 0.0648967552,
        "ipm": 1.0312661135,
        "pur_per_100": 27.2727272727
       }
@@ -3807,6 +4870,37 @@
      "within": 0.0079,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 235.38,
+     "roas": 0.4652476835,
+     "impressions": 21333,
+     "hook": null,
+     "ctr": 0.0158908733,
+     "c2i": 0.0648967552,
+     "ipm": 1.0312661135,
+     "pur_per_100": 27.2727272727
+    },
+    "old": {
+     "spend": 1013.69,
+     "roas": 0.1211021122,
+     "impressions": 79407,
+     "hook": 0.1862556194,
+     "ctr": 0.0185374085,
+     "c2i": 0.0828804348,
+     "ipm": 1.5363884796,
+     "pur_per_100": 13.1147540984
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "pur_per_100"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at payers."
    }
   },
   {
@@ -3881,7 +4975,10 @@
       "funnel": {
        "spend": 180.14,
        "roas": 0.0,
+       "impressions": 12857,
        "hook": 0.1354903936,
+       "ctr": 0.0139223769,
+       "c2i": 0.1061452514,
        "ipm": 1.4777941977,
        "pur_per_100": null
       }
@@ -3897,7 +4994,10 @@
       "funnel": {
        "spend": 98.27,
        "roas": 0.0938231407,
+       "impressions": 9023,
        "hook": 0.0652776239,
+       "ctr": 0.0173999778,
+       "c2i": 0.1464968153,
        "ipm": 2.5490413388,
        "pur_per_100": 4.347826087
       }
@@ -3913,7 +5013,10 @@
       "funnel": {
        "spend": 209.1,
        "roas": 0.1289335236,
-       "hook": 0.0,
+       "impressions": 16408,
+       "hook": null,
+       "ctr": 0.0180399805,
+       "c2i": 0.1047297297,
        "ipm": 1.8893222818,
        "pur_per_100": 9.6774193548
       }
@@ -3924,6 +5027,34 @@
      "within": 0.0344,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 209.1,
+     "roas": 0.1289335236,
+     "impressions": 16408,
+     "hook": null,
+     "ctr": 0.0180399805,
+     "c2i": 0.1047297297,
+     "ipm": 1.8893222818,
+     "pur_per_100": 9.6774193548
+    },
+    "old": {
+     "spend": 278.41,
+     "roas": 0.0331166267,
+     "impressions": 21880,
+     "hook": 0.1065356486,
+     "ctr": 0.0153564899,
+     "c2i": 0.125,
+     "ipm": 1.9195612431,
+     "pur_per_100": 2.380952381
+    },
+    "breaks": null,
+    "worse": [],
+    "better": [
+     "pur_per_100"
+    ],
+    "text": "No step 20%+ worse than the ads it competes with. Better at payers."
    }
   },
   {
@@ -4027,7 +5158,10 @@
       "funnel": {
        "spend": 1223.0,
        "roas": 0.3491251035,
+       "impressions": 203920,
        "hook": 0.4559140855,
+       "ctr": 0.0094203609,
+       "c2i": 0.2378969287,
        "ipm": 2.2410749313,
        "pur_per_100": 9.8468271335
       }
@@ -4043,7 +5177,10 @@
       "funnel": {
        "spend": 518.58,
        "roas": 0.4054340702,
+       "impressions": 149564,
        "hook": 0.1592428663,
+       "ctr": 0.0148632024,
+       "c2i": 0.1057130004,
        "ipm": 1.5712337193,
        "pur_per_100": 11.914893617
       }
@@ -4059,7 +5196,10 @@
       "funnel": {
        "spend": 989.08,
        "roas": 0.2524264974,
+       "impressions": 98590,
        "hook": 0.3968962369,
+       "ctr": 0.0106603104,
+       "c2i": 0.1351094196,
        "ipm": 1.4403083477,
        "pur_per_100": 14.7887323944
       }
@@ -4075,7 +5215,10 @@
       "funnel": {
        "spend": 321.95,
        "roas": 0.5488119265,
+       "impressions": 198597,
        "hook": 0.0725036127,
+       "ctr": 0.0479866262,
+       "c2i": 0.010703043,
        "ipm": 0.5136029245,
        "pur_per_100": 28.431372549
       }
@@ -4091,7 +5234,10 @@
       "funnel": {
        "spend": 88.74,
        "roas": 0.0,
+       "impressions": 22225,
        "hook": 0.1094713176,
+       "ctr": 0.0098537683,
+       "c2i": 0.0502283105,
        "ipm": 0.4949381327,
        "pur_per_100": null
       }
@@ -4102,6 +5248,39 @@
      "within": -0.1068,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 321.95,
+     "roas": 0.5488119265,
+     "impressions": 198597,
+     "hook": 0.0725036127,
+     "ctr": 0.0479866262,
+     "c2i": 0.010703043,
+     "ipm": 0.5136029245,
+     "pur_per_100": 28.431372549
+    },
+    "old": {
+     "spend": 1873.75,
+     "roas": 0.3400827227,
+     "impressions": 394423,
+     "hook": 0.3089982085,
+     "ctr": 0.0124992711,
+     "c2i": 0.1442190669,
+     "ipm": 1.8026332136,
+     "pur_per_100": 10.2672292546
+    },
+    "breaks": "c2i",
+    "worse": [
+     "hook",
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "ctr",
+     "pur_per_100"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at CTR, payers."
    }
   },
   {
@@ -4190,7 +5369,10 @@
       "funnel": {
        "spend": 639.98,
        "roas": 0.4414356714,
+       "impressions": 340646,
        "hook": 0.0839874832,
+       "ctr": 0.0062616323,
+       "c2i": 0.4463197375,
        "ipm": 2.7946900888,
        "pur_per_100": 5.2521008403
       }
@@ -4206,7 +5388,10 @@
       "funnel": {
        "spend": 511.57,
        "roas": 0.4485994099,
+       "impressions": 135067,
        "hook": 0.0997653019,
+       "ctr": 0.0096544678,
+       "c2i": 0.3496932515,
        "ipm": 3.3761022307,
        "pur_per_100": 7.2368421053
       }
@@ -4222,7 +5407,10 @@
       "funnel": {
        "spend": 197.28,
        "roas": 0.5169302518,
+       "impressions": 50159,
        "hook": 0.493570445,
+       "ctr": 0.0114236727,
+       "c2i": 0.387434555,
        "ipm": 4.4259255567,
        "pur_per_100": 7.6576576577
       }
@@ -4238,7 +5426,10 @@
       "funnel": {
        "spend": 375.6,
        "roas": 0.310756125,
+       "impressions": 346339,
        "hook": 0.000519722,
+       "ctr": 0.0092308403,
+       "c2i": 0.2693149828,
        "ipm": 2.4860035976,
        "pur_per_100": 2.9036004646
       }
@@ -4254,7 +5445,10 @@
       "funnel": {
        "spend": 153.97,
        "roas": 0.2833668913,
+       "impressions": 59066,
        "hook": 0.2143195701,
+       "ctr": 0.0086851996,
+       "c2i": 0.4600389864,
        "ipm": 3.9955304236,
        "pur_per_100": 3.813559322
       }
@@ -4270,7 +5464,10 @@
       "funnel": {
        "spend": 76.39,
        "roas": 0.5708862418,
+       "impressions": 9386,
        "hook": 0.2413168554,
+       "ctr": 0.0095887492,
+       "c2i": 0.4888888889,
        "ipm": 4.6878329427,
        "pur_per_100": 9.0909090909
       }
@@ -4281,6 +5478,39 @@
      "within": -0.0537,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 147.14,
+     "roas": 0.1742558101,
+     "impressions": 79577,
+     "hook": 0.1717330389,
+     "ctr": 0.0121014866,
+     "c2i": 0.1111111111,
+     "ipm": 1.3446096234,
+     "pur_per_100": 3.738317757
+    },
+    "old": {
+     "spend": 2242.27,
+     "roas": 0.4055399226,
+     "impressions": 1082898,
+     "hook": 0.1211360625,
+     "ctr": 0.0082824052,
+     "c2i": 0.3493143048,
+     "ipm": 2.8931626063,
+     "pur_per_100": 4.9473348229
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm",
+     "pur_per_100"
+    ],
+    "better": [
+     "hook",
+     "ctr"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). Better at hook, CTR."
    }
   },
   {
@@ -4359,7 +5589,10 @@
       "funnel": {
        "spend": 570.28,
        "roas": 0.6014063265,
+       "impressions": 182122,
        "hook": 0.1348656403,
+       "ctr": 0.0124641724,
+       "c2i": 0.1475770925,
        "ipm": 1.8394263186,
        "pur_per_100": 11.3432835821
       }
@@ -4375,7 +5608,10 @@
       "funnel": {
        "spend": 274.45,
        "roas": 0.0956458381,
+       "impressions": 120259,
        "hook": 0.1710474909,
+       "ctr": 0.002586085,
+       "c2i": 0.1897106109,
        "ipm": 0.4906077716,
        "pur_per_100": 8.4745762712
       }
@@ -4391,7 +5627,10 @@
       "funnel": {
        "spend": 57.34,
        "roas": 2.1513777462,
+       "impressions": 11691,
        "hook": 0.0005132153,
+       "ctr": 0.0069284065,
+       "c2i": 0.3209876543,
        "ipm": 2.2239329399,
        "pur_per_100": 30.7692307692
       }
@@ -4407,8 +5646,11 @@
       "funnel": {
        "spend": 9.45,
        "roas": 0.0,
-       "hook": 0.0,
-       "ipm": 0.569476082,
+       "impressions": 1756,
+       "hook": null,
+       "ctr": null,
+       "c2i": 0.0138888889,
+       "ipm": null,
        "pur_per_100": null
       }
      }
@@ -4418,6 +5660,37 @@
      "within": 0.1497,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 242.21,
+     "roas": 0.7107881588,
+     "impressions": 77366,
+     "hook": 0.0853217168,
+     "ctr": 0.0139466949,
+     "c2i": 0.1436515292,
+     "ipm": 2.003464054,
+     "pur_per_100": 10.9677419355
+    },
+    "old": {
+     "spend": 397.59,
+     "roas": 0.7398827936,
+     "impressions": 118976,
+     "hook": 0.1517280812,
+     "ctr": 0.0114897122,
+     "c2i": 0.1514264813,
+     "ipm": 1.7398466918,
+     "pur_per_100": 14.0096618357
+    },
+    "breaks": "pur_per_100",
+    "worse": [
+     "hook",
+     "pur_per_100"
+    ],
+    "better": [
+     "ctr"
+    ],
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at CTR."
    }
   }
  ],
@@ -4523,7 +5796,10 @@
       "funnel": {
        "spend": 925.22,
        "roas": 0.5400877623,
+       "impressions": 252676,
        "hook": 0.3976831984,
+       "ctr": 0.0072029002,
+       "c2i": 0.4291208791,
        "ipm": 3.0909148475,
        "pur_per_100": 9.8591549296
       }
@@ -4539,7 +5815,10 @@
       "funnel": {
        "spend": 919.87,
        "roas": 0.3647037077,
+       "impressions": 413212,
        "hook": 0.1129008833,
+       "ctr": 0.0083032439,
+       "c2i": 0.4456426698,
        "ipm": 3.7002797595,
        "pur_per_100": 3.5317200785
       }
@@ -4555,7 +5834,10 @@
       "funnel": {
        "spend": 43.0,
        "roas": 0.2572093032,
-       "hook": 0.0,
+       "impressions": 13059,
+       "hook": null,
+       "ctr": 0.0111034536,
+       "c2i": 0.3172413793,
        "ipm": 3.5224749215,
        "pur_per_100": 4.347826087
       }
@@ -4571,7 +5853,10 @@
       "funnel": {
        "spend": 65.52,
        "roas": 0.6153846183,
+       "impressions": 27557,
        "hook": 0.361214938,
+       "ctr": 0.0071488188,
+       "c2i": 0.4010152284,
        "ipm": 2.8667852088,
        "pur_per_100": 7.5949367089
       }
@@ -4582,6 +5867,38 @@
      "within": 0.1619,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 672.38,
+     "roas": 0.557244415,
+     "impressions": 193026,
+     "hook": 0.3899992746,
+     "ctr": 0.0063825599,
+     "c2i": 0.4163961039,
+     "ipm": 2.6576730596,
+     "pur_per_100": 11.5009746589
+    },
+    "old": {
+     "spend": 1368.9,
+     "roas": 0.4053692743,
+     "impressions": 535267,
+     "hook": 0.1636304866,
+     "ctr": 0.0083733912,
+     "c2i": 0.4413208389,
+     "ipm": 3.6953520393,
+     "pur_per_100": 4.2972699697
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [
+     "hook",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, payers."
    }
   },
   {
@@ -4648,7 +5965,10 @@
       "funnel": {
        "spend": 1355.14,
        "roas": 0.4556872364,
+       "impressions": 160392,
        "hook": 0.4385879602,
+       "ctr": 0.0245710509,
+       "c2i": 0.1187515859,
        "ipm": 2.9178512644,
        "pur_per_100": 17.5213675214
       }
@@ -4664,7 +5984,10 @@
       "funnel": {
        "spend": 984.52,
        "roas": 0.4720371355,
+       "impressions": 236196,
        "hook": 0.3818184896,
+       "ctr": 0.0084379075,
+       "c2i": 0.2117410938,
        "ipm": 1.7866517638,
        "pur_per_100": 19.1943127962
       }
@@ -4675,6 +5998,35 @@
      "within": -0.0613,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 52.3,
+     "roas": 0.4202676852,
+     "impressions": 8601,
+     "hook": 0.379839552,
+     "ctr": 0.0145331938,
+     "c2i": 0.088,
+     "ipm": 1.2789210557,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 2344.07,
+     "roas": 0.4544488869,
+     "impressions": 403778,
+     "hook": 0.3920916942,
+     "ctr": 0.0166205192,
+     "c2i": 0.1327670988,
+     "ipm": 2.2066581141,
+     "pur_per_100": 18.0695847363
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.)"
    }
   },
   {
@@ -4763,7 +6115,10 @@
       "funnel": {
        "spend": 1920.53,
        "roas": 0.5359614289,
+       "impressions": 945515,
        "hook": 0.1540091903,
+       "ctr": 0.0105180774,
+       "c2i": 0.4098541981,
        "ipm": 4.3108781987,
        "pur_per_100": 4.4651619235
       }
@@ -4779,7 +6134,10 @@
       "funnel": {
        "spend": 576.97,
        "roas": 0.3632424568,
+       "impressions": 317996,
        "hook": 0.3505861713,
+       "ctr": 0.0050440886,
+       "c2i": 0.4133416459,
        "ipm": 2.0849318859,
        "pur_per_100": 6.334841629
       }
@@ -4795,7 +6153,10 @@
       "funnel": {
        "spend": 442.93,
        "roas": 0.4223918003,
+       "impressions": 298550,
        "hook": 0.0009814101,
+       "ctr": 0.0161982917,
+       "c2i": 0.2506203474,
        "ipm": 4.0596215039,
        "pur_per_100": 3.3828382838
       }
@@ -4811,7 +6172,10 @@
       "funnel": {
        "spend": 486.35,
        "roas": 0.4892155851,
+       "impressions": 279341,
        "hook": 0.0015536586,
+       "ctr": 0.0184111892,
+       "c2i": 0.26015944,
        "ipm": 4.7898446701,
        "pur_per_100": 3.4379671151
       }
@@ -4827,7 +6191,10 @@
       "funnel": {
        "spend": 419.45,
        "roas": 0.3428060553,
+       "impressions": 158040,
        "hook": 0.0879524174,
+       "ctr": 0.0044545685,
+       "c2i": 0.4801136364,
        "ipm": 2.1386990635,
        "pur_per_100": 8.875739645
       }
@@ -4843,7 +6210,10 @@
       "funnel": {
        "spend": 557.36,
        "roas": 0.2769125893,
+       "impressions": 259252,
        "hook": 0.3823229911,
+       "ctr": 0.0056508725,
+       "c2i": 0.2955631399,
        "ipm": 1.6701896225,
        "pur_per_100": 6.2355658199
       }
@@ -4854,6 +6224,38 @@
      "within": -0.0789,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 566.49,
+     "roas": 0.2812406234,
+     "impressions": 264959,
+     "hook": 0.3783340067,
+     "ctr": 0.0055857699,
+     "c2i": 0.2986486486,
+     "ipm": 1.6681826245,
+     "pur_per_100": 6.5610859729
+    },
+    "old": {
+     "spend": 4147.28,
+     "roas": 0.4758444096,
+     "impressions": 2164622,
+     "hook": 0.1385659946,
+     "ctr": 0.0112356799,
+     "c2i": 0.3259734386,
+     "ipm": 3.6625332275,
+     "pur_per_100": 4.5787083754
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [
+     "hook",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, payers."
    }
   },
   {
@@ -4923,7 +6325,10 @@
       "funnel": {
        "spend": 926.13,
        "roas": 0.312580309,
+       "impressions": 171941,
        "hook": 0.4181085372,
+       "ctr": 0.0131963871,
+       "c2i": 0.1454385192,
        "ipm": 1.919263003,
        "pur_per_100": 9.0909090909
       }
@@ -4939,7 +6344,10 @@
       "funnel": {
        "spend": 361.51,
        "roas": 0.6186274236,
+       "impressions": 81385,
        "hook": 0.3782392344,
+       "ctr": 0.0071634822,
+       "c2i": 0.2024013722,
        "ipm": 1.44989863,
        "pur_per_100": 19.4915254237
       }
@@ -4950,6 +6358,38 @@
      "within": 0.1059,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 339.32,
+     "roas": 0.6007014025,
+     "impressions": 77943,
+     "hook": 0.378263604,
+     "ctr": 0.0048753576,
+     "c2i": 0.2973684211,
+     "ipm": 1.4497774014,
+     "pur_per_100": 18.5840707965
+    },
+    "old": {
+     "spend": 980.14,
+     "roas": 0.3155671654,
+     "impressions": 183045,
+     "hook": 0.4106858969,
+     "ctr": 0.0145100931,
+     "c2i": 0.1280120482,
+     "ipm": 1.8574667432,
+     "pur_per_100": 9.4117647059
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [
+     "c2i",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers."
    }
   },
   {
@@ -5053,7 +6493,10 @@
       "funnel": {
        "spend": 917.77,
        "roas": 0.2788607176,
+       "impressions": 1213109,
        "hook": 0.2210980218,
+       "ctr": 0.0043920208,
+       "c2i": 0.2972972973,
        "ipm": 1.3057359232,
        "pur_per_100": 3.7247474747
       }
@@ -5069,7 +6512,10 @@
       "funnel": {
        "spend": 324.69,
        "roas": 0.2382272314,
+       "impressions": 337662,
        "hook": 0.1333996715,
+       "ctr": 0.005114582,
+       "c2i": 0.4574406485,
        "ipm": 2.3396177242,
        "pur_per_100": 2.7848101266
       }
@@ -5085,7 +6531,10 @@
       "funnel": {
        "spend": 480.06,
        "roas": 0.1491896845,
-       "hook": 0.0,
+       "impressions": 531518,
+       "hook": null,
+       "ctr": 0.0100786803,
+       "c2i": 0.2477132724,
        "ipm": 2.4966228801,
        "pur_per_100": 1.2810851545
       }
@@ -5101,7 +6550,10 @@
       "funnel": {
        "spend": 120.03,
        "roas": 0.1283012587,
-       "hook": 0.0,
+       "impressions": 48342,
+       "hook": null,
+       "ctr": 0.0117082454,
+       "c2i": 0.24204947,
        "ipm": 2.8339745977,
        "pur_per_100": 1.4598540146
       }
@@ -5117,7 +6569,10 @@
       "funnel": {
        "spend": 23.22,
        "roas": 0.0,
-       "hook": 0.0,
+       "impressions": 11681,
+       "hook": null,
+       "ctr": 0.0077904289,
+       "c2i": 0.1758241758,
        "ipm": 1.3697457409,
        "pur_per_100": null
       }
@@ -5133,7 +6588,10 @@
       "funnel": {
        "spend": 19.38,
        "roas": 0.1367389056,
-       "hook": 0.0,
+       "impressions": 18804,
+       "hook": null,
+       "ctr": 0.0046266752,
+       "c2i": 0.2183908046,
        "ipm": 1.0104233142,
        "pur_per_100": null
       }
@@ -5144,6 +6602,37 @@
      "within": 0.0743,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 917.77,
+     "roas": 0.2788607176,
+     "impressions": 1213109,
+     "hook": 0.2210980218,
+     "ctr": 0.0043920208,
+     "c2i": 0.2972972973,
+     "ipm": 1.3057359232,
+     "pur_per_100": 3.7247474747
+    },
+    "old": {
+     "spend": 596.06,
+     "roas": 0.2241888395,
+     "impressions": 517474,
+     "hook": 0.1151323539,
+     "ctr": 0.0058669614,
+     "c2i": 0.3616600791,
+     "ipm": 2.1218457352,
+     "pur_per_100": 3.2786885246
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [
+     "hook"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook."
    }
   },
   {
@@ -5201,7 +6690,10 @@
       "funnel": {
        "spend": 202.42,
        "roas": 0.1154036164,
+       "impressions": 43167,
        "hook": 0.322908703,
+       "ctr": 0.0075752311,
+       "c2i": 0.2813455657,
        "ipm": 2.1312576737,
        "pur_per_100": 3.2608695652
       }
@@ -5217,7 +6709,10 @@
       "funnel": {
        "spend": 146.94,
        "roas": 0.3518442903,
+       "impressions": 49866,
        "hook": 0.1307704644,
+       "ctr": 0.0064573056,
+       "c2i": 0.2298136646,
        "ipm": 1.4839770585,
        "pur_per_100": 10.8108108108
       }
@@ -5233,12 +6728,46 @@
       "funnel": {
        "spend": 74.14,
        "roas": 0.2020501764,
+       "impressions": 17089,
        "hook": 0.5957633571,
+       "ctr": 0.0110012289,
+       "c2i": 0.3191489362,
        "ipm": 3.5110304874,
        "pur_per_100": 5.0
       }
      }
     ]
+   },
+   "funnel": {
+    "new": {
+     "spend": 153.91,
+     "roas": 0.1367682412,
+     "impressions": 34075,
+     "hook": 0.3349376369,
+     "ctr": 0.0077769626,
+     "c2i": 0.3018867925,
+     "ipm": 2.3477622891,
+     "pur_per_100": 2.5
+    },
+    "old": {
+     "spend": 269.59,
+     "roas": 0.2559071187,
+     "impressions": 76047,
+     "hook": 0.2528436361,
+     "ctr": 0.0075216642,
+     "c2i": 0.2552447552,
+     "ipm": 1.9198653464,
+     "pur_per_100": 8.2191780822
+    },
+    "breaks": "pur_per_100",
+    "worse": [
+     "pur_per_100"
+    ],
+    "better": [
+     "hook",
+     "ipm"
+    ],
+    "text": "Breaks at payers: who it brings: they install but don't pay. Better at hook, IPM."
    }
   },
   {
@@ -5308,7 +6837,10 @@
       "funnel": {
        "spend": 431.06,
        "roas": 0.2561824351,
+       "impressions": 91486,
        "hook": 0.487407909,
+       "ctr": 0.0094440679,
+       "c2i": 0.3032407407,
        "ipm": 2.8638261592,
        "pur_per_100": 4.9618320611
       }
@@ -5324,7 +6856,10 @@
       "funnel": {
        "spend": 401.56,
        "roas": 0.2662366768,
+       "impressions": 81032,
        "hook": 0.2614029027,
+       "ctr": 0.0061950834,
+       "c2i": 0.3685258964,
        "ipm": 2.2830486721,
        "pur_per_100": 6.4864864865
       }
@@ -5340,7 +6875,10 @@
       "funnel": {
        "spend": 200.93,
        "roas": 0.2407306028,
+       "impressions": 61163,
        "hook": 0.1745990213,
+       "ctr": 0.0046269804,
+       "c2i": 0.3074204947,
        "ipm": 1.4224285924,
        "pur_per_100": 8.0459770115
       }
@@ -5351,6 +6889,37 @@
      "within": -0.263,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 122.39,
+     "roas": 0.4939129017,
+     "impressions": 27242,
+     "hook": 0.3069524992,
+     "ctr": 0.0054327876,
+     "c2i": 0.3986486486,
+     "ipm": 2.1657734381,
+     "pur_per_100": 10.1694915254
+    },
+    "old": {
+     "spend": 911.16,
+     "roas": 0.2252732785,
+     "impressions": 206439,
+     "hook": 0.3298310878,
+     "ctr": 0.007270913,
+     "c2i": 0.3164556962,
+     "ipm": 2.3009218219,
+     "pur_per_100": 5.4736842105
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr"
+    ],
+    "better": [
+     "c2i",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at C>I, payers."
    }
   },
   {
@@ -5447,7 +7016,10 @@
       "funnel": {
        "spend": 546.33,
        "roas": 0.4647191262,
+       "impressions": 654524,
        "hook": 0.1218213542,
+       "ctr": 0.0056697692,
+       "c2i": 0.1988682296,
        "ipm": 1.1275369582,
        "pur_per_100": 7.3170731707
       }
@@ -5463,7 +7035,10 @@
       "funnel": {
        "spend": 800.3,
        "roas": 0.4130201165,
+       "impressions": 660046,
        "hook": 0.1872036182,
+       "ctr": 0.0269587271,
+       "c2i": 0.0278183657,
        "ipm": 0.7499477309,
        "pur_per_100": 10.7070707071
       }
@@ -5479,7 +7054,10 @@
       "funnel": {
        "spend": 76.25,
        "roas": 0.3234098355,
+       "impressions": 83844,
        "hook": 0.1571847718,
+       "ctr": 0.0115810314,
+       "c2i": 0.1112255407,
        "ipm": 1.2881064835,
        "pur_per_100": 3.7037037037
       }
@@ -5495,7 +7073,10 @@
       "funnel": {
        "spend": 52.42,
        "roas": 0.2867226249,
+       "impressions": 50123,
        "hook": 0.1141791196,
+       "ctr": 0.0084591904,
+       "c2i": 0.1108490566,
        "ipm": 0.9376932745,
        "pur_per_100": 10.6382978723
       }
@@ -5511,7 +7092,10 @@
       "funnel": {
        "spend": 258.73,
        "roas": 0.3429057312,
+       "impressions": 233402,
        "hook": 0.379551162,
+       "ctr": 0.0101627235,
+       "c2i": 0.0801011804,
        "ipm": 0.8140461521,
        "pur_per_100": 10.5263157895
       }
@@ -5527,7 +7111,10 @@
       "funnel": {
        "spend": 257.59,
        "roas": 0.3414340598,
+       "impressions": 186659,
        "hook": 0.4877182434,
+       "ctr": 0.0113201078,
+       "c2i": 0.0951254141,
        "ipm": 1.0768299412,
        "pur_per_100": 8.4577114428
       }
@@ -5538,6 +7125,37 @@
      "within": -0.0361,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 257.59,
+     "roas": 0.3414340598,
+     "impressions": 186659,
+     "hook": 0.4877182434,
+     "ctr": 0.0113201078,
+     "c2i": 0.0951254141,
+     "ipm": 1.0768299412,
+     "pur_per_100": 8.4577114428
+    },
+    "old": {
+     "spend": 1757.46,
+     "roas": 0.4092781624,
+     "impressions": 1700912,
+     "hook": 0.1854493353,
+     "ctr": 0.0150836728,
+     "c2i": 0.0620517618,
+     "ipm": 0.9359684687,
+     "pur_per_100": 8.6683417085
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr"
+    ],
+    "better": [
+     "hook",
+     "c2i"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I."
    }
   },
   {
@@ -5641,7 +7259,10 @@
       "funnel": {
        "spend": 1785.97,
        "roas": 0.3898777684,
+       "impressions": 346174,
        "hook": 0.3965866879,
+       "ctr": 0.0097725421,
+       "c2i": 0.2264262489,
        "ipm": 2.2127600571,
        "pur_per_100": 12.0104438642
       }
@@ -5657,7 +7278,10 @@
       "funnel": {
        "spend": 87.81,
        "roas": 0.7158637977,
-       "hook": 0.0,
+       "impressions": 26556,
+       "hook": null,
+       "ctr": 0.0076442235,
+       "c2i": 0.236453202,
        "ipm": 1.8075011297,
        "pur_per_100": 27.0833333333
       }
@@ -5673,8 +7297,11 @@
       "funnel": {
        "spend": 2.02,
        "roas": 0.0,
-       "hook": 0.0,
-       "ipm": 0.0,
+       "impressions": 755,
+       "hook": null,
+       "ctr": null,
+       "c2i": 0.0,
+       "ipm": null,
        "pur_per_100": null
       }
      },
@@ -5689,7 +7316,10 @@
       "funnel": {
        "spend": 70.09,
        "roas": 1.0189756014,
+       "impressions": 22687,
        "hook": 0.1997178985,
+       "ctr": 0.0119451668,
+       "c2i": 0.1881918819,
        "ipm": 2.2479834266,
        "pur_per_100": 17.6470588235
       }
@@ -5705,7 +7335,10 @@
       "funnel": {
        "spend": 69.33,
        "roas": 0.3181883748,
+       "impressions": 23720,
        "hook": 0.1236930857,
+       "ctr": 0.0391652614,
+       "c2i": 0.0226049516,
        "ipm": 0.8853288364,
        "pur_per_100": 23.8095238095
       }
@@ -5716,6 +7349,35 @@
      "within": -0.1004,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 42.73,
+     "roas": 0.0,
+     "impressions": 9589,
+     "hook": 0.3807487752,
+     "ctr": 0.0067786005,
+     "c2i": 0.1846153846,
+     "ipm": 1.2514339347,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 1977.76,
+     "roas": 0.4311190428,
+     "impressions": 412458,
+     "hook": 0.342359707,
+     "ctr": 0.0120375893,
+     "c2i": 0.1762336354,
+     "ipm": 2.1214281212,
+     "pur_per_100": 13.6
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr",
+     "ipm"
+    ],
+    "better": [],
+    "text": "Breaks at CTR: the message: they watch but don't click."
    }
   },
   {
@@ -5810,7 +7472,10 @@
       "funnel": {
        "spend": 1693.1,
        "roas": 0.4820093318,
+       "impressions": 540174,
        "hook": 0.1466027615,
+       "ctr": 0.0098931085,
+       "c2i": 0.185254491,
        "ipm": 1.8327427829,
        "pur_per_100": 9.2929292929
       }
@@ -5826,7 +7491,10 @@
       "funnel": {
        "spend": 1155.0,
        "roas": 0.4671255416,
+       "impressions": 339934,
        "hook": 0.2309918979,
+       "ctr": 0.0096342231,
+       "c2i": 0.2058015267,
        "ipm": 1.9827378256,
        "pur_per_100": 11.8694362018
       }
@@ -5842,7 +7510,10 @@
       "funnel": {
        "spend": 1323.94,
        "roas": 0.4461758081,
+       "impressions": 311612,
        "hook": 0.1570382403,
+       "ctr": 0.0067295226,
+       "c2i": 0.2365283739,
        "ipm": 1.5917230402,
        "pur_per_100": 14.5161290323
       }
@@ -5858,7 +7529,10 @@
       "funnel": {
        "spend": 476.63,
        "roas": 0.3829805088,
+       "impressions": 221366,
        "hook": 0.3117371226,
+       "ctr": 0.0081177778,
+       "c2i": 0.2526432944,
        "ipm": 2.0509021259,
        "pur_per_100": 4.845814978
       }
@@ -5869,6 +7543,37 @@
      "within": -0.0799,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 9.92,
+     "roas": 2.5332661294,
+     "impressions": 4524,
+     "hook": 0.2756410282,
+     "ctr": 0.0101679929,
+     "c2i": 0.1304347826,
+     "ipm": 1.3262599469,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 4672.94,
+     "roas": 0.4607570394,
+     "impressions": 1416327,
+     "hook": 0.1944621545,
+     "ctr": 0.0092528067,
+     "c2i": 0.1998473865,
+     "ipm": 1.8491492431,
+     "pur_per_100": 10.3474608629
+    },
+    "breaks": "c2i",
+    "worse": [
+     "c2i",
+     "ipm"
+    ],
+    "better": [
+     "hook"
+    ],
+    "text": "Breaks at C>I: the store page: they click but don't install (does the App Store / Play page keep the ad's promise?). (iOS installs per ad are Meta's estimate: a hint, check the store page.) Better at hook."
    }
   },
   {
@@ -5957,7 +7662,10 @@
       "funnel": {
        "spend": 2241.14,
        "roas": 0.4428862091,
+       "impressions": 678791,
        "hook": 0.0657035824,
+       "ctr": 0.0063023817,
+       "c2i": 0.2274427302,
        "ipm": 1.4334309088,
        "pur_per_100": 12.1274409044
       }
@@ -5973,7 +7681,10 @@
       "funnel": {
        "spend": 471.38,
        "roas": 0.2670032657,
+       "impressions": 178983,
        "hook": 0.3264388237,
+       "ctr": 0.0074532218,
+       "c2i": 0.1649175412,
        "ipm": 1.2291670159,
        "pur_per_100": 10.0
       }
@@ -5989,7 +7700,10 @@
       "funnel": {
        "spend": 439.22,
        "roas": 0.4867720049,
+       "impressions": 187944,
        "hook": 0.0562561182,
+       "ctr": 0.0046343592,
+       "c2i": 0.3168771527,
        "ipm": 1.4685225386,
        "pur_per_100": 8.3333333333
       }
@@ -6005,7 +7719,10 @@
       "funnel": {
        "spend": 233.44,
        "roas": 1.3522960934,
+       "impressions": 33012,
        "hook": 0.2709923675,
+       "ctr": 0.0149339634,
+       "c2i": 0.1845841785,
        "ipm": 2.7565733673,
        "pur_per_100": 12.0879120879
       }
@@ -6021,7 +7738,10 @@
       "funnel": {
        "spend": 425.48,
        "roas": 0.6486321337,
+       "impressions": 112880,
        "hook": 0.4741672569,
+       "ctr": 0.0078756201,
+       "c2i": 0.1676040495,
        "ipm": 1.3199858257,
        "pur_per_100": 24.8322147651
       }
@@ -6037,7 +7757,10 @@
       "funnel": {
        "spend": 356.43,
        "roas": 0.306539853,
+       "impressions": 163146,
        "hook": 0.0132641928,
+       "ctr": 0.0552817722,
+       "c2i": 0.0079831467,
        "ipm": 0.4413224964,
        "pur_per_100": 19.4444444444
       }
@@ -6048,6 +7771,38 @@
      "within": 0.2503,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 427.05,
+     "roas": 0.6462475125,
+     "impressions": 113419,
+     "hook": 0.4728043798,
+     "ctr": 0.0078734604,
+     "c2i": 0.1668533035,
+     "ipm": 1.31371287,
+     "pur_per_100": 24.8322147651
+    },
+    "old": {
+     "spend": 3777.22,
+     "roas": 0.4737902473,
+     "impressions": 1259546,
+     "hook": 0.1003972862,
+     "ctr": 0.0133254363,
+     "c2i": 0.0978908484,
+     "ipm": 1.3044382659,
+     "pur_per_100": 11.8076688984
+    },
+    "breaks": "ctr",
+    "worse": [
+     "ctr"
+    ],
+    "better": [
+     "hook",
+     "c2i",
+     "pur_per_100"
+    ],
+    "text": "Breaks at CTR: the message: they watch but don't click. Better at hook, C>I, payers."
    }
   },
   {
@@ -6148,7 +7903,10 @@
       "funnel": {
        "spend": 2434.71,
        "roas": 0.5265390953,
+       "impressions": 495302,
        "hook": 0.3740263516,
+       "ctr": 0.0093841737,
+       "c2i": 0.3478915663,
        "ipm": 3.2646748852,
        "pur_per_100": 10.2040816327
       }
@@ -6164,7 +7922,10 @@
       "funnel": {
        "spend": 767.96,
        "roas": 0.5135423717,
+       "impressions": 278498,
        "hook": 0.1501949744,
+       "ctr": 0.0056194299,
+       "c2i": 0.3801916933,
        "ipm": 2.136460585,
        "pur_per_100": 10.9243697479
       }
@@ -6180,7 +7941,10 @@
       "funnel": {
        "spend": 346.61,
        "roas": 0.6844003354,
+       "impressions": 221694,
        "hook": 0.0774310523,
+       "ctr": 0.0041994822,
+       "c2i": 0.4006444683,
        "ipm": 1.6824993008,
        "pur_per_100": 11.2600536193
       }
@@ -6191,6 +7955,32 @@
      "within": -0.1335,
      "text": "inside the same countries"
     }
+   },
+   "funnel": {
+    "new": {
+     "spend": 6.87,
+     "roas": 0.0,
+     "impressions": 1136,
+     "hook": 0.3309859147,
+     "ctr": null,
+     "c2i": null,
+     "ipm": null,
+     "pur_per_100": null
+    },
+    "old": {
+     "spend": 3606.27,
+     "roas": 0.5324254703,
+     "impressions": 1013003,
+     "hook": 0.2439913798,
+     "ctr": 0.007998002,
+     "c2i": 0.3202912861,
+     "ipm": 2.5616903405,
+     "pur_per_100": 10.5202312139
+    },
+    "breaks": null,
+    "worse": [],
+    "better": [],
+    "text": "Not tested: Meta gave it 1,136 impressions."
    }
   }
  ],
@@ -6243,7 +8033,10 @@
       "funnel": {
        "spend": 1113.1,
        "roas": 0.5426286943,
+       "impressions": 149814,
        "hook": 0.4484761102,
+       "ctr": 0.0154391445,
+       "c2i": 0.1811500216,
        "ipm": 2.796801367,
        "pur_per_100": 15.5131264916
       }
@@ -6259,7 +8052,10 @@
       "funnel": {
        "spend": 127.41,
        "roas": 0.6229495364,
+       "impressions": 27087,
        "hook": 0.235648094,
+       "ctr": 0.0094510282,
+       "c2i": 0.19921875,
        "ipm": 1.8828220179,
        "pur_per_100": 21.568627451
       }
@@ -6275,7 +8071,10 @@
       "funnel": {
        "spend": 471.83,
        "roas": 0.4824619042,
+       "impressions": 82406,
        "hook": 0.3261048952,
+       "ctr": 0.0193553867,
+       "c2i": 0.1661442006,
        "ipm": 3.2157852584,
        "pur_per_100": 13.2075471698
       }
@@ -6291,8 +8090,11 @@
       "funnel": {
        "spend": 6.56,
        "roas": 0.0,
-       "hook": 0.0,
-       "ipm": 0.4368719965,
+       "impressions": 2289,
+       "hook": null,
+       "ctr": null,
+       "c2i": 0.0181818182,
+       "ipm": null,
        "pur_per_100": null
       }
      }
@@ -6349,7 +8151,10 @@
       "funnel": {
        "spend": 515.79,
        "roas": 0.4384342443,
+       "impressions": 208832,
        "hook": 0.1144891588,
+       "ctr": 0.0084613469,
+       "c2i": 0.2354272779,
        "ipm": 1.9920318725,
        "pur_per_100": 6.9711538462
       }
@@ -6365,7 +8170,10 @@
       "funnel": {
        "spend": 142.02,
        "roas": 0.0573158715,
+       "impressions": 15370,
        "hook": 0.2130774227,
+       "ctr": 0.0112556929,
+       "c2i": 0.1791907514,
        "ipm": 2.0169160703,
        "pur_per_100": 6.4516129032
       }
@@ -6381,7 +8189,10 @@
       "funnel": {
        "spend": 169.88,
        "roas": 0.5449140578,
+       "impressions": 28273,
        "hook": 0.1786510097,
+       "ctr": 0.0077105366,
+       "c2i": 0.1743119266,
        "ipm": 1.3440384819,
        "pur_per_100": 10.5263157895
       }
@@ -6397,7 +8208,10 @@
       "funnel": {
        "spend": 434.05,
        "roas": 0.8727796324,
+       "impressions": 52863,
        "hook": 0.2663677812,
+       "ctr": 0.0158522974,
+       "c2i": 0.1813842482,
        "ipm": 2.875357055,
        "pur_per_100": 19.0789473684
       }
@@ -6413,7 +8227,10 @@
       "funnel": {
        "spend": 128.39,
        "roas": 0.1591245416,
+       "impressions": 64409,
        "hook": 0.2461612515,
+       "ctr": 0.0106662112,
+       "c2i": 0.1892285298,
        "ipm": 2.0183514726,
        "pur_per_100": 5.3846153846
       }
@@ -6470,7 +8287,10 @@
       "funnel": {
        "spend": 1958.73,
        "roas": 0.5208221652,
+       "impressions": 1020809,
        "hook": 0.2736966456,
+       "ctr": 0.0078114515,
+       "c2i": 0.1686731879,
        "ipm": 1.3175824273,
        "pur_per_100": 8.7732342007
       }
@@ -6486,7 +8306,10 @@
       "funnel": {
        "spend": 1730.21,
        "roas": 0.4577710237,
+       "impressions": 833253,
        "hook": 0.1348738012,
+       "ctr": 0.0112210817,
+       "c2i": 0.2412834225,
        "ipm": 2.7074609992,
        "pur_per_100": 5.0975177305
       }
@@ -6502,7 +8325,10 @@
       "funnel": {
        "spend": 993.63,
        "roas": 0.4627477022,
+       "impressions": 366881,
        "hook": 0.0080680112,
+       "ctr": 0.0107010175,
+       "c2i": 0.1286296485,
        "ipm": 1.3764681191,
        "pur_per_100": 10.297029703
       }
@@ -6518,8 +8344,11 @@
       "funnel": {
        "spend": 0.66,
        "roas": 0.0,
+       "impressions": 184,
        "hook": 0.2336956518,
-       "ipm": 0.0,
+       "ctr": null,
+       "c2i": null,
+       "ipm": null,
        "pur_per_100": null
       }
      },
@@ -6534,7 +8363,10 @@
       "funnel": {
        "spend": 312.29,
        "roas": 0.1661276383,
+       "impressions": 103347,
        "hook": 0.2271667304,
+       "ctr": 0.017949239,
+       "c2i": 0.0819407008,
        "ipm": 1.4707732203,
        "pur_per_100": 5.2631578947
       }
@@ -6550,7 +8382,10 @@
       "funnel": {
        "spend": 218.87,
        "roas": 0.5145063289,
+       "impressions": 68226,
        "hook": 0.1157183484,
+       "ctr": 0.0066983262,
+       "c2i": 0.2691466083,
        "ipm": 1.802831765,
        "pur_per_100": 10.5691056911
       }
@@ -6606,7 +8441,10 @@
       "funnel": {
        "spend": 900.43,
        "roas": 0.4551936293,
+       "impressions": 246645,
        "hook": 0.2037584381,
+       "ctr": 0.0058342963,
+       "c2i": 0.4391938846,
        "ipm": 2.5623872367,
        "pur_per_100": 8.2278481013
       }
@@ -6622,7 +8460,10 @@
       "funnel": {
        "spend": 866.15,
        "roas": 0.5676037629,
+       "impressions": 236435,
        "hook": 0.1148349441,
+       "ctr": 0.0087423605,
+       "c2i": 0.31301403,
        "ipm": 2.7364814854,
        "pur_per_100": 8.3462132921
       }
@@ -6638,7 +8479,10 @@
       "funnel": {
        "spend": 409.41,
        "roas": 0.2125986188,
+       "impressions": 276837,
        "hook": 0.0702507254,
+       "ctr": 0.0070366317,
+       "c2i": 0.2079055441,
        "ipm": 1.4629547351,
        "pur_per_100": 3.4567901235
       }
@@ -6654,7 +8498,10 @@
       "funnel": {
        "spend": 39.86,
        "roas": 0.7895132942,
+       "impressions": 12780,
        "hook": 0.3681533654,
+       "ctr": 0.0125978091,
+       "c2i": 0.3416149068,
        "ipm": 4.303599374,
        "pur_per_100": 7.2727272727
       }
@@ -6708,7 +8555,10 @@
       "funnel": {
        "spend": 768.12,
        "roas": 0.3587590489,
+       "impressions": 226835,
        "hook": 0.443635242,
+       "ctr": 0.0057178125,
+       "c2i": 0.1842713955,
        "ipm": 1.05362929,
        "pur_per_100": 16.3179916318
       }
@@ -6724,7 +8574,10 @@
       "funnel": {
        "spend": 557.52,
        "roas": 0.5485901866,
+       "impressions": 269826,
        "hook": 0.50558508,
+       "ctr": 0.0050995827,
+       "c2i": 0.2151162791,
        "ipm": 1.0970032539,
        "pur_per_100": 14.527027027
       }
@@ -6740,7 +8593,10 @@
       "funnel": {
        "spend": 54.82,
        "roas": 0.3752280191,
+       "impressions": 22820,
        "hook": 0.4652497806,
+       "ctr": 0.0091586328,
+       "c2i": 0.1435406699,
        "ipm": 1.314636284,
        "pur_per_100": 10.0
       }
@@ -6796,7 +8652,10 @@
       "funnel": {
        "spend": 570.23,
        "roas": 0.4816828287,
+       "impressions": 359438,
        "hook": 0.4363061213,
+       "ctr": 0.008070933,
+       "c2i": 0.4129610479,
        "ipm": 3.3329809313,
        "pur_per_100": 4.590984975
       }
@@ -6812,7 +8671,10 @@
       "funnel": {
        "spend": 470.91,
        "roas": 0.3709626049,
+       "impressions": 169677,
        "hook": 0.2686280395,
+       "ctr": 0.0072372802,
+       "c2i": 0.4364820847,
        "ipm": 3.1589431685,
        "pur_per_100": 4.6641791045
       }
@@ -6870,7 +8732,10 @@
       "funnel": {
        "spend": 1324.37,
        "roas": 0.4607247213,
+       "impressions": 190987,
        "hook": 0.1965264645,
+       "ctr": 0.0064664087,
+       "c2i": 0.4793522267,
        "ipm": 3.0996874133,
        "pur_per_100": 11.8243243243
       }
@@ -6886,7 +8751,10 @@
       "funnel": {
        "spend": 754.44,
        "roas": 0.3552436248,
+       "impressions": 88505,
        "hook": 0.3022202145,
+       "ctr": 0.0082481216,
+       "c2i": 0.4328767123,
        "ipm": 3.5704197503,
        "pur_per_100": 5.6962025316
       }
@@ -6902,8 +8770,11 @@
       "funnel": {
        "spend": 0.01,
        "roas": 0.0,
+       "impressions": 2,
        "hook": 0.5,
-       "ipm": 0.0,
+       "ctr": null,
+       "c2i": null,
+       "ipm": null,
        "pur_per_100": null
       }
      },
@@ -6918,7 +8789,10 @@
       "funnel": {
        "spend": 200.76,
        "roas": 0.1799163174,
+       "impressions": 56819,
        "hook": 0.3037892248,
+       "ctr": 0.0053679227,
+       "c2i": 0.3442622951,
        "ipm": 1.8479733892,
        "pur_per_100": 4.7619047619
       }
@@ -6934,7 +8808,10 @@
       "funnel": {
        "spend": 153.31,
        "roas": 0.2221642403,
+       "impressions": 50321,
        "hook": 0.2743784895,
+       "ctr": 0.0059617257,
+       "c2i": 0.2733333333,
        "ipm": 1.6295383637,
        "pur_per_100": 4.8780487805
       }
@@ -6950,8 +8827,11 @@
       "funnel": {
        "spend": 0.65,
        "roas": 0.0,
+       "impressions": 178,
        "hook": 0.1741573047,
-       "ipm": 11.2359550562,
+       "ctr": null,
+       "c2i": null,
+       "ipm": null,
        "pur_per_100": null
       }
      }
@@ -7005,7 +8885,10 @@
       "funnel": {
        "spend": 993.96,
        "roas": 0.4203489063,
+       "impressions": 319739,
        "hook": 0.1456187695,
+       "ctr": 0.0072465355,
+       "c2i": 0.2688821752,
        "ipm": 1.9484642161,
        "pur_per_100": 8.507223114
       }
@@ -7021,7 +8904,10 @@
       "funnel": {
        "spend": 668.43,
        "roas": 0.4606615514,
+       "impressions": 192776,
        "hook": 0.2319635226,
+       "ctr": 0.0097626261,
+       "c2i": 0.211477152,
        "ipm": 2.0645723534,
        "pur_per_100": 13.567839196
       }
@@ -7037,7 +8923,10 @@
       "funnel": {
        "spend": 1188.19,
        "roas": 0.3760509677,
+       "impressions": 273758,
        "hook": 0.1574456274,
+       "ctr": 0.0067724048,
+       "c2i": 0.2206040992,
        "ipm": 1.4940202661,
        "pur_per_100": 15.1589242054
       }
@@ -7053,7 +8942,10 @@
       "funnel": {
        "spend": 298.42,
        "roas": 0.2556464037,
+       "impressions": 148906,
        "hook": 0.3262057944,
+       "ctr": 0.0081259318,
+       "c2i": 0.252892562,
        "ipm": 2.0549877104,
        "pur_per_100": 2.614379085
       }
@@ -7106,7 +8998,10 @@
       "funnel": {
        "spend": 520.14,
        "roas": 0.3325450833,
+       "impressions": 220659,
        "hook": 0.1501547625,
+       "ctr": 0.0060273997,
+       "c2i": 0.2368421053,
        "ipm": 1.4275420445,
        "pur_per_100": 10.4761904762
       }
@@ -7122,7 +9017,10 @@
       "funnel": {
        "spend": 346.1,
        "roas": 0.3114128861,
+       "impressions": 121346,
        "hook": 0.224869383,
+       "ctr": 0.0073014356,
+       "c2i": 0.2866817156,
        "ipm": 2.0931880738,
        "pur_per_100": 7.4803149606
       }
@@ -7138,7 +9036,10 @@
       "funnel": {
        "spend": 329.09,
        "roas": 0.5187638625,
+       "impressions": 90280,
        "hook": 0.0011741249,
+       "ctr": 0.0089388569,
+       "c2i": 0.1846344486,
        "ipm": 1.6504209127,
        "pur_per_100": 16.7785234899
       }
@@ -7154,7 +9055,10 @@
       "funnel": {
        "spend": 123.97,
        "roas": 0.3725094783,
+       "impressions": 19337,
        "hook": 0.301856545,
+       "ctr": 0.0115840099,
+       "c2i": 0.1919642857,
        "ipm": 2.2237161918,
        "pur_per_100": 32.5581395349
       }
@@ -7209,7 +9113,10 @@
       "funnel": {
        "spend": 826.22,
        "roas": 0.4092977659,
+       "impressions": 141083,
        "hook": 0.2340324487,
+       "ctr": 0.0111778173,
+       "c2i": 0.2073557387,
        "ipm": 2.3177845665,
        "pur_per_100": 14.6788990826
       }
@@ -7225,7 +9132,10 @@
       "funnel": {
        "spend": 894.88,
        "roas": 0.4160781346,
+       "impressions": 225866,
        "hook": 0.2176688843,
+       "ctr": 0.0076284168,
+       "c2i": 0.2240278584,
        "ipm": 1.7089778895,
        "pur_per_100": 13.4715025907
       }
@@ -7241,7 +9151,10 @@
       "funnel": {
        "spend": 492.49,
        "roas": 0.2787061668,
+       "impressions": 188335,
        "hook": 0.1450606629,
+       "ctr": 0.0073432978,
+       "c2i": 0.1930585683,
        "ipm": 1.4176865691,
        "pur_per_100": 5.9925093633
       }
@@ -7297,7 +9210,10 @@
       "funnel": {
        "spend": 683.3,
        "roas": 0.3830674666,
+       "impressions": 107065,
        "hook": 0.3785177241,
+       "ctr": 0.0111521039,
+       "c2i": 0.4237855946,
        "ipm": 4.7261009667,
        "pur_per_100": 7.3122529644
       }
@@ -7313,7 +9229,10 @@
       "funnel": {
        "spend": 336.4,
        "roas": 0.2431926278,
+       "impressions": 116999,
        "hook": 0.0005555603,
+       "ctr": 0.0124872862,
+       "c2i": 0.3360711841,
        "ipm": 4.1966170651,
        "pur_per_100": 3.4623217923
       }
@@ -7370,7 +9289,10 @@
       "funnel": {
        "spend": 1861.72,
        "roas": 0.3566164613,
+       "impressions": 907392,
        "hook": 0.2357735131,
+       "ctr": 0.0067986052,
+       "c2i": 0.346085265,
        "ipm": 2.3528970941,
        "pur_per_100": 5.0117096019
       }
@@ -7386,7 +9308,10 @@
       "funnel": {
        "spend": 1046.08,
        "roas": 0.3311219023,
+       "impressions": 674599,
        "hook": 0.3708440125,
+       "ctr": 0.0054135864,
+       "c2i": 0.4246987952,
        "ipm": 2.2991436394,
        "pur_per_100": 4.4487427466
       }
@@ -7439,7 +9364,10 @@
       "funnel": {
        "spend": 653.78,
        "roas": 0.2674905941,
+       "impressions": 77481,
        "hook": 0.3748790025,
+       "ctr": 0.0116931893,
+       "c2i": 0.233995585,
        "ipm": 2.7361546702,
        "pur_per_100": 12.2641509434
       }
@@ -7455,7 +9383,10 @@
       "funnel": {
        "spend": 619.07,
        "roas": 0.3917166092,
+       "impressions": 189652,
        "hook": 0.0017769388,
+       "ctr": 0.0114631008,
+       "c2i": 0.1522539098,
        "ipm": 1.7453019214,
        "pur_per_100": 11.7824773414
       }
@@ -7471,7 +9402,10 @@
       "funnel": {
        "spend": 162.33,
        "roas": 0.2178894854,
+       "impressions": 28484,
        "hook": 0.028156158,
+       "ctr": 0.0127439966,
+       "c2i": 0.1267217631,
        "ipm": 1.6149417217,
        "pur_per_100": 8.6956521739
       }
@@ -7487,7 +9421,10 @@
       "funnel": {
        "spend": 96.37,
        "roas": 0.3685794339,
+       "impressions": 13620,
        "hook": 0.2854625555,
+       "ctr": 0.013215859,
+       "c2i": 0.1388888889,
        "ipm": 1.8355359765,
        "pur_per_100": 28.0
       }
@@ -7503,7 +9440,10 @@
       "funnel": {
        "spend": 41.72,
        "roas": 0.0,
+       "impressions": 7923,
        "hook": 0.1735453739,
+       "ctr": 0.0126214818,
+       "c2i": 0.05,
        "ipm": 0.6310740881,
        "pur_per_100": null
       }
@@ -7556,7 +9496,10 @@
       "funnel": {
        "spend": 242.04,
        "roas": 0.3463477106,
+       "impressions": 105143,
        "hook": 0.0691534385,
+       "ctr": 0.0191358436,
+       "c2i": 0.0472166998,
        "ipm": 0.9035313811,
        "pur_per_100": 10.5263157895
       }
@@ -7572,7 +9515,10 @@
       "funnel": {
        "spend": 471.53,
        "roas": 0.2787733552,
+       "impressions": 144224,
        "hook": 0.2334146877,
+       "ctr": 0.0060738851,
+       "c2i": 0.1723744292,
        "ipm": 1.0469824717,
        "pur_per_100": 13.2450331126
       }
@@ -7588,7 +9534,10 @@
       "funnel": {
        "spend": 325.45,
        "roas": 0.1744661236,
+       "impressions": 183595,
        "hook": 0.0242653666,
+       "ctr": 0.026809009,
+       "c2i": 0.016050386,
        "ipm": 0.4302949427,
        "pur_per_100": 5.0632911392
       }
@@ -7645,7 +9594,10 @@
       "funnel": {
        "spend": 879.82,
        "roas": 0.1664772341,
+       "impressions": 195143,
        "hook": 0.0023367479,
+       "ctr": 0.0140666076,
+       "c2i": 0.1435336976,
        "ipm": 2.0190321969,
        "pur_per_100": 6.0913705584
       }
@@ -7661,7 +9613,10 @@
       "funnel": {
        "spend": 73.01,
        "roas": 0.2448979616,
+       "impressions": 19979,
        "hook": 0.4365083311,
+       "ctr": 0.0064567796,
+       "c2i": 0.3178294574,
        "ipm": 2.0521547625,
        "pur_per_100": 4.8780487805
       }
@@ -7677,7 +9632,10 @@
       "funnel": {
        "spend": 280.13,
        "roas": 0.3870702888,
+       "impressions": 77173,
        "hook": 0.2103585451,
+       "ctr": 0.004003991,
+       "c2i": 0.3754045307,
        "ipm": 1.5031163749,
        "pur_per_100": 11.2068965517
       }
@@ -7693,7 +9651,10 @@
       "funnel": {
        "spend": 35.05,
        "roas": 0.0,
+       "impressions": 11633,
        "hook": 0.0009455858,
+       "ctr": 0.0103154818,
+       "c2i": 0.1166666667,
        "ipm": 1.2034728789,
        "pur_per_100": null
       }
@@ -7751,7 +9712,10 @@
       "funnel": {
        "spend": 728.34,
        "roas": 0.1302688304,
+       "impressions": 182385,
        "hook": 0.0646928203,
+       "ctr": 0.0171560161,
+       "c2i": 0.0482582295,
        "ipm": 0.8279189626,
        "pur_per_100": 7.9470198675
       }
@@ -7767,7 +9731,10 @@
       "funnel": {
        "spend": 78.52,
        "roas": 0.3675496663,
+       "impressions": 18102,
        "hook": 0.0649099589,
+       "ctr": 0.0045298862,
+       "c2i": 0.1707317073,
        "ipm": 0.7733952049,
        "pur_per_100": null
       }
@@ -7783,7 +9750,10 @@
       "funnel": {
        "spend": 225.65,
        "roas": 0.0350099699,
+       "impressions": 55005,
        "hook": 0.2393600599,
+       "ctr": 0.0097627488,
+       "c2i": 0.1117318436,
        "ipm": 1.0908099264,
        "pur_per_100": 1.6666666667
       }

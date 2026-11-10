@@ -1,5 +1,5 @@
 # Bumpy — Ads Intelligence Spec
-version: 1.3.7
+version: 1.3.8
 status: DRAFT — living document. Every piece of feedback gets fixed *in this file*, then logged in the changelog.
 owner: Creative lead (ads creative) · maintained with Claude
 
@@ -10,6 +10,9 @@ owner: Creative lead (ads creative) · maintained with Claude
 ---
 
 ## Changelog
+
+**1.3.8 (2026-11-10): the funnel check on every Worse and Miss (decided by the creative lead).**
+- A Worse or Miss read is not judged on ROAS alone. The new creative's funnel is set against the other ads in the same adset and days (§6.2d): **CTR** (the message), **C>I** (the store page: does it keep the ad's promise?), **IPM** (demand), **purchases per 100 installs** (who it brings). The break is the first step 20%+ worse; it is in `refresh_review.json` (`funnel`), on the deck's funnel slide and in the board's launch log.
 
 **1.3.7 (2026-11-10): refresh order, and the why behind every ROAS move (decided by the creative lead).**
 - **Refresh order:** per persona × language, its worst read this week decides: **Worse first, then Miss, then Flat, then Almost**; spend orders each tier. A set where an OS Worked or is on Watch and nothing got worse is left alone. The launch review's priority numbers follow this order (`refresh_plan()` in `tools/report/build_deck.py`; `TIER` in `tools/report/refresh_review.py`).
@@ -480,6 +483,22 @@ ad export (daily rows) and the weekly country export:
 
 A fade looks different from a switch-off: Meta lowers a tired ad's delivery over days; a switch-off goes from full
 spend to zero overnight. Until the media buyer logs switch-offs, the overnight drop is the sign.
+
+### 6.2d The funnel check on Worse and Miss (since 1.3.8)
+For every Worse or Miss, the new creative against the other ads in the same adset and days (`funnel_check()` in
+`engine/why.py`), step by step:
+
+| Step | Measure | When it breaks, look at |
+|---|---|---|
+| Hook (video) | 3-second views per impression | the first second |
+| CTR | link clicks per impression | the message (a low CTR with a low hook is the first second) |
+| C>I | installs per link click | the store page: does the App Store / Play page keep the ad's promise? |
+| IPM | installs per 1k impressions | demand (CTR × C>I) |
+| Payers | purchases per 100 installs | who the ad brings |
+
+The break is the first of CTR → C>I → payers that is 20%+ worse. Under 3,000 impressions = not tested; C>I needs
+30+ clicks, payers 20+ installs. iOS installs per ad are Meta's estimate: an iOS C>I break is a hint to check the
+store page, not proof.
 
 ### 6.3 Turnaround and three strikes (since 1.2)
 - The turnaround starts when an adset goes under green (a Decaying ticket). At-bat 1 within a week; each next at-bat follows the previous one's week-1 read.
