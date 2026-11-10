@@ -28,8 +28,35 @@ below before calling a task done. Adding an entry is part of fixing the mistake;
    a trend, a creator, our own brief), so patterns in what inspires winners show up. Store both in
    `brain/creatives/<code>-<name>.md`.
 8. **The headline is a summary of the rows.** Every action named in an action slide's headline is a row on it.
+9. **An action item says WHAT to make.** One line: the jurus (one of the six in `tools/brainstormer/playbook.md`) +
+   the message + the visual + the format + the languages, with one piece of evidence. "Decode", "research", "learn",
+   "new concept, 3+ variants" are homework, not actions: Claude does the homework before the deck (persona deep
+   dive, winner decodes, the data) and asks the creative lead only for what the data can't show.
+10. **Never show a ROAS move without its why.** For every adset that moved: was it the creative (who took the spend,
+   and do its installers buy?), the audience (country mix), or media buying (budget, ads switched off)? This goes on
+   the ticket, the launch log and the deck, not only the slide.
+11. **Every word on a slide must earn its place.** A row that repeats the table before it, a number that doesn't
+   change the decision, a label the room already knows: cut it.
 
 ## Entries
+
+### 2026-11-10 · Action items still weren't actions; the deck shows what happened but not why
+- **What happened:** after the first rework, the creative lead still found the action slides weak and cluttered.
+  Latina said "New concept, one set for both OS. Dancing is #1 at 76–78% but ROAS sits at 0.27–0.31": an observation
+  with no instruction. Passport Bro said "decode datingcontest": homework handed back to the team. Friends repeated
+  the result table. Account news showed 7 new #1s without saying why some adsets got better and others worse.
+- **Why (root cause):**
+  1. The system knows numbers, not creatives or people. 1 of 100 creatives is decoded, the Passport Bro mind is a
+     copy of the Notion card, and no experiment is logged. So I can't say what to make, and I filled the row with
+     "decode" and "research" instead of doing that work myself first.
+  2. I used only two or three of the six jurus, and never checked history to see which jurus has worked for that
+     persona (e.g. tweetoverlay's three visuals each reached 43–44% of Friends EN: "new visual" is proven there).
+  3. The engine has no "why" step. It reads rank, share and ROAS before/after, but never asks whether a creative
+     brings buyers (hook → click → install → purchase), or whether budget or paused ads moved the adset. The data
+     for most of this is already in the exports (e.g. dancing has the best hook rate in Latina EN, but its
+     installers buy about half as often as banner's or wanted's).
+  4. I treated the slide as a place to show evidence instead of a place to give decisions.
+- **Rules:** 9, 10, 11.
 
 ### 2026-11-09 · Action items were generic: no lesson from the incumbent, no jurus, headline not in the rows
 - **What happened:** the Week 45 action slides said "new concept, 3+ variants" almost everywhere. They didn't say what
