@@ -60,6 +60,37 @@ def s(x):
     return "" if x is None or (isinstance(x, float) and not np.isfinite(x)) or str(x) == "nan" else str(x)
 
 
+def review_next():
+    """What next, from the latest launch review (spec 1.3.7): per persona x language its place in the refresh order,
+    its tier, what to make (deck_text.json -> refresh.what), and per adset the read, the why and, for Worse and
+    Miss, where the funnel broke. One source: the same refresh_plan() that numbers the deck."""
+    import glob
+    import re
+    import sys
+    sys.path.insert(0, os.path.join(ROOT, "tools", "report"))
+    from build_deck import TIER_LABEL, refresh_plan
+    best = None
+    for f in sorted(glob.glob(os.path.join(ROOT, "reports", "*", "deck_text.json"))):
+        rr = os.path.join(os.path.dirname(f), "refresh_review.json")
+        if not os.path.exists(rr):
+            continue
+        T = json.load(open(f))
+        if T.get("refresh", {}).get("what"):
+            R = json.load(open(rr))
+            if best is None or R["end"] >= best[1]["end"]:
+                best = (T, R)
+    if best is None:
+        return {}, {}
+    T, R = best
+    plain = lambda h: re.sub(r"<[^>]+>", "", h or "")
+    sets = {(x["persona"], x["lang"]): dict(n=x["n"], tier=TIER_LABEL[x["tier"]], what=plain(T["refresh"]["what"].get(f'{x["persona"]}-{x["lang"]}')),
+                                            batch=R["batch"], end=R["end"]) for x in refresh_plan(R)}
+    per = {str(r["adset_id"]): dict(read=r["read"], why=(r.get("why") or {}).get("text", ""),
+                                    funnel=(r.get("funnel") or {}).get("text", "") if r["read"] in ("Worse", "Miss") else "")
+           for r in R["adsets"]}
+    return sets, per
+
+
 def queue_doc():
     Q = pd.read_csv(os.path.join(OUT, "tk_queue.csv"), dtype={"adset_id": str})
     D = pd.read_csv(os.path.join(OUT, "tk_atbats.csv"), dtype={"adset_id": str})
@@ -70,6 +101,7 @@ def queue_doc():
     G = G[G.level == "adset"].set_index("adset_id")
     wk = sorted(c[2:] for c in G.columns if c.startswith("s_"))[-8:]
     tickets = []
+    NX, PER = review_next()
     for r in Q.head(MAX_TICKETS).itertuples():
         g = G.loc[r.adset_id] if r.adset_id in G.index else None
         hist = dict(w=wk, s=[num(g[f"s_{w}"], 0) if g is not None else None for w in wk],
@@ -94,7 +126,8 @@ def queue_doc():
             atbats=[dict(w0=s(x.w0), codes=s(x.codes), concepts=int(x.concepts), variants=int(x.variants_max),
                          s1=num(x.best_s1, 3), verdict=s(x.verdict), context=s(x.context),
                          read=s(getattr(x, "read", "")), batch=s(getattr(x, "batch", ""))) for x in ab.itertuples()],
-            hist=hist))
+            hist=hist,
+            next=dict(NX.get((s(r.persona), s(r.lang)), {}), **PER.get(str(r.adset_id), {})) or None))
     fv = F["value"]
     facts = {k: num(fv[k]) for k in fv.index if k != "last_ad_week"}
     G2 = pd.read_csv(os.path.join(OUT, "grid.csv"), usecols=["level", "last_week"], low_memory=False)
